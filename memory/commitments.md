@@ -10,10 +10,13 @@
 |---|------|-------|---------|-----|--------|--------|
 | 1 | Slack advanced setup (User Token + channel allowlist + search) | HuMT | 2026-02-10 | — | ⏳ Parked | Day 1 discussion |
 | 2 | Investigate SIGTERM on Feb 11 15:22 UTC | HuMT | 2026-02-12 | — | ⏳ Open | Downtime investigation |
-| 3 | Phase 3: STAGE business context deep-dive | HMT+HuMT | 2026-02-10 | — | ⏳ Next | Roadmap |
-| 4 | Phase 3: Team map — who's who at STAGE | HMT+HuMT | 2026-02-10 | — | ⏳ Next | Roadmap |
-| 5 | Phase 3: Workflow analysis — what eats HMT's time | HMT+HuMT | 2026-02-10 | — | ⏳ Next | Roadmap |
-| 6 | Phase 3: Calendar/meeting patterns | HMT+HuMT | 2026-02-10 | — | ⏳ Next | Roadmap |
+| 3 | Phase 3: STAGE business context deep-dive | HMT+HuMT | 2026-02-10 | 2026-02-13 | ⏳ Tomorrow | Roadmap |
+| 4 | Phase 3: Team map — who's who at STAGE | HMT+HuMT | 2026-02-10 | 2026-02-13 | ⏳ Tomorrow | Roadmap |
+| 5 | Phase 3: Workflow analysis — what eats HMT's time | HMT+HuMT | 2026-02-10 | 2026-02-13 | ⏳ Tomorrow | Roadmap |
+| 6 | Phase 3: Calendar/meeting patterns | HMT+HuMT | 2026-02-10 | 2026-02-13 | ⏳ Tomorrow | Roadmap |
+| 7 | Phase 3: Email patterns | HuMT | 2026-02-12 | 2026-02-13 | ⏳ Tomorrow | Roadmap |
+| 8 | Phase 3: Key documents | HMT+HuMT | 2026-02-12 | 2026-02-13 | ⏳ Tomorrow | Roadmap |
+| 9 | Separate WhatsApp number for HuMT | HMT | 2026-02-12 | — | ⏳ Parked | HMT to purchase |
 
 ## Completed
 

@@ -22,6 +22,9 @@
 | 2026-02-12 | Close port 22 publicly | With Tailscale, no need for public SSH | Keep 22 open (unnecessary attack surface) |
 | 2026-02-12 | Daily security audit cron | CEO-level data on this VPS — daily checks justified | Weekly (too infrequent for the risk) |
 | 2026-02-12 | Mon+Thu update checks | Balance between staying current and not spamming | Daily (overkill), weekly (too slow for security patches) |
+| 2026-02-12 | Telegram = bazooka (primary channel) | Most reliable, richest features (buttons, reactions, groups) | WhatsApp (personal), Slack (work) |
+| 2026-02-12 | WhatsApp = personal only | Keep personal separate, may get HuMT its own number | Share with HuMT (too noisy) |
+| 2026-02-12 | Memory System v2 | Make forgetting structurally difficult — structured files + automated verification | Continue with prose-only daily logs (insufficient) |
 
 ---
 

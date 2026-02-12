@@ -24,6 +24,15 @@
 | ~10:43 | Port 22 closed on UFW | Allow SSH → Deny all | Zero public ports |
 | 11:04 | OpenAI API key added | Missing → config: skills.entries.openai-image-gen.apiKey | DALL-E + Whisper working |
 | 11:05 | Brave API key added | Missing → config: tools.web.search.apiKey | Web search working |
+| 11:12 | Memory system v2 files created | No structure → people.md, commitments.md, decisions.md, changelog.md | Structured memory |
+| 11:13 | capability-verify cron added | No verification → daily 5:30 AM IST | Auto-tests all capabilities |
+| 11:15 | morning-brief cron added | No briefing → daily 9 AM IST | Calendar + email + commitments briefing |
+| 11:15 | commitment-review cron added | No aging check → Friday 6 PM IST | Flags stale items weekly |
+| 11:15 | Git repo initialized + nightly backup cron | No version history → git + daily 11 PM commit | Recoverable memory |
+| 11:16 | AGENTS.md session load updated | No commitments in load → Step 4: read commitments.md | Open loops always visible |
+| 11:16 | HEARTBEAT.md updated | No archival/auto-populate → Monthly consolidation + auto-populate people | Self-maintaining system |
+| 12:20 | UFW: allow SSH from GCP IAP only | Deny all → Allow 35.235.240.0/20 on port 22 | GCP browser SSH as backup |
+| 12:47 | Telegram inline buttons enabled | No buttons → capabilities.inlineButtons: "allowlist" | Interactive buttons in DMs |
 
 ## 2026-02-11
 

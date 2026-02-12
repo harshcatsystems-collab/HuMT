@@ -15,6 +15,16 @@
 - If yes → Update `MEMORY.md` or `memory/YYYY-MM-DD.md`
 - Be brief but capture the essence
 
+### Memory Consolidation (monthly, 1st of month)
+- Read daily logs older than 14 days
+- Extract anything worth keeping → update MEMORY.md
+- Move processed daily files to `memory/archive/YYYY-MM/`
+- Update people.md with any contacts found in old logs that were missed
+
+### Auto-Populate People (every heartbeat with email check)
+- When scanning emails, if sender isn't in `memory/people.md`, add them
+- Minimum: name, email, company, context of the email
+
 ### Capability Status (weekly)
 - Review `memory/capability-status.md`
 - If any config change or restart happened since last check, re-test affected capabilities
