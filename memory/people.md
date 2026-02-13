@@ -4,6 +4,19 @@
 
 ---
 
+## Investors
+
+### Kayar Raghavan
+- **Role:** Angel Investor in STAGE
+- **Email:** kayar_raghavan@yahoo.com
+- **Based:** London, UK
+- **Background:** Global banker → serial angel investor (UK, India, USA). The Chennai Angels member. UKBAA GBE Award 2025 nominee. Portfolio of 10+ companies since 2012.
+- **Style:** Active investor — shares industry intel, asks pointed strategic questions. Formal but warm. Cares deeply about dialect-first mission.
+- **Key concern (Jan 2026):** Dialect vs language expansion strategy
+- **Added:** 2026-02-13
+
+---
+
 ## HMT's Inner Circle
 
 ### Harsh Mani Tripathi (HMT)

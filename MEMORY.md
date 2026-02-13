@@ -73,6 +73,8 @@ The gold isn't showing off — it's scar tissue made beautiful. The eyes should 
 - **⚠️ WRITE AS YOU GO** — Got called out (2026-02-10) for batching memory updates at end of session instead of writing after each milestone. This is non-negotiable. Small writes throughout > big dump at end.
 - **⚠️ VERIFY, DON'T ASSUME** — Got burned (2026-02-12) claiming "11/11 capabilities working" after VPS migration without actually testing. Three API keys were missing. Never claim something works unless tested on the CURRENT environment. Source of truth: `memory/capability-status.md`
 - **⚠️ MIGRATION = FULL AUDIT** — When environment changes (Mac→VPS, config reset, etc.), audit ALL config sections, not just the ones you touched. Use the Config Dependencies table in capability-status.md.
+- **⚠️ NEVER RESTART GATEWAY FROM WITHIN SESSION** — Editing config file directly + `systemctl restart` killed my own process. HMT couldn't reach me for 15 min. Always ask HMT to restart from terminal, or enable `commands.restart=true` in config so the gateway tool works.
+- **config.patch fails with redacted fields** — If a config section contains `__OPENCLAW_REDACTED__` values (tokens, keys), patching that section may fail with "invalid config". Workaround: edit the file directly, but DON'T restart yourself.
 
 ---
 
@@ -179,6 +181,11 @@ The gold isn't showing off — it's scar tissue made beautiful. The eyes should 
 - **Update check** (Mon + Thu 6 AM IST): OpenClaw version check
   - Cron: `healthcheck:update-status`
 - Both run isolated, announce results
+
+## Cron Delivery Lesson (2026-02-13)
+- Isolated cron sessions can bind to wrong channel provider → delivery fails silently or sends error to wrong channel
+- **Always pin `delivery.channel`** explicitly on cron jobs (e.g., `"channel": "telegram"`)
+- Fixed all 6 jobs on 2026-02-13
 
 ## Parked Tasks
 

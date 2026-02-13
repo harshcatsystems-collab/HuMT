@@ -4,21 +4,21 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-02-12 11:06 UTC
+## Last Verified: 2026-02-13 00:00 UTC
 ## Environment: VPS (Debian 12, GCP, 34.93.212.225)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files | 2026-02-12 |
-| 2 | Files | ✅ | read/write/edit tools | 2026-02-12 |
-| 3 | Terminal | ✅ | exec tool | 2026-02-12 |
-| 4 | Web Search | ✅ | Brave API (config: tools.web.search) | 2026-02-12 |
-| 5 | Gmail | ✅ | gog CLI (~/go/bin/gog gmail) | 2026-02-12 |
-| 6 | Calendar | ✅ | gog CLI (~/go/bin/gog calendar) | 2026-02-12 |
-| 7 | Cron/Reminders | ✅ | cron tool (2 jobs active) | 2026-02-12 |
+| 1 | Memory | ✅ | Read/write workspace files | 2026-02-13 |
+| 2 | Files | ✅ | read/write/edit tools | 2026-02-13 |
+| 3 | Terminal | ✅ | exec tool | 2026-02-13 |
+| 4 | Web Search | ✅ | Brave API (config: tools.web.search) | 2026-02-13 |
+| 5 | Gmail | ✅ | gog CLI (~/go/bin/gog gmail) | 2026-02-13 |
+| 6 | Calendar | ✅ | gog CLI (~/go/bin/gog calendar) | 2026-02-13 |
+| 7 | Cron/Reminders | ✅ | cron tool (6 jobs active) | 2026-02-13 |
 | 8 | Chat (WA/TG/Slack) | ✅ | Channel plugins | 2026-02-12 |
-| 9 | Images (DALL-E) | ✅ | OpenAI API (config: skills.entries.openai-image-gen) | 2026-02-12 |
-| 10 | Voice Transcription | ✅ | OpenAI Whisper API (same key as #9) | 2026-02-12 |
+| 9 | Images (DALL-E) | ✅ | OpenAI API (config: skills.entries.openai-image-gen) | 2026-02-13 |
+| 10 | Voice Transcription | ✅ | OpenAI Whisper API (same key as #9) | 2026-02-13 |
 | 11 | Browser Relay | N/A | Was Mac-only. Replaced by gog for Google. | 2026-02-12 |
 
 ## Config Dependencies
