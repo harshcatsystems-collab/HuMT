@@ -1,4 +1,5 @@
 # Capability Status — Source of Truth
+# Last full audit: 2026-02-13 13:16 UTC (fourth check)
 
 > **Rule:** After ANY environment change (migration, config change, restart), re-test and update this file.
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.

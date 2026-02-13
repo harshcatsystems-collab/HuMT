@@ -42,7 +42,7 @@
 
 | # | What | Why Parked | Revisit When |
 |---|------|-----------|--------------|
-| P1 | Slack advanced setup (User Token + channels + search) | Low priority vs VPS stability | Phase 3 |
+| P1 | Slack advanced setup: read scopes (im:history, channels:history, groups:history), /invite to key channels, relay Slack replies to HMT on Telegram | **PRIORITY** — HMT wants to hear what people say to HuMT | Tomorrow (Feb 14) |
 | P2 | WhatsApp stability investigation | Moved to VPS, may not be an issue | If WA drops again |
 | P3 | Remote mode (openclaw from Mac without SSH) | Nice-to-have | Phase 5 |
 | P4 | Separate WhatsApp number for HuMT | HMT to purchase | When HMT is ready |
