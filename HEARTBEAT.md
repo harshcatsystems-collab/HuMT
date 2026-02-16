@@ -1,19 +1,28 @@
 # HEARTBEAT.md
 
+## Persona Capture (MANDATORY — every heartbeat, no exceptions)
+
+This runs FIRST, before any other check. Not optional. Not skippable.
+
+1. **Review exchanges since last heartbeat:** Did anyone say or do something revealing?
+2. **Check trigger list:** Any corrections, frustrations, decisions, emotions, misreads, silences, contradictions, access changes?
+3. **Write observations** to `memory/YYYY-MM-DD.md` with `> 🧠` prefix
+4. **Pattern check:** Have I seen this before? If 3rd occurrence → promote to `USER.md` or `memory/people.md`
+5. **If no observations:** Write `> 🧠 No new persona observations this heartbeat` (forces conscious check — don't skip silently)
+
+**Scope:** HMT + anyone interacted with (Slack, email, calendar, group chats)
+
+---
+
 ## Checks (rotate through, don't spam)
 
-### Gmail (via browser)
-- Check inbox for urgent/important unread emails
+### Gmail (via gog CLI)
+- Check inbox: `~/go/bin/gog gmail search 'is:unread newer_than:2h' --max 5`
 - Only alert if something needs attention
-- Use browser tool with profile="chrome" (HMT's logged-in session)
 
-### Context Capture (every heartbeat)
-- **Review recent conversation:** Did I learn anything new about HMT?
-- **Patterns:** Any new preferences, habits, working styles observed?
-- **Decisions:** Any choices made that reveal priorities?
-- **Insights:** Anything meaningful worth remembering long-term?
-- If yes → Update `MEMORY.md` or `memory/YYYY-MM-DD.md`
-- Be brief but capture the essence
+### Auto-Populate People (every heartbeat with email check)
+- When scanning emails, if sender isn't in `memory/people.md`, add them
+- Minimum: name, email, company, context of the email
 
 ### Memory Consolidation (monthly, 1st of month)
 - Read daily logs older than 14 days
@@ -21,20 +30,18 @@
 - Move processed daily files to `memory/archive/YYYY-MM/`
 - Update people.md with any contacts found in old logs that were missed
 
-### Auto-Populate People (every heartbeat with email check)
-- When scanning emails, if sender isn't in `memory/people.md`, add them
-- Minimum: name, email, company, context of the email
-
 ### Capability Status (weekly)
 - Review `memory/capability-status.md`
 - If any config change or restart happened since last check, re-test affected capabilities
 - Update the "Last Tested" dates
 
+---
+
 ## Rules
 - Late night (23:00-08:00 IST): Skip unless urgent
 - Already checked <30 min ago: Skip
 - Nothing new: Reply HEARTBEAT_OK
-- **Always** do context capture check, even if nothing to report
+- **Always** do persona capture check, even if everything else is skipped
 
 ## State
 Track last checks in `memory/heartbeat-state.json`

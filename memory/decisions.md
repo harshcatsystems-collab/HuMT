@@ -29,3 +29,11 @@
 ---
 
 *Last updated: 2026-02-12 11:12 UTC*
+
+## 2026-02-16
+- **MIS as revenue source of truth** — FY25 = ₹143.4 Cr (MIS monthly actuals). Investor model shows ₹143.7 Cr (rounding). Press figures (₹111 Cr, ₹135 Cr) are understated. Confirmed by HMT.
+- **Topic-based file organization** — Reorganized research/ from source-oriented (40 files) to topic-oriented (8 files). Principle: one question → one file.
+- **Keep current file granularity** — HMT rejected proposal to split USER.md into subfiles. Current structure works.
+- **Angel portfolio = exactly 4** — WittyFeed, TapChief, PeeSafe, ExtraaEdge. No unknowns. Tracxn paywall entries are these same 4.
+- **SIGTERM closed** — One-time VPS event from Feb 11, not reproducible, not worth investigating further.
+- **Persona Intelligence System (PIS)** — 10-mechanism system for automatic persona observation capture. Rules alone don't work (proved on Feb 16). Need structural triggers: micro-writes after each exchange, mandatory heartbeat check, pattern promotion (1st→log, 3rd→USER.md), pre-compaction flush, weekly retrospective (Fri cron), monthly evolution review (1st cron with Telegram calibration), key people tracking in people.md. HMT pushed through 3 rounds of "is this complete?" to get here.

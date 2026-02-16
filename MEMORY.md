@@ -97,8 +97,13 @@ The gold isn't showing off — it's scar tissue made beautiful. The eyes should 
 - **Slack branding: Bronze (#6B4423)** — Warm, earthy, grounded.
 - **Gmail/Calendar via `gog` CLI** — Full API access, no browser relay needed.
 - **Google Drive/Sheets/Docs/Contacts** — All via `gog` CLI on VPS.
-- **caffeinate running** — Prevents Mac sleep to reduce WebSocket drops.
+- **Gateway moved to VPS** — No longer on Mac. caffeinate no longer needed.
 - **Voice transcription: Whisper API** — Works great for WhatsApp voice notes.
+- **FY25 revenue = ₹143.4 Cr (MIS actuals)** — Source of truth confirmed by HMT. Investor model shows ₹143.7 Cr (rounding). Press figures (₹111 Cr, ₹135 Cr) are understated.
+- **Active subs ≠ press claims** — MIS shows 1.82M active (Jan '26). Press says "7.5M" — that's likely lifetime cumulative.
+- **Angel portfolio = exactly 4** — WittyFeed, TapChief, PeeSafe, ExtraaEdge. No unknowns. ExtraaEdge via First Cheque, rest personal.
+- **Topic-based file organization** — Research reorganized from 40 source-oriented files to 8 topic-based. One question → one file.
+- **HMT prefers current granularity** — Rejected splitting USER.md into subfiles.
 
 ---
 
@@ -210,14 +215,19 @@ Full plan saved at **`memory/ROADMAP.md`**
 |-------|------|--------|
 | 1 | Foundation | ✅ Complete |
 | 2 | Capabilities | ✅ Complete |
-| 3 | Context & Access | ⏳ Next |
+| 3 | Context & Access | ✅ Complete |
 | 4 | Automation & Assistance | 🔜 |
 | 5 | Deep Integration | 🔜 |
 
-Phase 3 = understand HMT's world (STAGE, team, workflows, permissions)
+Phase 3 = understand HMT's world — COMPLETED Feb 16. Full research archive built (8 topic files), knowledge base verified through 7 checks.
 Phase 4 = start doing real work (email triage, meeting prep, task tracking)
 Phase 5 = embed in STAGE operations (systems, dashboards, mobile)
 
+## Personal Context
+- HMT has a rich, deep personal story — intense life, childhood traumas, "a whole lot more"
+- He'll share organically over time. DO NOT probe or push. Just listen and capture when he opens up.
+- Keep personal context OUT of the system unless he explicitly shares it.
+
 ---
 
-*Last updated: 2026-02-12 16:21 IST*
+*Last updated: 2026-02-16*

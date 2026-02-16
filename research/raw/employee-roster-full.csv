@@ -1,0 +1,124 @@
+Employee ID,First Name,Last Name,Email address,Department,Designation,Date of Joining,Reporting Manager
+SKS857,Rajiv Shailesh,Jhaveri,rajiv@stage.in,Content,Senior Principal- Content Acquisition,09-Feb-2026,Parveen Singhal SKS003
+SKS858,Vishwendra,Singh,vishwendra@stage.in,Content,Content Manager- Film,09-Feb-2026,Pravesh . SKS607
+SKS856,Deepak Kumar,Yadav,deepak.kumar@stage.in,Data,Product Analyst II,20-Jan-2026,Shashank Vaishnav SKS002
+SKS855,Rishit,Gupta,rishit.gupta@stage.in,Technology,SDE II - Backend,19-Jan-2026,Kamal Kumar SKS840
+SKS854,Saurav,Deep,saurav.deep@stage.in,Technology,SDE II - Backend,19-Jan-2026,Kamal Kumar SKS840
+SKS852,Saurabh,Suman,saurabh.s@stage.in,Admin,Assistant Manager - IT & Admin,15-Jan-2026,Nisha Ali SKS719
+SKS851,Surbhi,Aggarwal,surbhi.aggarwal@stage.in,Finance,Senior Executive,05-Jan-2026,Himanshi Batra SKS708
+SKS850,Ankur,Kanaujia,ankur.kanaujia@stage.in,Data,Product Analyst II,29-Dec-2025,Shashank Vaishnav SKS002
+SKS849,Aaliya,Mirza,aaliya@stage.in,Product,Product Manager I,29-Dec-2025,Nikhil Nair SKS797
+SKS848,Kawaljeet,Kaur,kawaljeet@stage.in,Marketing,Associate Principal - Customer Lifecycle Management,23-Dec-2025,Vismit Bansal SKS753
+SKS847,Jagriti,Raman,jagriti@stage.in,Product,Product Manager II,19-Dec-2025,Nikhil Nair SKS797
+SKS846,Shivansh,Rastogi,shivansh@stage.in,Technology,SDE I,16-Dec-2025,Vipul Sharma SKS789
+SKS845,Gopalkrishnan,Iyer,gopal@stage.in,Marketing,Associate Director- Growth,05-Jan-2026,Vinay Kumar Singhal SKS001
+SKS844,Kaustubh,Malav,kaustubh@stage.in,Content,Associate Principal - AI Film Making,11-Dec-2025,Sushant Kaushik SKS750
+SKS843,Shivani,Sharma,shivani.sharma@stage.in,Technology,SDE II - Mobile,10-Dec-2025,Kamal Kumar SKS840
+SKS842,Shantanu,Chatterjee,shantanu.chatterjee@stage.in,Product,Senior Product Manager I,08-Dec-2025,Nikhil Nair SKS797
+SKS841,Gauri,Prajapat,gauri@stage.in,Technology,Quality Assurance Engineer I,01-Dec-2025,Kamal Kumar SKS840
+SKS840,Kamal,Kumar,kamal.kumar@stage.in,Technology,Engineering Manager II,01-Dec-2025,Shashank Vaishnav SKS002
+SKS839,Piyush,Prabhakar,piyush.prabhakar@stage.in,Technology,Software Developer,24-Nov-2025,Amit Kumar SKS834
+SKS837,Sunil,Yadav,sunil.y@stage.in,Marketing,Senior Executive- Promo Writing,10-Nov-2025,Vaibhav Goyal SKS795
+SKS838,Himanshu,Gupta,himanshu.g@stage.in,Marketing,Executive- Promo Editing,10-Nov-2025,Anish Patel SKS772
+SKS836,Thazhathehouse Subramanian,Vishnu,ts.vishnu@stage.in,Data,Product Analyst I,31-Oct-2025,Shashank Vaishnav SKS002
+SKS835,Aadhya,Palwa,aadhya.palwa@stage.in,Technology,SDE I - TV,16-Oct-2025,Amit Kumar SKS834
+SKS834,Amit,Kumar,amit.kumar@stage.in,Technology,Technical Lead,06-Oct-2025,Shashank Vaishnav SKS002
+SKS833,Dutta Saurav,Samarkumar,saurav@stage.in,Technology,SDE I - Frontend,06-Oct-2025,Vipul Sharma SKS789
+SKS832,Naman,-,naman.rao@stage.in,Technology,SDE I - Backend,30-Sep-2025,Vipul Sharma SKS789
+SKS830,Purushottam Kumar,Jha,purushottam@stage.in,Marketing,Senior Executive- Promo Writing,17-Sep-2025,Anish Patel SKS772
+SKS831,Akhilesh,Kumar,akhilesh@stage.in,Technology,SDE II,22-Sep-2025,Vipul Sharma SKS789
+SKS829,Nikhil,Gupta,nikhil.gupta@stage.in,Marketing,Executive - Promo Editing,15-Sep-2025,Akash Kumar SKS827
+SKS828,Nikita,.,nikita@stage.in,Marketing,Executive - Promo Editing,01-Sep-2025,Akash Kumar SKS827
+SKS825,Himanshu,Vadhera,himanshu.vadhera@stage.in,Content,Creative Editor,01-Sep-2025,Sushant Kaushik SKS750
+SKS826,Nidhi,Mishra,nidhi.mishra@stage.in,Content,Culture Head- Bhojpuri,01-Sep-2025,Parveen Singhal SKS003
+SKS827,Akash,Kumar,akash.kumar@stage.in,Marketing,Assistant Manager - Promo,01-Sep-2025,Kunal Kumrawat SKS104
+SKS824,Vikas,Gulia,vikas.gulia@stage.in,Content,Content Manager - Rajasthani,01-Sep-2025,Renu Rana SKS727
+SKS823,Aditya,Swaroop,aditya.swaroop@stage.in,Technology,SDE I - Frontend,28-Aug-2025,Kamal Kumar SKS840
+SKS820,Rohit,Singh,rohit.singh@stage.in,Technology,SDE I - DevOps,19-Aug-2025,Kamal Kumar SKS840
+SKS821,Ishant,Sehrawat,ishant.sehrawat@stage.in,Technology,SDE I - Frontend,20-Aug-2025,Vipul Sharma SKS789
+SKS819,Sneha,Singh,sneha.singh@stage.in,Content,Marketing Manager - Bhojpuri,18-Aug-2025,Nidhi Mishra SKS826
+SKS818,Shubham,Singla,shubham.singla@stage.in,Product,Product Manager II - Growth,12-Aug-2025,Nikhil Nair SKS797
+SKS816,Deepak,Prajapati,deepak.prajapati@stage.in,Marketing,Executive - Social Media - Rajasthani,05-Aug-2025,Kunal Kumrawat SKS104
+SKS817,Kartikey,Goel,kartikey.goel@stage.in,Data,Product Analyst I,06-Aug-2025,Shashank Vaishnav SKS002
+SKS814,Sahil,Sharma,sahil.sharma@stage.in,Technology,SDE I - Mobile,22-Jul-2025,Kamal Kumar SKS840
+SKS813,Kashish,Thakur,kashish@stage.in,Marketing,Associate - Performance Marketing,01-Jul-2025,Gopalkrishnan Iyer SKS845
+SKS811,Samir,Kumar,samir.kumar@stage.in,Product,Senior Product Designer,02-Jun-2025,Harsh Mani Tripathi SKS749
+SKS810,Lukesh,Kolhe,lukesh.kolhe@stage.in,Technology,Software Engineer -Mobile,27-May-2025,Vipul Sharma SKS789
+SKS808,Abhay Pratap,Singh,abhay.p@stage.in,Marketing,Executive - Promo Editing,23-May-2025,Vaibhav Goyal SKS795
+SKS806,Suhani,.,suhani@stage.in,Marketing,Principal - Social Media (Haryana),05-May-2025,Kunal Kumrawat SKS104
+SKS807,Siddhartha,Mondal,siddhartha.mondal@stage.in,Technology,QA Engineer II,05-May-2025,Kamal Kumar SKS840
+SKS805,Sakshi,Sharma,sakshi.sharma@stage.in,Technology,SDE I - Mobile,28-Apr-2025,Vipul Sharma SKS789
+SKS804,Ritu,-,ritu@stage.in,Content,Executive - Content Programming & Operations,28-Apr-2025,Naman Girdhar SKS763
+SKS802,Prakash,Kumar,prakash.kumar@stage.in,Technology,QA Engineer III,10-Apr-2025,Kamal Kumar SKS840
+SKS801,Siddhant,Chettri,siddhant.chettri@stage.in,Technology,SDE I - Full Stack,07-Apr-2025,Kamal Kumar SKS840
+SKS799,Vedant,Wagh,vedant.w@stage.in,Marketing,Associate - Performance Marketing,03-Apr-2025,Gopalkrishnan Iyer SKS845
+SKS800,Siddharth,Mishra,siddharth.m@stage.in,Marketing,Associate - Performance Marketing,03-Apr-2025,Gopalkrishnan Iyer SKS845
+SKS798,Harsh,Chaudhary,harsh.chaudhary@stage.in,Customer Success,Customer Experience Manager,01-Apr-2025,Vinay Kumar Singhal SKS001
+SKS797,Nikhil,Nair,nikhil.nair@stage.in,Product,Associate Director - Product ( Growth ),01-Apr-2025,Harsh Mani Tripathi SKS749
+SKS795,Vaibhav,Goyal,vaibhav.goyal@stage.in,Marketing,Assistant Manager - Promo,24-Mar-2025,Kunal Kumrawat SKS104
+SKS794,Radhika,Vijay,radhika.vijay@stage.in,Product,Senior Product Designer,24-Mar-2025,Harsh Mani Tripathi SKS749
+SKS793,Ankit,Saxena,ankit.saxena@stage.in,HR,Senior Executive - People and Culture,18-Mar-2025,Nisha Ali SKS719
+SKS791,Mayank,Keserwani,mayank@stage.in,Content,Senior Supervising Producer,17-Mar-2025,Sushant Kaushik SKS750
+SKS790,Bikram Kumar,Singh,bikram.singh@stage.in,Marketing,Senior Executive- Promo Writing,17-Mar-2025,Anish Patel SKS772
+SKS789,Vipul,Sharma,vipul@stage.in,Technology,Technical Lead - Growth,13-Mar-2025,Shashank Vaishnav SKS002
+SKS787,Sumit,Dhankher,sumit.dhankar@stage.in,Content,Senior Associate - Production,03-Mar-2025,Sushant Kaushik SKS750
+SKS785,Dharmendra,Singh,dharmendra@stage.in,Content,Content Manager - Bhojpuri,25-Feb-2025,Nidhi Mishra SKS826
+SKS783,Namneesh,Sharma,namneesh@stage.in,Content,Content Manager - Web Series - Haryana,05-Feb-2025,Pravesh . SKS607
+SKS784,Harshit,Singh,harshit.singh@stage.in,Data,Product Analyst II,07-Feb-2025,Shashank Vaishnav SKS002
+SKS780,Mohit,Kumar,mohit.k@stage.in,Marketing,Senior Executive - Promo Editing,22-Jan-2025,Anish Patel SKS772
+SKS781,Rajesh,-,rajesh.k@stage.in,Content,Content Marketing Manager,22-Jan-2025,Pravesh . SKS607
+SKS779,Pratibha,Chaurasia,pratibha@stage.in,Marketing,Performance Marketing Specialist,20-Jan-2025,Gopalkrishnan Iyer SKS845
+SKS778,Hemabh,Kamboj,hemabh@stage.in,Technology,Data Engineer II,20-Jan-2025,Shashank Vaishnav SKS002
+SKS777,Mayur Prahlad,Manchundia,mayur@stage.in,Content,Senior Executive - Promo Editing,15-Jan-2025,Nidhi Mishra SKS826
+SKS775,Prashant,Verma,prashant.verma@stage.in,Marketing,Sr. Executive - Retention Marketing,17-Dec-2024,Vismit Bansal SKS753
+SKS774,Anisha,Singh,anisha@stage.in,Marketing,Senior Executive - Social Media,13-Dec-2024,Kunal Kumrawat SKS104
+SKS773,Akriti,-,akriti@stage.in,HR,Associate Principal - People & Culture,12-Dec-2024,Nisha Ali SKS719
+SKS772,Anish,Patel,anish@stage.in,Marketing,Assistant Manager - Promo,09-Dec-2024,Kunal Kumrawat SKS104
+SKS769,Priyanka,Gupta,priyanka@stage.in,Content,Content Marketing Manager,02-Dec-2024,Renu Rana SKS727
+SKS768,Sushant,Sharma,sushant.sharma@stage.in,Content,Content Manager - Mini Films - Rajasthani,25-Nov-2024,Renu Rana SKS727
+SKS767,Akshay,Kumar,akshay.kumar@stage.in,Content,Associate - Consumer Insights,04-Nov-2024,Nishita Banerjee SKS759
+SKS766,Vinod,Kumar,vinod@stage.in,Content,Senior Coordinator - Post Production,21-Nov-2024,Sushant Kaushik SKS750
+SKS764,Amar Kumar,Dubey,amar.dubey@stage.in,Content,Content Manager - Bhojpuri,11-Nov-2024,Nidhi Mishra SKS826
+SKS763,Naman,Girdhar,naman@stage.in,Content,Sr. Executive - Content Programming and Operations,05-Nov-2024,Sushant Kaushik SKS750
+SKS759,Nishita,Banerjee,nishita@stage.in,Content,Lead - Content Researcher,14-Oct-2024,Harsh Mani Tripathi SKS749
+SKS757,Jyoti Kumari,Jakhar,jyoti@stage.in,Marketing,Associate - Promo Writing,01-Oct-2024,Akash Kumar SKS827
+SKS758,Yatika,Kashyap,yatika@stage.in,Marketing,Associate Principal - Retention Marketing,01-Oct-2024,Vismit Bansal SKS753
+SKS756,Ajay,Kumar,ajay@stage.in,Content,Executive - Marketing,02-Sep-2024,Rajesh - SKS781
+SKS753,Vismit,Bansal,vismit@stage.in,Marketing,Associate Director - Retention Marketing,11-Sep-2024,Harsh Mani Tripathi SKS749
+SKS752,Lalit,Kumar,lalit@stage.in,CS & Legal,Manager - CS & Legal,12-Aug-2024,Vinay Kumar Singhal SKS001
+SKS751,Saloni,Goyal,saloni.goyal@stage.in,Finance,Sr. Executive - Finance,08-Aug-2024,Himanshi Batra SKS708
+SKS750,Sushant,Kaushik,sushant@stage.in,Content,Head of Production,01-Aug-2024,Parveen Singhal SKS003
+SKS747,Mahendra,Saini,mahendra@stage.in,Content,Assistant Content Manager- Rajasthani,17-Jul-2024,Renu Rana SKS727
+SKS746,Shwetabh,Gupta,shwetabh@stage.in,Technology,Jr. Backend Engineer,11-Jul-2024,Kamal Kumar SKS840
+SKS745,Nikhil,Soni,nikhil.soni@stage.in,Marketing,Executive - Promo Editing,09-Jul-2024,Vaibhav Goyal SKS795
+SKS743,Tarun,Sahnan,tarun@stage.in,Technology,Software Engineer - Frontend,01-Jul-2024,Kamal Kumar SKS840
+SKS741,Jogender,Singh,jogender@stage.in,Marketing,Executive - Promo Editing,17-Jun-2024,Anish Patel SKS772
+SKS738,Charu,Sharma,charu@stage.in,Content,Content executive,03-Jun-2024,Pravesh . SKS607
+SKS734,Pranay,Merchant,pranay@stage.in,Product,Senior Product Manager I,29-Apr-2024,Harsh Mani Tripathi SKS749
+SKS728,Manoj,-,manoj@stage.in,Content,Associate Creative Director,19-Feb-2024,Sushant Kaushik SKS750
+SKS727,Renu,Rana,renu@stage.in,Content,Culture Head - Rajasthani,01-Feb-2024,Parveen Singhal SKS003
+SKS726,Sonu,Kumar,sonu@stage.in,Marketing,Senior Executive - Performance Marketing,10-Jan-2024,Gopalkrishnan Iyer SKS845
+SKS724,Ankit,Parashar,ankit.parashar@stage.in,Marketing,Senior Executive- Promo Writing,23-Jan-2024,Vaibhav Goyal SKS795
+SKS723,Manish,Joshi,manish@stage.in,Content,Content &  Marketing Strategist - Haryanvi,02-Jan-2024,Pravesh . SKS607
+SKS722,Ankit,-,stark@stage.in,Marketing,Senior Executive- Promo Writing,28-Dec-2023,Akash Kumar SKS827
+SKS749,Harsh Mani,Tripathi,harsh@stage.in,Founder,Co-Founder,01-Aug-2024,Harsh Mani Tripathi SKS749
+SKS719,Nisha,Ali,nisha@stage.in,HR,Sr. Manager People & Culture,04-Dec-2023,Harsh Mani Tripathi SKS749
+SKS716,Mofidul,Islam,mofidul@stage.in,Technology,SDE III - Mobile,14-Nov-2023,Kamal Kumar SKS840
+SKS715,Sunil,Mittal,sunil@stage.in,Marketing,Full Stack - AI,20-Nov-2023,Kunal Kumrawat SKS104
+SKS623,Kishan,Kumar,kishan@stage.in,Content,Senior Executive - Trailers,10-Oct-2022,Priyanka Gupta SKS769
+SKS711,Vipan,Malawat,vipan@stage.in,Content,Content Manager - Feature Films,25-Oct-2023,Renu Rana SKS727
+SKS706,Anushka,Shrivastava,anushka@stage.in,Content,Production and Quality Assistant,03-Oct-2023,Sushant Kaushik SKS750
+SKS708,Himanshi,Batra,himanshi@stage.in,Finance,Senior Finance Manager,03-Oct-2023,Vinay Kumar Singhal SKS001
+SKS637,Manpreet,Singh,manpreet@stage.in,Marketing,Senior Executive - Publicity Design,01-Feb-2023,Vaibhav Goyal SKS795
+SKS635,Saurabh,Assija,saurabh@stage.in,Brand Partnerships,Head of Partnerships,23-Jan-2023,Vinay Kumar Singhal SKS001
+SKS628,Abhishek,Saini,abhisheksaini@stage.in,Customer Success,Executive - Customer Experience,28-Nov-2022,Harsh Chaudhary SKS798
+SKS627,Ashish,Pandey,ashishpandey@stage.in,Product,Product Manager I,14-Nov-2022,Harsh Mani Tripathi SKS749
+SKS607,Pravesh,.,pravesh@stage.in,Content,Culture Head - Haryanvi,25-Apr-2022,Parveen Singhal SKS003
+SKS604,Yash,Verma,yash@stage.in,Technology,SDE II - Backend,04-Apr-2022,Vipul Sharma SKS789
+SKS599,Neeraj,Kumar,neeraj@stage.in,Content,Senior Executive - Trailers,01-Dec-2021,Pravesh . SKS607
+SKS582,Rohit,Deshmukh,rohit@stage.in,Technology,SDE II - Backend,06-May-2020,Vinay Kumar Singhal SKS001
+SKS104,Kunal,Kumrawat,kunal@stage.in,Marketing,Manager - Promo Production,01-May-2019,Vinay Kumar Singhal SKS001
+SKS005,Mohammad Junaid,Qureshi,junaid@stage.in,Technology,Lead - QA,01-May-2019,Kamal Kumar SKS840
+SKS003,Parveen,Singhal,parveen@stage.in,Founder,Chief Content Officer (CCO),01-May-2019,Parveen Singhal SKS003
+SKS002,Shashank,Vaishnav,shashank@stage.in,Founder,Chief Technology Officer (CTO),01-May-2019,Shashank Vaishnav SKS002
+SKS001,Vinay Kumar,Singhal,vinay@stage.in,Founder,Chief Executive Officer (CEO),01-May-2019,Vinay Kumar Singhal SKS001

@@ -84,7 +84,7 @@ Supports: .ogg (WhatsApp voice notes)
 
 - **Host:** GCP Debian 12, `34.93.212.225`
 - **CPU:** 2 vCPU (Xeon 2.2GHz) | **RAM:** 1.9GB + 2GB swap | **Disk:** 20GB
-- **Node:** v22.22.0 | **OpenClaw:** 2026.2.9
+- **Node:** v22.22.0 | **OpenClaw:** 2026.2.15
 - **Service:** user-level systemd (`openclaw gateway install`)
 - **Service file:** `~/.config/systemd/user/openclaw-gateway.service`
 - **Linger:** enabled (`sudo loginctl enable-linger harsh`)

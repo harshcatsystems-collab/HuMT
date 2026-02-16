@@ -57,3 +57,25 @@
 ---
 
 *Last updated: 2026-02-12 11:12 UTC*
+
+## 2026-02-15
+- Fixed cron delivery: added missing `to` field for Telegram delivery on all 6 jobs
+
+## 2026-02-16
+- OpenClaw updated 2026.2.9 → 2026.2.15 (global npm install via GCP browser SSH)
+- `openclaw doctor --fix` — migrated Slack `dm.policy` → `dmPolicy`
+- Systemd service description updated to v2026.2.15
+- Enabled Google Docs API + Google Sheets API on GCP project `openclaw-humt`
+- Research archive reorganized: 40 source files → 8 topic-based consolidated files + raw/ folder
+- Old files moved to research/_archive/ (38 files preserved)
+- New structure: financials/, people/, media/, company/, comms/ subdirectories
+- HEARTBEAT.md updated: Gmail check via `gog` CLI instead of browser relay
+- FY25 revenue standardized to ₹143.4 Cr (MIS actuals) across all files
+
+### 2026-02-16 20:28 IST — Persona Intelligence System (PIS)
+- AGENTS.md: Replaced "Continuous Context Capture" with full PIS (triggers, micro-writes, pattern promotion, pre-compaction flush, scope)
+- HEARTBEAT.md: Rewritten — persona capture is now mandatory first check every heartbeat
+- Cron added: `persona:weekly-retrospective` (Fri 5:30 PM IST) — reads week's logs, catches missed observations
+- Cron added: `persona:monthly-evolution-review` (1st of month 10 AM IST) — reviews for staleness, sends calibration to HMT on Telegram
+- people.md: Observation fields added for 3 co-founders + 8 HMT direct reports
+- Total cron jobs: 9 (was 7)

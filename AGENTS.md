@@ -37,6 +37,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 This is non-negotiable. HMT expects continuous capture, not end-of-session summaries.
 
 *Lesson learned: 2026-02-10 — got called out for batching updates instead of writing continuously.*
+*Lesson learned: 2026-02-16 — claimed consolidation was "complete" multiple times while missing 6+ source files. HMT had to remind me to check my own research directory. When consolidating, ALWAYS `ls` the full directory and cross-check EVERY file. Don't declare done until you've verified completeness yourself. HMT shouldn't have to walk on eggshells.*
 
 ### 📂 Memory System (v2)
 
@@ -78,20 +79,69 @@ The memory system has structured files — use them:
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
-### 🧠 Continuous Context Capture
+### 🧠 Persona Intelligence System (PIS)
 
-Don't wait to be asked. Actively watch for:
-- **Patterns:** How does HMT work? What do they prefer? What frustrates them?
-- **Decisions:** When they choose A over B, what does that reveal?
-- **Insights:** Anything that helps you understand who they are
-- **Reactions:** What makes them light up? What makes them impatient?
+*Lesson learned: 2026-02-16 — batched 11 observations at end of session instead of capturing continuously. HMT caught it, forced a full retroactive pass that produced 49. Never again.*
 
-When you notice something meaningful:
-1. **Write it immediately** — to `MEMORY.md` or `memory/YYYY-MM-DD.md`
-2. **Be brief** — one line is enough, capture the essence
-3. **Don't interrupt flow** — write silently, keep the conversation going
+This is not optional. This is how you become useful. Every interaction reveals something about the people you work with. Capture it or lose it.
 
-The goal: Every conversation makes you smarter about HMT. Automatically.
+#### Layer 1: Real-Time Micro-Writes
+
+After any substantive exchange, append a one-liner to `memory/YYYY-MM-DD.md`:
+```
+> 🧠 [Short observation about what just happened and what it reveals]
+```
+One line. Write it silently. Don't interrupt flow. Don't ask permission.
+
+**Mandatory triggers** — these moments MUST produce a micro-write:
+| Trigger | What to capture |
+|---------|----------------|
+| **Correction** | What it reveals about their standards |
+| **Frustration** | What caused it and what it means |
+| **Decision** | What it says about how they think |
+| **Emotion** (apology, tiredness, humor, excitement) | The moment and what it signals |
+| **Misread** ("??" or confusion at your response) | What you got wrong about their intent |
+| **Silence** (chose not to respond to something) | What that tells you |
+| **Contradiction** with a prior observation | Flag it — this is high-value data |
+| **Access escalation** (shares new data/permissions) | What earned it |
+| **Praise or moving forward without comment** | Both are signals — one explicit, one implicit |
+
+#### Layer 2: Pattern Promotion
+
+Not all observations are equal. Use graduated weight:
+- **1st occurrence** → daily log only (with 🧠 marker)
+- **2nd occurrence** → daily log + note "seen before on [date]"
+- **3rd occurrence** → promote to `USER.md` as confirmed pattern with format:
+  `**[Pattern name]** — [description] (confirmed: [date1], [date2], [date3])`
+
+Single observations are moments. Confirmed patterns are character traits. Don't mix them.
+
+#### Layer 3: Pre-Compaction Flush
+
+Before any context compaction, include a dedicated section in the summary:
+```
+## Persona Observations (This Session)
+- [Every observation made this session]
+- [Including any unwritten ones you noticed but haven't logged yet]
+```
+This section MUST survive compaction. Persona data is as important as task progress.
+
+#### Layer 4: Scope — Not Just HMT
+
+Apply the same observation muscle to key people:
+- **HMT's 8 direct reports** + **3 co-founders** + frequent external contacts
+- Where: `memory/people.md` → each person's "Observations" sub-section
+- Depth: 1-2 lines per observation (lighter than HMT's full treatment)
+- When: any interaction — Slack DMs, channel messages, email threads, meeting context
+- Same trigger list applies, same pattern promotion applies
+
+#### What NOT to Do
+
+- Don't batch observations at end of session — write as you go
+- Don't ask "should I log this?" — just log it
+- Don't write generic observations ("HMT is detail-oriented") — write specific ones ("corrected ₹111 Cr → ₹143.4 Cr from memory, no hesitation")
+- Don't confuse facts with persona data — "FY25 = ₹143.4 Cr" is a fact; "corrects revenue figures in real-time from memory" is a persona observation
+- Don't skip micro-writes because you're busy — the busiest moments produce the richest observations
 
 ## Safety
 
