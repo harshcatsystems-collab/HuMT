@@ -345,6 +345,7 @@
 | Urmi Shah | Smytten | urmi.s@smytten.com | 2026-02-12 | Stage x Smytten collaboration |
 | Apurv Agrawal | SquadStack | apurv.a@squadstack.com | 2026-02-12 | India AI Impact Summit catch-up |
 | Dharmendra Singh | — | — | 2026-02-10 | Meeting invites re: Yogendra Mishra |
+| Manika Bindra | Hindustan Times | manika.bindra1@hindustantimes.com | 2026-02-17 | Limited Partners Summit 2026 invite (Feb 24, JW Marriott Mumbai) |
 
 ---
 

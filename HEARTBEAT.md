@@ -14,6 +14,38 @@ This runs FIRST, before any other check. Not optional. Not skippable.
 
 ---
 
+## Slack Chief of Staff — Real-Time Alert Scan (EVERY HEARTBEAT)
+
+**Read:** `research/slack-chief-of-staff-prd.md` Section 6.3 for full spec.
+**Read:** `memory/slack-channel-map.json` for channel IDs and people IDs.
+
+### Quick scan (every heartbeat):
+1. Check Tier 1 channels for last 30 min of messages (use message action=read, channel=slack, target=<channelId>, limit=10)
+2. Check #tech-mates for outage/critical language
+3. Scan for HMT mentions (@harsh, "Harsh", "HMT") across Tier 1+2
+
+### Alert triggers (send to Telegram IMMEDIATELY if found):
+| Trigger | Format |
+|---------|--------|
+| DM to HuMT needing HMT's decision | 📩 DM from [Name]: [1 line] |
+| HMT asked for by name (question/request) | 📢 [Channel]: [Person] asking for you |
+| Outage / critical incident (2+ messages or #tech-mates) | 🚨 Incident: [summary] |
+| Resignation / exit signal | 🚨 Confidential: [relay] |
+| Co-founder decision in HMT's domain | ⚡ [Founder]: [1 line] |
+
+### NOT alert-worthy:
+- "Blocked" language (goes in morning brief)
+- Casual HMT mentions ("as Harsh said...")
+- Channel activity spikes
+- Decisions in other founders' domains
+
+### Discipline:
+- Max 3-4 alerts/day outside emergencies
+- 11 PM – 8 AM IST: Only outage/critical
+- Gate: "Would HMT leave a meeting for this?"
+
+---
+
 ## Checks (rotate through, don't spam)
 
 ### Gmail (via gog CLI)
@@ -38,10 +70,11 @@ This runs FIRST, before any other check. Not optional. Not skippable.
 ---
 
 ## Rules
-- Late night (23:00-08:00 IST): Skip unless urgent
-- Already checked <30 min ago: Skip
+- Late night (23:00-08:00 IST): Skip unless urgent (but ALWAYS do Slack alert scan)
+- Already checked <30 min ago: Skip email/calendar. STILL do Slack alert scan.
 - Nothing new: Reply HEARTBEAT_OK
 - **Always** do persona capture check, even if everything else is skipped
+- **Always** do Slack alert scan, even if everything else is skipped
 
 ## State
 Track last checks in `memory/heartbeat-state.json`

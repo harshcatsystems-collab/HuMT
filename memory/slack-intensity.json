@@ -1,0 +1,12 @@
+{
+  "weekOf": "2026-02-17",
+  "meetingCount": 11,
+  "level": "light",
+  "checkedAt": "2026-02-17T11:42:00Z",
+  "adjustments": {
+    "light": "Full briefs + richer context, expanded evening debrief",
+    "normal": "Standard format",
+    "heavy": "Tighter morning (decisions+temp only), full evening (he needs it MORE)",
+    "extreme": "Morning=decisions-only, evening=compressed bullets, alerts=outage-only"
+  }
+}

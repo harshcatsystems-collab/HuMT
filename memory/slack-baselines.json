@@ -1,0 +1,99 @@
+{
+  "period": "7 days",
+  "generatedAt": "2026-02-17T11:43:26Z",
+  "baselines": {
+    "Nikhil Nair": {
+      "slackId": "U08L99D58PK",
+      "messagesLast7d": 0,
+      "avgPerDay": 0.0,
+      "daysActive": 0,
+      "channelsActive": [],
+      "baselinedAt": "2026-02-17T11:43:26Z"
+    },
+    "Pranay Merchant": {
+      "slackId": "U0719V1GX3Q",
+      "messagesLast7d": 0,
+      "avgPerDay": 0.0,
+      "daysActive": 0,
+      "channelsActive": [],
+      "baselinedAt": "2026-02-17T11:43:26Z"
+    },
+    "Ashish Pandey": {
+      "slackId": "U04A980D1N3",
+      "messagesLast7d": 0,
+      "avgPerDay": 0.0,
+      "daysActive": 0,
+      "channelsActive": [],
+      "baselinedAt": "2026-02-17T11:43:26Z"
+    },
+    "Samir Kumar": {
+      "slackId": "U08UL9EHKKP",
+      "messagesLast7d": 0,
+      "avgPerDay": 0.0,
+      "daysActive": 0,
+      "channelsActive": [],
+      "baselinedAt": "2026-02-17T11:43:26Z"
+    },
+    "Radhika Vijay": {
+      "slackId": "U08KBHHV9J4",
+      "messagesLast7d": 0,
+      "avgPerDay": 0.0,
+      "daysActive": 0,
+      "channelsActive": [],
+      "baselinedAt": "2026-02-17T11:43:26Z"
+    },
+    "Nishita Banerjee": {
+      "slackId": "U07R906K9K5",
+      "messagesLast7d": 0,
+      "avgPerDay": 0.0,
+      "daysActive": 0,
+      "channelsActive": [],
+      "baselinedAt": "2026-02-17T11:43:26Z"
+    },
+    "Vismit Bansal": {
+      "slackId": "U07LFSB0PM5",
+      "messagesLast7d": 0,
+      "avgPerDay": 0.0,
+      "daysActive": 0,
+      "channelsActive": [],
+      "baselinedAt": "2026-02-17T11:43:26Z"
+    },
+    "Nisha Ali": {
+      "slackId": "U068F2RS5PV",
+      "messagesLast7d": 6,
+      "avgPerDay": 0.9,
+      "daysActive": 3,
+      "channelsActive": [
+        "#krantikaari"
+      ],
+      "baselinedAt": "2026-02-17T11:43:26Z"
+    },
+    "Vinay Singhal": {
+      "slackId": "UEHET2Q2G",
+      "messagesLast7d": 6,
+      "avgPerDay": 0.9,
+      "daysActive": 5,
+      "channelsActive": [
+        "#krantikaari",
+        "#tech-mates"
+      ],
+      "baselinedAt": "2026-02-17T11:43:26Z"
+    },
+    "Parveen Singhal": {
+      "slackId": "UEJV57HQW",
+      "messagesLast7d": 0,
+      "avgPerDay": 0.0,
+      "daysActive": 0,
+      "channelsActive": [],
+      "baselinedAt": "2026-02-17T11:43:26Z"
+    },
+    "Shashank Vaishnav": {
+      "slackId": "UE0KTBS8P",
+      "messagesLast7d": 0,
+      "avgPerDay": 0.0,
+      "daysActive": 0,
+      "channelsActive": [],
+      "baselinedAt": "2026-02-17T11:43:26Z"
+    }
+  }
+}

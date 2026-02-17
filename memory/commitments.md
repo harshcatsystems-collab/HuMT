@@ -8,8 +8,12 @@
 
 | # | What | Owner | Created | Due | Status | Source |
 |---|------|-------|---------|-----|--------|--------|
-
-*No active items.*
+| A1 | Build Phase 5 gaps G1-G4, G6-G7 | HuMT | 2026-02-17 | Feb 18 | ⏳ | HMT approved, build independently |
+| A2 | Threshold tuning review | HuMT + HMT | 2026-02-17 | Feb 21 | ⏳ | Needs 3 days of real brief data |
+| A3 | People baseline re-run (thread-aware) | HuMT | 2026-02-17 | Feb 24 | ⏳ | Full week of data needed |
+| A4 | People baseline enrichment (6 signals) — G5 | HuMT | 2026-02-17 | Mar 3 | ⏳ Blocked | Needs 2 weeks of data |
+| A5 | Samsung F2F delegation (D1) | Saurabh/Ashish | 2026-02-17 | — | ⏳ | Waiting on Ashish internal check |
+| A6 | Invite @humt to #growth-pod + #monetisation | HMT | 2026-02-17 | — | ⏳ | Private channels, needs HMT |
 
 ## Completed
 
@@ -42,6 +46,9 @@
 | C25 | Angel portfolio confirmed complete | 2026-02-16 | Exactly 4: WittyFeed, TapChief, PeeSafe, ExtraaEdge |
 | C26 | LinkedIn Recommendations + Interests | 2026-02-16 | Skipped — HMT says not important |
 | C27 | SIGTERM investigation (Feb 11) | 2026-02-16 | Closed — one-time VPS event, not reproducible |
+| C28 | Slack Chief of Staff — Phase 1-4 build | 2026-02-17 | Full system: 6 crons, 5 scripts, 353 channels, 11 people tracked |
+| C29 | Slack CoS full system audit | 2026-02-17 | 0 critical issues, 2 stale text fixes, 7 gaps identified → Phase 5 |
+| C30 | Phase 5 gap closure spec | 2026-02-17 | Added to PRD, Blueprint, progress tracker. Drive docs updated. |
 
 ## Parked (Revisit Later)
 
@@ -51,6 +58,7 @@
 | P2 | WhatsApp stability investigation | Moved to VPS, may not be an issue | If WA drops again |
 | P3 | Remote mode (openclaw from Mac without SSH) | Nice-to-have | Phase 5 |
 | P4 | Separate WhatsApp number for HuMT | HMT to purchase | When HMT is ready |
+| P5 | DR silence investigation (5/8 low on Slack) | Need weekly roundup data | Feb 21 weekly roundup |
 
 ## Reminders (Cron)
 
@@ -60,4 +68,4 @@
 
 ---
 
-*Last updated: 2026-02-16 13:36 UTC*
+*Last updated: 2026-02-17 14:50 UTC*

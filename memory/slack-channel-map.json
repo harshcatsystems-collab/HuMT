@@ -1,0 +1,136 @@
+{
+  "_scope": "HMT owns: activation, retention (m0/m1/m1+), dormants, reacquisition, people & culture, consumer insights/research, content strategy, and cross-org strategy. He cuts across the ENTIRE org on strategy.",
+  
+  "tier1_product": {
+    "CEWV0GMMG": "#product",
+    "C080EJU9873": "#growth-pod",
+    "C07T7047TEZ": "#product-growth",
+    "C035F6W8DK9": "#product-design",
+    "C0368KVCL2D": "#product-analytics",
+    "C035QJ5A8G6": "#product_prd",
+    "C08N82UFN3F": "#productdesign",
+    "C06LLFTK7NK": "#product-internal",
+    "C084ZC2RNUA": "#product-discussions",
+    "C073D2D5FRP": "#pm-only-top-secret"
+  },
+  "tier1_founders": {
+    "GEJUR0WA2": "#founders_sync",
+    "C085P594G7N": "#founders-plus",
+    "C06C97L05JP": "#quarterly_investor_updates"
+  },
+  "tier1_retention_lifecycle": {
+    "C06QTJMKLUA": "#retention",
+    "C0A3N67V0G2": "#retention-pod",
+    "C0A5GJRCQTZ": "#m1-watchers-retention",
+    "C0A6ZPA3XT8": "#m0-strategy",
+    "C0AAKDTMY82": "#retention_cost_optimization",
+    "C0A2QNQSA0P": "#dormant-resurrection",
+    "C0914FW9WE9": "#user_activation",
+    "C07TTQQL8JU": "#user-activation-strategy",
+    "C094EJU35L7": "#biggest-delta",
+    "C081AG7J7EC": "#retention_nikhil",
+    "C08SAF7RBUZ": "#project_data-active-subscriber-watch-retention",
+    "C08NV50KE7Q": "#content_writing_retention",
+    "C07QVKNB16C": "#retention-_-creative",
+    "C07QSGLSK97": "#copy--retention"
+  },
+  "tier1_acquisition_growth": {
+    "C092XDNSDB9": "#acquisition-pod",
+    "C0904NE9Y2K": "#engagement-solver-team",
+    "C09PM1DNK34": "#growth-clm",
+    "C07N9G9LH0B": "#reengagement-pf-ads-creatives",
+    "C0905UNGLJK": "#brand-health-funnel-metrics",
+    "C09DKG689HR": "#paywall-creation"
+  },
+  "tier1_people_culture": {
+    "C082Z8FUBRV": "#all-things-people-and-culture",
+    "C084HQGH9T6": "#managers-aspiring-to-be-leaders",
+    "C0765HXVBFB": "#project-streamline-new-employee-onboarding",
+    "C0AEG5645RT": "#culture-productising"
+  },
+  "tier1_consumer_insights": {
+    "C09PWTHF44A": "#building-consumer-insights-team",
+    "C097XAP8493": "#user-research-lab",
+    "C07RVS92YT0": "#research_updates",
+    "C08G27WDN4S": "#conversion-survey"
+  },
+  "tier1_content_strategy": {
+    "C08HQ89S797": "#content_strategy",
+    "C0800A3GERY": "#stage-content-growth",
+    "C0A07SN8C6N": "#content-title-stack",
+    "C076AUFK74Z": "#content-product-jugalbandi",
+    "C090SNCDT8T": "#project-reels-and-microdramas",
+    "C090D5UJFM4": "#team-bhojpuri",
+    "C05BQLDB1SM": "#content-categorization"
+  },
+  "tier1_strategy_cross_org": {
+    "C08AY77063V": "#stage-ai",
+    "C08BPD4FJHH": "#weekly-mis",
+    "C08K7RS42RM": "#media-mentions",
+    "C08GL5NN7MK": "#stage_legal-and-finance",
+    "C06GK2M36P9": "#company-imp-docs",
+    "C09FW03KB2S": "#maha-punarjanam",
+    "C0A87E17UMS": "#monetisation",
+    "C0A4BF8HTN3": "#monetisation-core",
+    "C07N3RN9FH7": "#recommendation-engine",
+    "C08AM06AMRC": "#mini-to-main-migration",
+    "C0A8JDHNKHC": "#baahubali-squad"
+  },
+  "tier2_hiring": {
+    "C095EKEC0LX": "#hiring-approval",
+    "C08QC5UHQUS": "#productgrowth-hiring",
+    "C079LSSQA0Y": "#product-and-analytics-hiring",
+    "C09TLDLA7GE": "#retention-hiring",
+    "C04DKHJKV5W": "#tech-hiring"
+  },
+  "tier2_tech": {
+    "CEHPPGSN9": "#tech-mates",
+    "C06NYMGLNGH": "#tech-frontend",
+    "C07CU8W8R5H": "#tech-growth",
+    "C07TNBUAWPP": "#tech-mobile",
+    "C07SXBJTZJ7": "#team-data",
+    "C08L4EMHR0X": "#team-devops",
+    "C08KMK43JN6": "#release-cycle",
+    "C07DC1S9JQ1": "#proj-analytics-infra"
+  },
+  "tier2_regional": {
+    "C02178ASC4X": "#haryanvi_stage",
+    "C039S74GNP2": "#rajasthani_stage",
+    "C0810CKG1C1": "#bhojpuri_stage"
+  },
+  "tier2_other": {
+    "CS75DM3KQ": "#stage-product-feedback-and-requests",
+    "C037H0GLYP4": "#marketing",
+    "C047HLH7T26": "#promo-team",
+    "C08E6782AKT": "#proj-onboarding",
+    "C06L5FQL3GU": "#credit_card_invoices",
+    "C08PGK8CM32": "#finance-department",
+    "C08HKLHM7AN": "#founder-travel",
+    "C07MZ6YVDPS": "#cre-engagement-campaign-rcs-wa",
+    "C093EC443K5": "#socials-team",
+    "C082STFKC5V": "#team-brand",
+    "C08Q2MSCEB1": "#reel-format"
+  },
+  "tier3_key": {
+    "CEHPZTVD3": "#stage-ke-krantikaari",
+    "CDZFAJLBV": "#announcements"
+  },
+  "tier3_all": "353 channels total (307 public + 46 private) — all joined",
+  
+  "co_founders": {
+    "Vinay Singhal": "UEHET2Q2G",
+    "Parveen Singhal": "UEJV57HQW",
+    "Shashank Vaishnav": "UE0KTBS8P"
+  },
+  "hmt": "U05QMQHCVNY",
+  "direct_reports": {
+    "Nikhil Nair": "U08L99D58PK",
+    "Pranay Merchant": "U0719V1GX3Q",
+    "Ashish Pandey": "U04A980D1N3",
+    "Samir Kumar": "U08UL9EHKKP",
+    "Radhika Vijay": "U08KBHHV9J4",
+    "Nishita Banerjee": "U07R906K9K5",
+    "Vismit Bansal": "U07LFSB0PM5",
+    "Nisha Ali": "U068F2RS5PV"
+  }
+}
