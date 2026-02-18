@@ -110,8 +110,12 @@ def scan_channel(channel_id, channel_name, oldest, expand_threads=True, msg_limi
         "messages": []
     }
     
+    SKIP_SUBTYPES = {'channel_join','channel_leave','channel_purpose','channel_topic','channel_name','channel_archive','channel_unarchive','bot_add','bot_remove','group_join','group_leave'}
+    
     # Process messages (they come newest-first, reverse for chronological)
     for msg in reversed(messages):
+        if msg.get("subtype", "") in SKIP_SUBTYPES:
+            continue
         ts = msg.get("ts", "0")
         user = msg.get("user", msg.get("username", "bot"))
         text = msg.get("text", "").replace("\n", " ")[:300]

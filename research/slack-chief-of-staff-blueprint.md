@@ -1,7 +1,8 @@
-# HuMT × Slack: v4 — The Final Blueprint
+# HuMT × Slack: v4.1 — The Final Blueprint
 
 *Decision accelerator + Company radar + Founder intelligence.*
 *Everything v1 envisioned, with v2's rigor, v3's structure, and HMT's corrections.*
+*v4.1: Updated Feb 18, 2026 to reflect implementation additions. Status: Live in production.*
 
 ---
 
@@ -84,11 +85,24 @@ A single-sentence qualitative read on STAGE's mood from yesterday.
 "Energetic — marketing celebrating Holi numbers, eng heads-down on infra migration."
 ```
 
+**Additional sections (v4.1 — unified morning delivery):**
+- 📬 **URGENT EMAILS** — Unread emails from last 12h needing attention (merged into brief for single morning delivery)
+- 📋 **OPEN COMMITMENTS** — Commitments stale >5 days (cross-referenced with Slack activity)
+- 🔔 **DORMANT CHANNELS WOKE UP** — T1/T2 channels that were inactive but suddenly active
+
+**Personal engagement prompts (v4.1):**
+When the system detects situations requiring HMT's personal touch:
+- → Suggested: check in with [name] (silent DR, 5+ days)
+- → Suggested: ping [delegatee] directly (stalled delegation)
+- → Suggested: reply to [name] personally (emotional/sensitive DM)
+- → Suggested: acknowledge [topic] in today's meeting (friction context)
+
 **Rules:**
 - 0 decisions + 0 blockers → "Clean slate today 👍" + calendar + temperature. Still send.
 - Stale delegations only appear here after 5+ days (48h flags stay in evening debrief).
 - Company temperature is qualitative, not metrics. One sentence. Captures mood.
 - Calendar entries include Slack-derived context when available.
+- Email, commitment, and dormant sections skipped if nothing qualifies.
 
 ---
 
@@ -157,6 +171,15 @@ Cross-cutting patterns or single data points. Optional — empty > filler.
 - Company roundup covers ALL functions. If nothing happened in a function → "Quiet day" (include the section so HMT knows I checked).
 - Delegation tracker: items added as I see HMT delegate. 48h no-movement → flagged here. 5 days → escalated to morning brief.
 - Truly nothing across STAGE → "Unusually quiet day. Nothing significant." (This itself is a signal.)
+
+**Auto-detection of delegations (v4.1):**
+The evening debrief scans HMT's messages across all channels for delegation language ("can you take this", "please handle", "@person do this", "follow up on", "who's owning"). Detected delegations are auto-appended to the tracker.
+
+**Personal engagement prompts (v4.1):**
+- → Suggested: check in with [name] tomorrow (DR had a bad day)
+- → Suggested: ping [delegatee] directly (delegation stalled 48h)
+- → Suggested: acknowledge [name]'s work (someone went above and beyond)
+- → Suggested: align with [founder] on [topic] (co-founder decided in HMT's domain)
 
 ---
 
@@ -309,9 +332,10 @@ With trajectory: ↑ growing, → stable, ↓ declining.
 
 ---
 
-## Meeting Prep (Phase 2)
+## Meeting Prep (Phase 2 — upgraded to JIT in v4.1)
 
 **Trigger:** 30 minutes before qualifying meetings.
+**Implementation (v4.1):** JIT cron fires every 30 min during work hours (Mon-Fri, 8:30 AM – 5:30 PM IST). Checks calendar for meetings starting in the next 30-45 min, preps only unprepped ones, tracks state in `meeting-prep-state.json` to avoid duplicates. Upgraded from original batch design (single 9 AM cron).
 
 **Qualifying meetings (expanded from v3):**
 - Group meetings (3+ attendees) in HMT's domain
@@ -319,7 +343,7 @@ With trajectory: ↑ growing, → stable, ↓ declining.
 - Sprint ceremonies (retro, start, mid-sprint)
 - Monthly check-ins
 
-**NOT qualifying:** All Hands (HMT is presenting), lunch block, standup (too routine), external meetings (different prep, on request).
+**NOT qualifying:** Lunch time blocks only. Everything else gets prepped — standups, All Hands, external meetings, investor calls, 1:1s, all of it.
 
 **Format for group meetings (max 5 bullets):**
 
@@ -436,6 +460,9 @@ For HMT's 8 direct reports, tracked weekly in the roundup. For key people beyond
 - Early warning for disengagement before it becomes a problem
 - Visibility into who's growing, who's struggling, who needs attention
 
+**People Activity Logger (v4.1 — dedicated data pipeline):**
+A cron job runs every 30 minutes, scanning key Tier 1 channels for all 11 tracked people. Logs per-person metrics (messages, thread replies, channels active, after-hours activity, response latency) to `memory/people-activity-log.jsonl`. This provides granular timeseries data for the 6-signal enrichment rather than relying on weekly snapshot estimates. Baseline calibration: people-baseline.md (first calibrated Feb 17). Full 6-signal enrichment: Mar 3 (after 2 weeks of continuous data).
+
 ---
 
 ## DM Handling
@@ -512,39 +539,48 @@ The system adapts to HMT's meeting load:
 
 ---
 
-## Implementation Plan
+## Implementation Plan (v4.1 — actual status as of Feb 18, 2026)
 
-### Phase 1: Core Loop (This Week)
-| Deliverable | Method | Priority |
-|-------------|--------|----------|
-| **Morning Brief** (9:15 AM) | Cron → scan Tier 1+2+3 → generate → Telegram | 🔴 Build now |
-| **Evening Debrief** (6:30 PM) | Cron → full company scan → generate → Telegram | 🔴 Build now |
-| **Real-time alerts** (5 triggers) | Behavioral: monitor incoming, heartbeat scans | 🔴 Build now |
-| **DM relay** | Behavioral: respond + alert HMT | 🔴 Build now |
-| **Delegation tracker** | Seed with Samsung, grow organically | 🟡 Start now, grows over time |
+### Phase 1: Core Loop — ✅ LIVE
+| Deliverable | Status | Notes |
+|-------------|--------|-------|
+| **Morning Brief** (9:15 AM) | ✅ Live | Unified: Slack + email + commitments + dormant alerts |
+| **Evening Debrief** (6:30 PM) | ✅ Live | + auto-delegation detection (G3) + intensity formatting (G4) |
+| **Real-time alerts** (5 triggers) | ✅ Live | Heartbeat-driven, DM priority check (G7) |
+| **DM relay** | ✅ Live | Priority check runs FIRST in every heartbeat (<2s) |
+| **Delegation tracker** | ✅ Live | Auto-detect + 👀 reactions + escalation rules |
 
-**Why evening debrief moved to Phase 1:** HMT's core need is company-wide awareness. The evening debrief IS that. Can't wait a week to deliver the main value proposition.
+### Phase 2: Depth — ✅ LIVE
+| Deliverable | Status | Notes |
+|-------------|--------|-------|
+| **Meeting prep** (JIT) | ✅ Live | Upgraded from batch → JIT every 30 min (G1) |
+| **Weekly Roundup** (Fri 5:30 PM) | ✅ Verified | Dry-run tested, fires Friday |
+| **Commitment visibility** | ✅ Live | In weekly roundup + morning brief |
+| **People intelligence** (enriched) | ✅ Partial | 4/6 signals live, activity logger collecting for remaining 2 |
 
-### Phase 2: Depth (Next Week)
-| Deliverable | Method | Priority |
-|-------------|--------|----------|
-| **Meeting prep** (group + 1:1s) | Cron per meeting → channel context → Telegram | 🟡 Build next |
-| **Weekly Roundup** (Fri 5:30 PM) | Cron → week analysis → Telegram | 🟡 Build next |
-| **Commitment visibility** | Scan Tier 1+2 for commitment language → weekly | 🟡 Build next |
-| **People intelligence** (enriched) | Weekly observation per direct report | 🟡 Build next |
-
-### Phase 3: Polish (Weeks 3-4)
-| Deliverable | Method | Priority |
-|-------------|--------|----------|
-| **Monthly channel health** | Cron 1st of month → channel metrics → Telegram | 🟢 Build later |
-| **Intensity-aware delivery** | Calendar scan → auto-adjust brief format | 🟢 Build later |
-| **Threshold tuning** | Based on HMT feedback on alerts/briefs | 🟢 Ongoing |
+### Phase 3: Polish — ✅ LIVE (except monthly health)
+| Deliverable | Status | Notes |
+|-------------|--------|-------|
+| **Monthly channel health** | ⏳ Scheduled | First run: Mar 1, 2026 |
+| **Intensity-aware delivery** | ✅ Live | Sunday cron + 4 levels in all cron prompts |
+| **Threshold tuning** | ✅ Tracking | Feedback tracker live, first review Feb 21 |
 
 ### Phase 4: Refinement (Ongoing)
-- Calibrate company temperature accuracy
-- Tune people intelligence baselines (need 2-3 weeks of data)
-- Add/remove channels from tiers based on relevance
-- Experiment with meeting prep depth
+- People intelligence: full 6-signal enrichment by Mar 3 (activity logger collecting data)
+- Decision latency baseline measurement by Mar 3
+- Channel tier adjustments based on first month of data
+- Meeting prep depth tuning based on HMT feedback
+
+### Phase 5: Gap Closure — ✅ 6/7 DONE
+| Gap | Status |
+|-----|--------|
+| G1: JIT meeting prep | ✅ Done |
+| G2: 👀 reactions on tracked items | ✅ Done |
+| G3: Auto-detect delegations | ✅ Done |
+| G4: Intensity → format mapping | ✅ Done |
+| G5: People baseline 6 signals | ⏳ Data collecting (Mar 3) |
+| G6: Digest state tracking | ✅ Done |
+| G7: DM handling latency | ✅ Done |
 
 ---
 
@@ -560,7 +596,7 @@ The system adapts to HMT's meeting load:
 | **1st of month** | Channel Health | Communication infrastructure check | 2 min |
 
 **Total daily Slack awareness time: ~5 minutes.**
-**Covers: All 58 channels, all 4 founders, all 8 direct reports, all functions.**
+**Covers: All 353 channels (89 key + 267 scanned), all 4 founders, all 8 direct reports, all functions.**
 **HMT opens Slack: never.**
 
 ---
@@ -577,10 +613,14 @@ The system adapts to HMT's meeting load:
 | Meeting prep usefulness | HMT references prep content in meetings |
 | Decision latency | Faster than pre-system baseline |
 
+**Feedback tracking mechanism (v4.1):**
+A persistent `memory/feedback-tracker.md` scores every brief, alert, and meeting prep delivery based on HMT's reaction (+1 useful, 0 neutral, -1 noise, -2 MISS). Compiled weekly for threshold tuning. First review: Feb 21, 2026.
+
 **North star:** HMT never gets surprised by anything happening at STAGE. He walks into every meeting prepared. He knows what his co-founders are doing, what his people are feeling, and what the company is building — all without opening Slack.
 
 ---
 
-*v4: The holistic blueprint. Decision accelerator + Company radar + Founder intelligence.*
+*v4.1: The holistic blueprint. Decision accelerator + Company radar + Founder intelligence.*
 *Built from: v1's breadth, v2's rigor, v3's structure, and HMT's direct input.*
-*Ready to build.*
+*v4.0 approved Feb 17. Built and deployed Feb 17-18. v4.1 updated Feb 18 with implementation additions.*
+*Status: Live in production.*

@@ -1,9 +1,9 @@
 # PRD: HuMT Slack Chief of Staff System
 
 **Author:** HuMT (AI) + HMT (Human)
-**Date:** 2026-02-17
-**Status:** Approved — Ready to Build
-**Version:** 4.0 (evolved through v1→v4 with HMT's direct input)
+**Date:** 2026-02-17 (v4.0) | Updated: 2026-02-18 (v4.1)
+**Status:** Implemented — Live in Production
+**Version:** 4.1 (v4.0 approved + implementation additions documented)
 
 ---
 
@@ -127,11 +127,27 @@ The bot has access to 46 private channels including: #founders_sync, #founders-p
 | 📅 TODAY'S MEETINGS + CONTEXT | Non-obvious meetings with 1 line of Slack-derived context | All qualifying |
 | 🌡️ COMPANY TEMPERATURE | Single-sentence qualitative mood read from yesterday's Slack | 1 sentence |
 
+**Additional sections (v4.1 — unified morning delivery):**
+
+| Section | Content | Notes |
+|---------|---------|-------|
+| 📬 URGENT EMAILS | Unread emails from last 12h needing attention | Merged into brief for single morning delivery |
+| 📋 OPEN COMMITMENTS | Commitments stale >5 days from `commitments.md` | Cross-referenced with Slack activity |
+| 🔔 DORMANT CHANNELS WOKE UP | T1/T2 channels that were inactive but suddenly active | Compared against `channel-activity-baseline.md` |
+
+**Personal engagement prompts (v4.1):**
+When the system detects situations requiring HMT's personal touch, it adds `→ Suggested:` lines:
+- Silent direct report (5+ days) → "→ Suggested: check in with [name]"
+- Stalled delegation needing push → "→ Suggested: ping [delegatee] directly"
+- Emotional/sensitive DM → "→ Suggested: reply to [name] personally"
+- Meeting with recent friction → "→ Suggested: acknowledge [topic] in today's meeting"
+
 **Rules:**
 - 0 decisions + 0 blockers → "Clean slate today 👍" + calendar + temperature. Still send.
 - Stale delegations only appear after 5+ days (48h flags stay in evening debrief).
 - Company temperature is qualitative. One sentence. Captures mood, not metrics.
 - Calendar entries include Slack-derived context when available.
+- Email, commitment, and dormant sections are skipped if nothing qualifies.
 
 ---
 
@@ -155,6 +171,16 @@ The bot has access to 46 private channels including: #founders_sync, #founders-p
 | 📊 COMPANY ROUNDUP | By domain: Product, Retention/Lifecycle, Acquisition/Growth, Content Strategy, People/Culture, Consumer Insights, Cross-Org Strategy, Tech, Regional, Hiring | Every domain gets 1-3 bullets. "Quiet day" if nothing. |
 | 🔄 DELEGATION TRACKER | HMT's delegations — movement or silence | 48h no-movement → flagged. 5 days → escalated to morning. |
 | 💡 WORTH KNOWING | Cross-cutting patterns or data points | Max 2, optional. Empty > filler. |
+
+**Auto-detection of delegations (v4.1 — G3):**
+The evening debrief scans HMT's messages (U05QMQHCVNY) across all channels for delegation language ("can you take this", "please handle", "@person do this", "follow up on", "who's owning", "assigned to"). Detected delegations are auto-appended to `memory/delegations.md`.
+
+**Personal engagement prompts (v4.1):**
+Same as morning brief — `→ Suggested:` lines when personal engagement matters:
+- DR had a bad day or showed frustration → "→ Suggested: check in with [name] tomorrow"
+- Delegation stalled 48h → "→ Suggested: ping [delegatee] directly"
+- Someone went above and beyond → "→ Suggested: acknowledge [name]'s work"
+- Co-founder decided something in HMT's domain → "→ Suggested: align with [founder] on [topic]"
 
 **Rules:**
 - Co-founder roundup is ALWAYS present. Even "no activity" is a signal.
@@ -265,10 +291,9 @@ The bot has access to 46 private channels including: #founders_sync, #founders-p
 - Monthly check-ins
 
 **Not Qualifying:**
-- All Hands (HMT is presenting, not consuming)
-- Lunch block
-- Daily standup (too routine)
-- External meetings (different prep; available on request)
+- Lunch time blocks only. Nothing else.
+
+**ALL other meetings qualify** — standups, All Hands, external meetings, investor calls, board meetings, 1:1s, sprint ceremonies, pod discussions, everything. HMT walks into every meeting wanting context.
 
 **Group Meeting Format (max 5 bullets):**
 - From Slack (48h): key discussions, blockers, decisions from attendee channels
@@ -367,6 +392,16 @@ The bot has access to 46 private channels including: #founders_sync, #founders-p
 - Contextual, never comparative. Never "A sent more than B."
 - Awareness tool, not performance evaluation.
 - Never referenced to the person observed or anyone else.
+
+**People Activity Logger (v4.1 — dedicated data pipeline):**
+A cron job (`people:activity-logger`) runs every 30 minutes, scanning key Tier 1 channels for all 11 tracked people (8 DRs + 3 co-founders). For each person with activity, it logs:
+- Message count (top-level)
+- Thread reply count
+- Channels active (unique)
+- After-hours activity (before 9 AM or after 7 PM IST)
+- Average response latency (seconds, in threads they reply to)
+
+Data is appended to `memory/people-activity-log.jsonl` as a rolling timeseries. This feeds the 6-signal enrichment (activity trend, channel breadth, initiative, collaboration, sentiment, responsiveness) with granular data rather than weekly snapshots. First calibration: Mar 3, 2026 (after 2 weeks of data).
 
 ---
 
@@ -507,6 +542,16 @@ The system adapts to HMT's weekly meeting load:
 | Decision latency | Time between request and HMT's response | Reduced vs baseline |
 | Delegation follow-through | Tracked items completing faster with passive monitoring | Measurable over weeks |
 
+**Feedback tracking mechanism (v4.1):**
+A persistent `memory/feedback-tracker.md` file scores every brief, alert, and meeting prep delivery based on HMT's reaction:
+- 👍 / positive reaction / acts on it → +1 (useful)
+- Ignored / no reaction → 0 (neutral)
+- "I knew that" / "obvious" → -1 (too noisy)
+- "Why didn't you tell me?" / surprise → -2 (MISSED — worst case)
+- "Too long" / skimmed → flag for review
+
+Tracked per heartbeat. Compiled weekly for threshold tuning (first review: Feb 21, 2026).
+
 ---
 
 ## 15. Risks & Mitigations
@@ -525,35 +570,58 @@ The system adapts to HMT's weekly meeting load:
 
 ## Appendix A: Technical Implementation Notes
 
-**Cron jobs to create:**
-- `slack:morning-brief` — Daily 3:45 AM UTC (9:15 AM IST)
-- `slack:evening-debrief` — Daily 1:00 PM UTC (6:30 PM IST)
+**Cron jobs (v4.1 — actual implementation):**
+- `slack:morning-brief` — Daily 3:45 AM UTC (9:15 AM IST) — unified brief (Slack + email + commitments)
+- `slack:evening-debrief` — Daily 1:00 PM UTC (6:30 PM IST) — includes G3 auto-delegation detection + G4 intensity formatting
+- `slack:meeting-prep-jit` — Every 30 min, Mon-Fri 8:30 AM – 5:30 PM IST — JIT per-meeting prep (upgraded from batch)
 - `slack:weekly-roundup` — Friday 12:00 PM UTC (5:30 PM IST)
-- `slack:channel-health` — 1st of month 4:30 AM UTC (10:00 AM IST)
-- Meeting prep: single batch cron at 9:00 AM IST weekdays, all qualifying meetings in one Telegram message
+- `slack:monthly-channel-health` — 1st of month 4:30 AM UTC (10:00 AM IST)
+- `slack:intensity-check` — Sunday 11:30 PM IST — calendar scan → sets week's intensity level
+- `people:activity-logger` — Every 30 min — per-person Slack activity data collection
 
 **Slack API usage:**
 - `conversations.history` — read channel messages
-- `conversations.list` — enumerate channels
-- `users.info` — profile lookup
+- `conversations.list` — enumerate all joined channels (353)
+- `users.info` — profile lookup (+ pre-cached 154-user lookup table in `slack-user-cache.json`)
+- `users.list` — bulk user enumeration for cache population
 - `search.messages` — workspace-wide keyword search
-- `reactions.add` — 👀 on tracked items
+- `reactions.add` — 👀 on tracked delegation/commitment items
 - `chat.postMessage` — DM responses (allowlisted channels only)
+
+**Scan infrastructure:**
+- `slack-scan-threads.py` — Full 353-channel scanner with 10 concurrent workers (~63 seconds). Supports `--all` (every joined channel), `--threads tier1` (expand threads in Tier 1 only), configurable time window.
+- `slack-scan-all.sh` — Quick 89-channel scan (T1+T2+T3 key) for heartbeat alert detection. Sequential, <60s.
+- `slack-full-scan.sh` — Wrapper that calls `slack-scan-threads.py --all --threads tier1`. Used by all cron deliverables.
+- `slack-resolve-users.py` — Pipes scan output through 154-user name cache. Falls back to `users.info` API for unknown IDs.
+- `slack-read-channel.sh` — Single-channel reader via bot token + curl. Used by activity logger and DM relay.
+- `slack-intensity-check.sh` — Calendar scan → meeting count → intensity level (Light/Normal/Heavy/Extreme).
+- `slack-people-baseline.sh` / `.py` — People baseline calibration (activity + channels per DR/co-founder).
+- `slack-search.sh` — Workspace-wide keyword search via bot token.
+- Bot join/leave messages are filtered from all scan output (SKIP_SUBTYPES).
 
 **Data flow:**
 ```
-Slack channels (353) → Tiered scan (~80 Tier 1+2 channels deep, rest keyword scan) → Analysis → Compression → Telegram DM to HMT
-                                                     ↓
-                                              memory/delegations.md (tracker state)
-                                              memory/slack-baselines.json (people norms)
-                                              memory/slack-digest-state.json (last scan timestamps)
+Slack channels (353) → Full scan (10 workers, ~63s) → User resolution (154 cache) → Analysis → Telegram DM
+                                            ↓
+                              memory/delegations.md (delegation tracker)
+                              memory/people-baseline.md (per-person norms)
+                              memory/people-activity-log.jsonl (30-min granular timeseries)
+                              memory/slack-digest-state.json (last scan timestamps per digest)
+                              memory/slack-intensity.json (weekly intensity level)
+                              memory/slack-channel-map.json (88 key channels + 353 total, tier structure)
+                              memory/channel-activity-baseline.md (dormant channel detection)
+                              memory/meeting-prep-state.json (dedup tracker for JIT prep)
+                              memory/feedback-tracker.md (brief/alert quality scoring)
+                              memory/slack-user-cache.json (154 Slack users → real names)
+                              memory/commitments.md (open commitments for morning brief)
 ```
 
 **Model considerations:**
 - Morning/evening briefs: isolated cron sessions with agentTurn
-- Meeting prep: spawned sub-agents triggered by calendar
+- Meeting prep: isolated cron (JIT every 30 min), checks calendar internally, deduplicates via state file
 - Real-time alerts: handled in main session during heartbeats + incoming messages
-- Weekly/monthly: isolated cron sessions (longer analysis)
+- Weekly/monthly: isolated cron sessions (longer analysis, 600s timeout)
+- Activity logger: isolated cron every 30 min (silent, no delivery)
 
 ---
 
@@ -580,4 +648,6 @@ Slack channels (353) → Tiered scan (~80 Tier 1+2 channels deep, rest keyword s
 
 ---
 
-*PRD approved by HMT on 2026-02-17. Ready to build.*
+*PRD v4.0 approved by HMT on 2026-02-17. Built and deployed Feb 17-18.*
+*v4.1 updated Feb 18 to document implementation additions (activity logger, feedback tracking, unified morning brief, personal engagement prompts, scan infrastructure, dormant channel alerts).*
+*Status: Live in production. 3 time-gated items remaining (monthly health Mar 1, people enrichment Mar 3, decision latency baseline Mar 3).*

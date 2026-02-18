@@ -254,8 +254,9 @@
 ---
 
 ### Harshit Singh
-- **Role:** Cross-pod member (Engagement + Activation), STAGE
+- **Role:** Cross-pod member (Engagement + Activation), STAGE — secondary data contact for HuMT
 - **Email:** harshit.singh@stage.in
+- **Go-to for:** Data context queries (after Hemabh). Hemabh > Harshit (seniority).
 - **Relationship to HMT:** 12 meetings/14d — one of HMT's most frequent meeting partners. Attends both Engagement Pod Discussion (MWF) and Activation Catchup (2x/week). Key cross-functional connector.
 - **Added:** 2026-02-16
 
@@ -364,8 +365,11 @@
 - **Added:** 2026-02-16
 
 ### Hemabh Kamboj
-- **Role:** Data/Analytics, STAGE
+- **Role:** Data/Analytics, STAGE (SENIOR — primary data contact for HuMT)
+- **Slack ID:** U089APN985P
 - **Focus:** Renewal analysis, ClickHouse, data pipelines
+- **Go-to for:** All data context queries, schema questions, pipeline status. Hemabh > Harshit (seniority).
+- **Contacted:** 2026-02-18 — asked about PG transactions, ad spend, web→app tracking pipeline gaps
 - **Added:** 2026-02-16
 
 ### Kashish Thakur

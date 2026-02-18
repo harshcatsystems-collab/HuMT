@@ -112,11 +112,11 @@
 
 | # | Item | Depends On | Description |
 |---|------|-----------|-------------|
-| 5.1 | STAGE systems access | Phase 4 | Dashboards, analytics, internal tools |
-| 5.2 | Team coordination | Phase 4 | Internal comms, approvals, status tracking across teams |
-| 5.3 | Content/creator workflows | Phase 4 | Creator management, content pipeline visibility |
-| 5.4 | Mobile node | — | OpenClaw on HMT's phone — always-on access |
-| 5.5 | Multi-agent | — | Specialized sub-agents for different functions |
+| 5.1 | STAGE systems access — Snowflake data warehouse | 🔧 60% (Steps 1-3 done, Step 4 in progress via sub-agent, Step 5 tomorrow) | Connected, 72 tables profiled, 14/19 whiteboard metrics mapped, data model being built with Hemabh |
+| 5.2 | Team coordination | 🔜 Not scoped yet | Approvals, status tracking across teams |
+| 5.3 | Content/creator workflows | ⏳ Slack-derived tracker DONE, CMS API pending (Ashish + Harshit) | Content pipeline visibility |
+| 5.4 | Mobile node | ⏸️ Parked — iOS app not on App Store yet | OpenClaw on HMT's phone |
+| 5.5 | Multi-agent | ⏸️ Parked — no immediate use case | Specialized sub-agents per function |
 
 ---
 
@@ -145,4 +145,4 @@
 
 ---
 
-*Last updated: 2026-02-16 20:35 IST*
+*Last updated: 2026-02-18 12:44 UTC — Phases 1-4 complete, Phase 5 at 60% (Steps 1-3 done, Step 4 building, Step 5 tomorrow).*

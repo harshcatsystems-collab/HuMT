@@ -791,6 +791,7 @@ May 14, 2010 — Vinay Singhal and Shashank Vaishnav (juniors at SRM) launched t
 ### From Interactions (2026-02-16 — Deep Working Session)
 
 **Trust & Reliability**
+- **Holds to account without escalating** — accountability follows a gradient, not a cliff. "you're very shaky man!" (Feb 16) → "just holding you accountable" (Feb 18) → "thanks for understanding this" (Feb 18). He expects commitments to be kept. When they're not, he calls it out calmly. When accountability is taken without excuses, he acknowledges it warmly. Deflection or rationalization would break trust; owning it rebuilds it. (confirmed: Feb 16, Feb 18 ×2)
 - **Values reliability over speed** — "you're very shaky man! I am not convinced anymore" — trust erodes fast when I carry stale info
 - **Asks "are you sure?" as a genuine question** — not rhetorical. He actually wants me to think before confirming.
 - **Source of truth matters deeply** — corrected me twice on FY25 revenue source (MIS, not business model projections). Won't let a wrong number slide.

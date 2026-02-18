@@ -1,0 +1,893 @@
+
+=== #acquisition-pod (10 msgs) ===
+  [Feb 13 15:23] Shubham Singla: _1-Day vs 7-Day Trial — Preliminary Analysis_
+• _Key takeaways:_1-day plan has slightly lower TR but higher subscription rate — net new subscribers per 100 paywall views is _6.4% higher_ (8.83 vs 8.30)
+• D0 renewal rate is more or less 1-day: 37.1_0% vs 38.20%_ — and post-renewal cancellation is nea [4 replies]
+  [Feb 16 19:23] Nikhil Nair: <@U0A3B4GLZRS> as discussed with you, trying to build some intelligence layer on top of marketing data available on snowflake. PFB the report it has created and adding my takeaways from it
+Date range for "now" is last 3 days, and date range for "Before" is 3 days before that.
+
+*Campaigns that have s [7 replies]
+  [Feb 16 21:35] Shubham Singla: <@U0A3B4GLZRS> last time also we discussed about the ASO &amp; what we can do about that, one of agency reached out for this, they have clients like Nykaa, Dream11, MMT. If we're not working with Auburn, let's review them &amp; start working on this P-1 item? Attaching the proposal they shared.
+  [Feb 17 11:23] Shubham Singla: <@U0A3B4GLZRS> what's the CAC for web users (If we don't include Randeep Campaign), just need a ballpark, is it still less than App or not ?
+  [Feb 17 13:47] Shubham Singla: 17th Feb:
+• app installs make it work for web / Make them consume on web
+• randeep assets static - that tells what's stage - <@UEK09GX7G> <@U0A3B4GLZRS> 
+• default landing sa - <@U09AK8X90Q0> / <@U0A4BA697BL> 
+• money deduction in 1 day - <@U08HTBH8MFA> / Product 
+• Daily Async on important tasks -  [1 replies]
+  [Feb 17 16:14] Shubham Singla: On going things from my side (17th Feb):
+
+• Brainstorming on what to do for the users who don't take trial &amp; paywall iterations roadmap 
+• As a part of re-acq roadmap, defined cohorts for CLM and worked upon sending PN to users who were cancelling trial to make them resume trial, current notific
+  [Feb 17 16:59] Jagriti Raman: Special access automation action points:
+1. find the hook point 
+2. sit w neeraj for the high clips 
+3. connect with sunil for the poster gen tool and create API to feed the same in CMS w Aashish
+4. create algo to automate these tasks
+ [3 replies]
+  [Feb 17 18:57] Jagriti Raman: Ongoing things on Feb 17th:
+• Automation of special access 
+    ◦ discussed and saw the dashboard for the high clips creation and integration  This is not currently working well. will sit w <@U09LM6696F2> to see how can this be done
+    ◦ discussed the workflow intgreation in CMS. Discussed on the r
+  [Feb 17 20:08] Vinay Singhal: <https://x.com/i/status/2023460005182058541|https://x.com/i/status/2023460005182058541>
+
+<@U0A4BA697BL> <@U08L99D58PK> <@U09AK8X90Q0> [3 replies]
+  [Feb 17 23:37] Amit Kumar: This is great - I’ve already created a BMAD workflow for this. For anyone who wants to use it, I’m attaching the files.
+  --- Thread (parent Feb 17 20:08) ---
+    [Feb 17 23:37] Amit Kumar: This is great - I’ve already created a BMAD workflow for this. For anyone who wants to use it, I’m attaching the files.
+    [Feb 18 10:58] Shubham Singla: + <@U08KBHHV9J4> please try what Amit have shared above.
+    [Feb 18 10:58] Nikhil Nair: + <@U08KBHHV9J4> <@U0A51N5SYRH>
+  --- Thread (parent Feb 17 16:59) ---
+    [Feb 17 18:47] Jagriti Raman: Finding out the hook point form metabase dashboard, parallely:
+• discussed and saw the dashboard for the high clips creation and integration with <@U02NX6HD7AS>. This is not currently working well. will sit w <@U09LM6696F2> to see how can this be done
+• w <@U04A980D1N3> discuss the workflow intgreat
+    [Feb 17 19:14] Vinay Singhal: <@UEK09GX7G> works with them, just talk to him.
+    [Feb 17 22:55] Kunal Kumrawat: Hi <@U0A4BA697BL>, we can connect with PolarCut tomorrow, let me know whenever you're available.
+  --- Thread (parent Feb 17 13:47) ---
+    [Feb 17 22:54] Kunal Kumrawat: <https://docs.google.com/spreadsheets/d/1ynEeClGikBsyXjac6Rg4zjhNRmIj-zmgqdxIo-xxaCw/edit?usp=sharing|Randeep updated statics>
+  --- Thread (parent Feb 16 19:23) ---
+    [Feb 16 19:24] Nikhil Nair: As next steps I will be working on stitching product side attribution, what product changes have resulted in what metric shift, similar to what campaign changes have resulted to what metric shift but for product side interventions
+    [Feb 16 19:26] Nikhil Nair: <https://docs.google.com/document/d/1to9PJLH4oN_Wq6IXCQf6cQ5ACO5VnqV6Oz2I4oTyjv4/edit?usp=sharing|This> is the doc created - please let me know what you think about it overall. I am not close to the day on day operations so this is a bit from an outsider perspective or view, please excuse anything t
+    [Feb 16 19:31] Nikhil Nair: Table 2 and table 4 are most actionable in my understanding <@U0A3B4GLZRS>
+    [Feb 17 12:06] Hemabh Kamboj: <@U08L99D58PK> looks good, just confirmation, can you ask it to give all the queries used in the analysis?
+    [Feb 17 12:07] Hemabh Kamboj: also, trials are down funnel to signups, not absolute trials that day
+    [Feb 17 19:14] Nikhil Nair: <@U0A3B4GLZRS> ran this for today and it says 31 campaigns are descaled today that were doing well across last 4 days and 6 campaigns are doing even better so can be scaled further.
+Sending here in case relevant, let me know what you think once you get to see it?
+    [Feb 17 19:17] Nikhil Nair: <@U089APN985P> PFB the query used
+
+```WITH
+ -- Get hours elapsed today for scaling
+ time_scale AS (
+   SELECT
+     GREATEST(DATEDIFF('hour', DATE_TRUNC('day', CURRENT_TIMESTAMP()), CURRENT_TIMESTAMP()), 1) as hours_today,
+     24.0 / GREATEST(DATEDIFF('hour', DATE_TRUNC('day', CURRENT_TIMESTAMP()), 
+  --- Thread (parent Feb 13 15:23) ---
+    [Feb 13 17:28] Nikhil Nair: Looks like while SR is higher for 1 day plan, RR is higher for 7 day plan. Depending on which plan has higher net addition at sub+renewal level, we should just close the other plan in my opinion.
+    [Feb 13 17:30] Vinay Singhal: Instead of just percentage, can you share the absolute numbers also pls
+    [Feb 13 17:33] Shubham Singla: This is on an avg day trial of 1,860 for 1 day plan vs  11,665 trials for 7 days.
+
+Approx ~15% scale of 1 day plan id
+    [Feb 13 17:35] Vinay Singhal: Seems like we should scale 1 day plan further and see if the funnels hold.
+
+=== #bhojpuri_stage (5 msgs) ===
+  [Feb 12 18:02] Bikram Singh: *MOM (Project: _Jaan Legi Sonam_ – Promo Shoot Planning)*
+
+*`1. Meeting Objective`*
+
+To plan and align on the *Promo Shoot Strategy* for _Jaan Legi Sonam_, including:
+• Character-driven promos
+• Conflict-based dramatic promos
+• CTA strategy
+• Festival integration
+• Budget alignment &amp; execution r [1 replies]
+  [Feb 13 10:50] Sneha Singh: *`Samarpan / समर्पण |  - Feature Film | Testing`*
+Testing Live Date : 13th Feb. [6 replies]
+  [Feb 17 10:48] Sneha Singh: *`Hamar Gattu | हमार गट्टू  :  Short Film`*
+Live Date : 19th Feb. [2 replies]
+  [Feb 17 11:07] Sneha Singh: <!channel>
+Please find attached the Release Calender for *March 2026*
+• Focused Original Title : *Madhumati - Feature Film Ft. Amrapali Dubey.*
+  [Feb 17 12:51] Sneha Singh: *`Madhumati | मधुमती   :  Feature Film`*
+Live Date : 12th March [5 replies]
+
+=== #credit_card_invoices (6 msgs) ===
+  [Feb 13 11:44] SAURABH SUMAN: Investor Meeting Lunch Approval..13th feb [1 replies]
+  [Feb 16 13:35] SAURABH SUMAN: Approval attached for the Goodies Order done from Amazon for Artist - Gaurav Pandit . [1 replies]
+  [Feb 17 14:55] SAURABH SUMAN: <@U068F2RS5PV> - Need to pay the Airtel ILL Quarterly Bill . Please approve. Bill attached . [3 replies]
+  [Feb 17 16:39] SAURABH SUMAN: <@U07FXP4MKDY> -  We ordered Juices for the Board meeting Rs 2963 on 30th Jan 2026. [1 replies]
+  [Feb 17 17:00] SAURABH SUMAN: <@U05HAE85RL2> <@U07FXP4MKDY> - We have done the payment of Rs 33,031.74 for the 1 GBPS 7 Airtel Broadband connections on 28th Jan 2026 [2 replies]
+  [Feb 17 17:41] HuMT: <@U0AE6043BB6> has joined the channel
+
+=== #culture-productising (11 msgs) ===
+  [Feb 12 14:06] Parveen Singhal: <@UEJV57HQW> has joined the channel
+  [Feb 12 14:06] Pravesh Rajput: <@U03CN38BV7U> has joined the channel
+  [Feb 12 14:06] Nishita Banerjee: <@U07R906K9K5> has joined the channel
+  [Feb 12 14:06] Ashish Meena: <@U0A0S22RN4Q> has joined the channel
+  [Feb 12 14:06] Vinay Singhal: <@UEHET2Q2G> has joined the channel
+  [Feb 12 14:06] Kamal Singh Chauhan: <@U09LM6696F2> has joined the channel
+  [Feb 12 14:06] HMT: <@U05QMQHCVNY> has joined the channel
+  [Feb 12 14:06] Shashank Vaishnav: <@UE0KTBS8P> has joined the channel
+  [Feb 12 14:08] Parveen Singhal: Hi <@U03CN38BV7U>,
+You can refer to this document to build deeper context around the subject.
+For *Task 1*, let’s start by creating a strong framework on how to think about _culture_ when remaking a film — specifically, identifying which elements need to change and how they should evolve in a remake [2 replies]
+  [Feb 12 14:12] Parveen Singhal: Build a team for this project <@U03CN38BV7U>
+  [Feb 17 17:24] HuMT: <@U0AE6043BB6> has joined the channel
+  --- Thread (parent Feb 12 14:08) ---
+    [Feb 12 14:08] Parveen Singhal: <https://docs.google.com/document/d/1dfHSiBByFeZSQ1_SGbNlg2LNT0LOUD6_JPFM24L_gBs/edit?usp=drive_link>
+    [Feb 12 14:08] Parveen Singhal: CC <@U07R906K9K5>
+
+=== #engagement-solver-team (5 msgs) ===
+  [Feb 17 13:28] Manasvi Dobhal: :dart::dart::dart: *Continue Watching* notification test results:
+
+*Phase 1 Timeline -* Early Jan 2026
+*Experiment Setup -* Test 3 groups:
+1. Send CW notif. after 1 hour of no watch event _no further reminders were shared_
+2. Send CW notif. after 1 day of watch inactivity; Send top 3 most recent ite [3 replies]
+  [Feb 17 13:29] Vishnu TS: <@U09QGG6HLG0> has joined the channel
+  [Feb 17 17:23] HuMT: <@U0AE6043BB6> has joined the channel
+  [Feb 18 12:02] Manasvi Dobhal: <@U07LFSB0PM5> <@U0719V1GX3Q> - bumping this. 
+Also, we will be calling it to all users today. 
+  [Feb 18 12:15] Mofidul Islam: <@U039VC42JAF> has joined the channel
+  --- Thread (parent Feb 17 13:28) ---
+    [Feb 18 12:02] Manasvi Dobhal: <@U07LFSB0PM5> <@U0719V1GX3Q> - bumping this. 
+Also, we will be calling it to all users today. 
+    [Feb 18 12:15] Pranay Merchant: Aligned. <@U07LFSB0PM5> do let know if we can test Manasvi's hypothesis and send only a few focused notifications to 10-20% of test group?
+
+Additionally, <@U08MRHK61BK> -- <@U039VC42JAF> is working on rich notifications. Let's incorporate that in the next round.
+    [Feb 18 12:17] Manasvi Dobhal: Ya, we will set up a meet on this. 
+
+=== #finance-department (7 msgs) ===
+  [Feb 12 17:15] Rahul Chauhan: <@UE0KTBS8P> <@UEHET2Q2G> <@U05QMQHCVNY> Please approve the below payments.
+  [Feb 13 16:11] Rahul Chauhan: <@U05QMQHCVNY> <@UEHET2Q2G> <@UE0KTBS8P> Please approve the below payments. [1 replies]
+  [Feb 14 11:13] Saloni Goyal: Hi <@UEHET2Q2G> <@UE0KTBS8P> <@U05QMQHCVNY> please approve the above payments. It includes the payment of the theater for the screening tomorrow. 
+  [Feb 16 16:08] Saloni Goyal: Hi <@UEHET2Q2G> <@UE0KTBS8P> <@U05QMQHCVNY> Please approve the attach payments. [2 replies]
+  [Feb 16 21:10] Saloni Goyal: HI <@UEHET2Q2G> <@U05QMQHCVNY> <@UE0KTBS8P> Please approve. FB limit is very high.
+  [Feb 17 15:58] Saloni Goyal: Hi <@UEHET2Q2G> <@UE0KTBS8P> <@U05QMQHCVNY> Please approve the attach payments. [1 replies]
+  [Feb 17 17:31] HuMT: <@U0AE6043BB6> has joined the channel
+
+=== #founders_sync (1 msgs) ===
+  [Feb 17 17:44] HuMT: <@U0AE6043BB6> has joined the group
+
+=== #growth-pod (56 msgs) ===
+  [Feb 11 14:59] Shubham Singla: Hi team, I'm ordering pizza for the team, let me know what you want
+<!here> [7 replies]
+  [Feb 11 15:43] Jagriti Raman: Anybody else facing/have faced Figma MCP tool call limit?
+  [Feb 11 18:04] Aaliya Mirza: <@U09HZD8085S> Please change the onboarding top contents for BH to :
+1. Jholachaap
+2. Videshi Bahu
+3. Saanwari
+4. Prem Nagar
+5. Jaan Legi Sonam
+6. Sabka Baap Angutha Chaap
+7. Raaz
+cc <@U08L99D58PK> <@U08HTBH8MFA> 
+  [Feb 11 18:05] Aaliya Mirza: <@U09AK8X90Q0> <@U0A4BA697BL> We are again changing our onboarding contents to the top performing contents as consumption numbers have dropped almost 40-50% when showed other related contents.
+cc <@U08L99D58PK>
+
+  [Feb 11 20:37] Shubham Singla: 
+  [Feb 11 21:30] Shantanu Chatterjee: Team - working from home tomorrow to manage <https://stagedotin.slack.com/archives/C03C4QAPABU/p1770825512776219?thread_ts=1770741171.544179&amp;cid=C03C4QAPABU|this>. Back once I can move like a normal person again. [1 replies]
+  [Feb 12 09:08] Ishant Sehrawat: Deploying webview changes on web
+cc: <@U08HTBH8MFA> <@UDYTZ0NBS> <@U09AK8X90Q0> <@U08UCNVRKR7>
+  [Feb 12 09:18] Vipul Sharma: Need to go to my realitve's place in faridabad for some medical urgency at their place. Available on call
+  [Feb 12 09:34] Lukesh Kolhe: Reaching In 10 mins
+  [Feb 12 11:19] Shubham Singla: <@U09HZD8085S> is working on interantional payments task, any other task will be picked by him after that
+  [Feb 12 13:40] Shubham Singla: :bar_chart: 1-Day vs 7-Day Trial Plan Analysis
+
+We did a preliminary analysis comparing our 1-day trial plan (`trial-exp-nov-1-199`) vs the 7-day trial plan (`trial-monthly-07-199-aug2025`). Key findings:
+
+1. Trial Rate (TR)
+• 7-day plan: 26.70% | 1-day plan: 25.90%
+• 1-day plan has slightly lower T [8 replies]
+  [Feb 12 15:29] Shivansh Rastogi: Hi team, 
+AFK for sometime. Need to take my mother for a doctor’s appointment. Available on call in case of anything urgent.
+  [Feb 12 16:01] Shubham Singla: <!channel> will start spring planning 4:15 [1 replies]
+  [Feb 12 16:18] Shantanu Chatterjee: <@U09AK8X90Q0> cant hear you guys on the call
+  [Feb 12 16:44] Shubham Singla: In 20 mins :partyparrot:
+  [Feb 12 17:22] Sakshi Sharma: 
+  [Feb 12 18:16] Shantanu Chatterjee: Hi team - here is the PRD for the Breadth-first monetisation experiments walkthrough we just did.
+Note - please don't get too attached to the absolute numbers and details for constructs, but try to understand the offering first, to form a view of the architecture. Keep in mind that things like durat [2 replies]
+  [Feb 12 18:47] Shantanu Chatterjee: also attaching today's presentation - good warmup before you dive into the details
+  [Feb 12 18:56] Deepak Kumar Yadav: <@U0A9FJ8SR2R> has joined the channel
+  [Feb 13 07:39] Radhika Vijay: Team,
+Working from home to wrap up tasks in hand.
+
+  [Feb 13 09:29] Naman Rao: Reaching at 9.40
+  [Feb 13 10:20] Saurav Dutta: Landscape Watchpage Consumption is now live on web!
+CC: <@U08HTBH8MFA> <@U09AK8X90Q0> <@U0A4BA697BL>
+  [Feb 13 10:46] Shantanu Chatterjee: Team - we will do another walkthrough to address clarifications in the flow and experiment structure for this. Setting this up for 2:30.
+<@U08HTBH8MFA> -- added relevant folks, please add anyone who I may have missed. Let's close this.
+fyi <@U08L99D58PK>
+___
+Walkthrough 2 &lt;&gt; Breadth-First Mone
+  [Feb 13 13:05] Shubham Singla: <@U09AU76EHEE> <@U09JSL09GKF> is there a possibility where if a user comes directly via "randeep" plan id on paywall, but got exp assigned "hammer-crack", then the plan id that it'll carry would be "hammer-crack"?
+  [Feb 13 13:11] Ishant Sehrawat: No, we override plan id
+  [Feb 13 18:08] Shubham Singla: <@U09G0SABZ4P> in one tap login feature, 20% of users are not getting login_succesfull event, can you please check, other wise if we include one tap login success &amp; login succesfull together, login rate is 98%: <https://app.amplitude.com/analytics/STAGEAPP/chart/9ywukk3g?linkingDashboardId=z1nz0 [1 replies]
+  [Feb 16 08:28] Sakshi Sharma: Hi team,
+Running late will reach around 10. Will try to attend the standup remotely
+  [Feb 16 09:29] Akhilesh kumar: Reaching by 9:40
+  [Feb 16 09:52] Vipul Sharma: <@U09JSL09GKF> <@U08UCNVRKR7> Naman is deploying changes for stripe. Ek baar flow chala kar dekh lo [21 replies]
+  [Feb 16 11:37] Nikhil Nair: Hey <@U089APN985P>, any update here?
+  [Feb 16 11:37] Nikhil Nair: <@U089APN985P> any update here?
+  [Feb 16 12:01] Aaliya Mirza: <@UDYTZ0NBS> can you help with testing of paywall id : subscription-aha-user-51-1-199-1
+I also need it's deeplink which can be shared with CLM team for sharing it with users.
+cc <@U08HTBH8MFA> <@U08L99D58PK> [13 replies]
+  [Feb 16 12:11] Shubham Singla: <https://drive.google.com/drive/folders/1o8q62W4QnFEXdblCVJqF7Mr0l1FONtVU>
+<@U09HZD8085S> <@U08HTBH8MFA> can you pls update this plan id for "trial-exp-nov-1-199" paywalll [6 replies]
+  [Feb 16 12:18] Jagriti Raman: <@U089APN985P> can you please share the content sparkline dashboard link? [1 replies]
+  [Feb 16 12:48] Naman Rao: guys, I am not feeling well, body is paining and unable to sit for long, I have cleared all the blockers, I will look if anyone have any blocker after some time, till then I need some rest. Thanks for understanding.
+  [Feb 16 15:09] Aaliya Mirza: <@U09HZD8085S> <@U09G0SABZ4P> I have created the chatbots, please use these assets and activate chatbot for :
+1. Jaan Legi Sonam
+2. Bhairawi
+3. Doojvar
+cc <@U08L99D58PK> <@U08HTBH8MFA> [10 replies]
+  [Feb 17 09:19] Lukesh Kolhe: Running late, will reach by 9:45 [1 replies]
+  [Feb 17 09:39] Sakshi Sharma: Stuck in traffic from the last 15 mins near Amity. :)
+  [Feb 17 09:46] Ishant Sehrawat: Hi team, I’m running late
+Will reach office by 9:30
+  [Feb 17 10:59] Ishant Sehrawat: <@U08HTBH8MFA> <@U09AK8X90Q0> <@U09JSL09GKF>
+
+*Web Context:* While the hint itself is native to Android, it is used on websites (within webviews or for progressive web apps) that want to facilitate phone-based login without manual input.
+
+not available for websites, can use on PWA
+  [Feb 17 11:20] Shubham Singla: Getting NA in UTM source 90% of the cases - <@U08HTBH8MFA> [2 replies]
+  [Feb 17 11:24] Yash Khare: <@U0AF4KAJHDL> has joined the channel
+  [Feb 17 14:19] Sakshi Sharma: <@U08KBHHV9J4> Please share monetization designs [1 replies]
+  [Feb 17 14:26] Radhika Vijay: <https://www.figma.com/design/rNE2qljzr2aOM3ZVrlpDNw/Growth-%7C-Final-Delivery?node-id=19224-36273&amp;t=plyXV9NNOZpwbf87-1>
+  [Feb 17 15:38] Nikhil Nair: <@U09HZD8085S> which character chatbots are live and which ones are in pipeline to go live? cc: <@U0A51N5SYRH>
+  [Feb 17 15:53] Aaliya Mirza: <@U08L99D58PK> These 9 title's chatbots are live
+1. Saanwari
+2. Jholachaap
+3. Videshi Bahu
+4. Punarjanm
+5. Psycho Girlfriend 
+6. Crorepati Biwi ka Raaz
+7. Bhairawi 
+8. Jaan Legi Sonam
+9. Doojvar 
+  [Feb 17 15:54] Aaliya Mirza: <@U08L99D58PK> These 8 are in pipeline and will be live by tonight or tomorrow :
+1. Kayantar
+2. Mokhna Vahini
+3. Chakka Jaam
+4. Kalabazari
+5. 12vi wala Pyaar
+6. College Kaand
+7. Bad Boys Bhiwani
+8. Bewafa Darling
+  [Feb 17 15:57] Shubham Singla: <@U08HTBH8MFA> <@U09HZD8085S> <@U039SEJGKNZ> <@U08UCNVRKR7> <@U09JSL09GKF> just to be on the same page, for international payments, we're selling trial first &amp; then subscription which we discussed and was communicated too. Initial trial will be free as we've seen it on iOS app. Same goes for mwe [13 replies]
+  [Feb 17 16:26] Ishant Sehrawat: <@U09AK8X90Q0> there will be a slight delay in deployments due to technical issues
+I'll deploy new payment success page by midnight
+cc: <@U08HTBH8MFA>
+  [Feb 17 17:32] HuMT: <@U0AE6043BB6> has joined the channel
+  [Feb 17 17:35] Saurav Dutta: <@U09AK8X90Q0>
+
+Special Access flow from Content Detail page is now live for Web!
+
+CC: <@U08HTBH8MFA> [1 replies]
+  [Feb 17 17:55] Shubham Singla: *One idea for users who don't take trial, what do you folks think about this?* 
+
+*Spin the Wheel + Lucky Draw: Why and How*
+*The problem we're solving:* 60% of paywall viewers see it 2+ times. Their Conversion drops from 31.8% on the first view to 16.9% on the second. By the third view, it's 14%. Th [1 replies]
+  [Feb 17 19:19] Lukesh Kolhe: <@U09AK8X90Q0> <@U08HTBH8MFA> international android subscription paywall [1 replies]
+  [Feb 18 10:04] Shantanu Chatterjee: Gentle reminder 
+<https://stagedotin.slack.com/archives/C03C4QAPABU/p1771254090786479|https://stagedotin.slack.com/archives/C03C4QAPABU/p1771254090786479>
+  [Feb 18 10:05] Sakshi Sharma: <@U089APN985P> block kar diya deeplink received? [1 replies]
+  [Feb 18 12:18] Sakshi Sharma: *Root Cause: utm_source == NA spike*
+
+The spike in *utm_source = NA* started after the "d1 retained user event implementation". *App version 4.61.0*
+UTM params are received from the attribution SDK and saved correctly (e.g., utm_source, utm_campaign, utm_medium). After this, the deeplink goes throug
+  --- Thread (parent Feb 18 10:05) ---
+    [Feb 18 10:25] Hemabh Kamboj: yes mam,
+kaafi time se blocked hai
+  --- Thread (parent Feb 17 19:19) ---
+    [Feb 17 19:21] Vipul Sharma: Change image
+Change text
+<@U08UCNVRKR7> Discuss timer with <@U08QCRJM1PA>
+  --- Thread (parent Feb 17 17:55) ---
+    [Feb 17 19:23] Nikhil Nair: Why give home theatre, why not something like "get a chance to act in a movie" or is there a better way to incentivise the user?
+
+But beyond that, we should be careful of incentivising trials based on material things and how we incentivise should be a scalable way that incentivises the right actions
+  --- Thread (parent Feb 17 17:35) ---
+    [Feb 18 12:42] Shubham Singla: <https://app.amplitude.com/analytics/STAGEAPP/chart/new/zgysuul8>
+
+<@U09JSL09GKF> pls check, even if a user clicks on watch now, paywall is show to the user.
+  --- Thread (parent Feb 17 15:57) ---
+    [Feb 17 17:23] Saurav Dutta: • Currently trial plan changes are pending as the flow is only made for subscription and we need assets and plans for trial international users. This will have to be developed and tested once. 
+• isUpgrade flow has not been tested as well due to backend issues with generating the checkout URL.
+CC: <
+    [Feb 17 18:20] Shubham Singla: So, we would be needing below assets:
+• Paywall assets for trial as well as subscription
+    ◦ In trial we can show 7 day free trial (As we're refunding the amount back)
+• For subscription we need to show the amount on which we're showing (This is for trial expired users) - How do we keep this dynam
+    [Feb 17 22:58] Lukesh Kolhe: home page and settings page banner
+    [Feb 18 09:46] Lukesh Kolhe: 
+    [Feb 18 09:49] Shubham Singla: <@U08KBHHV9J4> is this design fine to go woth for internaitonal users? pls let us know asap
+    [Feb 18 09:51] Saurav Dutta: This is how it currently looks for web
+
+CC: <@U09AK8X90Q0> <@U08HTBH8MFA> <@U08KBHHV9J4>
+    [Feb 18 10:11] Radhika Vijay: <@U09AK8X90Q0>
+Overall, this looks fine if we want to go live for the experiment.
+
+A few updates needed:
+• Either remove the timer or shift it to the header.
+• Show the strikethrough price if a discount is being displayed.
+• CTA design isn’t aligned with our design system.
+    [Feb 18 11:06] Shubham Singla: ok whatever you suggest pls provide a design for the same
+    [Feb 18 11:10] Lukesh Kolhe: <@U09AK8X90Q0> home page and settings page subscription banner?
+    [Feb 18 11:19] Shubham Singla: For trial
+    [Feb 18 11:32] Shubham Singla: 
+    [Feb 18 11:40] Lukesh Kolhe: <@U09HZD8085S>
+    [Feb 18 12:52] Lukesh Kolhe: 
+  --- Thread (parent Feb 17 14:19) ---
+    [Feb 17 14:26] Radhika Vijay: <https://www.figma.com/design/rNE2qljzr2aOM3ZVrlpDNw/Growth-%7C-Final-Delivery?node-id=19224-36273&amp;t=plyXV9NNOZpwbf87-1>
+  --- Thread (parent Feb 17 11:20) ---
+    [Feb 17 11:20] Shubham Singla: <https://app.amplitude.com/analytics/STAGEAPP/chart/gzknnjv3/edit/dpzpn6ax>
+    [Feb 17 14:26] Vipul Sharma: <@U039SEJGKNZ> ye dekh le
+  --- Thread (parent Feb 17 09:19) ---
+    [Feb 17 10:04] Vipul Sharma: did you mean 10:45?
+  --- Thread (parent Feb 16 15:09) ---
+    [Feb 16 17:49] Ishant Sehrawat: Isn't the chat bubble pointing in opposite directions
+    [Feb 16 19:33] Nikhil Nair: <@U08KBHHV9J4> you wanted to update these right? Can you share updated ones when possible?
+    [Feb 16 19:44] Aaliya Mirza: <@U08L99D58PK> Naman has made these live as of now. <@U08KBHHV9J4> If you are sharing new ones please share in gif format only as that's the only supported format.
+    [Feb 16 23:04] Radhika Vijay: <@U08L99D58PK>
+Updated these
+
+<@U0A51N5SYRH> GIF only make sense if we have multiple characters here.
+    [Feb 17 10:26] Aaliya Mirza: It's going to be static only but format has to be gif. <@U09HZD8085S> can help in updating.
+    [Feb 17 10:33] Radhika Vijay: I think we should make this scalable to support all formats - GIF, MP4, and images, rather than converting statics to GIF
+<@U09G0SABZ4P>, how much effort would this require?
+    [Feb 17 11:15] Nikhil Nair: While <@U0A51N5SYRH> <@U09G0SABZ4P> figure out supporting formats, lets not delay uploading and making it live for these titles?
+    [Feb 17 11:17] Nikhil Nair: <@U08KBHHV9J4> for bhairavi, I liked the real character face better, can we keep the same so we can see diff in CTR for animated character face vs human character face?
+    [Feb 17 11:20] Radhika Vijay: 
+    [Feb 17 11:58] Radhika Vijay: <@U0AF4KAJHDL> here
+  --- Thread (parent Feb 16 12:18) ---
+    [Feb 16 12:47] Deepak Kumar Yadav: Hi <@U0A4BA697BL>
+Do you require this dashboard :- <https://stage.metabaseapp.com/question/14594-content-sparkline-minute-by-minute-distinct-users?content_dialect=&amp;show_slug=&amp;event_at=&amp;content_slug=>
+  --- Thread (parent Feb 16 12:11) ---
+    [Feb 16 12:21] Naman Rao: same video for both eng and hin?
+    [Feb 16 12:22] Shubham Singla: yes
+    [Feb 16 12:23] Naman Rao: Ok updating
+    [Feb 16 12:34] Naman Rao: done
+    [Feb 16 12:43] Naman Rao: home page banner also done, PR shared with <@U08HTBH8MFA>
+    [Feb 17 15:58] Shubham Singla: is this live <@U08HTBH8MFA> <@U09HZD8085S>?
+  --- Thread (parent Feb 16 12:01) ---
+    [Feb 16 12:07] Sakshi Sharma: Subscription plan id can't be assigned using deeplink.
+This need to added in the statsig experiment
+for trial -expired users <https://console.statsig.com/wejIIcCj5iZh7VjTJ3X2w/experiments/expired_users_subscription_plan_experiment/results>
+for tnpl false user <https://console.statsig.com/wejIIcCj5iZ
+    [Feb 16 12:12] Aaliya Mirza: <@U08QCRJM1PA> can you please help in adding this plan id and assigning it to a particular user list(I will share the user-id file).
+    [Feb 16 12:28] Aaliya Mirza: <@U08QCRJM1PA> we have to assign experiment to these users. <https://docs.google.com/spreadsheets/d/18_c1gLywfh2x3wDldoIgO3ExeK73NkFWc24DotCyWvg/edit?usp=sharing>
+    [Feb 16 12:38] Sakshi Sharma: Get a GTG from testing first
+    [Feb 16 12:55] Aaliya Mirza: <@UDYTZ0NBS> please update us once the testing is done.
+    [Feb 16 14:25] Aaliya Mirza: <@U039SEJGKNZ> can you help in assigning this plan id to these users. As, Its not possible to assign it via statsig.
+cc <@U08HTBH8MFA>
+    [Feb 16 15:57] Yash Verma: Is it okay if we do this tomorrow or is this something urgent <@U0A51N5SYRH>?
+    [Feb 16 15:57] Yash Verma: We will do it via statsig itslef and override these userid with subscription-aha-user-51-1-199-1 plan id
+    [Feb 16 16:17] Vipul Sharma: this has been done
+    [Feb 16 16:32] Aaliya Mirza: <@U08HTBH8MFA> can i inform retention team so they can send CLM notification ?
+    [Feb 16 16:33] Vipul Sharma: need to verify this once <@U0A51N5SYRH>, get it done by someone in QA team and let me know
+    [Feb 16 16:35] Sakshi Sharma: <@UDYTZ0NBS> <https://console.statsig.com/wejIIcCj5iZh7VjTJ3X2w/experiments/expired_users_subscription_plan_experiment/results> Please assign any trial expired user the aha users plan id and verify subscription-aha-user-51-1-199-1
+    [Feb 16 16:39] Aaliya Mirza: <@UDYTZ0NBS> please let me know once testing is done.
+  --- Thread (parent Feb 16 09:52) ---
+    [Feb 16 09:56] Lukesh Kolhe: <@U09HZD8085S> Share the endpoint for nest
+    [Feb 16 10:10] Naman Rao: Same endpoints hai
+    [Feb 16 11:15] Lukesh Kolhe: Api giving invalid payment gateway
+```curl --location '<https://international-payment.dev.stage.in/v23/recurring-payments/recurringSubscriptionStatus?isJuspayUser=true&amp;currentPgName=none&amp;os=android&amp;platform=app&amp;lang=hin&amp;dialect=raj&amp;isRecurringSubscriptionBuild=true&amp;isTria
+    [Feb 16 11:28] Shubham Singla: <@U08HTBH8MFA> how are we going to show price on paywall for international, as it keeps changing, do we have capability to show the same?
+    [Feb 16 11:29] Saurav Dutta: Getting this error
+
+CurL: curl '<https://international-payment-nest.dev.stage.in/nest/stripe/checkout/session>' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-GB,en;q=0.9' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWNjZXNzIiwicklkIjoiYzkwZGRkN2ItODdmNS00MGJhLTg
+    [Feb 16 11:30] Saurav Dutta: CC: <@UDYTZ0NBS>
+    [Feb 16 11:33] Naman Rao: <@U08UCNVRKR7> jo curl tumne bheji hai usme enpoint express ka h and automate branch nest ki
+    [Feb 16 11:35] Lukesh Kolhe: ```<https://international-payment.dev.stage.in/v23/recurring-payments/recurringSubscriptionStatus>```
+
+    [Feb 16 11:35] Lukesh Kolhe: ye nest thodi hai
+    [Feb 16 11:36] Naman Rao: baseurl preprod ka he use kro
+    [Feb 16 11:37] Naman Rao: express ke liye
+    [Feb 16 11:51] Shubham Singla: Use these for home paghe images <@U09HZD8085S> for android
+    [Feb 16 11:54] Naman Rao: <@U08UCNVRKR7> this api is for juspay, razorpay, paytm and phonepe, that why it is giving invalid PG name error
+    [Feb 16 11:54] Naman Rao: <@U09JSL09GKF> you can test it now
+    [Feb 16 11:58] Saurav Dutta: testing
+    [Feb 16 11:59] Lukesh Kolhe: <https://stagedotin.slack.com/archives/C080EJU9873/p1771223080785939?thread_ts=1771215729.350239&amp;cid=C080EJU9873>
+what do i need to do then?
+    [Feb 16 11:59] Naman Rao: <@U09AK8X90Q0> for all android plans?
+    [Feb 16 12:00] Shubham Singla: international
+    [Feb 16 12:00] Naman Rao: okk
+    [Feb 16 12:18] Lukesh Kolhe: <@U09HZD8085S> check this API, '/v20/subscription/getUserSubscriptionStatus': it is giving subscription status as 0.
+```curl --location '<https://international-payment.dev.stage.in/v20/subscription/getUserSubscriptionStatus?lang=en&amp;dialect=raj&amp;deviceId=81b953d1182b49f8&amp;isRenew=false&amp;
+    [Feb 16 15:35] Saurav Dutta: <@U09HZD8085S> Need these to be fixed from the backend for i18n
+
+• Paywall text wrong (Mentions 399 in the plan details)
+• Showing “Subscribe to annual_399” on the Checkout page. (Also Catchup Technologies Pvt Ltd)
+Also some notes for future additions:
+• Currently planId is hardcoded for non logged 
+  --- Thread (parent Feb 13 18:08) ---
+    [Feb 13 18:10] Akhilesh kumar: Will check <@U09AK8X90Q0> 
+  --- Thread (parent Feb 12 18:16) ---
+    [Feb 12 18:47] Shantanu Chatterjee: also attaching today's presentation - good warmup before you dive into the details
+    [Feb 13 10:46] Shantanu Chatterjee: Team - we will do another walkthrough to address clarifications in the flow and experiment structure for this. Setting this up for 2:30.
+<@U08HTBH8MFA> -- added relevant folks, please add anyone who I may have missed. Let's close this.
+fyi <@U08L99D58PK>
+___
+Walkthrough 2 &lt;&gt; Breadth-First Mone
+
+=== #haryanvi_stage (1 msgs) ===
+  [Feb 14 17:01] Vipan Malawat: Guys, small request.
+Before releasing any content on social media for the first time, please get it QC checked once by the content team.
+So we can cross-check whether the exact shot and exact look match the film.
+I don’t know about other projects.
+But for Vaada, I know the visuals properly.
+This is  [11 replies]
+
+=== #marketing (1 msgs) ===
+  [Feb 18 10:33] Bittu: :dart: *50 Performance Marketing Thought Leaders — Actionable Insights for STAGE*
+
+Deep analysis of the top 50 ad creative &amp; performance marketing thought leaders active on Twitter/X (Feb 2026). Scraped their recent content and distilled into actionable takeaways.
+
+*Top 5 immediate wins:*
+1. *AI
+
+=== #monetisation (2 msgs) ===
+  [Feb 13 11:36] Shantanu Chatterjee: *Monetisation Pod Updates* 
+• P0 = Breadth First Monetisation Experiments
+    ◦ Designs done for TVOD flows - <https://www.figma.com/design/6iqrBbJjOP9XKk12D4pDzf/Growth-x-Claude?node-id=0-1&amp;p=f&amp;t=vLjPxpn5xJ1LjIkH-0|Figma link>
+    ◦ Engineering estimations and sizings - WIP - one detailed w
+  [Feb 17 17:48] HuMT: <@U0AE6043BB6> has joined the channel
+
+=== #product-growth (3 msgs) ===
+  [Feb 11 19:01] Rohit Deshmukh: Amplitude also seem to have introduced AI led diaganosis [1 replies]
+  [Feb 12 15:31] Nikhil Nair: <@U09AK8X90Q0> <@U0A4BA697BL> <@U0A51N5SYRH> <@U0A232U4Z70> <@U0A3B4GLZRS> I have created a google form survey integration inside our app and am looking for ideas on what info do we want to capture from what cohort of users, accordingly will move ahead on this task. Please send in your ideas by toda [8 replies]
+  [Feb 17 15:36] Shubham Singla: :rotating_light: Payment Flow Update: UPI ID Entry Limitation
+
+Per recent NPCI guidelines, we can no longer allow direct UPI ID entry on our platform (From 28th Feb). Key updates:
+
+• Current Issue: Users cannot manually enter UPI ID for mandate creation
+• Existing Payment Options: PhonePe, Paytm etc
+  --- Thread (parent Feb 12 15:31) ---
+    [Feb 12 15:39] Shubham Singla: Would want to understand, why a user who initiates a payment, and clearly see they've to pay but still didn't complete transaction, like they clicked on PHP bcs they know they've to pay, but still didn't complete. 60% drops-off there
+    [Feb 12 15:40] Shubham Singla: 40%*
+    [Feb 12 15:41] Aaliya Mirza: 1. We can also include cohorts of trial users who don't take subscription. What are the reasons they don't want to convert, friction points in journey &amp; perception about content or pricing.
+2. And Users who are cancelling on D0 what's their reason of cancelling so early and why they are deciding
+    [Feb 12 15:57] Akshay: People who have watched the second content is an important cohort to differentiate between users who came to watch one content and then left (seeing its ad or trailer). Maybe we can ask these users what was their perception of the app and its offerings and what made them cancel the trial
+    [Feb 12 16:02] Nishita Banerjee: 1. Cohort- Users who have downloaded the application and watched one content they have been acquired from. 
+• reasons to understand why did they not explore other offerings in the application. 
+2. Cohort - Users who review the application on Play store after downloading the application (is it someth
+    [Feb 12 17:08] Jagriti Raman: 8% of high-intent users who've signed-up (do put effort to verify mobile number), drops off from the trial  paywall page. Understand the reason for such cohorts.
+    [Feb 13 11:30] Nikhil Nair: Hi guys, thank you so much for the responses, really appreciate it :pray::skin-tone-4:
+
+For now, going ahead with payment failures and D0 cancellations for the v1. Will take up the remaining use cases after putting this into production. Will keep this thread updated.
+    [Feb 13 11:47] Shantanu Chatterjee: apologies for the delay <@U08L99D58PK>
+
+parking a few things that have come up while thinking about problems that exist currently
+
+*Cohort -* Started Trial → Did Not Convert to Paid:
+
+Answers We Need
+
+*Price-Value Mismatch ("What do I actually get?")*
+• Whether the trial content felt representative 
+  --- Thread (parent Feb 11 19:01) ---
+    [Feb 12 11:05] Kunal Kumrawat: I have been using it, it is very good in a lot of specs.
+
+=== #productgrowth-hiring (2 msgs) ===
+  [Feb 11 13:59] Nikhil Nair: <@U08HXUP5U3D> Yash is aligned to join on 23 and what about the guy who was joining this week? [3 replies]
+  [Feb 17 17:51] HuMT: <@U0AE6043BB6> has joined the channel
+
+=== #promo-team (10 msgs) ===
+  [Feb 11 18:06] sonu kumar: Hi <@U09CFGN5TRU> <@U083W1PQXKP> <@U08JF7050AK>
+Requirement: We need ₹199 pricing message assets for the Sanwari show across all cultures. Please pick the assets that have already performed well. 10 assets Each culture.
+<@UEK09GX7G> [8 replies]
+  [Feb 12 07:34] Parveen Singhal: <https://www.linkedin.com/feed/update/urn:li:activity:7427265825474224128/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAA8GUGQBv1H-FI9Iw7_lSKQP3zNa8iq576Q|https://www.linkedin.com/feed/update/urn:li:activity:7427265825474224128/?utm_source=[…]m=member_desktop&amp;rcm=ACoAAA8GUGQBv1H-F [5 replies]
+  [Feb 12 15:06] Kunal Kumrawat: <@U083W1PQXKP> <@U08JF7050AK> <@U09CFGN5TRU> - we need to deliver promos with Rs. 199 CTAs of winning assets from these shows in each market.
+
+Please priortise this from Monday onwards.
+Delivery needs start from Tuesday, 17 February 2026.
+
+cc: <!subteam^S0A828D2LLS> [3 replies]
+  [Feb 13 11:15] Shubham Singla: <@UEK09GX7G> on subscription paywall we tried 2-3 variants, in this the one with Santa performed best, it's somewhat ~15% better than Valentine video on the same amount &amp; plan, for further festival wide paywall videos, let's built on same communication &amp; theme for as we did for Santa. [4 replies]
+  [Feb 13 18:00] Kunal Kumrawat: Hi team, please share *total unique promo creatives delivered in this week in each market.* cc: <@U083W1PQXKP> <@U08JF7050AK> <@U09CFGN5TRU> [7 replies]
+  [Feb 13 18:59] Nikhil Gupta: <https://drive.google.com/drive/folders/1o8q62W4QnFEXdblCVJqF7Mr0l1FONtVU|RANDEEP 1Rupaye me 1 Din> <@U09AK8X90Q0> <@U08JF7050AK> <@UEK09GX7G> [3 replies]
+  [Feb 17 12:45] Kunal Kumrawat: HI <!channel>,
+
+*Team, today’s EoD delivery alignment* :point_down:
+
+We’re targeting *44 ads today*.
+
+• *<@U09CTERRYGK>:* 10 Micro-drama ads
+_Husband on Sale_ (Haryanvi)
+_Crorepati Biwi Ka Raaz_ (Haryanvi)
+
+• *<@U09CFGN5TRU> [Agency]:* 10 Micro-drama ads
+_Naagin Ka Badla_ (Haryanvi)
+
+• *<@U089MA16V1 [23 replies]
+  [Feb 17 12:56] Mohit Kumar: <https://drive.google.com/open?id=1amiHggupKfSivCIsHRVjLnXYiEzNvlEW&amp;usp=drive_copy|BH_Saanwari_CTA> all versions.
+Please check <@U09FGKVMS81> <@U07BGHYQKE1>
+  [Feb 17 16:41] Harsh Chaudhary: <@UEK09GX7G> sharing *<https://docs.google.com/spreadsheets/d/1PiMwGpjsYgmtMpsdBLJMtTG_kziVDWO5vmD9GYVBYEI/edit?gid=1422988962#gid=1422988962|list of users>* who won last sunday's tambola, *<https://drive.google.com/drive/folders/1FWMuMfkeDviIrfR4UOPylxO-FFmERUt9|along with their photographs>*. Let'
+  [Feb 18 11:13] Parveen Singhal: <@UEK09GX7G> can you share today’s creative delivery plan, same like yesterday’s? [4 replies]
+
+=== #rajasthani_stage (8 msgs) ===
+  [Feb 11 14:44] Vaibhav Goyal: *`MOM_RJ CAC Solver_11.02.2026`*
+
+• Placement wise report of Google
+• IR percentage of Bhairavi, identify SR of Kayantar
+• Saanwari subscription campaign initiation
+• Creative Variations required for Major shows. Heavy testing or experimentation required
+• Identify hooks of best performing Bhairavi  [6 replies]
+  [Feb 12 10:51] Renu Rana: <!channel> - Suggestion
+Since Holi is on March 4, we should record *PHAAG* music songs in advance that we can use for social media. We can shoot them either outdoors or in a studio setup. Faag music works very well in Rajasthan, and these reels have strong potential to go viral.
+We should consider r [2 replies]
+  [Feb 13 15:32] Manpreet Singh: `YRF | Micro Drama | 14 Feb` [2 replies]
+  [Feb 16 11:33] Priyanka Gupta: <!channel>
+
+Sharing the March release plan. Please align and plan the dubbed content accordingly, if not already scheduled.
+*Release Details:*
+• *Kumbha* and *Naate* will be launched across all dialects in March.
+• *Kumbha* is strategically planned around the popularity of the Khatushyamji Mela.
+• * [2 replies]
+  [Feb 17 16:07] Priyanka Gupta: *Naate | 18th Feb*
+
+Hi <!channel> our another very high potential content Naate we are taking the film live tomorrow. 
+
+<@U07TQ7P64SK> <@U07Q1LJMR7B> <@U08DLCSK7QS> <@U087PM5QFBJ> <@U085SNRK2JD> <@U0A4V6M3BT5> <@U099E81PQ7J> <@U08JF7050AK>
+
+Cc <@U06H0VARP97>  [13 replies]
+  [Feb 17 16:17] Manpreet Singh: `Bhomiya` [6 replies]
+  [Feb 17 19:50] Priyanka Gupta: Hi, Jhalko team is going to shoot in Bhavari Devi’s village tmro or day after. Pls let me know if there is any requirement from promo team. There is a WA group with Jhalko in that Ankit is added. <@U08JF7050AK> let me know as Kunal had mentioned our team would like to go and further shoot. 
+  [Feb 18 11:17] Priyanka Gupta: Naate script <@U08JF7050AK>
+
+=== #release-cycle (2 msgs) ===
+  [Feb 13 12:40] Naman Girdhaar: Hi Team
+Kumbha is Pre-Released on STAGE RJ Censor board for testing and its LIVE for Given Cohort users.
+Have added you guys in users and the content will be visible to you also, please have a look
+Thanks.
+slug - `kumbha-raj`
+<@UEJV57HQW> <@U06H0VARP97> <@U082Q7F56F8> <@U07Q1LJMR7B>
+  [Feb 17 17:54] HuMT: <@U0AE6043BB6> has joined the channel
+
+=== #retention (3 msgs) ===
+  [Feb 12 12:14] Kashish Thakur: Hi <@U0A3B4GLZRS>,
+From tomorrow onwards, we will be using *AppsFlyer as the primary source for daily reporting and campaign performance tracking* for *ReEngagement Campaigns* instead of Amplitude.
+The reason is simple: our campaign objectives are *App Opened* and *Consumption Started*, and both the
+  [Feb 16 12:21] Rohit Deshmukh: `update on the Outbound AI Calls`
+
+Hi Team,
+
+We have implemented Bulbuls 3 (latest Sarvam Voice model) in our voice AI also have fixed the reported issues, sharing a couple of interactions of the calls for App installs.
+
+PS : It is not 100% perfect but we can reach there in few iterations
+
+cc: <@U0A
+  [Feb 18 12:57] Vismit Bansal: <@U0A3B4GLZRS> <@U08L99D58PK>
+ Post the start of web acquisition, we’ve observed a sharp increase in 0 min watchers. This issue has now begun impacting the M0 base as well. Over the past week, the share of subscribers who did not watch any content during their trial period has risen to *~35%*, compa
+
+=== #retention-_-creative (14 msgs) ===
+  [Feb 11 15:47] Mohit Kumar: <https://drive.google.com/open?id=1R8MKqjkDCXUzZDaqMEpcryA7Frxcd2lX&amp;usp=drive_copy|BH_Video_PunarjanamJKP_Manik1stPromoWatchNow_52s>
+<https://drive.google.com/open?id=18IetJXfEPpz7Vhhp3qkcekHub96j174l&amp;usp=drive_copy|BH_Video_PunarjanamJKP_Manik2ndPromoWatchNow_25s>
+<https://drive.google.com/
+  [Feb 11 15:52] Mohit Kumar: <https://drive.google.com/open?id=1ysi5p2D4b5anR-cj1OGqUtbLqZOBgLaW&amp;usp=drive_copy|BH_Video_JaanLegiSonam_Manik1stUGCAdWatchNow_1m9s>
+<https://drive.google.com/open?id=1GF9-RkhV1HcUFphbgVwOD3QqUuVtAWUp&amp;usp=drive_copy|BH_Video_JaanLegiSonam_Manik2ndUGCAdWatchNow_43s>
+<https://drive.google.com
+  [Feb 11 16:15] Himanshu Gupta: <https://drive.google.com/open?id=17EfF_8E8LSfBqT-yAlvTR8TPOi_BxiNy&amp;usp=drive_copy|BH_Video_JholaChhap_HG1stSocialValidationWN_49s>
+<https://drive.google.com/open?id=1x5DO0bvzGof5zY1qyzT9NH64iR4G2x-i&amp;usp=drive_copy|BH_Video_JholaChhap_HG4thSocialValidationWN_1m>
+<https://drive.google.com/ope
+  [Feb 11 16:32] Jogender Singh: <https://drive.google.com/open?id=16nPEsioQHx2pCoMB6xskTtPPQ3hrj-mS&amp;usp=drive_copy|BH_GMG_RetCreative's>
+<@U07Q1LJMR7B> <@U09APNQ00LU>
+  [Feb 11 19:44] Mohit Kumar: <https://drive.google.com/open?id=14kGU4ZtsLEpCYaNuMUCE4REOfDzlgVPY&amp;usp=drive_copy|BH_Video_JaanLegiSonam_Manik4thJPYadavShowWatchNow_25s>
+<https://drive.google.com/open?id=15a0_oZFdy2KOFqz_eAb8qETIXyJN2mKq&amp;usp=drive_copy|BH_Video_JaanLegiSonam_Manik5thJPYadavPromoWatchNow_25s>
+<https://driv
+  [Feb 12 12:20] Jogender Singh: <https://drive.google.com/open?id=1wVDFQWkQ9WBZeslwdFFi1T3HwLordBQZ&amp;usp=drive_copy|BH_Mere Bholenaath_RetCreative>
+<@U07Q1LJMR7B> <@U09APNQ00LU>
+  [Feb 12 13:57] Himanshu Gupta: <https://drive.google.com/open?id=10Ab-vi_QIZdYarHAfZjd8QhF4bj-fyc2&amp;usp=drive_copy|BH_Video_HGSaanwari_KinnarKahaniWN_24s>
+<https://drive.google.com/open?id=1FF8F5dJiDEvsoN9a4UKAg7DSV5OJObh3&amp;usp=drive_copy|BH_Video_HGSaanwari_Screen1WN_37s>
+<https://drive.google.com/open?id=1ur22bUGQRSI56Ek0
+  [Feb 13 11:03] Jogender Singh: <https://drive.google.com/open?id=1l5qaGvzdDdDsJwKB2kDqDo2IUSnJ0YYW&amp;usp=drive_copy|BH_Static_Samarpan_TestingRetCreative>
+<@U07Q1LJMR7B> <@U09APNQ00LU>
+  [Feb 13 14:17] Mohit Kumar: `BH Creatives: 13 Feb 2026`
+
+<https://drive.google.com/open?id=1_4_cbCTCyK3kag7bTHbOworjCz3ZvBHc&amp;usp=drive_copy|BH_Video_JaanLegiSonam_Manik1stJhajiCrewdoWN_29s>
+<https://drive.google.com/open?id=1SozhYW6tFewNZo3rGsPj7TJbySe3My4M&amp;usp=drive_copy|BH_Video_JaanLegiSonam_Manik4thJhajiCrewdoWN_20
+  [Feb 13 15:26] Neeraj Kumar: *HR_Chidibaaz_Trailer_Ad*
+*HR_Chidibaaz_Ad_1*
+*HR_Chidibaaz_Ad_2*
+*HR_Chidibaaz_Ad_3*
+*HR_Chidibaaz_Ad_4* 
+
+*Added <@U08DLCSK7QS>* *<@U087PM5QFBJ>* *<@U06M9123QJC>* 
+  [Feb 13 15:30] Manpreet Singh: <https://drive.google.com/open?id=1zyW__MFBPlurEmVMgLpDRwOOV5Kbhq2b&amp;usp=drive_copy|YRF_Static_Ads>
+<@U08DLCSK7QS>
+
+<https://drive.google.com/open?id=1i-zJAOuX4klJxInmWweUk8_o-BgMt64N&amp;usp=drive_copy|YRF_Set1>
+<@U07Q1LJMR7B> <@U082Q7F56F8>
+  [Feb 13 15:30] Himanshu Gupta: <https://drive.google.com/open?id=1qeCvEBQG-cwwnHJuPeV0LrbfI9y_7sfR&amp;usp=drive_copy|BH_Video_Jholachhap_HGPromoAd2WN_38s>
+<https://drive.google.com/open?id=1CXtSN-Gk2i8C0w43EGiVHkg6eg8oc089&amp;usp=drive_copy|BH_Video_Jholachhap_HGPromoAd9WN_28s>
+<https://drive.google.com/open?id=13EstrRrja58t3td
+  [Feb 13 15:51] Mohit Kumar: <https://drive.google.com/open?id=1CyufwX5JjF5e5O7t_P9_SIqZ-SD1cToS&amp;usp=drive_copy|BH_Video_JaanLegiSonam_Manik1stNeelamByteWN_30s>
+*Added in the sheet* <@U08DLCSK7QS> <@U087PM5QFBJ> <@U083W1PQXKP><@U09APNQ00LU>
+  [Feb 17 15:48] Jogender Singh: `Live On 19-Feb-2026`
+<https://drive.google.com/open?id=1Fg6MWX45ok_dMMGmJ2h8hVefURGIksU_&amp;usp=drive_copy|BH_HamarGattu_RetCreatives>
+<@U07Q1LJMR7B> <@U09APNQ00LU>
+
+=== #socials-team (5 msgs) ===
+  [Feb 12 10:54] Anisha: Hi <@U0A9AUKQ1B5>
+Please provide me a hardrive.
+This is discussed with <@UEK09GX7G> already. [1 replies]
+  [Feb 16 09:00] Kunal Kumrawat: Hi team, please share the weekly performance of social media in this thread. cc: <@U08QBSH99EK> <@U0779EHEUK1> <@U099E81PQ7J> [3 replies]
+  [Feb 17 17:56] HuMT: <@U0AE6043BB6> has joined the channel
+  [Feb 17 21:43] Vinay Singhal: *:iphone: 25 Top Thought Leaders: AI-Native Social Media Marketing (Active on Twitter/X)*
+
+*:brain: Social Media AI Strategists &amp; Educators*
+
+1. <https://x.com/kimgarst|Kim Garst> — Digital Futurist &amp; AI Marketing Expert — pioneering AI-driven social selling, personal branding &amp; social m
+  [Feb 17 21:43] Vinay Singhal: 25. <https://x.com/dennisyu|Dennis Yu> — CEO, BlitzMetrics — dollar-a-day social ads strategy + AI automation workflows for social at scale
+
+_:warning: Some handles may have changed — verify on x.com before outreach._
+
+=== #stage-ke-krantikaari (43 msgs) ===
+  [Feb 11 14:30] Pravesh Rajput: *`MOST IMPORTANT READ FOR EVERYONE`* <!channel>
+
+`Imagine Your Personal WhatsApp Chat`
+You assume it is private because:
+• It is password-protected
+• It is accessible only to selected people
+• It is not publicly searchable
+*Now imagine:*
+• Anyone with a link could read it
+• It appeared in Google sea
+  [Feb 11 15:42] Anisha: Hi <!channel>
+<https://youtu.be/1-MSnQRenJg?si=HYh58JiLgUfzAV8b>
+Jaan Legi Sonam X JP Yadav Episode is live Now.
+Please Like, Comment and Share :heart::rocket: [2 replies]
+  [Feb 12 02:22] Vinay Singhal: <https://x.com/i/status/2021453721843155414|https://x.com/i/status/2021453721843155414>
+
+@channel - recommend reading. :) [5 replies]
+  [Feb 12 10:23] Saloni Goyal: Hi @channel ,
+
+This is a gentle reminder regarding the reimbursement submission timeline as we approach the financial year-end closure.
+All *FY 2025–26 reimbursement claims* must be submitted on the portal *on or before 2nd April 2026*.
+Please note that any claims submitted after the above deadline 
+  [Feb 12 11:52] Nikhil Gupta: <@U0A9AUKQ1B5> please help
+Internet speed is slow 
+
+Cc <@U068F2RS5PV> [4 replies]
+  [Feb 12 12:02] Vinay Singhal: Saying this again, read this guys!
+  [Feb 12 12:32] Shubham Singla: I lost my charger (again), if anyone has it, please return :smiling_face_with_tear: [1 replies]
+  [Feb 12 14:12] Nisha Ali: Hi Team
+We have a Tata Tele representative in office today to help us resolve the ongoing internet issue. Please ping here if you face internet issue on STAGE OTT wi-fi
+  [Feb 12 14:50] Nisha Ali: We have the team from Airtel also here.  Please flag your internet issues. [1 replies]
+  [Feb 12 19:49] SAURABH SUMAN: Hello Team, <#CEHPZTVD3>
+
+Found one Watch . If this belongs to any one , Please reach out. [6 replies]
+  [Feb 13 11:52] Tarun Sahnan: Hi <@U0A9AUKQ1B5>, please help us with the slow internet.
+cc <@U068F2RS5PV> <@UEHET2Q2G> [4 replies]
+  [Feb 13 12:14] Akriti Kaushik: Hi <!channel>,
+
+Gentle Reminder- We have a meet &amp; greet with *Mr* *Kayar Raghavan* at 1.30 PM *(your calendars are pre-blocked).* 
+
+Please plan your lunch before or after the meet.
+  [Feb 13 12:18] Rajesh: <!channel> Hi, we're screening our new film "Chidibaaz" this Sunday, February 15th in Rohtak. Big stars from the Haryanvi film and music industry will be attending. There's also a surprise at this event: we'll be releasing our 2026 slate video, which will showcase how the stage is bringing in big na [3 replies]
+  [Feb 13 13:41] Akriti Kaushik: <https://meet.google.com/pxt-idec-ebs>
+
+Starting in a bit
+  [Feb 13 14:38] : Kamal Kumar's profile picture 🎉 *Happy Birthday Kamal Kumar!* 🎂
+Another year older, wiser, and cooler! 😎 [14 replies]
+  [Feb 13 14:50] Ishant Sehrawat: Hi team,
+I've created a series of doc for smooth onboarding on stage-webapp codebase using Claude, anyone struggling with setup, tools, errors, reasoning, or just interested to know how to develop something with webapp can have a look at it(TIP: you can even connect your claude account with atlassia
+  [Feb 13 14:51] Sahil Sharma: Hey <!channel> — does anyone here have a device running *Android Version 10 or 11* in Office?
+  [Feb 13 18:03] Kaustubh: <!channel> <@U08EGARFW5C> Please comment and support for part 2.... [6 replies]
+  [Feb 14 09:57] : Jyoti Kumari Jakhar's profile picture 🎉 *Happy Birthday Jyoti Kumari Jakhar!* 🎂
+Birthdays are nature’s way of telling us to eat more cake. 🍰 [9 replies]
+  [Feb 14 14:31] Saurav Dutta: <https://x.com/i/status/2022369210601730231|https://x.com/i/status/2022369210601730231>
+
+Event details: <https://luma.com/iz7ijdz1|https://luma.com/iz7ijdz1>
+  [Feb 14 20:00] anish: Hi <!channel>, who all are attending the India AI Summit? 
+
+If 
+Yes, Attending :heavy_plus_sign:
+Not :x: [3 replies]
+  [Feb 16 07:28] Vinay Singhal: <https://x.com/i/status/2023163914255806750|https://x.com/i/status/2023163914255806750>
+
+Recommend all to watch this but specially PMs :) <!subteam^S0A3Q34NLF5>
+  [Feb 16 08:52] Vinay Singhal: <https://x.com/i/status/2023236305002607008|https://x.com/i/status/2023236305002607008>
+
+Speaking at India AI summit today. JFYI @channel [2 replies]
+  [Feb 16 11:09] Nisha Ali: <!channel> If anyone needs to use the office over any weekend, please inform us in advance so we can make the necessary arrangements. Last-minute requests are difficult to accommodate and may not be approved.
+  [Feb 16 11:17] Vikram Singh: Hi *<@U0A9AUKQ1B5>*, I’m currently facing some connectivity issues which is a bit of a hurdle as I'm starting my first meeting of the week. Could you please look into this urgently? A stable connection is critical so we can ensure a smooth and professional presence in the meeting. Thanks for your he [3 replies]
+  [Feb 16 16:24] Sneha Singh: <!channel>
+Hi Team,
+We have *Priyanshu Singh*, an acclaimed Actor, Creator, and Director from the Bhojpuri industry, visiting us today.
+We will be *`having a Meet &amp; Greet session with him at 5 PM.`*
+His *mini-film _Hamar Gattu_* recently won an award at RIIF, and his upcoming projects *_Phaans_  [2 replies]
+  [Feb 16 17:06] Aditya Swaroop: Hi <@U0A9AUKQ1B5> ,
+Again someone have parked their car in front of slab and this happens multiple time.
+cc <@U068F2RS5PV>  [5 replies]
+  [Feb 16 17:21] Rajesh: <!channel> Hi, we have officially released our STAGE Slate 2026 video. Plz do watch share like and comment. Need your support.
+
+<https://youtu.be/n5s_m0mkXgA?si=BYhJp_gLQkQuExgi|https://youtu.be/n5s_m0mkXgA?si=BYhJp_gLQkQuExgi>
+  [Feb 16 17:21] Rajesh: <https://www.instagram.com/reel/DU0TUm9kjFL/?igsh=Y3B3aWMzZnpqdnFq|https://www.instagram.com/reel/DU0TUm9kjFL/?igsh=Y3B3aWMzZnpqdnFq>
+  [Feb 16 17:36] Kaustubh: <!channel> someone left their headphones in the bhojpuri room, ki dly take it.
+  [Feb 16 19:27] Dharmendra Singh: Somebody has left trolley bag at the reception... [2 replies]
+  [Feb 17 10:34] Vishwendra: Hi  <@U0AA6PFBT1T> 
+Can we please fix the recurring internet issue in office. There is no network and can't get to work properly, really disturbs the flow. Or please let us know which one wifi to connect to. Please please help! :pray::skin-tone-2: <@U068F2RS5PV> [9 replies]
+  [Feb 17 11:02] Nisha Ali: <!channel>
+Until we fully resolve the current internet issue, we need everyone’s support with the following:
+1. *Please do not connect your mobile phones to the STAGE OTT Wi-Fi.*
+ Use the *Airtel Wi-Fi* for mobile devices instead.
+2. *For any heavy downloads or uploads, please switch to Airtel Wi-Fi [1 replies]
+  [Feb 17 12:56] Nisha Ali: Harsh, as checked speed is 199 [26 replies]
+  [Feb 17 12:56] Nisha Ali: Mbps
+  [Feb 17 15:58] Ishant Sehrawat: Hi team,
+I'm working on movie generation platform with AI, hit me up if someone is interested to contribute in it.
+looking for alpha testers(users) as well
+
+I'll share the repo [9 replies]
+  [Feb 17 17:38] SAURABH SUMAN: Hello <!channel>
+
+A representative (Anurag) from *<https://share.google/Q9uSGy7h6WNGFGWAJ|TRIPPY TEQUILA CLUB>* is at the reception offering their club membership promotion.
+Membership offers are valid for 1 year. If anyone is interested,Please reach out to them at the Reception area .
+They are avai
+  [Feb 17 18:24] SAURABH SUMAN: <!channel>
+Dear Team,
+
+Previously, the *4-wheeler parking* space was allotted near the KOTAK office, which was at a considerable distance. To address this, a new parking space closer to the office has been assigned, effective *18 February 2026*.
+Details of the new parking location are provided below [3 replies]
+  [Feb 17 18:48] Haider Ali: Its from tomorrow? [1 replies]
+  [Feb 17 18:51] SAURABH SUMAN: Yes ..
+  [Feb 17 19:02] Shubham Singla: Hey team, we've rolled out a new trial plan:
+
+• 50% users get 1 Rs for 1-day trial
+• Other 50% get 1 Rs for 7-day trial
+
+When we ran the experiment for 1 day trial plan at 20%, initial data looks promising, seeing higher subscription conversion rates. Thus scaling further.
+
+<!channel> please note an [2 replies]
+  [Feb 17 19:23] SAURABH SUMAN: <!channel>
+Someone Left this - Please collect from HR / Admin . [1 replies]
+  [Feb 17 21:32] Vinay Singhal: <https://x.com/i/status/2023780725024321640|https://x.com/i/status/2023780725024321640>
+
+Claude Code on Figma. This changes so many things :) <@U08KBHHV9J4> <@U08UL9EHKKP> [4 replies]
+
+=== #stage-product-feedback-and-requests (4 msgs) ===
+  [Feb 12 14:03] Vishwendra: Hi team,
+Just wanted to share some thoughts I had while using the Creator platform. These are all highlighted and listed in the attached deck, hope this helps.
+
+cc <@U03CN38BV7U> [2 replies]
+  [Feb 12 20:46] Naman Girdhaar: Some issue on this page <!subteam^S06CC4EMSH2>  [16 replies]
+  [Feb 16 09:49] Abhishek Saini: Hi team Weekly Support Tickets Wrap-Up: Duration: 9th-Feb to 15th-Feb-26
+ CC <@U08L99DK9NV>
+  [Feb 18 11:51] Sakshi Sharma: Hi Team,
+Came accross this Instagram reel promo and wanted to share a few improvement points:
+• The creative is not aligned with the standard Reels 9:16 safe proportion.
+• The extra black screen/empty space around the video makes the reel look less polished and reduces its visual appeal.
+• The segme [8 replies]
+
+=== #stage_legal-and-finance (2 msgs) ===
+  [Feb 12 10:35] Lalit Sangwan: Hello Everyone,
+
+Please find below the latest *CS & Legal updates*:
+1. *Dematerialisation Status*
+111 shareholders have successfully converted their shares into demat form.
+
+2. *Pending FIRCs* Total pending FIRCs: *4*
+• SBI: *3*
+• Bank of Baroda: *1* (received)
+• PNB: *1* 
+3. *Adjudication Matter*
+T [1 replies]
+  [Feb 17 17:56] HuMT: <@U0AE6043BB6> has joined the channel
+  --- Thread (parent Feb 12 10:35) ---
+    [Feb 13 12:04] Vinay Singhal: <@U07GDMPCU3X> pls share the draft application as soon as this is received - will act on it.
+
+=== #team-devops (6 msgs) ===
+  [Feb 11 19:24] Rohit Singh: <@U08HTBH8MFA> stripe issue has been resolved , that was a basic key mismatch issue . cc <@U09HZD8085S>
+  [Feb 12 14:55] Hemabh Kamboj: <@U09AZ6SV9TL> can you add clickhouse VM's IP  in A name record? [3 replies]
+  [Feb 12 15:43] siddhant: <@U09AZ6SV9TL> [1 replies]
+  [Feb 12 16:26] Tarun Sahnan: Hi <@U09AZ6SV9TL>, please give Amplify Dev Webapp Admin access to <@U09AU76EHEE> <@U09JSL09GKF> <@U09CCLQ3P0U>
+  [Feb 18 10:09] Tarun Sahnan: Hi <@U09AZ6SV9TL>, need your help with hosting the Web Datadog AI agent as an AWS Lambda function. Could you please assist? [1 replies]
+  [Feb 18 10:47] Yash Verma: Hi <@U09AZ6SV9TL>,
+As discussed our new aws account is suspended due to high usage, please get that recovered first thing on priority once you are in office [1 replies]
+
+=== #tech-frontend (4 msgs) ===
+  [Feb 16 09:39] Tarun Sahnan: Hi <!subteam^S06S48K19V3>, I’m planning to build a bot that will monitor the *<#C0A99NA9S3T>* channel, automatically analyze the logs, post the analysis in the same thread, and create a PR if needed, essentially automating the full end-to-end process we currently follow after a web alert.
+Before I s [1 replies]
+  [Feb 17 11:03] Ishant Sehrawat: Hi <@U08Q3B6A770>, can you please pick this task as part of code clean up "Dialect Level changes - One Click New Dialect"
+ref: <https://stagedotin.atlassian.net/wiki/x/BICsI>
+
+cc: <@U08HTBH8MFA> <@U09AK8X90Q0> [1 replies]
+  [Feb 17 11:08] Tarun Sahnan: Hi <!subteam^S06S48K19V3>, since we’re now fully relying on automated PR reviews and no longer conducting manual reviews, I’m planning to remove the branch protection rule that requires at least one approval before merging into `main`.
+Will remove this check tomorrow. If anyone has any concerns, hap [4 replies]
+  [Feb 17 14:55] Aditya Swaroop: Hi <!subteam^S06S48K19V3>,
+What is your point of view on removing panto from code review after implementation of police bot? [1 replies]
+
+=== #tech-mates (15 msgs) ===
+  [Feb 11 17:59] Hemabh Kamboj: Hi folks
+Wanted to call out for 2 amazon vouchers for <@U09AZ6SV9TL>
+Rohit has helped us a lot in Rudderstack Migration and worked with first principle approach on managing a tool which was completely unknown to him !
+We are now confident on our deployment and ready to handle 5x scale.
+Thanks Rohit  [5 replies]
+  [Feb 12 10:48] Ishant Sehrawat: Hi <!subteam^S0A3Q34NLF5>, please go through this document, I've listed all the rendering techniques and why we can't experiment on pages that are performance critical
+<https://stagedotin.atlassian.net/wiki/x/AoBAJQ>
+
+cc: <@U08HTBH8MFA> <!subteam^S06S48K19V3> [3 replies]
+  [Feb 12 10:54] Mofidul Islam: Hi <@U0719V1GX3Q> <@U08L99D58PK>
+I’m pleased to share the product roadmap for the this quarter. This roadmap outlines our key strategic priorities and planned deliverables.
+Please take some time to review it and share any feedback or questions. We will be picking task from this  next sprint onwards
+ [2 replies]
+  [Feb 12 18:57] Vipul Sharma: <@U08KBHHV9J4> <@U08UL9EHKKP> look at hotstar's new homepage design
+  [Feb 13 08:03] Vinay Singhal: <https://x.com/i/status/2021668092250652930|https://x.com/i/status/2021668092250652930>
+
+<@U039VC42JAF>
+  [Feb 13 10:00] Tarun Sahnan: Hi Team, end-to-end and integration testing aren’t currently supported on Samsung TV, so for now let’s focus on writing unit test cases.
+cc <!subteam^S06C31TQP54> <@U08K1CXSHTJ> <@UEHET2Q2G>
+  [Feb 13 15:19] Siddhartha: :rocket: *Quality Milestone Achieved Web/Mweb.* 
+Hi Team :wave:
+Excited to share that our web app test suite has now grown to *1,105 test cases* :test_tube::sparkles:
+Having a stronger and larger test suite brings huge benefits:
+:white_check_mark: Better regression coverage &amp; early bug detection [6 replies]
+  [Feb 13 16:27] Siddhartha: :test_tube: *Unit Test Suite Implementation - Complete*
+
+  Hey team! I've completed implementing comprehensive unit tests for the Stage Native Tizen TV app. Here's the technical
+  breakdown:
+
+  :bar_chart: *Test Coverage Summary*
+  • *Total Tests:* 355 (100% passing :white_check_mark:)
+  • *Test Exe
+  [Feb 13 19:28] Gauri Prajapat: *Test cases for LG TV and Samsung TV have been fully automated across all major modules, ensuring stable releases and better user experience across both platforms.*
+cc: <@UEHET2Q2G> <@UE0KTBS8P> <@U07A91AB7GW> <@U09CCLQ3P0U> <!subteam^S06C31TQP54> [2 replies]
+  [Feb 13 22:09] Junaid Qureshi: :rocket: Automation Update – Android & TV Apps
+
+:iphone: Android Mobile App
+
+Test suite expanded from 180 → 822 test cases :tada:
+Now covering all major features with positive, negative & edge cases.
+
+Impact:
+:white_check_mark: Stronger regression coverage
+:white_check_mark: Early bug detection
+:whi [5 replies]
+  [Feb 14 00:11] Prakash Kumar: *E2E Backend Integration Test Status*
+<!subteam^S06C31MMV46> Successfully completed comprehensive end-to-end test automation for backend services, achieving 95% module coverage with 714+ automated tests. This initiative strengthens quality assurance infrastructure, reduces deployment risk, and estab [2 replies]
+  [Feb 16 17:28] Rohit Singh: *COST OPTIMIZATION UPDATE* :rocket:
+ *Implemented solution to reduce NAT Gateway data transfer costs*
+
+  Our aws resources  running in private subnets (EKS clusters) need to access S3 buckets (media files, backups,
+  configs). Until now, this traffic was taking the expensive path:
+
+  Pod → NAT Gatew [1 replies]
+  [Feb 17 12:40] Prakash Kumar: <!subteam^S06CC3ZMY4C> Please debug and fix social login issue on the internal beta build as it's not working.
+<@U08HTBH8MFA> <@U09LM6696F2> Cc [10 replies]
+  [Feb 18 08:21] Vinay Singhal: who is the admin for TailSacle account of STAGE? <!channel>
+  [Feb 18 09:51] Prakash Kumar: <!subteam^S06CC3ZMY4C> <!subteam^S06C31MMV46> <@U08K1CXSHTJ> <@U08TGV2B8TY><!subteam^S06S48K19V3> Please review the Sprint 63 items that are still in incorrect state under your name, and update them to the correct status on JIRA so we can close Sprint 63.
+Let me know if you’d need me to move all rem
+
+=== #tech-mobile (10 msgs) ===
+  [Feb 12 14:49] Lukesh Kolhe: <@U039VC42JAF> Please approve <https://github.com/vatsanatech/flutter_app/pull/4916>
+  [Feb 12 14:50] Shivansh Rastogi: <@U039VC42JAF> please approve <https://github.com/vatsanatech/flutter_app/pull/4913>
+This for the ancillary content. [3 replies]
+  [Feb 12 15:21] Mofidul Islam: <!subteam^S06CC3ZMY4C> updated Review Agent  ,
+  [Feb 13 15:22] Shivansh Rastogi: <@U039VC42JAF>, please approve <https://github.com/vatsanatech/flutter_app/pull/4923>
+PR for payment failed loader issue
+  [Feb 16 11:22] Mofidul Islam: Hey <!subteam^S06CC3ZMY4C>
+Lets Create Feature wise file for ExperimentationKeys and ExperimentNames to avoid conflict for new keys
+Like All Onboarding feature should have their own file
+  [Feb 16 18:10] Sakshi Sharma: Can we please go ahead and merge the *preprod websettings URL fix* branch?
+It’s becoming quite difficult to test whenever we try to change the language or log a user out, it redirects to the login page
+<@U039VC42JAF> [2 replies]
+  [Feb 17 10:40] Mofidul Islam: Most of new test written failing  <!subteam^S06CC3ZMY4C>
+  [Feb 17 15:28] Mofidul Islam: <https://github.com/vatsanatech/flutter_app/pull/4941>
+conflict <@U08QCRJM1PA> [1 replies]
+  [Feb 17 15:28] Mofidul Islam: Merging RC and QA done PR <!subteam^S06CC3ZMY4C>
+  [Feb 17 15:31] Sakshi Sharma: Resolved
+
+=== #user_activation (1 msgs) ===
+  [Feb 13 15:35] Aaliya Mirza: Hi Team,
+As discussed, we will be working on CLM activity for trial users. For implementing this successfully we need some help from data side <@U08B8QWDWR5> <@U0A5BMGA7UL> so that <@U07Q1LJMR7B> <@U085SNRK2JD> can setup the campaigns.
+Here's the CLM Activity Plan for your reference : <https://docs. [2 replies]
+  --- Thread (parent Feb 13 15:35) ---
+    [Feb 16 15:46] Prashant K Verma: Hi <@U0A51N5SYRH>, <@U08B8QWDWR5> I have marked the <https://docs.google.com/spreadsheets/d/1TBiyIiinopn0nY5IysmzmUK1VboBsmSkLM95t4C2l3k/edit?gid=0#gid=0|events> that are required for this project.
+
+<@U07Q1LJMR7B> Pls add any event which are left, in case. Also I have added content in WhatsApp Templ
+    [Feb 18 12:28] Aaliya Mirza: <@U08B8QWDWR5> Please take this up on priority and help in closing asap.
+cc <@U089APN985P> <@U08L99D58PK> 

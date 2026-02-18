@@ -1,0 +1,14 @@
+{
+  "_description": "Tracks last scan timestamps per digest type for delta-only scanning",
+  "lastScan": {
+    "morningBrief": null,
+    "eveningDebrief": null,
+    "weeklyRoundup": null,
+    "heartbeatAlert": null,
+    "monthlyHealth": null
+  },
+  "lastMeetingPrepDate": null,
+  "delegationsLastScanned": null,
+  "lastDmCheck": null,
+  "eveningDebrief": "2026-02-18T13:00:00Z"
+}

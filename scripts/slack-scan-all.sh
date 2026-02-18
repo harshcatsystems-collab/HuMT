@@ -22,9 +22,12 @@ read_channel() {
         echo "=== ${ch_name} (${ch_id}) — ${count} messages ==="
         echo "$result" | python3 -c "
 import json,sys,datetime
+SKIP_SUBTYPES = {'channel_join','channel_leave','channel_purpose','channel_topic','channel_name','channel_archive','channel_unarchive','bot_add','bot_remove','group_join','group_leave'}
 d=json.load(sys.stdin)
 if d.get('ok'):
     for m in reversed(d.get('messages',[])):
+        if m.get('subtype','') in SKIP_SUBTYPES:
+            continue
         ts = datetime.datetime.fromtimestamp(float(m.get('ts',0))).strftime('%H:%M')
         user = m.get('user','bot')
         text = m.get('text','').replace('\n',' ')[:200]
@@ -140,6 +143,16 @@ read_channel "C0810CKG1C1" "#bhojpuri_stage" 20
 read_channel "CS75DM3KQ" "#stage-product-feedback-and-requests" 20
 read_channel "C037H0GLYP4" "#marketing" 20
 read_channel "C047HLH7T26" "#promo-team" 20
+
+echo "━━━ TIER 2: OTHER ━━━"
+read_channel "C08E6782AKT" "#proj-onboarding" 20
+read_channel "C06L5FQL3GU" "#credit_card_invoices" 20
+read_channel "C08PGK8CM32" "#finance-department" 20
+read_channel "C08HKLHM7AN" "#founder-travel" 20
+read_channel "C07MZ6YVDPS" "#cre-engagement-campaign-rcs-wa" 20
+read_channel "C093EC443K5" "#socials-team" 20
+read_channel "C082STFKC5V" "#team-brand" 20
+read_channel "C08Q2MSCEB1" "#reel-format" 20
 
 echo "━━━ TIER 3: COMPANY PULSE ━━━"
 read_channel "CEHPZTVD3" "#stage-ke-krantikaari" 20

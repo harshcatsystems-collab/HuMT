@@ -14,6 +14,7 @@
 | A4 | People baseline enrichment (6 signals) — G5 | HuMT | 2026-02-17 | Mar 3 | ⏳ Blocked | Needs 2 weeks of data |
 | A5 | Samsung F2F delegation (D1) | Saurabh/Ashish | 2026-02-17 | — | ⏳ | Waiting on Ashish internal check |
 | A6 | Invite @humt to #growth-pod + #monetisation | HMT | 2026-02-17 | — | ⏳ | Private channels, needs HMT |
+| A7 | Snowflake data gaps → flag to Harshit Singh | HMT | 2026-02-18 | — | ⏳ Waiting | 3 gaps: ad spend pipeline (stops Jun'25), PG transactions (stops Aug'25), web→app install tracking. Track Harshit's response. |
 
 ## Completed
 
@@ -69,3 +70,15 @@
 ---
 
 *Last updated: 2026-02-17 14:50 UTC*
+
+| C-NEW | 2026-02-18 | HMT | Persona Map — cluster all 🧠 observations into behavioral patterns, create a structured persona map | HMT request | Parked | When sufficient data (~Mar 1 monthly review) |
+
+| C-NEW | 2026-02-18 | HMT | Mobile Node (Phase 5.4) — Install OpenClaw iOS app when officially released on App Store. Pair to gateway. Currently internal preview only. | HMT request | Parked | When iOS app hits App Store — check periodically |
+
+| C-NEW | 2026-02-18 | HMT | Multi-agent (Phase 5.5) — No immediate use case. Revisit when a natural need emerges (channel split, dedicated research agent, etc.) | HMT decision | Parked | When need arises organically |
+
+| C-NEW | 2026-02-18 | HuMT | Design audit fixes — apply HIGH severity findings from memory/design-audit-feb18.md (intensity mode, remaining doc updates) | Self | Active | ASAP |
+| C-NEW | 2026-02-18 | HuMT | Snowflake Step 5 — deep analysis: M0 non-watcher problem, D0 low-intent users, cohort retention, content ROI | Self | Active | Feb 19 |
+| C-NEW | 2026-02-18 | HuMT | Integrate Snowflake metrics into morning brief cron | Self | Active | Feb 19 |
+| C-UPD | 2026-02-18 | Ashish + Harshit | CMS API access for content pipeline | HMT request | Active | Awaiting reply |
+| C-UPD | 2026-02-18 | Hemabh | Snowflake data gaps — PG txns, ad spend freshness, web→app tracking | Slack DM | Active | Partially answered, follow up |

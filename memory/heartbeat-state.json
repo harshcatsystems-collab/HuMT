@@ -1,10 +1,1 @@
-{
-  "lastChecks": {
-    "email": 1771325580,
-    "calendar": 1739770380,
-    "weather": null,
-    "slackAlertScan": 1771325580,
-    "contextCapture": 1771325580
-  },
-  "lastCheckIST": "2026-02-17 18:50"
-}
+{"lastChecks":{"email":1771402200,"calendar":1771398000,"slackScan":1771408000,"weather":null,"dmRelay":1771408000}}
