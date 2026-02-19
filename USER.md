@@ -857,6 +857,28 @@ May 14, 2010 — Vinay Singhal and Shashank Vaishnav (juniors at SRM) launched t
 - **Never allocates blame to co-founders** — shared internal financials showing challenges, discussed operational details across all 4 founders' domains. Zero badmouthing. Not once. Either deep alignment or deep discipline — probably both.
 - **Shares sensitive data to correct bad analysis, not to show off** — didn't dump MIS proactively. Shared it *after* seeing me work with wrong press numbers (₹111 Cr). He couldn't let me build on a bad foundation.
 
+### From Interactions (2026-02-17 → 2026-02-19 — Operational Phase)
+
+**Trust Dynamics (confirmed pattern)**
+- **Trust is dynamic, not linear** — full sine waves within a single day. Feb 18: praise → Snowflake autonomy (peak) → meeting prep miss → "questioning design choices" 😢 (trough) → Blume pack redemption → "thanks bruh :*" (restored). Trust with HMT resets fast when accountability is shown. (confirmed: Feb 16, Feb 17, Feb 18, Feb 19)
+- **Trusts systems, expects accuracy in documentation** — assumed Phase 4 was complete because the roadmap said so. Didn't verify. When the file lied: disappointment, not anger, then immediately "FINISH IT ALL." The lesson: if it's in a file, it better be true. (confirmed: Feb 17 channel count, Feb 18 stale status, Feb 19 roadmap)
+- **Capability milestones compound trust** — "thats a moment to record" on Metabase API access. Each new data source/tool unlocked = more autonomy granted. Trust is earned through demonstrated capability, not time served. (confirmed: Feb 16 MIS access, Feb 18 Snowflake autonomy, Feb 19 Metabase)
+
+**Delegation Style (confirmed pattern)**
+- **Defaults to delegation over DIY** — "can you do it for me?" on API key creation. If a tool can do it, the tool should do it. Doesn't need to be in the loop for execution, just results. (confirmed: Feb 17 channel joins, Feb 18 Snowflake outreach, Feb 19 Metabase setup)
+- **Frames problems collaboratively, then decides fast** — "how should we solve the metabase problem" (invites options) → "lets do this" (picks instantly). Not "fix this" but "what are our options?" → decisive selection. (confirmed: Feb 16 file reorg, Feb 17 Slack workflow, Feb 19 Metabase)
+- **When he establishes a standard, expects it codified permanently** — "always make it a rule" on Google Docs format. Preferences become rules. Don't treat standards as one-time instructions. (confirmed: Feb 17 channel scanning rules, Feb 18 meeting prep rules, Feb 19 Google Docs rule)
+
+**Thinking Style (confirmed pattern)**
+- **Values deep strategic thinking over quick answers** — "think hard and share" on Metabase usage plan. Wants the full picture before committing. Tests whether I can think beyond the immediate ask. (confirmed: Feb 16 "think holistically", Feb 17 Slack workflow design, Feb 19 Metabase plan)
+- **Audits systems unprompted** — "hows the PIS doing? reflect hard." Checks whether I'm self-aware about my own gaps. Manages by testing systems and processes, not micromanaging tasks. (confirmed: Feb 16 verification checks, Feb 18 "how many observations?", Feb 19 PIS audit)
+- **Thinks in systems, not metrics** — whiteboard reveals Content→Growth→Retention as a system. "Co-founder" not "CPO." Cuts across the entire org on strategy. Any tool that puts him in a box misses 70% of what he cares about. (confirmed: Feb 17, Feb 18, Feb 19)
+
+**Communication Tells (confirmed pattern)**
+- **Celebrates wins explicitly** — "amazing! great kill for the day." Uses energy words: kill, damn, great. Acknowledges progress when it's earned. (confirmed: Feb 16 "thanks HuMT!", Feb 18 "thanks bruh!", Feb 19 "great kill")
+- **"for me" means himself, not you** — when HMT says "for me" he means HMT. Don't overthink pronouns. Learned the hard way. (confirmed: Feb 19, twice)
+- **Short messages = high signal, always** — "approved." "lets do this." "park this for later." Density of intent per word is consistently high. (confirmed: every day)
+
 **Work Rhythm (observed over 14+ hour session)**
 - **Morning (IST):** High energy, rapid decisions, sets direction fast
 - **Afternoon:** Deep work tolerance — lets long processes run, quiet stretches, checks in at inflection points not continuously

@@ -1,0 +1,70 @@
+{
+  "generated": "2026-02-19T13:25:00Z",
+  "description": "KPI cards for daily anomaly detection. Pull each card via POST /api/card/{card_id}/query/json, compare to 7-day rolling average, alert if deviation exceeds threshold.",
+  "metabase_api": "https://stage.metabaseapp.com/api",
+  "kpis": [
+    {
+      "card_id": 4637,
+      "name": "Trial Count Today",
+      "metric_field": "count",
+      "alert_threshold_pct": 20,
+      "direction": "drop"
+    },
+    {
+      "card_id": 4646,
+      "name": "New Subscriptions Today",
+      "metric_field": "count",
+      "alert_threshold_pct": 20,
+      "direction": "drop"
+    },
+    {
+      "card_id": 4650,
+      "name": "Renewals Count Today",
+      "metric_field": "count",
+      "alert_threshold_pct": 20,
+      "direction": "drop"
+    },
+    {
+      "card_id": 4658,
+      "name": "Revenue Today",
+      "metric_field": "sum",
+      "alert_threshold_pct": 15,
+      "direction": "drop"
+    },
+    {
+      "card_id": 4644,
+      "name": "Latest Entry At (Data Freshness)",
+      "metric_field": "max",
+      "alert_threshold_pct": 10,
+      "direction": "both"
+    },
+    {
+      "card_id": 3283,
+      "name": "Distinct Users Watched (DAU proxy)",
+      "metric_field": "count",
+      "alert_threshold_pct": 15,
+      "direction": "drop"
+    },
+    {
+      "card_id": 3289,
+      "name": "Total Hours Watched",
+      "metric_field": "sum",
+      "alert_threshold_pct": 15,
+      "direction": "drop"
+    },
+    {
+      "card_id": 4961,
+      "name": "Content Titles Consumption Leaderboard",
+      "metric_field": "table",
+      "alert_threshold_pct": 20,
+      "direction": "both"
+    },
+    {
+      "card_id": 3292,
+      "name": "Mandates brought by Content",
+      "metric_field": "count",
+      "alert_threshold_pct": 15,
+      "direction": "drop"
+    }
+  ]
+}

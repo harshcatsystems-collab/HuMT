@@ -208,11 +208,37 @@
 - **Added:** 2026-02-16
 
 ### Manasvi Dobhal
-- **Role:** Product Consultant, STAGE
+- **Role:** Product Consultant, STAGE (Feed Personalization & Discovery)
 - **Email:** manasvi.dobhal@stage.in
 - **Background:** Ex-Hotstar (Disney+), ShareChat, Loylty Rewardz. MSc Mathematics. Career break for parenting before STAGE.
-- **Relationship to HMT:** Weekly HP Personalisation catchup. Key product data person.
-- **Added:** 2026-02-16
+- **Relationship to HMT:** Weekly HP Personalisation catchup. Key product data person. Reports into Product org.
+- **Status (Feb 19):** Remote. Role under review — AI retooling changed execution velocity, remote gap widening. HMT affirmed competency + leadership potential but no conclusive answer. Internal temp check planned, decision early next week.
+- **Key deliverables:** Continue Watching notification system (2x D1 lift), Limited-Edition HP MVP (launched Feb 19), Feed Personalization PRD (52KB, 5 epics), brainstorming research doc (37.7KB).
+- **Live validation (Feb 19, Dashboard #4699):**
+  - ML Widget vs Non-ML Widget funnel: **+12pp conversion lift** (64.1% vs 52.1% real content, 91.4% vs 78.6% any playback)
+  - Non-ML baseline flat at 50-52% since Jan 26 — confirms static feeds plateau (her core thesis)
+  - ML Widget went live Feb 18, ramping (9 → 2,663 viewers by Feb 19, ~7% of total — target was 10%)
+  - Continue Watching: 2x D1 retention lift, D3 13% vs 5% control, D7 8% vs 3%, +9 min watch time. CTR only 0.8% — recommended limiting to 10-20% of users.
+  - Limited HP MVP: Stripped homepage (3 rails) for M0 users with <2 completed titles, first 3 impressions only. 10% user pool test started Feb 19.
+- **Docs inventory (from Slack):**
+  - Feed Personalization PRD: `1pLfghK7EdmmyfjhBgXsGBp0fViySizU4M-2I2jNIYTw` ✅ ingested
+  - Brainstorming Numbers: `1Oh6lIJlKiOTqr8VGHF0RyGW5lF0e4BSfTQlWnlDLLZc` ✅ ingested
+  - XrMedia spreadsheet: `1Dq0grEXtR58hlUeT5DzPp_JNIdBmuOv3S4XQTFd9K3c` (pending)
+  - Anna meeting notes: `1sr5l7rXRBIZhrr349-XLdIF8t6fgQ7SJXdJgnKJ2F38` (pending)
+- **Analysis doc:** [Manasvi Work vs Live Data — Alignment Analysis](https://docs.google.com/document/d/1TzDfjp6RhcAc5yHXUR92rOIOB-5xrdU6wMLNRm7L6PE/edit)
+- **Key data points from brainstorming doc:**
+  - 68% of active subscribers have no watch activity in 30 days
+  - 14.5% of trial users watch nothing during 7-day trial (~52K users/month)
+  - Users watching 3 dialects consume 3.5x more than single-dialect users
+  - Celebrity endorsement trays 5x higher CTR than "Special for you" (5.08% vs 0.27%)
+  - Haryanvi users most cross-dialect curious (37%), Bhojpuri most loyal (89% in-dialect)
+  - Time-of-day patterns: short-form daytime, movies nighttime
+- **Observations:**
+  - Didn't get defensive when HMT raised the remote work concern — acknowledged it honestly ("I don't want to feel useless"). Shows self-awareness and maturity.
+  - Thorough documentor — PRD is 52KB with 25 FRs, brainstorming doc is 37.7KB. Leaves a solid trail.
+  - Proactively framed her docs as useful "for whoever takes over" — reading the room, preparing for possible transition.
+  - Analytical work is solid and validated by live data — her core hypothesis (personalization > static) confirmed by +12pp lift.
+- **Added:** 2026-02-16 | **Updated:** 2026-02-19
 
 ### Samir Kumar
 - **Role:** Design Lead, STAGE (HMT direct report)
@@ -246,10 +272,19 @@
 - **Added:** 2026-02-16
 
 ### Marmik Mankodi
-- **Role:** Blume Ventures
-- **Email:** marmik.mankodi@blume.vc (approx)
-- **Context:** Schedules monthly "Stage <> Blume" catchups with HMT.
-- **Added:** 2026-02-16
+- **Role:** Blume Ventures (investor-side contact)
+- **Email:** marmik@blume.vc
+- **Context:** Monthly "Stage <> Blume" catchup. Tracks competitor landscape deeply — shares intel on Cuckoo, Pocket TV, EloElo, Vyraloka, China content licensing. Planning office visit + Karthik jam session.
+- **Observations:**
+  - Deep knowledge of micro-drama/short-form competitive landscape. Shares revenue, retention, and UA intel freely.
+  - Proactive about relationship — asked about new office, wants to visit. Not just a board observer.
+- **Added:** 2026-02-16 | **Updated:** 2026-02-19
+
+### Karthik Reddy
+- **Role:** Blume Ventures (GP / Managing Partner)
+- **Email:** karthik@blume.vc
+- **Context:** Board member. Was in Hong Kong during Feb 18 catchup. Team wants to jam with him for 30-45 min. Sent "thank you for joining us" email after Blume Day Mainstage (Feb 10).
+- **Added:** 2026-02-19
 
 ---
 

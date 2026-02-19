@@ -1,0 +1,268 @@
+# Metabase → Meeting Map
+
+*Generated: 2026-02-19 13:25 UTC*
+
+Maps Metabase dashboards and key questions to HMT's recurring meetings.
+
+
+## Retention Pod
+
+### Dashboards
+- **[2182]** M0 Engagement Action Plan (2,736 views)
+- **[1490]** Active Subscription Watch Retention DB v1 (2,615 views)
+- **[3799]** Watch Retention Dashboard (575 views)
+- **[3767]** Dormant Dashboard (327 views)
+- **[4261]** >= M1 Watchers - Retention Action Plan (281 views)
+- **[632]** Quarterly - Retention Cohorts (Autopay Only) (95 views)
+- **[633]** Monthly - Retention Cohorts (51 views)
+- **[3502]** M0 Engagement Action Plan - Excl 79 plan (42 views)
+- **[4591]** M0 MVP Experiment Monitor (32 views)
+- **[3766]** M0 Engagement Action Plan - Duplicate (11 views)
+- **[1258]** Retention Dashboard (11 views)
+- **[4030]** Weekly Retention Mahapunarjanam (11 views)
+- **[1456]** Retention DB v1 (8 views)
+- **[4558]** Engagement Retention Tracker (7 views)
+- **[1489]** Active Subscription Watch Retention DB (5 views)
+
+### Key Questions to Pull
+- [6291] M0  Watch Conversion (1,862 views)
+- [6292] M0  Watch Conversion by Dialect (1,793 views)
+- [6289] M0 Active Subscribers (1,790 views)
+- [6290] M0 Watchers (1,780 views)
+- [6293] M0 Active Subscribers by Dialect (1,773 views)
+- [6298] M0 Watchers - Active Watch Days per Watching User By Dialect (1,761 views)
+- [6295] M0 Watchers by Dialect (1,755 views)
+- [6297] M0 Watchers - Active Watch Days per Watching User (1,753 views)
+- [6479] Last 28 Days Watchers {excl M0} - As of Today (1,354 views)
+- [11826] Episodic Watching Retention (1,023 views)
+
+
+## Growth CLM
+
+### Dashboards
+- **[3568]** CAMPAIGN LEVEL DASHBOARD (480 views)
+- **[3964]** Campaign Dashboard (268 views)
+- **[664]** Reengagement Dashboard (153 views)
+- **[2776]** Acquisition Checks (27 views)
+- **[4699]** ML Widget vs Non-ML Widget — Thumbnail to Playback Funnel (17 views)
+- **[4723]** ML Widget vs Non-ML Widget — Thumbnail to Playback Funnel (10 views)
+- **[193]** Subscriptions from Reengagement (10 views)
+- **[3040]** campaign_level (5 views)
+- **[4691]** ML Widget vs Non-ML Widget — Thumbnail to Playback Funnel (0 views)
+
+
+## Activation Catchup
+
+### Dashboards
+- **[133]** Show Analysis Dashboard - Subscribed-Trial Users (4,877 views)
+- **[3073]** Activation Dashboard (486 views)
+- **[185]** Singles Analysis Dashboard - Subscribed-Trial Users (291 views)
+- **[4063]** Futwork Trial Conversion (261 views)
+- **[2809]** D0 D1 User Onboarding (199 views)
+- **[2116]** Daily Trial Users - yesterday (97 views)
+- **[2644]** Activation Metrics (68 views)
+- **[566]** TRIAL TNPL OVERVIEW (53 views)
+- **[2875]** Trial Plan Experiment (40 views)
+- **[1787]** DoD Consumption from Trial Start (39 views)
+- **[436]** Show Analysis Dashboard-Free trial (38 views)
+- **[4591]** M0 MVP Experiment Monitor (32 views)
+- **[1292]** Subscribers AHA Conversion (32 views)
+- **[4699]** ML Widget vs Non-ML Widget — Thumbnail to Playback Funnel (17 views)
+- **[3997]** Active Trials [start in last 10 days] (12 views)
+- **[4723]** ML Widget vs Non-ML Widget — Thumbnail to Playback Funnel (10 views)
+- **[3931]** Trial/New Subscription[last 30 days] (9 views)
+- **[3337]** Activation Engagement (8 views)
+- **[2710]** Ahh_movement_tracking (5 views)
+- **[4691]** ML Widget vs Non-ML Widget — Thumbnail to Playback Funnel (0 views)
+
+### Key Questions to Pull
+- [4637] Trial Count Today (5,306 views)
+- [4639] Trial Count This Month (5,282 views)
+- [4638] Trial Count This Week (5,282 views)
+- [4631] Total New Trials (5,060 views)
+- [4632] Total New Trials - HAR (4,998 views)
+- [4633] Total New Trials - RAJ (4,998 views)
+- [4634] Total New Trials - BHO (4,990 views)
+- [5491] Trials Acquired By show slug HAR (3,594 views)
+- [5493] Trials Acquired By show slug RAJ (3,185 views)
+- [5492] Trials Acquired By show slug BHO (3,176 views)
+
+
+## HP Personalisation
+
+### Dashboards
+- **[2314]** Ncanto Integration Experiment Metrics (672 views)
+- **[3568]** CAMPAIGN LEVEL DASHBOARD (480 views)
+- **[2215]** AI Thumbnail CTR (345 views)
+- **[3964]** Campaign Dashboard (268 views)
+- **[186]** Daily Subscribers (121 views)
+- **[2116]** Daily Trial Users - yesterday (97 views)
+- **[4162]** Content Watcher Details (67 views)
+- **[4591]** M0 MVP Experiment Monitor (32 views)
+- **[4195]** Subscriber GAID : by subscription count (24 views)
+- **[1423]** Daily Active Subscriber Watch Eligibility Analysis (21 views)
+- **[4699]** ML Widget vs Non-ML Widget — Thumbnail to Playback Funnel (17 views)
+- **[3370]** Ncanto Cohort Export (13 views)
+- **[306]** Daily Active Users Engagement (10 views)
+- **[4723]** ML Widget vs Non-ML Widget — Thumbnail to Playback Funnel (10 views)
+- **[3040]** campaign_level (5 views)
+- **[1688]** Title Marketing (5 views)
+- **[4690]** Recommendation Internal (2 views)
+- **[4691]** ML Widget vs Non-ML Widget — Thumbnail to Playback Funnel (0 views)
+
+### Key Questions to Pull
+- [3355] Episode Detail- Episode 1 (2,004 views)
+- [3358] Episode Detail- Episode 2 (1,995 views)
+- [3374] Episode Detail- Episode 5 (1,992 views)
+- [3370] Episode Detail- Episode 3 (1,985 views)
+- [3372] Episode Detail- Episode 4 (1,983 views)
+- [3385] Episode Detail- Episode 7 (1,981 views)
+- [3378] Episode Detail- Episode 6 (1,980 views)
+- [3397] Episode Detail- Episode 8 (1,964 views)
+- [3402] Episode Detail- Episode 9 (1,963 views)
+- [3405] Episode Detail- Episode 10 (1,956 views)
+
+
+## Content Strategy
+
+### Dashboards
+- **[930]** Content Performance Dashboard (7,643 views)
+- **[3238]** Content Overall Performance (1,254 views)
+- **[2941]** Micro Drama Performance (943 views)
+- **[2843]** Random Users for Content Team (213 views)
+- **[1027]** Data Sanity - Content Consumption (168 views)
+- **[4162]** Content Watcher Details (67 views)
+- **[1225]** Title Leaderboard .v1 [Har + Raj + Bho] (64 views)
+- **[1093]** Content Completion - Cleaned vs Uncleaned (52 views)
+- **[100]** Content Dashboard (43 views)
+- **[1787]** DoD Consumption from Trial Start (39 views)
+- **[2974]** Reels Dashboard (38 views)
+- **[928]** Content Performance - Individual Title (35 views)
+- **[4591]** M0 MVP Experiment Monitor (32 views)
+- **[3832]** Mahapunarjanam Dashboard (27 views)
+- **[2611]** Raj Random Users Free Content Targeting (19 views)
+- **[4699]** ML Widget vs Non-ML Widget — Thumbnail to Playback Funnel (17 views)
+- **[1324]** Show level Completion and Progression (15 views)
+- **[4723]** ML Widget vs Non-ML Widget — Thumbnail to Playback Funnel (10 views)
+- **[2578]** RAAZ Query dashboard (direct ) (9 views)
+- **[3733]** Content Performance Dashboard - Duplicate (7 views)
+- **[4327]** Micro Drama Performance - Duplicate (7 views)
+- **[1293]** Content Performance Dashboard - Duplicate for HS (6 views)
+- **[1688]** Title Marketing (5 views)
+- **[3700]** Content Overall Performance - Duplicate (4 views)
+- **[3634]** Micro Drama Performance - Duplicate (4 views)
+- **[3667]** Micro Drama Performance - Duplicate (4 views)
+- **[3601]** Micro Drama Performance - Duplicate (4 views)
+- **[4624]** Content Performance Dashboard [CLONE - Study] (3 views)
+- **[536]** Content with cobwebs (2 views)
+- **[537]** Most viewed content (2 views)
+- **[4691]** ML Widget vs Non-ML Widget — Thumbnail to Playback Funnel (0 views)
+
+### Key Questions to Pull
+- [3291] Mandates brought by Content - Evolution (16,220 views)
+- [3292] Mandates brought by Content (16,184 views)
+- [4961] Content - Titles - Consumption & Completion Leaderboard (12,634 views)
+- [3401] Content Sparkline - Minute by Minute - Distinct Users (5,940 views)
+- [3940] Content Sparkline - Started and Stopped Watching by Minute (5,488 views)
+- [3942] Content Sparkline - Minute by Minute - Total Pulses (5,425 views)
+- [4004] Content Sparkline - Minute by Minute - Total to Distinct Rat (5,226 views)
+- [4203] Content Sparkline - Watch Time Heatmap (5,204 views)
+- [3348] Started Watching Content - Episode 1 (2,204 views)
+- [3349] Episode Completion - 90+ Percentage - Episode 1 (2,202 views)
+
+
+## All Hands / Stage KPIs
+
+### Dashboards
+- **[204]** Subscriptions Dashboard - Support (143,595 views)
+- **[166]** Subscribers Dashboard’s  (40,686 views)
+- **[1357]** Subscribers Performance (20,351 views)
+- **[1621]** Subscription Info -Support (9,021 views)
+- **[930]** Content Performance Dashboard (7,643 views)
+- **[1490]** Active Subscription Watch Retention DB v1 (2,615 views)
+- **[2050]** Stage KPIs (554 views)
+- **[2149]** New Subscribers Engagement Tracker Dashboard (420 views)
+- **[1951]** Finance Audit Recon (299 views)
+- **[186]** Daily Subscribers (121 views)
+- **[763]** TV Subscribers Dashboard (83 views)
+- **[2382]** Rohtak Kabza Film - Revenue Share Dashboard (63 views)
+- **[4228]** New Year Free Subscription 2026 (49 views)
+- **[1192]** Subscribers Dashboard’s  - [SNOWFLAKE] (49 views)
+- **[2677]** Rangeele Film - Revenue Share Dashboard (48 views)
+- **[1720]** User Action Towards Subscription Expiry (35 views)
+- **[1292]** Subscribers AHA Conversion (32 views)
+- **[4195]** Subscriber GAID : by subscription count (24 views)
+- **[4657]** Account Sharing — Feature Analytics (23 views)
+- **[268]** Revenue Dashboard (23 views)
+- **[3304]** IMPACT OF OLD SUBSCRIBERS  (22 views)
+- **[1522]** Subscribers Performance - Design Team Copy (22 views)
+- **[1423]** Daily Active Subscriber Watch Eligibility Analysis (21 views)
+- **[731]** Subscribers Dashboard (RS) (18 views)
+- **[2446]** Paper Leak RJ Series - Revenue on Stage App  (10 views)
+- **[193]** Subscriptions from Reengagement (10 views)
+- **[2578]** RAAZ Query dashboard (direct ) (9 views)
+- **[3931]** Trial/New Subscription[last 30 days] (9 views)
+- **[961]** WeekStart MIS Revenue User New Renew Culturewise (9 views)
+- **[3733]** Content Performance Dashboard - Duplicate (7 views)
+- **[2381]** Rohtak Kabza Film - Revenue on Stage App  (7 views)
+- **[1293]** Content Performance Dashboard - Duplicate for HS (6 views)
+- **[1489]** Active Subscription Watch Retention DB (5 views)
+- **[1588]** Subscribers Dashboard’s  - Duplicate (4 views)
+- **[1590]** Subscribers Dashboard’s  - Duplicate old (4 views)
+- **[1060]** Revenue by Payment Gateway (3 views)
+- **[829]** Dashboard subscriptions and alerts (2 views)
+- **[534]** Metabase metrics (2 views)
+- **[2380]** Rohtak Kabza Film - Revenue on Stage App  (2 views)
+
+### Key Questions to Pull
+- [7766] Subscription Info - Support [Snowflake] (48,318 views)
+- [4649] New Subscriptions Count This Month (5,283 views)
+- [4646] New Subscriptions Today (5,269 views)
+- [4645] New Subscriptions This Week (5,267 views)
+- [4658] Revenue Today (5,239 views)
+- [4659] Revenue This Week (5,233 views)
+- [4660] Revenue This Month (5,231 views)
+- [4499] DAU on TV (1,902 views)
+- [6289] M0 Active Subscribers (1,790 views)
+- [6293] M0 Active Subscribers by Dialect (1,773 views)
+
+
+## Engagement Pod
+
+### Dashboards
+- **[2182]** M0 Engagement Action Plan (2,736 views)
+- **[1490]** Active Subscription Watch Retention DB v1 (2,615 views)
+- **[2149]** New Subscribers Engagement Tracker Dashboard (420 views)
+- **[439]** Partnership - Engagement (185 views)
+- **[664]** Reengagement Dashboard (153 views)
+- **[2017]** Partners Platform - Engagement (130 views)
+- **[4426]** Engagement Feature Analysis (86 views)
+- **[3502]** M0 Engagement Action Plan - Excl 79 plan (42 views)
+- **[4591]** M0 MVP Experiment Monitor (32 views)
+- **[4657]** Account Sharing — Feature Analytics (23 views)
+- **[1423]** Daily Active Subscriber Watch Eligibility Analysis (21 views)
+- **[180]** Re-Engagement (17 views)
+- **[4459]** Engagement core metrics Dashboard (14 views)
+- **[3997]** Active Trials [start in last 10 days] (12 views)
+- **[3766]** M0 Engagement Action Plan - Duplicate (11 views)
+- **[306]** Daily Active Users Engagement (10 views)
+- **[466]** Rengagement Test Dashboard (10 views)
+- **[193]** Subscriptions from Reengagement (10 views)
+- **[3337]** Activation Engagement (8 views)
+- **[2281]** Partners Platform - Engagement - Duplicate (8 views)
+- **[4558]** Engagement Retention Tracker (7 views)
+- **[307]** Weekly Engagement Rate (6 views)
+- **[1489]** Active Subscription Watch Retention DB (5 views)
+- **[829]** Dashboard subscriptions and alerts (2 views)
+
+### Key Questions to Pull
+- [4203] Content Sparkline - Watch Time Heatmap (5,204 views)
+- [6289] M0 Active Subscribers (1,790 views)
+- [6293] M0 Active Subscribers by Dialect (1,773 views)
+- [6298] M0 Watchers - Active Watch Days per Watching User By Dialect (1,761 views)
+- [6297] M0 Watchers - Active Watch Days per Watching User (1,753 views)
+- [6203] Subscriber to Watcher till X-days - % Watchers - by Trial Ac (1,194 views)
+- [6205] Subscriber to Watcher till X-days - Watchers - by Trial Acti (1,139 views)
+- [6206] Subscriber to Watcher till X-days - Subscribers - by Trial A (1,137 views)
+- [6207] Subscriber to Watcher till X-days - Average Watchdays - by T (1,128 views)
+- [9713] Average Watch Time (1,019 views)

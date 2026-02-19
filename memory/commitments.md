@@ -60,6 +60,7 @@
 | P3 | Remote mode (openclaw from Mac without SSH) | Nice-to-have | Phase 5 |
 | P4 | Separate WhatsApp number for HuMT | HMT to purchase | When HMT is ready |
 | P5 | DR silence investigation (5/8 low on Slack) | Need weekly roundup data | Feb 21 weekly roundup |
+| P6 | Speaker diarization pipeline for meeting transcripts | Script built (`scripts/transcribe-meeting.py`), needs voice reference samples. HMT said "park it, earmark this." | When next meeting recording comes in — save HMT voice note as reference sample |
 
 ## Reminders (Cron)
 

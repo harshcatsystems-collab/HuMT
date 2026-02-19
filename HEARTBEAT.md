@@ -14,6 +14,16 @@ This runs FIRST, before any other check. Not optional. Not skippable.
 
 ---
 
+## Channel Membership Diff (EVERY HEARTBEAT — before Slack scan)
+
+Run `bash scripts/slack-channel-diff.sh` to detect if HuMT was added to or removed from any Slack channels.
+- If `NEW_CHANNELS`: log to daily memory, add to `memory/slack-channel-map.json` under appropriate tier, read last 10 messages for context, and relay to HMT: "I've been added to #channel-name — recording it."
+- If `NO_CHANGES`: proceed silently.
+
+**Why:** HMT added me to #ai-character-bots and I didn't notice for 6+ hours. Never again.
+
+---
+
 ## DM Relay — PRIORITY CHECK (G7: runs FIRST, every heartbeat, before anything else)
 
 Check for new DMs to HuMT on Slack BEFORE doing the full scan:

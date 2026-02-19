@@ -4,6 +4,16 @@ Environment-specific details for HMT's setup.
 
 ---
 
+## Metabase API
+
+- **Base URL:** `https://stage.metabaseapp.com/api`
+- **API Key name:** `humt-bot` (Administrators group)
+- **API Key:** `mb_TFdivJ3ePUe5v9xeA77Xphanlq+n0BiKVGXhmT3H1o4=`
+- **Auth header:** `x-api-key: <key>`
+- **Created:** 2026-02-19
+
+---
+
 ## Ports & Services
 
 | Service | Port | Notes |
@@ -115,4 +125,10 @@ Supports: .ogg (WhatsApp voice notes)
 
 ---
 
-*Last updated: 2026-02-12*
+## Rules
+
+- **Always save documents to Google Drive as Google Docs** (not markdown, not plain text). Use Drive API multipart upload with `mimeType: application/vnd.google-apps.document` and HTML content.
+
+---
+
+*Last updated: 2026-02-19*

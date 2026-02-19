@@ -78,32 +78,32 @@
 ## Phase 4: Automation & Assistance 🔜 NEXT
 *Goal: Start doing real work — not just answering questions*
 
-### 4A: Slack Chief of Staff (implements workflow blueprint)
+### 4A: Slack Chief of Staff ✅ COMPLETE (implements workflow blueprint)
 
-| # | Item | Status | Description |
-|---|------|--------|-------------|
-| 4A.1 | Daily Slack digest (8:30 AM IST → Telegram) | 🔜 Ready | Tier 1-2 channel scan, decisions/blockers/highlights/quiet channels |
-| 4A.2 | DM relay (Slack → Telegram) | 🔜 Ready | Decision tree: auto-respond, relay, or escalate |
-| 4A.3 | Critical keyword alerts (real-time) | 🔜 Ready | "blocked", "urgent", HMT mentions → Telegram immediately |
-| 4A.4 | Meeting prep from Slack (15 min before) | 🔜 Ready | Pull relevant channel context for attendees, suggest talking points |
-| 4A.5 | Commitment tracking in Slack | 🔜 | Detect "I'll do X by Y" in Tier 1 channels, track, nudge |
-| 4A.6 | Weekly Slack digest (Fri 5 PM → Telegram) | 🔜 | Aggregated themes, channel health, commitment status |
-| 4A.7 | People pulse (weekly, HMT's 8 direct reports) | 🔜 | Activity trends, engagement signals, private to HMT |
-| 4A.8 | Cross-founder awareness | 🔜 | Daily summary of Vinay/Shashank/Parveen's Slack activity |
-| 4A.9 | Channel health monitoring (monthly) | 🔜 | Activity metrics, dead channels, archival recommendations |
-| 4A.10 | Transparency announcement | 🔜 | Announce HuMT in `#stage-ke-krantikaari` |
+| # | Item | Status | Cron/Mechanism | Schedule |
+|---|------|--------|----------------|----------|
+| 4A.1 | Daily Slack digest | ✅ | `slack:morning-brief` + `slack:evening-debrief` | 9:15 AM + 6:30 PM IST → Telegram |
+| 4A.2 | DM relay | ✅ | Heartbeat-driven | Real-time during heartbeat cycles |
+| 4A.3 | Critical keyword alerts | ✅ | Heartbeat-driven (Slack search API `<@U05QMQHCVNY>`) | Real-time during heartbeat cycles |
+| 4A.4 | Meeting prep from Slack | ✅ | `slack:meeting-prep-jit` | Every 30 min, Mon-Fri 8:30 AM–5:30 PM IST |
+| 4A.5 | Commitment tracking | ✅ | `slack:commitment-tracker` | Daily 5:30 PM IST — scans all channels for commitment language |
+| 4A.6 | Weekly Slack digest | ✅ | `slack:weekly-roundup` | Fri 5:30 PM IST → Telegram |
+| 4A.7 | People pulse | ✅ | `slack:people-pulse-weekly` + `people:activity-logger` (30-min data collector) | Fri 4:30 PM IST → Telegram |
+| 4A.8 | Cross-founder awareness | ✅ | `slack:cross-founder-daily` | Weekdays 6:00 PM IST → HMT Slack DM |
+| 4A.9 | Channel health monitoring | ✅ | `slack:monthly-channel-health` | 1st of month 10:00 AM IST |
+| 4A.10 | Transparency announcement | ⏸️ Parked | Needs HMT go-ahead | — |
 
-### 4B: General Automation
+### 4B: General Automation ✅ COMPLETE
 
-| # | Item | Status | Description |
-|---|------|--------|-------------|
-| 4B.1 | Email triage | 🔜 Ready | Flag important emails, summarize inbox, draft responses. Learn HMT's voice over time |
-| 4B.2 | Enhanced morning brief | 🔜 Ready | Richer briefings: business context + Slack digest + calendar + email |
-| 4B.3 | End-of-day summary | 🔜 | What got done, what's open, what's tomorrow |
-| 4B.4 | Research on demand | 🔜 Ready | Competitor analysis, market data, people intel — on tap |
-| 4B.5 | Document drafting | 🔜 | First drafts of emails, docs, updates in HMT's voice |
+| # | Item | Status | Cron/Mechanism | Schedule |
+|---|------|--------|----------------|----------|
+| 4B.1 | Email triage | ✅ | `email:morning-triage` | Daily 8:30 AM IST → Telegram |
+| 4B.2 | Enhanced morning brief | ✅ | `slack:morning-brief` (enhanced with Metabase business metrics) | Daily 9:15 AM IST → Telegram |
+| 4B.3 | End-of-day summary | ✅ | `slack:end-of-day-summary` | Daily 8:00 PM IST → Telegram |
+| 4B.4 | Research on demand | ✅ | Live capability | On request — Metabase + Snowflake + web + Slack |
+| 4B.5 | Document drafting | ✅ | Voice profile: `memory/hmt-writing-voice.md` | On request — drafts flagged for HMT review before sending |
 
-**All dependencies met.** Phase 4A.1–4A.3 are the immediate priority — Slack daily digest, DM relay, and keyword alerts.
+**All items built and scheduled.** Only 4A.10 (transparency announcement) parked pending HMT's go-ahead.
 
 ---
 
@@ -128,7 +128,8 @@
 | Phase 2: Capabilities | ✅ Complete | Feb 10–12 | All channels live, VPS, crons, security |
 | Phase 3: Context & Access | ✅ Complete | Feb 13–16 | 122-person org chart, full financials, 8 research files, 7 checks |
 | Phase 3.5: Intelligence Infra | ✅ Complete | Feb 16 | PIS (10 mechanisms), Slack workflow blueprint, employee enrichment |
-| Phase 4: Automation | 🔜 Ready | Feb 17+ | 4A: Slack Chief of Staff, 4B: General automation |
+| Phase 4A: Slack CoS | ✅ Complete | Feb 17–19 | 10/10 items built (9 active + 1 parked pending approval) |
+| Phase 4B: General Auto | ✅ Complete | Feb 19 | Email triage, enhanced morning brief (with Metabase), EOD summary, research, doc drafting voice profile |
 | Phase 5: Deep Integration | 🔜 Future | TBD | Pending Phase 4 maturity |
 
 ---
@@ -145,4 +146,4 @@
 
 ---
 
-*Last updated: 2026-02-18 12:44 UTC — Phases 1-4 complete, Phase 5 at 60% (Steps 1-3 done, Step 4 building, Step 5 tomorrow).*
+*Last updated: 2026-02-19 13:06 UTC — Phase 4 COMPLETE (4A: 9 crons + 1 parked, 4B: 5 items all built). Phase 5 at ~65%.*
