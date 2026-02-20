@@ -1,0 +1,69 @@
+version: 2
+
+sources:
+  - name: finance_uploads_phonepe
+    database: finance_audit_uploads
+    schema: phonepe
+    tables:
+      - name: transactions
+        description: "PhonePe transaction data containing merchant transactions."
+      - name: refunds
+        description: "PhonePe refunds table containing refund details mapped to transactions."
+      - name: settlements
+        description: "PhonePe settlements information used to track payment reconciliation."
+
+  - name: paytm
+    database: finance_audit_uploads
+    schema: paytm
+    tables:
+      - name: payments
+        description: "Paytm payments data containing merchant payments."
+      - name: refunds
+        description: "Paytm refunds table containing refund details mapped to payments."
+      - name: settlements
+        description: "Paytm settlements information used to track payment reconciliation."
+
+  - name: razorpay
+    database: finance_audit_uploads
+    schema: razorpay
+    tables:
+      - name: transactions
+        description: "Razorpay transactions data containing merchant transactions."
+      - name: payments
+        description: "Razorpay payments data containing merchant payments."
+      - name: refunds
+        description: "Razorpay refunds table containing refund details mapped to payments."
+      - name: settlements
+        description: "Razorpay settlements information used to track payment reconciliation."
+
+  - name: juspay
+    database: finance_audit_uploads
+    schema: juspay
+    tables:
+      - name: combined_reports
+        description: "Juspay combined reports table containing unified settlement and transaction data."
+  
+  - name: setu
+    database: finance_audit_uploads
+    schema: setu
+    tables:
+      - name: transactions
+        description: "Setu transactions data containing merchant transactions and settlement details."
+
+  - name: payu
+    database: finance_audit_uploads
+    schema: payu
+    tables:
+      - name: transactions
+        description: "Payu transaction data containing merchant transactions."
+      - name: refunds
+        description: "Payu refunds table containing refund details mapped to transactions."
+      - name: settlements
+        description: "Pay settlements information used to track payment reconciliation."
+
+  - name: stripe
+    database: finance_audit_uploads
+    schema: stripe
+    tables:
+      - name: balance_change
+        description: "stripe transaction data containing merchant transactions and refunds."

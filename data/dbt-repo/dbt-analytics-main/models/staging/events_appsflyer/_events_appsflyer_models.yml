@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_events_appsflyer_trial_activated
+  - name: stg_events_appsflyer_app_open
+  - name: stg_events_appsflyer_aha_moment_event_achieved
+  - name: stg_events_appsflyer_app_install
+  - name: stg_events_appsflyer_campaign_card_clicked
+  - name: stg_events_appsflyer_campaign_card_viewed
+  - name: stg_events_appsflyer_clicked_cta
+  - name: stg_events_appsflyer_consumption_started
+  - name: stg_events_appsflyer_free_trial_transition
+  - name: stg_events_appsflyer_login_successful
+  - name: stg_events_appsflyer_payment_successful
+  - name: stg_events_appsflyer_payment_failed
+  - name: stg_events_appsflyer_payment_initiated
+  - name: stg_events_appsflyer_payment_initiated_successful
+  - name: stg_events_appsflyer_payment_page_viewed
+  - name: stg_events_appsflyer_signup_successful
+  - name: stg_events_appsflyer_subscription_activated
+  - name: stg_events_appsflyer_subscription_mandate_revoked
+  - name: stg_events_appsflyer_subscription_paused
+  - name: stg_events_appsflyer_subscription_renewed
+  - name: stg_events_appsflyer_subscription_resumed
+  - name: stg_events_appsflyer_title_page_viewed
+  - name: stg_events_appsflyer_title_start
+  - name: stg_events_appsflyer_user_culture_received
+  - name: stg_events_appsflyer_watched_video
+  - name: stg_events_appsflyer_subscription_paywall_viewed

@@ -394,7 +394,7 @@ Same as morning brief — `→ Suggested:` lines when personal engagement matter
 - Never referenced to the person observed or anyone else.
 
 **People Activity Logger (v4.1 — dedicated data pipeline):**
-A cron job (`people:activity-logger`) runs every 30 minutes, scanning key Tier 1 channels for all 11 tracked people (8 DRs + 3 co-founders). For each person with activity, it logs:
+A cron job (`people:activity-logger`) runs every 30 minutes, scanning all primary channels for all 11 tracked people (8 DRs + 3 co-founders) — including #product, #growth-pod, #retention-pod, #content_strategy, #monetisation, #tech-mates, #founders_sync, #product-growth, #product-design, #all-things-people-and-culture, #marketing, #stage-product-feedback-and-requests, #managers-aspiring-to-be-leaders, and hiring channels. For each person with activity, it logs:
 - Message count (top-level)
 - Thread reply count
 - Channels active (unique)
@@ -414,7 +414,7 @@ The system adapts to HMT's weekly meeting load:
 | Light | <15 | Full + richer context | Full + expanded | Normal | Full |
 | Normal | 15-20 | Standard | Standard | Normal | Standard |
 | Heavy | 20-25 | Tighter (decisions + temp) | **Full** (he needs it MORE) | Normal | Standard |
-| Extreme | 25+ (board prep) | Decisions-only | Compressed bullets | Outage-only | Compressed |
+| Extreme | 25+ (board prep) | Full coverage, compressed format (all items, tighter bullets) | Full coverage, compressed bullets | Normal (never reduce alert coverage) | Full coverage, compressed format |
 
 **Detection method:** Calendar scan on Sunday night / Monday morning. Count accepted meetings for the week. Adjust delivery accordingly.
 

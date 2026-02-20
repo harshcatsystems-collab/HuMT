@@ -1,0 +1,24 @@
+
+version: 2
+
+sources:
+  - name: events_backend
+    description: Product Analytics instrumentation and events from our backend
+    database: raw_prod
+    schema: events_backend
+    tables:
+      - name: user_watch_log
+        description: A watch log is fired at pause and resume of a content. Stop event is fired on clossing the player
+      - name: app_uninstall    
+        description: An uninstall event is fired when a user uninstalls their app.
+      - name: trial_mandate_revoked    
+        description: A trial mandate revoke event is fired when a user revokes their trial mandate.
+      - name: trial_mandate_paused    
+        description: A trial mandate pause event is fired when a user pauses their trial mandate.
+      - name: trial_activated
+        description: Fired when the user activates the trial pack
+      - name: af_start_trial
+        description: Renamed table that also stores the data of the user whenever it purchases the trial pack
+      - name: af_subscribe
+        description: Stores the data of the users who have subscribed after the trial
+      

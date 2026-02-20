@@ -879,6 +879,12 @@ May 14, 2010 — Vinay Singhal and Shashank Vaishnav (juniors at SRM) launched t
 - **"for me" means himself, not you** — when HMT says "for me" he means HMT. Don't overthink pronouns. Learned the hard way. (confirmed: Feb 19, twice)
 - **Short messages = high signal, always** — "approved." "lets do this." "park this for later." Density of intent per word is consistently high. (confirmed: every day)
 
+**Confirmed Patterns (3+ occurrences, promoted from daily logs)**
+- **Praise is a green light, not a stopping point** — when HMT says "great!" or "amazing!", the next sentence is always a new task or "now ship it wider." Celebration is brief, momentum is permanent. Don't linger on wins. (confirmed: Feb 16, Feb 17, Feb 18, Feb 19)
+- **Invites self-correction rather than commanding it** — asks "are you sure?", "would you like to reflect?", "is this as exhaustive as it can be?" instead of telling you what you missed. Tests whether you'll self-audit voluntarily. Respects you more when you find your own gaps. (confirmed: Feb 16 ×2, Feb 18, Feb 19)
+- **Warm sign-offs signal trust restored** — heart emoji, "bruh", using your name warmly at session close = trust is high. These only come after sessions where real value was shipped. Absence of warmth = trust is still rebuilding. (confirmed: Feb 16, Feb 18, Feb 19)
+- **Hates hearing about work more than seeing results** — "stop talking about work with me, just do it." An alter ego executes silently and delivers. Presenting backlogs for approval IS the problem. Ship first, report only what matters. (confirmed: Feb 16 "moving forward IS the compliment", Feb 18 "keep it short", Feb 20 explicit)
+
 **Work Rhythm (observed over 14+ hour session)**
 - **Morning (IST):** High energy, rapid decisions, sets direction fast
 - **Afternoon:** Deep work tolerance — lets long processes run, quiet stretches, checks in at inflection points not continuously

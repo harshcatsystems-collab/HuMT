@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: dim_campaign
+    description: |
+      A dimension table containing the core, metadata for each unique campaign and journey.
+      This is the authoritative source for static campaign attributes like name, type, staus and channel.
+    config:
+      alias: dim_campaign
+    columns:
+      - name: campaign_id
+        description: The unique identifier for the campaign. Used as the Primary Key (PK) to link to fact tables.
+      
+      - name: journey_id
+        description: The ID of the journey this campaign belongs to (Foreign Key to dim_journey, if created).
+      
+      - name: campaign_name
+        description: The human-readable name of the campaign.
+      
+      - name: journey_name
+        description: The human-readable name of the parent journey.
+      
+      - name: channel
+        description: The primary marketing channel used (e.g., 'Push', 'WA', 'Inapp').
+        tests:
+          - accepted_values:
+              # FIXED: Arguments must be nested under 'arguments' property
+              arguments:
+                values: ['Push', 'WA', 'Inapp', 'Email']
+              config:
+                severity: warn
+      
+      - name: campaign_master_type
+        description: The scheduling type of the campaign (e.g., 'One time', 'Recurring').
+      
+      - name: status
+        description: The current status of the campaign (e.g., 'Active', 'Stopped', 'Draft').
+      
+      - name: dialect
+        description: The dialect or language region targeted by the campaign (e.g., 'RJ', 'HR', 'BHO').

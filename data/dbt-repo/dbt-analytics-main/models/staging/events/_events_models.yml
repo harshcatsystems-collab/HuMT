@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: stg_events_playback_pulse
+  - name: stg_events_app_open
+  - name: stg_events_thumbnail_viewed
+  - name: stg_events_thumbnail_clicked
+  - name: stg_events_app_uninstall

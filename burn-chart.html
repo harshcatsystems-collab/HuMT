@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>body{margin:0;padding:20px;background:#1a1a2e;font-family:system-ui;color:#eee} h2{text-align:center;margin-bottom:5px} .sub{text-align:center;color:#888;font-size:13px;margin-bottom:20px}</style>
+</head><body>
+<h2>STAGE — Monthly Burn vs Revenue</h2>
+<div class="sub">Feb 2025 to Jan 2026 | Source: MIS (Monthly) | INR Lakhs</div>
+<div style="max-width:880px;margin:auto"><canvas id="c1" height="300"></canvas></div>
+<div style="max-width:880px;margin:auto;margin-top:30px"><canvas id="c2" height="260"></canvas></div>
+<script>
+const M=["Feb 25", "Mar 25", "Apr 25", "May 25", "Jun 25", "Jul 25", "Aug 25", "Sep 25", "Oct 25", "Nov 25", "Dec 25", "Jan 26"];
+const B=[498.2, 1066.2, 1035.6, 1244.6, 1530.4, 1311.5, 1620.0, 2041.5, 2021.0, 1532.3, 2028.6, 2097.1];
+const R=[1115.8, 1118.6, 1058.2, 1050.0, 1026.1, 1195.5, 1227.2, 1365.2, 1420.2, 1429.4, 1295.2, 1363.7];
+const MK=[151.5, 383.4, 704.0, 909.6, 1150.4, 799.0, 1099.5, 1519.0, 1267.5, 1060.7, 1369.6, 1320.3];
+const C=[64.5, 102.5, 105.7, 81.4, 89.1, 125.0, 132.1, 148.8, 237.8, 166.0, 239.3, 405.9];
+const O=[282.2, 580.3, 225.9, 253.6, 290.9, 387.5, 388.4, 373.7, 515.7, 305.6, 419.7, 370.9];
+new Chart(document.getElementById('c1'),{type:'bar',data:{labels:M,datasets:[{label:'Total Burn',data:B,backgroundColor:'rgba(255,99,132,0.7)',borderColor:'rgb(255,99,132)',borderWidth:1},{label:'Revenue',data:R,type:'line',borderColor:'#4ade80',borderWidth:3,pointRadius:4,fill:false,tension:0.3}]},options:{responsive:true,plugins:{legend:{labels:{color:'#eee'}}},scales:{x:{ticks:{color:'#aaa'},grid:{color:'rgba(255,255,255,0.05)'}},y:{ticks:{color:'#aaa',callback:v=>'₹'+v+'L'},grid:{color:'rgba(255,255,255,0.08)'}}}}});
+new Chart(document.getElementById('c2'),{type:'bar',data:{labels:M,datasets:[{label:'Marketing',data:MK,backgroundColor:'rgba(251,191,36,0.7)'},{label:'Content',data:C,backgroundColor:'rgba(147,51,234,0.7)'},{label:'Other (Team+Ops+Infra)',data:O,backgroundColor:'rgba(59,130,246,0.7)'}]},options:{responsive:true,plugins:{legend:{labels:{color:'#eee'}},title:{display:true,text:'Burn Breakdown (Stacked)',color:'#eee',font:{size:15}}},scales:{x:{stacked:true,ticks:{color:'#aaa'},grid:{color:'rgba(255,255,255,0.05)'}},y:{stacked:true,ticks:{color:'#aaa',callback:v=>'₹'+v+'L'},grid:{color:'rgba(255,255,255,0.08)'}}}}}); 
+</script></body></html>

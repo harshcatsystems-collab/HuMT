@@ -1,0 +1,126 @@
+  version: 2
+
+models:
+  - name: adhoc_partner_subscription_history # This should match the filename of your .sql model (e.g., user_plan_categorization.sql)
+    description: "This model processes user subscription history to categorize each plan entry for partner vendors. Partner vendors are identified by joining with the `dim_vendors_partners` reference model. It identifies the order of plans, the user's primary dialect, details about the previous plan, and assigns a category such as 'Trial', 'New Subscription', or 'Renewal'. It also excludes specific resume trial plans."
+    config:
+      materialized: table
+      # tags: ['finance', 'subscriptions']
+    columns:
+      # Columns from the underlying stg_mongo_usersubscriptionhistory,
+      # available through the 'user_subscription_history' CTE and used in the model.
+      - name: _id # Assuming this is the unique ID from the source
+        description: "Original unique identifier from the source system for the subscription history record."
+        tests:
+          - unique
+          - not_null
+          
+      - name: user_id
+        description: "The unique identifier for the user."
+        tests:
+          - not_null
+
+      - name: plan_id
+        description: "The identifier of the subscription plan. Note: Model filters out 'resume_trial%' plans."
+        tests:
+          - not_null
+          
+      - name: subscription_id
+        description: "The unique identifier for the subscription instance."
+        # tests:
+        #   - unique # May not be unique if history table tracks changes to a single subscription
+        #   - not_null
+
+      - name: created_at_ist
+        description: "The timestamp when the subscription entry was created (converted to IST)."
+        tests:
+          - not_null
+
+      - name: is_trial
+        description: "Boolean flag indicating if the current plan entry is a trial (derived from plan_id in staging)."
+
+      - name: dialect
+        description: "The dialect associated with the current plan entry."
+
+      - name: is_partner_vendor # Column from stg_mongo_usersubscriptionhistory
+        description: "Boolean flag from the staging model indicating if the plan was originally flagged as from a partner vendor. This model now filters records to include only partner vendors by joining with the `dim_vendors_partners` reference model."
+
+      - name: gps_adid
+        description: "GPS Ad ID associated with the user/subscription."
+
+      - name: master_mandate_id
+        description: "Master mandate ID for recurring payments."
+
+      - name: is_recurring_subscription
+        description: "Boolean flag indicating if the subscription is recurring."
+
+      - name: country
+        description: "Country associated with the subscription."
+
+      - name: status
+        description: "Status of the subscription history entry."
+
+      - name: vendor
+        description: "Vendor through which the subscription was made. Used to join with `dim_vendors_partners`."
+
+      - name: currency
+        description: "Currency of the transaction."
+
+      - name: subscription_through
+        description: "Platform or method through which the subscription was made."
+
+      - name: coupon_code
+        description: "Coupon code used for the subscription, if any."
+
+      - name: is_valid_vendor # From staging
+        description: "Boolean flag indicating if the vendor is considered valid (derived in staging)."
+
+      - name: created_at_utc # From staging
+        description: "Original creation timestamp in UTC."
+
+      - name: updated_at_utc # From staging
+        description: "Original update timestamp in UTC."
+        
+      - name: updated_at_ist # From staging
+        description: "Update timestamp converted to IST."
+
+      - name: subscription_start_at_utc # From staging
+        description: "Subscription start date/time in UTC."
+
+      - name: subscription_start_at_ist # From staging
+        description: "Subscription start date/time converted to IST."
+
+      - name: subscription_end_at_utc # From staging
+        description: "Subscription end date/time in UTC."
+
+      - name: subscription_end_at_ist # From staging
+        description: "Subscription end date/time converted to IST."
+
+      - name: actual_price # From staging
+        description: "The actual price of the plan."
+
+      - name: paying_price # From staging
+        description: "The price paid by the user after discounts/coupons."
+
+      # Columns added in ordered_user_subscription_history
+      - name: plan_order
+        description: "Sequential number of the plan for a given user, ordered by created_at_ist."
+        tests:
+          - not_null
+
+      - name: primary_dialect
+        description: "The first dialect recorded for the user based on their subscription history (ordered by created_at_ist of plans)."
+
+      - name: prev_is_trial
+        description: "Boolean flag indicating if the user's immediately preceding plan was a trial. NULL if this is the first plan."
+
+      - name: prev_plan_id
+        description: "The plan_id of the user's immediately preceding plan. NULL if this is the first plan."
+
+      # Column added in final_categorization
+      - name: plan_category
+        description: "Categorization of the plan: 'Trial', 'New Subscription', or 'Renewal'."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Trial', 'New Subscription', 'Renewal']

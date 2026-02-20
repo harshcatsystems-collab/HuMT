@@ -1,0 +1,57 @@
+version: 2
+
+models:
+  - name: dim_planid
+    description: |
+      Information about the plan IDs and their metadata including pricing, duration, and timestamps.
+    columns:
+      - name: id
+        description: Primary key, unique identifier for the plan
+          
+      - name: os
+        description: Operating system the plan is available on (iOS, Android, Web)
+          
+      - name: item_id
+        description: Product item identifier used for payment processing
+        
+      - name: plan_id
+        description: Plan identifier to be used for subscription management
+        
+      - name: status
+        description: Current status of the plan (active, inactive, draft)
+              
+      - name: discount
+        description: Discount percentage applied to this particular plan
+        
+      - name: total_days
+        description: Total number of days for which the plan will remain active
+          
+      - name: actual_price
+        description: Original price before any discounts are applied
+          
+      - name: paying_price
+        description: Final price to be paid after discount is applied
+          
+      - name: created_at_utc
+        description: Timestamp when the plan was created in UTC timezone
+          
+      - name: created_at_ist
+        description: Timestamp when the plan was created in IST timezone (Asia/Kolkata)
+        
+      - name: updated_at_utc
+        description: Timestamp when the plan was last updated in UTC timezone
+        
+      - name: updated_at_ist
+        description: Timestamp when the plan was last updated in IST timezone (Asia/Kolkata)
+        
+      - name: subscription_date_utc
+        description: Subscription start date in UTC timezone
+        
+      - name: subscription_date_ist
+        description: Subscription start date in IST timezone (Asia/Kolkata)
+        
+      - name: subscription_valid_utc
+        description: Subscription validity end date in UTC timezone
+        
+      - name: subscription_valid_ist
+        description: Subscription validity end date in IST timezone (Asia/Kolkata)

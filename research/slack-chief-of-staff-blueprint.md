@@ -489,7 +489,7 @@ The system adapts to HMT's meeting load:
 | **Light** (<15 mtgs) | Calendar scan | Full + richer context | Full + expanded roundup | Normal | Full |
 | **Normal** (15-20) | Default | Standard | Standard | Normal | Standard |
 | **Heavy** (20-25) | Calendar density | Tighter (decisions + temp only) | **Full** (he needs it MORE) | Normal | Standard |
-| **Extreme** (25+) | Calendar + decline spike | Decisions-only | Compressed bullets | Outage-only | Compressed |
+| **Extreme** (25+) | Calendar + decline spike | Full coverage, compressed format (all items, tighter bullets) | Full coverage, compressed bullets | Normal (never reduce alert coverage) | Full coverage, compressed format |
 
 **Key:** Evening debriefs stay full or expand during heavy weeks. That's when HMT is MOST blind to the company. Morning briefs shrink because he has no time to act on them anyway.
 

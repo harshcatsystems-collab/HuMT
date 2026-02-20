@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: fct_marketing_ad_spends_daily
+    description: "Daily aggregated ad spend fact table. It includes account,
+    campaign, ad set, and ad information along with the total spend for each ad per day.
+    This model combines data from 'stg_marketing_facebook_ads_insights' and 'stg_marketing_google_ads_ad_group_ad'."
+    columns:
+      - name: spend_date_utc
+        description: "The date (UTC) for which the spend and other metrics are reported. This forms part of the unique key for each record."
+      - name: account_id
+        description: "Identifier for the advertising account from which the ad originated."
+      - name: account_name
+        description: "Name of the advertising account. May be null for Google Ads."
+      - name: account_currency
+        description: "Currency code used by the advertising account. May be null for Google Ads.
+        For Facebook, it is INR."
+      - name: campaign_id
+        description: "Identifier for the campaign associated with the ad spend."
+      - name: campaign_name
+        description: "Name of the campaign"
+      - name: adset_id
+        description: "Identifier for the ad set (Facebook) or ad group (Google) associated with the ad spend."
+      - name: adset_name
+        description: "Name of the ad set (Facebook) or ad group (Google)"
+      - name: ad_id
+        description: "Identifier for the ad. This forms part of the unique key for each record."
+      - name: ad_name
+        description: "Name of the ad. May be null for Google Ads."
+      - name: daily_spend
+        description: "Total aggregated spend amount for the ad on the given spend_date_utc.
+        For Facebook, spend is in the account's currency.
+        For Google, spend is converted from micros to actual currency value.
+        "
+      - name: channel
+        description: "The advertising platform source - either 'Facebook' or 'Google'."
+
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - spend_date_utc
+            - ad_id
+            - channel

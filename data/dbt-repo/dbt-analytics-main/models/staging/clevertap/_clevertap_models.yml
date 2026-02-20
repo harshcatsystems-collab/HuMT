@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: stg_clevertap_campaign_report
+  - name: stg_celevertap_journey_report
+  - name: stg_ct_campaign_base
+  - name: stg_ct_daily_push_noti

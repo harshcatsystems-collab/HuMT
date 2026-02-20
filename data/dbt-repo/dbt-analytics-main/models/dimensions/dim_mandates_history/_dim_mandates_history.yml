@@ -1,0 +1,159 @@
+version: 2
+
+models:
+  - name: dim_mandates_history
+    description: >
+      A Type 2 Slowly Changing Dimension table that tracks the complete history of
+      mandate status changes over time. This table allows point-in-time analysis of
+      mandate statuses and supports analysis of mandate lifecycle stages.
+      
+      Each record represents a mandate at a specific status, with effective dates
+      indicating when the status was valid. The 'is_current' flag allows easy
+      filtering for the current status of each mandate.
+    config:
+      tags: ['mandate', 'dimension', 'scd']
+
+    columns:
+      - name: mandate_status_key
+        description: Surrogate key that uniquely identifies each status record
+
+      - name: mandate_id
+        description: Unique identifier for the mandate (from source system)
+        meta:
+          foreign_key: stg_mastermandates.mandate_id
+
+      - name: user_id
+        description: Identifier of the user who owns the mandate
+
+      - name: dim_mandates_scd
+        description: >
+          A Type 2 Slowly Changing Dimension table that tracks the complete history of
+          mandate status changes over time. This table allows point-in-time analysis of
+          mandate statuses and supports analysis of mandate lifecycle stages.
+          
+          Each record represents a mandate at a specific status, with effective dates
+          indicating when the status was valid. The 'is_current' flag allows easy
+          filtering for the current status of each mandate.
+
+
+      - name: pg_txn_id
+        description: Transaction identifier provided by the payment gateway. 
+
+      - name: plan_id
+        description: Identifier of the subscription plan associated with the mandate
+
+      - name: recurring_txn_id
+        description: Identifier for recurring transactions linked to this mandate
+
+      - name: amount_debit_successful_txn_id
+        description: Transaction ID of the successful debit transaction
+
+      - name: vpa
+        description: Virtual Payment Address associated with the mandate
+
+      - name: plan
+        description: Name of the payment plan
+
+      - name: coupon
+        description: Coupon code applied to the mandate, if any
+
+      - name: dialect
+        description: User's dialect
+
+      - name: istrial
+        description: Flag indicating if this is a trial mandate
+
+      - name: current_status
+        description: Current status of the mandate (latest known status)
+
+      - name: txn_status
+        description: Transaction status related to the mandate
+
+      - name: max_amount
+        description: Maximum amount allowed for debit under this mandate
+
+      - name: renewal_data
+        description: Details about renewal terms and conditions
+
+      - name: payment_gateway
+        description: Payment gateway used for processing mandate transactions
+
+      - name: payment_options
+        description: Available payment options for this mandate.
+
+      - name: payment_instrument
+        description: Payment instrument details (UPI_INTENT, UPI_COLLECT etc.)
+
+      - name: transaction_timeline
+        description: Timeline of transaction events related to this mandate
+
+      - name: recurring_plan
+        description: Details of the recurring payment plan
+
+      - name: created_at_utc
+        description: Timestamp when the mandate was created (UTC)
+
+      - name: created_at_ist
+        description: Timestamp when the mandate was created (IST)
+
+      - name: updated_at_utc
+        description: Timestamp when the mandate was last updated (UTC)
+
+      - name: updated_at_ist
+        description: Timestamp when the mandate was last updated (IST)
+
+      - name: next_renewal_at_utc
+        description: Timestamp for the next scheduled renewal (UTC)
+
+      - name: next_renewal_at_ist
+        description: Timestamp for the next scheduled renewal (IST)
+
+      - name: next_trigger_at_utc
+        description: Timestamp for the next scheduled trigger (UTC)
+
+      - name: next_trigger_at_ist
+        description: Timestamp for the next scheduled trigger (IST)
+
+      - name: amount_debit_successful_at_utc
+        description: Timestamp when the amount was successfully debited (UTC)
+
+      - name: amount_debit_successful_at_ist
+        description: Timestamp when the amount was successfully debited (IST)
+
+      # Status history specific columns
+      - name: status_change_id
+        description: Unique identifier for each status change record from source
+
+      - name: status_value
+        description: >
+          The specific status value for this record (e.g., 'mandate_initiated', 'mandate_active')
+
+      - name: effective_start_date_utc
+        description: >
+          Timestamp when this status became effective (UTC).
+          Used for point-in-time analysis.
+
+      - name: effective_start_date_ist
+        description: >
+          Timestamp when this status became effective (IST).
+          Used for point-in-time analysis.
+
+      - name: effective_end_date_utc
+        description: >
+          Timestamp when this status was no longer effective (UTC).
+          For current statuses, this is set to '9999-12-31'.
+
+      - name: effective_end_date_ist
+        description: >
+          Timestamp when this status was no longer effective (IST).
+          For current statuses, this is set to '9999-12-31'.
+
+      - name: status_sequence_number
+        description: >
+          Sequential number indicating the order of status changes for a mandate.
+          Starts at 0 for the first status.
+
+      - name: is_current
+        description: >
+          Boolean flag indicating if this is the current status for the mandate.
+          True for the most recent status, False for historical statuses.

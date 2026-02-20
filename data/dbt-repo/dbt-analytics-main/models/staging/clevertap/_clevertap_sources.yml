@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: clevertap
+    description: Collections replicated from production MongoDB
+    # database: raw_{{ env_var('DBT_ENV_SUFFIX') }}
+    database: raw_prod
+    schema: clevertap
+    tables:
+      - name: clevertap_campaign_report
+        description: Campaigns for the marketing team 
+      - name: clevertap_journey_report
+        description: Journeys for the marketing team
+      - name: ct_campaign_base
+        description: google sheet ufor identifying campaigns and journeys
+      - name: ct_daily_push_noti
+        description: Daily Notification sent and recieved to user 

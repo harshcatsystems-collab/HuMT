@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: events
+    description: Product Analytics instrumentation and events sent from our apps
+    # database: raw_{{ env_var('DBT_ENV_SUFFIX') }}
+    database: raw_prod
+    schema: events
+    tables:
+      - name: playback_pulse
+        description: A playback pulse is sent out every few seconds that a user spends watching content
+      - name: app_open
+        description: Fired every time the app is opened by a user
+      - name: page_viewed
+        description: Fired every time a new page is loaded
+      - name: widget_viewed
+        description: A widget viewed is sent out every time a user views a widget
+      - name: widget_clicked
+        description: A widget clicked is sent out every time a user clicks a widget
+      - name: thumbnail_viewed
+        description: A thumbnail viewed is sent out every time a user views a thumbnail
+      - name: thumbnail_clicked
+        description: A thumbnail clicked is sent out every time a user clicks a thumbnail
+      - name: app_uninstall
+        description: An uninstall event is fired when a user uninstalls their app.
+      - name : trial_paywall_viewed
+        description: Fired whenever the user is shown popup for trial activation.

@@ -1,0 +1,238 @@
+version: 2
+
+models:
+  - name: stg_marketing_facebook_ads_insights
+    description: "Staging model for facebook ads insights. it renames columns, casts data types, and selects relevant fields from the raw source data. this model filters for records where ad_id is not null, focusing on ad-level granularity."
+    config:
+      materialized: view
+    columns:
+      - name: account_id
+        description: "identifier for the ad account."
+      - name: campaign_id
+        description: "identifier for the campaign."
+      - name: campaign_name
+        description: "name of the campaign."
+      - name: adset_id
+        description: "identifier for the ad set."
+      - name: adset_name
+        description: "name of the ad set."
+      - name: ad_id
+        description: "identifier for the ad."
+      - name: ad_name
+        description: "name of the ad."
+      - name: start_date_utc
+        description: "the date of the reported spend and metrics, cast to date type."
+      - name: spend
+        description: "the amount spent, cast to a decimal type."
+      - name: impressions
+        description: "the number of impressions, cast to an integer type."
+      - name: clicks
+        description: "the number of clicks, cast to an integer type."
+      - name: reach
+        description: "the number of unique people reached, cast to an integer type."
+
+  - name: stg_marketing_google_ads_campaign
+    description: "Staging model for Google Ads campaign data. Renames columns, casts data types, and selects relevant fields from the raw source data."
+    config:
+      materialized: view
+    columns:
+      - name: campaign_id
+        description: "The unique identifier for the campaign."
+        tests:
+          - not_null
+      - name: campaign_name
+        description: "The name of the campaign."
+      - name: date_utc
+        description: "The date for which the metrics are reported."
+        tests:
+          - not_null
+      - name: campaign_start_date
+        description: "The start date of the campaign."
+      - name: campaign_end_date
+        description: "The end date of the campaign."
+      - name: clicks
+        description: "The number of clicks on the campaign."
+      - name: cost_micros
+        description: "The total cost of the campaign in micros (one millionth of the account currency unit)."
+      - name: impressions
+        description: "The number of impressions for the campaign."
+      - name: video_views
+        description: "The number of video views for video campaigns."
+      - name: conversions
+        description: "The number of conversions attributed to the campaign."
+      - name: conversions_value
+        description: "The total value of conversions attributed to the campaign."
+      - name: cost_per_conversion
+        description: "The cost per conversion for the campaign."
+      - name: value_per_conversion
+        description: "The value per conversion for the campaign."
+      - name: ctr
+        description: "The click-through rate for the campaign."
+      - name: average_cpc
+        description: "The average cost per click for the campaign."
+      - name: average_cpm
+        description: "The average cost per thousand impressions for the campaign."
+      - name: average_cost
+        description: "The average cost of an interaction for the campaign."
+      - name: interactions
+        description: "The number of interactions with the campaign ads."
+      - name: campaign_status
+        description: "The current status of the campaign (e.g., ENABLED, PAUSED)."
+      - name: advertising_channel_type
+        description: "The primary advertising channel type (e.g., SEARCH, DISPLAY)."
+      - name: advertising_channel_sub_type
+        description: "The advertising channel sub type (e.g., SMART_CAMPAIGN, VIDEO_ACTION)."
+      - name: ad_network_type
+        description: "The type of ad network (e.g., GOOGLE_SEARCH, SEARCH_PARTNERS)."
+      - name: bidding_strategy_type
+        description: "The type of bidding strategy used (e.g., MANUAL_CPC, TARGET_CPA)."
+      - name: optimization_score
+        description: "The optimization score for the campaign."
+      - name: budget_amount_micros
+        description: "The campaign budget amount in micros."
+
+  - name: stg_marketing_google_ads_ad_group
+    description: "Staging model for Google Ads ad group data. Renames columns, casts data types, and selects relevant fields from the raw source data."
+    config:
+      materialized: view
+    columns:
+      - name: ad_group_id
+        description: "The unique identifier for the ad group."
+      - name: campaign_id
+        description: "The identifier for the campaign the ad group belongs to."
+      - name: ad_group_name
+        description: "The name of the ad group."
+      - name: date_utc
+        description: "The date for which the metrics are reported."
+      - name: cost_micros
+        description: "The total cost of the ad group in micros (one millionth of the account currency unit)."
+      - name: ad_group_type
+        description: "The type of the ad group (e.g., SEARCH_STANDARD, DISPLAY_STANDARD)."
+      - name: ad_group_status
+        description: "The current status of the ad group (e.g., ENABLED, PAUSED)."
+      - name: cpc_bid_micros
+        description: "The default CPC bid amount for the ad group in micros."
+      - name: cpm_bid_micros
+        description: "The default CPM bid amount for the ad group in micros."
+      - name: cpv_bid_micros
+        description: "The default CPV bid amount for the ad group in micros."
+      - name: target_cpa_micros
+        description: "The target CPA amount for the ad group in micros."
+      - name: target_cpm_micros
+        description: "The target CPM amount for the ad group in micros."
+      - name: target_roas
+        description: "The target ROAS for the ad group."
+      - name: effective_target_cpa_micros
+        description: "The effective target CPA amount for the ad group in micros."
+      - name: effective_target_roas
+        description: "The effective target ROAS for the ad group."
+      - name: effective_target_cpa_source
+        description: "The source of the effective target CPA (e.g., AD_GROUP, CAMPAIGN)."
+      - name: effective_target_roas_source
+        description: "The source of the effective target ROAS (e.g., AD_GROUP, CAMPAIGN)."
+      - name: ad_rotation_mode
+        description: "The ad rotation mode for the ad group (e.g., OPTIMIZE, ROTATE_FOREVER)."
+      - name: optimized_targeting_enabled
+        description: "Indicates if optimized targeting is enabled for the ad group."
+
+  - name: stg_marketing_google_ads_ad_group_ad
+    description: "Staging model for Google Ads ad group ad data from the legacy source. It renames columns, casts data types, and selects relevant fields."
+    config:
+      materialized: view
+    columns:
+      - name: ad_id
+        description: "The unique identifier for the ad within the ad group."
+      - name: ad_group_id
+        description: "The identifier for the ad group the ad belongs to."
+      - name: campaign_id
+        description: "The identifier for the campaign the ad belongs to."
+      - name: account_id
+        description: "The identifier for the advertising account (Customer ID)."
+      - name: date_utc
+        description: "The date for which the metrics are reported."
+      - name: cost_micros
+        description: "The total cost in micros (one millionth of the account currency unit)."
+      - name: impressions
+        description: "The number of impressions."
+      - name: clicks
+        description: "The number of clicks."
+      - name: ctr
+        description: "The click-through rate."
+      - name: average_cpc
+        description: "The average cost per click."
+      - name: average_cpm
+        description: "The average cost per thousand impressions."
+      - name: conversions
+        description: "The number of conversions."
+      - name: conversions_value
+        description: "The total value of conversions."
+      - name: all_conversions
+        description: "The number of all conversions."
+      - name: all_conversions_value
+        description: "The total value of all conversions."
+      - name: cost_per_conversion
+        description: "The cost per conversion."
+      - name: value_per_conversion
+        description: "The value per conversion."
+      - name: cost_per_all_conversions
+        description: "The cost per all conversions."
+      - name: value_per_all_conversions
+        description: "The value per all conversions."
+      - name: view_through_conversions
+        description: "The number of view-through conversions."
+      - name: ad_name
+        description: "The name of the ad."
+      - name: ad_type
+        description: "The type of the ad (e.g., EXPANDED_TEXT_AD, RESPONSIVE_SEARCH_AD)."
+      - name: ad_group_ad_status
+        description: "The current status of the ad group ad (e.g., ENABLED, PAUSED)."
+      - name: ad_strength
+        description: "The strength of the ad (e.g., PENDING, POOR, AVERAGE, GOOD, EXCELLENT)."
+      - name: final_urls
+        description: "The list of final URLs for the ad."
+      - name: display_url
+        description: "The display URL for the ad."
+      - name: final_mobile_urls
+        description: "The list of final mobile URLs for the ad."
+      - name: added_by_google_ads
+        description: "Indicates if the ad was added by Google Ads."
+      - name: tracking_url_template
+        description: "The tracking URL template for the ad."
+      - name: url_custom_parameters
+        description: "The list of URL custom parameters for the ad."
+      - name: policy_approval_status
+        description: "The approval status of the ad's policy summary (e.g., UNKNOWN, APPROVED, DISAPPROVED)."
+      - name: system_managed_resource_source
+        description: "The source of the system managed resource (e.g., AD_VARIATIONS)."
+      - name: campaign_name
+        description: "The name of the campaign."
+      - name: campaign_status
+        description: "The current status of the campaign."
+      - name: ad_group_name
+        description: "The name of the ad group."
+      - name: ad_group_status
+        description: "The current status of the ad group."
+      - name: account_name
+        description: "The descriptive name of the advertising account."
+      - name: account_currency
+        description: "The currency code used by the advertising account."
+      - name: account_time_zone
+        description: "The time zone of the advertising account."
+      - name: segment_week
+        description: "The week segment."
+      - name: segment_year
+        description: "The year segment."
+      - name: segment_month
+        description: "The month segment."
+      - name: segment_quarter
+        description: "The quarter segment."
+      - name: segment_day_of_week
+        description: "The day of the week segment."
+      - name: segment_ad_network_type
+        description: "The type of ad network segment."
+      - name: _airbyte_raw_id
+        description: "Airbyte raw ID."
+      - name: _airbyte_extracted_at
+        description: "Airbyte extraction timestamp."
+      - name: _airbyte_meta
+        description: "Airbyte metadata."

@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: dim_devices
+    description: |
+      Contains information about the app and os running on a device on any given date
+    config:
+      tags: ["lightdash", "lightdash-dimension"]
+    meta:
+      label: Device Details
+    columns:
+      - name: device_id
+        description: ID of the device being analysed
+        meta:
+          dimension:
+            hidden: true
+      - name: app_id
+        description: Namespace of the app
+        meta:
+          dimension:
+            type: string
+            label: App ID
+      - name: app_version
+        description: Version of the app on the app store
+        meta:
+          dimension:
+            type: string
+            label: App Version
+      - name: device_os_version
+        description: OS Version of the device running the app
+        meta:
+          dimension:
+            type: string
+            label: Device OS Version
+      - name: device_platform
+        description: OS Name of the device running the app
+        meta:
+          dimension:
+            type: string
+            label: Device OS Name
+      - name: valid_from
+        description: Starting boundary for which these properties are valid for the given device
+        meta:
+          dimension:
+            hidden: true
+      - name: valid_to
+        description: Ending boundary for which these properties are valid for the given device
+        meta:
+          dimension:
+            hidden: true
+      

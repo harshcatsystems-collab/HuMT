@@ -1,0 +1,78 @@
+version: 2
+
+models:
+  - name: fct_user_engagement
+    description: |
+      Contains one row per user, per session, per day and aggregates various engagement metrics
+    config:
+      tags: ["lightdash", "lightdash-explore"]
+    meta:
+      label: User Engagement
+      joins:
+        - join: dim_devices
+          type: inner
+          sql_on: |
+            ${fct_user_engagement.device_id} = ${dim_devices.device_id}
+            and ${fct_user_engagement.report_date} > ${dim_devices.valid_from}
+            and ${fct_user_engagement.report_date} <= coalesce(${dim_devices.valid_from}, current_date) 
+    columns:
+      - name: report_date
+        description: The date when the session started
+        meta:
+          dimension:
+            label: Report Date
+            type: date
+      - name: device_id
+        description: Foreign Key, ID of the device
+        meta:
+          dimension:
+            hidden: true
+          metrics:
+            count_distinct_devices:
+              label: Number of Distinct Devices
+              type: count_distinct
+      - name: user_id
+        description: Foreign Key, ID of the user
+        meta:
+          dimension:
+            hidden: true
+          metrics:
+            count_distinct_users:
+              label: Number of Distinct Users
+              type: count_distinct
+      - name: count_app_opens
+        description: Number of times the app was opened
+        meta:
+          metrics:
+            total_app_opens:
+              label: Total App Opens
+              type: sum
+          dimension:
+            hidden: true
+      - name: count_playback_pulses
+        description: Number of playback pulses sent
+        meta:
+          metrics:
+            total_playback_pulses:
+              label: Total Playback Pulses
+              type: sum
+          dimension:
+            hidden: true
+      - name: count_thumbnail_views
+        description: Number of thumbnails viewed
+        meta:
+          metrics:
+            total_thumbnail_views:
+              label: Total Thumbnails Viewed
+              type: sum
+          dimension:
+            hidden: true
+      - name: count_thumbnail_clicks
+        description: Number of thumbnails clicked on
+        meta:
+          metrics:
+            total_thumbnail_clicks:
+              label: Total Thumbnails Clicked
+              type: sum
+          dimension:
+            hidden: true

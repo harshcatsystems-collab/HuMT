@@ -1,0 +1,86 @@
+version: 2
+
+models:
+  - name: fct_thumbnail_engagement
+    description: |
+      Contains one row per day per user by joining thumbnail viewed and thumbnail clicked events. 
+      Shows the widgets and thumbnails viewed along with corrersponding total views and clicks for each widget and thumbnail. 
+
+      e.g. if a user opens the app and views a thumbnail and then clicks on that thumbnail then we should have corresponding date, widget name, widget position, thumbnail name, thumbnail position, total views and total clicks (if any)
+    config:
+      tags: ["lightdash", "lightdash-explore"]
+    meta:
+      label: Thumbnail Engagement
+      joins:
+        - join: dim_content
+          type: inner
+          sql_on: ${fct_thumbnail_engagement.content_id} = ${dim_content.content_id}
+    columns:
+      - name: report_date
+        description: Date when the interaction (view or click) occurred.
+        meta:
+          dimension:
+            type: date
+            label: Report Date
+      - name: user_id
+        description: ID of the user who interacted with the thumbnail.
+        meta:
+          metrics:
+            num_unique_user_ids:
+              label: Number of Distinct Users
+              type: count_distinct
+          dimension:
+            hidden: true
+      - name: content_id
+        description: ID of the content piece of which thumbnail was engaged with
+        meta:
+          dimension:
+            hidden: true
+      - name: widget_name
+        description: The name of the root widget where the thumbnail is displayed.
+        meta:
+          dimension:
+            type: string
+            label: Widget Name
+      - name: widget_position
+        description: The position of the widget in the UI layout.
+        meta:
+          dimension:
+            type: number
+            label: Widget Position
+      - name: thumbnail_name
+        description: Title of the thumbnail that was viewed or clicked.
+        meta:
+          dimension:
+            type: string
+            label: Thumbnail Name
+      - name: thumbnail_column_position
+        description: The column position of the thumbnail within the widget.
+        meta:
+          dimension:
+            type: number
+            label: Thumbnail Column Position
+      - name: thumbnail_row_position
+        description: The row position of the thumbnail within the widget.
+        meta:
+          dimension:
+            type: number
+            label: Thumbnail Row Position
+      - name: total_views
+        description: Total number of times the thumbnail was viewed on the specified date by the user.
+        meta:
+          dimension:
+            hidden: true
+          metrics:
+            sum_total_views:
+              type: sum
+              label: Total Views
+      - name: total_clicks
+        description: Total number of times the thumbnail was clicked on the specified date by the user.
+        meta:
+          dimension:
+            hidden: true
+          metrics:
+            sum_total_clicks:
+              type: sum
+              label: Total Clicks

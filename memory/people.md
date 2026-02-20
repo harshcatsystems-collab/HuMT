@@ -81,7 +81,9 @@
 **Vinay Kumar Singhal** — Co-Founder & CEO
 - **Slack:** UEHET2Q2G | **Email:** vinay@stage.in
 - From Nunsar, Haryana (first engineer in family). SRM CS 2009-13. Started Badlega Bharat (2010) → WittyFeed → STAGE. LinkedIn: vinaykrsinghal. AI EA "Bittu"
-- **Observations:** (none yet — watch for: leadership style, decision patterns, how he interacts with HMT)
+- **Observations:**
+  - Recording-sensitive: immediately said "remove remove" when grey-area competitor revenue info was discussed on a recorded Blume call (Feb 18). Protective of what gets captured.
+  - Asked about investment deck & projections in #founders_sync (Feb 20) — active on fundraising/investor materials.
 
 **Parveen Singhal** — Co-Founder/CCO
 - **Slack:** UEJV57HQW | **Email:** parveen@stage.in
@@ -151,7 +153,8 @@
 - **Observations:** (none yet — watch for: research quality, how she surfaces insights, independence level)
 
 **Vismit Bansal** (Head - Retention Marketing)
-- **Observations:** (none yet — watch for: campaign decisions, how he reports results, proactiveness)
+- **Observations:**
+  - Running live game show MVP for app subscribers — low-budget, scrappy experimentation (requested conference room for 4-5 Sundays). Product-minded marketer, not just campaigns. (Feb 17)
 
 **Nisha Ali** (Sr. Manager - People & Culture)
 - **Observations:** Shared HR roster when HMT asked — responsive. (Watch for: how she handles sensitive people issues, communication with HMT, proactiveness on HR matters)
@@ -405,6 +408,9 @@
 - **Focus:** Renewal analysis, ClickHouse, data pipelines
 - **Go-to for:** All data context queries, schema questions, pipeline status. Hemabh > Harshit (seniority).
 - **Contacted:** 2026-02-18 — asked about PG transactions, ad spend, web→app tracking pipeline gaps
+- **Observations:**
+  - Delivers beyond what's asked — sent a comprehensive metrics dictionary (100+ metrics) unprompted after a simple "does this suffice?" (Feb 19). Answers the question you should have asked, not just the one you did.
+  - Circles back unprompted to check if needs are met — followed up in threads days later (Feb 19). Owns the relationship, not just the task. Senior behavior confirmed.
 - **Added:** 2026-02-16
 
 ### Kashish Thakur

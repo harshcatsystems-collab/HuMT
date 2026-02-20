@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: viz_new_subscriber_cohort_watch_retention_engagement
+    description: "This model calculates the watch retention and engagement for new subscriber cohorts. It cohorts users by the month, week, and date of their first subscription and tracks their daily watch time."
+    columns:
+      - name: cohort_month
+        description: "The month of the user's first subscription."
+      - name: cohort_week
+        description: "The week of the user's first subscription."
+      - name: cohort_date
+        description: "The date of the user's first subscription."
+      - name: user_id
+        description: "The ID of the user."
+      - name: install_status
+        description: "The installation status of the user's app at the time of cohorting."
+      - name: sub_source
+        description: "The source of the subscription, either 'direct' or 'via_trial'."
+      - name: dialect
+        description: "The user's dialect."
+      - name: geography
+        description: "The user's geography, categorized as 'core' or 'non-core'."
+      - name: watch_date
+        description: "The date of the user's watch activity."
+      - name: days_since_start
+        description: "The number of days since the user's cohort date."
+      - name: watched_time_sec
+        description: "The total watch time in seconds for the user on the given watch_date."

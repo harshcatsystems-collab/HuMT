@@ -1,0 +1,4 @@
+version: 2
+
+models:
+  - name: stg_events_nest_backend_app_uninstall

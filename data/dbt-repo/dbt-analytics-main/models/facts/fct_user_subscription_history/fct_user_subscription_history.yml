@@ -1,0 +1,106 @@
+version: 2
+
+models:
+  - name: fct_user_subscription_history
+    description: >
+      This model contains history of user subscriptions and identifies the first subscription,
+      trial plans, renewals, and new subscriptions following trials. It filters for specific
+      vendors and excludes resume trials.
+    
+    config:
+      materialized: table
+      tags: ['subscriptions']
+    
+    columns:
+      - name: _id
+        description: Unique MongoDB document identifier
+      
+      - name: plan_id
+        description: Identifier for the subscription plan
+      
+      - name: user_id
+        description: Unique identifier for the user
+      
+      - name: master_mandate_id
+        description: Identifier for payment mandate, 
+                     Use this to map with mandate_id of dim_mandates_history for use cases like subscription cencellations 
+      
+      - name: subscription_id
+        description: Unique identifier for the subscription
+      
+      - name: gps_adid
+        description: Device advertising identifier
+      
+      - name: country
+        description: User's country
+      
+      - name: status
+        description: Current status of the subscription 
+                     Status value 'cancel' will mean currently inactive or expired 
+                     subscriptions. In order to get user cancelled subscriptions, we'll have 
+                     to check at master_mandate level. 
+                     Current status of the subscription. It can take the following values 
+                     active, non-active, cancel, refunded, cancelled.
+      
+      - name: vendor
+        description: >
+          Payment/subscription provider (filtered using is_valid_vendor,to include only: CMS, JUSPAY, PARTNER, 
+          PLAY_BILLING_RECURRING, RAZORPAY, SETU, STRIPE, STAGE, TELESALES, apple, 
+          isp1, PHONEPE, PAYTM). This is to exclude third party vendor like Airtel, Watcho etc.
+      
+      - name: currency
+        description: Currency of the transaction
+      
+      - name: subscription_through
+        description: Channel through which subscription was acquired
+      
+      - name: plan_order
+        description: >
+          Chronological order of plan for this user (1 = first plan ever, can be a first trail
+          or first subscription basis created_at_ist)
+      
+      - name: primary_dialect
+        description: User's first registered dialect, this is different from user culture
+      
+      - name: coupon_code
+        description: Discount coupon applied to subscription
+      
+      - name: created_at_utc
+        description: UTC timestamp of record creation
+      
+      - name: created_at_ist
+        description: IST timestamp of record creation
+      
+      - name: updated_at_utc
+        description: UTC timestamp of last update
+      
+      - name: updated_at_ist
+        description: IST timestamp of last update
+      
+      - name: subscription_start_at_utc
+        description: UTC timestamp of subscription start
+      
+      - name: subscription_start_at_ist
+        description: IST timestamp of subscription start
+      
+      - name: subscription_end_at_utc
+        description: UTC timestamp of subscription end
+      
+      - name: subscription_end_at_ist
+        description: IST timestamp of subscription end
+      
+      - name: actual_price
+        description: Original price of the subscription plan
+      
+      - name: paying_price
+        description: Amount paid by the user for subscription plan after discounts
+      
+      - name: plan_category
+        description: >
+          Categorization of the subscription with three possible values:
+          - Trial: Plans with values like "trial" in the plan_id
+          - New Subscription: Either the user's first plan ever or first paid plan after a trial
+          - Renewal: Subsequent subscriptions that don't follow a trial
+        tests:
+          - accepted_values:
+              values: ['Trial', 'New Subscription', 'Renewal']

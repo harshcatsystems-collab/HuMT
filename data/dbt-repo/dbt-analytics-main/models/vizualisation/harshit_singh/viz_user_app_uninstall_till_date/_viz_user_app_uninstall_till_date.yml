@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: app_uninstalls_status
+    description: "This model identifies users who have uninstalled the application and have not engaged with it since their last uninstall date."
+    columns:
+      - name: user_id
+        description: "The unique identifier for the user."
+      - name: app_status
+        description: "The current status of the application for the user, indicating 'uninstalled'."

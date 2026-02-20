@@ -1,0 +1,432 @@
+version: 2
+
+sources:
+  - name: facebook_marketing # replace with the actual schema name where airbyte lands the data
+    description: "raw data from facebook marketing api, loaded by airbyte."
+    database: raw_prod
+    schema: facebook_marketing
+    tables:
+      - name: ads_insights
+        description: "raw ads insights data containing performance metrics and breakdowns for facebook ads. each row can represent an ad's performance for a specific day and set of breakdowns."
+
+        columns:
+          - name: account_id
+            description: "the id of the ad account."
+          - name: account_name
+            description: "the name of the ad account."
+          - name: account_currency
+            description: "the currency used by the ad account. 
+            Its 3 capital letter code. For Facebook, it is INR."
+          - name: campaign_id
+            description: "the id of the ad campaign."
+          - name: campaign_name
+            description: "the name of the ad campaign."
+          - name: adset_id
+            description: "the id of the ad set."
+          - name: adset_name
+            description: "the name of the ad set."
+          - name: ad_id
+            description: "the id of the ad. this can be null if the insight is at a higher level (e.g., campaign or adset)."
+
+          - name: ad_name
+            description: "the name of the ad."
+          - name: date_start
+            description: "the start date of the period for which the insight data is aggregated (yyyy-mm-dd)."
+          - name: date_stop
+            description: "the end date of the period for which the insight data is aggregated (yyyy-mm-dd)."
+          - name: spend
+            description: "the estimated total amount of money spent on your ad, ad set, or campaign during its schedule. (numeric string from api)"
+          - name: impressions
+            description: "the number of times ads were on screen. (numeric string from api)"
+          - name: clicks
+            description: "the number of clicks on ads. (numeric string from api)"
+          - name: reach
+            description: "the number of unique people who saw your ads at least once. (numeric string from api)"
+  
+  - name: google_ads
+    description: "raw data from google ads api, loaded by airbyte."
+    database: raw_prod
+    schema: google_ads
+    tables:
+      - name: campaign
+        description: "raw campaign data from google ads, aggregated daily."
+        columns:
+          - name: campaign__id
+            description: "the id of the campaign."
+          - name: segments__date
+            description: "the date to which the metrics apply (yyyy-mm-dd)."
+          - name: campaign__name
+            description: "the name of the campaign."
+          - name: metrics__clicks
+            description: "the number of clicks on the campaign."
+          - name: metrics__cost_micros
+            description: "the total cost of the campaign in micros."
+          - name: metrics__impressions
+            description: "the number of times the campaign ads were shown."
+          - name: metrics__video_views
+            description: "the number of video views for video campaigns."
+          - name: metrics__conversions
+            description: "the number of conversions attributed to the campaign."
+          - name: metrics__conversions_value
+            description: "the total value of conversions attributed to the campaign."
+          - name: metrics__cost_per_conversion
+            description: "the cost per conversion for the campaign."
+          - name: metrics__value_per_conversion
+            description: "the value per conversion for the campaign."
+          - name: metrics__ctr
+            description: "the click-through rate for the campaign."
+          - name: metrics__average_cpc
+            description: "the average cost per click for the campaign."
+          - name: metrics__average_cpm
+            description: "the average cost per thousand impressions for the campaign."
+          - name: metrics__average_cost
+            description: "the average cost of an interaction for the campaign."
+          - name: metrics__interactions
+            description: "the number of interactions with the campaign ads."
+          - name: campaign__status
+            description: "the current status of the campaign (e.g., ENABLED, PAUSED)."
+          - name: campaign__start_date
+            description: "the start date of the campaign."
+          - name: campaign__end_date
+            description: "the end date of the campaign."
+          - name: advertising_channel_type
+            description: "the primary advertising channel type (e.g., SEARCH, DISPLAY)."
+          - name: advertising_channel_sub_type
+            description: "the advertising channel sub type (e.g., SMART_CAMPAIGN, VIDEO_ACTION)."
+          - name: segments__ad_network_type
+            description: "the type of ad network (e.g., GOOGLE_SEARCH, SEARCH_PARTNERS)."
+          - name: bidding_strategy_type
+            description: "the type of bidding strategy used (e.g., MANUAL_CPC, TARGET_CPA)."
+          - name: optimization_score
+            description: "the optimization score for the campaign."
+          - name: campaign_budget__amount_micros
+            description: "the campaign budget amount in micros."
+      - name: ad_group
+        description: "raw ad group data from google ads, aggregated daily."
+        columns:
+          - name: ad_group__id
+            description: "the id of the ad group."
+          - name: campaign__id
+            description: "the id of the campaign the ad group belongs to."
+          - name: ad_group__name
+            description: "the name of the ad group."
+          - name: ad_group__type
+            description: "the type of the ad group (e.g., SEARCH_STANDARD, DISPLAY_STANDARD)."
+          - name: segments__date
+            description: "the date to which the metrics apply (yyyy-mm-dd)."
+          - name: ad_group__status
+            description: "the current status of the ad group (e.g., ENABLED, PAUSED)."
+          - name: metrics__cost_micros
+            description: "the total cost of the ad group in micros."
+          - name: ad_group__cpc_bid_micros
+            description: "the default CPC bid amount for the ad group in micros."
+          - name: ad_group__cpm_bid_micros
+            description: "the default CPM bid amount for the ad group in micros."
+          - name: ad_group__cpv_bid_micros
+            description: "the default CPV bid amount for the ad group in micros."
+          - name: ad_group__target_cpa_micros
+            description: "the target CPA amount for the ad group in micros."
+          - name: ad_group__target_cpm_micros
+            description: "the target CPM amount for the ad group in micros."
+          - name: ad_group__target_roas
+            description: "the target ROAS for the ad group."
+          - name: ad_group__effective_target_cpa_micros
+            description: "the effective target CPA amount for the ad group in micros."
+          - name: ad_group__effective_target_roas
+            description: "the effective target ROAS for the ad group."
+          - name: ad_group__effective_target_cpa_source
+            description: "the source of the effective target CPA (e.g., AD_GROUP, CAMPAIGN)."
+          - name: ad_group__effective_target_roas_source
+            description: "the source of the effective target ROAS (e.g., AD_GROUP, CAMPAIGN)."
+          - name: ad_group__ad_rotation_mode
+            description: "the ad rotation mode for the ad group (e.g., OPTIMIZE, ROTATE_FOREVER)."
+          - name: ad_group__optimized_targeting_enabled
+            description: "indicates if optimized targeting is enabled for the ad group."
+      - name: ad_group_ad_legacy
+        description: "raw ad group ad data from google ads, loaded by airbyte from a legacy source. this table contains combined data including campaign and customer details."
+        columns:
+          - name: _airbyte_raw_id
+            description: "Airbyte raw ID."
+          - name: _airbyte_extracted_at
+            description: "Airbyte extraction timestamp."
+          - name: _airbyte_meta
+            description: "Airbyte metadata."
+          - name: "AD_GROUP.ID"
+            description: "The id of the ad group."
+          - name: "CAMPAIGN.ID"
+            description: "The id of the campaign."
+          - name: "CUSTOMER.ID"
+            description: "The id of the customer (account)."
+          - name: "METRICS.CTR"
+            description: "The click-through rate."
+          - name: "AD_GROUP.NAME"
+            description: "The name of the ad group."
+          - name: "CAMPAIGN.NAME"
+            description: "The name of the campaign."
+          - name: "SEGMENTS.DATE"
+            description: "The date to which the metrics apply (yyyy-mm-dd)."
+          - name: "SEGMENTS.WEEK"
+            description: "The week segment."
+          - name: "SEGMENTS.YEAR"
+            description: "The year segment."
+          - name: "METRICS.CLICKS"
+            description: "The number of clicks."
+          - name: "SEGMENTS.MONTH"
+            description: "The month segment."
+          - name: "AD_GROUP.STATUS"
+            description: "The current status of the ad group."
+          - name: "CAMPAIGN.STATUS"
+            description: "The current status of the campaign."
+          - name: "SEGMENTS.QUARTER"
+            description: "The quarter segment."
+          - name: "AD_GROUP_AD.AD.ID"
+            description: "The id of the ad within the ad group."
+          - name: "AD_GROUP_AD.STATUS"
+            description: "The current status of the ad group ad."
+          - name: "CUSTOMER.TIME_ZONE"
+            description: "The time zone of the customer account."
+          - name: "AD_GROUP_AD.AD.TYPE"
+            description: "The type of the ad."
+          - name: "METRICS.AVERAGE_CPC"
+            description: "The average cost per click."
+          - name: "METRICS.AVERAGE_CPE"
+            description: "The average cost per engagement."
+          - name: "METRICS.AVERAGE_CPM"
+            description: "The average cost per thousand impressions."
+          - name: "METRICS.AVERAGE_CPV"
+            description: "The average cost per view."
+          - name: "METRICS.BOUNCE_RATE"
+            description: "The bounce rate."
+          - name: "METRICS.CONVERSIONS"
+            description: "The number of conversions."
+          - name: "METRICS.COST_MICROS"
+            description: "The total cost in micros."
+          - name: "METRICS.ENGAGEMENTS"
+            description: "The number of engagements."
+          - name: "METRICS.GMAIL_SAVES"
+            description: "The number of Gmail saves."
+          - name: "METRICS.IMPRESSIONS"
+            description: "The number of impressions."
+          - name: "METRICS.VIDEO_VIEWS"
+            description: "The number of video views."
+          - name: "AD_GROUP_AD.AD_GROUP"
+            description: "The resource name of the ad group the ad belongs to."
+          - name: "METRICS.AVERAGE_COST"
+            description: "The average cost of an interaction."
+          - name: "METRICS.INTERACTIONS"
+            description: "The number of interactions."
+          - name: "SEGMENTS.DAY_OF_WEEK"
+            description: "The day of the week segment."
+          - name: "AD_GROUP.BASE_AD_GROUP"
+            description: "The resource name of the base ad group."
+          - name: "CAMPAIGN.BASE_CAMPAIGN"
+            description: "The resource name of the base campaign."
+          - name: "CUSTOMER.CURRENCY_CODE"
+            description: "The currency code used by the customer account."
+          - name: "METRICS.GMAIL_FORWARDS"
+            description: "The number of Gmail forwards."
+          - name: "AD_GROUP_AD.AD_STRENGTH"
+            description: "The strength of the ad."
+          - name: "METRICS.ACTIVE_VIEW_CPM"
+            description: "The Active View cost per thousand measurable impressions."
+          - name: "METRICS.ACTIVE_VIEW_CTR"
+            description: "The Active View click-through rate."
+          - name: "METRICS.ALL_CONVERSIONS"
+            description: "The number of all conversions."
+          - name: "METRICS.ENGAGEMENT_RATE"
+            description: "The engagement rate."
+          - name: "METRICS.VIDEO_VIEW_RATE"
+            description: "The video view rate."
+          - name: "METRICS.INTERACTION_RATE"
+            description: "The interaction rate."
+          - name: "SEGMENTS.AD_NETWORK_TYPE"
+            description: "The type of ad network segment."
+          - name: "AD_GROUP_AD.AD.FINAL_URLS"
+            description: "The list of final URLs for the ad."
+          - name: "CUSTOMER.DESCRIPTIVE_NAME"
+            description: "The descriptive name of the customer account."
+          - name: "METRICS.CONVERSIONS_VALUE"
+            description: "The total value of conversions."
+          - name: "AD_GROUP_AD.AD.DISPLAY_URL"
+            description: "The display URL for the ad."
+          - name: "METRICS.AVERAGE_PAGE_VIEWS"
+            description: "The average number of page views."
+          - name: "METRICS.COST_PER_CONVERSION"
+            description: "The cost per conversion."
+          - name: "AD_GROUP_AD.AD.APP_AD.IMAGES"
+            description: "Images for App ads."
+          - name: "AD_GROUP_AD.AD.IMAGE_AD.NAME"
+            description: "The name of the Image ad."
+          - name: "METRICS.AVERAGE_TIME_ON_SITE"
+            description: "The average time on site."
+          - name: "METRICS.PERCENT_NEW_VISITORS"
+            description: "The percentage of new visitors."
+          - name: "METRICS.VALUE_PER_CONVERSION"
+            description: "The value per conversion."
+          - name: "METRICS.ALL_CONVERSIONS_VALUE"
+            description: "The total value of all conversions."
+          - name: "METRICS.GMAIL_SECONDARY_CLICKS"
+            description: "The number of Gmail secondary clicks."
+          - name: "AD_GROUP_AD.AD.APP_AD.HEADLINES"
+            description: "Headlines for App ads."
+          - name: "AD_GROUP_AD.AD.TEXT_AD.HEADLINE"
+            description: "The headline of the Text ad."
+          - name: "METRICS.ACTIVE_VIEW_IMPRESSIONS"
+            description: "The number of Active View measurable impressions."
+          - name: "METRICS.ACTIVE_VIEW_VIEWABILITY"
+            description: "The Active View viewability rate."
+          - name: "METRICS.INTERACTION_EVENT_TYPES"
+            description: "The types of interaction events."
+          - name: "METRICS.VIDEO_QUARTILE_P25_RATE"
+            description: "The percentage of video plays that reached the 25% mark."
+          - name: "METRICS.VIDEO_QUARTILE_P50_RATE"
+            description: "The percentage of video plays that reached the 50% mark."
+          - name: "METRICS.VIDEO_QUARTILE_P75_RATE"
+            description: "The percentage of video plays that reached the 75% mark."
+          - name: "AD_GROUP_AD.AD.DEVICE_PREFERENCE"
+            description: "The device preference for the ad."
+          - name: "AD_GROUP_AD.AD.FINAL_MOBILE_URLS"
+            description: "The list of final mobile URLs for the ad."
+          - name: "METRICS.COST_PER_ALL_CONVERSIONS"
+            description: "The cost per all conversions."
+          - name: "METRICS.CROSS_DEVICE_CONVERSIONS"
+            description: "The number of cross-device conversions."
+          - name: "METRICS.VIDEO_QUARTILE_P100_RATE"
+            description: "The percentage of video plays that reached the 100% mark."
+          - name: "METRICS.VIEW_THROUGH_CONVERSIONS"
+            description: "The number of view-through conversions."
+          - name: "AD_GROUP_AD.AD.IMAGE_AD.IMAGE_URL"
+            description: "The image URL for the Image ad."
+          - name: "AD_GROUP_AD.AD.IMAGE_AD.MIME_TYPE"
+            description: "The MIME type of the Image ad."
+          - name: "METRICS.ACTIVE_VIEW_MEASURABILITY"
+            description: "The Active View measurability rate."
+          - name: "METRICS.TOP_IMPRESSION_PERCENTAGE"
+            description: "The percentage of impressions that were shown in the top location."
+          - name: "METRICS.VALUE_PER_ALL_CONVERSIONS"
+            description: "The value per all conversions."
+          - name: "AD_GROUP_AD.AD.ADDED_BY_GOOGLE_ADS"
+            description: "Indicates if the ad was added by Google Ads."
+          - name: "AD_GROUP_AD.AD.APP_AD.DESCRIPTIONS"
+            description: "Descriptions for App ads."
+          - name: "AD_GROUP_AD.AD.IMAGE_AD.PIXEL_WIDTH"
+            description: "The pixel width of the Image ad."
+          - name: "AD_GROUP_AD.AD.TEXT_AD.DESCRIPTION1"
+            description: "The first description line of the Text ad."
+          - name: "AD_GROUP_AD.AD.TEXT_AD.DESCRIPTION2"
+            description: "The second description line of the Text ad."
+          - name: "AD_GROUP_AD.AD.APP_AD.YOUTUBE_VIDEOS"
+            description: "YouTube videos for App ads."
+          - name: "AD_GROUP_AD.AD.IMAGE_AD.PIXEL_HEIGHT"
+            description: "The pixel height of the Image ad."
+          - name: "AD_GROUP_AD.AD.TRACKING_URL_TEMPLATE"
+            description: "The tracking URL template for the ad."
+          - name: "AD_GROUP_AD.AD.URL_CUSTOM_PARAMETERS"
+            description: "The list of URL custom parameters for the ad."
+          - name: "AD_GROUP_AD.AD.EXPANDED_TEXT_AD.PATH1"
+            description: "The first path of the Expanded Text ad."
+          - name: "AD_GROUP_AD.AD.EXPANDED_TEXT_AD.PATH2"
+            description: "The second path of the Expanded Text ad."
+          - name: "AD_GROUP_AD.AD.APP_AD.MANDATORY_AD_TEXT"
+            description: "The mandatory ad text for App ads."
+          - name: "AD_GROUP_AD.AD.APP_AD.HTML5_MEDIA_BUNDLES"
+            description: "HTML5 media bundles for App ads."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_SEARCH_AD.PATH1"
+            description: "The first path of the Responsive Search ad."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_SEARCH_AD.PATH2"
+            description: "The second path of the Responsive Search ad."
+          - name: "AD_GROUP_AD.POLICY_SUMMARY.APPROVAL_STATUS"
+            description: "The approval status of the ad's policy summary."
+          - name: "METRICS.ACTIVE_VIEW_MEASURABLE_COST_MICROS"
+            description: "The Active View measurable cost in micros."
+          - name: "METRICS.ACTIVE_VIEW_MEASURABLE_IMPRESSIONS"
+            description: "The number of Active View measurable impressions."
+          - name: "METRICS.CONVERSIONS_FROM_INTERACTIONS_RATE"
+            description: "The conversions from interactions rate."
+          - name: "AD_GROUP_AD.AD.EXPANDED_TEXT_AD.DESCRIPTION"
+            description: "The description of the Expanded Text ad."
+          - name: "AD_GROUP_AD.AD.EXPANDED_TEXT_AD.DESCRIPTION2"
+            description: "The second description line of the Expanded Text ad."
+          - name: "METRICS.CURRENT_MODEL_ATTRIBUTED_CONVERSIONS"
+            description: "The number of current model attributed conversions."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_SEARCH_AD.HEADLINES"
+            description: "Headlines for Responsive Search ads."
+          - name: "AD_GROUP_AD.AD.SYSTEM_MANAGED_RESOURCE_SOURCE"
+            description: "The source of the system managed resource."
+          - name: "AD_GROUP_AD.AD.EXPANDED_TEXT_AD.HEADLINE_PART1"
+            description: "The first headline part of the Expanded Text ad."
+          - name: "AD_GROUP_AD.AD.EXPANDED_TEXT_AD.HEADLINE_PART2"
+            description: "The second headline part of the Expanded Text ad."
+          - name: "AD_GROUP_AD.AD.EXPANDED_TEXT_AD.HEADLINE_PART3"
+            description: "The third headline part of the Expanded Text ad."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.HEADLINES"
+            description: "Headlines for Responsive Display ads."
+          - name: "METRICS.ALL_CONVERSIONS_FROM_INTERACTIONS_RATE"
+            description: "The all conversions from interactions rate."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.MAIN_COLOR"
+            description: "The main color of the Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.PROMO_TEXT"
+            description: "The promo text of the Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.LOGO_IMAGES"
+            description: "Logo images for Responsive Display ads."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_SEARCH_AD.DESCRIPTIONS"
+            description: "Descriptions for Responsive Search ads."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.ACCENT_COLOR"
+            description: "The accent color of the Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.DESCRIPTIONS"
+            description: "Descriptions for Responsive Display ads."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.PRICE_PREFIX"
+            description: "The price prefix of the Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.BUSINESS_NAME"
+            description: "The business name of the Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.LONG_HEADLINE"
+            description: "The long headline of the Responsive Display ad."
+          - name: "METRICS.CURRENT_MODEL_ATTRIBUTED_CONVERSIONS_VALUE"
+            description: "The value of current model attributed conversions."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.FORMAT_SETTING"
+            description: "The format setting of the Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.YOUTUBE_VIDEOS"
+            description: "YouTube videos for Responsive Display ads."
+          - name: "METRICS.COST_PER_CURRENT_MODEL_ATTRIBUTED_CONVERSION"
+            description: "The cost per current model attributed conversion."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.MARKETING_IMAGES"
+            description: "Marketing images for Responsive Display ads."
+          - name: "METRICS.VALUE_PER_CURRENT_MODEL_ATTRIBUTED_CONVERSION"
+            description: "The value per current model attributed conversion."
+          - name: "AD_GROUP_AD.AD.LEGACY_RESPONSIVE_DISPLAY_AD.LOGO_IMAGE"
+            description: "The logo image of the Legacy Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.LEGACY_RESPONSIVE_DISPLAY_AD.MAIN_COLOR"
+            description: "The main color of the Legacy Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.LEGACY_RESPONSIVE_DISPLAY_AD.PROMO_TEXT"
+            description: "The promo text of the Legacy Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.SQUARE_LOGO_IMAGES"
+            description: "Square logo images for Responsive Display ads."
+          - name: "AD_GROUP_AD.AD.LEGACY_RESPONSIVE_DISPLAY_AD.ACCENT_COLOR"
+            description: "The accent color of the Legacy Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.LEGACY_RESPONSIVE_DISPLAY_AD.PRICE_PREFIX"
+            description: "The price prefix of the Legacy Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.CALL_TO_ACTION_TEXT"
+            description: "The call to action text of the Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.LEGACY_RESPONSIVE_DISPLAY_AD.BUSINESS_NAME"
+            description: "The business name of the Legacy Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.LEGACY_RESPONSIVE_DISPLAY_AD.LONG_HEADLINE"
+            description: "The long headline of the Legacy Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.ALLOW_FLEXIBLE_COLOR"
+            description: "Indicates if flexible color is allowed for the Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.LEGACY_RESPONSIVE_DISPLAY_AD.FORMAT_SETTING"
+            description: "The format setting of the Legacy Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.LEGACY_RESPONSIVE_DISPLAY_AD.SHORT_HEADLINE"
+            description: "The short headline of the Legacy Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.LEGACY_RESPONSIVE_DISPLAY_AD.MARKETING_IMAGE"
+            description: "The marketing image of the Legacy Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.RESPONSIVE_DISPLAY_AD.SQUARE_MARKETING_IMAGES"
+            description: "Square marketing images for Responsive Display ads."
+          - name: "AD_GROUP_AD.AD.LEGACY_RESPONSIVE_DISPLAY_AD.SQUARE_LOGO_IMAGE"
+            description: "The square logo image of the Legacy Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.LEGACY_RESPONSIVE_DISPLAY_AD.CALL_TO_ACTION_TEXT"
+            description: "The call to action text of the Legacy Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.LEGACY_RESPONSIVE_DISPLAY_AD.ALLOW_FLEXIBLE_COLOR"
+            description: "Indicates if flexible color is allowed for the Legacy Responsive Display ad."
+          - name: "AD_GROUP_AD.AD.LEGACY_RESPONSIVE_DISPLAY_AD.SQUARE_MARKETING_IMAGE"
+            description: "The square marketing image of the Legacy Responsive Display ad."
+

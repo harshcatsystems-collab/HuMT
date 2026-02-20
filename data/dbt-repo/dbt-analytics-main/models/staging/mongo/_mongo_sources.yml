@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: mongo
+    description: Collections replicated from production MongoDB
+    # database: raw_{{ env_var('DBT_ENV_SUFFIX') }}
+    database: raw_prod
+    schema: mongo
+    tables:
+      - name: episodes
+        description: Contains information about all tv shows and movies
+      - name: shows
+        description: Contains metadata about tv show episodes
+      - name: userwatchhistories
+        description: Contains data content consumption data of users after 2024-12-22T21:32:53.067Z
+      - name: userwatchhistories_archive
+        description: Contains data content consumption data of users 
+          after 2023-01-01T18:30:00.00Z and uptill 2024-12-31T23:59:59.59Z
+      - name: users
+        description: Contains records of all users
+      
+      - name: usersubscriptionhistory
+        description: Contains subscription records of all users
+      - name: mastermandates
+        description: Contains latest state of all mandates and history of mandate status in column statushistory
+      - name: mandate_transactions
+        identifier: "MANDATE-TRANSACTIONS"
+        quoting:
+          identifier: true
+        description: contains data for mandates transactions
+      - name: plans
+        description: contains the data for plans

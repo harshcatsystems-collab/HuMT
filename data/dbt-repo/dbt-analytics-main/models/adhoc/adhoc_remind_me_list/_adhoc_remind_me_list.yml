@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: adhoc_remind_me_list
+    description: |
+      This model flattens the remindmelist array for each user, extracting individual items for further analysis.
+      It helps identify content users have added to their "Remind Me" list.
+    config:
+      materialized: view
+      tags: ["lightdash", "lightdash-explore", "adhoc"]
+    meta:
+      label: "Remind Me List"
+      joins:
+        - join: dim_users
+          type: inner
+          sql_on: ${fct_remind_me_list.user_id} = ${dim_users.user_id}
+    columns:
+      - name: user_id
+        description: "Unique identifier for the user."
+        meta:
+          dimension:
+            hidden: false
+      - name: date
+        description: "Date when the user was created."
+        meta:
+          dimension:
+            type: date
+      - name: remindmelist_item
+        description: "Individual item from the remindmelist array for each user."
+        meta:
+          dimension:
+            type: string

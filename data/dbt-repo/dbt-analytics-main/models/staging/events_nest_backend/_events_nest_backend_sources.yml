@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: events_nest_backend
+    description: Product Analytics instrumentation and events from our nest backend
+    database: raw_prod
+    schema: events_nest_backend
+    tables:
+     - name: app_uninstall    
+       description: An uninstall event is fired when a user uninstalls their app.

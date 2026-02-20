@@ -1,0 +1,14 @@
+
+version: 2
+
+sources:
+  - name: events_infra
+    description: Product Analytics instrumentation and events from our infra
+    database: raw_prod
+    schema: events_infra
+    tables:
+      - name: cdn_playback_log
+        description: A log is fired by CDN on start of the content buffer with user id and content id and subsequent log is fired on each chunk sent from CDN to the client
+      - name: app_open
+        description: A log is fired by CDN everytime app is opened
+        

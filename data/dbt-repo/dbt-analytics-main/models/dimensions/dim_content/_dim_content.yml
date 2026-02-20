@@ -1,0 +1,163 @@
+version: 2
+
+models:
+  - name: dim_content
+    description: |
+      Information about the content that's available on the platform. This includes both films and TV Shows.
+    config:
+      tags: ["lightdash", "lightdash-dimension"]
+    meta:
+      label: Content Details
+      group_details:
+        content_details:
+          label: Content Details
+          description: "Fields that contain information about the content being watched"
+        show_details:
+          label: Show Details
+          description: "Fields that only apply to TV Shows"
+    columns:
+      - name: content_id
+        description: Primary Key, ID of the content
+        meta:
+          dimension:
+            hidden: true
+      - name: show_id
+        description: Foreign Key, ID of the show in case this content is an episode of a TV show
+        meta:
+          dimension:
+            hidden: true
+      - name: content_type
+        description: Individual or Show
+        meta:
+          dimension:
+            type: string
+            label: Content Type
+      - name: content_title
+        description: Title of the film or episode of TV Show
+        meta:
+          dimension:
+            type: string
+            label: Content Title
+      - name: content_dialect
+        description: |
+          Original dialect of the content being watched stored as a 3 letter abbreviation, lowercase.
+          We use 'har' for Haryanvi, 'raj' for Rajasthani and 'bho' for Bhojpuri.
+        meta:
+          dimension:
+            type: string
+            label: Content Dialect
+      - name: content_status
+        description: Whether the content is active or paused or deleted
+        meta:
+          dimension:
+            type: string
+            label: Content Status
+      - name: content_slug
+        description: Slug of the film or episode of the tv show
+        meta:
+          dimension:
+            type: string
+            label: Content Slug
+      - name: show_slug
+        description: Slug of the tv show
+        meta:
+          dimension:
+            type: string
+            label: Show Slug
+            groups: ["show_details"]
+      - name: count_seasons
+        description: How many seasons this show has
+        meta:
+          dimension:
+            type: string
+            label: Show Season Count
+            groups: ["show_details"]
+      - name: count_episodes
+        description: How many episodes this show has
+        meta:
+          dimension:
+            type: string
+            label: Show Episode Count
+            groups: ["show_details"]
+      - name: show_title
+        description: Title of the TV Show
+        meta:
+          dimension:
+            type: string
+            label: Show Title
+            groups: ["show_details"]
+      - name: episode_order
+        description: Order of the current episode in the TV Show
+        meta:
+          dimension:
+            type: number
+            label: Show Episode
+            groups: ["show_details"]
+      - name: genre_list
+        description: List of genres for the show, currently only for shows and not for individual movies
+        meta:
+          dimension:
+            type: array
+            label: Genre List
+            groups: ["show_details"]
+      - name: sub_genre_list
+        description: List of sub-genres for the show, currently only for shows and not for individual movies
+        meta:
+          dimension:
+            type: array
+            label: Sub-Genre List
+            groups: ["show_details"]
+      - name: intro_start_time_sec
+        description: Position when the film or show intro starts
+        meta:
+          dimension:
+            type: number
+            label: Intro Start Position in Seconds
+      - name: intro_end_time_sec
+        description: Position when the film or show intro ends
+        meta:
+          dimension:
+            type: number
+            label: Intro End Position in Seconds
+      - name: duration_sec
+        description: Duration of the episode or film in seconds
+        meta:
+          dimension:
+            type: number
+            label: Duration of the film or episode in seconds
+      - name: duration_bucket
+        description: Buckets based on duration length e.g. 10 to 30 mins
+      - name: total_show_duration_sec
+        description: Total duration of the film or show including all episodes in seconds
+        meta:
+          dimension:
+            type: number
+            label: Duration of the film or TV show in seconds
+      - name: total_show_duration_min
+        description: Total duration of the film or show including all episodes in minutes
+        meta:
+          dimension:
+            type: number
+            label: Duration of the film or TV show in minutes
+      - name: is_premium
+        description: Whether the TV Show is for paid users only
+        meta:
+          dimension:
+            hidden: true
+      - name: is_episode_free
+        description: Whether the episode or film is available for free
+        meta:
+          dimension:
+            hidden: true
+      - name: is_coming_soon
+        description: Whether the content is coming soon
+        meta:
+          dimension:
+            hidden: true
+      - name: created_at
+        description: When the show was first created
+        meta:
+          dimension:
+            hidden: true
+      - name: release_date
+        description: (LEGACY) Release date from the mongo collection. This date is not correct.

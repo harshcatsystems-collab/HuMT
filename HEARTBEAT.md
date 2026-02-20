@@ -109,6 +109,35 @@ After each morning brief / evening debrief / alert / meeting prep is delivered:
 
 ---
 
+## Stale Item Prevention (AUTOMATED — runs before every brief/debrief)
+
+### Step 1: Run the verification script
+```bash
+bash scripts/verify-active-items.sh
+```
+This checks ALL active items in `commitments.md` and `delegations.md` against evidence (daily logs, capability-status, TOOLS.md, scripts/, research/). Returns JSON array of stale suspects.
+
+### Step 2: If stale items found → auto-move to Completed BEFORE generating the brief
+- Don't surface them as pending
+- Don't ask HMT to confirm
+- Just fix the tracker and move on
+
+### Step 3: Manual verification (belt + suspenders)
+
+Before surfacing ANY item as "pending" or "needs action":
+1. **Check the source channel** for HMT's response/action (last 48h)
+2. **Check commitments.md + delegations.md** — is it already marked complete?
+3. **Check recent conversations** — did HMT already say "done" or "already did that"?
+4. If resolved → move to Completed in both files BEFORE generating the brief
+5. **NEVER surface an item without verifying it's still open**
+
+**When HMT says "already done" or "I did that":**
+→ Immediately update commitments.md + delegations.md (move to Completed)
+→ Don't wait until next heartbeat
+→ This is the #1 trust-erosion pattern — fix it in real-time
+
+---
+
 ## Rules
 - Late night (23:00-08:00 IST): Skip unless urgent (but ALWAYS do Slack alert scan)
 - Already checked <30 min ago: Skip email/calendar. STILL do Slack alert scan.

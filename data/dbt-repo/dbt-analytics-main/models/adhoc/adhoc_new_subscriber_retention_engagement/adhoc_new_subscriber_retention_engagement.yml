@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: adhoc_new_subscriber_retention_engagement # You can adjust this model name if needed
+    description: "Aggregated daily watch activity for core users, segmented by their subscription start cohort"
+    columns:
+      - name: cohort_month
+        description: "The first day of the month when the user's new subscription started. This defines the user's monthly cohort."
+        data_type: date
+      - name: cohort_week
+        description: "The first day of the week when the user's new subscription started. This defines the user's weekly cohort."
+        data_type: date
+      - name: cohort_date
+        description: "The exact date when the user's new subscription started. Used as the basis for 30-day period calculations."
+        data_type: date
+      - name: user_id
+        description: "Unique identifier for the user."
+        data_type: varchar # Adjust data type if different (e.g., int, uuid)
+      - name: dialect
+        description: "The primary dialect associated with the user at the time of subscription. Derived from user data."
+        data_type: varchar
+      - name: geography
+        description: "Categorization of the user's geography ('core' or 'non-core') based on predefined cities/states and dialects."
+        data_type: varchar
+        tests:
+          - accepted_values:
+              values: ['core', 'non-core']
+      - name: watch_date
+        description: "The specific date on which the user watched content."
+        data_type: date
+      - name: days_since_start
+        description: "The number of days between the user's subscription start date (cohort_date) and the watch_date."
+        data_type: integer
+      - name: watched_time_sec
+        description: "The total watch time in seconds for the user on the given watch_date. Aggregated from daily watch data."
+        data_type: float # Or numeric, depending on precision

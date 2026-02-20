@@ -125,6 +125,20 @@ Supports: .ogg (WhatsApp voice notes)
 
 ---
 
+## STAGE CMS API
+
+- **Endpoint:** `https://stageapi.stage.in/nest/cms/content/all`
+- **Auth:** None (open)
+- **Pagination:** `?page=1&perPage=10` (max 10/page, 1,256 total items, 126 pages)
+- **Fields:** contentType, title, slug, dialect, status, format, duration, description, releaseDate, createdBy, updatedBy, transcodingStatus, transcodingProgress, thumbnailURL, oldContentId
+- **Content types:** movie, show
+- **Formats:** standard, microdrama
+- **Dialects:** har, bho, guj, raj
+- **Statuses:** draft, active
+- **Source:** Ashish Pandey (Feb 20, 2026)
+
+---
+
 ## Rules
 
 - **Always save documents to Google Drive as Google Docs** (not markdown, not plain text). Use Drive API multipart upload with `mimeType: application/vnd.google-apps.document` and HTML content.

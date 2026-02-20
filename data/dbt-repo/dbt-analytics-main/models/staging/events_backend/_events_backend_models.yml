@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_events_backend_user_watch_log
+  - name: stg_events_backend_app_uninstall

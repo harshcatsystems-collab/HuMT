@@ -1,0 +1,180 @@
+version: 2
+
+models:
+  - name: dim_users
+    description: |
+      Contains information about Stage users
+    config:
+      materialized: view
+      tags: ["lightdash", "lightdash-dimension"]
+    meta:
+      label: User Details
+      group_details:
+        location:
+          label: Location
+          description: "Fields that describe the users current location"
+    columns:
+      - name: user_id
+        description: Primary Key
+        meta:
+          dimension:
+            hidden: true
+      - name: age
+        description: Users age in years
+        meta:
+          dimension:
+            type: number
+            label: Age
+      - name: year_of_birth
+        description: The year the user was born in
+        meta:
+          dimension:
+            type: number
+            label: Year of Birth
+      - name: current_city
+        description: The city where the user currently lives
+        meta:
+          dimension:
+            type: string
+            label: City
+            groups: ["location"]
+      - name: current_state
+        description: |
+          The state where a user currently lives as the two letter uppercase ISO state code. 
+          e.g. RJ for Rajasthan, HR for Haryana, BR for Bihar etc.
+        meta:
+          dimension:
+            type: string
+            label: State
+            groups: ["location"]
+      - name: current_country
+        description: The country where the user currently lives
+        meta:
+          dimension:
+            type: string
+            label: Country
+            groups: ["location"]
+      - name: longitude
+        description: Longitude of the users location
+        meta:
+          dimension:
+            type: number
+            label: Longitude
+      - name: latitude
+        description: Latitude of the users location
+        meta:
+          dimension:
+            type: number
+            label: Latitude
+      - name: language
+        description: User language
+        meta:
+          dimension:
+            type: string
+            label: Language
+      - name: primary_language
+        description: User primary language
+        meta:
+          dimension:
+            type: string
+            label: Primary Language
+      - name: payment_method
+        description: The payment method used to pay for the last subscription
+        meta:
+          dimension:
+            type: string
+            label: Payment Method
+      - name: is_verified
+        description: Is phone number verified
+        meta:
+          dimension:
+            type: boolean
+            label: Is Verified
+      - name: is_flutter_user
+        description: Are they using the flutter app
+        meta:
+          dimension:
+            type: boolean
+            label: Is Flutter User
+      - name: onboarding_status
+        description: Whether they have completed onboarding
+        meta:
+          dimension:
+            type: string
+            label: Onboarding Status
+      - name: uninstalled_status
+        description: Whether they have uninstalled the app
+        meta:
+          dimension:
+            type: string
+            label: Uninstalled Status
+      - name: notification_status
+        description: Whether they can receive notificfations
+        meta:
+          dimension:
+            type: string
+            label: Notification Status
+      - name: subscription_source
+        description: What platform was used to buy the subscription
+        meta:
+          dimension:
+            type: string
+            label: Subscription Source
+      - name: is_subscribed
+        description: Whether the user is currently subscribed to a plan
+        meta:
+          dimension:
+            type: boolean
+            label: Is Subscribed
+      - name: acquisition_type
+        description: Whether the user was acquired organically or otherwise
+        meta:
+          dimension:
+            type: string
+            label: Acquisition Type
+      - name: utm_medium
+        description: UTM Medium of the ad campaign used to acquire the user
+        meta:
+          dimension:
+            type: string
+            label: UTM Medium
+      - name: utm_source
+        description: UTM Source of the ad campaign used to acquire the user
+        meta:
+          dimension:
+            type: string
+            label: UTM Source
+      - name: utm_campaign
+        description: UTM Campaign of the ad campaign used to acquire the user
+        meta:
+          dimension:
+            type: string
+            label: UTM Campaign
+      - name: subscription_started_at
+        description: Timestamp of when the subscription was started
+        meta:
+          dimension:
+            type: timestamp
+            label: Subscription Started At
+      - name: installed_date
+        description: Date when the app was installed by the user
+        meta:
+          dimension:
+            type: date
+            label: App Installed Date
+      - name: acquired_by_content_id
+        description: Id of the content that user watched first 
+        meta:
+          dimension:
+              type: string
+              label: Acquired By Content Id
+      - name: created_at
+        description: Timestamp when the user was created in the database
+        meta:
+          dimension:
+            hidden: true
+      - name: updated_at
+        description: Timestamp when the user was updated in the database
+        meta:
+          dimension:
+            hidden: true

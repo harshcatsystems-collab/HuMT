@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: thumbnail_ctr
+    description: "This model calculates the click-through rate (CTR) for thumbnails based on view and click events. It aggregates thumbnail views and clicks by content slug and thumbnail path to compute the CTR."
+    columns:
+      - name: view_count
+        description: "The total number of times a specific thumbnail was viewed."
+        tests:
+          - not_null
+      - name: click_count
+        description: "The total number of times a specific thumbnail was clicked. If a thumbnail has been viewed but never clicked, this will be null."
+      - name: ctr
+        description: "The click-through rate of the thumbnail, calculated as (click_count / view_count) * 100."
+      - name: content_slug
+        description: "The unique identifier for the content associated with the thumbnail."
+        tests:
+          - not_null
+      - name: thumbnail_path
+        description: "The file path or URL for the thumbnail image."
+        tests:
+          - not_null 

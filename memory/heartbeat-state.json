@@ -1,9 +1,10 @@
 {
   "lastChecks": {
-    "email": 1771473360,
-    "calendar": 1771398000,
-    "slackScan": 1771509300,
-    "weather": null,
-    "dmRelay": 1771509300
-  }
+    "email": 1771573140,
+    "calendar": 1771573140,
+    "slack_dm": 1771573140,
+    "slack_tier1": 1771573140,
+    "weather": null
+  },
+  "lastHeartbeat": "2026-02-20T12:42:00Z"
 }

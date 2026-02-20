@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: stg_mongo_episodes
+  - name: stg_mongo_shows
+  - name: stg_mongo_userwatchhistories
+  - name: stg_mongo_usersubscriptionhistory

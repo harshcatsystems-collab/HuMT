@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: fct_user_ad_interaction
+    description: "This model captures user interactions with advertisements, based on all available AppsFlyer events. It includes details about the ad campaign and attribution, providing a consolidated view of ad-driven user touchpoints."
+    columns:
+      - name: user_id
+        description: "The unique identifier for the user."
+      - name: adset_id
+        description: "The identifier for the ad set."
+      - name: adset_name
+        description: "The name of the ad set."
+      - name: ad_id
+        description: "The identifier for the ad."
+      - name: ad_name
+        description: "The name of the ad."
+      - name: ad_type
+        description: "The type of the ad."
+      - name: campaign_id
+        description: "The identifier for the campaign."
+      - name: campaign_name
+        description: "The name of the campaign."
+      - name: channel_name
+        description: "The name of the channel through which the ad was delivered."
+      - name: site_name
+        description: "The name of the site where the ad was displayed."
+      - name: media_source
+        description: "The source of the media for the ad."
+      - name: attributed_touch_at
+        description: "The timestamp of the attributed touchpoint."
+      - name: attributed_touch_type
+        description: "The type of the attributed touchpoint (e.g., click, impression)."
+      - name: is_retargeting
+        description: "A boolean flag indicating if the interaction is part of a retargeting campaign."
+      - name: is_primary_attribution
+        description: "A boolean flag indicating if this is the primary attribution for the user interaction." 

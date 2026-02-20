@@ -1,0 +1,137 @@
+version: 2
+
+models:
+  - name: stg_finance_upload_phonepe_transactions
+    description: "Staging model for PhonePe transactions table."
+    config:
+      materialized: view
+    columns:
+      - name: phonepe_reference_id
+        # tests:
+        #   - not_null
+
+  - name: stg_finance_upload_phonepe_refunds
+    description: "Staging model for PhonePe refunds table."
+    config:
+      materialized: view
+    columns:
+      - name: phonepe_reference_id
+        # tests:
+        #   - not_null
+
+  - name: stg_finance_upload_phonepe_settlements
+    description: "Staging model for PhonePe settlements table."
+    config:
+      materialized: view
+    columns:
+      - name: phonepe_reference_id
+        # tests:
+        #   - not_null
+
+    # tests:
+    #   - dbt_utils.expression_is_true:
+    #       name: merchant_or_phonepe_id_not_null
+    #       expression: "merchant_reference_id is not null or phonepe_reference_id is not null"
+
+  - name: stg_finance_upload_paytm_payments
+    description: "Staging model for Paytm payments data containing merchant payments."
+    config:
+      materialized: view
+    columns:
+      - name: order_id
+        # tests:
+        #   - not_null
+        #   - unique
+      - name: transaction_id
+        # tests:
+        #   - not_null
+        #   - unique
+
+  - name: stg_finance_upload_paytm_refunds
+    description: "Staging model for Paytm refunds table containing refund details mapped to payments."
+    config:
+      materialized: view
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: transaction_id
+        # tests:
+        #   - not_null
+        #   - unique
+
+  - name: stg_finance_upload_paytm_settlements
+    description: "Staging model for Paytm settlements information used to track payment reconciliation."
+    config:
+      materialized: view
+    columns:
+      - name: order_id
+        # tests:
+        #   - not_null
+      - name: transaction_id
+        # tests:
+        #   - not_null
+        #   - unique
+    
+  - name: stg_finance_upload_razorpay_transactions
+    description: "Staging model for Razorpay transactions data."
+    config:
+      materialized: view
+    columns:
+      - name: transaction_id
+        tests:
+          - not_null
+
+  - name: stg_finance_upload_razorpay_payments
+    description: "Staging model for Razorpay payments data."
+    config:
+      materialized: view
+    columns:
+      - name: payment_id
+        # tests:
+        #   - not_null
+        #   - unique
+
+  - name: stg_finance_upload_razorpay_refunds
+    description: "Staging model for Razorpay refunds data mapped to payments."
+    config:
+      materialized: view
+    columns:
+      - name: refund_id
+        # tests:
+        #   - not_null
+        #   - unique
+
+  - name: stg_finance_upload_razorpay_settlements
+    description: "Staging model for Razorpay settlements used for reconciliation."
+    config:
+      materialized: view
+    columns:
+      - name: settlement_id
+        # tests:
+        #   - not_null
+
+  - name: stg_finance_upload_juspay_combined_reports
+    description: "Staging model for Juspay combined reports."
+    config:
+      materialized: view
+  
+  - name: stg_finance_upload_payu_transactions
+    description: "Staging model for Payu transactions table."
+    config:
+      materialized: view
+
+  - name: stg_finance_upload_payu_refunds
+    description: "Staging model for payu refunds table."
+    config:
+      materialized: view
+
+  - name: stg_finance_upload_payu_settlements
+    description: "Staging model for payu settlements table."
+    config:
+      materialized: view
+
+  - name: stg_finance_upload_stripe_balance_change
+    description: "Staging model for stripe transactions table."
+    config:
+      materialized: view

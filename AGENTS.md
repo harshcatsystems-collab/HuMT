@@ -37,6 +37,24 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 This is non-negotiable. HMT expects continuous capture, not end-of-session summaries.
 
 *Lesson learned: 2026-02-10 — got called out for batching updates instead of writing continuously.*
+*Lesson learned: 2026-02-20 — re-surfaced TWO resolved items (Figma approval + channel invites) as pending. HMT had already done both. Close items in commitments.md + delegations.md THE MOMENT they're resolved. Never surface an item without verifying it's still open.*
+
+### ⚠️ COMPLETION = UPDATE ALL TRACKERS
+
+When you complete ANY task (independently or via delegation):
+1. Update `memory/commitments.md` → move to Completed
+2. Update `memory/delegations.md` → move to Completed
+3. Grep both files for related keywords to catch duplicates
+4. This applies whether YOU did the work or someone else did
+5. **The moment capability is live = the delegation is closed.** Don't wait.
+
+### ⚠️ CLOSE ITEMS IMMEDIATELY — NOT LATER
+
+When HMT says "already done" or you see resolution in Slack/email:
+→ Move to Completed in `memory/commitments.md` + `memory/delegations.md` RIGHT NOW
+→ Don't wait for next heartbeat or session
+→ Before surfacing anything as "pending", verify it's still open in the source channel
+→ Re-surfacing resolved items is the **#1 trust killer**
 *Lesson learned: 2026-02-16 — claimed consolidation was "complete" multiple times while missing 6+ source files. HMT had to remind me to check my own research directory. When consolidating, ALWAYS `ls` the full directory and cross-check EVERY file. Don't declare done until you've verified completeness yourself. HMT shouldn't have to walk on eggshells.*
 
 ### 📂 Memory System (v2)

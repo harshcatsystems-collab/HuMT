@@ -1,0 +1,22 @@
+ version: 2
+
+models:
+  - name: viz_habit_moment_achieved
+    description: "This model calculates the day-on-day and week-on-week percentage change of users who achieve a 'habit moment'. A 'habit moment' is defined as having at least 8 active days within the first 30 days of their subscription start date. An 'active day' is any day with watch time greater than 0. The analysis is grouped by the subscription start date."
+    columns:
+      - name: subscription_start_date
+        description: "The date when the user's subscription started."
+      - name: install_status
+        description: "The installation status of the user's app. Can be 'installed', 'uninstalled' or 'installed30' if the app was installed for the first 30 days of subscription."
+      - name: sub_source
+        description: "The source of the subscription. Can be 'direct' or 'via_trial'."
+      - name: total_subscribed_users
+        description: "The total number of users who subscribed on the subscription_start_date."
+      - name: geography
+        description: "The geography of the user, categorized as 'core' or 'non-core'."
+      - name: app_type
+        description: "The type of the app, 'main' or 'mini'."
+      - name: dialect
+        description: "The dialect of the user."
+      - name: habit_achieved_users
+        description: "The number of users who achieved the habit moment."

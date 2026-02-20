@@ -1,0 +1,74 @@
+version: 2
+
+models:
+  - name: fct_user_content_watch_history
+    description: |
+      Contains a record of every piece of content watched by a user aggregated to a single row.
+    config:
+      tags: ["lightdash", "lightdash-explore"]
+    meta:
+      label: User Content Watch History
+      joins:
+        - join: dim_users
+          type: inner
+          sql_on: ${fct_user_content_watch_history.user_id} = ${dim_users.user_id}
+        - join: dim_content
+          type: inner
+          sql_on: ${fct_user_content_watch_history.content_id} = ${dim_content.content_id}
+    columns:
+      - name: user_id
+        description: Foreign Key, dim_users
+        meta:
+          dimension:
+            label: User Id
+            type: string
+          metrics:
+            total_user_count:
+              type: count
+              label: Total Users
+            distinct_user_count:
+              type: count_distinct
+              label: Distinct Users
+      - name: content_id
+        description: Foreign Key, dim_content
+          This uniquely identifies episodes of the shows, or movies
+        meta:
+          dimension:
+            label: Content Id
+            type: string
+          metrics:
+            total_content_count:
+              type: count
+              label: Total Content Pieces
+            distinct_content_count:
+              type: count_distinct
+              label: Distinct Content Count
+      - name: finished_watching_date
+        description: Date when the user last watched particular content
+          Should not refer to this for day-on-day watch behaviours, but only for
+          metrics around total completion of a content till date
+        meta:
+          dimension:
+            type: date
+      - name: watched_time_sec
+        description: Total time spent watching this content in seconds
+        meta:
+          dimension:
+            hidden: true
+          metrics:
+            total_watch_time_seconds:
+              type: sum
+              label: Total Time Watched (seconds)
+            average_watch_time_seconds:
+              type: average
+              label: Average Time Watched (seconds)
+      - name: watched_time_min
+        description: Total time spent watching this content in minutes
+        meta:
+          metrics:
+            total_watch_time_minutes:
+              type: sum
+              label: Total Time Watched (Minutes)
+            average_watch_time_minutes:
+              type: average
+              label: Average Time Watched (Minutes)

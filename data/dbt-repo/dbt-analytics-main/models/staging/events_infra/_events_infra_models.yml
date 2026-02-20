@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_events_infra_cdn_content_playback_pulse
+  

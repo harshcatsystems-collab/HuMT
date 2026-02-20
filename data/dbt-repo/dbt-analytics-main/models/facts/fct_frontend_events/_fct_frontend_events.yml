@@ -1,0 +1,115 @@
+version: 2
+
+models:
+  - name: fct_frontend_events
+    description: |
+      Combines the commonly used frontend events into a single view.
+    config:
+      tags: ["lightdash", "lightdash-explore"]
+    meta:
+      label: Frontend Events
+    columns:
+      - name: event_name
+        description: >
+          The name of the event being tracked. Contains the following values:
+          - app_open: fired whenever the app is opened
+          - playback_pulse: fired every few seconds (ref: pulse_interval_seconds) when a user is watching an event
+          - thumbnail_viewed: fired when a thumbnail enters the screen
+          - thumbnail_clicked: fired when a thumbnail is clicked by the user
+        meta:
+          dimension:
+            label: Event Name
+            type: string
+      - name: session_id
+        description: Unique ID for the session.
+        meta:
+          dimension:
+            label: Session ID
+            hidden: false
+          metrics:
+            count_distinct_sessions:
+              label: Number of Distinct Sessions
+              type: count_distinct
+      - name: device_id
+        description: Foreign Key, ID of the device.
+        meta:
+          dimension:
+            hidden: true
+          metrics:
+            count_distinct_devices:
+              label: Number of Distinct Devices
+              type: count_distinct
+      - name: user_id
+        description: Foreign Key, ID of the user.
+        meta:
+          dimension:
+            hidden: true
+          metrics:
+            count_distinct_users:
+              label: Number of Distinct Users
+              type: count_distinct
+      - name: app_version
+        description: The version of the app being used during the event.
+        meta:
+          dimension:
+            label: App Version
+            type: string
+      - name: app_dialect
+        description: >
+          The dialect/language of the app being used. We use 'har' for Haryanvi, 'raj' for Rajasthani and 'bho' for Bhojpuri.
+        meta:
+          dimension:
+            label: App Dialect
+            type: string
+      - name: app_id
+        description: >
+          The ID of the app, used to determine if the app is a mini app or the main app. Takes the following values:
+          - in.stage.raj for the Rajasthani mini app
+          - in.stage.har for the Haryanvi mini app
+          - in.stage for the main app
+      - name: event_at
+        description: The timestamp when the event occurred.
+        meta:
+          dimension:
+            label: Event Timestamp
+            type: timestamp
+      - name: content_id
+        description: In the case of playback_pulse, ID of the content being watched
+      - name: content_name
+        description: In the case of playback_pulse, name of the content being watched
+      - name: content_dialect
+        description: In the case of playback_pulse, dialect of the content being watched
+      - name: player_mode
+        description: |
+          In the case of playback_pulse, which mode the player is in. Can be: 
+          partial, in_pip, portrait, tv, full_screen, landscape, out_pip
+      - name: playback_quality
+        description: |
+          In the case of playback_pulse, the quality of the video being played. Can be: 
+          854x480, 2048x1080, 2730x1440, 682x360, 360p, 640x360, 456x240, 720p, 1920x1080,
+          1366x720, 2560x1440, 910x480, Low Quality, 240p, 1080p, 426x240, 0x0, 480p, 1280x720,
+          Unknown, 3840x2160
+      - name: video_position_seconds
+        description: In the case of playback_pulse, the location of the video where the pulse was sent from
+      - name: pulse_interval_seconds
+        description: In the case of playback_pulse, the gap between two pulses
+      - name: root_widget_title
+        description: In widget and thumbnail clicked and viewed, title of the root widget the event was fired from 
+      - name: root_widget_type
+        description: In widget and thumbnail clicked and viewed, type of the root widget the event was fired from 
+      - name: root_widget_position
+        description: |
+          In widget and thumbnail clicked and viewed, vertical position of the root widget the event was fired from, 
+          starting from 0
+      - name: child_widget_type
+        description: In widget and thumbnail clicked and viewed, type of the child widget the event was fired from 
+      - name: child_widget_title
+        description: In widget and thumbnail clicked and viewed, title of the child widget the event was fired from 
+      - name: child_widget_row_position
+        description: |
+          In widget and thumbnail clicked and viewed, row position of the child widget the event was fired from, 
+          within the parent and starting from 0
+      - name: child_widget_col_position
+        description: |
+          In widget and thumbnail clicked and viewed, column position of the child widget the event was fired from, 
+          within the parent and starting from 0

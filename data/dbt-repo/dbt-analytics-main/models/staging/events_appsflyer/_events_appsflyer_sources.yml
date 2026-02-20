@@ -1,0 +1,67 @@
+version: 2
+
+sources:
+  - name: events_appsflyer
+    description: Product Analytics instrumentation and events sent from our apps
+    # database: raw_{{ env_var('DBT_ENV_SUFFIX') }}
+    database: raw_prod
+    schema: events_appsflyer
+    tables:
+      - name: trial_activated
+        description: Fired when user creates the mandate and starts trial
+      - name: aha_moment_event_achieved
+        description: Fired when a user achieves the aha moment event
+      - name: app_install
+        description: Fired when a user installs the app
+      - name: app_open
+        description: Fired when a user opens the app
+      - name: campaign_card_clicked
+        description: Fired when a user clicks a campaign card
+      - name: campaign_card_viewed
+        description: Fired when a user views a campaign card
+      - name: clicked_cta
+        description: Fired when a user clicks a CTA
+      - name: consumption_started
+        description: Fired when a user starts consumption
+      - name: free_trial_transition
+        description: Fired when a user transitions from free trial
+      - name: login_successful
+        description: Fired when a user login is successful
+      - name: payment_successful
+        description: Fired when a user payment is successful
+      - name: payment_failed
+        description: Fired when a user payment fails
+      - name: payment_initiated
+        description: Fired when a user initiates payment
+      - name: payment_initiated_successful
+        description: Fired when a user payment initiation is successful
+      - name: payment_page_viewed
+        description: Fired when a user views the payment page
+      - name: signup_successful
+        description: Fired when a user signup is successful
+      - name: subscription_activated
+        description: Fired when a user subscription is activated
+      - name: subscription_mandate_revoked
+        description: Fired when a user subscription mandate is revoked
+      - name: subscription_paused
+        description: Fired when a user subscription is paused
+      - name: subscription_renewed
+        description: Fired when a user subscription is renewed
+      - name: subscription_resumed
+        description: Fired when a user subscription is resumed
+      - name: title_page_viewed
+        description: Fired when a user views the title page
+      - name: title_start
+        description: Fired when a user starts a title
+      - name: user_culture_received
+        description: Fired when user culture is received
+      - name: watched_video
+        description: Fired when a user watches a video
+      - name: subscription_paywall_viewed
+        description: Fired when a user views a subscription paywall
+      - name: af_complete_registration
+        description: Fired when a user signup is successful(post 25aug2025)
+      - name: af_start_trial
+        description: Fired when user creates the mandate and starts trial(post 25aug2025)
+      - name: af_subscribe
+        description: Fired when a user subscription is activated(post 25aug2025)

@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: events_web
+    description: Product Analytics instrumentation and events sent from web
+    # database: raw_{{ env_var('DBT_ENV_SUFFIX') }}
+    database: raw_prod
+    schema: events_web
+    tables:
+      - name: playback_pulse_web
+        description: A playback pulse is sent out every few seconds that a user spends watching content
+      

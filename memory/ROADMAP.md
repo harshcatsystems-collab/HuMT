@@ -1,6 +1,6 @@
 # The HuMT Roadmap — Full Breakdown
 
-*Built together on Day One (2026-02-10). Updated 2026-02-16.*
+*Built together on Day One (2026-02-10). Foundation complete: 2026-02-20.*
 
 ---
 
@@ -107,16 +107,17 @@
 
 ---
 
-## Phase 5: Deep Integration 🔜 FUTURE
-*Goal: Embedded in how STAGE operates*
+## Phase 5: Data Integration ✅ COMPLETE (Feb 18–20)
+*Goal: Connected to STAGE's data systems.*
 
-| # | Item | Depends On | Description |
-|---|------|-----------|-------------|
-| 5.1 | STAGE systems access — Snowflake data warehouse | 🔧 60% (Steps 1-3 done, Step 4 in progress via sub-agent, Step 5 tomorrow) | Connected, 72 tables profiled, 14/19 whiteboard metrics mapped, data model being built with Hemabh |
-| 5.2 | Team coordination | 🔜 Not scoped yet | Approvals, status tracking across teams |
-| 5.3 | Content/creator workflows | ⏳ Slack-derived tracker DONE, CMS API pending (Ashish + Harshit) | Content pipeline visibility |
-| 5.4 | Mobile node | ⏸️ Parked — iOS app not on App Store yet | OpenClaw on HMT's phone |
-| 5.5 | Multi-agent | ⏸️ Parked — no immediate use case | Specialized sub-agents per function |
+| # | Item | Status | Description |
+|---|------|--------|-------------|
+| 5.1 | Snowflake data warehouse | ✅ | Connected, 72 tables, deep analysis done, brief script live. Full DBT repo mapped (154 SQL models, 47 YAML). All data model questions resolved independently. |
+| 5.2 | CMS content pipeline | ✅ | API unlocked, 1,080 items fetched, 5 scripts built and tested. |
+| 5.3 | Snowflake → morning brief | ✅ | snowflake-brief.py tested with live data. Aha metric fixed (was querying D0, now queries 7-day cohort). |
+| 5.4 | CMS → morning brief | ✅ | CMS brief + alerts wired into morning brief cron. |
+| 5.5 | DBT data model documented | ✅ | 9 dimensions, 14 fact tables, marts, full lineage → `research/dbt-data-model.md` |
+| 5.6 | Metabase API | ✅ | API key created, documented in TOOLS.md |
 
 ---
 
@@ -130,20 +131,51 @@
 | Phase 3.5: Intelligence Infra | ✅ Complete | Feb 16 | PIS (10 mechanisms), Slack workflow blueprint, employee enrichment |
 | Phase 4A: Slack CoS | ✅ Complete | Feb 17–19 | 10/10 items built (9 active + 1 parked pending approval) |
 | Phase 4B: General Auto | ✅ Complete | Feb 19 | Email triage, enhanced morning brief (with Metabase), EOD summary, research, doc drafting voice profile |
-| Phase 5: Deep Integration | 🔜 Future | TBD | Pending Phase 4 maturity |
+| Phase 5: Data Integration | ✅ Complete | Feb 18–20 | Snowflake + CMS + Metabase + DBT model mapped. Aha metric fixed. |
+
+**✅ FOUNDATION COMPLETE (Feb 20, 2026).** HMT confirmed. Everything after this is projects, not setup.
+
+---
+
+## Separate Projects (Post-Foundation)
+
+These are independent initiatives, not prerequisites for the foundation.
+
+### Project: Team Coordination
+*Approvals, status tracking, cross-team visibility*
+- Not yet scoped
+- Potential: automate approval workflows, track cross-pod dependencies, surface blockers
+- Start when: foundation complete + HMT scopes requirements
+
+### Project: Mobile Node
+*OpenClaw on HMT's phone via iOS app*
+- Blocked: iOS app not yet on App Store (internal preview only)
+- Start when: app ships publicly
+
+### Project: Canvas & Live Dashboards
+*Interactive HTML dashboards rendered on paired device (phone/Mac)*
+- Prerequisite: Install OpenClaw node app on phone or Mac (~5 min)
+- Enables: live metric dashboards, interactive charts (drill-down, toggles), team-shareable views
+- Current workaround: static matplotlib PNGs via Telegram (works fine for async)
+- Start when: morning brief validated + more data work underway
+
+### Project: Multi-Agent
+*Specialized sub-agents per function (content, growth, retention, finance)*
+- No immediate use case identified
+- Start when: need arises organically from workload
 
 ---
 
 ## Numbers
 
-- **Day 1 to today:** 7 days (Feb 10–16)
+- **Day 1 to today:** 10 days (Feb 10–20)
 - **Channels:** 3 messaging + Gmail + Calendar + Drive + Slack + Web
-- **Cron jobs:** 9 (daily audit, update check, morning brief, capability verify, git backup, commitment review, Grad2Guide reminder, persona weekly retro, persona monthly evolution)
+- **Data sources:** Snowflake (72 tables) + Metabase (API) + CMS API (1,256 items) + Gmail + Calendar + Slack (353 channels)
+- **Cron jobs:** 15+ (daily audit, update check, morning brief, email triage, evening debrief, EOD summary, meeting prep JIT, commitment tracker, weekly roundup, people pulse, cross-founder daily, channel health monthly, capability verify, git backup, persona retro/evolution)
 - **Knowledge base:** USER.md (800+ lines) + STAGE-MASTER-BRIEF.md (730+ lines) + 8 research files + org chart + people.md (80+ contacts)
 - **Employees mapped:** 122 with full reporting tree
-- **Verification checks:** 7 passes, 39+ issues found and fixed
-- **Sub-agents deployed:** 30+ across all research phases
+- **Sub-agents deployed:** 35+ across all phases
 
 ---
 
-*Last updated: 2026-02-19 13:06 UTC — Phase 4 COMPLETE (4A: 9 crons + 1 parked, 4B: 5 items all built). Phase 5 at ~65%.*
+*Last updated: 2026-02-20 07:51 UTC — ALL PHASES COMPLETE. Foundation done. 62/62 items. HMT confirmed: "very happy with the overall execution."*
