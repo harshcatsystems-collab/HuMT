@@ -13,11 +13,11 @@
 | A4 | People baseline enrichment (6 signals) — G5 | HuMT | 2026-02-17 | Mar 3 | ⏳ Blocked | Needs 2 weeks of data |
 | A5 | Samsung F2F delegation (D1) | Saurabh/Ashish | 2026-02-17 | Feb 21 | ⏳ | Pinged Saurabh 2x on 2026-02-20, awaiting reply |
 | A13 | CleverTap dump integration | HuMT | 2026-02-20 | TBD | 📌 Earmarked | HMT request. CT data already in Snowflake (4 tables + 3 DBT models). Scope TBD. |
-| A14 | Finalize investment deck + projections | Vinay Singhal | 2026-02-20 | ~Feb 20 | ⏳ | #founders_sync — "Need 2 hours of focus work to finalize them. Both deck and projections." |
-| A15 | AI chatbot feature release + QA | Nikhil Nair / Aaliya / Mofidul / Junaid | 2026-02-20 | Feb 21 | ⏳ | #ai-character-bots — releasing build tomorrow, QA in progress |
-| A16 | Get chatbot instrumentation tested by Hemabh | Nikhil Nair → Hemabh Kamboj | 2026-02-20 | — | ⏳ | #ai-character-bots — Vinay: "Make sure to get the overall instrumentation tested by Hemabh once" |
+| A14 | Finalize investment deck + projections | Vinay Singhal | 2026-02-20 | ~Feb 20 | ⚠️ OVERDUE | #founders_sync — no update since commitment |
 | A17 | Set up CLM for chatbot launch | Aaliya Mirza → Vismit Bansal | 2026-02-20 | Feb 21 | ⏳ | #ai-character-bots — "we will need your help to setup the CLM" |
 | A18 | 1-day trial with next-day deduction — live at 5%, iterate on infra | Nikhil Nair / Vipul Sharma | 2026-02-20 | — | ⏳ | #acquisition-pod — live at 5%, will pick up infra improvements later |
+| A24 | Update 1D plan numbers after 4+ days of data | Shubham Singla | 2026-02-21 | ~Feb 24 | ⏳ | #acquisition-pod — "will update once we check those numbers" |
+| A25 | Fill up 1D plan tracking sheet | Deepak Kumar Yadav / Hemabh Kamboj | 2026-02-21 | — | ⏳ | #acquisition-pod — Shubham delegated |
 | A19 | Marmik visit new office + book tickets | Marmik Mankodi | 2026-02-19 | — | ⏳ | Blume monthly catchup — offered to visit, hasn't booked yet |
 | A20 | Marmik inform Karthik re: 30-45 min jam with HMT | Marmik Mankodi | 2026-02-19 | — | ⏳ | Blume monthly catchup — HMT wants to jam with Karthik |
 | A21 | OpenClaw update to 2026.2.17 | HuMT | 2026-02-19 | — | ⏳ | Pending HMT approval |
@@ -26,6 +26,9 @@
 
 | # | What | Completed | Notes |
 |---|------|-----------|-------|
+| C40 | AI chatbot feature release + QA | 2026-02-21 | Live at 5% prod, sanity passed, dashboard shared |
+| C41 | Get chatbot instrumentation tested by Hemabh | 2026-02-21 | Hemabh: "Looks good. Let's go!" |
+| C42 | Stop aha-moment retargeting campaigns, shift budget | 2026-02-21 | Kashish shifted to app open, Vismit running app install for web |
 | C34 | Phase 5 gaps G1-G4, G6-G7 | 2026-02-20 | Already built during Feb 17-19 sprint. Confirmed by audit. |
 | C35 | Design audit HIGH severity fixes (5 items) | 2026-02-20 | Stale cron deleted, PRD/Blueprint fixed, channel count updated |
 | C36 | Snowflake deep analysis (M0, D0, cohort, content ROI) | 2026-02-20 | research/snowflake-deep-analysis.md |
