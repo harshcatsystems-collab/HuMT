@@ -14,7 +14,7 @@
 | A13 | CleverTap dump integration | HuMT | 2026-02-20 | TBD | 📌 Earmarked | HMT request. CT data already in Snowflake (4 tables + 3 DBT models). Scope TBD. |
 | A14 | Finalize investment deck + projections | Vinay Singhal | 2026-02-20 | ~Feb 20 | ⚠️ OVERDUE | #founders_sync — no update since commitment |
 | A17 | Set up CLM for chatbot launch | Aaliya Mirza → Vismit Bansal | 2026-02-20 | Feb 21 | ⚠️ OVERDUE | #ai-character-bots — "we will need your help to setup the CLM" |
-| A18 | 1-day trial with next-day deduction — live at 5%, iterate on infra | Nikhil Nair / Vipul Sharma | 2026-02-20 | — | ⏳ | #acquisition-pod — live at 5%, will pick up infra improvements later |
+| A18 | 1-day trial with next-day deduction — chatbot rollout (5%→50%→100%) | Nikhil Nair / Vipul Sharma | 2026-02-20 | Feb 23 EOD | ⏳ Update | #ai-character-bots — "app is on 50%, we'll make it 100% before EoD" (Feb 23) |
 | A24 | Update 1D plan numbers after 4+ days of data | Shubham Singla | 2026-02-21 | ~Feb 24 | ⏳ | #acquisition-pod — "will update once we check those numbers" |
 | A25 | Fill up 1D plan tracking sheet | Deepak Kumar Yadav / Hemabh Kamboj | 2026-02-21 | — | ⏳ | #acquisition-pod — Shubham delegated |
 | A19 | Marmik visit new office + book tickets | Marmik Mankodi | 2026-02-19 | — | ⏳ | Blume monthly catchup — offered to visit, hasn't booked yet |

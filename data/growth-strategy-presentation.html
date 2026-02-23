@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STAGE Growth Strategy | Feb 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  :root {
+    --bg: #0a0a0f;
+    --surface: #13131a;
+    --surface2: #1a1a24;
+    --border: #2a2a3a;
+    --text: #e8e8ef;
+    --text-dim: #8888a0;
+    --accent: #6366f1;
+    --accent-glow: rgba(99, 102, 241, 0.15);
+    --red: #ef4444;
+    --red-dim: rgba(239, 68, 68, 0.15);
+    --green: #22c55e;
+    --green-dim: rgba(34, 197, 94, 0.15);
+    --yellow: #eab308;
+    --yellow-dim: rgba(234, 179, 8, 0.15);
+    --orange: #f97316;
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  
+  .slide {
+    min-height: 100vh;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .slide-number {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 13px;
+    color: var(--text-dim);
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  h1 {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -2px;
+  }
+  
+  h2 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    letter-spacing: -1.5px;
+  }
+  
+  h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text);
+  }
+  
+  .subtitle {
+    font-size: 22px;
+    color: var(--text-dim);
+    font-weight: 400;
+    margin-bottom: 40px;
+    max-width: 700px;
+  }
+  
+  .accent { color: var(--accent); }
+  .red { color: var(--red); }
+  .green { color: var(--green); }
+  .yellow { color: var(--yellow); }
+  .dim { color: var(--text-dim); }
+  
+  .mega-stat {
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: -4px;
+    line-height: 1;
+  }
+  
+  .big-stat {
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    line-height: 1;
+  }
+  
+  .stat-label {
+    font-size: 16px;
+    color: var(--text-dim);
+    font-weight: 500;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .stat-row {
+    display: flex;
+    gap: 60px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+  }
+  
+  .stat-box {
+    flex: 1;
+    min-width: 180px;
+  }
+  
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    margin: 12px 0;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+  }
+  
+  .card-red { border-left: 4px solid var(--red); }
+  .card-green { border-left: 4px solid var(--green); }
+  .card-yellow { border-left: 4px solid var(--yellow); }
+  .card-accent { border-left: 4px solid var(--accent); }
+  
+  /* Funnel visualization */
+  .funnel { margin: 40px 0; }
+  .funnel-step {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    gap: 20px;
+  }
+  .funnel-bar {
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s;
+    min-width: 60px;
+  }
+  .funnel-label {
+    font-size: 15px;
+    color: var(--text-dim);
+    min-width: 160px;
+    text-align: right;
+  }
+  .funnel-value {
+    font-size: 15px;
+    font-weight: 600;
+    min-width: 80px;
+  }
+  
+  /* Bar chart */
+  .bar-chart { margin: 30px 0; }
+  .bar-row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 16px;
+  }
+  .bar-label {
+    font-size: 14px;
+    min-width: 120px;
+    text-align: right;
+    color: var(--text-dim);
+  }
+  .bar-track {
+    flex: 1;
+    height: 36px;
+    background: var(--surface2);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    min-width: 40px;
+  }
+  
+  .callout {
+    background: var(--red-dim);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .callout-green {
+    background: var(--green-dim);
+    border-color: rgba(34, 197, 94, 0.3);
+  }
+  
+  .callout-accent {
+    background: var(--accent-glow);
+    border-color: rgba(99, 102, 241, 0.3);
+  }
+  
+  .insight {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 20px 0;
+    max-width: 800px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 15px;
+  }
+  th {
+    text-align: left;
+    padding: 14px 16px;
+    border-bottom: 2px solid var(--border);
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-dim);
+  }
+  td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  tr:hover { background: var(--surface2); }
+  
+  .tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .tag-red { background: var(--red-dim); color: var(--red); }
+  .tag-green { background: var(--green-dim); color: var(--green); }
+  .tag-yellow { background: var(--yellow-dim); color: var(--yellow); }
+  
+  .timeline {
+    border-left: 3px solid var(--accent);
+    padding-left: 30px;
+    margin: 30px 0;
+  }
+  .timeline-item {
+    margin: 24px 0;
+    position: relative;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -38px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 3px solid var(--bg);
+  }
+  .timeline-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .timeline-desc {
+    color: var(--text-dim);
+    font-size: 15px;
+  }
+  
+  .stop-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .stop-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: var(--red-dim);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  
+  @media (max-width: 768px) {
+    .slide { padding: 40px 24px; }
+    h1 { font-size: 36px; }
+    h2 { font-size: 28px; }
+    .mega-stat { font-size: 64px; }
+    .big-stat { font-size: 48px; }
+    .stat-row { gap: 30px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: Title -->
+<div class="slide">
+  <div class="slide-number">STAGE GROWTH STRATEGY</div>
+  <h1>The Funnel Is<br>a <span class="red">Sieve</span></h1>
+  <p class="subtitle">STAGE acquires 10-13K trials daily. 79% are wasted. Here's why — and the 5 bets to fix it.</p>
+  <div class="stat-row">
+    <div class="stat-box">
+      <div class="big-stat red">79%</div>
+      <div class="stat-label">Trials Wasted</div>
+    </div>
+    <div class="stat-box">
+      <div class="big-stat red">50pp</div>
+      <div class="stat-label">D0→D1 Cliff</div>
+    </div>
+    <div class="stat-box">
+      <div class="big-stat red">3.9%</div>
+      <div class="stat-label">AHA Rate (Recent)</div>
+    </div>
+    <div class="stat-box">
+      <div class="big-stat green">27%</div>
+      <div class="stat-label">Mandate Success</div>
+    </div>
+  </div>
+  <p class="dim" style="margin-top:40px">Feb 23, 2026 · For HMT · Sources: Dashboards #3073, #3271, #4063, #2182, #3767, #2941, #1291</p>
+</div>
+
+<!-- SLIDE 2: Executive Summary -->
+<div class="slide">
+  <div class="slide-number">01 / EXECUTIVE SUMMARY</div>
+  <h2>The Growth Funnel State</h2>
+  
+  <div class="funnel">
+    <div class="funnel-step">
+      <div class="funnel-label">Daily Trials</div>
+      <div class="funnel-bar" style="width:100%;background:var(--accent)">13,000</div>
+    </div>
+    <div class="funnel-step">
+      <div class="funnel-label">D0 Watchers</div>
+      <div class="funnel-bar" style="width:65%;background:#818cf8">8,450 (65%)</div>
+    </div>
+    <div class="funnel-step">
+      <div class="funnel-label">D1 Returners</div>
+      <div class="funnel-bar" style="width:15%;background:var(--red)">1,950 (15%)</div>
+    </div>
+    <div class="funnel-step">
+      <div class="funnel-label">AHA Achieved</div>
+      <div class="funnel-bar" style="width:5%;background:var(--orange)">507 (3.9%)</div>
+    </div>
+    <div class="funnel-step">
+      <div class="funnel-label">Paid Mandate</div>
+      <div class="funnel-bar" style="width:27%;background:var(--green)">3,510 (27%)</div>
+    </div>
+  </div>
+  
+  <div class="callout">
+    <strong>The story in one line:</strong> 65% watch on D0 → only 15% come back on D1. That 50pp cliff determines AHA, habit, mandate success, and the 1.1M dormant pool. Everything downstream is a consequence of this one failure.
+  </div>
+</div>
+
+<!-- SLIDE 3: The D0→D1 Cliff -->
+<div class="slide">
+  <div class="slide-number">02 / THE D0→D1 CLIFF</div>
+  <h2>The <span class="red">50pp Drop</span> That<br>Determines Everything</h2>
+  
+  <div class="bar-chart">
+    <div class="bar-row">
+      <div class="bar-label">D0</div>
+      <div class="bar-track"><div class="bar-fill" style="width:65%;background:var(--green)">65%</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">D1</div>
+      <div class="bar-track"><div class="bar-fill" style="width:15%;background:var(--red)">15%</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">D2</div>
+      <div class="bar-track"><div class="bar-fill" style="width:7%;background:var(--red)">7%</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">D3</div>
+      <div class="bar-track"><div class="bar-fill" style="width:4.4%;background:var(--red)">4.4%</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">D5</div>
+      <div class="bar-track"><div class="bar-fill" style="width:2.3%;background:var(--red)">2.3%</div></div>
+    </div>
+  </div>
+  
+  <div class="callout">
+    <strong>This isn't an engagement problem — it's a RECALL problem.</strong> Users forget STAGE exists by D1. No unfinished business. No push notification. No reason to return. The content was consumed. The session ended. STAGE vanished.
+  </div>
+  
+  <p class="insight">Competitive D1: Netflix 42% · JioHotstar 35% · ZEE5 28% · <strong class="red">STAGE 20%</strong><br>Yet at M1, STAGE is #3 (53%). Users who survive D1 are loyal. The gate is too narrow.</p>
+</div>
+
+<!-- SLIDE 4: D0 Watchtime as Destiny -->
+<div class="slide">
+  <div class="slide-number">03 / D0 WATCHTIME AS DESTINY</div>
+  <h2>The <span class="accent">20x AHA</span> Relationship</h2>
+  
+  <p class="subtitle">D0 watchtime predicts everything. But even the heaviest watchers face a 55-65% D1 dropout.</p>
+  
+  <table>
+    <thead>
+      <tr><th>D0 Watchtime</th><th>% of Users</th><th>AHA Rate</th><th>D1 Return</th><th>Signal</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>0 minutes</td><td>35%</td><td>0.6%</td><td>~0%</td><td><span class="tag tag-red">Dead</span></td></tr>
+      <tr><td>1-4 min</td><td>16%</td><td>2.9%</td><td>5-8%</td><td><span class="tag tag-red">Bounced</span></td></tr>
+      <tr><td>5-20 min</td><td>12%</td><td>2.5-3%</td><td>15-20%</td><td><span class="tag tag-yellow">Browsed</span></td></tr>
+      <tr><td>21-60 min</td><td>18%</td><td>3-3.5%</td><td>25-30%</td><td><span class="tag tag-yellow">Engaged</span></td></tr>
+      <tr><td>60-120 min</td><td>13%</td><td>5.0%</td><td>35-40%</td><td><span class="tag tag-green">Hooked</span></td></tr>
+      <tr style="background:var(--accent-glow)"><td><strong>120+ min</strong></td><td><strong>3.6%</strong></td><td><strong>13.4%</strong></td><td><strong>40-45%</strong></td><td><span class="tag tag-green">Power</span></td></tr>
+    </tbody>
+  </table>
+  
+  <div class="callout">
+    <strong>The damning insight:</strong> Even 60+ min D0 watchers — clearly engaged, clearly found content they loved — still have 60-70% D1 dropout. D0 engagement helps but doesn't solve D1 return. There's a structural recall barrier independent of content satisfaction.
+  </div>
+</div>
+
+<!-- SLIDE 5: The 79% Waste -->
+<div class="slide">
+  <div class="slide-number">04 / THE 79% WASTE</div>
+  <h2><span class="red">34%</span> Never Watch +<br><span class="red">45%</span> Watch 1 Day</h2>
+  
+  <div style="display:flex;gap:4px;margin:40px 0;height:60px;border-radius:12px;overflow:hidden">
+    <div style="width:34%;background:var(--red);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px">34% Zero</div>
+    <div style="width:45%;background:#dc2626;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px">45% One Day</div>
+    <div style="width:14%;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:#000">14%</div>
+    <div style="width:4%;background:var(--green);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:11px">4%</div>
+    <div style="width:3%;background:#16a34a;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:11px">3%</div>
+  </div>
+  <div style="display:flex;gap:20px;font-size:13px;color:var(--text-dim);margin-bottom:40px">
+    <span>■ 0 days (34%)</span>
+    <span>■ 1 day (45%)</span>
+    <span style="color:var(--yellow)">■ 2 days (14%)</span>
+    <span style="color:var(--green)">■ 3 days (4%)</span>
+    <span style="color:#16a34a">■ 4+ days (3%)</span>
+  </div>
+  
+  <div class="card-grid">
+    <div class="card card-red">
+      <h3>The 34% Zero-Watchers</h3>
+      <p>Never opened a single piece of content. Cross-references: 65% of M0 subs have zero activity. 675K "never watched" dormants. These are acquisition ghosts — carrier billing bundles, misled ad clicks, zero intent.</p>
+    </div>
+    <div class="card card-red">
+      <h3>The 45% One-Day Watchers</h3>
+      <p>Found something to watch. Consumed it. Never came back. These aren't low quality — they're unrecovered. This is the D0→D1 cliff population. The content worked; the return mechanism didn't.</p>
+    </div>
+    <div class="card card-green">
+      <h3>The 21% Survivors</h3>
+      <p>Everything STAGE builds for retention, habit, renewal — it's built for these users. They form the 87K active watcher base. The M1 53% retention. The mandate renewals. <strong>All downstream metrics are metrics of the 21%.</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 6: AHA Collapse -->
+<div class="slide">
+  <div class="slide-number">05 / AHA RATE COLLAPSE</div>
+  <h2><span class="yellow">12.5%</span> → <span class="red">3.9%</span></h2>
+  <p class="subtitle">AHA rate collapsed 3.2x. The recent cohorts are fundamentally different from historical.</p>
+  
+  <div class="stat-row">
+    <div class="stat-box">
+      <div class="big-stat yellow">12.5%</div>
+      <div class="stat-label">All-Time AHA</div>
+    </div>
+    <div class="stat-box">
+      <div class="big-stat" style="color:var(--orange)">→</div>
+      <div class="stat-label">&nbsp;</div>
+    </div>
+    <div class="stat-box">
+      <div class="big-stat red">3.9%</div>
+      <div class="stat-label">Recent 30-Day AHA</div>
+    </div>
+  </div>
+  
+  <div class="card-grid" style="margin-top:30px">
+    <div class="card card-yellow">
+      <h3>Hypothesis A: Acquisition Degraded</h3>
+      <p>Early users were organic, dialect-enthusiastic. Current users come from scaled performance marketing. The 34% zero-watchers <strong>didn't exist</strong> in early cohorts. You're buying volume, not intent.</p>
+    </div>
+    <div class="card card-accent">
+      <h3>Hypothesis B: AHA Definition Stale</h3>
+      <p>If AHA requires multi-day engagement, and D1 return is structurally 15%, recent cohorts <em>mathematically can't</em> achieve AHA at old rates — even if equally engaged on D0.</p>
+    </div>
+  </div>
+  
+  <div class="callout">
+    <strong>Position: It's mostly A.</strong> The M0 zero-activity rate (65%), growing never-watched HVU pool (+30% in 4 months), and Futwork zero-incremental data all point to acquisition quality degradation. STAGE is buying volume, not watchers.
+  </div>
+</div>
+
+<!-- SLIDE 7: Futwork -->
+<div class="slide">
+  <div class="slide-number">06 / FUTWORK: ZERO VALUE</div>
+  <h2>5-7K Calls/Day.<br><span class="red">Zero</span> Incremental Conversions.</h2>
+  
+  <table>
+    <thead>
+      <tr><th>Date</th><th>Leads Processed</th><th>Reported Conv %</th><th style="color:var(--red)">Incremental Conversions</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Feb 20</td><td>~6,500</td><td>15.7%</td><td class="red"><strong>0</strong></td></tr>
+      <tr><td>Feb 21</td><td>~6,200</td><td>14.2%</td><td class="red"><strong>0</strong></td></tr>
+      <tr><td>Feb 22</td><td>~6,800</td><td>13.5%</td><td class="red"><strong>0</strong></td></tr>
+      <tr><td>Feb 23</td><td>~5,400</td><td>12.9%</td><td class="red"><strong>0</strong></td></tr>
+    </tbody>
+  </table>
+  
+  <p class="insight">Working hours vs off-hours: 15-17% vs 15%. The delta is noise. Users who "convert" after a call would have converted anyway.</p>
+  
+  <div class="callout">
+    <strong>Recommendation: Pause immediately. Run a controlled A/B test.</strong> If confirmed, redirect the entire OB calling budget to D1 return interventions — push notifications, cliffhanger content, personalized recall — where the actual leverage is.
+  </div>
+</div>
+
+<!-- SLIDE 8: Web Growth -->
+<div class="slide">
+  <div class="slide-number">07 / WEB GROWTH</div>
+  <h2>17% → <span class="accent">37%</span> Web Share</h2>
+  <p class="subtitle">Web is growing fast. But is it solving the quality problem?</p>
+  
+  <div class="bar-chart">
+    <div class="bar-row">
+      <div class="bar-label">Dec 2025</div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:83%;background:var(--accent)">App 83%</div>
+      </div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Jan 2026</div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:80%;background:var(--accent)">App 80%</div>
+      </div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Feb 2026</div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:63%;background:var(--accent)">App 63%</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card-grid">
+    <div class="card card-accent">
+      <h3>Quality: Identical</h3>
+      <p>App D0 TCR: 30-32%<br>Web D0 TCR: 31-33%<br><br>No quality difference. Web users cancel at the same rate. Web isn't lower quality — but it's not better either.</p>
+    </div>
+    <div class="card card-yellow">
+      <h3>D1 Problem: Worse on Web</h3>
+      <p>Web users have no app icon on home screen, no push notifications, no re-engagement hooks. The D0→D1 cliff is likely <strong>steeper</strong> on web.</p>
+    </div>
+    <div class="card card-green">
+      <h3>Position: Additive Reach</h3>
+      <p>Not cannibalization — app is declining independently. Web should be top-of-funnel → app install. <strong>Measure web→app conversion rate.</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 9: Mandate Success -->
+<div class="slide">
+  <div class="slide-number">08 / MANDATE SUCCESS</div>
+  <h2>Autopay Is the <span class="green">Hero</span></h2>
+  
+  <div style="display:flex;gap:4px;margin:40px 0;height:50px;border-radius:12px;overflow:hidden">
+    <div style="width:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px">D(-1) Autopay 50%</div>
+    <div style="width:2%;background:#16a34a;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:10px">2%</div>
+    <div style="width:1.5%;background:var(--yellow)"></div>
+    <div style="width:5%;background:var(--orange);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:11px">Late</div>
+    <div style="width:3%;background:#a855f7"></div>
+    <div style="width:38.5%;background:var(--red);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px">Paused/Revoked 45-50%</div>
+  </div>
+  
+  <div class="card-grid">
+    <div class="card card-green">
+      <h3>27-30% Trial→Paid</h3>
+      <p>Mandate infrastructure works. D(-1) autopay captures half of all renewals. Manual renewal is tiny (~1.5%). <strong>The payment layer isn't the problem.</strong></p>
+    </div>
+    <div class="card card-green">
+      <h3>Paid Subs Renew Well</h3>
+      <p>51% M1 mandate survival. Revenue compounding: Sep '25 cohort generated ₹6.48 Cr first sub + ₹3.53 Cr renewals. <strong>Users who engage, pay.</strong></p>
+    </div>
+    <div class="card card-red">
+      <h3>The Real Problem</h3>
+      <p>45-50% actively pause/revoke before trial ends. They didn't watch enough to care. <strong>Growth's job isn't payment optimization — it's getting more users past AHA.</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 10: Dialect Gaps -->
+<div class="slide">
+  <div class="slide-number">09 / DIALECT PERFORMANCE</div>
+  <h2>Bhojpuri: Biggest Base,<br><span class="red">Lowest Engagement</span></h2>
+  
+  <table>
+    <thead>
+      <tr><th>Dialect</th><th>D1 Conv</th><th>AHA Rate</th><th>M0 Watch Conv</th><th>TV WAU</th><th>Microdrama Library</th></tr>
+    </thead>
+    <tbody>
+      <tr style="background:var(--green-dim)"><td><strong>Haryanvi</strong></td><td>17-19%</td><td>4.3%</td><td>3.49%</td><td>64%</td><td>44 titles</td></tr>
+      <tr><td><strong>Rajasthani</strong></td><td>15-17%</td><td>4.1%</td><td>3.52%</td><td>11%</td><td>30 titles</td></tr>
+      <tr style="background:var(--red-dim)"><td><strong>Bhojpuri</strong></td><td>14-16%</td><td>3.6%</td><td>2.51%</td><td>9%</td><td>23 titles</td></tr>
+      <tr><td><strong>Gujarati</strong></td><td>12-14%</td><td>3.4%</td><td>—</td><td>~0%</td><td>~5 titles</td></tr>
+    </tbody>
+  </table>
+  
+  <div class="callout">
+    <strong>Bhojpuri has 67.5K M0 subs (largest base) but 2.51% watch conversion vs 3.5% for others.</strong> That 1pp gap at 67.5K scale = 675 missing daily watchers. Half the microdrama library of Haryanvi. This is a content supply problem, not a demand problem.
+  </div>
+</div>
+
+<!-- SLIDE 11: Growth→Retention Connection -->
+<div class="slide">
+  <div class="slide-number">10 / GROWTH → RETENTION</div>
+  <h2>The Retention Crisis<br>Starts <span class="accent">Here</span></h2>
+  
+  <table>
+    <thead>
+      <tr><th>Growth Failure</th><th>→</th><th>Retention Consequence</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>34% never watch</td><td>→</td><td>675K "never watched" dormants</td></tr>
+      <tr><td>45% watch 1 day only</td><td>→</td><td>440K "previously watched" dormants</td></tr>
+      <tr><td>3.9% AHA rate</td><td>→</td><td>96% never form emotional connection</td></tr>
+      <tr><td>D0→D1 cliff (50pp)</td><td>→</td><td><strong>1.1M total dormant pool</strong></td></tr>
+      <tr style="background:var(--green-dim)"><td>Survivors (21%)</td><td>→</td><td>87K active watchers · 53% M1 retention</td></tr>
+    </tbody>
+  </table>
+  
+  <p class="insight" style="margin-top:30px">Every month, ~300K trials enter. ~237K (79%) fall through the sieve. They become dormants. The CLM team resurrects 0.28% daily — a losing game. <strong>Fix growth activation and retention fixes itself.</strong> M1 is already #3 in India. The funnel neck is narrow, not leaky at the bottom.</p>
+  
+  <div class="callout-accent callout">
+    <strong>The proof:</strong> Microdrama cross-format users get 48% M0 retention vs 40% single-format. TV users get 2.4x D30 retention. The product works for users who get through. The gate is the problem.
+  </div>
+</div>
+
+<!-- SLIDE 12: Strategy Forward -->
+<div class="slide">
+  <div class="slide-number">11 / STRATEGY FORWARD</div>
+  <h2>The 5 Highest-Leverage Bets</h2>
+  
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-title">BET 1: Solve D1 Return <span class="tag tag-red" style="margin-left:8px">P0</span></div>
+      <div class="timeline-desc">Cliffhanger architecture · Aggressive push opt-in during first watch · "Your show continued" D1 notification · Web→App bridge<br><strong class="accent">Target: +15pp D1 retention (15% → 30%) = 1,950 → 3,159 D1 returners/day</strong></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-title">BET 2: Kill Zero-Watchers at Source <span class="tag tag-red" style="margin-left:8px">P0</span></div>
+      <div class="timeline-desc">Auto-play on trial activation · Acquisition quality scoring · Kill campaigns >50% zero-watch · Carrier billing audit<br><strong class="accent">Target: -15pp zero-watch rate (34% → 19%) = +2K daily D0 watchers</strong></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-title">BET 3: Microdrama as Gateway <span class="tag tag-yellow" style="margin-left:8px">P1</span></div>
+      <div class="timeline-desc">Cross-format bridge (microdrama → long-format) · Continuous auto-queue · Fix CTR crash (1.28% → 0.62%)<br><strong class="accent">Target: +5pp cross-format consumption = +8pp M0 retention lift</strong></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-title">BET 4: TV Push to Engaged Users <span class="tag tag-yellow" style="margin-left:8px">P1</span></div>
+      <div class="timeline-desc">TV activation prompt at AHA moment · QR scan setup · TV-first premieres<br><strong class="accent">Target: 2x TV penetration (2% → 4%) · TV users = 2.4x D30 retention</strong></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-title">BET 5: Bhojpuri Content Parity <span class="tag tag-green" style="margin-left:8px">P2</span></div>
+      <div class="timeline-desc">Double microdrama library (23 → 46) in 90 days · 2-3 concurrent weekly series<br><strong class="accent">Target: Close 1pp M0 watch conversion gap = +660 daily Bhojpuri watchers</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 13: What to STOP -->
+<div class="slide">
+  <div class="slide-number">12 / WHAT TO STOP</div>
+  <h2>Stop Doing <span class="red">These</span></h2>
+  
+  <div class="stop-item">
+    <div class="stop-icon">✕</div>
+    <div>
+      <h3>Futwork OB Calling</h3>
+      <p class="dim">Zero incremental conversions for 4+ days. 5-7K calls/day with no marginal lift. Pause immediately, run A/B test, redirect budget.</p>
+    </div>
+  </div>
+  <div class="stop-item">
+    <div class="stop-icon">✕</div>
+    <div>
+      <h3>Campaigns with >50% Zero-Watch Rate</h3>
+      <p class="dim">You're paying to create dormants. Score every campaign by 7-day engagement. Kill the ghosts.</p>
+    </div>
+  </div>
+  <div class="stop-item">
+    <div class="stop-icon">✕</div>
+    <div>
+      <h3>Generic Push Notifications</h3>
+      <p class="dim">"Come back and watch!" doesn't work. Only personalized, content-specific pushes. "Episode 3 of Husband on Sale is waiting."</p>
+    </div>
+  </div>
+  <div class="stop-item">
+    <div class="stop-icon">✕</div>
+    <div>
+      <h3>Optimizing for Trial Volume</h3>
+      <p class="dim">The north star should be D1 returners, not trial starts. 13K trials/day means nothing when 79% are wasted.</p>
+    </div>
+  </div>
+  <div class="stop-item">
+    <div class="stop-icon">✕</div>
+    <div>
+      <h3>LVU Dormant Targeting</h3>
+      <p class="dim">375K never-watched LVUs at 0.26% conversion. These are carrier billing ghosts. Write them off. Focus calling on 214K HVU+MVU previously-watched.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 14: 90-Day Math -->
+<div class="slide">
+  <div class="slide-number">13 / THE 90-DAY MATH</div>
+  <h2>From Sieve to <span class="green">Funnel</span></h2>
+  
+  <div class="card-grid">
+    <div class="card card-red">
+      <h3>Current (Daily)</h3>
+      <table style="font-size:14px">
+        <tr><td>Trials</td><td style="text-align:right"><strong>13,000</strong></td></tr>
+        <tr><td>D0 Watchers (65%)</td><td style="text-align:right">8,450</td></tr>
+        <tr><td>D1 Returners (15%)</td><td style="text-align:right red"><strong>1,950</strong></td></tr>
+        <tr><td>AHA Achieved (3.9%)</td><td style="text-align:right">507</td></tr>
+        <tr><td>Paid Mandate (27%)</td><td style="text-align:right">3,510</td></tr>
+      </table>
+    </div>
+    <div class="card card-green">
+      <h3>After 90 Days (Daily)</h3>
+      <table style="font-size:14px">
+        <tr><td>Trials</td><td style="text-align:right"><strong>13,000</strong> (same)</td></tr>
+        <tr><td>D0 Watchers (81%)</td><td style="text-align:right">10,530</td></tr>
+        <tr><td>D1 Returners (30%)</td><td style="text-align:right green"><strong>3,159</strong></td></tr>
+        <tr><td>AHA Achieved (~7%)</td><td style="text-align:right">948</td></tr>
+        <tr><td>Paid Mandate (33%)</td><td style="text-align:right">4,290</td></tr>
+      </table>
+    </div>
+  </div>
+  
+  <div class="stat-row" style="margin-top:40px">
+    <div class="stat-box">
+      <div class="big-stat green">+62%</div>
+      <div class="stat-label">More D1 Returners/Day</div>
+    </div>
+    <div class="stat-box">
+      <div class="big-stat green">+36K</div>
+      <div class="stat-label">More D1 Users/Month</div>
+    </div>
+    <div class="stat-box">
+      <div class="big-stat green">-108K</div>
+      <div class="stat-label">Fewer Dormants Created (90d)</div>
+    </div>
+  </div>
+  
+  <div class="callout-green callout">
+    <strong>Same trial volume, radically different outcomes.</strong> No incremental ad spend. No new content budget (except Bhojpuri). Pure product + operational changes. The funnel shape changes, and every downstream metric — AHA, habit, mandate, renewal — compounds upward.
+  </div>
+</div>
+
+<!-- SLIDE 15: North Star -->
+<div class="slide" style="text-align:center">
+  <div class="slide-number">14 / THE ONE THING</div>
+  <div class="mega-stat accent" style="margin-bottom:20px">D1 Returners</div>
+  <p class="subtitle" style="margin:0 auto 40px;text-align:center;max-width:600px">Stop counting trial starts.<br>Start counting who comes back tomorrow.</p>
+  <p class="dim" style="font-size:15px;max-width:500px;margin:0 auto">
+    Current: 1,950/day · Target: 3,159/day<br>
+    Every additional D1 returner has 53% M1 retention,<br>
+    22% M3 retention, and generates ₹99/month in mandate value.<br><br>
+    <strong style="color:var(--text)">The funnel isn't leaking. It's a sieve.<br>Time to rebuild it.</strong>
+  </p>
+</div>
+
+</body>
+</html>

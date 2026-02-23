@@ -142,6 +142,7 @@ Supports: .ogg (WhatsApp voice notes)
 ## Rules
 
 - **Always save documents to Google Drive as Google Docs** (not markdown, not plain text). Use Drive API multipart upload with `mimeType: application/vnd.google-apps.document` and HTML content.
+- **Always save analysis files to Google Drive** — whenever I produce an analysis, digest, or structured document, upload it to HMT's Drive automatically. Don't wait to be asked.
 
 ---
 

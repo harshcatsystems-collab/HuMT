@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STAGE — Retention & Engagement Strategy | Deep Reflection, Feb 2026</title>
+<style>
+  :root {
+    --bg-primary: #0a0a0f;
+    --bg-section: #12121a;
+    --bg-card: #1a1a2e;
+    --bg-card-alt: #16213e;
+    --text-primary: #e8e8ef;
+    --text-secondary: #8b8b9e;
+    --text-muted: #5a5a6e;
+    --accent: #6c63ff;
+    --accent-light: #8b83ff;
+    --green: #2ecc71;
+    --green-dim: #1a7a42;
+    --red: #e74c3c;
+    --red-dim: #8b2d25;
+    --amber: #f39c12;
+    --amber-dim: #8a5a0d;
+    --cyan: #00d2ff;
+    --border: #2a2a3e;
+    --gradient-1: linear-gradient(135deg, #6c63ff 0%, #00d2ff 100%);
+    --gradient-red: linear-gradient(135deg, #e74c3c 0%, #ff6b6b 100%);
+    --gradient-green: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    --gradient-amber: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+  }
+
+  body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(10, 10, 15, 0.92);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    gap: 2rem;
+  }
+
+  nav .logo {
+    font-weight: 800;
+    font-size: 1.1rem;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    white-space: nowrap;
+  }
+
+  nav .nav-links {
+    display: flex;
+    gap: 0.25rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    flex: 1;
+  }
+
+  nav .nav-links::-webkit-scrollbar { display: none; }
+
+  nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.35rem 0.6rem;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: all 0.2s;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+  }
+
+  nav a:hover { color: var(--text-primary); background: var(--bg-card); }
+
+  /* SECTIONS */
+  section {
+    min-height: 100vh;
+    padding: 8rem 2rem 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: start;
+  }
+
+  .section-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+
+  .subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: var(--text-secondary);
+    line-height: 1.5;
+    max-width: 720px;
+  }
+
+  .highlight { color: var(--accent-light); }
+  .red { color: var(--red); }
+  .green { color: var(--green); }
+  .amber { color: var(--amber); }
+  .cyan { color: var(--cyan); }
+
+  /* CARDS */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+
+  .card:hover { transform: translateY(-2px); border-color: var(--accent); }
+
+  .card-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .card .big-number {
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .card .description {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+
+  /* STATUS BADGES */
+  .badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 100px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .badge-red { background: var(--red-dim); color: var(--red); }
+  .badge-green { background: var(--green-dim); color: var(--green); }
+  .badge-amber { background: var(--amber-dim); color: var(--amber); }
+
+  /* COMPARISON LAYOUT */
+  .vs-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+
+  .vs-divider {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--text-muted);
+    text-align: center;
+  }
+
+  .vs-box {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+  }
+
+  .vs-box h3 { margin-bottom: 1.5rem; }
+
+  .vs-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.95rem;
+  }
+
+  .vs-item:last-child { border-bottom: none; }
+
+  .vs-value {
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* FUNNEL */
+  .funnel {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 2.5rem auto;
+    max-width: 800px;
+  }
+
+  .funnel-step {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  .funnel-bar-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .funnel-bar {
+    height: 52px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: #fff;
+    position: relative;
+    transition: all 0.3s;
+    margin-bottom: 0;
+  }
+
+  .funnel-leak {
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 0.75rem;
+    color: var(--red);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+
+  .funnel-leak .arrow { font-size: 1rem; }
+
+  .funnel-label {
+    width: 130px;
+    text-align: right;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    flex-shrink: 0;
+  }
+
+  .funnel-meta {
+    width: 160px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    flex-shrink: 0;
+  }
+
+  /* BAR CHARTS */
+  .bar-chart {
+    margin: 2rem 0;
+  }
+
+  .bar-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    gap: 1rem;
+  }
+
+  .bar-label {
+    width: 140px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .bar-track {
+    flex: 1;
+    height: 32px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .bar-fill {
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 0 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+    white-space: nowrap;
+    transition: width 0.6s ease;
+  }
+
+  /* TIMELINE */
+  .timeline {
+    display: flex;
+    align-items: flex-end;
+    gap: 1px;
+    height: 200px;
+    margin: 2rem 0;
+    padding-top: 1rem;
+  }
+
+  .timeline-bar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    position: relative;
+  }
+
+  .timeline-bar .col {
+    width: 100%;
+    max-width: 60px;
+    border-radius: 4px 4px 0 0;
+    transition: height 0.3s;
+    position: relative;
+  }
+
+  .timeline-bar .col-label {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .timeline-bar .week-label {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    margin-top: 6px;
+    white-space: nowrap;
+  }
+
+  /* BIG QUOTE */
+  .big-quote {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 300;
+    line-height: 1.4;
+    color: var(--text-secondary);
+    border-left: 4px solid var(--accent);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+  }
+
+  /* DATA TABLE */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+  }
+
+  .data-table th {
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 2px solid var(--border);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  .data-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    color: var(--text-secondary);
+  }
+
+  .data-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+  .data-table .num {
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  /* BET CARD */
+  .bet-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bet-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+  }
+
+  .bet-card.bet-1::before { background: var(--gradient-1); }
+  .bet-card.bet-2::before { background: var(--gradient-green); }
+  .bet-card.bet-3::before { background: var(--gradient-amber); }
+
+  .bet-number {
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgba(255,255,255,0.06);
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    line-height: 1;
+  }
+
+  .bet-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .bet-card .rationale {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .bet-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+
+  .bet-metric {
+    background: rgba(255,255,255,0.03);
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .bet-metric .label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.25rem;
+  }
+
+  .bet-metric .value {
+    font-size: 1.3rem;
+    font-weight: 800;
+  }
+
+  /* STOP ITEMS */
+  .stop-list {
+    list-style: none;
+    margin: 1.5rem 0;
+  }
+
+  .stop-list li {
+    padding: 1.25rem 1.5rem;
+    background: var(--bg-card);
+    border-radius: 12px;
+    margin-bottom: 0.75rem;
+    border-left: 4px solid var(--red);
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .stop-list .stop-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .stop-list .stop-text h4 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .stop-list .stop-text p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+
+  /* QUESTION CARDS */
+  .q-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+    transition: border-color 0.3s;
+  }
+
+  .q-card:hover { border-color: var(--red); }
+
+  .q-card .q-number {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--red);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .q-card .q-text {
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+  }
+
+  .q-card .q-context {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  /* PROJECTION */
+  .projection-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .projection-box {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+  }
+
+  .projection-box h4 {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+  }
+
+  .projection-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 0.9rem;
+  }
+
+  .projection-row:last-child { border-bottom: none; }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border);
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    section { padding: 6rem 1.25rem 3rem; }
+    nav { padding: 0 1rem; }
+    .vs-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .vs-divider { transform: rotate(90deg); }
+    .funnel-label { width: 80px; font-size: 0.75rem; }
+    .funnel-meta { width: 100px; font-size: 0.7rem; }
+    .projection-grid { grid-template-columns: 1fr; }
+    .bar-label { width: 100px; font-size: 0.75rem; }
+  }
+
+  /* ANIMATED ENTRY */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* RANK HIGHLIGHT */
+  .rank-strip {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .rank-strip .rank-pos {
+    font-size: 1.2rem;
+    font-weight: 900;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  /* CONNECTOR BETWEEN SECTIONS */
+  .connector {
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+  }
+
+  /* INLINE METRIC */
+  .inline-metric {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.3rem;
+    background: rgba(255,255,255,0.05);
+    padding: 0.15rem 0.6rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+
+  /* ANNOTATION */
+  .annotation {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .two-col { grid-template-columns: 1fr; }
+  }
+
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 3rem 0;
+  }
+
+  .kpi-row {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+  }
+
+  .kpi {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    flex: 1;
+    min-width: 150px;
+    border: 1px solid var(--border);
+  }
+
+  .kpi .kpi-value {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+
+  .kpi .kpi-label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0.25rem;
+  }
+
+  .callout {
+    background: rgba(108, 99, 255, 0.08);
+    border: 1px solid rgba(108, 99, 255, 0.25);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .callout-red {
+    background: rgba(231, 76, 60, 0.08);
+    border-color: rgba(231, 76, 60, 0.25);
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="logo">STAGE</div>
+  <div class="nav-links">
+    <a href="#headline">Headline</a>
+    <a href="#illusion">Illusion</a>
+    <a href="#funnel">Funnel</a>
+    <a href="#ghosts">Ghosts</a>
+    <a href="#bridge">Bridge</a>
+    <a href="#levers">Levers</a>
+    <a href="#working">Working</a>
+    <a href="#bets">3 Bets</a>
+    <a href="#stop">Stop</a>
+    <a href="#math">Math</a>
+    <a href="#questions">Questions</a>
+  </div>
+</nav>
+
+<!-- ==================== SLIDE 1: THE HEADLINE ==================== -->
+<section id="headline">
+  <div class="fade-in">
+    <div class="section-label">Deep Reflection · February 2026</div>
+    <h1>STAGE has <span class="highlight">1.58 million</span> subscribers.<br>
+    <span class="red">87 thousand</span> are watching.</h1>
+    <p class="subtitle">
+      Five dashboards. One story. STAGE doesn't have an engagement problem or a retention problem or a dormancy problem. It has a <strong>funnel integrity problem</strong> — and the numbers that look best on the board deck are the ones hiding it.
+    </p>
+    <div class="kpi-row" style="margin-top: 3rem;">
+      <div class="kpi">
+        <div class="kpi-value" style="color: var(--green);">1.58M</div>
+        <div class="kpi-label">Total Subscribers</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-value" style="color: var(--red);">87K</div>
+        <div class="kpi-label">Active Watchers</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-value" style="color: var(--amber);">13:1</div>
+        <div class="kpi-label">Dormant Ratio</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-value" style="color: var(--red);">-38%</div>
+        <div class="kpi-label">Watcher Base (5 wks)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SLIDE 2: THE ILLUSION ==================== -->
+<section id="illusion">
+  <div class="fade-in">
+    <div class="section-label">01 — The Illusion</div>
+    <h2>What the board sees vs.<br>what's actually happening</h2>
+    <p class="subtitle" style="margin-bottom: 2.5rem;">The January board deck told a winning story. The live dashboards tell a different one. Both use real data. Only one should drive decisions.</p>
+
+    <div class="vs-grid">
+      <div class="vs-box" style="border-color: var(--green-dim);">
+        <h3 style="color: var(--green);">🟢 The Board Story</h3>
+        <div class="vs-item">
+          <span>Total Subscribers</span>
+          <span class="vs-value green">1.58M</span>
+        </div>
+        <div class="vs-item">
+          <span>YoY Growth</span>
+          <span class="vs-value green">289%</span>
+        </div>
+        <div class="vs-item">
+          <span>M1 Retention</span>
+          <span class="vs-value green">#3 in India (53%)</span>
+        </div>
+        <div class="vs-item">
+          <span>WoW Retention</span>
+          <span class="vs-value green">49% (+14pp)</span>
+        </div>
+        <div class="vs-item">
+          <span>CLM Resurrection</span>
+          <span class="vs-value green">+143–180%</span>
+        </div>
+        <div class="vs-item">
+          <span>Microdrama Trial D0</span>
+          <span class="vs-value green">70–88%</span>
+        </div>
+      </div>
+
+      <div class="vs-divider">vs</div>
+
+      <div class="vs-box" style="border-color: var(--red-dim);">
+        <h3 style="color: var(--red);">🔴 The Live Dashboard</h3>
+        <div class="vs-item">
+          <span>Active Watchers</span>
+          <span class="vs-value red">87K (5.5%)</span>
+        </div>
+        <div class="vs-item">
+          <span>Watcher Base (5 wks)</span>
+          <span class="vs-value red">141K → 87K (−38%)</span>
+        </div>
+        <div class="vs-item">
+          <span>M3 Retention</span>
+          <span class="vs-value red">#9 in India (22%)</span>
+        </div>
+        <div class="vs-item">
+          <span>WoW Retention (live)</span>
+          <span class="vs-value red">50% → 41%</span>
+        </div>
+        <div class="vs-item">
+          <span>Dormant Pool</span>
+          <span class="vs-value red">1.1M (13:1 ratio)</span>
+        </div>
+        <div class="vs-item">
+          <span>M0 Zero Activity</span>
+          <span class="vs-value red">65% never open app</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top: 2rem;">
+      <strong>The reconciliation:</strong> These aren't contradictory. M1 retention (53%) measures all subscribers. WoW watch retention (41%) measures active watchers only — a more demanding test. STAGE activates well in month 1 but can't sustain the habit. The board sees the entrance. The dashboards see the exit.
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SLIDE 3: THE RANKING COLLAPSE ==================== -->
+<section id="ranking">
+  <div class="fade-in">
+    <div class="section-label">02 — The Ranking Mirage</div>
+    <h2>#3 in India at M1.<br><span class="red">#9 by M3.</span></h2>
+    <p class="subtitle" style="margin-bottom: 2rem;">STAGE's M1 retention rank is real but misleading. The question isn't where you start — it's how fast you fall.</p>
+
+    <div class="two-col">
+      <div>
+        <h3 style="color: var(--text-muted); font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem;">M1 → M3 Retention Drop</h3>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <div class="bar-label">JioHotstar</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 80%; background: var(--green);">60% → 48% <span style="opacity: 0.7; margin-left: 0.5rem;">−12pp</span></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Netflix</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 73%; background: var(--green);">55% → 42% <span style="opacity: 0.7; margin-left: 0.5rem;">−13pp</span></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label" style="color: var(--accent); font-weight: 700;">STAGE</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 70%; background: var(--gradient-red);">53% → 22% <span style="opacity: 0.7; margin-left: 0.5rem;">−31pp</span></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">aha</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 64%; background: var(--text-muted);">48% → 38% <span style="opacity: 0.7; margin-left: 0.5rem;">−10pp</span></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">ZEE5</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 60%; background: var(--text-muted);">45% → 34% <span style="opacity: 0.7; margin-left: 0.5rem;">−11pp</span></div>
+            </div>
+          </div>
+        </div>
+        <p class="annotation">Source: Board Deck Jan 2026, competitive benchmarks (data.ai)</p>
+      </div>
+
+      <div>
+        <h3 style="color: var(--text-muted); font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem;">What this means</h3>
+        <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem; margin-bottom: 1rem;">
+          STAGE's <strong style="color: var(--text-primary);">31pp M1→M3 drop</strong> is 2.5× worse than Netflix (13pp) and JioHotstar (12pp). The initial activation is strong — content-market fit is real. But the product fails to build a watching habit between months 1 and 3.
+        </p>
+        <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem; margin-bottom: 1rem;">
+          This is the <strong style="color: var(--amber);">content depth problem</strong>. Users love what they find, consume it in month 1, and run out of reasons to return. Netflix has 10,000 hours. STAGE has a finite catalog in each dialect.
+        </p>
+        <div class="callout callout-red">
+          <strong>The hard question:</strong> Is M1 #3 a ranking we earned, or a side-effect of aggressive M0 acquisition that inflates the denominator? When 65% of M0 never open the app, even mediocre retention on the remaining 35% looks competitive.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SLIDE 4: THE FUNNEL ==================== -->
+<section id="funnel">
+  <div class="fade-in">
+    <div class="section-label">03 — The Funnel</div>
+    <h2>Where the users go</h2>
+    <p class="subtitle" style="margin-bottom: 1.5rem;">1.58M enter at the top. 87K come out watching. Here's where each drop happens.</p>
+
+    <div class="funnel">
+      <div class="funnel-step">
+        <div class="funnel-label">Acquisition</div>
+        <div class="funnel-bar-wrap">
+          <div class="funnel-bar" style="width: 100%; background: var(--accent);">1.58M Subscribers</div>
+        </div>
+        <div class="funnel-meta"><span class="badge badge-green">healthy</span><br>289% YoY growth</div>
+      </div>
+      <div class="funnel-leak">
+        <span class="arrow">↓</span> 65% never open the app — ghost subscribers from carrier billing & low-intent channels
+      </div>
+      <div class="funnel-step">
+        <div class="funnel-label">Activation</div>
+        <div class="funnel-bar-wrap">
+          <div class="funnel-bar" style="width: 35%; background: var(--amber);">553K Open App</div>
+        </div>
+        <div class="funnel-meta"><span class="badge badge-red">broken</span><br>Only 3% watch content</div>
+      </div>
+      <div class="funnel-leak">
+        <span class="arrow">↓</span> 97% of M0 subs never watch — 28.5K open once and leave, rest never come back
+      </div>
+      <div class="funnel-step">
+        <div class="funnel-label">First Watch</div>
+        <div class="funnel-bar-wrap">
+          <div class="funnel-bar" style="width: 16%; background: var(--amber);">~250K watched (last 30d)</div>
+        </div>
+        <div class="funnel-meta"><span class="badge badge-amber">at risk</span><br>High initial activation</div>
+      </div>
+      <div class="funnel-leak">
+        <span class="arrow">↓</span> D0→D1 cliff: 85% watch on D0, only 15% return on D1 — no pull-back mechanism
+      </div>
+      <div class="funnel-step">
+        <div class="funnel-label">Habit</div>
+        <div class="funnel-bar-wrap">
+          <div class="funnel-bar" style="width: 8%; background: #e67e22;">~120K Regular Watchers</div>
+        </div>
+        <div class="funnel-meta"><span class="badge badge-amber">at risk</span><br>4.66% achieve habit</div>
+      </div>
+      <div class="funnel-leak">
+        <span class="arrow">↓</span> D15–D60 cliff: −8pp to −15pp — content discovery failure, subscription regret
+      </div>
+      <div class="funnel-step">
+        <div class="funnel-label">Active Watching</div>
+        <div class="funnel-bar-wrap">
+          <div class="funnel-bar" style="width: 5.5%; background: var(--green);">87K Watchers</div>
+        </div>
+        <div class="funnel-meta"><span class="badge badge-red">declining</span><br>Was 141K five weeks ago</div>
+      </div>
+      <div class="funnel-leak">
+        <span class="arrow">↓</span> 441K previously-watched users now dormant — recoverable with CLM
+      </div>
+      <div class="funnel-step">
+        <div class="funnel-label">Dormant</div>
+        <div class="funnel-bar-wrap">
+          <div class="funnel-bar" style="width: 70%; background: var(--red);">1.1M Dormant (676K never watched + 441K lapsed)</div>
+        </div>
+        <div class="funnel-meta"><span class="badge badge-red">critical</span><br>13:1 ratio</div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top: 0;">
+      <strong>The insight individual dashboards miss:</strong> These aren't separate problems. The M0 zero-activity feeds the never-watched dormant pool. The D1–D30 habit failure feeds the previously-watched dormant pool. And the resurrection effort is too diffuse across 1.1M instead of focused on the 214K recoverable users. It's one pipeline with three breakpoints.
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SLIDE 5: ROOT CAUSE 1 — GHOSTS ==================== -->
+<section id="ghosts">
+  <div class="fade-in">
+    <div class="section-label">04 — Root Cause 1</div>
+    <h2>The Ghost Subscriber Problem</h2>
+    <p class="subtitle" style="margin-bottom: 2rem;">65% of M0 subscribers have zero activity. Not low activity. <em>Zero.</em> They subscribed and vanished. Most never chose STAGE.</p>
+
+    <div class="two-col">
+      <div>
+        <h3>The Zombie Pipeline</h3>
+        <div style="margin: 1.5rem 0;">
+          <div style="background: var(--bg-card); border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 0.5rem; border-left: 3px solid var(--text-muted);">
+            <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Step 1</div>
+            <div style="font-weight: 600;">Carrier billing / promo bundle / growth campaign</div>
+          </div>
+          <div style="text-align: center; color: var(--text-muted); font-size: 0.8rem; padding: 0.25rem 0;">↓ User doesn't consciously choose STAGE</div>
+          <div style="background: var(--bg-card); border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 0.5rem; border-left: 3px solid var(--amber);">
+            <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Step 2</div>
+            <div style="font-weight: 600;">Appears as "M0 Subscriber" in dashboards</div>
+          </div>
+          <div style="text-align: center; color: var(--text-muted); font-size: 0.8rem; padding: 0.25rem 0;">↓ Never installs / opens the app</div>
+          <div style="background: var(--bg-card); border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 0.5rem; border-left: 3px solid var(--red);">
+            <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Step 3</div>
+            <div style="font-weight: 600;">Joins the 676K "Never Watched" dormant pool</div>
+          </div>
+          <div style="text-align: center; color: var(--text-muted); font-size: 0.8rem; padding: 0.25rem 0;">↓ Subscription eventually expires</div>
+          <div style="background: var(--bg-card); border-radius: 10px; padding: 1rem 1.25rem; border-left: 3px solid rgba(255,255,255,0.1);">
+            <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Step 4</div>
+            <div style="font-weight: 600;">Counted as a "churned subscriber" — but was never a user</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>The Dialect Problem</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+          Bhojpuri is the largest dialect by subscriber base — and the worst at converting to watchers. The 1pp gap represents ~675 missing daily watchers.
+        </p>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <div class="bar-label">Rajasthani</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 70%; background: var(--green);">3.52%</div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Haryanvi</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 70%; background: var(--green);">3.49%</div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label" style="color: var(--red); font-weight: 700;">Bhojpuri</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 50%; background: var(--gradient-red);">2.51%</div>
+            </div>
+          </div>
+        </div>
+        <p class="annotation">M0 watch conversion by dialect. Bhojpuri has 30% more subs but 29% lower conversion.</p>
+
+        <div class="callout callout-red" style="margin-top: 1.5rem;">
+          <strong>The compounding damage:</strong> Ghost subscribers don't just waste acquisition spend. They dilute every engagement metric. Real conversion on intentional subscribers might be 8–10%, not 3%. Operating on polluted denominators leads to wrong decisions.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SLIDE 6: ROOT CAUSE 2 — THE BRIDGE ==================== -->
+<section id="bridge">
+  <div class="fade-in">
+    <div class="section-label">05 — Root Cause 2</div>
+    <h2>The Missing Bridge<br><span class="amber">Days 1 through 60</span></h2>
+    <p class="subtitle" style="margin-bottom: 2rem;">95% of users never form a watching habit. The gap between "tried it once" and "this is my app" is where STAGE loses the war.</p>
+
+    <h3>Retention by Subscription Age</h3>
+    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Weekly watch retention by how long a user has been subscribed. The D31–D60 segment has collapsed 15pp in 7 weeks.</p>
+
+    <div class="bar-chart">
+      <div class="bar-row">
+        <div class="bar-label">D0–D7</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 45%; background: var(--green);">44.8% <span style="opacity: 0.6; margin-left: 0.5rem;">(−2.8pp)</span></div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">D8–D14</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 42%; background: var(--green);">42.4% <span style="opacity: 0.6; margin-left: 0.5rem;">(−5.1pp)</span></div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">D15–D30</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 37%; background: var(--amber);">37.2% <span style="opacity: 0.6; margin-left: 0.5rem;">(−7.9pp)</span></div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label" style="color: var(--red); font-weight: 700;">D31–D60</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 32%; background: var(--gradient-red);">31.6% <span style="opacity: 0.6; margin-left: 0.5rem;">(−13.7pp) ← WORST</span></div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">D61–D90</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 35%; background: var(--amber);">35.0% <span style="opacity: 0.6; margin-left: 0.5rem;">(−8.3pp)</span></div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">Renewal</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 48%; background: var(--green);">48.4% <span style="opacity: 0.6; margin-left: 0.5rem;">(−4.4pp)</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="annotation">Change vs. Dec 29 baseline. Source: Retention Dashboard #1490</p>
+
+    <div class="two-col" style="margin-top: 2rem;">
+      <div>
+        <h3>The Two Cliffs Explained</h3>
+        <div style="background: var(--bg-card); padding: 1.25rem; border-radius: 12px; margin-bottom: 1rem; border-left: 3px solid var(--amber);">
+          <div style="font-weight: 700; margin-bottom: 0.3rem;">Cliff 1: D15–D30 (−8pp)</div>
+          <div style="font-size: 0.85rem; color: var(--text-secondary);">The <strong>content discovery cliff</strong>. Initial recommendations exhausted. User hasn't found a "home show." They browsed everything visible and nothing hooked them.</div>
+        </div>
+        <div style="background: var(--bg-card); padding: 1.25rem; border-radius: 12px; border-left: 3px solid var(--red);">
+          <div style="font-weight: 700; margin-bottom: 0.3rem;">Cliff 2: D31–D60 (−15pp)</div>
+          <div style="font-size: 0.85rem; color: var(--text-secondary);">The <strong>subscription regret cliff</strong>. User has paid for 1–2 months, hasn't formed a habit, now actively questioning "why am I paying for this?" This maps directly to M1→M3 rank dropping from #3 to #9.</div>
+        </div>
+      </div>
+
+      <div>
+        <h3>The Core User Alarm</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem;">
+          <strong>Repeat 2 users</strong> (watched 2+ consecutive weeks) are the habitual base. Their retention dropped from <span class="green">61%</span> → <span class="red">50%</span> — an 11pp decline in your best users.
+        </p>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
+          This can't be explained by acquisition mix. <strong style="color: var(--text-primary);">The product experience is degrading for power users.</strong> Likely cause: content fatigue — core users have consumed the best titles, and new releases aren't replacing at the rate of consumption.
+        </p>
+        <div class="callout callout-red" style="margin-top: 1rem;">
+          The watcher base went from 141K → 87K in five weeks. That's 54K users who left. At 44% weekly retention on a shrinking base, the math compounds against you every week.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SLIDE 7: ROOT CAUSE 3 — PROVEN LEVERS ==================== -->
+<section id="levers">
+  <div class="fade-in">
+    <div class="section-label">06 — Root Cause 3</div>
+    <h2>Proven levers.<br><span class="highlight">2% scale.</span></h2>
+    <p class="subtitle" style="margin-bottom: 2rem;">STAGE has already found what works. The problem isn't discovery — it's deployment. Every high-impact lever is running at a fraction of its potential.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-label">TV App</div>
+        <div class="big-number" style="color: var(--cyan);">2–3×</div>
+        <div class="description">
+          Retention vs. mobile. D30 retention: <strong>33% TV vs 14% mobile</strong> (2.4×). Watch time: <strong>5× higher</strong> (1.35 hrs vs 26 min). But only <strong style="color: var(--red);">2% of watchers</strong> use TV. Trial-to-TV activation: just 1.2%.
+        </div>
+        <p class="annotation" style="margin-top: 0.75rem;">Source: TV Dashboard #1291</p>
+      </div>
+
+      <div class="card">
+        <div class="card-label">Cross-Format</div>
+        <div class="big-number" style="color: var(--green);">+8pp</div>
+        <div class="description">
+          M0 retention for users who watch <strong>both</strong> microdrama + long-format: <strong>48%</strong> vs 40% single-format. The lift comes entirely from combination exposure. Neither format alone retains better than the other. <strong style="color: var(--amber);">Not currently forced in product.</strong>
+        </div>
+        <p class="annotation" style="margin-top: 0.75rem;">Source: Board Deck Jan 2026</p>
+      </div>
+
+      <div class="card">
+        <div class="card-label">CLM Resurrection</div>
+        <div class="big-number" style="color: var(--green);">+180%</div>
+        <div class="description">
+          Board deck proved CLM can lift resurrection from 20.3K → 49.3K/month for previously-watched users. Feb 17 showed a <strong>2× spike across all segments</strong> from a single intervention. <strong style="color: var(--amber);">Not systematized weekly.</strong>
+        </div>
+        <p class="annotation" style="margin-top: 0.75rem;">Source: Board Deck + Dormant Analysis</p>
+      </div>
+
+      <div class="card">
+        <div class="card-label">Weekly Series</div>
+        <div class="big-number" style="color: var(--green);">40%</div>
+        <div class="description">
+          Weekly return rate for Mahapunarjanam — sustained over 12 weeks. This is the only format that creates a <strong>reason to return on a specific day</strong>. But limited slate: only a few weekly IPs across all dialects.
+        </div>
+        <p class="annotation" style="margin-top: 0.75rem;">Source: Board Deck Jan 2026</p>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top: 2rem;">
+      <strong>The cross-dashboard connection nobody made:</strong> Microdramas activate on D0 (70–88%) but D1 return is just 15%. The D0→D1 cliff and the D15→D60 cliff are the same failure at different scales — STAGE gives users no reason to come back tomorrow. Weekly series solve this but are tiny. TV solves this through lean-back habit but reaches 2%. Cross-format solves this by deepening engagement but isn't forced. Three proven solutions, all at miniature scale.
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SLIDE 8: THE GATEWAY HYPOTHESIS ==================== -->
+<section id="gateway">
+  <div class="fade-in">
+    <div class="section-label">07 — The Gateway Insight</div>
+    <h2>Microdramas are not content.<br>They're <span class="highlight">onboarding UX.</span></h2>
+    <p class="subtitle" style="margin-bottom: 2rem;">The most important strategic reframe from the data: microdramas don't retain. They activate. The product is long-format series.</p>
+
+    <div class="two-col">
+      <div>
+        <h3 style="margin-bottom: 1rem;">What happens after a user watches a microdrama on D0?</h3>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <div class="bar-label" style="width: 180px;">Watch long-format</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 42%; background: var(--green);">18–21%</div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label" style="width: 180px;">Return to same micro</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 26%; background: var(--accent);">12–13%</div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label" style="width: 180px;">Watch diff. micro</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 18%; background: var(--text-muted);">8–9%</div>
+            </div>
+          </div>
+        </div>
+        <p class="annotation">D1 behavior after D0 microdrama watch. Source: Microdrama Dashboard #2941</p>
+
+        <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-top: 1.5rem;">
+          Users don't come back <em>for</em> microdramas. They come back <em>because of</em> microdramas — and when they do, they watch long-format. <strong>The gateway converts; the product retains.</strong>
+        </p>
+      </div>
+
+      <div>
+        <h3 style="margin-bottom: 1rem;">But the gateway is cracking</h3>
+        <div style="background: var(--bg-card); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--red-dim); margin-bottom: 1rem;">
+          <div style="font-size: 0.7rem; color: var(--red); text-transform: uppercase; letter-spacing: 1px; font-weight: 700; margin-bottom: 0.5rem;">🚨 Feb 19 CTR Crash</div>
+          <div style="font-size: 2rem; font-weight: 900; color: var(--red); margin-bottom: 0.5rem;">−52%</div>
+          <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+            Microdrama CTR crashed from 1.28% → 0.62% on Feb 19. Views <em>increased</em> but clicks halved — users see microdramas but aren't clicking. Something broke in discovery.
+          </div>
+        </div>
+
+        <h3 style="margin-top: 1.5rem; margin-bottom: 1rem;">Duration kills completion</h3>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <div class="bar-label" style="width: 120px;">1–1.3hr</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 78%; background: var(--green);">27–39% completion</div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label" style="width: 120px;">1.4–1.7hr</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 48%; background: var(--amber);">13–24% completion</div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label" style="width: 120px;">1.7hr+</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width: 12%; background: var(--red);">6% completion</div>
+            </div>
+          </div>
+        </div>
+        <p class="annotation">Hard cap at 80 min. Every minute over 90 is a wasted user.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SLIDE 9: WHAT'S WORKING ==================== -->
+<section id="working">
+  <div class="fade-in">
+    <div class="section-label">08 — Credit Where Due</div>
+    <h2>What's actually working</h2>
+    <p class="subtitle" style="margin-bottom: 2rem;">This is not a failure story. STAGE has built real structural advantages that most competitors at this scale don't have.</p>
+
+    <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+      <div class="card" style="border-color: var(--green-dim);">
+        <div class="card-label" style="color: var(--green);">✅ proven</div>
+        <h3>CLM Framework is Enterprise-Grade</h3>
+        <p class="description">
+          ML-based intent scoring × status scoring → intervention matrix. Resurrection went from 20.3K → 49.3K/month (+143%). The Feb 17 spike proved <strong>2× resurrection is possible in a single day</strong>. The infrastructure works — it just needs to be run harder and more focused.
+        </p>
+      </div>
+
+      <div class="card" style="border-color: var(--green-dim);">
+        <div class="card-label" style="color: var(--green);">✅ proven</div>
+        <h3>Content-Market Fit is Real</h3>
+        <p class="description">
+          The 3% who watch are watching <strong>more</strong> — avg watch days up from 1.93 to 2.17. Watch frequency climbs even as the base shrinks. Uninstall rate dropped from 36% to 32.5%. Users who find content love it. The product works for engaged users.
+        </p>
+      </div>
+
+      <div class="card" style="border-color: var(--green-dim);">
+        <div class="card-label" style="color: var(--green);">✅ proven</div>
+        <h3>TV M1 Retention is Improving at Scale</h3>
+        <p class="description">
+          TV M1 went from 36.8% (Jul) → 42.4% (Nov) even as cohort size grew from 2K to 12K. This is the opposite of the usual pattern where quality degrades at scale. The TV experience is genuinely getting better. D30 retention of <strong>70–82% cumulative</strong> is extraordinary.
+        </p>
+      </div>
+
+      <div class="card" style="border-color: var(--green-dim);">
+        <div class="card-label" style="color: var(--green);">✅ proven</div>
+        <h3>Microdrama as Activation Engine</h3>
+        <p class="description">
+          70–88% of trial users watch microdrama on D0. 15% of library drives 20% of title starts. Top shows (husband-on-sale) achieve 78% hook→complete. This is the single best top-of-funnel activation mechanism in Indian OTT.
+        </p>
+      </div>
+
+      <div class="card" style="border-color: var(--green-dim);">
+        <div class="card-label" style="color: var(--green);">✅ proven</div>
+        <h3>Renewal Users are the Backbone</h3>
+        <p class="description">
+          52.7K of 87K watchers (60%) are renewal users retaining at 48.4%. This base is loyal. Renewals are the bedrock — any strategy must protect and expand this segment, not just acquire new.
+        </p>
+      </div>
+
+      <div class="card" style="border-color: var(--green-dim);">
+        <div class="card-label" style="color: var(--green);">✅ proven</div>
+        <h3>Interventions Deliver Massive M0 Lift</h3>
+        <p class="description">
+          Pre vs post intervention: M0 watch retention went from 22.7% → 40.3% (+17.6pp) for all subscribers, and 36.2% → 50% (+13.8pp) for install+subscribe users. The structural improvements from 2025 are real.
+        </p>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top: 2rem;">
+      <strong>The honest framing:</strong> STAGE built something rare — a dialect-first OTT with real content-market fit, a sophisticated CLM engine, and proven retention levers. The problem is not that nothing works. It's that the things that work reach 2–5% of the addressable base while acquisition keeps pumping the top of a leaky funnel.
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SLIDE 10: THE THREE BETS ==================== -->
+<section id="bets">
+  <div class="fade-in">
+    <div class="section-label">09 — The Three Bets</div>
+    <h2>Not 16 actions.<br><span class="highlight">Three bets.</span></h2>
+    <p class="subtitle" style="margin-bottom: 2.5rem;">Every analysis produced recommendations. Together they total 40+ line items. That's not a strategy — it's a wish list. Here are the three moves that matter most, in order.</p>
+
+    <!-- BET 1 -->
+    <div class="bet-card bet-1">
+      <div class="bet-number">01</div>
+      <div class="badge badge-red" style="margin-bottom: 1rem;">HIGHEST LEVERAGE</div>
+      <h3>Build the D1–D30 Habit Bridge</h3>
+      <div class="rationale">
+        Every dashboard shows the same gap: strong D0, catastrophic D1, terminal by D60. The 95% who never form habits become the 1.1M dormant pool. This is the single intervention that fixes the funnel at its widest leak point.
+      </div>
+
+      <div style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;">
+        <h4 style="font-size: 0.85rem; color: var(--accent); margin-bottom: 1rem;">What this looks like in practice:</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; font-size: 0.9rem; color: var(--text-secondary);">
+          <div><strong style="color: var(--text-primary);">Cross-format bridge:</strong> After every microdrama, auto-surface a long-format recommendation. Force the 48% vs 40% retention lift.</div>
+          <div><strong style="color: var(--text-primary);">D1 re-engagement push:</strong> Personalized notification at hour 18–24. "Your next watch" with deep link. This is the single highest-leverage CLM intervention.</div>
+          <div><strong style="color: var(--text-primary);">"Home show" matching:</strong> By week 2, algorithmically assign a recommended series with progress tracking. Break the content discovery cliff.</div>
+          <div><strong style="color: var(--text-primary);">Weekly cadence creation:</strong> Expand weekly-release IPs across all dialects. Mahapunarjanam proved 40% weekly return for 12 weeks. This creates a reason to return on a specific day.</div>
+        </div>
+      </div>
+
+      <div class="bet-metrics">
+        <div class="bet-metric">
+          <div class="label">Target</div>
+          <div class="value green">Double D1 return (15% → 30%)</div>
+        </div>
+        <div class="bet-metric">
+          <div class="label">Expected Impact</div>
+          <div class="value">+25K monthly active watchers</div>
+        </div>
+        <div class="bet-metric">
+          <div class="label">Timeline</div>
+          <div class="value">2–4 weeks to ship</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BET 2 -->
+    <div class="bet-card bet-2">
+      <div class="bet-number">02</div>
+      <div class="badge badge-amber" style="margin-bottom: 1rem;">FORCE MULTIPLIER</div>
+      <h3>Scale TV from 2% → 10%</h3>
+      <div class="rationale">
+        TV users retain at 2–3× and watch 5× more. Every TV conversion is worth 2–3 mobile users. But only 2% of watchers and 1.2% of trial users reach TV. This is the highest-ROI investment per user converted — it just needs a real funnel.
+      </div>
+
+      <div style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;">
+        <h4 style="font-size: 0.85rem; color: var(--green); margin-bottom: 1rem;">What this looks like in practice:</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; font-size: 0.9rem; color: var(--text-secondary);">
+          <div><strong style="color: var(--text-primary);">Renewal user TV push:</strong> 60% of watcher base (52.7K) are renewals. They're the most likely TV adopters. Targeted "Watch on TV" campaign for the backbone.</div>
+          <div><strong style="color: var(--text-primary);">TV trial funnel:</strong> Dedicated onboarding CTA during signup. Only 1.2% currently find TV — make it impossible to miss.</div>
+          <div><strong style="color: var(--text-primary);">Samsung partnership:</strong> 200M smart TVs, 10M active. Prominent unboxing placement launching end 2026. This is the distribution unlock.</div>
+          <div><strong style="color: var(--text-primary);">Expand Bhojpuri on TV:</strong> Bhojpuri is 9% of TV WAU vs 40% of subs. Content gap and/or discovery gap. Fix both.</div>
+        </div>
+      </div>
+
+      <div class="bet-metrics">
+        <div class="bet-metric">
+          <div class="label">Target</div>
+          <div class="value cyan">TV penetration 2% → 10%</div>
+        </div>
+        <div class="bet-metric">
+          <div class="label">Expected Impact</div>
+          <div class="value">Those users retain at 2–3×</div>
+        </div>
+        <div class="bet-metric">
+          <div class="label">Timeline</div>
+          <div class="value">90 days for organic, 12mo for Samsung</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BET 3 -->
+    <div class="bet-card bet-3">
+      <div class="bet-number">03</div>
+      <div class="badge badge-amber" style="margin-bottom: 1rem;">CLEAN THE SYSTEM</div>
+      <h3>Fix Acquisition Quality + Focus CLM</h3>
+      <div class="rationale">
+        65% of M0 subs are ghosts. The never-watched HVU pool grew 30% in 4 months. Meanwhile, CLM resources are spread across 1.1M dormants instead of focused on the 214K recoverable users. Stop filling the bucket with dirty water and point the fire hose at the right 20%.
+      </div>
+
+      <div style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;">
+        <h4 style="font-size: 0.85rem; color: var(--amber); margin-bottom: 1rem;">What this looks like in practice:</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; font-size: 0.9rem; color: var(--text-secondary);">
+          <div><strong style="color: var(--text-primary);">Audit channels by activation rate:</strong> Measure activation % per acquisition channel. Cut any channel below 5%. Redirect spend to quality.</div>
+          <div><strong style="color: var(--text-primary);">Focus CLM on 214K prev-watched HVU+MVU:</strong> These convert at 2–4× the rest. 80% of CLM resources here. Stop watering dead plants.</div>
+          <div><strong style="color: var(--text-primary);">Systemize Feb 17 spike:</strong> Find the trigger, replicate weekly. If a single intervention can 2× resurrection for one day, doing it weekly transforms the active base.</div>
+          <div><strong style="color: var(--text-primary);">Create "Qualified Subscriber" metric:</strong> Report 1.58M externally. Operate on ~250–300K internally. Stop diluting decisions with ghosts.</div>
+        </div>
+      </div>
+
+      <div class="bet-metrics">
+        <div class="bet-metric">
+          <div class="label">Target</div>
+          <div class="value amber">Zero-activity 65% → 40%</div>
+        </div>
+        <div class="bet-metric">
+          <div class="label">Expected Impact</div>
+          <div class="value">+40K monthly watchers + honest metrics</div>
+        </div>
+        <div class="bet-metric">
+          <div class="label">Timeline</div>
+          <div class="value">1 week to audit, 30 days to execute</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SLIDE 11: WHAT TO STOP ==================== -->
+<section id="stop">
+  <div class="fade-in">
+    <div class="section-label">10 — Resource Reallocation</div>
+    <h2>What we should<br><span class="red">stop doing</span></h2>
+    <p class="subtitle" style="margin-bottom: 2rem;">Strategy isn't just what to start. It's what to kill. Every hour spent on a low-ROI activity is an hour not spent on the three bets.</p>
+
+    <ul class="stop-list">
+      <li>
+        <span class="stop-icon">🛑</span>
+        <div class="stop-text">
+          <h4>Stop spreading CLM across 1.1M dormants equally</h4>
+          <p>375K never-watched LVUs are carrier billing ghosts with 0.26% daily conversion. Targeting them wastes push notification budget and pollutes CLM performance metrics. <strong>Write off never-watched LVUs >90 days.</strong> Redirect 100% of that capacity to the 214K previously-watched HVU+MVU pool (conversion: 0.4–0.8%).</p>
+        </div>
+      </li>
+      <li>
+        <span class="stop-icon">🛑</span>
+        <div class="stop-text">
+          <h4>Stop commissioning microdramas over 80 minutes</h4>
+          <p>Every show above 1.5 hours has <13% completion. Kalabazari (2.3 hrs) had 57K starts and 6% completion — that's 53K users who started and abandoned. Hard cap at 4,800 seconds. No exceptions. If the story can't be told in 80 minutes, make it a series.</p>
+        </div>
+      </li>
+      <li>
+        <span class="stop-icon">🛑</span>
+        <div class="stop-text">
+          <h4>Stop acquiring through low-activation channels</h4>
+          <p>If 65% of M0 subs never open the app, a huge share of acquisition spend produces ghosts. Audit activation rate per channel. Any channel below 5% activation should be paused immediately. Better to acquire 50K intentional users than 163K phantoms.</p>
+        </div>
+      </li>
+      <li>
+        <span class="stop-icon">🛑</span>
+        <div class="stop-text">
+          <h4>Stop promoting shows below 40% hook→complete</h4>
+          <p>Shows like andheri-raat (44.6%), kiraye-ki-patni (45.8%), and especially kalabazari (23.1%) are getting recommendation slots that could go to proven titles. Every bad recommendation is a churned user. Deprioritize low-completion shows from recommendation; don't renew them.</p>
+        </div>
+      </li>
+      <li>
+        <span class="stop-icon">🛑</span>
+        <div class="stop-text">
+          <h4>Stop scaling Bhojpuri quantity before quality parity</h4>
+          <p>Bhojpuri has the largest subscriber base and the worst conversion (2.51% vs 3.5%). The best Bhojpuri microdrama is a Haryanvi localization — not an original. Adding more mediocre Bhojpuri titles dilutes the catalog. Fix quality first. 20 great shows > 40 mediocre ones.</p>
+        </div>
+      </li>
+      <li>
+        <span class="stop-icon">🛑</span>
+        <div class="stop-text">
+          <h4>Stop treating subscriber count as the primary success metric</h4>
+          <p>1.58M subscribers where 5.5% watch is a vanity metric. It drives acquisition-at-any-cost behavior. Shift the internal north star to <strong>active watchers</strong> (watched in last 30 days: ~250–300K) and <strong>weekly watch retention</strong>. Report total subs for market positioning; operate on qualified subs.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ==================== SLIDE 12: THE MATH ==================== -->
+<section id="math">
+  <div class="fade-in">
+    <div class="section-label">11 — The 90-Day Model</div>
+    <h2>If the three bets work,<br>here's the math</h2>
+    <p class="subtitle" style="margin-bottom: 2rem;">Conservative estimates. Each lever modeled independently, though in practice they compound.</p>
+
+    <div class="projection-grid">
+      <div class="projection-box" style="border-color: var(--accent); border-width: 2px;">
+        <h4 style="color: var(--accent);">Bet 1: Habit Bridge</h4>
+        <div class="projection-row">
+          <span style="color: var(--text-secondary);">D1 return rate</span>
+          <span style="font-weight: 700;">15% → 30%</span>
+        </div>
+        <div class="projection-row">
+          <span style="color: var(--text-secondary);">New habit-formers / month</span>
+          <span style="font-weight: 700; color: var(--green);">+25K</span>
+        </div>
+        <div class="projection-row">
+          <span style="color: var(--text-secondary);">D31–D60 retention</span>
+          <span style="font-weight: 700;">31.6% → 38%</span>
+        </div>
+        <div class="projection-row">
+          <span style="color: var(--text-secondary);">Mechanism</span>
+          <span style="font-weight: 600; color: var(--text-secondary);">Cross-format + D1 push + home show + weekly series</span>
+        </div>
+      </div>
+
+      <div class="projection-box" style="border-color: var(--cyan); border-width: 2px;">
+        <h4 style="color: var(--cyan);">Bet 2: TV Scale</h4>
+        <div class="projection-row">
+          <span style="color: var(--text-secondary);">TV penetration</span>
+          <span style="font-weight: 700;">2% → 5%</span>
+        </div>
+        <div class="projection-row">
+          <span style="color: var(--text-secondary);">New TV watchers</span>
+          <span style="font-weight: 700; color: var(--green);">+4–6K</span>
+        </div>
+        <div class="projection-row">
+          <span style="color: var(--text-secondary);">Retention multiplier for them</span>
+          <span style="font-weight: 700;">2–3× mobile</span>
+        </div>
+        <div class="projection-row">
+          <span style="color: var(--text-secondary);">Net watcher impact</span>
+          <span style="font-weight: 700; color: var(--green);">+8–18K (retained)</span>
+        </div>
+      </div>
+
+      <div class="projection-box" style="border-color: var(--amber); border-width: 2px;">
+        <h4 style="color: var(--amber);">Bet 3: Acquisition + CLM Focus</h4>
+        <div class="projection-row">
+          <span style="color: var(--text-secondary);">Zero-activity rate</span>
+          <span style="font-weight: 700;">65% → 45%</span>
+        </div>
+        <div class="projection-row">
+          <span style="color: var(--text-secondary);">New activated users / month</span>
+          <span style="font-weight: 700; color: var(--green);">+40K</span>
+        </div>
+        <div class="projection-row">
+          <span style="color: var(--text-secondary);">CLM-focused resurrections</span>
+          <span style="font-weight: 700; color: var(--green);">+5K / month</span>
+        </div>
+        <div class="projection-row">
+          <span style="color: var(--text-secondary);">Feb 17 systemized weekly</span>
+          <span style="font-weight: 700; color: var(--green);">+30–50K active base</span>
+        </div>
+      </div>
+
+      <div class="projection-box" style="background: rgba(108, 99, 255, 0.08); border-color: var(--accent); border-width: 2px;">
+        <h4 style="color: var(--accent);">📊 Combined 90-Day Target</h4>
+        <div class="projection-row">
+          <span style="color: var(--text-secondary);">Current active watchers</span>
+          <span style="font-weight: 900; font-size: 1.2rem;">87K</span>
+        </div>
+        <div class="projection-row" style="border-bottom: 2px solid var(--accent);">
+          <span style="color: var(--text-secondary);">90-day target (conservative)</span>
+          <span style="font-weight: 900; font-size: 1.2rem; color: var(--green);">140–160K</span>
+        </div>
+        <div class="projection-row">
+          <span style="color: var(--text-secondary);">WoW retention target</span>
+          <span style="font-weight: 700; color: var(--green);">44% → 48%</span>
+        </div>
+        <div class="projection-row">
+          <span style="color: var(--text-secondary);">This would mean</span>
+          <span style="font-weight: 600; color: var(--text-secondary);">Reversing the 5-week decline and returning to Jan highs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top: 2rem;">
+      <strong>The honest caveat:</strong> These numbers assume all three bets ship and work. In practice, expect 60–70% execution. A realistic 90-day outcome is <strong>120–140K active watchers</strong> — which still represents a meaningful reversal from the current trajectory. The alternative — doing nothing — means the base contracts to ~60K by April based on current decay rates.
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SLIDE 13: SECOND-ORDER EFFECTS ==================== -->
+<section id="second-order">
+  <div class="fade-in">
+    <div class="section-label">12 — Second-Order Thinking</div>
+    <h2>The consequences<br>of doing this right</h2>
+    <p class="subtitle" style="margin-bottom: 2rem;">Every strategic move creates ripple effects. Here are the ones that aren't obvious.</p>
+
+    <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+      <div class="card" style="border-left: 3px solid var(--amber);">
+        <h3 style="font-size: 1.1rem;">If you cut ghost subscribers...</h3>
+        <p class="description" style="margin-top: 0.5rem;">
+          The subscriber count drops from 1.58M to ~300K "qualified." This changes the fundraising narrative. Investors and board members anchored on "nearly 2M subscribers" will need re-education. <strong>The trade-off is honest metrics vs. comfortable optics.</strong> Recommendation: dual reporting. Total subs for market size story, qualified subs for everything operational.
+        </p>
+      </div>
+
+      <div class="card" style="border-left: 3px solid var(--amber);">
+        <h3 style="font-size: 1.1rem;">If you fix acquisition quality...</h3>
+        <p class="description" style="margin-top: 0.5rem;">
+          Total subscriber growth slows dramatically. The "289% YoY" headline disappears. But CAC efficiency improves (fewer wasted subs), engagement rates jump (clean denominator), and the dormant pool stops growing at 65% of inflow. <strong>Growth looks smaller but is actually real.</strong>
+        </p>
+      </div>
+
+      <div class="card" style="border-left: 3px solid var(--amber);">
+        <h3 style="font-size: 1.1rem;">If you force cross-format exposure...</h3>
+        <p class="description" style="margin-top: 0.5rem;">
+          Users who came for microdramas will see long-format content they didn't choose. Some will bounce — short-term microdrama completion rates may dip. But the 8pp M0 retention lift is proven. <strong>Short-term engagement metrics may wobble for long-term retention gains.</strong> Communicate this to the team before shipping.
+        </p>
+      </div>
+
+      <div class="card" style="border-left: 3px solid var(--amber);">
+        <h3 style="font-size: 1.1rem;">If Samsung partnership works...</h3>
+        <p class="description" style="margin-top: 0.5rem;">
+          TV user base could 10× in 12–18 months. But TV users consume 5× more content. Is the catalog deep enough? At scale, TV users will exhaust the content library faster, potentially accelerating the M1→M3 cliff that already exists. <strong>TV distribution without content velocity = a more expensive version of the same problem.</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SLIDE 14: FIRE DRILLS ==================== -->
+<section id="firedrills">
+  <div class="fade-in">
+    <div class="section-label">13 — Immediate Actions</div>
+    <h2>This week's fire drills</h2>
+    <p class="subtitle" style="margin-bottom: 2rem;">Three things that can't wait for the quarterly plan.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+      <div style="background: var(--bg-card); border: 2px solid var(--red); border-radius: 16px; padding: 2rem;">
+        <div style="font-size: 0.7rem; color: var(--red); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.5rem;">P0 — Monday</div>
+        <h3>Investigate Feb 19 CTR Crash</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-top: 0.75rem;">
+          Microdrama CTR dropped 52% in 3 days. Views went UP while clicks went DOWN — users see content but aren't clicking. Check: UI changes, thumbnail rotation, algo updates, tracking bugs. If this isn't fixed, the D0 activation engine that drives everything else breaks.
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.75rem;"><strong>Owner:</strong> Pranay + Engineering</p>
+      </div>
+
+      <div style="background: var(--bg-card); border: 2px solid var(--amber); border-radius: 16px; padding: 2rem;">
+        <div style="font-size: 0.7rem; color: var(--amber); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.5rem;">P0 — Tuesday</div>
+        <h3>Find the Feb 17 Resurrection Trigger</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-top: 0.75rem;">
+          Every dormant segment spiked 2× on Feb 17. This wasn't random noise — it hit HVUs, MVUs, never-watched, previously-watched, all simultaneously. Pull CLM logs, push history, content release schedule. Find it and systematize it for weekly execution.
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.75rem;"><strong>Owner:</strong> Vismit + CLM Team</p>
+      </div>
+
+      <div style="background: var(--bg-card); border: 2px solid var(--accent); border-radius: 16px; padding: 2rem;">
+        <div style="font-size: 0.7rem; color: var(--accent); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.5rem;">P0 — This Week</div>
+        <h3>Acquisition Channel Audit</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-top: 0.75rem;">
+          Instrument activation rate per acquisition channel. This data doesn't exist today. Without it, you can't distinguish a $1 subscriber who watches from a $0.10 ghost. This is the foundation for Bet 3 and can't start without measurement.
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.75rem;"><strong>Owner:</strong> Nikhil (Growth) + Manasvi (Data)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SLIDE 15: UNCOMFORTABLE QUESTIONS ==================== -->
+<section id="questions">
+  <div class="fade-in">
+    <div class="section-label">14 — The Uncomfortable Questions</div>
+    <h2>What we need to answer<br><span class="red">honestly</span></h2>
+    <p class="subtitle" style="margin-bottom: 2rem;">These are the questions that don't have comfortable answers. They should be discussed, not deferred.</p>
+
+    <div class="q-card">
+      <div class="q-number">Question 01</div>
+      <div class="q-text">Are we building a business on 87K watchers and calling it 1.58M?</div>
+      <div class="q-context">
+        Only 5.5% of subscribers actively watch. If a SaaS company had 5.5% DAU/MAU, investors would call it a zombie product. OTT is different — not everyone watches daily — but the 13:1 dormant ratio means STAGE's subscriber number is more of an acquisition metric than an engagement metric. At what point does the gap between reported subscribers and actual users become a credibility risk with the board, with investors, with ourselves?
+      </div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-number">Question 02</div>
+      <div class="q-text">Is the M1 #3 ranking masking a content depth crisis?</div>
+      <div class="q-context">
+        STAGE retains at 53% in M1 (remarkable) but drops to 22% by M3 — the steepest cliff in the peer set. Netflix drops 13pp over the same period. JioHotstar drops 12pp. STAGE drops 31pp. The interpretation matters: if it's content exhaustion (users run out of things to watch), STAGE needs 3–5× more content velocity. If it's novelty decay (the app isn't sticky enough independent of content), it's a product problem. These require very different investments. Which is it?
+      </div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-number">Question 03</div>
+      <div class="q-text">Can STAGE survive on a dialect-first content strategy long-term?</div>
+      <div class="q-context">
+        Haryanvi dominates every metric: best watch conversion, best hook→complete, 64% of TV WAU. Bhojpuri — the largest subscriber base — has the worst conversion and its best show is a Haryanvi localization. Rajasthani and Gujarati are too early. Is "dialect OTT" actually "Haryanvi OTT that happens to have other dialects"? If the content-market fit is fundamentally stronger in Haryanvi, should resources concentrate there instead of spreading thin?
+      </div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-number">Question 04</div>
+      <div class="q-text">What if carrier billing subs are the business model, not the product?</div>
+      <div class="q-context">
+        Here's the uncomfortable reframe: if 65% of M0 subs come through carrier billing and they never watch, STAGE is effectively monetizing telco distribution — not content. The revenue from ghost subscribers may subsidize the product for the 87K who do watch. Cutting ghosts is the right thing for metrics and decisions, but what's the revenue impact? Does the unit economics story still work at 300K qualified subscribers?
+      </div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-number">Question 05</div>
+      <div class="q-text">Is STAGE's competitive moat content or distribution?</div>
+      <div class="q-context">
+        The board deck positions STAGE as #3 in M1 retention — a content quality signal. But the dormant analysis suggests the real scale comes from distribution deals (carrier billing, Samsung). If a well-funded competitor (Chaupal, JioCinema) decides to invest in dialect content, does STAGE's content advantage hold? Or is the real moat the distribution relationships that produce the 1.58M number — the very same channels that create the ghost problem?
+      </div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-number">Question 06</div>
+      <div class="q-text">Are we measuring improvement or survivorship bias?</div>
+      <div class="q-context">
+        WoW retention "recovered" from 40.8% to 44.5% in the last week. But the watcher base also shrank from 94K to 87K. When casual users churn, the remaining base is more engaged — the percentage goes up because the denominator got more selective. The Feb 16 recovery may not be a recovery at all. It might be the metric getting more flattering as the base gets smaller. How do we tell the difference?
+      </div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-number">Question 07</div>
+      <div class="q-text">If we fix everything in this deck, is the TAM big enough?</div>
+      <div class="q-context">
+        Assume success: 150K active watchers, 48% WoW retention, quality acquisition. That's a real business serving dialect-language entertainment. But is it a venture-scale business? Netflix India has ~30M subscribers. JioHotstar has ~50M. The dialect market may be structurally smaller. At some point, STAGE either needs to expand beyond dialects or accept a different growth trajectory. When does that conversation happen?
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SLIDE 16: THE ONE THING ==================== -->
+<section id="onething" style="min-height: 80vh;">
+  <div class="fade-in">
+    <div class="section-label">15 — The Bottom Line</div>
+    <h2 style="font-size: clamp(2rem, 4vw, 3rem); max-width: 900px;">STAGE built something real. The structural wins from 2025 — CLM, microdramas, TV, long-format series — are proven and intact.</h2>
+
+    <div class="big-quote" style="margin: 2.5rem 0;">
+      The problem isn't finding what works. It's that the things that work reach 2–5% of the base while acquisition keeps pumping the top of a leaky funnel. The next 90 days aren't about new ideas. They're about scale and focus.
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem;">
+      <div style="text-align: center;">
+        <div style="font-size: 3rem; font-weight: 900; background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">01</div>
+        <div style="font-weight: 700; margin: 0.5rem 0;">Build the Bridge</div>
+        <div style="font-size: 0.85rem; color: var(--text-secondary);">D1–D30 habit formation through cross-format, push, home shows, weekly series</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 3rem; font-weight: 900; background: var(--gradient-green); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">02</div>
+        <div style="font-weight: 700; margin: 0.5rem 0;">Scale TV</div>
+        <div style="font-size: 0.85rem; color: var(--text-secondary);">2% → 10% penetration. Every TV user = 2–3 mobile users in retention value</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 3rem; font-weight: 900; background: var(--gradient-amber); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">03</div>
+        <div style="font-weight: 700; margin: 0.5rem 0;">Clean the System</div>
+        <div style="font-size: 0.85rem; color: var(--text-secondary);">Fix acquisition quality. Focus CLM on 214K recoverable users, not 1.1M ghosts</div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--bg-card); border-radius: 16px; border: 1px solid var(--border);">
+      <div style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.5rem;">Conservative 90-Day Target</div>
+      <div style="font-size: 3rem; font-weight: 900; color: var(--green);">87K → 140K</div>
+      <div style="font-size: 1rem; color: var(--text-secondary);">active watchers — the metric that matters</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== APPENDIX: DATA SOURCES ==================== -->
+<section id="sources" style="min-height: auto; padding-top: 4rem; padding-bottom: 2rem;">
+  <div class="fade-in">
+    <div class="section-label">Appendix — Sources</div>
+    <h3 style="margin-bottom: 1.5rem;">Data Sources & Dashboards</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Source</th>
+          <th>Dashboard</th>
+          <th>Key Metrics</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>M0 Engagement Analysis</td>
+          <td class="num">#2182</td>
+          <td>65% zero-activity, 3% watch conversion, dialect gaps</td>
+        </tr>
+        <tr>
+          <td>Watch Retention DB</td>
+          <td class="num">#1490</td>
+          <td>WoW retention 50%→41%, watcher base erosion, subscription stage cliffs</td>
+        </tr>
+        <tr>
+          <td>Dormant Analysis</td>
+          <td class="num">#3767</td>
+          <td>1.1M dormants, 13:1 ratio, never-watched vs previously-watched segmentation</td>
+        </tr>
+        <tr>
+          <td>TV Adoption</td>
+          <td class="num">#1291</td>
+          <td>2–3× retention, 5× watchtime, 2% penetration, M1 improving at scale</td>
+        </tr>
+        <tr>
+          <td>Microdrama Performance</td>
+          <td class="num">#2941</td>
+          <td>Gateway hypothesis, CTR crash, duration sweet spot, cross-format data</td>
+        </tr>
+        <tr>
+          <td>Board Retention Deck</td>
+          <td>Jan 2026 Review</td>
+          <td>Competitive benchmarks, CLM framework, intervention impact</td>
+        </tr>
+        <tr>
+          <td>Unified Strategy</td>
+          <td>Synthesis Doc</td>
+          <td>Cross-dashboard connections, unified playbook</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="footer">
+  <p>STAGE Retention & Engagement Strategy — Deep Reflection</p>
+  <p style="margin-top: 0.25rem;">Prepared February 23, 2026 · Data as of Feb 22, 2026</p>
+  <p style="margin-top: 0.25rem; color: var(--text-muted);">For internal use. Not for external distribution.</p>
+</div>
+
+<script>
+// Intersection Observer for fade-in animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  const sections = document.querySelectorAll('section');
+  const currentScroll = window.scrollY;
+  let currentIndex = 0;
+
+  sections.forEach((section, i) => {
+    if (section.offsetTop <= currentScroll + 100) {
+      currentIndex = i;
+    }
+  });
+
+  if (e.key === 'ArrowDown' || e.key === ' ' || e.key === 'PageDown') {
+    e.preventDefault();
+    const next = sections[Math.min(currentIndex + 1, sections.length - 1)];
+    next.scrollIntoView({ behavior: 'smooth' });
+  } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+    e.preventDefault();
+    const prev = sections[Math.max(currentIndex - 1, 0)];
+    prev.scrollIntoView({ behavior: 'smooth' });
+  }
+});
+</script>
+
+</body>
+</html>

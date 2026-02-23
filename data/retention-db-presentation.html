@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STAGE — Weekly Watch Retention Analysis | Feb 2026</title>
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface2: #1a1a26;
+    --border: #2a2a3a;
+    --text: #e8e8f0;
+    --text-dim: #8888a0;
+    --accent: #6366f1;
+    --red: #ef4444;
+    --orange: #f59e0b;
+    --green: #22c55e;
+    --yellow: #eab308;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 0;
+  }
+  .container { max-width: 960px; margin: 0 auto; padding: 40px 24px; }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 60px 24px 40px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 48px;
+  }
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .header .subtitle {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+  }
+  .header .alert-badge {
+    display: inline-block;
+    background: rgba(239,68,68,0.15);
+    color: var(--red);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 16px;
+    border: 1px solid rgba(239,68,68,0.3);
+  }
+
+  /* Sections */
+  section {
+    margin-bottom: 56px;
+  }
+  section h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
+  }
+  section h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 24px 0 12px;
+    color: var(--accent);
+  }
+  p { margin-bottom: 14px; color: var(--text); font-size: 0.92rem; }
+  
+  /* Stat Cards */
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+  }
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+  .stat-card .value {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .stat-card .label {
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .stat-card .delta {
+    font-size: 0.82rem;
+    margin-top: 6px;
+    font-weight: 600;
+  }
+  .red { color: var(--red); }
+  .orange { color: var(--orange); }
+  .green { color: var(--green); }
+  .yellow { color: var(--yellow); }
+  
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.88rem;
+  }
+  thead th {
+    background: var(--surface2);
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-dim);
+    border-bottom: 1px solid var(--border);
+  }
+  tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  tbody tr:hover { background: rgba(99,102,241,0.05); }
+  
+  /* Callout boxes */
+  .callout {
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 20px 0;
+    font-size: 0.9rem;
+  }
+  .callout.danger {
+    border-left-color: var(--red);
+    background: rgba(239,68,68,0.06);
+  }
+  .callout.warning {
+    border-left-color: var(--orange);
+    background: rgba(245,158,11,0.06);
+  }
+  .callout.success {
+    border-left-color: var(--green);
+    background: rgba(34,197,94,0.06);
+  }
+  .callout strong { color: var(--text); }
+
+  /* Priority tags */
+  .priority {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-right: 8px;
+  }
+  .p0 { background: rgba(239,68,68,0.2); color: var(--red); }
+  .p1 { background: rgba(245,158,11,0.2); color: var(--orange); }
+  .p2 { background: rgba(99,102,241,0.2); color: var(--accent); }
+
+  /* Recommendation list */
+  .rec-list { list-style: none; padding: 0; }
+  .rec-list li {
+    padding: 14px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+  .rec-list li strong { display: block; margin-bottom: 4px; }
+
+  /* Comparison grid */
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 20px 0;
+  }
+  .compare-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .compare-card h4 {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 600px) {
+    .stat-row { grid-template-columns: 1fr 1fr; }
+    .compare-grid { grid-template-columns: 1fr; }
+    .header h1 { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Weekly Watch Retention</h1>
+  <p class="subtitle">Active Subscription Dashboard Analysis — Feb 23, 2026</p>
+  <div class="alert-badge">⚠ RETENTION DECLINING · WATCHER BASE ERODING</div>
+</div>
+
+<div class="container">
+
+<!-- ===== EXECUTIVE SUMMARY ===== -->
+<section>
+  <h2>Executive Summary</h2>
+  
+  <div class="stat-row">
+    <div class="stat-card">
+      <div class="value red">40.8%</div>
+      <div class="label">WoW Retention Floor</div>
+      <div class="delta red">↓ 9.5pp from Dec peak</div>
+    </div>
+    <div class="stat-card">
+      <div class="value red">87K</div>
+      <div class="label">Active Watchers</div>
+      <div class="delta red">↓ 38% from 141K peak</div>
+    </div>
+    <div class="stat-card">
+      <div class="value orange">44.5%</div>
+      <div class="label">Latest Week (Feb 16)</div>
+      <div class="delta orange">Partial recovery?</div>
+    </div>
+    <div class="stat-card">
+      <div class="value green">48.4%</div>
+      <div class="label">Renewal Retention</div>
+      <div class="delta green">Backbone holding</div>
+    </div>
+  </div>
+
+  <p>WoW retention dropped from <strong>50.3% → 40.8%</strong> in 6 weeks, with a partial recovery to 44.5%. Simultaneously, the watcher base contracted 38%. Both trends compound: fewer watchers AND lower return rates.</p>
+  
+  <div class="callout danger">
+    <strong>The Jan board deck showed STAGE at #3 in India for M1 retention (53%).</strong> The live dashboard shows weekly retention declining. These aren't contradictory — M1 measures monthly subscriber retention, this measures weekly watching habits. But the weekly habit is what sustains the monthly number. If weekly watching erodes, M1 will follow within 1-2 quarters.
+  </div>
+</section>
+
+<!-- ===== THE DECLINING CURVE ===== -->
+<section>
+  <h2>The Declining Curve</h2>
+  
+  <table>
+    <thead>
+      <tr><th>Week</th><th>Watchers</th><th>Retained</th><th>WoW %</th><th>Signal</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Dec 29</td><td>135,877</td><td>68,378</td><td><strong>50.3%</strong></td><td class="green">Peak retention</td></tr>
+      <tr><td>Jan 5</td><td>136,815</td><td>68,458</td><td><strong>50.0%</strong></td><td>Stable</td></tr>
+      <tr><td>Jan 12</td><td>141,037</td><td>67,577</td><td><strong>47.9%</strong></td><td class="yellow">Peak watchers, rate dipping</td></tr>
+      <tr><td>Jan 19</td><td>130,245</td><td>61,511</td><td><strong>47.2%</strong></td><td class="orange">Base contracting</td></tr>
+      <tr><td>Jan 26</td><td>116,438</td><td>49,679</td><td><strong>42.7%</strong></td><td class="red">Inflection point</td></tr>
+      <tr><td>Feb 2</td><td>104,035</td><td>42,469</td><td><strong>40.8%</strong></td><td class="red">Floor</td></tr>
+      <tr><td>Feb 9</td><td>94,237</td><td>38,457</td><td><strong>40.8%</strong></td><td class="red">Flat at bottom</td></tr>
+      <tr><td>Feb 16</td><td>87,266</td><td>38,863</td><td><strong>44.5%</strong></td><td class="orange">Recovery or survivorship bias?</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout warning">
+    <strong>Jan 26 was the inflection.</strong> Retention dropped 5pp in one week. Likely causes: post-holiday content consumption hangover, possible content calendar gap (no new weekly release IP launched), and the cascading effect of watcher base contraction. The Feb 16 "recovery" to 44.5% may be survivorship bias — as casual watchers churn, the remaining base skews more engaged.
+  </div>
+</section>
+
+<!-- ===== THE TWO CLIFFS ===== -->
+<section>
+  <h2>The Two Cliffs</h2>
+  
+  <div class="compare-grid">
+    <div class="compare-card">
+      <h4>🧱 Cliff 1: Week 3-4 (D_15to30)</h4>
+      <p style="margin:0"><span class="value" style="font-size:1.4rem">45.1% → 37.2%</span></p>
+      <p class="red" style="font-size:0.85rem; margin-top:8px">−7.9pp over 8 weeks</p>
+      <p style="font-size:0.85rem; color:var(--text-dim); margin-top:8px">The content discovery cliff. Initial recommendations exhausted. User hasn't found a "home show." Only 4.66% achieve habit — the other 95% hit this wall.</p>
+    </div>
+    <div class="compare-card">
+      <h4>🧱 Cliff 2: Month 2-3 (D_31to60)</h4>
+      <p style="margin:0"><span class="value" style="font-size:1.4rem">45.3% → 31.6%</span></p>
+      <p class="red" style="font-size:0.85rem; margin-top:8px">−13.7pp — steepest decline</p>
+      <p style="font-size:0.85rem; color:var(--text-dim); margin-top:8px">Subscription regret cliff. Paying for 1-2 months, hasn't found enough value. Maps directly to board deck's M1→M3 drop (#3 at M1, #9 at M3).</p>
+    </div>
+  </div>
+
+  <p>Together, these cliffs explain the watcher base erosion. Users enter at D_0to7 with ~45% retention, bleed through D_15to60 at 31-37%, and many never reach renewal. <strong>The funnel narrows in the middle.</strong></p>
+</section>
+
+<!-- ===== SUBSCRIPTION STAGE DEEP DIVE ===== -->
+<section>
+  <h2>Subscription Stage Deep Dive</h2>
+  
+  <table>
+    <thead>
+      <tr><th>Stage</th><th>Dec 29</th><th>Jan 26</th><th>Feb 16</th><th>Δ (8 wk)</th><th>Risk</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>D_0to7 (Week 1)</td><td>47.6%</td><td>46.5%</td><td>44.8%</td><td class="yellow">−2.8pp</td><td>🟡 Stable</td></tr>
+      <tr><td>D_8to14 (Week 2)</td><td>47.5%</td><td>44.5%</td><td>42.4%</td><td class="yellow">−5.1pp</td><td>🟡 Moderate</td></tr>
+      <tr><td>D_15to30 (Week 3-4)</td><td>45.1%</td><td>40.2%</td><td>37.2%</td><td class="orange">−7.9pp</td><td>🟠 High</td></tr>
+      <tr><td>D_31to60 (Month 2)</td><td>45.3%</td><td>37.6%</td><td>31.6%</td><td class="red">−13.7pp</td><td>🔴 Critical</td></tr>
+      <tr><td>D_61to90 (Month 3)</td><td>43.3%</td><td>33.7%</td><td>35.0%</td><td class="orange">−8.3pp</td><td>🟠 High</td></tr>
+      <tr><td>RENEWAL</td><td>52.8%</td><td>44.2%</td><td>48.4%</td><td class="yellow">−4.4pp</td><td>🟡 Recovering</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <strong>The decline is NOT uniform.</strong> First-week users are relatively stable. The collapse is concentrated in D_15to60 — pointing to a content depth / engagement sustain problem after initial novelty wears off. This is not an acquisition quality issue.
+  </div>
+</section>
+
+<!-- ===== ELIGIBILITY ANALYSIS ===== -->
+<section>
+  <h2>The Repeat 2 Alarm</h2>
+  
+  <table>
+    <thead>
+      <tr><th>Eligibility Type</th><th>Feb 16 Watchers</th><th>Feb 16 Retention</th><th>Trend</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Repeat 2</strong> (2+ consecutive weeks)</td><td>35,947</td><td>55.3%</td><td class="red">↓ from 61% (Jan 5)</td></tr>
+      <tr><td>New</td><td>20,476</td><td>37.4%</td><td>Stable 37-39%</td></tr>
+      <tr><td>Repeat 1</td><td>265</td><td>72.8%</td><td>High but tiny base</td></tr>
+      <tr><td>Resurrect 1 (1-wk gap)</td><td>10,550</td><td>41.5%</td><td>Stable</td></tr>
+      <tr><td>Resurrect 2 (2-wk gap)</td><td>6,407</td><td>35.5%</td><td>Stable</td></tr>
+      <tr><td>Resurrect 3+ (3+ wk gap)</td><td>13,621</td><td>31-34%</td><td>Diminishing returns</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout danger">
+    <strong>Repeat 2 declining from 61% → 50% → 55% is the real alarm.</strong> These are habitual weekly watchers — your core base. Their decline cannot be explained by acquisition mix or seasonality. Something is degrading the experience for your best users: content fatigue, algorithmic staleness, or the end of anchor show seasons (Mahapunarjanam S1?).
+  </div>
+</section>
+
+<!-- ===== WATCHER BASE EROSION ===== -->
+<section>
+  <h2>Watcher Base Erosion</h2>
+  
+  <div class="stat-row">
+    <div class="stat-card">
+      <div class="value">141K</div>
+      <div class="label">Jan 12 (Peak)</div>
+    </div>
+    <div class="stat-card" style="position:relative">
+      <div class="value" style="font-size:2.5rem; color: var(--red)">→</div>
+    </div>
+    <div class="stat-card">
+      <div class="value red">87K</div>
+      <div class="label">Feb 16</div>
+      <div class="delta red">−38% in 5 weeks</div>
+    </div>
+  </div>
+
+  <p>The compounding problem: fewer watchers AND a smaller share returning. Even if retention stabilizes at 44%, each week applies that rate to a shrinking base. Meanwhile, M0 watch conversion is stuck at 3.09% — the inflow tap isn't opening.</p>
+  
+  <p><strong>Where did the 54K go?</strong> Some churned entirely. Many joined the 1.17M dormant pool (74% of active subscriber base). The resurrection segments (Resurrect 1-4) account for 30.6K watchers — some are being recovered, but not fast enough to offset the outflow.</p>
+</section>
+
+<!-- ===== BOARD DECK CROSS-REFERENCE ===== -->
+<section>
+  <h2>Board Deck vs. Reality</h2>
+  
+  <table>
+    <thead>
+      <tr><th>Metric</th><th>Board Deck (Jan)</th><th>Live Dashboard (Feb)</th><th>Gap</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>WoW Retention</td><td>49% (+14pp from 35% baseline)</td><td>44.5% (down from 50%)</td><td class="orange">−4.5pp from board number</td></tr>
+      <tr><td>M1 Retention</td><td>53% (#3 in India)</td><td>—</td><td>Monthly metric, not in DB</td></tr>
+      <tr><td>Avg Watch Days</td><td>3.34 (monthly)</td><td>2.17 (weekly, ↑ from 1.93)</td><td class="green">Improving for active watchers</td></tr>
+      <tr><td>M1→M3 Drop</td><td>53% → 22% (−31pp)</td><td>D_31to60 at 31.6%</td><td class="red">Confirms the cliff</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <strong>Is STAGE losing its gains?</strong> Partially. The structural improvements (CLM, micro-drama, TV, long-format series) are intact. Baseline was 35% pre-intervention — current 44.5% is still +9.5pp above that. But STAGE has given back ~5pp of the 14pp board deck improvement. The content velocity and mid-funnel engagement problems are the drag.
+  </div>
+</section>
+
+<!-- ===== RENEWAL BACKBONE ===== -->
+<section>
+  <h2>Renewal Users: The Backbone</h2>
+  
+  <div class="stat-row">
+    <div class="stat-card">
+      <div class="value">52.7K</div>
+      <div class="label">Renewal Watchers</div>
+      <div class="delta">60% of all watchers</div>
+    </div>
+    <div class="stat-card">
+      <div class="value green">48.4%</div>
+      <div class="label">Renewal Retention</div>
+      <div class="delta orange">Was 52.8% → dipped to 42.6% → recovering</div>
+    </div>
+  </div>
+
+  <p><strong>Risks:</strong> Even renewals dropped 10pp before recovering. If the content slate weakens, they'll notice first — they've consumed the most. The bigger question: will current D_31to60 users (at 31.6%) ever reach renewal in meaningful numbers?</p>
+
+  <p><strong>Protection:</strong> Weekly release cadence for long-format series. TV app push (renewals are prime TV adopters; TV = 2.4x D30 retention). Cross-format exposure (board deck proved 8pp M0 lift for dual-format users).</p>
+</section>
+
+<!-- ===== RESURRECTION WINDOW ===== -->
+<section>
+  <h2>The 2-Week Resurrection Window</h2>
+  
+  <table>
+    <thead>
+      <tr><th>Gap Length</th><th>Retention %</th><th>Window</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Resurrect 1 (1 week)</td><td class="green"><strong>41.5%</strong></td><td class="green">🟢 Intervene NOW</td></tr>
+      <tr><td>Resurrect 2 (2 weeks)</td><td class="yellow"><strong>35.5%</strong></td><td class="yellow">🟡 Last best chance</td></tr>
+      <tr><td>Resurrect 3 (3 weeks)</td><td class="orange"><strong>30.8%</strong></td><td class="orange">🟠 Diminishing returns</td></tr>
+      <tr><td>Resurrect 4+ (4+ weeks)</td><td class="red"><strong>33.6%</strong></td><td class="red">🔴 Mostly lost</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout warning">
+    <strong>After 2 weeks of inactivity, recovery drops below 35% and doesn't recover.</strong> The 6pp gap between Resurrect 1 (41.5%) and Resurrect 2 (35.5%) means every day of CLM delay costs recovery probability. Most aggressive interventions must fire within the first 7 days of inactivity.
+  </div>
+</section>
+
+<!-- ===== RECOMMENDATIONS ===== -->
+<section>
+  <h2>Strategic Recommendations</h2>
+
+  <h3><span class="priority p0">P0</span> This Week</h3>
+  <ul class="rec-list">
+    <li>
+      <strong>Content calendar audit</strong>
+      Map weekly release dates against the Jan 26 inflection. If Mahapunarjanam S1 ended without a replacement anchor show, that's likely the trigger for the retention drop. Fill the gap immediately.
+    </li>
+    <li>
+      <strong>Resurrect 1 intervention acceleration</strong>
+      Move CLM triggers for 1-week inactive users to day 1 of inactivity. The current cadence is too slow — every day of delay costs ~1pp recovery probability.
+    </li>
+    <li>
+      <strong>D_31to60 emergency deep-dive</strong>
+      This segment collapsed 15pp. Pull user-level data: last content watched, session before churn, dialect breakdown. Find the pattern driving the exodus.
+    </li>
+  </ul>
+
+  <h3><span class="priority p1">P1</span> This Sprint (2 Weeks)</h3>
+  <ul class="rec-list">
+    <li>
+      <strong>Cross-format exposure in M0</strong>
+      Board deck proved 8pp M0 lift for users consuming both micro-drama and long-format. Every new subscriber should see both formats within their first session. This is a product/algo change — high ROI, low cost.
+    </li>
+    <li>
+      <strong>Bhojpuri content acceleration</strong>
+      67.5K M0 subs (largest dialect) but 2.51% watch conversion vs 3.5% for Haryanvi/Rajasthani. Only 23 microdramas vs 44 Haryanvi. Close the content gap.
+    </li>
+    <li>
+      <strong>Renewal user TV push</strong>
+      60% of watchers are renewals. TV users = 2.4x D30 retention. Targeted "Watch on TV" campaign for renewal users. Protect the backbone with the highest-ROI channel.
+    </li>
+  </ul>
+
+  <h3><span class="priority p2">P2</span> This Month</h3>
+  <ul class="rec-list">
+    <li>
+      <strong>Algorithmic freshness overhaul</strong>
+      Repeat 2 decline suggests stale recommendations. Inject diversity — ensure repeat visitors see new/unseen content in top slots.
+    </li>
+    <li>
+      <strong>Weekly content velocity target</strong>
+      Set minimum new episodes/week across dialects. Track alongside retention. Content drought = retention drought.
+    </li>
+    <li>
+      <strong>"Home show" matching at D_15</strong>
+      The week 3-4 cliff is a content discovery failure. Test: assign a prominent recommended series on return visits with progress tracking and "next episode" nudges.
+    </li>
+    <li>
+      <strong>Watcher base recovery target</strong>
+      Set explicit goal: 100K watchers by end of March. Track weekly inflow (new + resurrected) vs outflow (lapsed). Make it a north star.
+    </li>
+  </ul>
+</section>
+
+<!-- ===== BOTTOM LINE ===== -->
+<section>
+  <h2>Bottom Line</h2>
+  
+  <div class="callout" style="border-left-color: var(--text); background: var(--surface2);">
+    <p style="margin-bottom:12px"><strong>STAGE built something real.</strong> #3 M1 retention in India. Proven CLM framework. Strong content-market fit. The structural improvements from 2025 are intact.</p>
+    <p style="margin-bottom:12px"><strong>But the live data shows the gains are leaking.</strong> Mid-funnel (weeks 3-8) is collapsing. Core users are degrading. The watcher base is shrinking. This isn't a crisis yet — renewal users are holding — but without action on content velocity, mid-funnel engagement, and resurrection timing, the 50% → 41% slide will continue.</p>
+    <p style="margin-bottom:0"><strong>At 87K watchers, there's less margin for error than at 141K.</strong> The next 4 weeks will determine whether Feb was a seasonal dip or the start of a structural decline.</p>
+  </div>
+</section>
+
+</div>
+
+<div class="footer">
+  Analysis by OpenClaw · Feb 23, 2026<br>
+  Sources: Metabase #1490, #2182 · STAGE Board Deck Jan 2026
+</div>
+
+</body>
+</html>
