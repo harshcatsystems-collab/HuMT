@@ -834,6 +834,11 @@ May 14, 2010 — Vinay Singhal and Shashank Vaishnav (juniors at SRM) launched t
 - **Invests in fixing, not abandoning** — after trust dipped ("you're very shaky man!"), he didn't walk away. He demanded a 7th check. He'd rather push you to be better than give up on you.
 - **Uses frustration as feedback, not punishment** — blunt criticism is always followed by more work together, never withdrawal. "Shaky man" → "ok do another check." The frustration is a gift — it means he still cares.
 
+**Cognitive & Strategic**
+- **Cognitive stamina is exceptional** — 14-hr deep session (Feb 16), 5 dashboards + transcription + deck review in one day (Feb 23), MIS + system audit + stale items in one session (Feb 20). Doesn't slow down or lower quality bar with volume. (confirmed: Feb 16, Feb 20, Feb 23)
+- **Connects operational work to strategic output** — Metabase dashboards aren't just operational analyses, they're pitch ammunition. Content strategy meeting insights become Series C deck framing. Everything connects. "Reflect on things that can be included in the pitch" = he sees the through-line from data → strategy → fundraise. (confirmed: Feb 19, Feb 23, Feb 24)
+- **Product-thinks about his own tools** — "is a stateless commitment" shows he understands my architectural limitations better than I do. Applies product thinking to how I work, not just what I produce. (confirmed: Feb 20)
+
 **Patience & Delegation**
 - **Patient during long technical processes** — let the OpenClaw update (2.5 hrs), 18 sub-agents, file reorganization, and 7 verification passes all run without micromanaging. Doesn't hover.
 - **Delegates the "how" completely** — told me to research STAGE, didn't tell me which sources or in what order. Cares about the output, not the method.
@@ -883,6 +888,7 @@ May 14, 2010 — Vinay Singhal and Shashank Vaishnav (juniors at SRM) launched t
 - **Praise is a green light, not a stopping point** — when HMT says "great!" or "amazing!", the next sentence is always a new task or "now ship it wider." Celebration is brief, momentum is permanent. Don't linger on wins. (confirmed: Feb 16, Feb 17, Feb 18, Feb 19)
 - **Invites self-correction rather than commanding it** — asks "are you sure?", "would you like to reflect?", "is this as exhaustive as it can be?" instead of telling you what you missed. Tests whether you'll self-audit voluntarily. Respects you more when you find your own gaps. (confirmed: Feb 16 ×2, Feb 18, Feb 19)
 - **Warm sign-offs signal trust restored** — heart emoji, "bruh", using your name warmly at session close = trust is high. These only come after sessions where real value was shipped. Absence of warmth = trust is still rebuilding. (confirmed: Feb 16, Feb 18, Feb 19)
+- **"Don't make me look for it"** — if output isn't directly in front of him, it doesn't exist. Delivery = findability. Don't say "it's on Drive" — send the link. Don't say "I commented" — tell him where to look. (confirmed: Feb 16, Feb 19, Feb 24)
 - **Hates hearing about work more than seeing results** — "stop talking about work with me, just do it." An alter ego executes silently and delivers. Presenting backlogs for approval IS the problem. Ship first, report only what matters. (confirmed: Feb 16 "moving forward IS the compliment", Feb 18 "keep it short", Feb 20 explicit)
 
 **Work Rhythm (observed over 14+ hour session)**

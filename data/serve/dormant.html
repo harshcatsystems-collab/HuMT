@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STAGE Dormant Subscriber Analysis — Feb 23, 2026</title>
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --surface: #141414;
+    --surface2: #1e1e1e;
+    --border: #2a2a2a;
+    --text: #e8e8e8;
+    --muted: #888;
+    --accent: #f97316;
+    --red: #ef4444;
+    --green: #22c55e;
+    --yellow: #eab308;
+    --blue: #3b82f6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; }
+  .container { max-width: 960px; margin: 0 auto; padding: 40px 24px; }
+  h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.5px; }
+  h2 { font-size: 1.5rem; font-weight: 700; margin: 48px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+  h3 { font-size: 1.1rem; font-weight: 600; margin: 24px 0 12px; color: var(--accent); }
+  p { margin-bottom: 16px; color: var(--text); }
+  .subtitle { color: var(--muted); font-size: 0.95rem; margin-bottom: 32px; }
+  .hero { background: linear-gradient(135deg, #1a0a00 0%, #0a0a0a 100%); border: 1px solid var(--accent); border-radius: 12px; padding: 32px; margin: 32px 0; }
+  .hero-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 20px; }
+  .hero-stat { text-align: center; }
+  .hero-stat .num { font-size: 2rem; font-weight: 800; color: var(--accent); }
+  .hero-stat .label { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; margin: 16px 0; }
+  .card.red { border-left: 4px solid var(--red); }
+  .card.green { border-left: 4px solid var(--green); }
+  .card.yellow { border-left: 4px solid var(--yellow); }
+  .card.blue { border-left: 4px solid var(--blue); }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem; }
+  th { text-align: left; padding: 10px 12px; background: var(--surface2); color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.5px; }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  tr:hover td { background: var(--surface2); }
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+  .tag-red { background: #2d1111; color: var(--red); }
+  .tag-green { background: #0d2818; color: var(--green); }
+  .tag-yellow { background: #2d2600; color: var(--yellow); }
+  .tag-blue { background: #0d1b2d; color: var(--blue); }
+  .callout { background: var(--surface2); border-radius: 8px; padding: 20px; margin: 16px 0; font-style: italic; color: var(--muted); border-left: 3px solid var(--accent); }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .priority { display: inline-block; width: 28px; height: 28px; line-height: 28px; text-align: center; border-radius: 50%; font-weight: 700; font-size: 0.8rem; margin-right: 8px; }
+  .p0 { background: var(--red); color: white; }
+  .p1 { background: var(--yellow); color: black; }
+  .p2 { background: var(--blue); color: white; }
+  .bar { height: 24px; border-radius: 4px; display: inline-block; vertical-align: middle; }
+  .bar-container { background: var(--surface2); border-radius: 4px; overflow: hidden; height: 24px; margin: 4px 0; }
+  @media (max-width: 700px) {
+    .hero-grid { grid-template-columns: repeat(2, 1fr); }
+    .two-col { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>The Dormant Problem</h1>
+<p class="subtitle">STAGE OTT — Subscriber Analysis & Strategic Recommendations · Feb 23, 2026</p>
+
+<!-- EXECUTIVE SUMMARY -->
+<div class="hero">
+  <h3 style="color: var(--text); margin-top:0;">Executive Summary</h3>
+  <p style="color: var(--muted); margin-bottom: 20px;">1.1M dormant subscribers. 3,140 resurrect per day. That's a 13:1 dormant-to-active ratio. This isn't an engagement problem — it's a subscriber definition problem.</p>
+  <div class="hero-grid">
+    <div class="hero-stat"><div class="num">1.12M</div><div class="label">Total Dormant</div></div>
+    <div class="hero-stat"><div class="num">0.28%</div><div class="label">Daily Resurrection</div></div>
+    <div class="hero-stat"><div class="num">13:1</div><div class="label">Dormant:Active</div></div>
+    <div class="hero-stat"><div class="num">375K</div><div class="label">Carrier Ghosts</div></div>
+  </div>
+</div>
+
+<!-- TWO POPULATIONS -->
+<h2>The Two Dormant Populations</h2>
+<p>These are not one problem. They are two completely different problems that happen to share a dashboard.</p>
+
+<div class="two-col">
+  <div class="card red">
+    <h3 style="color: var(--red);">Never Watched — 676K</h3>
+    <p>Subscribed and never opened the app. Not dormant users — <strong>non-users with a subscription.</strong></p>
+    <table>
+      <tr><th>Segment</th><th>Pool</th><th>Conv</th></tr>
+      <tr><td>HVU</td><td>191,500</td><td>0.23%</td></tr>
+      <tr><td>MVU</td><td>109,500</td><td>0.23%</td></tr>
+      <tr><td>LVU</td><td>374,700</td><td>0.26%</td></tr>
+    </table>
+    <p style="font-size:0.85rem; color: var(--muted);">Daily conversion: ~1,640 out of 676K. A trickle.</p>
+  </div>
+  <div class="card green">
+    <h3 style="color: var(--green);">Previously Watched — 441K</h3>
+    <p>Found STAGE, watched content, stopped. <strong>Proven intent.</strong> This is where resurrection ROI lives.</p>
+    <table>
+      <tr><th>Segment</th><th>Pool</th><th>Conv</th></tr>
+      <tr><td>HVU</td><td>107,400</td><td>0.80%</td></tr>
+      <tr><td>MVU</td><td>107,300</td><td>0.40%</td></tr>
+      <tr><td>LVU</td><td>226,100</td><td>0.10%</td></tr>
+    </table>
+    <p style="font-size:0.85rem; color: var(--muted);">HVU converts at 3-4× the rate of never-watched. Low-hanging fruit.</p>
+  </div>
+</div>
+
+<!-- VALUE HIERARCHY -->
+<h2>The Value Hierarchy: Who to Target First</h2>
+<p>Not all dormants are equal. 80% of CLM resources should go to the top two rows.</p>
+<table>
+  <tr><th>Priority</th><th>Segment</th><th>Pool</th><th>Daily Conv</th><th>Rationale</th></tr>
+  <tr><td><span class="priority p0">P0</span></td><td>Prev-Watched HVU</td><td>107K</td><td>0.80%</td><td>4× conversion, proven intent, highest LTV</td></tr>
+  <tr><td><span class="priority p0">P0</span></td><td>Prev-Watched MVU</td><td>107K</td><td>0.40%</td><td>Proven intent, solid conversion</td></tr>
+  <tr><td><span class="priority p1">P1</span></td><td>Never-Watched HVU</td><td>192K</td><td>0.23%</td><td>High value, never engaged — hard but worthwhile</td></tr>
+  <tr><td><span class="priority p1">P1</span></td><td>Never-Watched MVU</td><td>109K</td><td>0.23%</td><td>Moderate value, never engaged</td></tr>
+  <tr><td><span class="priority p2">P2</span></td><td>Prev-Watched LVU</td><td>226K</td><td>0.10%</td><td>Low conversion, low value</td></tr>
+  <tr><td><span class="tag tag-red">WRITE OFF</span></td><td>Never-Watched LVU</td><td>375K</td><td>0.26%</td><td>Carrier billing ghosts — stop targeting</td></tr>
+</table>
+
+<!-- FEB 17 SPIKE -->
+<h2>The Feb 17 Spike: Something Worked</h2>
+<div class="card yellow">
+  <p><strong>Every segment saw ~2× resurrection on Feb 17.</strong> This was not noise — a simultaneous cross-segment lift means a platform-wide trigger.</p>
+  <table>
+    <tr><th>Segment</th><th>Feb 16</th><th>Feb 17</th><th>Lift</th></tr>
+    <tr><td>Prev-Watched HVU</td><td>0.56%</td><td style="color: var(--green); font-weight:700;">1.03%</td><td>+84%</td></tr>
+    <tr><td>Prev-Watched MVU</td><td>0.35%</td><td style="color: var(--green); font-weight:700;">0.48%</td><td>+37%</td></tr>
+    <tr><td>Never-Watched (all)</td><td>~0.18%</td><td style="color: var(--green); font-weight:700;">~0.28%</td><td>+55%</td></tr>
+  </table>
+  <p style="margin-top:16px; margin-bottom:0;"><strong>Action:</strong> Pull CLM logs, push notification history, and content release schedule for Feb 17. Find the trigger. Systematize it. If a single intervention can 2× resurrection for one day, doing it weekly transforms the active base.</p>
+</div>
+
+<!-- NEVER-WATCHED HVU GROWTH -->
+<h2>Never-Watched HVU Growth (+30%): The Acquisition Alarm</h2>
+<div class="card red">
+  <table>
+    <tr><th>Segment</th><th>Oct '25</th><th>Feb '26</th><th>Growth</th></tr>
+    <tr><td>HVU (Never Watched)</td><td>148K</td><td>192K</td><td style="color:var(--red); font-weight:700;">+30%</td></tr>
+    <tr><td>MVU (Never Watched)</td><td>54K</td><td>109K</td><td style="color:var(--red); font-weight:700;">+102%</td></tr>
+    <tr><td>LVU (Never Watched)</td><td>470K</td><td>375K</td><td style="color:var(--green);">-20%</td></tr>
+  </table>
+  <p style="margin-top:16px; margin-bottom:0;"><strong>Translation:</strong> STAGE is acquiring more high-value subscribers who never watch. Acquisition channels are optimizing for subscription count, not activation. This is an <strong>acquisition quality crisis masquerading as an engagement problem.</strong></p>
+</div>
+
+<!-- LVU GRAVEYARD -->
+<h2>LVU Graveyard: The Case for Writing Off Carrier Ghosts</h2>
+<div class="card">
+  <div class="two-col">
+    <div>
+      <h3>The Numbers</h3>
+      <p><strong>375K</strong> never-watched LVUs<br>
+      <strong>0.26%</strong> daily conversion (~975/day)<br>
+      <strong>-20%</strong> pool shrinking (expiring, not engaging)<br>
+      <strong>33%</strong> of entire dormant pool</p>
+    </div>
+    <div>
+      <h3>The Position</h3>
+      <p>These are overwhelmingly carrier billing ghosts. They didn't choose STAGE. They don't know they're subscribed. Keeping them in the count:</p>
+      <ul style="padding-left:20px; color: var(--muted);">
+        <li>Inflates subscriber metrics</li>
+        <li>Dilutes all engagement KPIs</li>
+        <li>Wastes CLM resources</li>
+        <li>Creates false sense of scale</li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout" style="margin-top:16px; margin-bottom:0;">
+    Recommendation: Create a "Qualified Subscriber" metric excluding never-watched LVUs >90 days dormant. Report both numbers to the board. Operate on qualified subscribers internally.
+  </div>
+</div>
+
+<!-- M0 CONNECTION -->
+<h2>Connection to M0 Zero-Activity: Same Problem, Different Lens</h2>
+<div class="card blue">
+  <table>
+    <tr><th>Timeframe</th><th>Finding</th><th>Value</th></tr>
+    <tr><td>Day 1-30 (M0)</td><td>Zero activity subscribers</td><td><strong>65%</strong> of new subs (110K)</td></tr>
+    <tr><td>Day 31+ (Dormant)</td><td>Never-watched pool</td><td><strong>676K</strong> accumulated</td></tr>
+    <tr><td>End state</td><td>Carrier billing ghosts</td><td><strong>375K</strong> LVUs</td></tr>
+  </table>
+  <p style="margin-top:16px; margin-bottom:0;">This is one pipeline: <strong>Subscribe → Never open → Never-watched dormant → Permanently lost.</strong> Fix M0 activation → shrink never-watched inflow → reduce dormant pool growth. Two dashboards, one problem.</p>
+</div>
+
+<!-- THE MATH -->
+<h2>The Math: What 5× Resurrection Would Mean</h2>
+<table>
+  <tr><th>Scenario</th><th>Daily Resurrections</th><th>Monthly (est.)</th><th>Impact on Active Base (~87K)</th></tr>
+  <tr><td>Current baseline</td><td>3,140</td><td>~47K</td><td>—</td></tr>
+  <tr><td>2× (replicate Feb 17 daily)</td><td>6,280</td><td>~94K</td><td style="color:var(--green);">+54%</td></tr>
+  <tr><td>CLM ceiling (+180%, per board deck)</td><td>8,800</td><td>~132K</td><td style="color:var(--green);">+76%</td></tr>
+  <tr><td>5× (stretch target)</td><td>15,700</td><td>~235K</td><td style="color:var(--green);">+135%</td></tr>
+</table>
+<p style="color: var(--muted); font-size:0.9rem;">Assumes 50% week-1 retention of resurrected users. Even the 2× scenario (just replicating Feb 17) meaningfully moves the active base.</p>
+
+<!-- RECOMMENDATIONS -->
+<h2>Strategic Recommendations</h2>
+
+<div class="card" style="border-left: 4px solid var(--red);">
+  <h3><span class="priority p0">P0</span> This Week</h3>
+  <ol style="padding-left: 20px;">
+    <li><strong>Investigate Feb 17 spike.</strong> Pull CLM logs, push history, content schedule. Find the trigger and systematize it.</li>
+    <li><strong>Concentrate all dormant CLM on prev-watched HVU+MVU (214K).</strong> Stop spreading resources across 1.1M.</li>
+    <li><strong>Create "Qualified Subscriber" metric.</strong> Exclude never-watched LVUs >90 days from operational metrics.</li>
+  </ol>
+</div>
+
+<div class="card" style="border-left: 4px solid var(--yellow);">
+  <h3><span class="priority p1">P1</span> This Month</h3>
+  <ol start="4" style="padding-left: 20px;">
+    <li><strong>Fix M0 activation.</strong> Auto-play on first open, push within 24h, personalized content card. Stop feeding the dormant pool.</li>
+    <li><strong>Weekly resurrection campaigns for prev-watched HVUs.</strong> Target 0.8-1.0% sustained daily conversion.</li>
+    <li><strong>Audit acquisition channels by activation rate.</strong> Which channels produce watchers, not just subscribers?</li>
+  </ol>
+</div>
+
+<div class="card" style="border-left: 4px solid var(--blue);">
+  <h3><span class="priority p2">P2</span> This Quarter</h3>
+  <ol start="7" style="padding-left: 20px;">
+    <li><strong>Carrier billing renegotiation.</strong> 375K ghosts — understand the unit economics.</li>
+    <li><strong>Dormancy age analysis.</strong> Re-run timed-out cards with optimized queries.</li>
+    <li><strong>Board-level subscriber redefinition.</strong> Present qualified subscriber metric. Honest metrics → better decisions.</li>
+  </ol>
+</div>
+
+<!-- SUBSCRIBER QUESTION -->
+<h2>The Subscriber Quality Question</h2>
+<div class="card" style="border: 1px solid var(--accent);">
+  <h3 style="color: var(--text); margin-top:0;">Should STAGE redefine "subscriber"?</h3>
+  <p><strong>Yes.</strong></p>
+  <p>Current definition includes 676K people who have never watched anything. Only ~5.5% of "subscribers" are actively watching. In any other business, this would be called a vanity metric.</p>
+  <table>
+    <tr><th>Tier</th><th>Definition</th><th>Est. Size</th></tr>
+    <tr><td><span class="tag tag-green">Active</span></td><td>Watched in last 30 days</td><td>~250-300K</td></tr>
+    <tr><td><span class="tag tag-yellow">Dormant</span></td><td>Previously watched, inactive >30d</td><td>~441K</td></tr>
+    <tr><td><span class="tag tag-blue">Unactivated</span></td><td>Never watched, subscription active</td><td>~676K</td></tr>
+    <tr><td><span class="tag tag-red">Ghost</span></td><td>Never watched LVU, >90d dormant</td><td>~300K</td></tr>
+  </table>
+  <div class="callout" style="margin-top: 16px; margin-bottom: 0;">
+    Report total subscribers for market positioning. Operate on active + dormant for product decisions. Ignore ghosts. The 1.58M headline is useful for fundraising. It's misleading for strategy.
+  </div>
+</div>
+
+<p style="color: var(--muted); font-size: 0.8rem; margin-top: 48px; text-align: center;">
+  Analysis based on Metabase Dashboards #3767 (Dormant) & #2182 (M0), plus Jan 2026 Board Retention Deck.<br>
+  Generated Feb 23, 2026 · OpenClaw
+</p>
+
+</div>
+</body>
+</html>

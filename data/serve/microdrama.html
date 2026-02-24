@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Micro Drama Performance — STAGE OTT | Feb 2026</title>
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --surface: #141414;
+    --surface2: #1e1e1e;
+    --border: #2a2a2a;
+    --text: #e8e8e8;
+    --muted: #888;
+    --accent: #6366f1;
+    --accent2: #818cf8;
+    --green: #22c55e;
+    --red: #ef4444;
+    --orange: #f59e0b;
+    --blue: #3b82f6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 40px 24px; }
+  
+  /* Header */
+  .header { border-bottom: 1px solid var(--border); padding-bottom: 32px; margin-bottom: 48px; }
+  .header h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
+  .header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .header .date { color: var(--accent2); font-size: 0.85rem; margin-top: 4px; }
+  
+  /* Section */
+  .section { margin-bottom: 56px; }
+  .section-number { color: var(--accent); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; }
+  .section h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 16px; letter-spacing: -0.01em; }
+  .section h3 { font-size: 1.1rem; font-weight: 600; margin: 24px 0 12px; color: var(--accent2); }
+  .section p { color: var(--text); margin-bottom: 12px; font-size: 0.95rem; }
+  .section .muted { color: var(--muted); }
+  
+  /* Stat Cards */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 24px 0; }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  .stat .label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+  .stat .value { font-size: 1.8rem; font-weight: 700; }
+  .stat .delta { font-size: 0.8rem; margin-top: 4px; }
+  .stat .delta.up { color: var(--green); }
+  .stat .delta.down { color: var(--red); }
+  
+  /* Tables */
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.88rem; }
+  th { text-align: left; padding: 10px 12px; border-bottom: 2px solid var(--border); color: var(--muted); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  tr:hover { background: var(--surface); }
+  
+  /* Callouts */
+  .callout { background: var(--surface); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 20px 0; }
+  .callout.red { border-left-color: var(--red); }
+  .callout.green { border-left-color: var(--green); }
+  .callout.orange { border-left-color: var(--orange); }
+  .callout strong { color: var(--text); }
+  .callout p { margin-bottom: 4px; }
+  
+  /* Tags */
+  .tag { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+  .tag.p0 { background: rgba(239,68,68,0.15); color: var(--red); }
+  .tag.p1 { background: rgba(245,158,11,0.15); color: var(--orange); }
+  .tag.p2 { background: rgba(99,102,241,0.15); color: var(--accent2); }
+  .tag.win { background: rgba(34,197,94,0.15); color: var(--green); }
+  .tag.lose { background: rgba(239,68,68,0.15); color: var(--red); }
+  
+  /* Recommendation cards */
+  .rec { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin: 12px 0; }
+  .rec .rec-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .rec .rec-title { font-weight: 600; font-size: 0.95rem; }
+  .rec .rec-body { color: var(--muted); font-size: 0.88rem; }
+  
+  /* Divider */
+  hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+  
+  /* Footer */
+  .footer { color: var(--muted); font-size: 0.8rem; text-align: center; padding-top: 32px; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+  <h1>Micro Drama Performance</h1>
+  <div class="subtitle">Strategic Analysis for STAGE OTT — Executive Briefing</div>
+  <div class="date">February 23, 2026 · Sources: Metabase #2941, Board Deck Jan 2026</div>
+</div>
+
+<!-- 1. EXECUTIVE SUMMARY -->
+<div class="section">
+  <div class="section-number">01</div>
+  <h2>Executive Summary</h2>
+  
+  <div class="stats">
+    <div class="stat">
+      <div class="label">Unique Users</div>
+      <div class="value">833K</div>
+    </div>
+    <div class="stat">
+      <div class="label">Watch Hours</div>
+      <div class="value">418K</div>
+    </div>
+    <div class="stat">
+      <div class="label">Library Share</div>
+      <div class="value">15%</div>
+      <div class="delta up">→ 20% of title starts</div>
+    </div>
+    <div class="stat">
+      <div class="label">Avg Watch/User</div>
+      <div class="value">30 min</div>
+      <div class="delta up">3x from Jun '25</div>
+    </div>
+    <div class="stat">
+      <div class="label">D0 Trial Activation</div>
+      <div class="value">75-90%</div>
+      <div class="delta up">2x non-microdrama</div>
+    </div>
+    <div class="stat">
+      <div class="label">Cross-Format M0</div>
+      <div class="value">48%</div>
+      <div class="delta up">+8pp vs single-format</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <p><strong>The one-line story:</strong> Microdramas are a trial activation engine (75-90% D0), not a retention vehicle. Users who consume both microdramas AND long-format retain at 48% M0 vs 40% single-format. <strong>Microdramas are the gateway. Long-format is the product.</strong></p>
+  </div>
+
+  <p><strong>Three urgent signals:</strong></p>
+  <p>🔴 CTR crashed 52% after Feb 19 (1.28% → 0.62%) — discovery is broken</p>
+  <p>🟡 Duration sweet spot = 1-1.3hrs — every show over 1.5hrs dies on completion</p>
+  <p>🟡 Haryanvi outperforms Bhojpuri on every metric — dialect quality gap is widening</p>
+</div>
+
+<hr>
+
+<!-- 2. GATEWAY HYPOTHESIS -->
+<div class="section">
+  <div class="section-number">02</div>
+  <h2>The Gateway Hypothesis</h2>
+  <p>Microdramas drive trial activation but long-format drives retention. The data is definitive.</p>
+
+  <h3>D1 Behavior After Watching a Microdrama</h3>
+  <table>
+    <thead><tr><th>D1 Behavior</th><th>Rate</th><th>Implication</th></tr></thead>
+    <tbody>
+      <tr><td>Watch <strong>long-format</strong></td><td style="color:var(--green);font-weight:700">18-21%</td><td>Primary return path</td></tr>
+      <tr><td>Return to <strong>same microdrama</strong></td><td>12-13%</td><td>Completion behavior</td></tr>
+      <tr><td>Watch <strong>different microdrama</strong></td><td>8-9%</td><td>Format exploration</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Cross-Format Retention (Board Deck Data)</h3>
+  <table>
+    <thead><tr><th>Segment</th><th>M0</th><th>M1</th><th>M2</th></tr></thead>
+    <tbody>
+      <tr><td>Microdrama only</td><td>40.2%</td><td>19.9%</td><td>15.4%</td></tr>
+      <tr><td>Long-format only</td><td>39.6%</td><td>19.6%</td><td>14.9%</td></tr>
+      <tr style="background:rgba(99,102,241,0.1)"><td><strong>Both formats</strong></td><td><strong>48.1%</strong></td><td><strong>26.3%</strong></td><td><strong>20.2%</strong></td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout green">
+    <p><strong>Key insight:</strong> Single-format users retain identically (~40% M0) regardless of which format. The 8pp lift comes entirely from cross-format exposure. Microdramas alone ≠ better retention. <strong>Microdramas + long-format = better retention.</strong></p>
+  </div>
+
+  <p><strong>Strategic frame:</strong> Stop measuring microdrama success by microdrama metrics. The right KPI is <strong>cross-format conversion rate</strong> — % of microdrama users who watch long-format within 7 days.</p>
+</div>
+
+<hr>
+
+<!-- 3. SHOW-LEVEL PERFORMANCE -->
+<div class="section">
+  <div class="section-number">03</div>
+  <h2>Show-Level Performance</h2>
+  <p>Hook→Complete rate is the quality signal. It strips out discovery/promotion and measures pure content quality.</p>
+
+  <h3>Winners <span class="tag win">Hook→Complete &gt;70%</span></h3>
+  <table>
+    <thead><tr><th>Show</th><th>Dialect</th><th>Starts</th><th>Hook→Complete</th><th>Duration</th></tr></thead>
+    <tbody>
+      <tr><td><strong>husband-on-sale</strong></td><td>Haryanvi</td><td>136K</td><td style="color:var(--green);font-weight:700">78.1%</td><td>~1.1hr</td></tr>
+      <tr><td><strong>crorepati-biwi-ka-raaz</strong></td><td>Haryanvi</td><td>128K</td><td style="color:var(--green);font-weight:700">72.7%</td><td>~1hr</td></tr>
+      <tr><td><strong>husband-on-sale</strong></td><td>Bhojpuri</td><td>93K</td><td style="color:var(--green);font-weight:700">70.9%</td><td>~1.1hr</td></tr>
+    </tbody>
+  </table>
+  <p class="muted">Pattern: Haryanvi dialect, 1-1.1hr duration, high-concept relationship premises. These shows reflect the audience back to themselves.</p>
+
+  <h3>Losers <span class="tag lose">Hook→Complete &lt;50%</span></h3>
+  <table>
+    <thead><tr><th>Show</th><th>Dialect</th><th>Starts</th><th>Hook→Complete</th><th>Duration</th></tr></thead>
+    <tbody>
+      <tr><td>kalabazari</td><td>Rajasthani</td><td>57K</td><td style="color:var(--red);font-weight:700">23.1%</td><td>2.3hr ⚠️</td></tr>
+      <tr><td>andheri-raat</td><td>Bhojpuri</td><td>35K</td><td style="color:var(--red)">44.6%</td><td>~1.5hr</td></tr>
+      <tr><td>kiraye-ki-patni</td><td>Bhojpuri</td><td>35K</td><td style="color:var(--red)">45.8%</td><td>~1.2hr</td></tr>
+    </tbody>
+  </table>
+  <p class="muted">kalabazari: 57K users started it, 53K abandoned. At 2.3 hours, it's a movie mislabeled as microdrama.</p>
+
+  <div class="callout orange">
+    <p><strong>Rule:</strong> Kill any show below 40% Hook→Complete. Don't renew, don't promote. Reallocate budget to proven archetypes.</p>
+  </div>
+</div>
+
+<hr>
+
+<!-- 4. DURATION SWEET SPOT -->
+<div class="section">
+  <div class="section-number">04</div>
+  <h2>The Duration Sweet Spot</h2>
+  <p>Data-driven content commissioning rules. The evidence is unambiguous.</p>
+
+  <table>
+    <thead><tr><th>Duration</th><th>Completion Rate</th><th>Verdict</th></tr></thead>
+    <tbody>
+      <tr style="background:rgba(34,197,94,0.08)"><td><strong>1-1.3 hrs</strong> (3,800-4,800s)</td><td style="color:var(--green);font-weight:700">27-39%</td><td>✅ Sweet spot</td></tr>
+      <tr><td>1.4-1.7 hrs (5,000-6,000s)</td><td>13-24%</td><td>⚠️ Risky</td></tr>
+      <tr style="background:rgba(239,68,68,0.08)"><td><strong>&gt;1.7 hrs</strong> (&gt;6,000s)</td><td style="color:var(--red);font-weight:700">6%</td><td>❌ Dead zone</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <p><strong>Commissioning rule:</strong> Hard cap at 4,800 seconds (80 minutes). No exceptions. If a story can't be told in 80 minutes, it's not a microdrama — make it a series.</p>
+  </div>
+</div>
+
+<hr>
+
+<!-- 5. CTR CRASH -->
+<div class="section">
+  <div class="section-number">05</div>
+  <h2>The CTR Crash (Feb 19)</h2>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="label">CTR Before</div>
+      <div class="value">1.28%</div>
+      <div class="delta">Feb 18</div>
+    </div>
+    <div class="stat">
+      <div class="label">CTR After</div>
+      <div class="value" style="color:var(--red)">0.62%</div>
+      <div class="delta down">-52% · Feb 21-22</div>
+    </div>
+    <div class="stat">
+      <div class="label">Views</div>
+      <div class="value">474K</div>
+      <div class="delta up">+15% (not the problem)</div>
+    </div>
+    <div class="stat">
+      <div class="label">Clicks</div>
+      <div class="value" style="color:var(--red)">2.9K</div>
+      <div class="delta down">-45% (the problem)</div>
+    </div>
+  </div>
+
+  <p>Views increased while clicks halved. Users are <strong>seeing</strong> microdramas but not <strong>clicking</strong>. This points to a discovery surface change, not a traffic issue.</p>
+
+  <h3>Investigation Hypotheses</h3>
+  <table>
+    <thead><tr><th>#</th><th>Hypothesis</th><th>Check</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>UI/UX change on Feb 19</td><td>Product changelog, rail position</td></tr>
+      <tr><td>2</td><td>Thumbnail/creative rotation</td><td>What was serving before vs after</td></tr>
+      <tr><td>3</td><td>Algorithm/recommendation change</td><td>Rec engine deploy logs</td></tr>
+      <tr><td>4</td><td>Top shows rotated out of featured</td><td>Featured content schedule</td></tr>
+      <tr><td>5</td><td>Tracking/instrumentation bug</td><td>Click event verification</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout red">
+    <p><strong>P0 — Investigate immediately.</strong> A 52% CTR drop sustained for 4+ days is not noise. If microdramas are the trial activation engine, a broken discovery surface threatens the entire onboarding funnel.</p>
+  </div>
+</div>
+
+<hr>
+
+<!-- 6. DIALECT PERFORMANCE GAP -->
+<div class="section">
+  <div class="section-number">06</div>
+  <h2>Dialect Performance Gap</h2>
+
+  <table>
+    <thead><tr><th>Metric</th><th>Haryanvi</th><th>Bhojpuri</th><th>Rajasthani</th><th>Gujarati</th></tr></thead>
+    <tbody>
+      <tr><td>Library</td><td><strong>44 titles</strong></td><td>23 titles</td><td>30 titles</td><td>~5 titles</td></tr>
+      <tr><td>Best Hook→Complete</td><td style="color:var(--green)"><strong>78%</strong></td><td>71%*</td><td>23%</td><td>N/A</td></tr>
+      <tr><td>Avg Completion</td><td>25-39%</td><td>13-31%</td><td>6%</td><td>N/A</td></tr>
+      <tr><td>Quality Consistency</td><td><strong>High</strong></td><td>Variable</td><td>Low</td><td>Too early</td></tr>
+    </tbody>
+  </table>
+  <p class="muted">*Bhojpuri's best show (husband-on-sale-bho) is a localization of the Haryanvi hit, not an original.</p>
+
+  <div class="callout orange">
+    <p><strong>Opinion:</strong> Don't expand Bhojpuri/Rajasthani library until quality parity with Haryanvi is achieved. Every bad show is a churned user. 20 great shows > 40 mediocre ones.</p>
+  </div>
+</div>
+
+<hr>
+
+<!-- 7. TRIAL ACTIVATION -->
+<div class="section">
+  <div class="section-number">07</div>
+  <h2>Trial Activation: The D0 Engine</h2>
+
+  <table>
+    <thead><tr><th>Trial Date</th><th>Starters</th><th>D0 Watch</th><th>D0 Microdrama</th><th>D0 Non-MD</th><th>D1 Watch</th></tr></thead>
+    <tbody>
+      <tr><td>Feb 22</td><td>533</td><td>90.6%</td><td style="color:var(--green);font-weight:700">86.3%</td><td>42.0%</td><td style="color:var(--red)">1.5%</td></tr>
+      <tr><td>Feb 21</td><td>358</td><td>90.5%</td><td style="color:var(--green);font-weight:700">88.0%</td><td>43.3%</td><td>12.6%</td></tr>
+      <tr><td>Feb 19</td><td>553</td><td>84.1%</td><td>81.0%</td><td>36.2%</td><td>17.9%</td></tr>
+      <tr><td>Feb 17</td><td>347</td><td>76.1%</td><td>70.9%</td><td>46.4%</td><td>17.0%</td></tr>
+      <tr><td>Feb 15</td><td>345</td><td>77.1%</td><td>73.0%</td><td>40.3%</td><td>15.9%</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout green">
+    <p><strong>Microdramas are 2x more likely to be the first content consumed on D0.</strong> 70-88% vs 32-49% for non-microdrama. This is extraordinary first-session activation.</p>
+  </div>
+
+  <p><strong>Dependency risk:</strong> If microdrama CTR continues declining (Feb 19 crash), trial activation collapses. The onboarding funnel is built on microdrama discovery working.</p>
+</div>
+
+<hr>
+
+<!-- 8. D0→D1 CLIFF -->
+<div class="section">
+  <div class="section-number">08</div>
+  <h2>The D0→D1 Cliff</h2>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="label">D0 Watch Rate</div>
+      <div class="value" style="color:var(--green)">~90%</div>
+    </div>
+    <div class="stat">
+      <div class="label">D1 Watch Rate</div>
+      <div class="value" style="color:var(--red)">12-18%</div>
+    </div>
+    <div class="stat">
+      <div class="label">Cliff Size</div>
+      <div class="value" style="color:var(--red)">~75pp</div>
+    </div>
+  </div>
+
+  <p>9 in 10 trial users watch on day 0. Fewer than 2 in 10 come back on day 1. This isn't unique to microdrama — STAGE overall is #9 in D1 retention (20%) among OTT peers.</p>
+
+  <p><strong>The gateway needs a door on both sides.</strong> Currently, users get pulled in on D0 but nothing structured pulls them back on D1. The D1 push notification with a personalized microdrama + long-format pairing is the single highest-leverage CLM intervention.</p>
+
+  <p class="muted">Note: Feb 22 D1 = 1.5% — likely incomplete data (only 1 day elapsed). Don't alarm on this number yet.</p>
+</div>
+
+<hr>
+
+<!-- 9. RETENTION COHORTS -->
+<div class="section">
+  <div class="section-number">09</div>
+  <h2>Retention Cohorts</h2>
+
+  <table>
+    <thead><tr><th>Cohort</th><th>Users</th><th>M1</th><th>M2</th><th>M3</th><th>M1→M2 Drop</th></tr></thead>
+    <tbody>
+      <tr><td>Jul '25</td><td>23K</td><td>57.4%</td><td>40.6%</td><td>30.1%</td><td>-16.8pp</td></tr>
+      <tr><td>Oct '25</td><td>90K</td><td>50.9%</td><td>37.0%</td><td>28.8%</td><td>-13.9pp</td></tr>
+      <tr><td>Nov '25</td><td>106K</td><td>55.4%</td><td>39.8%</td><td>23.2%</td><td>-15.6pp</td></tr>
+      <tr style="background:rgba(239,68,68,0.08)"><td><strong>Dec '25</strong></td><td>119K</td><td>54.4%</td><td style="color:var(--red);font-weight:700">28.8%</td><td>—</td><td style="color:var(--red);font-weight:700">-25.6pp</td></tr>
+      <tr><td>Jan '26</td><td>121K</td><td>42.4%</td><td>—</td><td>—</td><td>—</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>Scale is growing fast</strong> (23K → 121K = 5x in 7 months) but the M1→M2 cliff persists — and Dec's -25.6pp is the worst yet.</p>
+
+  <div class="callout">
+    <p><strong>Interpretation:</strong> Microdrama has the same retention shape as the overall platform. It doesn't solve the long-term retention problem independently. This further validates the Gateway Hypothesis — microdramas activate, but weekly long-format series (Mahapunarjanam model: 40% weekly return over 12 weeks) are the retention vehicle.</p>
+  </div>
+</div>
+
+<hr>
+
+<!-- 10. STRATEGIC RECOMMENDATIONS -->
+<div class="section">
+  <div class="section-number">10</div>
+  <h2>Strategic Recommendations</h2>
+
+  <h3><span class="tag p0">P0</span> This Week</h3>
+  
+  <div class="rec">
+    <div class="rec-header"><div class="rec-title">1. Investigate CTR Crash (Feb 19)</div></div>
+    <div class="rec-body">Pull product changelog, check UI/algo/tracking changes. 52% CTR decline sustained 4+ days = potential trial activation collapse. If product change caused it, revert or A/B test immediately.</div>
+  </div>
+
+  <div class="rec">
+    <div class="rec-header"><div class="rec-title">2. Implement Cross-Format Bridge</div></div>
+    <div class="rec-body">After every microdrama completion, surface a long-format recommendation. The 48% vs 40% M0 gap is proven. Force the exposure algorithmically — end cards, "watch next" rails, first-session sequencing.</div>
+  </div>
+
+  <div class="rec">
+    <div class="rec-header"><div class="rec-title">3. Hard Duration Cap on Commissions</div></div>
+    <div class="rec-body">Maximum 4,800 seconds (80 minutes). No exceptions. Every minute over 80 costs completion rate. If the story needs more time, make it a series.</div>
+  </div>
+
+  <h3><span class="tag p1">P1</span> This Month</h3>
+
+  <div class="rec">
+    <div class="rec-header"><div class="rec-title">4. D1 Re-Engagement Sequence</div></div>
+    <div class="rec-body">Push notification at D1 with personalized microdrama + long-format pairing. The D0→D1 cliff (90% → 15%) is the single biggest drop in the funnel. Automated, personalized D1 push is highest-leverage CLM intervention.</div>
+  </div>
+
+  <div class="rec">
+    <div class="rec-header"><div class="rec-title">5. Kill Underperformers</div></div>
+    <div class="rec-body">Any show below 40% Hook→Complete: deprioritize in recommendation, don't renew. Reallocate budget to proven archetypes (relationship drama, 1hr Haryanvi).</div>
+  </div>
+
+  <div class="rec">
+    <div class="rec-header"><div class="rec-title">6. Bhojpuri Quality Audit</div></div>
+    <div class="rec-body">Before adding Bhojpuri microdramas, audit existing titles for production quality, pacing, hook structure. Why do Bhojpuri originals underperform Haryanvi localizations? Fix quality before expanding quantity.</div>
+  </div>
+
+  <h3><span class="tag p2">P2</span> This Quarter</h3>
+
+  <div class="rec">
+    <div class="rec-header"><div class="rec-title">7. Microdrama-to-Series Pipeline</div></div>
+    <div class="rec-body">Top microdrama concepts (husband-on-sale, crorepati-biwi) should be expanded into long-format series. Microdrama proves demand; series captures retention. This is the natural extension of the Gateway Hypothesis.</div>
+  </div>
+
+  <div class="rec">
+    <div class="rec-header"><div class="rec-title">8. New KPI: Cross-Format Conversion Rate</div></div>
+    <div class="rec-body">Track % of microdrama-only users who watch long-format within 7 days. This is the true measure of microdrama's strategic value — not microdrama retention or microdrama watch time.</div>
+  </div>
+
+  <div class="rec">
+    <div class="rec-header"><div class="rec-title">9. Session Depth Optimization</div></div>
+    <div class="rec-body">2.46 sessions/user, 25.9 episodes/user suggests binge patterns exist. Optimize autoplay/next-up to extend 30 min avg sessions toward 45 min. More time in-app = more cross-format exposure.</div>
+  </div>
+</div>
+
+<hr>
+
+<!-- BOTTOM LINE -->
+<div class="section">
+  <div class="section-number">—</div>
+  <h2>The Bottom Line</h2>
+  <div class="callout" style="border-left-color: var(--text); font-size: 1rem;">
+    <p><strong>Microdramas = customer acquisition cost reduction.<br>Long-format = lifetime value.</strong></p>
+    <p style="margin-top: 12px;">Every microdrama dollar should be evaluated by its contribution to cross-format conversion and long-format retention. The 48% vs 40% M0 number is the north star. The CTR crash is the immediate fire. The duration discipline is the commissioning rule. The cross-format bridge is the product priority.</p>
+  </div>
+</div>
+
+<div class="footer">
+  Analysis by OpenClaw · Feb 23, 2026 · Sources: Metabase Dashboard #2941, STAGE Retention Board Deck Jan 2026
+</div>
+
+</div>
+</body>
+</html>

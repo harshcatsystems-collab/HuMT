@@ -9,9 +9,12 @@
 
 | # | What | Delegated To | Date | Source | Last Update | Days Silent |
 |---|------|-------------|------|--------|-------------|-------------|
-| D7 | Fill up 1D plan tracking sheet | Deepak Kumar Yadav / Hemabh Kamboj | 2026-02-21 | #acquisition-pod | Shubham delegated | 0 |
-| D5 | Set up CLM for chatbot feature launch | Vismit Bansal | 2026-02-20 | #ai-character-bots | Aaliya requested, plan shared | 0 |
-| D6 | Send chatbot interaction video for UAT | Junaid Qureshi | 2026-02-20 | #ai-character-bots | Nikhil requested for Radhika UAT | 0 |
+| D7 | Fill up 1D plan tracking sheet | Deepak Kumar Yadav / Hemabh Kamboj | 2026-02-21 | #acquisition-pod | Shubham delegated | 3 |
+| D8 | Include chatbot tracking events for recommendations + CLM | Aaliya Mirza | 2026-02-24 | #ai-character-bots | Nikhil requested | 0 |
+| D9 | Content Strategy 2.0 — WHY/WHAT/HOW framework tasks | Content Team | 2026-02-24 | #content_strategy | Parveen delegated to everyone, 2-3 day deadline | 0 |
+| D10 | Daily task update to product team | Shubham Singla / Jagriti Raman | 2026-02-24 | #acquisition-pod | Nikhil (per Vinay) delegated | 0 |
+| D5 | Set up CLM for chatbot feature launch | Vismit Bansal | 2026-02-20 | #ai-character-bots | Aaliya requested, plan shared | 4 ⚠️ |
+| D6 | Send chatbot interaction video for UAT | Junaid Qureshi | 2026-02-20 | #ai-character-bots | Nikhil requested for Radhika UAT | 4 ⚠️ |
 
 ## Completed
 

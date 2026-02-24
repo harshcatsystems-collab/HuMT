@@ -90,3 +90,9 @@
 
 *Last updated: 2026-02-20 12:30 UTC (weekly review)*
 | A22 | Weekly scan pre-aggregation — daily scans write to weekly cache, roundup reads cache instead of re-scanning 168h | HuMT | 2026-02-20 | — | 📌 Earmarked | Ensures weekly roundup has full coverage without timeout. Current workaround: 48h scan + keyword search + daily logs. |
+| A26 | Gopal to action all items from Maino call today | Gopal Iyer | 2026-02-24 | Feb 24 | ⏳ | #acquisition-pod — "Whatever we discussed will be addressed and actioned upon today" |
+| A27 | Aaliya to include tracking events for chatbot recommendations + CLM | Aaliya Mirza | 2026-02-24 | ~Feb 26 | ⏳ | #ai-character-bots — Nikhil requested tracking events for recommendation messages; Aaliya: "sure, will include these!" |
+| A28 | Content Strategy 2.0 — WHY/WHAT/HOW framework (all content team) | Content Team (everyone) | 2026-02-24 | ~Feb 26 | ⏳ | #content_strategy — Parveen: "prioritize these over the next 2-3 days" |
+| A29 | Parveen asked HMT to share Feb 23 content strategy summary in thread | HMT | 2026-02-23 | Feb 24 | ⏳ | #content_strategy — "please share today's summary document in same thread please" |
+| A30 | Start M0 callings (reacquisition) | Komal Mathur | 2026-02-24 | Feb 25 | ⏳ | #acquisition-pod — "Tomorrow we would also start M0 Callings" |
+| A31 | Daily task updates to product team from acquisition pod | Shubham Singla / Jagriti Raman | 2026-02-24 | Ongoing | ⏳ | #acquisition-pod — Nikhil (per Vinay): "tomorrow onwards make sure we send what all tasks are being picked" |

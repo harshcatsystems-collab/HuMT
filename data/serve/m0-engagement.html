@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>M0 Engagement Analysis — Feb 23, 2026</title>
+<style>
+body { font-family: 'Google Sans', Arial, sans-serif; max-width: 900px; margin: 40px auto; color: #1a1a1a; line-height: 1.6; padding: 0 20px; }
+h1 { font-size: 28px; border-bottom: 3px solid #1a73e8; padding-bottom: 12px; margin-top: 48px; }
+h2 { font-size: 22px; color: #1a73e8; margin-top: 40px; border-bottom: 1px solid #e0e0e0; padding-bottom: 8px; }
+h3 { font-size: 17px; color: #333; margin-top: 24px; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+th { background: #1a73e8; color: white; padding: 10px 14px; text-align: left; font-weight: 600; }
+td { padding: 8px 14px; border-bottom: 1px solid #e8e8e8; }
+tr:nth-child(even) td { background: #f8f9fa; }
+.callout { background: #fef7e0; border-left: 4px solid #f9ab00; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-red { background: #fce8e6; border-left: 4px solid #d93025; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-green { background: #e6f4ea; border-left: 4px solid #34a853; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 20px 0; }
+.stat-box { background: #f8f9fa; border-radius: 8px; padding: 20px; text-align: center; border: 1px solid #e8e8e8; }
+.stat-number { font-size: 32px; font-weight: 700; color: #1a73e8; }
+.stat-label { font-size: 13px; color: #666; margin-top: 4px; }
+.stat-trend { font-size: 13px; margin-top: 4px; }
+.trend-up { color: #34a853; }
+.trend-down { color: #d93025; }
+.priority-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 700; color: white; margin-right: 8px; }
+.p0 { background: #d93025; }
+.p1 { background: #f9ab00; color: #333; }
+.p2 { background: #1a73e8; }
+.p3 { background: #34a853; }
+blockquote { border-left: 3px solid #999; margin: 16px 0; padding: 8px 16px; color: #555; font-style: italic; }
+.page-break { page-break-before: always; margin-top: 48px; }
+.subtitle { color: #666; font-size: 16px; margin-top: -8px; }
+strong { color: #1a1a1a; }
+</style>
+</head>
+<body>
+
+<h1>M0 Engagement: Where We Lose Users — and What to Do About It</h1>
+<p class="subtitle">Analysis for HMT &amp; Engagement Pod | Feb 23, 2026 | Data: Metabase Dashboard #2182</p>
+
+<!-- ==================== EXECUTIVE SUMMARY ==================== -->
+<h2>Executive Summary</h2>
+
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="stat-number">65%</div>
+    <div class="stat-label">M0 subs with ZERO activity</div>
+    <div class="stat-trend trend-down">110K ghost subscribers</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">3.09%</div>
+    <div class="stat-label">Watch conversion</div>
+    <div class="stat-trend trend-down">Stuck in 2.86–3.25% band</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">2.17</div>
+    <div class="stat-label">Avg watch days / watcher</div>
+    <div class="stat-trend trend-up">↑ from 1.93 (8 weeks)</div>
+  </div>
+</div>
+
+<div class="callout">
+<strong>The core tension:</strong> Users who watch are watching MORE (frequency ↑), but we can't get new users TO watch (conversion flat). The product works. Distribution and activation don't. 65% of M0 subs are ghosts — likely acquisition artifacts, not real users. This is our #1 lever.
+</div>
+
+<!-- ==================== THE FUNNEL ==================== -->
+<h2 class="page-break">The M0 Funnel: Where Users Drop</h2>
+
+<table>
+<tr><th>Stage</th><th>Count</th><th>% of M0 Base</th><th>Drop</th></tr>
+<tr><td><strong>M0 Active Subscribers</strong></td><td>163,122</td><td>100%</td><td>—</td></tr>
+<tr><td>Any Activity (≥1 day)</td><td>52,720</td><td>32.3%</td><td style="color:#d93025">-67.7%</td></tr>
+<tr><td>Opened once, didn't watch</td><td>28,504</td><td>17.5%</td><td>—</td></tr>
+<tr><td><strong>Watched content (daily)</strong></td><td>5,043</td><td>3.09%</td><td style="color:#d93025">-96.9%</td></tr>
+<tr><td>Habit achieved (cumulative)</td><td>~7,600</td><td>4.66%</td><td>—</td></tr>
+</table>
+
+<div class="callout-red">
+<strong>The biggest cliff is before the app.</strong> 110,402 subscribers (65%) have zero recorded activity. They subscribed and never opened STAGE. The second cliff: 28.5K opened once but never watched. These two buckets represent 85% of the M0 base.
+</div>
+
+<h3>Activity Bucket Breakdown</h3>
+<table>
+<tr><th>Bucket</th><th>Subscribers</th><th>Watch %</th><th>Upgrade %</th></tr>
+<tr><td><strong>Zero activity</strong></td><td>110,402 (65%)</td><td>0.58%</td><td>0.55%</td></tr>
+<tr><td>1 day active</td><td>28,504 (17%)</td><td>3.47%</td><td>2.12%</td></tr>
+<tr><td>2–4 days active</td><td>24,123 (15%)</td><td>8.34%</td><td>1.27%</td></tr>
+<tr><td>5–7 days active</td><td>4,794 (3%)</td><td>16.7%</td><td>3.13%</td></tr>
+<tr><td>8+ days active</td><td>2,397 (1.5%)</td><td>30.2%</td><td>—</td></tr>
+</table>
+
+<blockquote>Moving just 5% of zero-activity users into the 1-day bucket = ~5,500 incremental actives. At 3.47% watch rate, that's ~190 new daily watchers — a 3.8% lift.</blockquote>
+
+<!-- ==================== ZERO ACTIVITY ==================== -->
+<h2 class="page-break">The Zero-Activity Problem: Root Cause Analysis</h2>
+
+<p><strong>My position:</strong> This is primarily an acquisition quality problem, not an engagement problem. Most of these 110K "subscribers" never intended to use STAGE.</p>
+
+<h3>Why I believe this:</h3>
+<ol>
+<li><strong>The math doesn't work for "bad onboarding."</strong> If users consciously chose STAGE, even terrible onboarding would yield >35% app-open. Zero activity on 65% means most never opened the app at all.</li>
+<li><strong>Carrier billing / bundled acquisition.</strong> In India's regional OTT space, telco bundles are a primary acquisition channel. Users get "subscribed" via data pack upsells without active consent. They're counted as M0 subs but were never prospects.</li>
+<li><strong>Uninstall rate is only 32.5%.</strong> If 65% are inactive but only 32.5% uninstall, many haven't even installed the app to uninstall it. They exist only as billing records.</li>
+</ol>
+
+<h3>What to do about it:</h3>
+<div class="callout">
+<strong>Stop measuring activation on the full base.</strong> Segment by acquisition channel. Measure activation rate per source. You'll likely find that organic/referral channels have 40-60% activation, while carrier billing has &lt;10%. Kill or renegotiate low-activation channels. Report M0 metrics on "intentional subscribers" separately.
+</div>
+
+<p><strong>Experiment:</strong> Tag every new sub with acquisition source. In 2 weeks, you'll have the data to make surgical cuts to acquisition spend.</p>
+
+<!-- ==================== BHOJPURI ==================== -->
+<h2 class="page-break">Dialect Deep Dive: Why Bhojpuri Lags</h2>
+
+<table>
+<tr><th>Dialect</th><th>M0 Subs</th><th>Watch Conv.</th><th>Gap vs Top</th></tr>
+<tr><td>Rajasthani</td><td>51,853</td><td style="color:#34a853"><strong>3.52%</strong></td><td>—</td></tr>
+<tr><td>Haryanvi</td><td>43,743</td><td style="color:#34a853"><strong>3.49%</strong></td><td>-0.03pp</td></tr>
+<tr><td style="color:#d93025"><strong>Bhojpuri</strong></td><td><strong>67,526</strong></td><td style="color:#d93025"><strong>2.51%</strong></td><td style="color:#d93025"><strong>-1.01pp</strong></td></tr>
+</table>
+
+<p>Bhojpuri has <strong>30% more subscribers</strong> than Rajasthani but <strong>29% lower watch conversion</strong>. On the largest dialect base, this 1pp gap = ~675 missing daily watchers.</p>
+
+<h3>Four hypotheses (ranked by likelihood):</h3>
+
+<p><strong>1. Content-format mismatch.</strong> Bhojpuri entertainment consumption on YouTube is dominated by music videos, comedy clips, and short-form. STAGE's long-form movies/shows may not match the existing consumption habit. Haryanvi and Rajasthani audiences may have a stronger appetite for narrative content.</p>
+
+<p><strong>2. Acquisition channel skew.</strong> If Bhojpuri over-indexes on carrier billing (larger addressable market in UP/Bihar = more telco partnerships), the denominator is more inflated than other dialects.</p>
+
+<p><strong>3. Content depth and quality.</strong> How many Bhojpuri titles vs Haryanvi/Rajasthani? What's the production value? If the catalog is thinner or lower-quality, conversion will suffer.</p>
+
+<p><strong>4. Free alternative dominance.</strong> Bhojpuri has the most vibrant free content ecosystem on YouTube (billions of views). The "why pay when YouTube is free" barrier is highest for Bhojpuri.</p>
+
+<div class="callout">
+<strong>Recommended action:</strong> Pull three data points this week: (1) Bhojpuri catalog size vs other dialects, (2) acquisition channel mix per dialect, (3) Bhojpuri content completion rates vs others. The answer is in the intersection.
+</div>
+
+<!-- ==================== WHAT'S WORKING ==================== -->
+<h2 class="page-break">What's Working &amp; Why</h2>
+
+<div class="callout-green">
+<strong>Watch frequency: 1.93 → 2.17 avg days/watcher over 8 weeks.</strong> Steady, consistent climb. Watchers who find content are coming back more often. This is the strongest signal in the dashboard — the product works for activated users.
+</div>
+
+<table>
+<tr><th>Week</th><th>Avg Watch Days</th><th>Δ</th></tr>
+<tr><td>Dec 22</td><td>1.96</td><td>—</td></tr>
+<tr><td>Jan 12</td><td>2.00</td><td>+0.04</td></tr>
+<tr><td>Feb 2</td><td>2.12</td><td>+0.12</td></tr>
+<tr><td>Feb 16</td><td>2.17</td><td>+0.05</td></tr>
+</table>
+
+<p><strong>Why this matters:</strong> If each watcher watches 2.17 days/week instead of 1.93, total watch-days increase by ~12% without adding a single new watcher. Content investments or recommendation improvements are paying off.</p>
+
+<div class="callout-green">
+<strong>Uninstall rate: 36.1% → 32.5% in 12 days.</strong> 3.6 percentage point improvement. Something changed — likely better first-session experience or reduced notification spam. Worth identifying the exact cause and doubling down.
+</div>
+
+<!-- ==================== CONVERSION CEILING ==================== -->
+<h2 class="page-break">The Conversion Ceiling: Why 3% Won't Break</h2>
+
+<p>Watch conversion has oscillated between 2.86% and 3.25% for 10+ days with no breakout. This is a <strong>structural ceiling</strong>, not a variance problem.</p>
+
+<h3>Why the ceiling exists:</h3>
+
+<p><strong>The engaged get more engaged; the disengaged stay disengaged.</strong> Watch frequency improves (2.17 days) because existing watchers find more to watch. But no mechanism converts non-watchers into watchers. These are two separate populations with different needs.</p>
+
+<p><strong>The zero-activity pool is unreachable in-app.</strong> You can't improve in-app conversion for users who never open the app. Push notifications hit a wall when 65% aren't installed.</p>
+
+<p><strong>The 28.5K "opened once" users are the breakout opportunity.</strong> These users showed intent (opened app) but didn't watch. Current onboarding likely shows a content grid — expecting users to browse and choose. Regional dialect audiences may need a more directed first experience.</p>
+
+<h3>How to break through:</h3>
+<table>
+<tr><th>Experiment</th><th>Target Bucket</th><th>Hypothesis</th></tr>
+<tr><td><strong>Auto-play on first open</strong></td><td>28.5K (1-day active)</td><td>Skip browse, show 60-sec dialect-specific trailer reel → deep-link to episode 1. Reduce choice paralysis.</td></tr>
+<tr><td><strong>Hour-1 WhatsApp nudge</strong></td><td>110K (zero activity)</td><td>If not opened within 60 min of sub, send "Your first movie is waiting" + deep link. Catch carrier-billing subs who might try it if prompted.</td></tr>
+<tr><td><strong>First-watch gate removal</strong></td><td>All new subs</td><td>Audit every screen between subscription and first play. Kill profile setup, preference surveys, anything that isn't "press play."</td></tr>
+<tr><td><strong>Social proof nudge</strong></td><td>1-day actives</td><td>"4,823 people in your area watched [Movie X] this week" — use dialect-local social proof.</td></tr>
+</table>
+
+<!-- ==================== RECOMMENDATIONS ==================== -->
+<h2 class="page-break">Strategic Recommendations</h2>
+
+<h3><span class="priority-tag p0">P0</span> Segment Acquisition by Activation Rate</h3>
+<p><strong>Impact:</strong> Reframe the entire M0 problem. Likely reveals that 30-50% of acquisition spend produces ghost subs.<br>
+<strong>Owner:</strong> Growth + Pranay<br>
+<strong>Timeline:</strong> 1 week to instrument, 2 weeks for actionable data<br>
+<strong>Success:</strong> Every acquisition channel has a measured activation rate. Channels below 5% are flagged for renegotiation or cut.</p>
+
+<h3><span class="priority-tag p1">P1</span> Redesign First Session: Auto-Play Experience</h3>
+<p><strong>Impact:</strong> 2–5x activation for the 28.5K "opened once" bucket. Could break the 3% ceiling.<br>
+<strong>Owner:</strong> Manasvi (product) + Engineering<br>
+<strong>Timeline:</strong> 2-week sprint, A/B test in week 3<br>
+<strong>Success:</strong> First-session watch rate doubles from current baseline.</p>
+
+<h3><span class="priority-tag p2">P2</span> Bhojpuri Content &amp; Acquisition Audit</h3>
+<p><strong>Impact:</strong> Close the 1pp conversion gap = ~675 incremental daily watchers<br>
+<strong>Owner:</strong> Content team + Vismit<br>
+<strong>Timeline:</strong> 1 week audit, 4 weeks to act<br>
+<strong>Success:</strong> Bhojpuri conversion reaches 3.0%+ within 6 weeks.</p>
+
+<h3><span class="priority-tag p2">P3</span> Hour-1 WhatsApp/SMS Nudge</h3>
+<p><strong>Impact:</strong> Pull 3–5% of zero-activity into first session = 3,300–5,500 new actives<br>
+<strong>Owner:</strong> Vismit (retention)<br>
+<strong>Timeline:</strong> 1 week setup<br>
+<strong>Success:</strong> Zero-activity % drops below 60% within 2 weeks of launch.</p>
+
+<h3><span class="priority-tag p3">P4</span> Redefine M0 Metrics: Exclude Ghost Subs</h3>
+<p><strong>Impact:</strong> Clarity. Real watch conversion on intentional subs is likely 8–10%, not 3%. Better metrics → better decisions.<br>
+<strong>Owner:</strong> Manasvi (data)<br>
+<strong>Timeline:</strong> 1 week<br>
+<strong>Success:</strong> Dashboard shows both "all subs" and "intentional subs" views.</p>
+
+<!-- ==================== METRICS ==================== -->
+<h2 class="page-break">Metrics to Track / Success Criteria</h2>
+
+<table>
+<tr><th>Metric</th><th>Current</th><th>30-Day Target</th><th>Why It Matters</th></tr>
+<tr><td><strong>Watch Conversion</strong></td><td>3.09%</td><td>4.5%</td><td>North star. Measures activation effectiveness.</td></tr>
+<tr><td><strong>Zero-Activity %</strong></td><td>65%</td><td>55%</td><td>Acquisition quality + activation combined.</td></tr>
+<tr><td><strong>Bhojpuri Watch Conv.</strong></td><td>2.51%</td><td>3.0%</td><td>Dialect parity — largest base, biggest opportunity.</td></tr>
+<tr><td><strong>Avg Watch Days/Watcher</strong></td><td>2.17</td><td>2.3</td><td>Retention depth for activated users.</td></tr>
+<tr><td><strong>Uninstall %</strong></td><td>32.5%</td><td>28%</td><td>Floor health indicator.</td></tr>
+<tr><td><strong>Activation by Channel</strong></td><td>Not tracked</td><td>Instrumented</td><td>Foundation for all acquisition decisions.</td></tr>
+<tr><td><strong>First-Session Watch Rate</strong></td><td>Not tracked</td><td>Instrumented</td><td>Measures onboarding effectiveness directly.</td></tr>
+</table>
+
+<div class="callout">
+<strong>The meta-insight:</strong> STAGE doesn't have an engagement problem — it has two separate problems wearing one trenchcoat. (1) An acquisition quality problem that creates 110K ghosts. (2) An activation design problem that fails to convert curious users into watchers. Solving them requires different teams, different metrics, and different interventions. Stop averaging them together.
+</div>
+
+<hr>
+<p style="color: #999; font-size: 13px; margin-top: 32px;">
+Prepared for the Engagement Pod (MWF 12 PM IST) | Feb 23, 2026<br>
+Team: HMT (owner), Vismit Bansal (retention), Pranay Merchant (PM), Manasvi Dobhal (product/data)<br>
+Source: Metabase Dashboard #2182
+</p>
+
+</body>
+</html>
