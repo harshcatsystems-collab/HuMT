@@ -13,6 +13,10 @@
 | D8 | Include chatbot tracking events for recommendations + CLM | Aaliya Mirza | 2026-02-24 | #ai-character-bots | Nikhil requested | 0 |
 | D9 | Content Strategy 2.0 — WHY/WHAT/HOW framework tasks | Content Team | 2026-02-24 | #content_strategy | Parveen delegated to everyone, 2-3 day deadline | 0 |
 | D10 | Daily task update to product team | Shubham Singla / Jagriti Raman | 2026-02-24 | #acquisition-pod | Nikhil (per Vinay) delegated | 0 |
+| D11 | Build trial funnel diagnostic as Claude/BMAD Skill | Shubham Singla | 2026-02-25 | #acquisition-pod | Vinay delegated | 0 |
+| D12 | Kill chatbot listing screen → WhatsApp-style chat list UX | Aaliya Mirza | 2026-02-25 | #ai-character-bots | Vinay review, Aaliya accepted | 0 |
+| D13 | Chatbot P0 items 1&4 today, item 2 timelines tomorrow | Nikhil Nair / Aaliya Mirza | 2026-02-25 | #ai-character-bots | Nikhil committed | 0 |
+| D14 | Check D1/D2 trial retention drop | Aaliya Mirza / Nikhil Nair | 2026-02-25 | #growth-pod | Shubham delegated | 0 |
 | D5 | Set up CLM for chatbot feature launch | Vismit Bansal | 2026-02-20 | #ai-character-bots | Aaliya requested, plan shared | 4 ⚠️ |
 | D6 | Send chatbot interaction video for UAT | Junaid Qureshi | 2026-02-20 | #ai-character-bots | Nikhil requested for Radhika UAT | 4 ⚠️ |
 

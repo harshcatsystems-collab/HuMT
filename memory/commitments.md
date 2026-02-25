@@ -90,9 +90,13 @@
 
 *Last updated: 2026-02-20 12:30 UTC (weekly review)*
 | A22 | Weekly scan pre-aggregation — daily scans write to weekly cache, roundup reads cache instead of re-scanning 168h | HuMT | 2026-02-20 | — | 📌 Earmarked | Ensures weekly roundup has full coverage without timeout. Current workaround: 48h scan + keyword search + daily logs. |
-| A26 | Gopal to action all items from Maino call today | Gopal Iyer | 2026-02-24 | Feb 24 | ⏳ | #acquisition-pod — "Whatever we discussed will be addressed and actioned upon today" |
+| A26 | Gopal to action all items from Maino call today | Gopal Iyer | 2026-02-24 | Feb 24 | ⚠️ OVERDUE | #acquisition-pod — "Whatever we discussed will be addressed and actioned upon today" |
 | A27 | Aaliya to include tracking events for chatbot recommendations + CLM | Aaliya Mirza | 2026-02-24 | ~Feb 26 | ⏳ | #ai-character-bots — Nikhil requested tracking events for recommendation messages; Aaliya: "sure, will include these!" |
 | A28 | Content Strategy 2.0 — WHY/WHAT/HOW framework (all content team) | Content Team (everyone) | 2026-02-24 | ~Feb 26 | ⏳ | #content_strategy — Parveen: "prioritize these over the next 2-3 days" |
-| A29 | Parveen asked HMT to share Feb 23 content strategy summary in thread | HMT | 2026-02-23 | Feb 24 | ⏳ | #content_strategy — "please share today's summary document in same thread please" |
+| A29 | Parveen asked HMT to share Feb 23 content strategy summary in thread | HMT | 2026-02-23 | Feb 24 | ⚠️ OVERDUE | #content_strategy — "please share today's summary document in same thread please" |
 | A30 | Start M0 callings (reacquisition) | Komal Mathur | 2026-02-24 | Feb 25 | ⏳ | #acquisition-pod — "Tomorrow we would also start M0 Callings" |
 | A31 | Daily task updates to product team from acquisition pod | Shubham Singla / Jagriti Raman | 2026-02-24 | Ongoing | ⏳ | #acquisition-pod — Nikhil (per Vinay): "tomorrow onwards make sure we send what all tasks are being picked" |
+| A32 | Build trial funnel diagnostic as Claude/BMAD Skill | Shubham Singla | 2026-02-25 | TBD | ⏳ | #acquisition-pod — Vinay: "Build this as a Claud / BMAD Skill" (re: Shubham's TR/TCR/SR diagnostic system) |
+| A33 | Kill chatbot listing screen → WhatsApp-style chat list UX | Aaliya Mirza | 2026-02-25 | ~Feb 26 | ⏳ | #ai-character-bots — Vinay review P0s. Aaliya: "Will take this into account and start working on this" |
+| A34 | Chatbot P0 items 1&4 today, item 2 timelines by tomorrow | Nikhil Nair / Aaliya Mirza | 2026-02-25 | Feb 25-26 | ⏳ | #ai-character-bots — Nikhil: "1 and 4 should be possible today, 2 will need time let us get back on timelines tomorrow" |
+| A35 | Check D1/D2 trial retention drop (related to plan changes) | Aaliya Mirza / Nikhil Nair | 2026-02-25 | — | ⏳ | #growth-pod — Shubham: "D1, D2 trial retention seems to be on lower side, pls check" |
