@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="favicon-180.png">
+<meta property="og:title" content="Snowflake Data Infrastructure — Deep Analysis">
+<meta property="og:description" content="The core finding: ~60-66% of new paid subscribers never watch anything in their first 30 days.">
+<meta property="og:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<meta property="og:url" content="https://humt-stage-analytics.netlify.app/snowflake-analysis.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Snowflake Data Infrastructure — Deep Analysis">
+<meta name="twitter:description" content="The core finding: ~60-66% of new paid subscribers never watch anything in their first 30 days.">
+<meta name="twitter:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<title>HuMT | Snowflake Data Infrastructure — Deep Analysis</title>
+
+<style>
+body { font-family: 'Google Sans', Arial, sans-serif; max-width: 900px; margin: 40px auto; color: #1a1a1a; line-height: 1.6; padding: 0 20px; }
+h1 { font-size: 28px; border-bottom: 3px solid #1a73e8; padding-bottom: 12px; margin-top: 48px; }
+h2 { font-size: 22px; color: #1a73e8; margin-top: 40px; border-bottom: 1px solid #e0e0e0; padding-bottom: 8px; }
+h3 { font-size: 17px; color: #333; margin-top: 24px; }
+h4 { font-size: 15px; color: #555; margin-top: 20px; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+th { background: #1a73e8; color: white; padding: 10px 14px; text-align: left; font-weight: 600; }
+td { padding: 8px 14px; border-bottom: 1px solid #e8e8e8; }
+tr:nth-child(even) td { background: #f8f9fa; }
+.callout { background: #fef7e0; border-left: 4px solid #f9ab00; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-red { background: #fce8e6; border-left: 4px solid #d93025; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-green { background: #e6f4ea; border-left: 4px solid #34a853; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+blockquote { border-left: 3px solid #1a73e8; margin: 16px 0; padding: 8px 16px; color: #444; font-style: italic; background: #f8f9fa; border-radius: 0 8px 8px 0; }
+code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+pre { background: #f1f3f4; padding: 16px; border-radius: 8px; overflow-x: auto; font-size: 13px; }
+.subtitle { color: #666; font-size: 16px; margin-top: -8px; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; color: white; margin-right: 6px; }
+.footer { color: #999; margin-top: 48px; font-size: 13px; border-top: 1px solid #e8e8e8; padding-top: 16px; }
+ul, ol { margin: 12px 0; }
+li { margin: 4px 0; }
+strong { color: #1a1a1a; }
+hr { border: none; border-top: 1px solid #e8e8e8; margin: 32px 0; }
+</style>
+
+</head>
+<body>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #e8e8e8;"><img src="humt-avatar.png" alt="HuMT" style="width:40px;height:40px;border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,0.1);"><span style="font-size:13px;color:#666;">HuMT Intelligence Hub</span></div>
+<h1>Snowflake Data Infrastructure — Deep Analysis</h1>
+<p class="subtitle">Data warehouse architecture · Tables, schemas, query patterns</p>
+<blockquote><strong>Queried:</strong> 2026-02-20 | <strong>Source:</strong> ANALYTICS_PROD (Snowflake) via Metabase API<br><strong>Scope:</strong> Jun 2025 – Feb 2026<br></blockquote>
+<hr>
+<h2>1. M0 Cohort Metrics: New Subscribers Who Watch 0 Titles in Month 0</h2>
+<p><strong>The core finding: ~60-66% of new paid subscribers never watch anything in their first 30 days.</strong></p>
+<table>
+<tr><th>Cohort Month</th><th>New Subs</th><th>Watched in M0</th><th>Watch %</th><th>**Zero-Watch %**</th></tr>
+<tr><td>Jun 2025</td><td>104,225</td><td>35,438</td><td>34.0%</td><td><strong>66.0%</strong></td></tr>
+<tr><td>Jul 2025</td><td>99,928</td><td>38,275</td><td>38.3%</td><td><strong>61.7%</strong></td></tr>
+<tr><td>Aug 2025</td><td>116,090</td><td>49,501</td><td>42.6%</td><td><strong>57.4%</strong></td></tr>
+<tr><td>Sep 2025</td><td>212,321</td><td>74,352</td><td>35.0%</td><td><strong>65.0%</strong></td></tr>
+<tr><td>Oct 2025</td><td>226,071</td><td>84,808</td><td>37.5%</td><td><strong>62.5%</strong></td></tr>
+<tr><td>Nov 2025</td><td>187,849</td><td>73,051</td><td>38.9%</td><td><strong>61.1%</strong></td></tr>
+<tr><td>Dec 2025</td><td>189,847</td><td>73,592</td><td>38.8%</td><td><strong>61.2%</strong></td></tr>
+<tr><td>Jan 2026</td><td>198,354</td><td>70,385</td><td>35.5%</td><td><strong>64.5%</strong></td></tr>
+</table>
+<h3>Key Insights:</h3>
+<ul>
+<li><strong>Steady-state zero-watch rate: ~61-65%.</strong> This has NOT improved over 8 months.</li>
+<li>Aug 2025 was the best month (57.4% zero-watch) — smaller, higher-quality cohort (116K vs 200K+ in later months).</li>
+<li><strong>When volume goes up (Sep: 212K, Oct: 226K), quality drops.</strong> Suggests paid acquisition is bringing in low-intent users.</li>
+<li>Jan 2026 regression to 64.5% despite 198K subs is concerning — quality degrading even at moderate volume.</li>
+</ul>
+<h3>What This Means:</h3>
+<p>For every 200K new paid subscribers, ~128K never open a single piece of content. At ~₹199/quarter average, that's ₹2.5 Cr/month in subscriptions from users who are overwhelmingly likely to churn at first renewal. <strong>The #1 lever for STAGE is getting M0 watch rate above 50%.</strong></p>
+<hr>
+<h2>2. D0 Metrics: Day-0 Trial User Engagement</h2>
+<h3>2a. D0 Activity Rate (from FCT_USER_ENGAGEMENT)</h3>
+<table>
+<tr><th>Trial Month</th><th>Trials</th><th>Active D0</th><th>D0 Active %</th><th>Avg Pulses (active users)</th></tr>
+<tr><td>Aug 2025</td><td>289,358</td><td>192,919</td><td>66.7%</td><td>633</td></tr>
+<tr><td>Sep 2025</td><td>557,440</td><td>365,726</td><td>65.6%</td><td>637</td></tr>
+<tr><td>Oct 2025</td><td>463,891</td><td>293,550</td><td>63.3%</td><td>635</td></tr>
+<tr><td>Nov 2025</td><td>407,838</td><td>247,600</td><td>60.7%</td><td>648</td></tr>
+<tr><td>Dec 2025</td><td>516,389</td><td>300,135</td><td>58.1%</td><td>680</td></tr>
+<tr><td>Jan 2026</td><td>489,436</td><td>285,010</td><td>58.2%</td><td>645</td></tr>
+<tr><td>Feb 2026 (MTD)</td><td>266,557</td><td>128,791</td><td>48.3%</td><td>662</td></tr>
+</table>
+<p><strong>D0 activity is declining:</strong> From 66.7% (Aug) → 58.2% (Jan) → 48.3% (Feb MTD). This is a <strong>crisis-level trend.</strong> One-third of trial users don't even open the app on their trial start day.</p>
+<h3>2b. D0 User Buckets (from D0_USER_BUCKETS — includes app opens, not just watch)</h3>
+<table>
+<tr><th>Trial Month</th><th>Total</th><th>Active D0</th><th>Active %</th><th>Aha D0</th><th>Aha %</th><th>Zero-Watch D0</th></tr>
+<tr><td>Aug 2025</td><td>289,304</td><td>242,237</td><td>83.7%</td><td>25,635</td><td>8.9%</td><td>54,894</td></tr>
+<tr><td>Sep 2025</td><td>557,344</td><td>472,505</td><td>84.8%</td><td>29,133</td><td>5.2%</td><td>97,363</td></tr>
+<tr><td>Oct 2025</td><td>463,813</td><td>397,134</td><td>85.6%</td><td>23,370</td><td>5.0%</td><td>75,071</td></tr>
+<tr><td>Nov 2025</td><td>407,711</td><td>355,392</td><td>87.2%</td><td>21,193</td><td>5.2%</td><td>59,120</td></tr>
+<tr><td>Dec 2025</td><td>516,029</td><td>447,394</td><td>86.7%</td><td>33,362</td><td>6.5%</td><td>75,561</td></tr>
+<tr><td>Jan 2026</td><td>489,100</td><td>391,994</td><td>80.1%</td><td>27,295</td><td>5.6%</td><td>105,072</td></tr>
+<tr><td>Feb 2026</td><td>260,266</td><td>177,881</td><td>68.3%</td><td>8,526</td><td>3.3%</td><td>85,652</td></tr>
+</table>
+<p><strong>Note:</strong> The D0_USER_BUCKETS table shows higher "active" rates (~80-87%) than engagement data (~58-67%). Likely because it counts app opens, not just playback. The gap = users who open the app but don't watch.</p>
+<h3>2c. D0 Watch Time Distribution (Nov 2025 – Jan 2026 combined)</h3>
+<table>
+<tr><th>Watch Bucket</th><th>Nov 2025</th><th>Dec 2025</th><th>Jan 2026</th></tr>
+<tr><td>0 mins</td><td>90,358 (22%)</td><td>113,186 (22%)</td><td>148,915 (30%)</td></tr>
+<tr><td>1-10 mins</td><td>69,707 (17%)</td><td>85,684 (17%)</td><td>79,181 (16%)</td></tr>
+<tr><td>11-30 mins</td><td>71,492 (18%)</td><td>92,334 (18%)</td><td>76,409 (16%)</td></tr>
+<tr><td>31-60 mins</td><td>57,787 (14%)</td><td>71,310 (14%)</td><td>57,494 (12%)</td></tr>
+<tr><td>61-120 mins</td><td>92,863 (23%)</td><td>119,642 (23%)</td><td>95,946 (20%)</td></tr>
+<tr><td>120+ mins</td><td>14,103 (3%)</td><td>21,661 (4%)</td><td>21,155 (4%)</td></tr>
+</table>
+<p><strong>Bimodal distribution:</strong> Users either don't watch at all OR watch 60+ minutes. The "casual browsing" cohort (1-30 min) is smaller than the "binge" cohort (60+ min). This confirms that when users find content they like, they binge hard.</p>
+<h3>2d. D0 Intent Buckets</h3>
+<table>
+<tr><th>Trial Month</th><th>Low</th><th>Medium</th><th>High</th><th>Very High</th></tr>
+<tr><td>Oct 2025</td><td>209K (45%)</td><td>157K (34%)</td><td>59K (13%)</td><td>38K (8%)</td></tr>
+<tr><td>Nov 2025</td><td>175K (43%)</td><td>140K (34%)</td><td>56K (14%)</td><td>37K (9%)</td></tr>
+<tr><td>Dec 2025</td><td>215K (42%)</td><td>170K (33%)</td><td>76K (15%)</td><td>55K (11%)</td></tr>
+<tr><td>Jan 2026</td><td>234K (48%)</td><td>126K (26%)</td><td>71K (14%)</td><td>58K (12%)</td></tr>
+<tr><td>Feb 2026</td><td>145K (56%)</td><td>56K (22%)</td><td>33K (13%)</td><td>26K (10%)</td></tr>
+</table>
+<p><strong>Low intent is growing:</strong> From 42-45% → 48% (Jan) → 56% (Feb). This correlates directly with the declining D0 active rate. <strong>Feb 2026 has the worst intent mix ever recorded.</strong></p>
+<hr>
+<h2>3. Content ROI Analysis</h2>
+<h3>3a. Top Shows Driving Trial Acquisitions (Oct 2025 – Jan 2026)</h3>
+<table>
+<tr><th>Show</th><th>Dialect</th><th>Trials Acquired</th></tr>
+<tr><td>Saanwari</td><td>Rajasthani</td><td>308,964</td></tr>
+<tr><td>Saanwari</td><td>Bhojpuri</td><td>265,413</td></tr>
+<tr><td>Jholachhap</td><td>Bhojpuri</td><td>248,217</td></tr>
+<tr><td>Saanwari</td><td>Haryanvi</td><td>214,285</td></tr>
+<tr><td>Others (aggregated)</td><td>Bhojpuri</td><td>199,704</td></tr>
+<tr><td>Others (aggregated)</td><td>Haryanvi</td><td>181,441</td></tr>
+<tr><td>Others (aggregated)</td><td>Rajasthani</td><td>138,290</td></tr>
+<tr><td>Chakka Jaam</td><td>Rajasthani</td><td>29,822</td></tr>
+<tr><td>Husband on Sale (Microdrama)</td><td>Haryanvi</td><td>20,834</td></tr>
+<tr><td>Mokhan Vahini 2</td><td>Rajasthani</td><td>13,152</td></tr>
+<tr><td>Bhairavi</td><td>Rajasthani</td><td>12,667</td></tr>
+<tr><td>Crorepati Biwi Ka Raaz (Microdrama)</td><td>Haryanvi</td><td>10,177</td></tr>
+</table>
+<p><strong>Saanwari dominates:</strong> Across 3 dialects, it drove 788K+ trials. This is a franchise-level property.</p>
+<h3>3b. Content Retention ROI: Which Shows Keep Users Subscribed?</h3>
+<p>Shows watched in M0 (Oct-Dec 2025 new subs) vs. mandate still active today:</p>
+<table>
+<tr><th>Show</th><th>Dialect</th><th>M0 Viewers</th><th>Still Active</th><th>**Retention %**</th></tr>
+<tr><td>प्रेम कबूतर (Prem Kabutar)</td><td>Haryanvi</td><td>294</td><td>11</td><td><strong>3.7%</strong></td></tr>
+<tr><td>1600 मीटर</td><td>Haryanvi</td><td>224</td><td>6</td><td><strong>2.7%</strong></td></tr>
+<tr><td>राखी रो कवच (Rakhi Ro Kavach)</td><td>Rajasthani</td><td>221</td><td>5</td><td><strong>2.3%</strong></td></tr>
+<tr><td>Akhada Phir Se</td><td>Haryanvi</td><td>298</td><td>7</td><td><strong>2.3%</strong></td></tr>
+<tr><td>Mayajaal</td><td>Haryanvi</td><td>265</td><td>6</td><td><strong>2.3%</strong></td></tr>
+<tr><td>बेरोज़गार इंजीनियर</td><td>Rajasthani</td><td>222</td><td>5</td><td><strong>2.3%</strong></td></tr>
+<tr><td>धाकड़ छोरियां</td><td>Haryanvi</td><td>820</td><td>18</td><td><strong>2.2%</strong></td></tr>
+<tr><td>मुंहनोचणी</td><td>Haryanvi</td><td>451</td><td>10</td><td><strong>2.2%</strong></td></tr>
+<tr><td>अखाड़ा (Akhada)</td><td>Haryanvi</td><td>1,664</td><td>33</td><td><strong>2.0%</strong></td></tr>
+<tr><td>पुनर्जन्म (Punarjanam)</td><td>Haryanvi</td><td>3,645</td><td>70</td><td><strong>1.9%</strong></td></tr>
+<tr><td>मायाजाल (Mayajaal)</td><td>Haryanvi</td><td>1,096</td><td>21</td><td><strong>1.9%</strong></td></tr>
+<tr><td>बजरी माफिया</td><td>Haryanvi</td><td>906</td><td>16</td><td><strong>1.8%</strong></td></tr>
+<tr><td>क्राइम हरियाणा</td><td>Haryanvi</td><td>712</td><td>13</td><td><strong>1.8%</strong></td></tr>
+<tr><td>अखाड़ा फिर से</td><td>Haryanvi</td><td>2,606</td><td>43</td><td><strong>1.7%</strong></td></tr>
+</table>
+<p><strong>Absolute retention is extremely low</strong> (1.7-3.7%). But the relative ranking reveals:</p>
+<ul>
+<li><strong>Haryanvi content has the best retention</strong> (most of the top 15 are Haryanvi)</li>
+<li><strong>Akhada franchise</strong> (Akhada + Akhada Phir Se): 4,568 viewers, 83 retained = decent at scale</li>
+<li><strong>Punarjanam</strong> (Mahapunarjanam): 3,645 viewers at 1.9% = highest absolute retention count (70 users)</li>
+<li><strong>Small niche shows</strong> (Prem Kabutar, 1600 Meter) retain better percentage-wise but small scale</li>
+</ul>
+<h3>3c. Key Content Insight</h3>
+<p>The gap between "content that drives trials" and "content that retains" is enormous:</p>
+<ul>
+<li><strong>Saanwari</strong> = trial acquisition machine (788K trials) but not in the top retention list</li>
+<li><strong>Akhada franchise</strong> = moderate acquisition, best retention at scale</li>
+<li><strong>Microdramas</strong> (Husband on Sale, Crorepati Biwi Ka Raaz) drive trials but don't appear in retention rankings</li>
+</ul>
+<p><strong>Implication:</strong> STAGE needs different content strategies for acquisition vs. retention. Current strategy is acquisition-optimized (Saanwari, microdramas for ads). Retention requires deeper, franchise-style content (Akhada, Punarjanam).</p>
+<hr>
+<h2>4. Summary: The Three Biggest Problems</h2>
+<h3>Problem 1: 60-65% of New Paid Subscribers Never Watch Anything</h3>
+<ul>
+<li>This is the single biggest retention lever</li>
+<li>The onboarding flow after payment needs a complete rethink</li>
+<li>Push notifications, D0 content recommendations, and "start watching" nudges could move this</li>
+</ul>
+<h3>Problem 2: D0 Trial Engagement Is Declining (67% → 48%)</h3>
+<ul>
+<li>Feb 2026 is the worst month on record for D0 engagement</li>
+<li>56% of Feb trial users show "low intent" on D0</li>
+<li>Correlates with scaling volume — more aggressive acquisition = lower quality</li>
+<li>The 1-day trial experiment (50/50 split) may improve this by forcing faster engagement</li>
+</ul>
+<h3>Problem 3: Content-Retention Gap</h3>
+<ul>
+<li>Shows that drive trials ≠ shows that retain users</li>
+<li>Haryanvi content retains best; needs more investment in franchise content</li>
+<li>Current ad strategy (microdramas) is optimized for top-of-funnel, not retention</li>
+<li>Need a "second show" strategy — after users finish their acquisition show, what's next?</li>
+</ul>
+<hr>
+<h2>5. Data Quality Notes</h2>
+<ul>
+<li>FCT_USER_ENGAGEMENT only has 7 columns (app opens, pulses, thumbnails) — no direct watch time</li>
+<li>FCT_USER_CONTENT_WATCH_DAILY has WATCHED_TIME_SEC — the real watch metric</li>
+<li>D0_USER_BUCKETS (DBT_VIZ) is the best pre-computed table for trial D0 analysis</li>
+<li>VIZ_NEW_SUBSCRIBER_M0_WATCH_ACTIVITY has day-by-day M0 data (169M rows)</li>
+<li>Mandate retention measured via DIM_MANDATES_SCD.CURRENT_STATUS = 'mandate_active'</li>
+<li>Content attribution via AGG_TRIAL_COUNTS_BY_CONTENT (uses FINAL_SHOW_SLUG)</li>
+</ul>
+<hr>
+<p><em>Analysis by HuMT | Data from ANALYTICS_PROD.DBT_CORE + DBT_VIZ + DBT_MARTS</em></p>
+
+<div class="footer">Built by 🥚 HuMT | For internal use only</div>
+</body>
+</html>

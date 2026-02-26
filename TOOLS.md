@@ -139,6 +139,18 @@ Supports: .ogg (WhatsApp voice notes)
 
 ---
 
+## Netlify (Presentations Site)
+
+- **Site URL:** https://humt-stage-analytics.netlify.app
+- **Site ID:** 959eb730-9142-4be7-a332-29a4b80bad0c
+- **Admin:** https://app.netlify.com/projects/humt-stage-analytics
+- **Token:** `nfp_PwRzhCXjf6yo2bibKDf2reQs3fSVqcX9fc46`
+- **Local files:** `data/serve/*.html`
+- **Deploy:** Netlify API (file hash + upload flow)
+- **Auto-deploy rule:** See Presentation Pipeline below
+
+---
+
 ## Rules
 
 - **Always save documents to Google Drive as Google Docs** (not markdown, not plain text). Use Drive API multipart upload with `mimeType: application/vnd.google-apps.document` and HTML content.
@@ -146,4 +158,25 @@ Supports: .ogg (WhatsApp voice notes)
 
 ---
 
-*Last updated: 2026-02-19*
+## ⚠️ Presentation Pipeline (MANDATORY — no exceptions)
+
+**When ANY new analysis, digest, or presentation is created:**
+
+1. **Create HTML** → `data/serve/<slug>.html` (Google Sans, #1a73e8 accent, callout boxes, footer credits HuMT)
+2. **Update index.html** → Add card in correct accordion section with `NEW` tag
+3. **Run deploy script** → `bash scripts/deploy-presentation.sh <filename>.html`
+   - Script validates: file exists, is linked in index, ALL files linked, deploys, verifies HTTP 200
+   - If script fails → FIX before moving on. Don't skip.
+4. **Upload to Google Drive** → As Google Doc in correct folder:
+   - Meeting digests → `1dcMjm4NLzlyds4MEjv4Ty1N45TCvAXF3`
+   - Strategy/Analysis → `155j3ClW1pK9FZHH6PkocG6DVkt9zeAzq`
+   - Presentations → `1VWodlfQ13a3Ihk0cs3a2uFlT3mMlNc1k`
+5. **Verify** → Confirm Netlify URL returns 200 AND Drive doc ID is valid
+
+**This is a 5-step atomic operation. Not 5 optional steps. ALL or NONE.**
+
+If you skip any step, HMT will catch it. He already caught the Drive gap once.
+
+---
+
+*Last updated: 2026-02-26*

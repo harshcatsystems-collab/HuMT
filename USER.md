@@ -896,3 +896,7 @@ May 14, 2010 — Vinay Singhal and Shashank Vaishnav (juniors at SRM) launched t
 - **Afternoon:** Deep work tolerance — lets long processes run, quiet stretches, checks in at inflection points not continuously
 - **Evening:** Fatigue is real but quality bar doesn't drop. If anything, he gets *more* demanding when tired, not less — because the cost of rework tomorrow is worse than getting it right tonight
 - **"i am not resting until we have this sorted"** — this is a pattern, not a one-off. Closure before rest. Every time.
+
+**Returns with warmth after silence** — Silence ≠ disengagement. Processes alone, returns when ready with genuine warmth. Don't interpret quiet as dissatisfaction. (confirmed: Feb 16, Feb 19, Feb 26)
+
+**Prefers living systems over static outputs** — Every output is a v1. Wants evolving architecture, not fixed deliverables. "Keep evolving as we move along" is the default expectation. (confirmed: Feb 16, Feb 23, Feb 26)

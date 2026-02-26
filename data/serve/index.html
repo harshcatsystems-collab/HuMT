@@ -1,28 +1,320 @@
 <!DOCTYPE html>
-<html><head><title>STAGE Analysis — Feb 23, 2026</title>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="favicon-180.png">
+<meta property="og:title" content="HuMT — STAGE Intelligence Hub">
+<meta property="og:description" content="STAGE Intelligence Hub — Analysis by HuMT">
+<meta property="og:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<meta property="og:url" content="https://humt-stage-analytics.netlify.app/index.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="🥚 HuMT — STAGE Intelligence Hub">
+<meta name="twitter:description" content="STAGE Intelligence Hub — Analysis by HuMT">
+<meta name="twitter:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<title>HuMT | 🥚 HuMT — STAGE Intelligence Hub</title>
 <style>
-body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 700px; margin: 60px auto; padding: 20px; background: #0a0a0f; color: #e8e8ef; }
-h1 { font-size: 28px; margin-bottom: 8px; }
-p.sub { color: #8888a0; margin-bottom: 30px; }
-h2 { font-size: 14px; color: #6366f1; margin-top: 30px; text-transform: uppercase; letter-spacing: 2px; }
-a { display: block; padding: 16px 20px; font-size: 17px; color: #e8e8ef; text-decoration: none; background: #13131a; border-radius: 10px; margin-bottom: 8px; border: 1px solid #2a2a3a; transition: all 0.2s; }
-a:hover { background: #1a1a24; border-color: #6366f1; }
-a span { color: #8888a0; font-size: 13px; display: block; margin-top: 4px; }
-</style></head>
+body { font-family: 'Google Sans', Arial, sans-serif; max-width: 900px; margin: 40px auto; color: #1a1a1a; line-height: 1.6; padding: 0 20px; background: #fff; }
+h1 { font-size: 36px; font-weight: 700; margin-bottom: 4px; }
+.hero-sub { color: #666; font-size: 16px; margin-bottom: 40px; }
+
+.stats-bar { display: flex; gap: 24px; margin: 24px 0; padding: 16px 24px; background: #f8f9fa; border-radius: 12px; border: 1px solid #e8e8e8; flex-wrap: wrap; }
+.stat { text-align: center; min-width: 80px; }
+.stat-num { font-size: 28px; font-weight: 700; color: #1a73e8; }
+.stat-label { font-size: 12px; color: #666; }
+
+/* Accordion */
+.accordion { margin: 16px 0; border: 1px solid #e8e8e8; border-radius: 12px; overflow: hidden; }
+.accordion-header { 
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 22px; cursor: pointer; background: #fff; 
+  transition: background 0.2s; user-select: none;
+}
+.accordion-header:hover { background: #f8f9fa; }
+.accordion-header h2 { font-size: 20px; margin: 0; padding: 0; border: none; color: #1a1a1a; }
+.accordion-header .section-meta { color: #999; font-size: 13px; }
+.accordion-header .chevron { 
+  font-size: 20px; color: #999; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px;
+}
+.accordion.open .chevron { transform: rotate(180deg); }
+.accordion-body { 
+  max-height: 0; overflow: hidden; transition: max-height 0.4s ease;
+}
+.accordion.open .accordion-body { max-height: 3000px; }
+.accordion-inner { padding: 0 22px 16px; }
+.section-desc { color: #666; font-size: 14px; margin-bottom: 12px; }
+
+.card { background: #fff; border: 1px solid #e8e8e8; border-radius: 10px; padding: 14px 18px; margin: 10px 0; transition: all 0.2s; display: block; text-decoration: none; }
+.card:hover { box-shadow: 0 3px 12px rgba(0,0,0,0.07); border-color: #1a73e8; transform: translateY(-1px); }
+.card-title { color: #1a73e8; font-size: 15px; font-weight: 600; margin-bottom: 3px; }
+.card-desc { color: #666; font-size: 13px; line-height: 1.4; }
+.card-meta { color: #999; font-size: 11px; margin-top: 6px; }
+
+.tag { display: inline-block; padding: 2px 7px; border-radius: 4px; font-size: 10px; font-weight: 700; color: white; margin-right: 4px; vertical-align: middle; }
+.tag-dashboard { background: #1a73e8; }
+.tag-strategy { background: #34a853; }
+.tag-cross { background: #9334e6; }
+.tag-meeting { background: #ea8600; }
+.tag-ai { background: #e8710a; }
+.tag-fundraise { background: #d93025; }
+.tag-data { background: #185abc; }
+.tag-new { background: #d93025; font-size: 9px; padding: 1px 5px; }
+
+.footer { margin-top: 64px; color: #999; font-size: 12px; border-top: 1px solid #e8e8e8; padding-top: 16px; }
+.footer a { color: #999; }
+</style>
+</head>
 <body>
-<h1>🥚 STAGE — Engagement & Growth Analysis</h1>
-<p class="sub">Feb 23, 2026 · HuMT for HMT</p>
 
-<h2>Presentations</h2>
-<a href="stage-retention-engagement.html">🎯 Retention & Engagement Strategy<span>Deep reflection across all dashboards — the master document</span></a>
-<a href="weekly-watch-retention.html">📊 Weekly Watch Retention<span>WoW decline from 50.3%→40.8%, two cliffs identified, core user erosion</span></a>
-<a href="tv-adoption.html">📺 TV App Adoption<span>2.4x D30 retention, 5x watchtime — the hidden lever at 2% penetration</span></a>
-<a href="microdrama.html">⚡ Micro Drama Performance<span>833K users, gateway hypothesis, cross-format 8pp lift</span></a>
-<a href="dormant.html">💤 Dormant Subscribers<span>1.1M dormants, 13:1 ratio, resurrection playbook</span></a>
-<a href="growth-strategy-presentation.html">📈 Growth Strategy<span>D0→D1 cliff (50pp drop), funnel is a sieve, 79% of trials wasted</span></a>
-<a href="m0-engagement.html">🔬 M0 Engagement<span>65% zero activity, Bhojpuri gap, acquisition quality problem</span></a>
+<div style="display:flex;align-items:center;gap:16px;">
+<img src="humt-avatar.png" alt="HuMT" style="width:56px;height:56px;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.12);">
+<h1 style="margin:0;">HuMT Intelligence Hub</h1>
+</div>
+<p class="hero-sub">Living archive of analyses, presentations, and strategic work for STAGE</p>
 
-<h2>Analyses</h2>
-<a href="growth-strategy-analysis.html">📈 Growth Strategy — Deep Analysis<span>Root cause: recall problem, not engagement problem</span></a>
-<a href="unified-engagement.html">🔄 Unified Engagement Strategy<span>Cross-dashboard synthesis and action priorities</span></a>
-</body></html>
+<div class="stats-bar">
+<div class="stat"><div class="stat-num">6</div><div class="stat-label">Dashboards</div></div>
+<div class="stat"><div class="stat-num">4</div><div class="stat-label">Strategy Decks</div></div>
+<div class="stat"><div class="stat-num">2</div><div class="stat-label">AI Initiatives</div></div>
+<div class="stat"><div class="stat-num">6</div><div class="stat-label">Meeting Digests</div></div>
+<div class="stat"><div class="stat-num">3</div><div class="stat-label">Fundraise</div></div>
+<div class="stat"><div class="stat-num">4</div><div class="stat-label">Data Infra</div></div>
+</div>
+
+<!-- ============ DASHBOARD ANALYSES ============ -->
+<div class="accordion open">
+<div class="accordion-header" onclick="toggle(this)">
+<div><h2>📊 Dashboard Analyses</h2><span class="section-meta">6 documents · Metabase deep dives</span></div>
+<span class="chevron">▼</span>
+</div>
+<div class="accordion-body">
+<div class="accordion-inner">
+<p class="section-desc">Deep dives into STAGE Metabase dashboards — data ingestion, pattern identification, and actionable recommendations</p>
+
+<a class='card' href="m0-engagement.html">
+<div class="card-title"><span class="tag tag-dashboard">#2182</span> M0 Engagement — Where We Lose Users</div>
+<div class="card-desc">65% M0 subs = ghosts. Watch conversion stuck at 3%. Bhojpuri gap. 98-card ingestion.</div>
+<div class="card-meta">Feb 23 · 98 cards · Engagement Pod</div>
+</a>
+
+<a class='card' href="weekly-watch-retention.html">
+<div class="card-title"><span class="tag tag-dashboard">#1490</span> Active Subscription Watch Retention</div>
+<div class="card-desc">WoW retention declining (50%→41%). Repeat 2 eroding. Watcher base down 38% in 5 weeks.</div>
+<div class="card-meta">Feb 23 · 46 cards · Engagement Pod</div>
+</a>
+
+<a class='card' href="tv-adoption.html">
+<div class="card-title"><span class="tag tag-dashboard">#1291</span> TV App Adoption</div>
+<div class="card-desc">3-5x watch time lift but only 1.2% trial activation. Broken funnel, massive upside.</div>
+<div class="card-meta">Feb 23 · 60 cards · Growth Pod</div>
+</a>
+
+<a class='card' href="microdrama.html">
+<div class="card-title"><span class="tag tag-dashboard">#2941</span> Micro Drama Performance</div>
+<div class="card-desc">Gateway hypothesis confirmed (70-88% D0 activation). CTR crashed after Feb 19. 111 shows.</div>
+<div class="card-meta">Feb 23 · 28 cards · Engagement Pod</div>
+</a>
+
+<a class='card' href="dormant.html">
+<div class="card-title"><span class="tag tag-dashboard">Dashboard</span> Dormant Users</div>
+<div class="card-desc">1.17M dormants (74% of base). CLM resurrection +143-180%. 2-week window.</div>
+<div class="card-meta">Feb 23 · Engagement Pod</div>
+</a>
+
+<a class='card' href="retention-board-deck.html">
+<div class="card-title"><span class="tag tag-dashboard">Board</span> Retention Board Deck (Jan 2026)</div>
+<div class="card-desc">#3 M1 retention (53%) but #9 M3 (22%). Cross-format +8pp. TV 2.4x D30. Competitive benchmarks.</div>
+<div class="card-meta">Jan 2026 · Board review</div>
+</a>
+
+</div></div></div>
+
+<!-- ============ STRATEGIC PRESENTATIONS ============ -->
+<div class="accordion">
+<div class="accordion-header" onclick="toggle(this)">
+<div><h2>📈 Strategic Presentations</h2><span class="section-meta">4 documents · Cross-dashboard synthesis</span></div>
+<span class="chevron">▼</span>
+</div>
+<div class="accordion-body">
+<div class="accordion-inner">
+<p class="section-desc">Strategy frameworks connecting multiple data sources into actionable recommendations</p>
+
+<a class='card' href="stage-retention-engagement.html">
+<div class="card-title"><span class="tag tag-cross">Cross</span> STAGE Retention & Engagement Strategy</div>
+<div class="card-desc">Master strategy connecting all 5 dashboards. The unified retention framework.</div>
+<div class="card-meta">Feb 23 · M0 + Retention + TV + Microdrama + Dormant</div>
+</a>
+
+<a class='card' href="growth-strategy-presentation.html">
+<div class="card-title"><span class="tag tag-strategy">Strategy</span> Growth Strategy</div>
+<div class="card-desc">Acquisition funnels, trial optimization, activation framework. Prioritized recommendations.</div>
+<div class="card-meta">Feb 23 · Growth Pod</div>
+</a>
+
+<a class='card' href="growth-strategy-analysis.html">
+<div class="card-title"><span class="tag tag-strategy">Deep</span> Growth Strategy — Deep Analysis</div>
+<div class="card-desc">Extended analysis with data tables, cohort breakdowns, detailed prioritization.</div>
+<div class="card-meta">Feb 23 · Growth Pod</div>
+</a>
+
+<a class='card' href="unified-engagement.html">
+<div class="card-title"><span class="tag tag-cross">Cross</span> Unified Engagement Strategy</div>
+<div class="card-desc">M0 → retention → TV → microdrama → dormant in one coherent framework.</div>
+<div class="card-meta">Feb 23 · Engagement + Growth</div>
+</a>
+
+</div></div></div>
+
+<!-- ============ AI INITIATIVES ============ -->
+<div class="accordion">
+<div class="accordion-header" onclick="toggle(this)">
+<div><h2>🤖 AI Initiatives</h2><span class="section-meta">2 documents · Agentic frameworks</span></div>
+<span class="chevron">▼</span>
+</div>
+<div class="accordion-body">
+<div class="accordion-inner">
+<p class="section-desc">AI strategy meetings, agentic frameworks, and automation initiatives</p>
+
+<a class='card' href="ai-filmmaking-digest.html">
+<div class="card-title"><span class="tag tag-ai">AI</span> <span class="tag tag-new">NEW</span> AI Film Making Update</div>
+<div class="card-desc">Multi-agent filmmaking: story → image pipeline. Character consistency solved. Architect for prompt-to-video now.</div>
+<div class="card-meta">Feb 25 · Led by Shashank · All co-founders</div>
+</a>
+
+<a class='card' href="perf-ads-automation.html">
+<div class="card-title"><span class="tag tag-ai">AI</span> <span class="tag tag-new">NEW</span> Performance Ads Automation</div>
+<div class="card-desc">Rule-based → agentic perf marketing. 3 layers. 65% M0 ghosts. LTV vs CPA as new north star.</div>
+<div class="card-meta">Feb 25 · Vipul, Shashank, Gopal + co-founders</div>
+</a>
+
+</div></div></div>
+
+<!-- ============ MEETING DIGESTS ============ -->
+<div class="accordion">
+<div class="accordion-header" onclick="toggle(this)">
+<div><h2>📝 Meeting Digests</h2><span class="section-meta">6 documents · Decisions & action items</span></div>
+<span class="chevron">▼</span>
+</div>
+<div class="accordion-body">
+<div class="accordion-inner">
+<p class="section-desc">Structured digests with decisions, action items, and strategic implications</p>
+
+<a class='card' href="content-strategy-2.0.html">
+<div class="card-title"><span class="tag tag-meeting">Meeting</span> Content Strategy 2.0 — Consolidated</div>
+<div class="card-desc">105-min meeting. Format-first budgeting, culture-as-wrapper debate, non-fiction as game-changer. 14,472 words transcribed.</div>
+<div class="card-meta">Feb 23 · All co-founders + content team</div>
+</a>
+
+<a class='card' href="content-strategy-decisions.html">
+<div class="card-title"><span class="tag tag-meeting">Decisions</span> Content Strategy 2.0 — Decision Catalog</div>
+<div class="card-desc">33 decisions tracked. Feb 19 → Feb 23 evolution. What changed, what held, why.</div>
+<div class="card-meta">Feb 19–23 · Cross-session tracking</div>
+</a>
+
+<a class='card' href="content-strategy-feb19.html">
+<div class="card-title"><span class="tag tag-meeting">Meeting</span> Content Strategy — Analysis (Feb 19)</div>
+<div class="card-desc">First content strategy meeting. Foundation for 2.0. Renu's pushback, Nishita's Patna field data.</div>
+<div class="card-meta">Feb 19 · Content team + co-founders</div>
+</a>
+
+<a class='card' href="series-c-vivek-call.html">
+<div class="card-title"><span class="tag tag-meeting">Call</span> Vinay × Vivek (Goodwater) — Deck Review</div>
+<div class="card-desc">Structural deck feedback, AI demo reaction, Alteria debt strategy, Vivek hyping STAGE internally.</div>
+<div class="card-meta">Feb 24 · Vinay + Vivek Subramanian</div>
+</a>
+
+<a class='card' href="blume-context.html">
+<div class="card-title"><span class="tag tag-meeting">Context</span> Blume Ventures — Meeting Intelligence</div>
+<div class="card-desc">Monthly catchup context. Marmik's competitive intel, Karthik Reddy dynamics, relationship mapping.</div>
+<div class="card-meta">Ongoing · Monthly Blume catchups</div>
+</a>
+
+<a class='card' href="manasvi-data-alignment.html">
+<div class="card-title"><span class="tag tag-meeting">Analysis</span> Manasvi Work vs Live Data</div>
+<div class="card-desc">HP Personalisation data audit. Gap between working model and live Metabase data.</div>
+<div class="card-meta">Feb 19 · HP Personalisation weekly</div>
+</a>
+
+</div></div></div>
+
+<!-- ============ FUNDRAISE ============ -->
+<div class="accordion">
+<div class="accordion-header" onclick="toggle(this)">
+<div><h2>💰 Fundraise & Investor</h2><span class="section-meta">3 documents · Series C preparation</span></div>
+<span class="chevron">▼</span>
+</div>
+<div class="accordion-body">
+<div class="accordion-inner">
+<p class="section-desc">Series C deck reviews, investor context, and pitch materials</p>
+
+<a class='card' href="series-c-master.html">
+<div class="card-title"><span class="tag tag-fundraise">Series C</span> Fundraise — Master Context</div>
+<div class="card-desc">Complete context: Goodwater + Blume co-leading, $25M ask, terms, cash position, Alteria option.</div>
+<div class="card-meta">Feb 2026 · Living document</div>
+</a>
+
+<a class='card' href="series-c-vivek-call.html">
+<div class="card-title"><span class="tag tag-fundraise">Deck</span> Vivek Deck Feedback + AI Demo</div>
+<div class="card-desc">Merge TAM upfront, rename slides, remove valuation, lead with existing business. Culture productization demo impressed.</div>
+<div class="card-meta">Feb 24 · Goodwater board member</div>
+</a>
+
+<a class='card' href="retention-board-deck.html">
+<div class="card-title"><span class="tag tag-fundraise">Board</span> Retention Board Deck — Pitch Ammunition</div>
+<div class="card-desc">#3 M1 retention, cross-format lift, TV premium, competitive benchmarks. Data for the pitch.</div>
+<div class="card-meta">Jan 2026 · Board material</div>
+</a>
+
+</div></div></div>
+
+<!-- ============ DATA INFRASTRUCTURE ============ -->
+<div class="accordion">
+<div class="accordion-header" onclick="toggle(this)">
+<div><h2>🗄️ Data Infrastructure</h2><span class="section-meta">4 documents · Metabase, Snowflake, dbt, CMS</span></div>
+<span class="chevron">▼</span>
+</div>
+<div class="accordion-body">
+<div class="accordion-inner">
+<p class="section-desc">Technical reference: dashboards, warehouse, transformation models, content system</p>
+
+<a class='card' href="metabase-catalog.html">
+<div class="card-title"><span class="tag tag-data">Metabase</span> Dashboard Catalog</div>
+<div class="card-desc">Complete map of dashboards. Card counts, owners, data sources, SQL patterns.</div>
+<div class="card-meta">50+ dashboards · Living catalog</div>
+</a>
+
+<a class='card' href="snowflake-analysis.html">
+<div class="card-title"><span class="tag tag-data">Snowflake</span> Data Warehouse — Deep Analysis</div>
+<div class="card-desc">Architecture: schemas, key tables, query patterns, data freshness.</div>
+<div class="card-meta">Data infrastructure reference</div>
+</a>
+
+<a class='card' href="dbt-model.html">
+<div class="card-title"><span class="tag tag-data">dbt</span> Data Transformation Models</div>
+<div class="card-desc">Model catalog: transformations, dependencies, lineage. Raw → analytics-ready.</div>
+<div class="card-meta">Data infrastructure reference</div>
+</a>
+
+<a class='card' href="cms-intelligence.html">
+<div class="card-title"><span class="tag tag-data">CMS</span> CMS Intelligence System</div>
+<div class="card-desc">1,256 titles, API endpoints, content types, transcoding, dialect distribution.</div>
+<div class="card-meta">1,256 titles · API mapped</div>
+</a>
+
+</div></div></div>
+
+<!-- ============ FOOTER ============ -->
+<div class="footer">
+Built by HuMT — STAGE Intelligence Hub<br>
+Last updated: Feb 26, 2026 · Hosted on <a href="https://app.netlify.com/projects/humt-stage-analytics">Netlify</a> · For internal use only<br>
+New content added automatically. Categories evolve with the work.
+</div>
+
+<script>
+function toggle(header) {
+  header.parentElement.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>

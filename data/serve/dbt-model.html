@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="favicon-180.png">
+<meta property="og:title" content="dbt Data Model — STAGE Analytics">
+<meta property="og:description" content="Grain: One row per user_id">
+<meta property="og:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<meta property="og:url" content="https://humt-stage-analytics.netlify.app/dbt-model.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="dbt Data Model — STAGE Analytics">
+<meta name="twitter:description" content="Grain: One row per user_id">
+<meta name="twitter:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<title>HuMT | dbt Data Model — STAGE Analytics</title>
+
+<style>
+body { font-family: 'Google Sans', Arial, sans-serif; max-width: 900px; margin: 40px auto; color: #1a1a1a; line-height: 1.6; padding: 0 20px; }
+h1 { font-size: 28px; border-bottom: 3px solid #1a73e8; padding-bottom: 12px; margin-top: 48px; }
+h2 { font-size: 22px; color: #1a73e8; margin-top: 40px; border-bottom: 1px solid #e0e0e0; padding-bottom: 8px; }
+h3 { font-size: 17px; color: #333; margin-top: 24px; }
+h4 { font-size: 15px; color: #555; margin-top: 20px; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+th { background: #1a73e8; color: white; padding: 10px 14px; text-align: left; font-weight: 600; }
+td { padding: 8px 14px; border-bottom: 1px solid #e8e8e8; }
+tr:nth-child(even) td { background: #f8f9fa; }
+.callout { background: #fef7e0; border-left: 4px solid #f9ab00; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-red { background: #fce8e6; border-left: 4px solid #d93025; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-green { background: #e6f4ea; border-left: 4px solid #34a853; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+blockquote { border-left: 3px solid #1a73e8; margin: 16px 0; padding: 8px 16px; color: #444; font-style: italic; background: #f8f9fa; border-radius: 0 8px 8px 0; }
+code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+pre { background: #f1f3f4; padding: 16px; border-radius: 8px; overflow-x: auto; font-size: 13px; }
+.subtitle { color: #666; font-size: 16px; margin-top: -8px; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; color: white; margin-right: 6px; }
+.footer { color: #999; margin-top: 48px; font-size: 13px; border-top: 1px solid #e8e8e8; padding-top: 16px; }
+ul, ol { margin: 12px 0; }
+li { margin: 4px 0; }
+strong { color: #1a1a1a; }
+hr { border: none; border-top: 1px solid #e8e8e8; margin: 32px 0; }
+</style>
+
+</head>
+<body>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #e8e8e8;"><img src="humt-avatar.png" alt="HuMT" style="width:40px;height:40px;border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,0.1);"><span style="font-size:13px;color:#666;">HuMT Intelligence Hub</span></div>
+<h1>dbt Data Model — STAGE Analytics</h1>
+<p class="subtitle">Data transformation layer · Models, dependencies, lineage</p>
+<blockquote>Source: `data/dbt-repo/dbt-analytics-main/`<br>Last analyzed: 2026-02-20<br></blockquote>
+<hr>
+<h2>Architecture Overview</h2>
+<pre>RAW_PROD (Snowflake)
+├── mongo.*              → Core app data (users, subscriptions, content, mandates, watch history)
+├── events.*             → Client-side product events (Segment/RudderStack)
+├── events_appsflyer.*   → Attribution & marketing events (25+ event types)
+├── events_backend.*     → Server-side events (watch log, uninstall, trial)
+├── events_nest_backend.*→ Nest backend events (uninstall)
+├── events_infra.*       → CDN-level events (playback log, app open)
+├── events_web.*         → Web playback pulse
+├── clevertap.*          → Campaign & journey reports
+├── facebook_marketing.* → Facebook Ads insights (via Airbyte)
+├── google_ads.*         → Google Ads data (via Airbyte)
+└── finance_audit_uploads.* → PG transaction files (PhonePe, Paytm, Razorpay, Juspay, Setu, PayU, Stripe)
+
+     ↓ staging (stg_*)
+     ↓ intermediates (int_*)
+     ↓ dimensions (dim_*) + facts (fct_*)
+     ↓ marts (agg_*, msr_*, viz_*)
+
+ANALYTICS_PROD.DBT_CORE   → dimensions + facts
+ANALYTICS_PROD.DBT_ADHOC  → adhoc analyses
+ANALYTICS_PROD.DBT_MARTS  → aggregated business metrics
+</pre>
+<hr>
+<h2>Dimensions (9 tables)</h2>
+<h3>dim_users</h3>
+<p><strong>Grain:</strong> One row per user_id</p>
+<p><strong>Key columns:</strong></p>
+<ul>
+<li><code>user_id</code>, <code>device_os</code>, <code>device_model</code>, <code>device_id</code>, <code>app_id</code></li>
+<li><code>primary_mobile_number</code>, <code>email</code>, <code>user_name</code>, <code>full_name</code></li>
+<li><code>current_city</code>, <code>current_state</code>, <code>current_country</code>, <code>latitude</code>, <code>longitude</code></li>
+<li><code>language</code>, <code>dialect</code> (from first trial)</li>
+<li><code>payment_method</code>, <code>subscription_source</code>, <code>onboarding_status</code></li>
+<li><code>is_verified</code>, <code>has_opted_in_on_whatsapp</code>, <code>has_uninstalled</code>, <code>are_notifications_active</code></li>
+<li><strong><code>subscription_status</code></strong>: <code>active_trial</code> | <code>trial_churned</code> | <code>active_subscribers</code> | <code>subscription_churned</code> | <code>non_subscriber</code> | <code>unknown</code></li>
+<li>Derived from latest subscription + first trial dates vs current_date</li>
+<li><code>first_trial_date</code>, <code>days_since_subscription_started</code>, <code>days_since_app_installed</code></li>
+<li><code>latest_plan_id</code></li>
+<li><strong>Attribution fields:</strong> <code>acquiring_campaign_id/name</code>, <code>acquiring_adset_id/name</code>, <code>acquiring_ad_id/name</code>, <code>acquiring_media_source</code>, <code>acquiring_channel_name</code>, <code>acquiring_site_name</code></li>
+<li>Sourced from AppsFlyer <code>trial_activated</code> where <code>is_primary_attribution = true</code></li>
+<li><code>remind_me_list</code> (array)</li>
+</ul>
+<p><strong>Sources:</strong> <code>stg_mongo_users</code> + <code>stg_mongo_usersubscriptionhistory</code> + <code>stg_events_appsflyer_trial_activated</code></p>
+<h3>dim_content</h3>
+<p><strong>Grain:</strong> One row per content_id (episode/movie)</p>
+<p><strong>Key columns:</strong></p>
+<ul>
+<li><code>content_id</code>, <code>show_id</code>, <code>content_title</code>, <code>show_title</code></li>
+<li><code>content_dialect</code>, <code>content_status</code> (active/preview-published only)</li>
+<li><code>content_slug</code>, <code>show_slug</code>, <code>season_id</code>, <code>episode_order</code></li>
+<li><code>content_type</code>: <code>Individual</code> (≤1 episode) or <code>Show</code></li>
+<li><code>genre_list</code>, <code>sub_genre_list</code></li>
+<li><code>duration_sec</code>, <code>duration_bucket</code> (0-10 min, 10-30 min, 30-60 min, 60-90 min, 90-120 min, 120+ min)</li>
+<li><code>total_show_duration_sec/min</code> (sum of all episodes in show)</li>
+<li><code>is_premium</code>, <code>is_episode_free</code>, <code>is_coming_soon</code></li>
+<li><code>intro_start_time_sec</code>, <code>intro_end_time_sec</code> (for skip intro)</li>
+<li><code>release_date</code>, <code>created_at</code></li>
+<li><code>display_language</code></li>
+</ul>
+<p><strong>Sources:</strong> <code>stg_mongo_episodes</code> + <code>stg_mongo_shows</code></p>
+<h3>dim_dates</h3>
+<p><strong>Grain:</strong> One row per calendar day (1900-01-01 to 2100-01-01)</p>
+<p><strong>Key columns:</strong> Standard date dimension — <code>base_date</code>, <code>calendar_week/month/quarter/year</code>, <code>day_name</code>, <code>month_name</code>, <code>day_of_week/month/year</code>, <code>week_of_year</code>, <code>is_weekday</code></p>
+<p><strong>Utility:</strong> Join on any date column for easy time-based aggregation</p>
+<h3>dim_devices</h3>
+<p><strong>Grain:</strong> One row per (device_id, app_id, app_version, os_version, platform) — SCD Type 2</p>
+<p><strong>Key columns:</strong> <code>device_id</code>, <code>app_id</code>, <code>app_version</code>, <code>device_os_version</code>, <code>device_platform</code>, <code>valid_from</code>, <code>valid_to</code></p>
+<p><strong>Source:</strong> <code>stg_events_app_open</code></p>
+<h3>dim_planid</h3>
+<p><strong>Grain:</strong> One row per plan record</p>
+<p><strong>Key columns:</strong> <code>id</code>, <code>os</code>, <code>item_id</code>, <code>plan_id</code>, <code>status</code>, <code>discount</code>, <code>total_days</code>, <code>actual_price</code>, <code>paying_price</code>, <code>subscription_date_utc/ist</code>, <code>subscription_valid_utc/ist</code></p>
+<p><strong>Source:</strong> <code>stg_plans</code> (from <code>mongo.plans</code>)</p>
+<h3>dim_mandates_history</h3>
+<p><strong>Grain:</strong> One row per (mandate_id, status_value, status_changed_at) — SCD Type 2</p>
+<p><strong>Key columns:</strong></p>
+<ul>
+<li><code>mandate_id</code>, <code>user_id</code>, <code>app_id</code>, <code>plan_id</code></li>
+<li><code>current_status</code>, <code>status_value</code>, <code>status_changed_at_utc/ist</code></li>
+<li><code>effective_end_at_utc/ist</code>, <code>is_current</code></li>
+<li><code>payment_gateway</code>, <code>payment_options</code>, <code>max_amount</code>, <code>coupon_code_applied</code></li>
+<li><code>next_renewal_at_utc/ist</code>, <code>next_trigger_at_utc/ist</code></li>
+</ul>
+<p><strong>Source:</strong> <code>stg_mongo_mastermandates</code> with LATERAL FLATTEN on <code>status_history</code> array</p>
+<h3>dim_campaign (CleverTap)</h3>
+<p><strong>Grain:</strong> One row per campaign_id</p>
+<p><strong>Key columns:</strong> <code>campaign_id</code>, <code>campaign_name</code>, <code>journey_id</code>, <code>journey_name</code>, <code>channel</code>, <code>campaign_master_type</code>, <code>campaign_type</code>, <code>status</code>, <code>template_type</code>, <code>dialect</code>, <code>is_in_master_base</code>, <code>is_in_daily_schedule</code></p>
+<p><strong>Sources:</strong> <code>stg_clevertap_campaigns</code> + <code>stg_clevertap_daily_campaigns</code></p>
+<h3>dim_user_location</h3>
+<p><strong>Grain:</strong> One row per user_id</p>
+<p><strong>Key columns:</strong> <code>user_id</code>, <code>ip_address</code></p>
+<p><strong>Note:</strong> MaxMind GeoLite + H3 cell lookups are <strong>commented out</strong> — location enrichment not yet active. Currently just stores IP.</p>
+<p><strong>Sources:</strong> <code>stg_mongo_users</code> (IP) + <code>stg_events_app_open</code> (latest geo_ip)</p>
+<h3>dim_vendors_partners</h3>
+<p><strong>Grain:</strong> One row per vendor name</p>
+<p><strong>Key columns:</strong> <code>vendor</code>, <code>is_partner</code></p>
+<p><strong>Hardcoded seed data.</strong> Direct vendors: CMS, JUSPAY, RAZORPAY, SETU, STRIPE, PHONEPE, PAYTM, etc. Partners: PLAYBOX, AIRTEL, DORPLAY, OTTPLAY, DUROPLY, ANONET, SABOT, WATCHO</p>
+<hr>
+<h2>Facts (14 tables)</h2>
+<h3>fct_user_subscription_history ⭐ (Most important)</h3>
+<p><strong>Grain:</strong> One row per subscription record</p>
+<p><strong>Key columns:</strong></p>
+<ul>
+<li>All from <code>stg_mongo_usersubscriptionhistory</code>: <code>user_id</code>, <code>plan_id</code>, <code>plan_type</code>, <code>vendor</code>, <code>dialect</code>, <code>status</code>, <code>coupon_code</code>, <code>is_trial</code>, <code>is_valid_vendor</code>, <code>is_partner_vendor</code></li>
+<li><code>subscription_start_at_utc/ist</code>, <code>subscription_end_at_utc/ist</code>, <code>created_at_utc/ist</code></li>
+<li><code>actual_price</code>, <code>paying_price</code>, <code>master_mandate_id</code></li>
+<li><strong>Derived:</strong> <code>plan_order</code>, <code>primary_dialect</code> (first trial's dialect), <code>prev_is_trial</code>, <code>prev_plan_id</code></li>
+<li><strong><code>plan_category</code></strong>: <code>Trial</code> | <code>New Subscription</code> | <code>Renewal</code></li>
+<li>Trial → plan_id contains "trial"</li>
+<li>New Subscription → first ever paid, or first after a trial</li>
+<li>Renewal → all subsequent paid</li>
+<li><strong><code>subscription_user_type</code></strong> (for New Subscriptions only):</li>
+<li><code>trial_autopay_user</code> — had trial, auto-converted</li>
+<li><code>trial_returning_user</code> — had trial + prior subscription, came back</li>
+<li><code>direct_autopay_user</code> — no trial, first subscription</li>
+<li><code>direct_returning_user</code> — no trial but had prior subscription</li>
+</ul>
+<p><strong>Filters:</strong> Only <code>is_valid_vendor = true</code>, excludes <code>resume_trial%</code> plans</p>
+<h3>fct_user_content_watch_daily ⭐</h3>
+<p><strong>Grain:</strong> One row per (user_id, content_id, watch_date)</p>
+<p><strong>Key columns:</strong></p>
+<ul>
+<li><code>user_id</code>, <code>content_id</code>, <code>watch_date</code></li>
+<li><code>watch_start_time_utc/ist</code>, <code>watch_end_time_utc/ist</code></li>
+<li><code>watched_time_sec</code> — <strong>takes minimum across 3 sources</strong> (conservative)</li>
+<li><code>last_watched_location_sec</code> — takes maximum across 3 sources</li>
+<li>Debug columns: <code>__pp_<em></code>, <code>__uwh_</em></code>, <code>__cdn_*</code> (per-source values)</li>
+</ul>
+<p><strong>Three sources reconciled via FULL OUTER JOIN:</strong></p>
+<ol>
+<li><code>int_playback_pulse_user_content_watch_daily</code> — client-side playback pulses</li>
+<li><code>int_watch_history_and_log_user_content_watch_daily</code> — server-side watch log + mongo watch history</li>
+<li><code>int_cdn_playback_pulse_user_content_watch_daily</code> — CDN-level playback logs</li>
+</ol>
+<h3>fct_user_content_watch_history</h3>
+<p><strong>Grain:</strong> One row per (user_id, content_id) — lifetime aggregate</p>
+<p><strong>Key columns:</strong></p>
+<ul>
+<li><code>finished_watching_date</code> (last watch date)</li>
+<li><code>watched_time_sec</code> (total across all days)</li>
+<li><code>last_watched_location_sec</code></li>
+<li><code>user_content_watch_rank</code> — ordered by finished_watching_date per user</li>
+</ul>
+<h3>fct_payment_gateway_transactions ⭐</h3>
+<p><strong>Grain:</strong> One row per payment gateway transaction</p>
+<p><strong>Key columns:</strong> <code>provider</code> (phonepe/razorpay/juspay/paytm/setu/payu/stripe) + all fields from intermediates</p>
+<p><strong>7 payment gateways unified</strong> via UNION ALL from intermediate models</p>
+<p><strong>Source files:</strong> Finance audit uploads (CSV/sheet uploads per gateway)</p>
+<h3>fct_playback_pulse</h3>
+<p><strong>Grain:</strong> Raw playback pulse events</p>
+<p><strong>Pass-through</strong> from <code>stg_events_playback_pulse</code></p>
+<h3>fct_user_engagement</h3>
+<p><strong>Grain:</strong> One row per (user_id, device_id, event_date)</p>
+<p><strong>Key columns:</strong> <code>count_app_opens</code>, <code>count_playback_pulses</code>, <code>count_thumbnail_views</code>, <code>count_thumbnail_clicks</code></p>
+<p><strong>Sources:</strong> app_open + playback_pulse + thumbnail_viewed + thumbnail_clicked</p>
+<h3>fct_marketing_ad_spends_daily</h3>
+<p><strong>Grain:</strong> One row per (spend_date, account_id, campaign_id, adset_id, ad_id, channel)</p>
+<p><strong>Key columns:</strong> <code>daily_spend</code>, <code>channel</code> (Facebook/Google), campaign/adset/ad hierarchy</p>
+<p><strong>Sources:</strong> Facebook Ads Insights + Google Ads ad_group_ad</p>
+<h3>fct_thumbnail_engagement</h3>
+<p><strong>Grain:</strong> One row per (report_date, user_id, content_id, widget, thumbnail position)</p>
+<p><strong>Key columns:</strong> <code>total_views</code>, <code>total_clicks</code>, widget metadata (name, position, key, show_format)</p>
+<h3>fct_frontend_events</h3>
+<p><strong>Grain:</strong> Union of 4 event types: app_open, playback_pulse, thumbnail_viewed, thumbnail_clicked</p>
+<p><strong>Key columns:</strong> <code>event_name</code>, <code>session_id</code>, <code>device_id</code>, <code>user_id</code>, content fields, widget fields, <code>event_at</code></p>
+<h3>fct_clevertap_campaign_report</h3>
+<p><strong>Grain:</strong> One row per (campaign_id, report_date, operating_system)</p>
+<p><strong>Key columns:</strong> <code>total_sent/viewed/clicked/delivered_users</code>, <code>total_sent/viewed/clicked_events</code>, <code>click_through_conversions</code>, <code>total_unsubscribes</code></p>
+<h3>fct_clevertap_journey_report</h3>
+<p><strong>Grain:</strong> One row per (journey_node_pk, report_date)</p>
+<p><strong>Key columns:</strong> <code>users_moved_forward/yes/no</code>, <code>users_timeout/completed_journey</code>, <code>total_sent/clicked/delivered</code>, <code>goal_1_conversions</code>, <code>users_goal_met</code></p>
+<h3>fct_user_ad_interaction / fct_user_ad_interactions</h3>
+<p><strong>Grain:</strong> Distinct (user_id, ad attribution fields) from all 25 AppsFlyer event types</p>
+<p><strong>Key columns:</strong> <code>user_id</code>, <code>campaign_id/name</code>, <code>adset_id/name</code>, <code>ad_id/name</code>, <code>media_source</code>, <code>channel_name</code>, <code>is_retargeting</code>, <code>is_primary_attribution</code></p>
+<p><strong>Note:</strong> Two versions exist — <code>fct_user_ad_interactions</code> adds <code>event_name</code> column</p>
+<hr>
+<h2>Marts (Business-Ready Aggregations)</h2>
+<h3>Subscriber Performance</h3>
+<ul>
+<li><strong><code>agg_subscription_counts_conditional</code></strong> — Trial/New Sub/Renewal counts by day/week/month, by dialect. Trials = count distinct users; Subs/Renewals = count rows.</li>
+<li><strong><code>agg_trial_counts_by_content</code></strong> — Trials mapped to first-watched content</li>
+<li><strong><code>d0_trial_conversion</code></strong> — D0 conversion: trials ending in last 30 days, whether they converted to paid same day</li>
+<li><strong><code>trial_count_today/this_week/this_month</code></strong> — Simple trial counts by time grain</li>
+</ul>
+<h3>MSR (Mandate Success Rate)</h3>
+<ul>
+<li><strong><code>msr_trial_plan_success_rate</code></strong> — Trial→Paid conversion with mandate status context</li>
+<li><strong><code>msr_trial_plan_success_rate_by_plan</code></strong> — Same but segmented by trial_plan_id and subscription_plan_id</li>
+<li><strong><code>msr_success_rate_cumulative_planwise</code></strong> — Cumulative conversion rate by days after trial end</li>
+<li><strong><code>success_rate_cumulative_by_plan_mom</code></strong> — Same by months after trial end</li>
+</ul>
+<h3>User Tagging</h3>
+<ul>
+<li><strong><code>never_watched_user_tagging</code></strong> — Incremental: tags renewal/D31-90 subscribers who didn't watch on D0</li>
+<li><strong><code>previously_watched_user_tagging</code></strong> — Incremental: tags resurrected subscribers with watch history context</li>
+</ul>
+<h3>Other</h3>
+<ul>
+<li><strong><code>subscription_info_support</code></strong> — Denormalized view for customer support (phone, email, plan, mandate status, PG txn ID)</li>
+<li><strong><code>agg_tv_adoption_counts</code></strong> — Samsung TV adoption metrics (references sandbox tables)</li>
+<li><strong><code>planid_analysis</code></strong> — Trial paywall → activation → D1 retention → conversion funnel by plan_id</li>
+</ul>
+<hr>
+<h2>Visualization Models (by analyst)</h2>
+<table>
+<tr><th>Analyst</th><th>Models</th><th>Focus</th></tr>
+<tr><td><strong>Hemabh Kamboj</strong></td><td>viz_aha_moment_achieved_trend, viz_monthly_trial_cohort_revenue, viz_habit_moment_achieved, viz_new_subscriber_cohort_watch_retention_engagement, viz_squadstack_dormant_calling</td><td>Engagement, cohort revenue, habit formation</td></tr>
+<tr><td><strong>Harshit Singh</strong></td><td>viz_new_subscriber_m0_watch_activity, viz_retention_m0_cohort_bucket_movement, viz_user_app_uninstall_till_date</td><td>M0 retention, uninstall tracking</td></tr>
+<tr><td><strong>Kartikey</strong></td><td>viz_monthly_trial_cohort_revenue_* (6 plan-specific models: monthly_99/149/199, quarterly_199/249/299/399)</td><td>Revenue cohorts by plan price</td></tr>
+<tr><td><strong>Ankur Kanaujia</strong></td><td>maino_app_metrics_cohort</td><td>App metrics cohort</td></tr>
+<tr><td><strong>Chetan Chawla</strong></td><td>d0_user_buckets</td><td>D0 user segmentation</td></tr>
+<tr><td><strong>Mohit Garg</strong></td><td>d0_calling, d1_calling</td><td>Outbound calling lists</td></tr>
+</table>
+<hr>
+<h2>Adhoc Models</h2>
+<ul>
+<li><strong><code>adhoc_subscribers_watch_retention</code></strong> — Core: maps each subscriber's daily watch activity vs subscription stage (D_0to7, D_8to14, D_15to30, D_31to60, D_61to90, RENEWAL), tracks eligibility (New/Resurrect 1-4), watch_action boolean</li>
+<li><strong><code>adhoc_trial_journey</code></strong> — Day-by-day trial journey: day_of_trial, watch activity, content consumed</li>
+<li><strong><code>adhoc_new_subscriber_retention_engagement</code></strong> — New subscriber cohort retention curves</li>
+<li><strong><code>adhoc_partner_subscription_history</code></strong> — Partner vendor subscription tracking</li>
+<li><strong><code>adhoc_remind_me_list</code></strong> — Users' "remind me" content wishlist</li>
+<li><strong><code>adhoc_user_app_install_status</code></strong> — App install/uninstall tracking</li>
+<li><strong><code>user_360_view</code></strong> — Single-user comprehensive view (subscription + watch + engagement)</li>
+</ul>
+<hr>
+<h2>Reverse ETL Models</h2>
+<ul>
+<li><strong><code>recomendation</code></strong> — Content recommendations pushed back to app</li>
+<li><strong><code>rev_clevertap_trial_users_activation</code></strong> — Trial user activation data → CleverTap</li>
+<li><strong><code>thumbnail_ctr</code></strong> — Thumbnail CTR data for A/B testing</li>
+<li><strong><code>user_watch_data</code></strong> — User watch data pushed to operational systems</li>
+</ul>
+<hr>
+<h2>Key Data Flows (Lineage)</h2>
+<h3>Subscription Funnel</h3>
+<pre>mongo.usersubscriptionhistory
+  → stg_mongo_usersubscriptionhistory
+    → fct_user_subscription_history (+ plan_category, subscription_user_type)
+      → agg_subscription_counts_conditional (daily/weekly/monthly counts)
+      → d0_trial_conversion (trial→paid same-day)
+      → msr_* (mandate success rates)
+      → subscription_info_support (customer support view)
+      → dim_users (subscription_status derived)
+</pre>
+<h3>Watch Activity</h3>
+<pre>events.playback_pulse + events_backend.user_watch_log + mongo.userwatchhistories + events_infra.cdn_playback_log
+  → stg_* (4 staging models)
+    → int_* (3 intermediate daily aggregations)
+      → fct_user_content_watch_daily (reconciled daily watch per user×content)
+        → fct_user_content_watch_history (lifetime aggregate)
+        → adhoc_subscribers_watch_retention (subscription stage × watch activity)
+        → never_watched_user_tagging / previously_watched_user_tagging
+</pre>
+<h3>Marketing Attribution</h3>
+<pre>events_appsflyer.* (25 event types)
+  → stg_events_appsflyer_* (25 staging models)
+    → fct_user_ad_interaction(s) (unified attribution)
+    → dim_users.acquiring_* fields (via trial_activated primary attribution)
+
+facebook_marketing.ads_insights + google_ads.ad_group_ad
+  → stg_marketing_* (4 staging models)
+    → fct_marketing_ad_spends_daily (unified daily ad spend)
+</pre>
+<h3>Payments</h3>
+<pre>finance_audit_uploads.{phonepe,paytm,razorpay,juspay,setu,payu,stripe}.*
+  → stg_finance_upload_* (16 staging models: transactions, refunds, settlements per gateway)
+    → int_payment_gateway_*_transactions (7 intermediate models, normalized schema)
+      → fct_payment_gateway_transactions (unified, with provider column)
+</pre>
+<hr>
+<h2>Answers to A7 Snowflake Data Model Questions</h2>
+<h3>Q1: Where are PG transactions?</h3>
+<p><strong><code>fct_payment_gateway_transactions</code></strong> — unified across all 7 gateways. Raw data comes from <code>finance_audit_uploads</code> database (CSV uploads), not real-time. Each gateway has its own staging model, then normalized via intermediate models into a common schema.</p>
+<h3>Q2: Watch history freshness</h3>
+<p><strong>Three independent data sources</strong> feed into <code>fct_user_content_watch_daily</code>:</p>
+<ol>
+<li><strong>Playback pulse</strong> (client events) — near real-time</li>
+<li><strong>Backend watch log</strong> (server events) — near real-time</li>
+<li><strong>CDN playback log</strong> (infra events) — near real-time</li>
+</ol>
+<p>All three are reconciled via FULL OUTER JOIN. The model uses <code>least_ignore_nulls()</code> for watched_time (conservative) and <code>greatest_ignore_nulls()</code> for last_watched_location (optimistic). Freshness depends on Snowflake ingestion pipeline — likely daily or near-daily batch.</p>
+<h3>Q3: Full data model</h3>
+<p><strong>Documented above.</strong> Star schema: 9 dimensions, 14+ fact tables, multiple mart aggregations. Primary grain entities: users, content, subscriptions, watch events, payments, ad attribution, campaigns.</p>
+<hr>
+<h2>Snowflake Schema/Database References</h2>
+<table>
+<tr><th>Database</th><th>Schema</th><th>Purpose</th></tr>
+<tr><td>`RAW_PROD`</td><td>`mongo`</td><td>MongoDB replica (users, episodes, shows, subscriptions, mandates, watch history)</td></tr>
+<tr><td>`RAW_PROD`</td><td>`events`</td><td>Client-side product events</td></tr>
+<tr><td>`RAW_PROD`</td><td>`events_appsflyer`</td><td>AppsFlyer attribution events</td></tr>
+<tr><td>`RAW_PROD`</td><td>`events_backend`</td><td>Server-side events</td></tr>
+<tr><td>`RAW_PROD`</td><td>`events_nest_backend`</td><td>Nest backend events</td></tr>
+<tr><td>`RAW_PROD`</td><td>`events_infra`</td><td>CDN/infra events</td></tr>
+<tr><td>`RAW_PROD`</td><td>`events_web`</td><td>Web events</td></tr>
+<tr><td>`RAW_PROD`</td><td>`clevertap`</td><td>CleverTap campaign data</td></tr>
+<tr><td>`RAW_PROD`</td><td>`facebook_marketing`</td><td>Facebook Ads (Airbyte)</td></tr>
+<tr><td>`RAW_PROD`</td><td>`google_ads`</td><td>Google Ads (Airbyte)</td></tr>
+<tr><td>`FINANCE_AUDIT_UPLOADS`</td><td>`phonepe/paytm/razorpay/juspay/setu/payu/stripe`</td><td>Payment gateway files</td></tr>
+<tr><td>`ANALYTICS_PROD`</td><td>`dbt_core`</td><td>Dimensions + Facts</td></tr>
+<tr><td>`ANALYTICS_PROD`</td><td>`dbt_adhoc`</td><td>Adhoc analyses</td></tr>
+<tr><td>`ANALYTICS_PROD`</td><td>`dbt_marts`</td><td>Business aggregations</td></tr>
+</table>
+<hr>
+<h2>Key Business Concepts</h2>
+<ul>
+<li><strong>Trial</strong> = 7-day ₹1 subscription (plan_id contains "trial")</li>
+<li><strong>Valid vendor</strong> = Direct payment (not partner). Partners: PLAYBOX, AIRTEL, DORPLAY, OTTPLAY, DUROPLY, ANONET, SABOT, WATCHO</li>
+<li><strong>Primary dialect</strong> = Dialect of user's first trial (not current dialect)</li>
+<li><strong>D0 conversion</strong> = Trial→Paid conversion on the same day trial ends</li>
+<li><strong>M0 watch activity</strong> = Watch behavior in first month of subscription</li>
+<li><strong>Aha moment</strong> = Engagement milestone tracked via AppsFlyer event</li>
+<li><strong>Habit moment</strong> = Recurring engagement pattern (Hemabh's viz model)</li>
+<li><strong>Subscription stages</strong>: D_0to7, D_8to14, D_15to30, D_31to60, D_61to90, RENEWAL</li>
+<li><strong>Eligibility types</strong>: New (first time in stage), Resurrect 1-4 (returning at increasing intervals)</li>
+</ul>
+<hr>
+<p><em>This document fully answers A7 (Snowflake data model questions) and eliminates dependency on Hemabh.</em></p>
+
+<div class="footer">Built by 🥚 HuMT | For internal use only</div>
+</body>
+</html>

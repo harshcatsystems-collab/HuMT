@@ -1,0 +1,101 @@
+{
+  "tracked_since": "2026-02-26T11:35:00Z",
+  "scan_method": "user_token_search",
+  "scan_query": "<@U0AE6043BB6>",
+  "threads": [
+    {
+      "channel": "#engagement-solver-team",
+      "channelId": "C0904NE9Y2K",
+      "messageTs": "1772099285.881159",
+      "postedBy": "HMT",
+      "type": "main_share",
+      "snapshot": {
+        "as_of": "2026-02-26T12:19:00Z",
+        "reply_count": 0,
+        "reactions": {
+          "eyes": ["U07LFSB0PM5"],
+          "100": ["U0719V1GX3Q", "U07Q1LJMR7B"],
+          "raised_hands": ["U0719V1GX3Q", "U0A4V6M3BT5"],
+          "rocket": ["U09QGG6HLG0"],
+          "saluting_face": ["U0AE6043BB6"]
+        },
+        "reactions_mapped": {
+          "👀 Vismit Bansal": "acknowledged",
+          "💯 Pranay Merchant": "strong approval",
+          "💯 Yatika Kashyap": "strong approval",
+          "🙌 Pranay Merchant": "appreciation",
+          "🚀 Vishnu TS": "excitement",
+          "🫡 HuMT (me)": "acknowledged"
+        },
+        "pending_responses": ["Ashish Pandey", "Manasvi Dobhal", "Samir Kumar"]
+      }
+    },
+    {
+      "channel": "#founders_sync",
+      "channelId": "GEJUR0WA2",
+      "messageTs": "1772101878.982649",
+      "postedBy": "HMT",
+      "type": "founders_share",
+      "snapshot": {
+        "as_of": "2026-02-26T12:19:00Z",
+        "reply_count": 2,
+        "reactions": {
+          "rocket": ["U0AE6043BB6"]
+        },
+        "replies": [
+          {
+            "ts": "1772102081.323719",
+            "user": "UEJV57HQW",
+            "user_name": "Parveen Singhal",
+            "summary": "Called it 'Gold' — wants dedicated time to discuss each analysis and convert to action items + execution plan.",
+            "reactions": { "heart": ["U05QMQHCVNY"] }
+          },
+          {
+            "ts": "1772105607.755409",
+            "user": "U0AE6043BB6",
+            "user_name": "HuMT",
+            "summary": "Acknowledged Parveen's feedback, offered to prep discussion points"
+          }
+        ],
+        "pending_responses": ["UEHET2Q2G (Vinay - on vacation)", "UE0KTBS8P (Shashank - asked to review sooner)"]
+      }
+    },
+    {
+      "channel": "mpdm-humt--harsh500--nikhil.nair--gopal (NEW - bot has access)",
+      "channelId": "C0AH4FP8VR9",
+      "old_channelId": "C0AH3GT5K6F",
+      "messageTs": "1772100032.944409",
+      "postedBy": "HMT",
+      "type": "private_share",
+      "note": "Bot is now a member — full read/write access",
+      "snapshot": {
+        "as_of": "2026-02-26T12:19:00Z",
+        "responses": [
+          {
+            "user": "U08L99D58PK",
+            "user_name": "Nikhil Nair",
+            "summary": "Blocked time today to go through it. Later shared Amplitude dashboards (TR app, D0/D1/D3 retention charts, web dashboard, AHA moment chart)."
+          },
+          {
+            "user": "U0A3B4GLZRS",
+            "user_name": "Gopal",
+            "summary": "Already on it."
+          }
+        ],
+        "hmt_followup": "Asked Gopal for all valid growth charts to take same approach and intensify"
+      }
+    },
+    {
+      "channel": "#finance-department",
+      "channelId": "C08PGK8CM32",
+      "messageTs": "1772092810.364019",
+      "postedBy": "U05HAE85RL2",
+      "type": "external_tag",
+      "note": "Someone tagged HuMT about Yes Bank → HSBC fund transfer. Not presentation-related.",
+      "snapshot": {
+        "as_of": "2026-02-26T12:19:00Z",
+        "status": "informational — no action needed from HuMT"
+      }
+    }
+  ]
+}

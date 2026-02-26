@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="favicon-180.png">
+<meta property="og:title" content="Manasvi Work vs Live Data — Alignment Analysis">
+<meta property="og:description" content="Date: February 19, 2026">
+<meta property="og:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<meta property="og:url" content="https://humt-stage-analytics.netlify.app/manasvi-data-alignment.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Manasvi Work vs Live Data — Alignment Analysis">
+<meta name="twitter:description" content="Date: February 19, 2026">
+<meta name="twitter:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<title>HuMT | Manasvi Work vs Live Data — Alignment Analysis</title>
+
+<style>
+body { font-family: 'Google Sans', Arial, sans-serif; max-width: 900px; margin: 40px auto; color: #1a1a1a; line-height: 1.6; padding: 0 20px; }
+h1 { font-size: 28px; border-bottom: 3px solid #1a73e8; padding-bottom: 12px; margin-top: 48px; }
+h2 { font-size: 22px; color: #1a73e8; margin-top: 40px; border-bottom: 1px solid #e0e0e0; padding-bottom: 8px; }
+h3 { font-size: 17px; color: #333; margin-top: 24px; }
+h4 { font-size: 15px; color: #555; margin-top: 20px; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+th { background: #1a73e8; color: white; padding: 10px 14px; text-align: left; font-weight: 600; }
+td { padding: 8px 14px; border-bottom: 1px solid #e8e8e8; }
+tr:nth-child(even) td { background: #f8f9fa; }
+.callout { background: #fef7e0; border-left: 4px solid #f9ab00; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-red { background: #fce8e6; border-left: 4px solid #d93025; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-green { background: #e6f4ea; border-left: 4px solid #34a853; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+blockquote { border-left: 3px solid #1a73e8; margin: 16px 0; padding: 8px 16px; color: #444; font-style: italic; background: #f8f9fa; border-radius: 0 8px 8px 0; }
+code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+pre { background: #f1f3f4; padding: 16px; border-radius: 8px; overflow-x: auto; font-size: 13px; }
+.subtitle { color: #666; font-size: 16px; margin-top: -8px; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; color: white; margin-right: 6px; }
+.footer { color: #999; margin-top: 48px; font-size: 13px; border-top: 1px solid #e8e8e8; padding-top: 16px; }
+ul, ol { margin: 12px 0; }
+li { margin: 4px 0; }
+strong { color: #1a1a1a; }
+hr { border: none; border-top: 1px solid #e8e8e8; margin: 32px 0; }
+</style>
+
+</head>
+<body>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #e8e8e8;"><img src="humt-avatar.png" alt="HuMT" style="width:40px;height:40px;border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,0.1);"><span style="font-size:13px;color:#666;">HuMT Intelligence Hub</span></div>
+<h1>Manasvi Work vs Live Data — Alignment Analysis</h1>
+<p class="subtitle">Feb 19, 2026 · HP Personalisation data audit</p>
+<p><strong>Date:</strong> February 19, 2026</p>
+<p><strong>Dashboard:</strong> #4699 — ML Widget vs Non-ML Widget (Thumbnail → Playback Funnel)</p>
+<p><strong>Data Sources:</strong> Metabase API (live), Manasvi's Feed PRD, Brainstorming Numbers, HP Personalisation Gemini Notes (Feb 19)</p>
+<hr>
+<h2>Dashboard Overview</h2>
+<p>Dashboard #4699 tracks the <strong>Thumbnail Viewed → Playback conversion</strong> funnel, comparing ML-powered widget ranking against static (Non-ML) widgets. Two views:</p>
+<ol>
+<li><strong>Real content only</strong> (excl. trailers, CONTENT_ID ≠ 0)</li>
+<li><strong>All playback</strong> (incl. trailers, CONTENT_ID = 0)</li>
+</ol>
+<p>Data available up to: <strong>19 Feb 2026, 17:42 IST</strong></p>
+<hr>
+<h2>Live Data Summary (Feb 19, 2026)</h2>
+<table>
+<tr><th>Metric</th><th>ML Widget</th><th>Non-ML Widget</th><th>Delta</th></tr>
+<tr><td><strong>Real Content Conversion</strong></td><td><strong>64.1%</strong></td><td>52.1%</td><td><strong>+12pp</strong></td></tr>
+<tr><td><strong>Any Playback Conversion</strong> (incl trailers)</td><td><strong>91.4%</strong></td><td>78.6%</td><td><strong>+12.8pp</strong></td></tr>
+<tr><td>Thumbnail Viewers</td><td>2,663</td><td>34,788</td><td>—</td></tr>
+<tr><td>Real Content Players</td><td>1,707</td><td>18,123</td><td>—</td></tr>
+</table>
+<h3>Non-ML Baseline Trend (Jan 26 → Feb 19)</h3>
+<table>
+<tr><th>Period</th><th>Avg Real Content Conversion (Non-ML)</th></tr>
+<tr><td>Jan 26–31</td><td>~49.1%</td></tr>
+<tr><td>Feb 1–7</td><td>~50.8%</td></tr>
+<tr><td>Feb 8–14</td><td>~51.8%</td></tr>
+<tr><td>Feb 15–19</td><td>~51.5%</td></tr>
+</table>
+<p>Baseline has been flat at 50-52% throughout. No organic lift — confirming static feeds plateau.</p>
+<h3>ML Widget Ramp-Up</h3>
+<table>
+<tr><th>Date</th><th>ML Viewers</th><th>ML Conversion (Real Content)</th><th>ML Conversion (Any Playback)</th></tr>
+<tr><td>Feb 18</td><td>9</td><td>55.6%</td><td>77.8%</td></tr>
+<tr><td>Feb 19</td><td>2,663</td><td>64.1%</td><td>91.4%</td></tr>
+</table>
+<p>ML Widget went live Feb 18 (soft launch), ramping to ~2,663 viewers on Feb 19 (~7% of total).</p>
+<hr>
+<h2>Alignment with Manasvi's Work</h2>
+<h3>✅ Strongly Aligned</h3>
+<p><strong>1. Core Hypothesis Validated</strong></p>
+<p>Manasvi's brainstorming doc (Jan 22) identified the key problem: the "Special for you" tray had a <strong>0.27% CTR — essentially broken</strong>. Her recommendation was to replace static popularity-based widgets with personalized, ML-driven ranking.</p>
+<p>Dashboard result: <strong>+12pp conversion lift</strong> on Day 2 of ML Widget. Her hypothesis is being validated.</p>
+<p><strong>2. Phased Approach Playing Out</strong></p>
+<p>Her PRD (Jan 27) laid out a clear progression:</p>
+<ul>
+<li>Epic 1: Rule-based contextual ranking (no ML)</li>
+<li>Epic 2: Simple collaborative filtering ("Because You Watched")</li>
+<li>Epic 3: ML-based evolving system (auto-decides tray/title ordering)</li>
+</ul>
+<p>The "ML Widget" in the dashboard represents Epic 2/3 going live. The flat Non-ML baseline confirms her prediction that static feeds plateau.</p>
+<p><strong>3. Continue Watching Results Corroborate</strong></p>
+<p>From the Feb 19 HP Personalisation meeting:</p>
+<ul>
+<li>Continue Watching notifications showed <strong>2x D1 retention lift</strong></li>
+<li>D3: 13% vs 5% (control), D7: 8% vs 3% (control)</li>
+<li>+9 minutes absolute watch time increase</li>
+<li>Scaled on Jan 26</li>
+</ul>
+<p>Looking at the Non-ML baseline: slight uptick from ~49% (late Jan) to ~51-52% (Feb) could partly reflect the notification flow driving users back → higher thumbnail-to-playback conversion.</p>
+<p><strong>4. Data Analysis Quality</strong></p>
+<p>Manasvi's brainstorming doc contained extensive Snowflake analysis:</p>
+<ul>
+<li>Subscription distribution by dialect (599K Bhojpuri trials, 388K Haryanvi, 399K Rajasthani)</li>
+<li>Trial watch depth: 8-12% "No Watch" problem (52K users/month)</li>
+<li>Cross-dialect consumption: 25-37% watch outside registered dialect</li>
+<li>RFD segmentation: 68% of active subscribers have no watch activity in 30 days</li>
+<li>Celebrity endorsement trays 5x higher CTR than "Special for you"</li>
+<li>Time-of-day patterns: short-form daytime, movies nighttime</li>
+</ul>
+<p>All of this informed the ML Widget strategy and the Limited HP MVP design.</p>
+<hr>
+<h3>⚠️ Gaps / Questions to Investigate</h3>
+<p><strong>1. ML Widget Volume Is Small (~7%)</strong></p>
+<ul>
+<li>Feb 19: 2,663 ML viewers vs 34,788 Non-ML</li>
+<li>Manasvi mentioned a <strong>10% user pool test</strong> for the Limited HP MVP</li>
+<li>Current split is ~7%, not 10% — either ramp isn't complete or targeting is narrower than planned</li>
+<li>Need 3-5 more days for statistical confidence</li>
+</ul>
+<p><strong>2. Which Test Is This Dashboard Tracking?</strong></p>
+<p>Manasvi launched <strong>two distinct experiments</strong> this week:</p>
+<table>
+<tr><th>Experiment</th><th>What It Does</th><th>Target Users</th></tr>
+<tr><td><strong>Limited HP MVP</strong></td><td>Stripped-down homepage (3 rails only) for first 3 impressions</td><td>M0 users with <2 completed titles</td></tr>
+<tr><td><strong>ML Widget Ranking</strong></td><td>ML-ranked content within individual widgets</td><td>Broader user base</td></tr>
+</table>
+<p>Dashboard #4699 is labeled "ML Widget vs Non-ML Widget" — sounds like <strong>widget-level ML ranking</strong>, not the Limited HP layout test. These are different experiments measuring different things.</p>
+<p><strong>Need to confirm:</strong> Is dashboard #4699 tracking the widget-level ML ranking, the Limited HP layout, or a blend?</p>
+<p><strong>3. 0.8% Notification CTR Concern</strong></p>
+<p>Manasvi flagged that Continue Watching notification CTR is only 0.8% and recommended limiting to 10-20% of users to avoid notification fatigue. This is a <strong>separate surface</strong> (push notifications) from the homepage funnel (dashboard #4699), but they're related levers in the same pipeline.</p>
+<p><strong>4. Missing: Cohort-Level Breakdown</strong></p>
+<p>Manasvi's most valuable analytical work was the <strong>cohort-level segmentation</strong>:</p>
+<ul>
+<li>Trial No-Watch: 14.5% of trials</li>
+<li>Trial Single Title: 13.3%</li>
+<li>M0 subscribers: 68% no activity in 30 days</li>
+<li>Champions vs Browsers vs Lapsed</li>
+</ul>
+<p>Dashboard #4699 shows <strong>aggregate</strong> ML vs Non-ML only. The ML Widget might be working great for Champions but poorly for No-Watch users, and we can't tell from this view.</p>
+<p><strong>Recommendation:</strong> Request a cohort-segmented version of this dashboard from the data team.</p>
+<hr>
+<h2>Summary Scorecard</h2>
+<table>
+<tr><th>Dimension</th><th>Alignment</th><th>Notes</th></tr>
+<tr><td>Core hypothesis (personalization > static)</td><td>✅ Strong</td><td>+12pp conversion lift confirms thesis</td></tr>
+<tr><td>Phased approach (rules → ML)</td><td>✅ Strong</td><td>Dashboard shows ML phase going live</td></tr>
+<tr><td>Continue Watching impact</td><td>✅ Directional</td><td>Slight baseline improvement post Jan-26 launch</td></tr>
+<tr><td>Data analysis quality</td><td>✅ Strong</td><td>Comprehensive Snowflake analysis, solid cohort definitions</td></tr>
+<tr><td>Test population (10% target)</td><td>⚠️ Check</td><td>Only ~7% currently in ML widget</td></tr>
+<tr><td>Which experiment is this?</td><td>⚠️ Unclear</td><td>Limited HP MVP vs ML Widget — need disambiguation</td></tr>
+<tr><td>Cohort-level visibility</td><td>❌ Missing</td><td>Dashboard is aggregate only</td></tr>
+<tr><td>Notification CTR concern</td><td>➡️ Separate</td><td>Different surface, related pipeline</td></tr>
+</table>
+<hr>
+<h2>Bottom Line</h2>
+<p>Manasvi's analytical work and PRD framework are <strong>solid and validated by live data</strong>. The +12pp lift on Day 2 of ML Widget is a strong early signal. Her brainstorming doc's insights (cross-dialect behavior, cohort segmentation, tray CTR analysis) directly informed the experiments now showing results.</p>
+<p><strong>Caveats:</strong></p>
+<ul>
+<li>Volume is still small (~7% of viewers) — needs 3-5 more days</li>
+<li>Need to disambiguate which experiment the dashboard tracks</li>
+<li>Cohort-level dashboard needed to confirm impact isn't skewed by user selection bias (ML Widget users might over-represent engaged cohorts)</li>
+</ul>
+<hr>
+<p><em>Analysis by HuMT | Data pulled via Metabase API (key: humt-bot) | Feb 19, 2026</em></p>
+
+<div class="footer">Built by 🥚 HuMT | For internal use only</div>
+</body>
+</html>

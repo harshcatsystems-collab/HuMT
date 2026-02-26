@@ -75,6 +75,56 @@ When scanning Slack, if a message mentions a tracked delegation from `memory/del
 
 ---
 
+## @HuMT Mention Relay — PRIORITY CHECK (runs with DM relay, every heartbeat)
+
+Check if anyone tagged or mentioned HuMT across the **entire workspace** (channels, DMs, MPIMs — everything):
+1. Use **user token** `search.messages` API: query `<@U0AE6043BB6>` sorted by timestamp desc
+   ```bash
+   USER_TOKEN=$(python3 -c "import json; print(json.load(open('/home/harsh/.openclaw/openclaw.json'))['channels']['slack']['userToken'])")
+   curl -s -H "Authorization: Bearer $USER_TOKEN" "https://slack.com/api/search.messages?query=%3C%40U0AE6043BB6%3E&sort=timestamp&sort_dir=desc&count=5"
+   ```
+2. If any result has timestamp > `lastMentionCheck`: relay to HMT via Telegram IMMEDIATELY
+3. Format: `🏷️ @HuMT mentioned in #channel by [Person]: [1-line summary]`
+4. Track last mention check timestamp in `memory/slack-digest-state.json` → `lastMentionCheck`
+5. React with 👀 on the message (if bot has access to that channel)
+6. **Auto-add to `memory/presentation-tracking.json`** as a tracked thread (relay is step 1, tracking is step 2)
+
+**Why user token:** Bot token only sees channels it's a member of. User token search covers the entire workspace — DMs, MPIMs, private channels, everything. No blind spots.
+
+**Why priority:** HMT explicitly said "relay to me almost immediately." Missing a tag = missing trust.
+
+---
+
+## Tagged Thread Tracking (EVERY HEARTBEAT — after mention scan)
+
+**Rule:** When HMT tags @HuMT in ANY Slack message, that's an implicit instruction to track + engage + own it.
+
+**Same applies when others tag @HuMT** — if a team member tags me in a thread, question, or discussion, treat it as them reaching out to HMT's office. Track, engage, and loop HMT in if it needs his decision.
+
+### Adding new threads to track:
+- When the @HuMT mention scan (above) detects a NEW mention → **automatically add it to `memory/presentation-tracking.json`** as a tracked thread
+- Don't just relay and forget — the relay is step 1, tracking is step 2
+
+### Scanning existing tracked threads:
+1. Read `memory/presentation-tracking.json` for active tracked threads
+2. For each thread: fetch reactions + replies via Slack API
+3. Compare against last snapshot — detect NEW reactions, NEW replies
+4. **If new reply:** Engage in-thread if appropriate (answer questions, acknowledge, keep conversation moving)
+5. **If new reaction from key person** (co-founder, direct report): Note it
+6. **If reply needs HMT's input:** Alert on Telegram immediately
+7. Update snapshot in `presentation-tracking.json`
+
+**Escalation to HMT (Telegram):**
+- Co-founder replies (Vinay, Shashank, Parveen)
+- Questions or pushback that need HMT's decision
+- Action items proposed by respondents
+
+**Don't escalate:**
+- Simple emoji reactions from team members
+- HuMT's own replies
+
+---
+
 ## Checks (rotate through, don't spam)
 
 ### Gmail (via gog CLI)
@@ -90,6 +140,12 @@ When scanning Slack, if a message mentions a tracked delegation from `memory/del
 - Extract anything worth keeping → update MEMORY.md
 - Move processed daily files to `memory/archive/YYYY-MM/`
 - Update people.md with any contacts found in old logs that were missed
+
+### Netlify ↔ Drive Sync (every heartbeat)
+- Run `bash scripts/verify-netlify-drive-sync.sh`
+- If `in_sync: false` → upload missing files using `bash scripts/upload-to-drive.sh <file> <folder>`
+- If `in_sync: true` → proceed silently
+- This catches drift between what's live on Netlify and what's on Drive
 
 ### Capability Status (weekly)
 - Review `memory/capability-status.md`

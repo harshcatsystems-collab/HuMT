@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="favicon-180.png">
+<meta property="og:title" content="Performance Ads Automation — Meeting Digest (Feb 25, 2026)">
+<meta property="og:description" content="Attendees: Vipul Sharma, Shashank Vaishnav, HMT, Gopal Iyer, Parveen Singhal, Vinay Singhal">
+<meta property="og:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<meta property="og:url" content="https://humt-stage-analytics.netlify.app/perf-ads-automation.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Performance Ads Automation — Meeting Digest (Feb 25, 2026)">
+<meta name="twitter:description" content="Attendees: Vipul Sharma, Shashank Vaishnav, HMT, Gopal Iyer, Parveen Singhal, Vinay Singhal">
+<meta name="twitter:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<title>HuMT | Performance Ads Automation — Meeting Digest (Feb 25, 2026)</title>
+<style>
+body { font-family: 'Google Sans', Arial, sans-serif; max-width: 900px; margin: 40px auto; color: #1a1a1a; line-height: 1.6; padding: 0 20px; }
+h1 { font-size: 28px; border-bottom: 3px solid #1a73e8; padding-bottom: 12px; margin-top: 48px; }
+h2 { font-size: 22px; color: #1a73e8; margin-top: 40px; border-bottom: 1px solid #e0e0e0; padding-bottom: 8px; }
+h3 { font-size: 17px; color: #333; margin-top: 24px; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+th { background: #1a73e8; color: white; padding: 10px 14px; text-align: left; font-weight: 600; }
+td { padding: 8px 14px; border-bottom: 1px solid #e8e8e8; }
+tr:nth-child(even) td { background: #f8f9fa; }
+.callout { background: #fef7e0; border-left: 4px solid #f9ab00; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-red { background: #fce8e6; border-left: 4px solid #d93025; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-green { background: #e6f4ea; border-left: 4px solid #34a853; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 20px 0; }
+.stat-box { background: #f8f9fa; border-radius: 8px; padding: 20px; text-align: center; border: 1px solid #e8e8e8; }
+.stat-number { font-size: 32px; font-weight: 700; color: #d93025; }
+.stat-number-blue { font-size: 32px; font-weight: 700; color: #1a73e8; }
+.stat-label { font-size: 13px; color: #666; margin-top: 4px; }
+.subtitle { color: #666; font-size: 16px; margin-top: -8px; }
+blockquote { border-left: 3px solid #1a73e8; margin: 16px 0; padding: 8px 16px; color: #444; font-style: italic; background: #f8f9fa; border-radius: 0 8px 8px 0; }
+.tag { display: inline-block; padding: 3px 10px; border-radius: 4px; font-size: 12px; font-weight: 700; color: white; margin-right: 6px; }
+.tag-p0 { background: #d93025; }
+.tag-shift { background: #f9ab00; color: #333; }
+.tag-decision { background: #1a73e8; }
+.layer { background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 8px; padding: 16px 20px; margin: 12px 0; }
+.layer-num { font-size: 24px; font-weight: 700; color: #1a73e8; }
+ol, ul { margin: 12px 0; }
+li { margin: 6px 0; }
+</style>
+</head>
+<body>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #e8e8e8;"><img src="humt-avatar.png" alt="HuMT" style="width:40px;height:40px;border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,0.1);"><span style="font-size:13px;color:#666;">HuMT Intelligence Hub</span></div>
+
+<h1>📊 Performance Ads Automation</h1>
+<p class="subtitle">Meeting Digest — Feb 25, 2026, 2:00 PM IST | ~48 minutes</p>
+<p><strong>Attendees:</strong> Vipul Sharma, Shashank Vaishnav, HMT, Gopal Iyer, Parveen Singhal, Vinay Singhal</p>
+
+<h2>Executive Summary</h2>
+<p>Shift from basic rule-based automation to an intelligent agentic framework for performance marketing. Current system is mostly reporting + manual rules. The new vision: many micro-specific AI agents orchestrated through workflows to achieve outcomes using BMAD framework structure.</p>
+
+<div class="stat-grid">
+<div class="stat-box">
+<div class="stat-number">65%</div>
+<div class="stat-label">M0 users are "ghosts"</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">₹80</div>
+<div class="stat-label">CPA discrepancy (Meta vs fly data)</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">85%</div>
+<div class="stat-label">Ghost + 1-day active cohort</div>
+</div>
+</div>
+
+<h2>Current State — Problems Identified</h2>
+
+<div class="callout-red">
+<h3><span class="tag tag-p0">P0</span> Data Discrepancy — Immediate Fix Needed</h3>
+<table>
+<tr><th>Source</th><th>CPA Reported</th></tr>
+<tr><td>Meta</td><td>₹210</td></tr>
+<tr><td>Internal "fly data"</td><td>₹290</td></tr>
+<tr><td><strong>Gap</strong></td><td><strong>₹80/trial — decisions on unreliable data</strong></td></tr>
+</table>
+</div>
+
+<div class="callout-red">
+<h3><span class="tag tag-p0">P0</span> Ghost User Problem</h3>
+<ul>
+<li><strong>65% of M0 users are "ghosts"</strong> — never even opened the app</li>
+<li>Ghost + 1-day active = <strong>85% of the cohort</strong></li>
+<li>Web users likely even worse (~90% ghosts)</li>
+</ul>
+</div>
+
+<h3>Current System Limitations</h3>
+<ul>
+<li>Mostly reporting, not intelligence</li>
+<li>Rule-based: rank creatives by CPA, apply threshold rules (>₹230 = pause)</li>
+<li>Creative performance limited by adset budget + deployment breadth</li>
+<li>Manual morning checks against thresholds</li>
+</ul>
+
+<h2>The Agentic Framework — Three Layers</h2>
+
+<div class="layer">
+<p><span class="layer-num">Layer 1</span> <strong>Replace Manual Work</strong></p>
+<ul>
+<li>Aggregation of creative-level information</li>
+<li>Basic rule-based actions (what Vipul/Gopal were building)</li>
+<li>Automation — necessary but not sufficient</li>
+</ul>
+</div>
+
+<div class="layer">
+<p><span class="layer-num">Layer 2</span> <strong>Frequency-Based Scaling</strong></p>
+<ul>
+<li>New adset management, ad creation</li>
+<li>Campaign architecture optimization</li>
+<li>Currently limited by people — agents remove that constraint</li>
+</ul>
+</div>
+
+<div class="layer">
+<p><span class="layer-num">Layer 3</span> <strong>Full Agentic Orchestration</strong> (The Real Goal)</p>
+<ul>
+<li>Many agents, workflows, skills orchestrated for outcomes</li>
+<li>BMAD framework structure</li>
+<li>Examples: Rajasthani copywriter agent, ad ops manager agent, CPM analysis agent per market, audience/cohort analysis agents</li>
+</ul>
+</div>
+
+<blockquote>"Remove the limitation of number of people. Think agentic. It changes how you think about everything." — Shashank</blockquote>
+
+<h2><span class="tag tag-shift">METRIC SHIFT</span> New Performance Metrics</h2>
+
+<table>
+<tr><th>Old Metric</th><th>New Metric</th></tr>
+<tr><td>CPA (Cost Per Acquisition)</td><td><strong>LTV vs CPA</strong></td></tr>
+<tr><td>Trial count</td><td><strong>Quality of engagement</strong></td></tr>
+<tr><td>Creative ranking by CPA</td><td><strong>M0 week-to-week retention</strong></td></tr>
+</table>
+
+<div class="callout">
+<strong>Special Access insight:</strong> Improves trial rate but decreases trial conversion rate — however increases M0 retention. Net positive when measured holistically, negative when measured on CPA alone. This is exactly why CPA as sole metric is dangerous.
+</div>
+
+<h2>Key Quotes</h2>
+<blockquote>"Automation is a smaller priority. Intelligent automation is the actual priority." — Vipul</blockquote>
+<blockquote>"Kill this dashboard. We need to think of a framework which has many agents, many workflows, many skills orchestrated together to arrive at an outcome." — Shashank</blockquote>
+<blockquote>"Think in agentic terms, not just AI. Agentic is one, two levels deep." — Vipul</blockquote>
+<blockquote>"The ghost of making things is so f***ing low [with AI] that deployment, imagination, ideation — everything changes exponentially." — Shashank</blockquote>
+
+<h2>Next Steps</h2>
+<ol>
+<li><span class="tag tag-p0">IMMEDIATE</span> Resolve Meta vs fly data CPA discrepancy (₹210 vs ₹290)</li>
+<li>Include <strong>Anish</strong> in project team (creative insights)</li>
+<li>Meet <strong>daily, 30 minutes</strong> to finalize project plan</li>
+<li>Build first version immediately (Vipul + Gopal + Anish)</li>
+<li>Bottom-up approach: Layer 1 → Layer 2 → Layer 3</li>
+<li>Create BMAD framework document as baseline</li>
+</ol>
+
+<h2>Strategic Implications for STAGE</h2>
+<div class="callout-green">
+<ul>
+<li><strong>CAC at scale:</strong> Targeting 25K trials/day at ₹250-260 CAC = ₹62.5L/day ad spend. Intelligent automation essential at this burn rate.</li>
+<li><strong>Ghost users = existential:</strong> 65% M0 ghosts means acquisition funnel leaking massively. Must solve acquisition quality AND activation.</li>
+<li><strong>LTV-first aligns with retention:</strong> Connects to HP Personalisation, Encanto algorithm, engagement pod work.</li>
+<li><strong>Cross-dialect scaling:</strong> Micro-specific agents per dialect = scalable without proportional headcount.</li>
+<li><strong>Competitive timing:</strong> Most competitors still doing manual perf marketing. Agentic infra now = structural advantage.</li>
+</ul>
+</div>
+
+<h2>Connections to Other Initiatives</h2>
+<ul>
+<li><strong>Parveen's 25K trials/day ramp</strong> — retention capacity for volume spike</li>
+<li><strong>Content Strategy 2.0</strong> — 4-layer architecture feeds what creatives perf marketing promotes</li>
+<li><strong>Vinay's Stage Saathi rethink</strong> — activation solution for ghost users</li>
+<li><strong>AI Film Making pipeline</strong> — same agentic philosophy, content creation + distribution going agentic simultaneously</li>
+</ul>
+
+<p style="color:#999; margin-top:48px; font-size:13px; border-top:1px solid #e8e8e8; padding-top:16px;">
+Built by 🥚 HuMT — Feb 26, 2026 | Source: Gemini auto-notes + full transcript | For internal use only
+</p>
+</body>
+</html>

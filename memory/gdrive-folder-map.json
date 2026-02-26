@@ -1,0 +1,44 @@
+{
+  "root": {
+    "id": "1S0oGYa8GuU8ZBj71KCEdk5rkLmusIvU9",
+    "name": "HuMT",
+    "url": "https://drive.google.com/drive/folders/1S0oGYa8GuU8ZBj71KCEdk5rkLmusIvU9"
+  },
+  "folders": {
+    "meetings": {
+      "id": "1dcMjm4NLzlyds4MEjv4Ty1N45TCvAXF3",
+      "name": "Meeting Digests",
+      "description": "All meeting notes, digests, and call summaries"
+    },
+    "strategy": {
+      "id": "155j3ClW1pK9FZHH6PkocG6DVkt9zeAzq",
+      "name": "Strategy & Analysis",
+      "description": "Retention strategy, Series C, content strategy, MIS, PRDs, deep analyses"
+    },
+    "presentations": {
+      "id": "1VWodlfQ13a3Ihk0cs3a2uFlT3mMlNc1k",
+      "name": "Presentations",
+      "description": "Board presentations, deck reviews, slide-level work"
+    },
+    "playbooks": {
+      "id": "1IthgyA8ct-VinybqWnPKTn8JRA7F7CyG",
+      "name": "Playbooks & Guides",
+      "description": "OpenClaw setup, agent playbooks, roadmaps, logs"
+    },
+    "gemini": {
+      "id": "1r12mEs3m8tQ0wSbp1A5EJya9q3Gd2mKZ",
+      "name": "Gemini Notes",
+      "description": "Auto-generated Gemini meeting notes (shortcuts to originals)"
+    }
+  },
+  "rules": {
+    "new_meeting_digest": "→ meetings folder",
+    "new_strategy_doc": "→ strategy folder",
+    "new_presentation": "→ presentations folder",
+    "new_playbook": "→ playbooks folder",
+    "gemini_auto_notes": "→ gemini folder (shortcut if not owned)",
+    "not_owned_files": "create shortcut in appropriate folder"
+  },
+  "created": "2026-02-26",
+  "last_organized": "2026-02-26"
+}

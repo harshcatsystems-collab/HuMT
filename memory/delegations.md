@@ -16,7 +16,11 @@
 | D11 | Build trial funnel diagnostic as Claude/BMAD Skill | Shubham Singla | 2026-02-25 | #acquisition-pod | Vinay delegated | 0 |
 | D12 | Kill chatbot listing screen → WhatsApp-style chat list UX | Aaliya Mirza | 2026-02-25 | #ai-character-bots | Vinay review, Aaliya accepted | 0 |
 | D13 | Chatbot P0 items 1&4 today, item 2 timelines tomorrow | Nikhil Nair / Aaliya Mirza | 2026-02-25 | #ai-character-bots | Nikhil committed | 0 |
-| D14 | Check D1/D2 trial retention drop | Aaliya Mirza / Nikhil Nair | 2026-02-25 | #growth-pod | Shubham delegated | 0 |
+| D14 | Check D1/D2 trial retention drop | Aaliya Mirza / Nikhil Nair | 2026-02-25 | #growth-pod | Nikhil: 2-day threshold, Aaliya agreed | 1 |
+| D15 | Provide 5 trailer files + XML exports | Neeraj Kumar | 2026-02-26 | #ai-trailer-generator | Committed "by tomorrow" | 0 |
+| D16 | Test international payments live (bh & gj) | Gopal Iyer / Vedanta | 2026-02-26 | #acquisition-pod | "Planning to go live today" | 0 |
+| D17 | Breakdown agentic framework implementation | Kamal Singh Chauhan | 2026-02-26 | #ai-native-agentic-framework-content | Accepted from Parveen MoM | 0 |
+| D18 | Perf Marketing P0 actions (personality layer, ghost users) | Parveen Singhal / team | 2026-02-26 | #ai-native-performance-marketing | Parveen posted action items | 0 |
 | D5 | Set up CLM for chatbot feature launch | Vismit Bansal | 2026-02-20 | #ai-character-bots | Aaliya requested, plan shared | 4 ⚠️ |
 | D6 | Send chatbot interaction video for UAT | Junaid Qureshi | 2026-02-20 | #ai-character-bots | Nikhil requested for Radhika UAT | 4 ⚠️ |
 

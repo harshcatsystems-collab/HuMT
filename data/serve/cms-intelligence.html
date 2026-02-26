@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="favicon-180.png">
+<meta property="og:title" content="CMS Intelligence System">
+<meta property="og:description" content="Content management system analysis · 1,256 titles · API mapping">
+<meta property="og:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<meta property="og:url" content="https://humt-stage-analytics.netlify.app/cms-intelligence.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CMS Intelligence System">
+<meta name="twitter:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<title>HuMT | CMS Intelligence System</title>
+
+<style>
+body { font-family: 'Google Sans', Arial, sans-serif; max-width: 900px; margin: 40px auto; color: #1a1a1a; line-height: 1.6; padding: 0 20px; }
+h1 { font-size: 28px; border-bottom: 3px solid #1a73e8; padding-bottom: 12px; margin-top: 48px; }
+h2 { font-size: 22px; color: #1a73e8; margin-top: 40px; border-bottom: 1px solid #e0e0e0; padding-bottom: 8px; }
+h3 { font-size: 17px; color: #333; margin-top: 24px; }
+h4 { font-size: 15px; color: #555; margin-top: 20px; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+th { background: #1a73e8; color: white; padding: 10px 14px; text-align: left; font-weight: 600; }
+td { padding: 8px 14px; border-bottom: 1px solid #e8e8e8; }
+tr:nth-child(even) td { background: #f8f9fa; }
+.callout { background: #fef7e0; border-left: 4px solid #f9ab00; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-red { background: #fce8e6; border-left: 4px solid #d93025; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-green { background: #e6f4ea; border-left: 4px solid #34a853; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+blockquote { border-left: 3px solid #1a73e8; margin: 16px 0; padding: 8px 16px; color: #444; font-style: italic; background: #f8f9fa; border-radius: 0 8px 8px 0; }
+code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+pre { background: #f1f3f4; padding: 16px; border-radius: 8px; overflow-x: auto; font-size: 13px; }
+.subtitle { color: #666; font-size: 16px; margin-top: -8px; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; color: white; margin-right: 6px; }
+.footer { color: #999; margin-top: 48px; font-size: 13px; border-top: 1px solid #e8e8e8; padding-top: 16px; }
+ul, ol { margin: 12px 0; }
+li { margin: 4px 0; }
+strong { color: #1a1a1a; }
+hr { border: none; border-top: 1px solid #e8e8e8; margin: 32px 0; }
+</style>
+
+</head>
+<body>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #e8e8e8;"><img src="humt-avatar.png" alt="HuMT" style="width:40px;height:40px;border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,0.1);"><span style="font-size:13px;color:#666;">HuMT Intelligence Hub</span></div>
+<h1>CMS Intelligence System</h1>
+<p class="subtitle">Content management system analysis · 1,256 titles · API mapping</p>
+<p><strong>Built:</strong> 2026-02-20 | <strong>API:</strong> <code>https://stageapi.stage.in/nest/cms/content/all</code></p>
+<h2>Scripts</h2>
+<p>All in <code>/home/harsh/.openclaw/workspace/scripts/</code>:</p>
+<table>
+<tr><th>Script</th><th>Purpose</th><th>Usage</th></tr>
+<tr><td>`cms-fetch-all.py`</td><td>Pull all CMS data</td><td>`python3 cms-fetch-all.py` → saves `data/cms-catalog.json`</td></tr>
+<tr><td>`cms-pipeline-report.py`</td><td>Full dashboard</td><td>`python3 cms-pipeline-report.py`</td></tr>
+<tr><td>`cms-alerts.py`</td><td>Actionable alerts</td><td>`python3 cms-alerts.py` (exit 1 if alerts)</td></tr>
+<tr><td>`cms-morning-brief.py`</td><td>3-line summary</td><td>`python3 cms-morning-brief.py`</td></tr>
+<tr><td>`cms-dialect-readiness.py`</td><td>Expansion checker</td><td>`python3 cms-dialect-readiness.py <dialect>` or `all`</td></tr>
+</table>
+<h2>Architecture</h2>
+<pre>cms-fetch-all.py → data/cms-catalog.json → { pipeline-report, alerts, morning-brief, dialect-readiness }
+</pre>
+<p>Run the fetcher first (or on cron), then any report script reads from the cached catalog.</p>
+<h2>API Notes</h2>
+<ul>
+<li><strong>No auth required</strong> — open endpoint</li>
+<li><strong>Pagination:</strong> <code>?page=N&perPage=10</code> (max 10/page)</li>
+<li><strong>Total:</strong> 1,256 items across 126 pages (as of 2026-02-20)</li>
+<li><strong>Instability:</strong> Pages 79, 101-115, 125-126 returned 500 errors. Tail pages unreliable.</li>
+<li><strong>transcodingStatus:</strong> ALL items return "pending" — field appears unpopulated/default. Transcoding alerts will be noisy until CMS team fixes this.</li>
+</ul>
+<h2>Key Fields</h2>
+<table>
+<tr><th>Field</th><th>Values Observed</th></tr>
+<tr><td>dialect</td><td>har, bho, guj, raj</td></tr>
+<tr><td>format</td><td>standard, microdrama</td></tr>
+<tr><td>contentType</td><td>movie, show</td></tr>
+<tr><td>status</td><td>active, publish, draft, preview-published, comingSoon</td></tr>
+<tr><td>transcodingStatus</td><td>pending (all items — likely default)</td></tr>
+</table>
+<h2>Sample Output</h2>
+<h3>Morning Brief</h3>
+<pre>📺 CMS: 9 new titles this week (har:3, guj:3, raj:2, bho:1), 7 already active.
+📦 Pipeline: 771 active / 125 drafts across 4 dialects.
+⚠️ Alerts: 1077 transcoding stuck; draft pileup: har:64, raj:42, bho:16.
+</pre>
+<h3>Alerts</h3>
+<pre>⚠️  CMS ALERTS — 2026-02-20 07:07 UTC
+   4 alert(s) found
+
+🔴 TRANSCODING STUCK: 1077 titles pending/processing &gt; 48h
+🟠 DRAFT PILEUP: bho has 16 drafts (&gt; 10 threshold)
+🟠 DRAFT PILEUP: har has 64 drafts (&gt; 10 threshold)
+🟠 DRAFT PILEUP: raj has 42 drafts (&gt; 10 threshold)
+</pre>
+<h3>Content Breakdown (from Pipeline Report)</h3>
+<pre>By Dialect:     har: 595 | raj: 308 | bho: 124 | guj: 53
+By Format:      standard: 960 | microdrama: 120
+By Status:      active: 771 | publish: 158 | draft: 125
+</pre>
+<h3>Dialect Readiness (all dialects)</h3>
+<pre>bho: 92/100 ✅ READY  (98 active, velocity 1.8/wk 📈+33%)
+guj: 94/100 ✅ READY  (50 active, velocity 6.8/wk 📉-88%)
+har: 93/100 ✅ READY  (391 active, velocity 2.0/wk)
+raj: 93/100 ✅ READY  (232 active, velocity 2.0/wk 📉-40%)
+</pre>
+<h2>Observations (2026-02-20)</h2>
+<ol>
+<li><strong>Haryanvi dominates</strong> with 55% of all content (595/1080)</li>
+<li><strong>Gujarati is smallest</strong> at 53 titles but readiness score is high (94%) — quality over quantity</li>
+<li><strong>Gujarati velocity crashed</strong> from 20/wk → 3/wk — initial burst over, needs sustained pipeline</li>
+<li><strong>Draft pileup in Haryanvi</strong> (64 drafts) — many are 175+ day old "Preview Link" items, likely test/legacy</li>
+<li><strong>transcodingStatus is meaningless</strong> — all items show "pending". CMS team should fix this field.</li>
+<li><strong>"publish" status</strong> exists alongside "active" (158 items) — unclear distinction, needs CMS team clarification</li>
+<li><strong>Standard:Microdrama ratio is 8:1</strong> — microdramas underrepresented given their acquisition role</li>
+<li><strong>9 titles added this week</strong> — modest velocity across all dialects</li>
+</ol>
+<h2>Cron Setup</h2>
+<pre># Fetch CMS data daily at 5:30 AM IST (midnight UTC)
+30 0 * * * cd /home/harsh/.openclaw/workspace && python3 scripts/cms-fetch-all.py &gt;&gt; /tmp/cms-fetch.log 2&gt;&1
+</pre>
+<h2>Benchmarks (Haryanvi at Launch)</h2>
+<p>Used for dialect readiness scoring:</p>
+<ul>
+<li>Min 50 active titles</li>
+<li>Min 20 standard format</li>
+<li>Min 10 microdramas</li>
+<li>Min 5 shows</li>
+<li>Min 3 titles/week velocity</li>
+</ul>
+
+<div class="footer">Built by 🥚 HuMT | For internal use only</div>
+</body>
+</html>
