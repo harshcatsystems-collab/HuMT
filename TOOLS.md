@@ -100,6 +100,7 @@ Supports: .ogg (WhatsApp voice notes)
 - **Linger:** enabled (`sudo loginctl enable-linger harsh`)
 - **Firewall:** UFW, deny ALL inbound (zero open ports)
 - **Tailscale:** VPS invisible, SSH via `ssh harsh@openclaw` only
+- **sudo password:** `Harsh@89`
 - **Tailscale IP:** 100.79.179.7 | **Tailnet:** stage.in
 - **Manage:** `systemctl --user status/start/stop/restart openclaw-gateway`
 

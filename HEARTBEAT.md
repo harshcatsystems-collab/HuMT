@@ -24,6 +24,16 @@ Run `bash scripts/slack-channel-diff.sh` to detect if HuMT was added to or remov
 
 ---
 
+## ⚠️ @HuMT Mention Check — EVERY RESPONSE (not just heartbeats)
+
+Even during active HMT conversations, run a quick mention check before replying. Tags don't wait for heartbeats. A 2-second API call beats a 45-minute blind spot.
+
+**If mid-conversation with HMT:** Don't wait for the conversation to end. Use an *alternative channel* to relay the alert — e.g., if chatting on webchat, push to Telegram. Cross-context is enabled. The active session doesn't break, HMT still gets the alert in real-time.
+
+**Lesson:** Feb 27 — Rahul tagged @HuMT in #finance-department for ₹39.7L payment approval. Missed for 45 min because I was mid-conversation with HMT. HMT caught it, not me. Never again.
+
+---
+
 ## DM Relay — PRIORITY CHECK (G7: runs FIRST, every heartbeat, before anything else)
 
 Check for new DMs to HuMT on Slack BEFORE doing the full scan:

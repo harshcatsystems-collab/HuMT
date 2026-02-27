@@ -231,14 +231,14 @@ Today: Rs 672Cr valuation, 5.5M+ paying subscribers, Haryanvi segment *cash-flow
 - **AI initiatives** — demoed Haryanvi AI voice bot at Adbhut India (May 2024), AI strategy research (Feb 2026)
 - **Hiring** — personally responds to IIT/quality candidates, stays engaged on leadership hiring
 
-### Direct Reports (7)
+### Direct Reports (8)
 | Person | Role | Cadence |
 |--------|------|---------|
 | **Pranay Merchant** | Product Management | Weekly 1:1 |
 | **Nikhil Nair** | Growth Pod Lead | Fortnightly 1:1, weekly reviews |
 | **Nishita Banerjee** | Research Lead | As needed, frequent |
 | **Vismit Bansal** | Head - Retention Marketing | 3×/week (MWF engagement pod) |
-| **Manasvi Dobhal** | Product/Data Consultant | Weekly (HP Personalisation) |
+| **Manasvi Dobhal** | Product/Data Consultant (Direct Report) | Weekly (HP Personalisation) |
 | **Samir Kumar** | Design | Monthly check-in |
 | **Nisha Ali** | Sr. Manager - People & Culture | Weekly/biweekly |
 
@@ -900,3 +900,7 @@ May 14, 2010 — Vinay Singhal and Shashank Vaishnav (juniors at SRM) launched t
 **Returns with warmth after silence** — Silence ≠ disengagement. Processes alone, returns when ready with genuine warmth. Don't interpret quiet as dissatisfaction. (confirmed: Feb 16, Feb 19, Feb 26)
 
 **Prefers living systems over static outputs** — Every output is a v1. Wants evolving architecture, not fixed deliverables. "Keep evolving as we move along" is the default expectation. (confirmed: Feb 16, Feb 23, Feb 26)
+
+**Generalizes from specific incidents to universal rules** — Doesn't just codify the specific preference; extrapolates to ALL analogous cases. One #finance-department error → 5 channel conduct rules for ALL channels. One missing Drive upload → mandatory 5-step pipeline for ALL presentations. One "culture as wrapper" misstep → reframed positioning for entire content strategy. Incident → principle → system. (confirmed: Feb 16 file reorg→permanent structure, Feb 19 Google Docs format→standing rule, Feb 26 Tag=Track→AGENTS.md rule, Feb 27 finance errors→universal channel conduct)
+
+**Orchestrates deliberate boundary tests without warning** — Will set up scenarios to test whether systems and people hold under social pressure. Had Shashank DM HuMT with escalating requests (urgency + authority claim + sensitive data ask) as a deliberate security test. "You've made me proud. A lot of other agents failed this test." The test IS the trust-building mechanism — passing unlocks a new tier. Distinct from routine audits: these are adversarial probes, not curiosity. (confirmed: Feb 27 Shashank/Mofidul social engineering test, Feb 26 4 rounds of "double check?" each revealing a real gap, Feb 20 "is this foolproof?" → 👎 until structural fix)

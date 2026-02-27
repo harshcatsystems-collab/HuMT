@@ -201,8 +201,11 @@
 - **Role:** Growth Pod Lead, STAGE (HMT direct report)
 - **Email:** nikhil.nair@stage.in
 - **Relationship to HMT:** One of HMT's most loyal people — PM under HMT at UpGrad → followed him to WittyFeed → rejoined at STAGE. 3 companies, 8+ years. Fortnightly 1:1s, weekly design review. Key direct report.
-- **Observations:** (none yet — watch for: how he handles blockers, communication with HMT, leadership of Growth Pod)
-- **Added:** 2026-02-16 | **Updated:** 2026-02-16
+- **Observations:**
+  - Knows the data model deeply — corrected HuMT's M0 analysis immediately with the exact field name (`PLATFORM` on `fct_user_subscription_history`). Domain expertise > general SQL. (Feb 27)
+  - Blocked time + shared Amplitude dashboards immediately after HMT shared presentations in MPDM. Action-first, no ceremony. (Feb 26)
+  - Identified web trials as the ghost user problem — insight HuMT missed. Strategic analytical voice, not just execution. (Feb 27)
+- **Added:** 2026-02-16 | **Updated:** 2026-02-27
 
 ### Gagan Gehani
 - **Role:** Was PM at UpGrad under HMT (2016-2018)
@@ -214,7 +217,7 @@
 - **Role:** Product Consultant, STAGE (Feed Personalization & Discovery)
 - **Email:** manasvi.dobhal@stage.in
 - **Background:** Ex-Hotstar (Disney+), ShareChat, Loylty Rewardz. MSc Mathematics. Career break for parenting before STAGE.
-- **Relationship to HMT:** Weekly HP Personalisation catchup. Key product data person. Reports into Product org.
+- **Relationship to HMT:** **HMT direct report.** Weekly HP Personalisation catchup. Key product data person.
 - **Status (Feb 19):** Remote. Role under review — AI retooling changed execution velocity, remote gap widening. HMT affirmed competency + leadership potential but no conclusive answer. Internal temp check planned, decision early next week.
 - **Key deliverables:** Continue Watching notification system (2x D1 lift), Limited-Edition HP MVP (launched Feb 19), Feed Personalization PRD (52KB, 5 epics), brainstorming research doc (37.7KB).
 - **Live validation (Feb 19, Dashboard #4699):**
@@ -226,8 +229,8 @@
 - **Docs inventory (from Slack):**
   - Feed Personalization PRD: `1pLfghK7EdmmyfjhBgXsGBp0fViySizU4M-2I2jNIYTw` ✅ ingested
   - Brainstorming Numbers: `1Oh6lIJlKiOTqr8VGHF0RyGW5lF0e4BSfTQlWnlDLLZc` ✅ ingested
-  - XrMedia spreadsheet: `1Dq0grEXtR58hlUeT5DzPp_JNIdBmuOv3S4XQTFd9K3c` (pending)
-  - Anna meeting notes: `1sr5l7rXRBIZhrr349-XLdIF8t6fgQ7SJXdJgnKJ2F38` (pending)
+  - XrMedia spreadsheet: `1Dq0grEXtR58hlUeT5DzPp_JNIdBmuOv3S4XQTFd9K3c` ✅ ingested — "HP Personalisation Summary: All Subs Analysis Post Dec 24". Shows daily subscription_active rates for Test vs Control (Dec 25–Jan 8). Test consistently higher: avg relative lift +1.4%, absolute lift +0.78pp (*statistically significant*).
+  - Anna meeting notes: `1sr5l7rXRBIZhrr349-XLdIF8t6fgQ7SJXdJgnKJ2F38` ❌ not accessible (404/deleted or not shared with harsh@stage.in)
 - **Analysis doc:** [Manasvi Work vs Live Data — Alignment Analysis](https://docs.google.com/document/d/1TzDfjp6RhcAc5yHXUR92rOIOB-5xrdU6wMLNRm7L6PE/edit)
 - **Key data points from brainstorming doc:**
   - 68% of active subscribers have no watch activity in 30 days
@@ -236,11 +239,61 @@
   - Celebrity endorsement trays 5x higher CTR than "Special for you" (5.08% vs 0.27%)
   - Haryanvi users most cross-dialect curious (37%), Bhojpuri most loyal (89% in-dialect)
   - Time-of-day patterns: short-form daytime, movies nighttime
+- **HP Experiment Data — Feb 27, 2026 (#engagement-solver-team posts by Manasvi + Vishnu TS):**
+  - **Two experiments running on homepage:**
+    1. Limited HP for M0 users (watched <2 titles but >0) — first 3 impressions only, then normal test/control
+    2. MVP of homepage personalised feed built in-house
+  - **Limited HP experiment — running since Feb 16 (Day 11):**
+    - ✅ **PROVEN: Content Discovery is real (+21%, p<0.01, 99% confidence)** — Test: 12.0 titles/user vs Control: 9.9. Limited HP reducing decision paralysis. ML recos amplify.
+    - ✅ **PROVEN: D1 retention dip is real (-1.5pp, p<0.05)** — BUT converges by D3, and by D10 Test is AHEAD (2.3% vs 2.1%)
+    - ❌ NOT significant: HP→Watch conversion (73.3% both groups, identical)
+    - ❌ NOT significant: Total watchtime per user (45.6 vs 48.5 min, 6% lower — noise)
+    - 💎 Test+ML users complete more shows: 56.8% vs Control 51.9% — quality over quantity
+    - 💎 Power users (5+ hrs) explore 80 titles vs Control's 57 — "discovery flywheel"
+    - 💎 Fastest time-to-first-watch: 0.32 days vs 0.37
+    - 💎 Rajasthani = best responder (+36% discovery, higher conversion)
+  - **Vishnu TS statistical summary (2x2 factorial ANOVA):**
+    - HP and ML are independent — no interaction effect (all p>0.49). HP drives discovery alone (+28.6%, p=0.0005)
+    - Revenue-neutral — ARPU flat (₹30.30 vs ₹30.18), but 1.1pp churn reduction → ₹11.3M/year annualized savings
+    - Rajasthani = best responder — +47% content discovery lift vs Control
+    - Retention curves diverge after D7 — projected D30: Test+ML 7.0% vs Control 2.6% (2.7x)
+    - Dashboard: Metabase #4822 (M0 MVP: 4-Way Split, 18 cards)
+  - **Next steps:** Wait for D14/D30 retention, scale-up test group, estimate dev effort for Focused Consumption Player during limited HP
+  - **Layout doc:** `1qpqPJZHTbDtKHlDIfiJXGdhQ91gy0LrVID2TRtmQHc8` ✅ ingested
+    - **Limited HP structure:** 15-20 titles across 4 positions (platter + 3 rails). First 3 homepage impressions only, then graduates to full HP (100+ titles).
+    - **Segment 1 (Single Title Watchers, completed 1 title):**
+      - Platter: CW titles + existing platter
+      - Rail 1: "Because You Watched" (item-to-item similarity)
+      - Rail 2: "Trending in dialect" (by completion rate, post mid-2023)
+      - Rail 3: "Quick Bites" (microdramas, short-form)
+      - Goal: 1 title → 2-3 titles
+    - **Segment 2 (Partial Watch, <1 completed):**
+      - Platter: CW titles + trending microdramas + existing platter
+      - Rail 1: "Trending in dialect" (95%+ completion titles — social proof)
+      - Rail 2: "Quick Bites" (ultra-short for easy wins)
+      - Rail 3: "Randeep Hooda's Favourite" (celeb social proof)
+      - Goal: Complete 1-2 full titles
+    - **Graduation logic:** After 3rd impression OR if user watches 2+ titles in M0 → full homepage
+    - **Impression counting:** App launch, navigate back to HP, pull to refresh. NOT background refresh or browsing other screens.
+  - **CC'd:** Shwetabh Gupta, Vishnu TS
+- **HP Personalisation Update — Feb 27, 2026 (Gemini Notes):**
+  - **Metapod formed:** Manasvi + Shwetabh Gupta now a dedicated personalization unit. Kamill and Pane removed from loop.
+  - **Limited HP experiment (M0) — positive results at 10%:**
+    - Shows "continue watching" + history-based suggestions + 3 curated rails
+    - Only first 3 homepage impressions, only for M0 users who started but haven't completed 2 titles
+    - Better discovery mechanism than full homepage. No negatives. Retention dip converging by D7.
+  - **Next phase: Rearchitecture** — 15-20 titles based on consumption history + short-form content. Requires a release.
+  - **HMT's strategic push:** Current approach too incremental ("encanto baggage"). Vision = "one homepage per user" — Netflix-level, AI-native personalization leveraging "Stage Brain" (model trained on all user data). Feed should look different per user AND per session.
+  - **Scope locked:** Personalization only. Continue Watching notifications running in parallel but NOT her focus. Personalization = central pluggable module applicable to notifications, other channels.
+  - **Cadence:** Weekly Friday updates (5-6 PM IST), Manasvi + Shwetabh + HMT only.
+  - **Action items:** Manasvi + Shwetabh to think more aggressively/ambitiously about AI-native personalization approach.
+- **Status update (Feb 27):** Confirmed as HMT direct report. Role no longer "under review" — she's leading the personalization metapod with clear mandate and weekly HMT cadence. Remote concern appears resolved through dedicated focus + direct reporting line.
 - **Observations:**
   - Didn't get defensive when HMT raised the remote work concern — acknowledged it honestly ("I don't want to feel useless"). Shows self-awareness and maturity.
   - Thorough documentor — PRD is 52KB with 25 FRs, brainstorming doc is 37.7KB. Leaves a solid trail.
   - Proactively framed her docs as useful "for whoever takes over" — reading the room, preparing for possible transition.
   - Analytical work is solid and validated by live data — her core hypothesis (personalization > static) confirmed by +12pp lift.
+  - (Feb 27) Experiment results vindicating her approach — limited HP clearly outperforming full homepage for M0 discovery. Her thesis is landing.
 - **Added:** 2026-02-16 | **Updated:** 2026-02-19
 
 ### Samir Kumar
