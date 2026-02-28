@@ -1,37 +1,41 @@
 # Capability Status — Source of Truth
-# Last full audit: 2026-02-27 00:00 UTC (auto-cron)
+# Last full audit: 2026-02-28 15:05 UTC (manual post-incident)
 
 > **Rule:** After ANY environment change (migration, config change, restart), re-test and update this file.
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-02-27 00:00 UTC
+## Last Verified: 2026-02-28 15:29 UTC
 ## Environment: VPS (Debian 12, GCP, 34.93.212.225)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files | 2026-02-27 |
-| 2 | Files | ✅ | read/write/edit tools | 2026-02-27 |
-| 3 | Terminal | ✅ | exec tool | 2026-02-27 |
-| 4 | Web Search | ✅ | Brave API (config: tools.web.search) | 2026-02-27 |
-| 5 | Gmail | ✅ | gog CLI (~/go/bin/gog gmail) | 2026-02-27 |
-| 6 | Calendar | ✅ | gog CLI (~/go/bin/gog calendar) | 2026-02-27 |
-| 7 | Cron/Reminders | ✅ | cron tool (19 jobs active) | 2026-02-27 |
-| 8 | Chat (WA/TG/Slack) | ✅ | Channel plugins | 2026-02-12 |
-| 9 | Images (DALL-E) | ✅ | OpenAI API (config: skills.entries.openai-image-gen) | 2026-02-27 |
-| 10 | Voice Transcription | ✅ | OpenAI Whisper API (same key as #9) | 2026-02-27 |
-| 11 | Browser Relay | N/A | Was Mac-only. Replaced by gog for Google. | 2026-02-12 |
+| 1 | Memory | ✅ | Read/write workspace files | 2026-02-28 |
+| 2 | Files | ✅ | read/write/edit tools | 2026-02-28 |
+| 3 | Terminal | ✅ | exec tool (`echo ok` = ok) | 2026-02-28 |
+| 4 | Web Search | ✅ | Brave API returned results | 2026-02-28 |
+| 5 | Gmail | ❌ | gog CLI — GOG_KEYRING_PASSWORD env var missing from systemd service | 2026-02-28 |
+| 6 | Calendar | ❌ | gog CLI — GOG_KEYRING_PASSWORD env var missing from systemd service | 2026-02-28 |
+| 7 | Cron/Reminders | ✅ | 21 cron jobs listed, most running/ok | 2026-02-28 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram active, Slack socket OK | 2026-02-28 |
+| 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-02-28 |
+| 9 | Images (DALL-E) | ✅ | OpenAI API key present in config | 2026-02-28 |
+| 10 | Voice Transcription | ⚠️ | openai-whisper-api skill apiKey MISSING in config (DALL-E key exists separately) | 2026-02-28 |
+| 11 | Memory Search | ⚠️ | Embeddings broken — OpenRouter key ≠ OpenAI embeddings | 2026-02-28 |
+| 12 | Google Drive | ❌ | gog CLI — GOG_KEYRING_PASSWORD env var missing from systemd service | 2026-02-28 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) active | 2026-02-28 |
 
 ## Config Dependencies
 
 | Key | Location in config | Required for |
 |-----|-------------------|--------------|
-| Anthropic API key | auth.profiles.anthropic:default | Core LLM |
+| OpenRouter API key | auth-profiles.json → openrouter:default | Core LLM (via OpenRouter) |
 | OpenAI API key | skills.entries.openai-image-gen.apiKey | DALL-E, Whisper |
 | Brave API key | tools.web.search.apiKey | Web search |
 | Telegram bot token | channels.telegram.botToken | Telegram |
 | Slack bot token | channels.slack.botToken | Slack |
 | Slack app token | channels.slack.appToken | Slack socket mode |
+| Slack user token | channels.slack.userToken | Workspace-wide search |
 | gog env vars | systemd service Environment lines | Gmail, Calendar, Drive, etc. |
 
 ## Cost Monitoring
