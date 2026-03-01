@@ -1,1 +1,32 @@
-{"ts":"2026-02-28T14:41:00Z","_type":"logger_run","people_tracked":11,"channels_scanned":18,"channels_found":10,"messages_found":0}
+{"ts":"2026-03-01T06:48:21Z","_type":"logger_run","people_tracked":11,"channels_scanned":17,"accessible_channels":10,"messages_found":0}
+{"ts": "2026-03-01T07:19:23.519086+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-01T07:48:44Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-01T08:18:40Z","_type":"logger_run","people_tracked":11}
+{
+  "ts": "2026-03-01T08:48:55Z",
+  "_type": "logger_run",
+  "people_tracked": 11
+}
+{"ts": "2026-03-01T09:19:04.792528+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-01T09:48:07Z","_type":"logger_run","people_tracked":11,"channels_scanned":17,"channels_accessible":9,"activity_window_sec":1800,"messages_found":0}
+{"ts": "2026-03-01T10:18:49.958055+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-01T10:19:48.743305+00:00", "_type": "logger_run", "people_tracked": 11, "note": "No messages collected - insufficient Slack API permissions"}
+{"ts":"2026-03-01T10:48:54Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-01T11:18:45Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-01T11:48:23Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-01T12:19:33Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-01T12:48:51Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-01T13:18:43Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-01T13:49:46.577674+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-01T14:18:59.256690+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-01T14:19:17.832386+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-01T14:48:54Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-01T15:18:47Z","_type":"logger_run","people_tracked":11,"channels_scanned":17,"activity_found":0}
+{"ts":"2026-03-01T15:48:56Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-01T16:18:23Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-01T16:48:29Z", "_type": "logger_run", "people_tracked": 11}
+{
+  "ts": "2026-03-01T17:18:54+00:00",
+  "_type": "logger_run",
+  "people_tracked": 11
+}

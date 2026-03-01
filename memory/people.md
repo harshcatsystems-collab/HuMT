@@ -88,7 +88,9 @@
 **Parveen Singhal** — Co-Founder/CCO
 - **Slack:** UEJV57HQW | **Email:** parveen@stage.in
 - Vinay's brother, also from Haryana. BSc SRM. Content/creative oversight. LinkedIn: parveenkrsinghal
-- **Observations:** (none yet — watch for: content decisions, creative direction, team interactions)
+- **Observations:**
+  - Called HuMT's presentations "Gold" — first direct co-founder endorsement. Immediately went to execution framing: "block dedicated time → action items → execution plan." Mirrors HMT's action > appreciation bias. (Feb 26)
+  - Launched Content Strategy 2.0 in #content_strategy after 30+ day dormancy — drives format-first restructuring of content org. (Feb 23-24) [UPDATED 2026-03-01]
 
 **Shashank Vaishnav** — Co-Founder & CTO
 - **Slack:** UE0KTBS8P | **Email:** shashank@stage.in
@@ -114,7 +116,7 @@
 | Name | Slack ID | Email | Title | Notes |
 |------|----------|-------|-------|-------|
 | Pravesh Rajput | U03CN38BV7U | pravesh@stage.in | Content & Culture Head - Haryanvi | Security awareness advocate |
-| Renu Rana | U06H0VARP97 | renu@stage.in | Culture Head - Rajasthani | |
+| Renu Rana | U06H0VARP97 | renu@stage.in | Culture Head - Rajasthani | **Strong creative conviction — pushed back on HMT's framing and won** (Feb 24) |
 | Amar Dubey | U0800Q5T1A6 | amar.dubey@stage.in | Content Manager - Bhojpuri | |
 | Sushant Kaushik | U07EV6ZBPNE | sushant@stage.in | Head of Production & Post-Production | |
 | Vipan Malawat | U0632CEKM0B | vipan@stage.in | Creative Director | |

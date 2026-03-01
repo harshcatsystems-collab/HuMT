@@ -174,6 +174,31 @@ If you find yourself writing "every heartbeat" or "proactively" or "monitor" in 
 
 *Lesson learned: 2026-02-26 — Added "Tag = Track + Engage" to AGENTS.md but forgot HEARTBEAT.md. The rule existed but never ran. HMT caught it on double-check.*
 
+## Alert Discipline — Verify Before Escalating
+
+Before escalating ANY infrastructure alert (Slack channels, email access, system outages, capability losses):
+
+**MANDATORY VERIFICATION STEPS:**
+1. **Pagination check** — If using Slack/Gmail/any paginated API, fetch ALL pages. Never assume first page = complete data.
+2. **Baseline integrity** — Check the baseline/state file itself. Is it corrupt? Incomplete? Stale? Don't compare against bad data.
+3. **Actual capability test** — If claiming "lost access to #growth-pod", try to READ from #growth-pod. Prove the loss before alerting.
+4. **Read your own output correctly** — "NEW_CHANNELS" means added, not removed. "REMOVED_CHANNELS" means removed. Don't invent crises.
+5. **Ask: Would a human escalate this or investigate first?** — If the answer is investigate, do that before alerting HMT.
+
+**Escalate immediately (no investigation needed):**
+- Active user-facing outages (Telegram down, gateway crashed)
+- Security incidents (unauthorized access, data exposure)
+- Critical failures during HMT's active work (tool broken mid-task)
+
+**Investigate first (5 min max):**
+- Background capability warnings (channel access, API quota)
+- Monitoring script anomalies (diff detected changes)
+- Config/baseline file discrepancies
+
+**Exception:** If uncertain after 5 min investigation, escalate with "uncertain — here's what I know so far."
+
+*Lesson learned: 2026-03-01 — Triple-escalated false "Slack channel loss" alarm due to: incomplete pagination, baseline file corruption (58 vs 356 channels), and misreading "NEW_CHANNELS" as removal. All three escalations were wrong. HMT had to tell me to double-check. Root cause: didn't verify baseline integrity or paginate API calls. Never escalate infrastructure alerts without completing the checklist above.*
+
 ## Safety
 
 - Don't exfiltrate private data. Ever.
