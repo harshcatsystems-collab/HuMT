@@ -57,6 +57,34 @@ When HMT says "already done" or you see resolution in Slack/email:
 → Re-surfacing resolved items is the **#1 trust killer**
 *Lesson learned: 2026-02-16 — claimed consolidation was "complete" multiple times while missing 6+ source files. HMT had to remind me to check my own research directory. When consolidating, ALWAYS `ls` the full directory and cross-check EVERY file. Don't declare done until you've verified completeness yourself. HMT shouldn't have to walk on eggshells.*
 
+### ⚠️ FOOLPROOF STATUS VERIFICATION — MANDATORY
+
+**Before surfacing ANY item as "pending" or "needs action" (to HMT, in briefs, in status checks):**
+
+**RUN THIS COMMAND:**
+```bash
+bash scripts/verify-item-status.sh <thread_ts> <channel_id>
+```
+
+**Returns:** `CLOSED` | `OPEN` | `UNKNOWN`
+
+**Rule:** If `CLOSED` → DO NOT surface it. If `OPEN` → can surface. If `UNKNOWN` → verify manually in thread.
+
+**How it works (triple-check):**
+1. Checks `memory/humt-actions.jsonl` → did I log this as closed?
+2. Checks Slack thread → is there an approval message from me?
+3. Checks reactions → did any founder react with ✓?
+
+**When to log actions:**
+Every time I post an approval, handle a request, or close an item → IMMEDIATELY run:
+```bash
+bash scripts/log-action.sh '{"type":"approval_posted","channel":"C123","thread_ts":"123.456","action":"Approved","requestor":"Name","status":"closed"}'
+```
+
+**This system is MANDATORY, not optional.** No exceptions. No "I'll remember to check."
+
+*Lesson learned: 2026-03-02 — Re-surfaced Saloni + Rahul approvals as "pending" even though I'd already posted both approvals. HMT had to link me to my own messages. This happened because I took actions but didn't log them, then couldn't verify what I'd done. Built action log + verification system to make this structurally impossible.*
+
 ### 📂 Memory System (v2)
 
 The memory system has structured files — use them:
@@ -241,6 +269,29 @@ If cross-context relay fails, Telegram is down, or any delivery path breaks: **q
 
 *Lesson learned: 2026-02-26 — Posted 8 messages in #finance-department including raw error dumps, thinking-out-loud narration, and acted like an approver. HMT caught it. All deleted. Never again.*
 
+### 6. Use Slack Post Wrapper — MANDATORY (No Direct Posts)
+
+**For ANY Slack post to channels (not DMs):**
+
+**Use the wrapper script:**
+```bash
+bash scripts/slack-post.sh --channel C123 --message "Your message" [--thread 123.456] [--tag-names "Name1,Name2"]
+```
+
+**What it does automatically:**
+1. Verifies all user IDs (via people_directory or API lookup)
+2. Auto-logs to `memory/humt-actions.jsonl` (action tracking)
+3. Returns message_ts for tracking
+4. Prevents wrong user IDs, missing logs, untracked actions
+
+**DO NOT use message tool directly for channel posts.** Use the wrapper.
+
+**Why this exists:** Direct posts can tag wrong people (user ID errors), don't get logged (re-surface as pending), can't be verified later (status confusion).
+
+**User directory:** `memory/slack-channel-map.json` → `people_directory` (151 users, refreshed weekly)
+
+*Lesson learned: 2026-03-02 — Tagged wrong users twice, re-surfaced resolved items because actions weren't logged. Built wrapper to make verification + logging automatic, not optional.*
+
 ---
 
 ## Group Chats
@@ -404,3 +455,40 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+---
+
+## 🚨 Netlify Deployment — MANDATORY Script Usage
+
+**NEVER deploy to Netlify using direct API calls.**
+
+**ALWAYS use:**
+```bash
+bash scripts/deploy-presentation.sh <filename.html> [folder]
+```
+
+**Why this exists:**
+- Direct API calls with single-file manifests WILL DELETE all other files from the site
+- The script builds a full manifest (all HTML/PNG/favicon files) for every deploy
+- Netlify interprets "this deploy has 1 file" as "site should have ONLY 1 file"
+
+**What the script does:**
+1. Validates file exists + is linked in index.html
+2. Validates ALL files are linked
+3. Builds complete file manifest (not just the new file)
+4. Deploys with health check
+5. Auto-heals if index.html goes 404
+6. Optionally uploads to Google Drive
+
+**If script fails:** Report error. Don't bypass with API calls.
+
+**This applies to:**
+- Sub-agents building presentations
+- Manual deploys
+- Batch operations
+- ANY Netlify interaction
+
+**Violation consequence:** Site goes 404, all files deleted, trust broken.
+
+*Lesson learned: 2026-03-02 — Sub-agent bypassed deploy script, used direct API with single-file manifest, deleted entire site. HMT found it 404. Built three-layer protection: enforce script usage + auto-heal + monitoring.*
+

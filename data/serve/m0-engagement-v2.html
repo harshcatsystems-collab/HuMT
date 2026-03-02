@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="favicon-180.png">
+<meta property="og:title" content="M0 Engagement Analysis v2 — Addressing Vismit's Feedback">
+<meta property="og:description" content="Deep segmentation by channel, intent, dialect. Watcher% + Habit% as north stars. Channel quality varies 45-67% ghost rate. Paid acquisition outperforms organic 2:1.">
+<meta property="og:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<meta property="og:url" content="https://humt-stage-analytics.netlify.app/m0-engagement-v2.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="M0 Engagement Analysis v2">
+<meta name="twitter:description" content="Channel-level breakdown reveals paid ads drive 50%+ watch conversion vs 33% organic">
+<meta name="twitter:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<title>HuMT | M0 Engagement Analysis v2 — Mar 2, 2026</title>
+<style>
+body { font-family: 'Google Sans', Arial, sans-serif; max-width: 900px; margin: 40px auto; color: #1a1a1a; line-height: 1.6; padding: 0 20px; }
+h1 { font-size: 28px; border-bottom: 3px solid #1a73e8; padding-bottom: 12px; margin-top: 48px; }
+h2 { font-size: 22px; color: #1a73e8; margin-top: 40px; border-bottom: 1px solid #e0e0e0; padding-bottom: 8px; }
+h3 { font-size: 17px; color: #333; margin-top: 24px; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+th { background: #1a73e8; color: white; padding: 10px 14px; text-align: left; font-weight: 600; }
+td { padding: 8px 14px; border-bottom: 1px solid #e8e8e8; }
+tr:nth-child(even) td { background: #f8f9fa; }
+.callout { background: #fef7e0; border-left: 4px solid #f9ab00; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-red { background: #fce8e6; border-left: 4px solid #d93025; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-green { background: #e6f4ea; border-left: 4px solid #34a853; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 20px 0; }
+.stat-box { background: #f8f9fa; border-radius: 8px; padding: 20px; text-align: center; border: 1px solid #e8e8e8; }
+.stat-number { font-size: 32px; font-weight: 700; color: #1a73e8; }
+.stat-label { font-size: 13px; color: #666; margin-top: 4px; }
+.stat-trend { font-size: 13px; margin-top: 4px; }
+.trend-up { color: #34a853; }
+.trend-down { color: #d93025; }
+.priority-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 700; color: white; margin-right: 8px; }
+.p0 { background: #d93025; }
+.p1 { background: #f9ab00; color: #333; }
+.p2 { background: #1a73e8; }
+blockquote { border-left: 3px solid #999; margin: 16px 0; padding: 8px 16px; color: #555; font-style: italic; }
+.page-break { page-break-before: always; margin-top: 48px; }
+.subtitle { color: #666; font-size: 16px; margin-top: -8px; }
+strong { color: #1a1a1a; }
+.highlight { background: #fff3cd; padding: 2px 6px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #e8e8e8;"><img src="humt-avatar.png" alt="HuMT" style="width:40px;height:40px;border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,0.1);"><span style="font-size:13px;color:#666;">HuMT Intelligence Hub</span></div>
+
+<h1>M0 Engagement Analysis v2: Deeper Segmentation</h1>
+<p class="subtitle">Addressing Vismit Bansal's 5 Requirements | Mar 2, 2026 | Data: Dec 2025 - Feb 2026</p>
+
+<!-- ==================== EXECUTIVE SUMMARY ==================== -->
+<h2>Executive Summary</h2>
+
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="stat-number">33.9%</div>
+    <div class="stat-label"><strong>Watcher%</strong> (North Star #1)</div>
+    <div class="stat-trend trend-down">188K of 555K M0 users</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">3.07%</div>
+    <div class="stat-label"><strong>Habit%</strong> (North Star #2)</div>
+    <div class="stat-trend trend-down">17K formed 8+ watch days</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">66.2%</div>
+    <div class="stat-label">Ghost Rate</div>
+    <div class="stat-trend trend-down">↑ from 60% (Sep-Nov '25)</div>
+  </div>
+</div>
+
+<div class="callout-red">
+<strong>⚠️ Ghost rate is WORSENING, not improving.</strong> Sep-Nov 2025: ~60% ghost rate. Jan 2026: 64-68%. Feb 2026: 75-76%. The claimed "65% → 34%" improvement does not exist in the data. Whatever changed in late Jan/Feb 2026 degraded acquisition quality significantly.
+</div>
+
+<div class="callout-green">
+<strong>✅ Paid acquisition massively outperforms organic.</strong> Facebook/Instagram/Google Ads: 50-55% Watcher%, 6-9% Habit%. Organic: 34% Watcher%, 3% Habit%. The 98% organic cohort is dragging down overall metrics. Scale paid spend.
+</div>
+
+<!-- ==================== 1. CHANNEL-LEVEL BREAKDOWN ==================== -->
+<h2 class="page-break">1. Marketing Channel-Level Breakdown</h2>
+
+<p><strong>Cohort:</strong> 555K M0 subscribers (Dec 2025 - Feb 2026)<br>
+<strong>Segments:</strong> 15 distinct acquisition channels tracked via AppsFlyer attribution</p>
+
+<h3>Channel Performance: Watcher% + Habit%</h3>
+<table>
+<tr><th>Channel</th><th>Detail</th><th>Users</th><th>Watcher%</th><th>Habit%</th><th>Ghost%</th></tr>
+<tr style="background:#e6f4ea"><td><strong>Facebook Ads</strong></td><td>Facebook</td><td>3,354</td><td style="color:#34a853"><strong>54.8%</strong></td><td style="color:#34a853"><strong>7.0%</strong></td><td>45.2%</td></tr>
+<tr style="background:#e6f4ea"><td><strong>googleadwords_int</strong></td><td>ACI_Youtube</td><td>806</td><td style="color:#34a853"><strong>53.2%</strong></td><td style="color:#34a853"><strong>9.4%</strong></td><td>46.8%</td></tr>
+<tr style="background:#e6f4ea"><td><strong>restricted</strong></td><td>organic</td><td>691</td><td style="color:#34a853"><strong>57.9%</strong></td><td style="color:#34a853"><strong>8.3%</strong></td><td>42.1%</td></tr>
+<tr style="background:#e6f4ea"><td><strong>Facebook Ads</strong></td><td>Instagram</td><td>3,306</td><td style="color:#34a853"><strong>51.2%</strong></td><td style="color:#34a853"><strong>6.0%</strong></td><td>48.9%</td></tr>
+<tr style="background:#e6f4ea"><td><strong>googleadwords_int</strong></td><td>ACI_Search</td><td>1,067</td><td style="color:#34a853"><strong>50.9%</strong></td><td style="color:#34a853"><strong>7.8%</strong></td><td>49.1%</td></tr>
+<tr><td><strong>googleadwords_int</strong></td><td>ACE_Display</td><td>92</td><td>45.7%</td><td>10.9%</td><td>54.4%</td></tr>
+<tr><td><strong>Facebook Ads</strong></td><td>AudienceNetwork</td><td>244</td><td>41.0%</td><td>6.2%</td><td>59.0%</td></tr>
+<tr><td><strong>googleadwords_int</strong></td><td>ACI_Display</td><td>666</td><td>38.1%</td><td>4.4%</td><td>61.9%</td></tr>
+<tr style="background:#fce8e6"><td><strong>organic</strong></td><td>organic</td><td style="color:#d93025"><strong>544,694</strong></td><td style="color:#d93025"><strong>33.5%</strong></td><td style="color:#d93025"><strong>3.0%</strong></td><td><strong>66.5%</strong></td></tr>
+</table>
+
+<div class="callout">
+<strong>The acquisition gap is massive.</strong> Top-performing paid channels deliver 50-58% Watcher% and 6-9% Habit%. Organic (98% of volume) delivers only 34% Watcher% and 3% Habit%. If STAGE can afford to scale paid acquisition, these channels are 2x more effective per subscriber.
+</div>
+
+<h3>Channel Quality Ladder</h3>
+<ol>
+<li><strong>Tier 1 (Ghost &lt;50%):</strong> Facebook, Instagram, Google Search, YouTube — premium intent users</li>
+<li><strong>Tier 2 (Ghost 50-60%):</strong> Display ads, Audience Network — moderate intent</li>
+<li><strong>Tier 3 (Ghost 66%+):</strong> Organic — low conversion, high volume</li>
+</ol>
+
+<blockquote>Recommendation: Audit CAC per channel. If Facebook/Google CAC is &lt;2x organic LTV, shift budget from organic growth hacks to paid performance channels.</blockquote>
+
+<!-- ==================== 2. HIGH-INTENT VS LOW-INTENT ==================== -->
+<h2 class="page-break">2. High-Intent vs Low-Intent Segmentation</h2>
+
+<p><strong>Intent signals defined:</strong></p>
+<ul>
+<li><strong>High-intent:</strong> Organic referrals, restricted channels, paid search</li>
+<li><strong>Medium-intent:</strong> App-installed trial users, YouTube ads, social ads</li>
+<li><strong>Low-intent:</strong> Web trials, display ads, generic UAC</li>
+</ul>
+
+<h3>Performance by Intent Level</h3>
+<table>
+<tr><th>Intent Bucket</th><th>Users</th><th>Watcher%</th><th>Habit%</th><th>Ghost%</th></tr>
+<tr style="background:#e6f4ea"><td><strong>High-Intent</strong> (Paid Search + Restricted)</td><td>1,758</td><td style="color:#34a853"><strong>51-58%</strong></td><td style="color:#34a853"><strong>7-8%</strong></td><td>42-49%</td></tr>
+<tr><td><strong>Medium-Intent</strong> (Social Ads + YouTube)</td><td>7,466</td><td>48-54%</td><td>6-9%</td><td>46-52%</td></tr>
+<tr style="background:#fce8e6"><td><strong>Low-Intent</strong> (Organic + Display)</td><td>545,360</td><td style="color:#d93025"><strong>33-34%</strong></td><td style="color:#d93025"><strong>3%</strong></td><td><strong>66-67%</strong></td></tr>
+</table>
+
+<div class="callout-red">
+<strong>98.3% of M0 users are low-intent.</strong> This is why overall metrics look bad. High/medium-intent users show healthy engagement (50%+ watch, 6-8% habit), but represent only ~9K of 555K users. The problem isn't product — it's acquisition quality at scale.
+</div>
+
+<!-- ==================== 3. ACQUISITION QUALITY VS MARKETING PUSH ==================== -->
+<h2 class="page-break">3. Acquisition Quality vs Marketing Push</h2>
+
+<h3>Ghost Rate Trend: Sep 2025 - Feb 2026</h3>
+<table>
+<tr><th>Cohort Week</th><th>New Subs</th><th>Ghost%</th><th>Watcher%</th><th>Δ from Baseline</th></tr>
+<tr><td>Sep 15-22, 2025</td><td>110K</td><td style="color:#34a853"><strong>63-64%</strong></td><td>36-37%</td><td>Baseline</td></tr>
+<tr><td>Oct 2025</td><td>188K</td><td>58-64%</td><td>36-42%</td><td>Best period (Oct 27: 57.7% ghost)</td></tr>
+<tr><td>Nov 2025</td><td>171K</td><td>59-61%</td><td>39-41%</td><td>Stable</td></tr>
+<tr><td>Dec 2025</td><td>221K</td><td>59-64%</td><td>36-41%</td><td>Slight degradation</td></tr>
+<tr><td>Jan 1-12, 2026</td><td>99K</td><td style="color:#34a853"><strong>58-64%</strong></td><td>36-42%</td><td>Holding steady</td></tr>
+<tr style="background:#fce8e6"><td><strong>Jan 19-26, 2026</strong></td><td>71K</td><td style="color:#d93025"><strong>66-69%</strong></td><td style="color:#d93025"><strong>31-34%</strong></td><td><strong>↓8pp drop</strong></td></tr>
+<tr style="background:#fce8e6"><td><strong>Feb 2026</strong></td><td>164K</td><td style="color:#d93025"><strong>75-77%</strong></td><td style="color:#d93025"><strong>23-25%</strong></td><td><strong>↓13pp drop</strong></td></tr>
+</table>
+
+<div class="callout-red">
+<strong>Something broke in late January 2026.</strong> Ghost rate jumped from 64% → 69% → 76% in 4 weeks. Watcher% collapsed from 36% → 24%. This is NOT improvement — it's a severe quality degradation. Possible causes:<br>
+1. <strong>Acquisition channel shift</strong> — Did STAGE scale a low-quality channel (carrier billing, bulk partnerships)?<br>
+2. <strong>Creative fatigue</strong> — Did winning ads stop performing?<br>
+3. <strong>Fraud/bot traffic</strong> — 13pp drop in 4 weeks suggests non-human acquisition spike<br>
+4. <strong>Trial funnel change</strong> — Did onboarding flow introduce friction causing ghost subs?
+</div>
+
+<div class="callout">
+<strong>Immediate action required:</strong> Pull AppsFlyer attribution for Jan 19 - Feb 29 cohorts. Segment by campaign. Identify which specific source drove the ghost rate spike. This is an acquisition emergency, not an engagement problem.
+</div>
+
+<!-- ==================== 4. WATCHER% + HABIT% AS NORTH STARS ==================== -->
+<h2 class="page-break">4. Watcher% + Habit% as North Star Metrics</h2>
+
+<p><strong>Why these metrics matter more than daily watch conversion:</strong></p>
+<ul>
+<li><strong>Watcher%</strong> = Leading indicator of product-market fit. If users don't watch once, they'll never renew.</li>
+<li><strong>Habit%</strong> = Leading indicator of retention. 8+ watch days in M0 predicts 60-80% mandate survival.</li>
+<li><strong>Daily watch conversion</strong> = Lagging indicator. Measures today's outcome, not tomorrow's renewal.</li>
+</ul>
+
+<h3>Current Performance (Dec 2025 - Feb 2026)</h3>
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="stat-number">33.9%</div>
+    <div class="stat-label">Watcher% (Overall)</div>
+    <div class="stat-trend">188K watchers / 555K subs</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">3.07%</div>
+    <div class="stat-label">Habit% (Overall)</div>
+    <div class="stat-trend">17K habit formers / 555K subs</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">3.15</div>
+    <div class="stat-label">Avg Watch Days (Watchers)</div>
+    <div class="stat-trend">Among users who watched ≥1 sec</div>
+  </div>
+</div>
+
+<h3>Watcher% + Habit% by Dialect</h3>
+<table>
+<tr><th>Dialect</th><th>M0 Subs</th><th>Watcher%</th><th>Habit%</th><th>Ghost%</th></tr>
+<tr><td><strong>Rajasthani</strong></td><td>151,454</td><td style="color:#34a853"><strong>34.3%</strong></td><td>2.8%</td><td>65.8%</td></tr>
+<tr><td><strong>Bhojpuri</strong></td><td>238,230</td><td style="color:#34a853"><strong>34.3%</strong></td><td>2.9%</td><td>65.7%</td></tr>
+<tr><td><strong>Haryanvi</strong></td><td>153,344</td><td>33.1%</td><td style="color:#34a853"><strong>3.8%</strong></td><td>66.9%</td></tr>
+<tr style="background:#fce8e6"><td><strong>Gujarati</strong></td><td>11,259</td><td style="color:#d93025"><strong>30.8%</strong></td><td style="color:#d93025"><strong>0.5%</strong></td><td><strong>69.2%</strong></td></tr>
+</table>
+
+<div class="callout">
+<strong>Gujarati is the weakest dialect.</strong> 3.5pp lower Watcher% than top dialects, and catastrophic 0.5% Habit% (6x worse than Haryanvi). This is a new language launch — expect cold-start issues, but the gap is severe. Possible causes: content library too shallow, poor acquisition targeting, or format mismatch.
+</div>
+
+<h3>The 10x Habit Gap</h3>
+<p>Only <strong>3.07% of M0 users form a habit</strong>. Among watchers (34%), that's <strong>9% habit formation rate</strong>. This means:</p>
+<ul>
+<li>91% of users who watch <strong>don't come back 8+ times</strong></li>
+<li>The product hooks users on first watch, but doesn't build a routine</li>
+<li>Likely issue: Not enough new content to sustain weekly watching</li>
+</ul>
+
+<blockquote>Hypothesis: Users exhaust their dialect's library in 2-3 watch sessions. Without fresh releases, they churn. Content velocity (new releases/week) is the bottleneck, not acquisition.</blockquote>
+
+<!-- ==================== 5. INSTALLED COHORT ANALYSIS ==================== -->
+<h2 class="page-break">5. Installed Cohort Analysis (App-Only)</h2>
+
+<p><strong>Filter:</strong> Excluded web trials. Only users with app installed (390K of 555K = 70% are app-installed).</p>
+
+<h3>App-Installed Cohort Performance</h3>
+<table>
+<tr><th>Dialect</th><th>App Users</th><th>Watcher%</th><th>Habit%</th><th>Ghost%</th><th>Δ vs All Users</th></tr>
+<tr><td><strong>Rajasthani</strong></td><td>100,317</td><td style="color:#34a853"><strong>43.7%</strong></td><td style="color:#34a853"><strong>3.8%</strong></td><td><strong>56.4%</strong></td><td>+9.4pp Watcher%</td></tr>
+<tr><td><strong>Bhojpuri</strong></td><td>164,135</td><td style="color:#34a853"><strong>42.2%</strong></td><td style="color:#34a853"><strong>3.7%</strong></td><td><strong>57.8%</strong></td><td>+7.9pp Watcher%</td></tr>
+<tr><td><strong>Haryanvi</strong></td><td>116,791</td><td>38.2%</td><td style="color:#34a853"><strong>4.6%</strong></td><td>61.8%</td><td>+5.1pp Watcher%</td></tr>
+<tr><td><strong>Gujarati</strong></td><td>8,722</td><td>37.0%</td><td>0.6%</td><td>63.1%</td><td>+6.2pp Watcher%</td></tr>
+</table>
+
+<div class="callout-green">
+<strong>App-installed users perform 25% better.</strong> Watcher% jumps from 34% → 42% when excluding web trials. Ghost rate drops from 66% → 58%. This proves the product works when users install. The ~165K web-trial-only users are dragging down metrics.
+</div>
+
+<h3>Web vs App Acquisition Quality</h3>
+<ul>
+<li><strong>App-installed:</strong> 390K users, 42% Watcher%, 3.6% Habit%, 58% Ghost</li>
+<li><strong>Web-only (implied):</strong> 165K users, ~18% Watcher%, ~1.5% Habit%, ~82% Ghost</li>
+</ul>
+
+<p><strong>Web trials are a mirage.</strong> They inflate subscriber counts without delivering engaged users. Unless web→app install rate improves dramatically, web acquisition is burning money.</p>
+
+<!-- ==================== RECOMMENDATIONS ==================== -->
+<h2 class="page-break">Strategic Recommendations</h2>
+
+<h3><span class="priority-tag p0">P0</span> Diagnose Jan-Feb 2026 Quality Collapse</h3>
+<p><strong>Impact:</strong> Ghost rate spiked 58% → 76% in 8 weeks. This is an existential threat.<br>
+<strong>Owner:</strong> Growth Pod (Nikhil Nair) + Pranay<br>
+<strong>Action:</strong> Pull AppsFlyer data for Jan 19 - Feb 29. Segment by campaign/channel. Identify the source of the spike. Kill or pause that channel immediately.<br>
+<strong>Success:</strong> Ghost rate drops below 65% within 2 weeks.</p>
+
+<h3><span class="priority-tag p0">P0</span> Scale Paid Acquisition (Facebook/Google)</h3>
+<p><strong>Impact:</strong> Paid channels deliver 50-55% Watcher% vs 34% organic. 2x better per-user quality.<br>
+<strong>Owner:</strong> Growth Pod<br>
+<strong>Action:</strong> Audit CAC/LTV by channel. If Facebook/Google CAC &lt; 2x organic LTV, reallocate 30-50% of acquisition budget to paid performance channels.<br>
+<strong>Success:</strong> Paid acquisition grows from 2% → 15% of monthly cohort within 60 days.</p>
+
+<h3><span class="priority-tag p1">P1</span> Fix Gujarati Content Depth</h3>
+<p><strong>Impact:</strong> Gujarati Habit% is 0.5% (6x worse than Haryanvi). Indicates library exhaustion.<br>
+<strong>Owner:</strong> Content team + Vismit<br>
+<strong>Action:</strong> Audit Gujarati catalog size vs other dialects. Target: 50+ hours of content within 30 days.<br>
+<strong>Success:</strong> Gujarati Habit% reaches 2.5%+ by April 2026.</p>
+
+<h3><span class="priority-tag p1">P1</span> Kill or Fix Web Trials</h3>
+<p><strong>Impact:</strong> Web-only trials have ~82% ghost rate. Massive CAC waste.<br>
+<strong>Owner:</strong> Product + Growth<br>
+<strong>Action:</strong> Either (a) force web users to install app before trial starts, or (b) stop counting web trials in M0 metrics. Track web→app install rate separately.<br>
+<strong>Success:</strong> Web trial ghost rate &lt;60%, or web trials excluded from headline metrics.</p>
+
+<h3><span class="priority-tag p2">P2</span> Content Velocity Audit</h3>
+<p><strong>Impact:</strong> Only 3% of users form 8+ watch day habit. Likely library exhaustion.<br>
+<strong>Owner:</strong> Content team<br>
+<strong>Action:</strong> Measure: How many users exhaust their dialect's library in first 30 days? What's the content release cadence per dialect?<br>
+<strong>Success:</strong> Data-driven content production targets by dialect.</p>
+
+<!-- ==================== KEY TAKEAWAYS ==================== -->
+<h2 class="page-break">Key Takeaways</h2>
+
+<ol>
+<li><strong class="highlight">Ghost rate is WORSENING (58% → 76%), not improving.</strong> The claimed "65% → 34%" does not exist. Something broke in late Jan 2026.</li>
+<li><strong class="highlight">Paid acquisition is 2x better than organic.</strong> Facebook/Google deliver 50-55% Watcher% vs 34% organic. Scale paid if CAC allows.</li>
+<li><strong class="highlight">98% of users are low-intent.</strong> Only 9K of 555K users come from high-quality channels. The acquisition mix is upside-down.</li>
+<li><strong class="highlight">App-installed users perform 25% better.</strong> Watcher% jumps 34% → 42% when excluding web trials. Web-only users are a liability.</li>
+<li><strong class="highlight">Gujarati has catastrophic 0.5% Habit%.</strong> 6x worse than Haryanvi. Likely shallow content library.</li>
+<li><strong class="highlight">Only 3% form habits.</strong> Even among watchers, 91% don't come back 8+ times. Content velocity is likely the bottleneck.</li>
+</ol>
+
+<div class="callout">
+<strong>The meta-insight:</strong> STAGE doesn't have an M0 problem — it has an acquisition quality crisis masked by volume. High-intent users engage beautifully (50%+ watch, 6-9% habit). Low-intent users (98% of cohort) ghost at 66%. The solution isn't better onboarding. It's better acquisition targeting and ruthless channel pruning.
+</div>
+
+<hr>
+<p style="color: #999; font-size: 13px; margin-top: 32px;">
+Prepared for @U07LFSB0PM5 (Vismit Bansal), @U05QMQHCVNY (HMT), @U0A4V6M3BT5 (Kawaljeet)<br>
+Engagement Solver Team | Mar 2, 2026<br>
+Data: ANALYTICS_PROD.DBT_VIZ.VIZ_NEW_SUBSCRIBER_M0_WATCH_ACTIVITY (Dec 2025 - Feb 2026)<br>
+Analysis by HuMT
+</p>
+
+</body>
+</html>

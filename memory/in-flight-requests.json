@@ -1,0 +1,61 @@
+{
+  "requests": [
+    {
+      "thread_ts": "1772455867.506709",
+      "channel": "C0904NE9Y2K",
+      "requestor": "Yatika kashyap",
+      "subject": "<@U0AE6043BB6>\nAdding Operational Context to the Weekly Retention Analysis\n\n WoW",
+      "relayed_at": "2026-03-02T13:50:51Z",
+      "status": "awaiting_response"
+    },
+    {
+      "thread_ts": "1772452026.704899",
+      "channel": "C08PGK8CM32",
+      "requestor": "Rahul Chauhan",
+      "subject": "<@U0AE6043BB6> <@U0ACDNAE0N7> <@UE0KTBS8P|Shashank Vaishnav> <@U05QMQHCVNY|Harsh",
+      "relayed_at": "2026-03-02T13:50:53Z",
+      "status": "awaiting_response"
+    },
+    {
+      "thread_ts": "1772432143.149199",
+      "channel": "C0904NE9Y2K",
+      "requestor": "Vismit Bansal",
+      "subject": "<@U0AE6043BB6> My feedback on M0 Engagement Analysis :\n• Though in this analysis",
+      "relayed_at": "2026-03-02T13:50:54Z",
+      "status": "awaiting_response"
+    },
+    {
+      "thread_ts": "1772432067.610059",
+      "channel": "C08PGK8CM32",
+      "requestor": "Rahul Chauhan",
+      "subject": "<@U0AE6043BB6> <@UEHET2Q2G|Vinay> <@U05QMQHCVNY|Harsh Mani Tripathi> <@UE0KTBS8P",
+      "relayed_at": "2026-03-02T13:50:56Z",
+      "status": "awaiting_response"
+    },
+    {
+      "thread_ts": "1772383166.495049",
+      "channel": "C08PGK8CM32",
+      "requestor": "Saloni Goyal",
+      "subject": "Hi <@UEHET2Q2G|Vinay> <@U0ACDNAE0N7> <@U05QMQHCVNY|Harsh Mani Tripathi> <@U0AE60",
+      "relayed_at": "2026-03-02T13:50:57Z",
+      "status": "awaiting_response"
+    },
+    {
+      "thread_ts": "1772193674.162129",
+      "channel": "C0AH4FP8VR9",
+      "requestor": "Nikhil Nair",
+      "subject": "<@U0AE6043BB6> earlier ghost number was 65%, then seeing the wrong source it was",
+      "relayed_at": "2026-03-02T13:50:59Z",
+      "status": "awaiting_response"
+    },
+    {
+      "thread_ts": "1772193228.402379",
+      "channel": "C08PGK8CM32",
+      "requestor": "Rahul Chauhan",
+      "subject": "<@UE0KTBS8P|Shashank Vaishnav> <@U05QMQHCVNY|Harsh Mani Tripathi> <@U0AE6043BB6>",
+      "relayed_at": "2026-03-02T13:51:00Z",
+      "status": "awaiting_response"
+    }
+  ],
+  "last_updated": "2026-03-02T13:51:00Z"
+}

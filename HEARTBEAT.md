@@ -87,21 +87,38 @@ When scanning Slack, if a message mentions a tracked delegation from `memory/del
 
 ## @HuMT Mention Relay — PRIORITY CHECK (runs with DM relay, every heartbeat)
 
-Check if anyone tagged or mentioned HuMT across the **entire workspace** (channels, DMs, MPIMs — everything):
-1. Use **user token** `search.messages` API: query `<@U0AE6043BB6>` sorted by timestamp desc
-   ```bash
-   USER_TOKEN=$(python3 -c "import json; print(json.load(open('/home/harsh/.openclaw/openclaw.json'))['channels']['slack']['userToken'])")
-   curl -s -H "Authorization: Bearer $USER_TOKEN" "https://slack.com/api/search.messages?query=%3C%40U0AE6043BB6%3E&sort=timestamp&sort_dir=desc&count=5"
-   ```
-2. If any result has timestamp > `lastMentionCheck`: relay to HMT via Telegram IMMEDIATELY
-3. Format: `🏷️ @HuMT mentioned in #channel by [Person]: [1-line summary]`
-4. Track last mention check timestamp in `memory/slack-digest-state.json` → `lastMentionCheck`
-5. React with 👀 on the message (if bot has access to that channel)
-6. **Auto-add to `memory/presentation-tracking.json`** as a tracked thread (relay is step 1, tracking is step 2)
+**AUTOMATIC HANDLING (Unified Script):**
 
-**Why user token:** Bot token only sees channels it's a member of. User token search covers the entire workspace — DMs, MPIMs, private channels, everything. No blind spots.
+For EACH new mention detected, run:
+```bash
+bash scripts/handle-humt-mention.sh --thread-ts <ts> --channel <channel> --user <user_id> --text "<preview>"
+```
 
-**Why priority:** HMT explicitly said "relay to me almost immediately." Missing a tag = missing trust.
+**Script executes all 8 steps atomically:**
+
+**Steps 1-6 (Immediate):**
+1. ✓ React with 👀
+2. ✓ Post written acknowledgment ("Noted — checking with HMT")
+3. ✓ Relay to HMT on Telegram
+4. ✓ Add to presentation-tracking.json
+5. ✓ Add to in-flight-requests.json (status: "awaiting_response")
+6. ✓ Mark as processed (prevents re-alerting)
+
+**Steps 7-8 (After HMT responds):**
+7. Post HMT's decision in thread (ONE clean message, tag requestor with verified user ID)
+8. Log action complete + remove from in-flight
+
+**ProcessedMentions pre-filter:**
+- Script checks processedMentions BEFORE executing steps 1-6
+- If mention already processed → skip entirely (silent)
+- Only NEW mentions trigger the 8-step flow
+- **Prevents:** Re-alerting HMT on same mention multiple times
+
+**Why processed tracking:** Prevents re-alerting on the same mention. Saloni's payment approval shouldn't trigger 5 alerts. Once handled = marked processed = never surfaced again.
+
+**What a human CoS would do:** See tag → "Got it, checking with Harsh" → (gets answer) → "@Person — Approved." Clean, fast, no confusion.
+
+*Lesson learned: Mar 1-2 — Saloni + Rahul payment approvals. I reacted 👀 immediately but: (1) didn't post written ack, (2) leaked thinking to Slack, (3) created duplicates, (4) kept re-alerting HMT on already-handled items because I didn't track processed mentions. HMT corrected all four. Fixed with processedMentions tracking + explicit 5-step workflow.*
 
 ---
 
@@ -115,14 +132,31 @@ Check if anyone tagged or mentioned HuMT across the **entire workspace** (channe
 - When the @HuMT mention scan (above) detects a NEW mention → **automatically add it to `memory/presentation-tracking.json`** as a tracked thread
 - Don't just relay and forget — the relay is step 1, tracking is step 2
 
-### Scanning existing tracked threads:
-1. Read `memory/presentation-tracking.json` for active tracked threads
-2. For each thread: fetch reactions + replies via Slack API
-3. Compare against last snapshot — detect NEW reactions, NEW replies
-4. **If new reply:** Engage in-thread if appropriate (answer questions, acknowledge, keep conversation moving)
-5. **If new reaction from key person** (co-founder, direct report): Note it
-6. **If reply needs HMT's input:** Alert on Telegram immediately
-7. Update snapshot in `presentation-tracking.json`
+### Scanning existing tracked threads (AUTOMATIC — every heartbeat):
+
+**Run the script:**
+```bash
+export BOT_TOKEN=$(python3 -c "import json; print(json.load(open('/home/harsh/.openclaw/openclaw.json'))['channels']['slack']['botToken'])")
+bash scripts/scan-tracked-threads.sh
+```
+
+**Script does:**
+1. Reads `memory/presentation-tracking.json` for all tracked threads
+2. Fetches current state via Slack API
+3. Compares against last snapshot → detects NEW replies, NEW reactions
+4. Returns: {new_replies, new_reactions, needs_escalation}
+
+**If new_replies found:**
+- Engage in-thread if appropriate (answer questions, acknowledge)
+- Log to daily memory
+- If needs HMT input → alert on Telegram
+
+**If needs_escalation (co-founder replies):**
+- Alert HMT on Telegram immediately: `🔔 [Analysis]: [Founder] replied in thread`
+
+**Update tracking file:**
+- After processing, update snapshot timestamp to current time
+- Prevents re-alerting on same engagement
 
 **Escalation to HMT (Telegram):**
 - Co-founder replies (Vinay, Shashank, Parveen)
@@ -151,6 +185,17 @@ Check if anyone tagged or mentioned HuMT across the **entire workspace** (channe
 - Move processed daily files to `memory/archive/YYYY-MM/`
 - Update people.md with any contacts found in old logs that were missed
 
+### Netlify Site Health Check (every 2 hours)
+- Check if homepage is live: `curl -s -o /dev/null -w "%{http_code}" https://humt-stage-analytics.netlify.app/`
+- If HTTP 404 → AUTO-HEAL:
+  ```bash
+  cd /home/harsh/.openclaw/workspace/data/serve
+  # Redeploy index.html via Netlify API
+  bash scripts/deploy-presentation.sh index.html
+  ```
+- If heal fails → alert HMT on Telegram: "🚨 Netlify site down (404), auto-heal failed"
+- Track last check in heartbeat-state.json → `netlify_health_check`
+
 ### Netlify ↔ Drive Sync (every heartbeat)
 - Run `bash scripts/verify-netlify-drive-sync.sh`
 - If `in_sync: false` → upload missing files using `bash scripts/upload-to-drive.sh <file> <folder>`
@@ -161,6 +206,20 @@ Check if anyone tagged or mentioned HuMT across the **entire workspace** (channe
 - Review `memory/capability-status.md`
 - If any config change or restart happened since last check, re-test affected capabilities
 - Update the "Last Tested" dates
+
+### Slack User Directory Refresh (weekly, Sundays)
+- Run full `users.list` API call and regenerate `people_directory` in `memory/slack-channel-map.json`
+- This keeps user IDs current as people join/leave
+- Script:
+  ```bash
+  BOT_TOKEN=$(python3 -c "import json; print(json.load(open('/home/harsh/.openclaw/openclaw.json'))['channels']['slack']['botToken'])")
+  curl -s -H "Authorization: Bearer $BOT_TOKEN" "https://slack.com/api/users.list" | \
+  jq -r '.members[] | select(.deleted == false and .is_bot == false) | {id: .id, name: .name, real_name: .real_name, email: (.profile.email // "")}' | \
+  jq -s 'map({(.id): {name: .name, real_name: .real_name, email: .email}}) | add' > /tmp/people-directory.json
+  jq --slurpfile dir /tmp/people-directory.json '. + {people_directory: $dir[0]}' memory/slack-channel-map.json > memory/slack-channel-map.json.tmp
+  mv memory/slack-channel-map.json.tmp memory/slack-channel-map.json
+  ```
+- Log count to daily memory: "Refreshed Slack user directory: N users"
 
 ---
 
@@ -177,18 +236,20 @@ After each morning brief / evening debrief / alert / meeting prep is delivered:
 
 ## Stale Item Prevention (AUTOMATED — runs before every brief/debrief)
 
-### Step 1: Run the verification script
+### MANDATORY: Run Status Report Pre-Flight
 ```bash
-bash scripts/verify-active-items.sh
+bash scripts/generate-status-report.sh > /tmp/current-status.json
 ```
-This checks ALL active items in `commitments.md` and `delegations.md` against evidence (daily logs, capability-status, TOOLS.md, scripts/, research/). Returns JSON array of stale suspects.
 
-### Step 2: If stale items found → auto-move to Completed BEFORE generating the brief
-- Don't surface them as pending
-- Don't ask HMT to confirm
-- Just fix the tracker and move on
+This script:
+1. Scans @HuMT mentions (last 20), commitments.md, delegations.md
+2. Auto-runs `verify-item-status.sh` on EVERY item (checks action log + Slack thread + founder reactions)
+3. Returns ONLY verified-open items
+4. Filters out already-closed items automatically
 
-### Step 3: Manual verification (belt + suspenders)
+**Use the output** (not raw files) when generating ANY status list for HMT.
+
+### Legacy verification (keep as backup)
 
 Before surfacing ANY item as "pending" or "needs action":
 1. **Check the source channel** for HMT's response/action (last 48h)

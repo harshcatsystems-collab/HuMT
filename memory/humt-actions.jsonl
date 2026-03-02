@@ -1,0 +1,101 @@
+{"ts":1772387470,"date":"2026-03-01T17:11:10Z","type":"approval_posted","channel":"C08PGK8CM32","channel_name":"finance-department","thread_ts":"1772383166.495049","message_ts":"1772387470.766099","action":"Payment approved by HMT","requestor":"Saloni Goyal","requestor_id":"U07FXP4MKDY","subject":"Bhairavi Promo Shoot payment","status":"closed"}
+{"ts":1772433063,"date":"2026-03-02T06:24:23Z","type":"approval_posted","channel":"C08PGK8CM32","channel_name":"finance-department","thread_ts":"1772432067.610059","message_ts":"1772433063.863279","action":"Yes Bank access approved by HMT","requestor":"Rahul Chauhan","requestor_id":"U05HAE85RL2","subject":"Yes Bank login for statement download","status":"closed"}
+{
+  "type": "approval_posted",
+  "thread_ts": "1772888888.111111",
+  "channel": "C08PGK8CM32",
+  "action": "Test approval",
+  "status": "closed",
+  "ts": 1772459006,
+  "date": "2026-03-02T13:43:26Z"
+}
+{
+  "type": "mention_handled",
+  "thread_ts": "1772456627.931439",
+  "channel": "C0904NE9Y2K",
+  "user": "U05QMQHCVNY",
+  "steps_completed": "1-6",
+  "ts": 1772459447,
+  "date": "2026-03-02T13:50:47Z"
+}
+{
+  "type": "mention_handled",
+  "thread_ts": "1772456431.815429",
+  "channel": "C0904NE9Y2K",
+  "user": "U05QMQHCVNY",
+  "steps_completed": "1-6",
+  "ts": 1772459449,
+  "date": "2026-03-02T13:50:49Z"
+}
+{
+  "type": "mention_handled",
+  "thread_ts": "1772456364.622169",
+  "channel": "C0904NE9Y2K",
+  "user": "U05QMQHCVNY",
+  "steps_completed": "1-6",
+  "ts": 1772459450,
+  "date": "2026-03-02T13:50:50Z"
+}
+{
+  "type": "mention_handled",
+  "thread_ts": "1772455867.506709",
+  "channel": "C0904NE9Y2K",
+  "user": "U07Q1LJMR7B",
+  "steps_completed": "1-6",
+  "ts": 1772459452,
+  "date": "2026-03-02T13:50:52Z"
+}
+{
+  "type": "mention_handled",
+  "thread_ts": "1772452026.704899",
+  "channel": "C08PGK8CM32",
+  "user": "U05HAE85RL2",
+  "steps_completed": "1-6",
+  "ts": 1772459453,
+  "date": "2026-03-02T13:50:53Z"
+}
+{
+  "type": "mention_handled",
+  "thread_ts": "1772432143.149199",
+  "channel": "C0904NE9Y2K",
+  "user": "U07LFSB0PM5",
+  "steps_completed": "1-6",
+  "ts": 1772459454,
+  "date": "2026-03-02T13:50:54Z"
+}
+{
+  "type": "mention_handled",
+  "thread_ts": "1772432067.610059",
+  "channel": "C08PGK8CM32",
+  "user": "U05HAE85RL2",
+  "steps_completed": "1-6",
+  "ts": 1772459456,
+  "date": "2026-03-02T13:50:56Z"
+}
+{
+  "type": "mention_handled",
+  "thread_ts": "1772383166.495049",
+  "channel": "C08PGK8CM32",
+  "user": "U07FXP4MKDY",
+  "steps_completed": "1-6",
+  "ts": 1772459458,
+  "date": "2026-03-02T13:50:58Z"
+}
+{
+  "type": "mention_handled",
+  "thread_ts": "1772193674.162129",
+  "channel": "C0AH4FP8VR9",
+  "user": "U08L99D58PK",
+  "steps_completed": "1-6",
+  "ts": 1772459459,
+  "date": "2026-03-02T13:50:59Z"
+}
+{
+  "type": "mention_handled",
+  "thread_ts": "1772193228.402379",
+  "channel": "C08PGK8CM32",
+  "user": "U05HAE85RL2",
+  "steps_completed": "1-6",
+  "ts": 1772459461,
+  "date": "2026-03-02T13:51:01Z"
+}

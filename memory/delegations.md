@@ -21,8 +21,16 @@
 | D16 | Test international payments live (bh & gj) | Gopal Iyer / Vedanta | 2026-02-26 | #acquisition-pod | "Planning to go live today" | 0 |
 | D17 | Breakdown agentic framework implementation | Kamal Singh Chauhan | 2026-02-26 | #ai-native-agentic-framework-content | Accepted from Parveen MoM | 0 |
 | D18 | Perf Marketing P0 actions (personality layer, ghost users) | Parveen Singhal / team | 2026-02-26 | #ai-native-performance-marketing | Parveen posted action items | 0 |
+| D19 | Scale first subscription pitch to 5% | Vipul Sharma | 2026-03-02 | #growth-pod | Jagriti delegated | 0 |
+| D20 | Provide 1D trial deep link for Naate (tROAS optimized) | Product Team → Gopal/Vedant | 2026-03-02 | #product-growth | Gopal requested for acquisition | 0 |
+| D21 | Take D0TCR signal updates hourly | Vedant Wagh | 2026-03-02 | #product-growth | Gopal delegated | 0 |
+| D22 | Discuss + close Naate TCR reduction interventions | Nikhil Nair → Aaliya Mirza | 2026-03-02 | #user_activation | As Naate scales, TCR critical | 0 |
 | D5 | Set up CLM for chatbot feature launch | Vismit Bansal | 2026-02-20 | #ai-character-bots | Aaliya requested, plan shared | 4 ⚠️ |
 | D6 | Send chatbot interaction video for UAT | Junaid Qureshi | 2026-02-20 | #ai-character-bots | Nikhil requested for Radhika UAT | 4 ⚠️ |
+| D19 | Scale first subscription pitch to 5% | Vipul Sharma | 2026-03-02 | #growth-pod | Jagriti delegated | 0 |
+| D20 | Provide 1D trial deep link for Naate (tROAS optimized) | Product Team → Gopal/Vedant | 2026-03-02 | #product-growth | Gopal requested for acquisition | 0 |
+| D21 | Take D0TCR signal updates hourly | Vedant Wagh | 2026-03-02 | #product-growth | Gopal delegated | 0 |
+| D22 | Discuss + close Naate TCR reduction interventions | Nikhil Nair → Aaliya Mirza | 2026-03-02 | #user_activation | As Naate scales, TCR critical | 0 |
 
 ## Completed
 

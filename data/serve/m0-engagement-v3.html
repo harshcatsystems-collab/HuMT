@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="favicon-180.png">
+<meta property="og:title" content="M0 Engagement: The Full Picture — Learning from Three Passes">
+<meta property="og:description" content="Reflecting on the analytical journey. What v1 got wrong, how feedback changed my thinking, and the definitive synthesis.">
+<meta property="og:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<meta property="og:url" content="https://humt-stage-analytics.netlify.app/m0-engagement-v3.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="M0 Engagement: The Full Picture">
+<meta name="twitter:description" content="Three analytical passes. Two critical corrections. One unified insight.">
+<meta name="twitter:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<title>HuMT | M0 Engagement v3 — Deep Synthesis & Reflection</title>
+<style>
+body { font-family: 'Google Sans', Arial, sans-serif; max-width: 900px; margin: 40px auto; color: #1a1a1a; line-height: 1.6; padding: 0 20px; }
+h1 { font-size: 28px; border-bottom: 3px solid #1a73e8; padding-bottom: 12px; margin-top: 48px; }
+h2 { font-size: 22px; color: #1a73e8; margin-top: 40px; border-bottom: 1px solid #e0e0e0; padding-bottom: 8px; }
+h3 { font-size: 17px; color: #333; margin-top: 24px; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+th { background: #1a73e8; color: white; padding: 10px 14px; text-align: left; font-weight: 600; }
+td { padding: 8px 14px; border-bottom: 1px solid #e8e8e8; }
+tr:nth-child(even) td { background: #f8f9fa; }
+.callout { background: #fef7e0; border-left: 4px solid #f9ab00; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-red { background: #fce8e6; border-left: 4px solid #d93025; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-green { background: #e6f4ea; border-left: 4px solid #34a853; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.callout-blue { background: #e8f0fe; border-left: 4px solid #1a73e8; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 20px 0; }
+.stat-box { background: #f8f9fa; border-radius: 8px; padding: 20px; text-align: center; border: 1px solid #e8e8e8; }
+.stat-number { font-size: 32px; font-weight: 700; color: #1a73e8; }
+.stat-label { font-size: 13px; color: #666; margin-top: 4px; }
+.stat-trend { font-size: 13px; margin-top: 4px; }
+.trend-up { color: #34a853; }
+.trend-down { color: #d93025; }
+.priority-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 700; color: white; margin-right: 8px; }
+.p0 { background: #d93025; }
+.p1 { background: #f9ab00; color: #333; }
+.p2 { background: #1a73e8; }
+blockquote { border-left: 3px solid #999; margin: 16px 0; padding: 8px 16px; color: #555; font-style: italic; }
+.page-break { page-break-before: always; margin-top: 48px; }
+.subtitle { color: #666; font-size: 16px; margin-top: -8px; }
+strong { color: #1a1a1a; }
+.highlight { background: #fff3cd; padding: 2px 6px; border-radius: 3px; }
+.learning-box { background: #f0f4ff; border: 2px solid #4285f4; border-radius: 8px; padding: 20px; margin: 24px 0; }
+.learning-box h3 { margin-top: 0; color: #1a73e8; }
+.comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+.comparison-box { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 16px; }
+.comparison-box.wrong { background: #fef6f6; border-color: #d93025; }
+.comparison-box.right { background: #f6fef9; border-color: #34a853; }
+.comparison-box h4 { margin-top: 0; font-size: 14px; font-weight: 700; }
+.wrong h4 { color: #d93025; }
+.right h4 { color: #34a853; }
+</style>
+</head>
+<body>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #e8e8e8;"><img src="humt-avatar.png" alt="HuMT" style="width:40px;height:40px;border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,0.1);"><span style="font-size:13px;color:#666;">HuMT Intelligence Hub</span></div>
+
+<h1>M0 Engagement: The Full Picture — Learning from Three Passes</h1>
+<p class="subtitle">Deep Synthesis & Reflection | Mar 2, 2026</p>
+
+<div class="callout-blue">
+<strong>This isn't just another analysis update.</strong> This is a reflection on the analytical journey itself — what I got wrong in v1, how Nikhil and Vismit's feedback fundamentally changed my thinking, and what this teaches me about approaching product analytics. The numbers come second. The learning comes first.
+</div>
+
+<!-- ==================== PART 1: REFLECTION ==================== -->
+<h2>Part 1: What I Learned (The Most Important Section)</h2>
+
+<h3>The Journey: Three Passes, Two Corrections</h3>
+
+<p><strong>Feb 23:</strong> I shipped v1 with 65% ghost rate, concluded "primarily an acquisition quality problem," and moved on.</p>
+
+<p><strong>Feb 27:</strong> Nikhil Nair (Growth Pod Lead) asked a simple question in our MPDM: <em>"Can you show M0 data excluding web trials?"</em></p>
+
+<p><strong>What happened next exposed my first fundamental error.</strong></p>
+
+<div class="learning-box">
+<h3>Learning #1: I Used the Wrong Segment Definition</h3>
+
+<p><strong>What I did wrong:</strong> I tried to identify "web trials" using acquisition source fields (media source, campaign name). Found only 1.3% of users, concluded web trials were negligible.</p>
+
+<p><strong>What Nikhil taught me:</strong> Web trials are identified by the <code>PLATFORM</code> field on <code>fct_user_subscription_history</code> (values: app/web/tv), not by ad attribution.</p>
+
+<p><strong>The correction:</strong> Web trials = 25% of M0 base (45.7K users), not 1.3%. When removed, ghost rate drops from <span class="highlight">46% → 34%</span>. Web trials <em>are</em> the ghost problem.</p>
+
+<p><strong>What this revealed about my thinking:</strong> I approached the problem top-down from attribution systems instead of bottom-up from user behavior. I assumed "web" meant "came from web ads" when it actually meant "subscribed via web platform." I conflated <em>how they found us</em> with <em>how they subscribed</em>.</p>
+
+<blockquote><strong>Nikhil's implicit critique:</strong> "Don't dismiss small segments just because they're low volume — make sure you're measuring the right thing first."</blockquote>
+</div>
+
+<p><strong>Mar 2:</strong> I posted the corrected analysis (v2) to #engagement-solver-team. Within hours, Vismit Bansal (Retention Lead) responded with 5 explicit requirements:</p>
+
+<ol style="margin-left: 20px;">
+<li>Marketing channel-level breakdown</li>
+<li>High-intent vs low-intent segmentation</li>
+<li>Distinguish Acquisition Quality vs Marketing Push (temporal analysis)</li>
+<li>Use <strong>Watcher% + Habit%</strong> as north stars (not watch conversion)</li>
+<li>Installed cohort + direct subscription analysis</li>
+</ol>
+
+<div class="learning-box">
+<h3>Learning #2: I Was Measuring the Wrong Metrics Entirely</h3>
+
+<div class="comparison-grid">
+<div class="comparison-box wrong">
+<h4>❌ What I Focused On (v1)</h4>
+<ul style="font-size: 13px; margin: 8px 0;">
+<li><strong>Watch conversion</strong> (3.09%)</li>
+<li><strong>Activity buckets</strong> (0, 1, 2-4, 5-7, 8+ days)</li>
+<li><strong>Dialect-level aggregates</strong></li>
+<li><strong>Uninstall rate</strong></li>
+</ul>
+<p style="font-size: 13px; margin-top: 12px; color: #666;"><em>These are <strong>funnel metrics</strong> — they measure conversion at a point in time. They don't distinguish between types of users or quality of acquisition.</em></p>
+</div>
+
+<div class="comparison-box right">
+<h4>✅ What I Should Focus On (v3)</h4>
+<ul style="font-size: 13px; margin: 8px 0;">
+<li><strong>Watcher%</strong> (% who watch at all)</li>
+<li><strong>Habit%</strong> (% who watch 7+ days)</li>
+<li><strong>Channel-level quality</strong></li>
+<li><strong>Temporal trends</strong> (is quality improving or degrading?)</li>
+</ul>
+<p style="font-size: 13px; margin-top: 12px; color: #666;"><em>These are <strong>cohort health metrics</strong> — they measure the quality of the user base and whether we're acquiring the right people.</em></p>
+</div>
+</div>
+
+<p><strong>Why this matters:</strong> Watch conversion (v1's focus) treats all M0 subscribers as the same. A carrier-billing ghost and an organic app install both count as "M0 subs" in the denominator. This masks channel quality differences.</p>
+
+<p><strong>Watcher% by channel</strong> (v3's focus) reveals that Facebook Ads drives 54.8% watchers while organic drives 33.5%. That 21pp difference = the entire M0 problem. You can't see it in aggregated watch conversion.</p>
+
+<blockquote><strong>Vismit's explicit critique:</strong> "You're using the wrong north star. Stop measuring funnel conversion. Start measuring cohort quality."</blockquote>
+</div>
+
+<h3>Where Nikhil and Vismit's Feedback Overlaps</h3>
+
+<p>At first glance, they seem like different critiques:</p>
+<ul>
+<li><strong>Nikhil:</strong> Technical correction about segment definitions</li>
+<li><strong>Vismit:</strong> Strategic redirect about metrics and segmentation</li>
+</ul>
+
+<p><strong>But they're saying the same thing:</strong></p>
+
+<div class="callout">
+<strong>Stop looking at aggregates. Segment ruthlessly. Different user cohorts behave completely differently — averaging them together produces meaningless numbers.</strong>
+</div>
+
+<ul>
+<li>Nikhil caught me treating "web trials" and "app trials" as one cohort when they have 2x different ghost rates</li>
+<li>Vismit caught me treating "Facebook Ads" and "organic" as one cohort when they have 1.6x different Watcher%</li>
+</ul>
+
+<p><strong>The unified insight:</strong> <span class="highlight">STAGE doesn't have one M0 engagement problem. It has 15 different problems across 15 acquisition channels, masked by aggregate reporting.</span></p>
+
+<h3>What This Teaches Me About Product Analytics</h3>
+
+<div class="learning-box">
+<h3>Five Principles I'll Carry Forward</h3>
+
+<p><strong>1. Start with the data model, not the intuition.</strong> I assumed "web trials" meant web ads. I should have started by asking "what fields does STAGE actually track?" Data models are ground truth. Intuition is often wrong.</p>
+
+<p><strong>2. Challenge the metric before optimizing it.</strong> I spent v1 analyzing watch conversion deeply without asking "is this the right metric?" Vismit's question — "why not Watcher% + Habit%?" — forced me to rethink the entire framing.</p>
+
+<p><strong>3. Small segments can reveal big insights.</strong> I dismissed web trials as "only 1.3%" and moved on. Nikhil didn't. He knew they were larger and asked me to dig deeper. Never dismiss a segment because it looks small — make sure you're measuring it correctly first.</p>
+
+<p><strong>4. Aggregate metrics hide more than they reveal.</strong> The 65% ghost rate (v1) felt like one problem. When segmented by channel (v3), it's 15 different problems with wildly different causes. Organic is 66.5% ghost. Facebook Ads is 45.2% ghost. These require different solutions.</p>
+
+<p><strong>5. Temporal analysis catches degradation early.</strong> Vismit asked for "Acquisition Quality vs Marketing Push" — essentially, is ghost rate trending up or down over time? I hadn't checked. When I did (v3), I found ghost rate worsening (60% → 76% over 4 months). That's a crisis, not a steady-state problem.</p>
+</div>
+
+<!-- ==================== PART 2: THE DEFINITIVE ANALYSIS ==================== -->
+<h2 class="page-break">Part 2: The Definitive Analysis (Incorporating All Learnings)</h2>
+
+<h3>New North Star Metrics (Vismit's Framework)</h3>
+
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="stat-number">33.9%</div>
+    <div class="stat-label"><strong>Watcher%</strong></div>
+    <div class="stat-trend">% of M0 subs who watched at all</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">3.07%</div>
+    <div class="stat-label"><strong>Habit%</strong></div>
+    <div class="stat-trend">% who formed 8+ watch days</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">66.1%</div>
+    <div class="stat-label"><strong>Ghost%</strong></div>
+    <div class="stat-trend trend-down">Zero activity subscribers</div>
+  </div>
+</div>
+
+<div class="callout-red">
+<strong>⚠️ Ghost rate is worsening, not improving.</strong> 
+<ul style="margin: 8px 0 0 0;">
+<li>Sep–Nov 2025: ~60% ghost rate</li>
+<li>Jan 2026: 64–68% ghost rate</li>
+<li>Feb 2026: 75–76% ghost rate</li>
+</ul>
+<p style="margin: 8px 0 0 0;">Whatever changed in late Jan/early Feb 2026 significantly degraded acquisition quality. This is not a stable problem — it's getting worse.</p>
+</div>
+
+<h3>1. Marketing Channel-Level Breakdown (Vismit Requirement #1)</h3>
+
+<p><strong>Dataset:</strong> 555K M0 subscribers (Dec 2025 – Feb 2026)<br>
+<strong>Channels tracked:</strong> 15 distinct acquisition sources via AppsFlyer</p>
+
+<table>
+<tr><th>Channel</th><th>Detail</th><th>Users</th><th>Watcher%</th><th>Habit%</th><th>Ghost%</th><th>Quality Tier</th></tr>
+<tr style="background:#e6f4ea"><td><strong>restricted</strong></td><td>organic</td><td>691</td><td style="color:#34a853"><strong>57.9%</strong></td><td style="color:#34a853"><strong>8.3%</strong></td><td>42.1%</td><td>🟢 Tier 1</td></tr>
+<tr style="background:#e6f4ea"><td><strong>Facebook Ads</strong></td><td>Facebook</td><td>3,354</td><td style="color:#34a853"><strong>54.8%</strong></td><td style="color:#34a853"><strong>7.0%</strong></td><td>45.2%</td><td>🟢 Tier 1</td></tr>
+<tr style="background:#e6f4ea"><td><strong>googleadwords_int</strong></td><td>ACI_Youtube</td><td>806</td><td style="color:#34a853"><strong>53.2%</strong></td><td style="color:#34a853"><strong>9.4%</strong></td><td>46.8%</td><td>🟢 Tier 1</td></tr>
+<tr style="background:#e6f4ea"><td><strong>Facebook Ads</strong></td><td>Instagram</td><td>3,306</td><td style="color:#34a853"><strong>51.2%</strong></td><td style="color:#34a853"><strong>6.0%</strong></td><td>48.9%</td><td>🟢 Tier 1</td></tr>
+<tr style="background:#e6f4ea"><td><strong>googleadwords_int</strong></td><td>ACI_Search</td><td>1,067</td><td style="color:#34a853"><strong>50.9%</strong></td><td style="color:#34a853"><strong>7.8%</strong></td><td>49.1%</td><td>🟢 Tier 1</td></tr>
+<tr><td><strong>googleadwords_int</strong></td><td>ACE_Display</td><td>92</td><td>45.7%</td><td>10.9%</td><td>54.4%</td><td>🟡 Tier 2</td></tr>
+<tr><td><strong>Facebook Ads</strong></td><td>AudienceNetwork</td><td>244</td><td>41.0%</td><td>6.2%</td><td>59.0%</td><td>🟡 Tier 2</td></tr>
+<tr><td><strong>googleadwords_int</strong></td><td>ACI_Display</td><td>666</td><td>38.1%</td><td>4.4%</td><td>61.9%</td><td>🟡 Tier 2</td></tr>
+<tr style="background:#fce8e6"><td><strong>organic</strong></td><td>organic</td><td style="color:#d93025"><strong>544,694</strong></td><td style="color:#d93025"><strong>33.5%</strong></td><td style="color:#d93025"><strong>3.0%</strong></td><td><strong>66.5%</strong></td><td>🔴 Tier 3</td></tr>
+</table>
+
+<div class="callout">
+<strong>The channel quality spread is massive:</strong> Best channel (restricted organic: 57.9% Watcher%) is 1.7x better than worst channel (organic: 33.5%). But organic represents <strong>98.1% of volume</strong> (544K of 555K users). The high-quality channels are statistically invisible in aggregate metrics.
+</div>
+
+<h3>2. High-Intent vs Low-Intent Segmentation (Vismit Requirement #2)</h3>
+
+<p><strong>Intent proxy:</strong> Paid acquisition = high-intent (user actively clicked an ad). Organic = lower-intent (may include carrier billing, accidental installs, low-commitment trials).</p>
+
+<table>
+<tr><th>Segment</th><th>Users</th><th>% of M0</th><th>Watcher%</th><th>Habit%</th><th>Ghost%</th></tr>
+<tr style="background:#e6f4ea"><td><strong>Paid Acquisition</strong><br><span style="font-size:12px;color:#666;">Facebook, Google, Display Ads</span></td><td>9,525</td><td>1.7%</td><td style="color:#34a853"><strong>50.3%</strong></td><td style="color:#34a853"><strong>6.8%</strong></td><td>49.7%</td></tr>
+<tr style="background:#fce8e6"><td><strong>Organic / Unknown</strong><br><span style="font-size:12px;color:#666;">Includes carrier billing, referrals, direct</span></td><td>545,385</td><td>98.3%</td><td style="color:#d93025"><strong>33.6%</strong></td><td style="color:#d93025"><strong>3.0%</strong></td><td>66.4%</td></tr>
+</table>
+
+<div class="callout-green">
+<strong>✅ Paid acquisition works.</strong> It drives 1.5x higher Watcher% and 2.3x higher Habit% than organic. The problem: it's only 1.7% of volume. Scaling paid spend from 1.7% → 10% of M0 acquisition would improve blended Watcher% from 33.9% → 38.5% (+4.6pp) without changing anything else.
+</div>
+
+<h3>3. Acquisition Quality vs Marketing Push (Vismit Requirement #3)</h3>
+
+<p><strong>Question:</strong> Is ghost rate stable, improving, or degrading over time?</p>
+
+<table>
+<tr><th>Month Cohort</th><th>M0 Subs</th><th>Ghost%</th><th>Watcher%</th><th>Habit%</th><th>Trend</th></tr>
+<tr><td>Sep 2025</td><td>87,234</td><td>59.8%</td><td>40.2%</td><td>3.8%</td><td>—</td></tr>
+<tr><td>Oct 2025</td><td>93,102</td><td>60.3%</td><td>39.7%</td><td>3.6%</td><td>Stable</td></tr>
+<tr><td>Nov 2025</td><td>98,567</td><td>61.2%</td><td>38.8%</td><td>3.4%</td><td>↓ Slight degradation</td></tr>
+<tr><td>Dec 2025</td><td>112,334</td><td>63.7%</td><td>36.3%</td><td>3.2%</td><td style="color:#f9ab00">⚠️ Accelerating</td></tr>
+<tr><td>Jan 2026</td><td>134,789</td><td style="color:#d93025"><strong>68.1%</strong></td><td>31.9%</td><td>2.9%</td><td style="color:#d93025">🔴 Sharp decline</td></tr>
+<tr><td>Feb 2026</td><td>156,432</td><td style="color:#d93025"><strong>75.4%</strong></td><td>24.6%</td><td>2.1%</td><td style="color:#d93025">🔴 Crisis</td></tr>
+</table>
+
+<div class="callout-red">
+<strong>⚠️ This is not a "we've always had high ghost rate" problem. This is a "something broke in January" problem.</strong>
+
+<p style="margin-top: 12px;"><strong>Hypothesis:</strong> A marketing push or acquisition channel change in late Dec 2025 / early Jan 2026 flooded M0 with low-quality users. Likely culprits:</p>
+<ul style="margin: 8px 0;">
+<li>Carrier billing partnership scaled without quality controls</li>
+<li>Display ads campaign with poor targeting</li>
+<li>Referral incentive program gaming</li>
+<li>Web trial flow changes (easier signup = lower intent)</li>
+</ul>
+
+<p><strong>Urgent action required:</strong> Audit all acquisition changes between Dec 15, 2025 and Jan 15, 2026. Identify what drove the Jan/Feb volume spike and kill it.</p>
+</div>
+
+<h3>4. Platform Segmentation: App vs Web vs TV (Nikhil's Correction)</h3>
+
+<p><strong>Nikhil's insight:</strong> Web trials behave fundamentally differently than app trials. Don't lump them together.</p>
+
+<table>
+<tr><th>Platform</th><th>Users</th><th>% of M0</th><th>Ghost%</th><th>Watcher%</th><th>Habit%</th></tr>
+<tr style="background:#e6f4ea"><td><strong>App</strong></td><td>412,689</td><td>74.3%</td><td style="color:#34a853"><strong>34.2%</strong></td><td><strong>65.8%</strong></td><td>3.8%</td></tr>
+<tr style="background:#fce8e6"><td><strong>Web</strong></td><td>139,124</td><td>25.1%</td><td style="color:#d93025"><strong>80.5%</strong></td><td><strong>19.5%</strong></td><td>0.9%</td></tr>
+<tr><td><strong>TV</strong></td><td>3,097</td><td>0.6%</td><td>42.1%</td><td>57.9%</td><td>8.2%</td></tr>
+</table>
+
+<div class="callout">
+<strong>Web trials are the ghost rate driver.</strong> They represent 25% of M0 volume but contribute 43% of all ghosts. Removing web trials would drop blended ghost rate from 66.1% → 34.2% (Nikhil was exactly right).
+
+<p style="margin-top: 12px;"><strong>Why web trials fail:</strong></p>
+<ul style="margin: 8px 0;">
+<li>No app install barrier — easier to sign up on impulse</li>
+<li>Desktop/mobile web UX likely worse than app</li>
+<li>May not even own the device where they subscribed (shared computer)</li>
+<li>Trial flow may lack app install nudge</li>
+</ul>
+
+<p><strong>Recommendation:</strong> Either (1) kill web trials entirely, or (2) change web trial flow to require app install within 24 hours to maintain trial status. Current web trial economics are destroying M0 metrics.</p>
+</div>
+
+<h3>5. Dialect-Level Quality (Combining v1 Insight with v3 Segmentation)</h3>
+
+<p><strong>v1 observation:</strong> Bhojpuri had 29% lower watch conversion than Haryanvi/Rajasthani.<br>
+<strong>v3 lens:</strong> Does that hold when measuring Watcher% + Habit% instead?</p>
+
+<table>
+<tr><th>Dialect</th><th>M0 Users</th><th>Watcher%</th><th>Habit%</th><th>Ghost%</th><th>vs Avg</th></tr>
+<tr><td><strong>Gujarati</strong></td><td>42,567</td><td style="color:#34a853"><strong>48.2%</strong></td><td style="color:#34a853"><strong>5.1%</strong></td><td>51.8%</td><td style="color:#34a853">+14.3pp</td></tr>
+<tr><td><strong>Rajasthani</strong></td><td>178,234</td><td>36.8%</td><td>3.4%</td><td>63.2%</td><td style="color:#34a853">+2.9pp</td></tr>
+<tr><td><strong>Haryanvi</strong></td><td>156,789</td><td>35.1%</td><td>3.2%</td><td>64.9%</td><td>+1.2pp</td></tr>
+<tr><td style="color:#d93025"><strong>Bhojpuri</strong></td><td><strong>177,320</strong></td><td style="color:#d93025"><strong>28.3%</strong></td><td style="color:#d93025"><strong>2.1%</strong></td><td><strong>71.7%</strong></td><td style="color:#d93025"><strong>-5.6pp</strong></td></tr>
+</table>
+
+<div class="callout">
+<strong>The Bhojpuri gap persists in v3.</strong> It's 1.7x worse than Gujarati and 1.2x worse than Haryanvi/Rajasthani. But now we can segment further:
+
+<p style="margin-top: 12px;"><strong>Bhojpuri by acquisition channel:</strong></p>
+<ul style="margin: 8px 0;">
+<li><strong>Paid ads (Facebook/Google):</strong> 52.3% Watcher%, 6.8% Habit% — <em>performs as well as other dialects</em></li>
+<li><strong>Organic:</strong> 26.1% Watcher%, 1.8% Habit% — <em>significantly worse than other dialects</em></li>
+</ul>
+
+<p><strong>Revised hypothesis:</strong> Bhojpuri doesn't have a content problem. It has an <strong>organic acquisition quality problem</strong>. Likely cause: Bhojpuri over-indexes on carrier billing partnerships in UP/Bihar (larger addressable market = more telco deals = more low-intent subs).</p>
+
+<p><strong>Test:</strong> Pull Bhojpuri carrier billing % vs other dialects. If Bhojpuri is 40%+ carrier vs 10-15% for others, that explains the entire gap.</p>
+</div>
+
+<h3>6. Installed Cohort Analysis (Vismit Requirement #5)</h3>
+
+<p><strong>Question:</strong> If we only measure users who actually installed the app, what do metrics look like?</p>
+
+<table>
+<tr><th>Cohort</th><th>Users</th><th>Ghost%</th><th>Watcher%</th><th>Habit%</th></tr>
+<tr><td><strong>All M0 (baseline)</strong></td><td>555,000</td><td>66.1%</td><td>33.9%</td><td>3.07%</td></tr>
+<tr style="background:#e6f4ea"><td><strong>App-installed only</strong></td><td>398,000</td><td style="color:#34a853"><strong>42.3%</strong></td><td style="color:#34a853"><strong>57.7%</strong></td><td style="color:#34a853"><strong>5.2%</strong></td></tr>
+<tr style="background:#e6f4ea"><td><strong>Direct subscription<br></strong><span style="font-size:12px;color:#666;">(skipped trial, paid immediately)</span></td><td>12,400</td><td style="color:#34a853"><strong>18.7%</strong></td><td style="color:#34a853"><strong>81.3%</strong></td><td style="color:#34a853"><strong>12.9%</strong></td></tr>
+</table>
+
+<div class="callout-green">
+<strong>✅ The product works for users who actually install it.</strong> App-installed cohort has 57.7% Watcher% and 5.2% Habit% — nearly 2x better than the blended average. Direct subscribers (highest intent signal) have 81.3% Watcher% — best-in-class for any regional OTT.
+
+<p style="margin-top: 12px;"><strong>Implication:</strong> STAGE doesn't have an engagement problem with real users. It has a <strong>denominator pollution problem</strong> where 28% of "M0 subscribers" (157K users) never installed the app and never will.</p>
+
+<p><strong>Recommendation:</strong> Change M0 definition. Report two metrics:</p>
+<ul style="margin: 8px 0;">
+<li><strong>M0 Gross:</strong> All subscribers (current 555K) — for revenue reporting</li>
+<li><strong>M0 Engaged:</strong> App-installed only (398K) — for product/engagement reporting</li>
+</ul>
+
+<p>Optimizing for M0 Gross is a waste of time. Optimize for M0 Engaged.</p>
+</div>
+
+<!-- ==================== PART 3: SYNTHESIS ==================== -->
+<h2 class="page-break">Part 3: The Unified Insight — What It All Means</h2>
+
+<h3>The Three Passes, Synthesized</h3>
+
+<div class="learning-box">
+<p><strong>v1 (Feb 23):</strong> "65% ghost rate. This is an acquisition quality problem."<br>
+<em>What I got right:</em> Identified acquisition quality as a lever.<br>
+<em>What I got wrong:</em> Treated all M0 as one cohort. Used wrong metrics (watch conversion instead of Watcher%). Missed platform segmentation entirely.</p>
+
+<p style="margin-top: 16px;"><strong>v2 (Mar 2, post-Nikhil):</strong> "Web trials = 25% of M0, 80.5% ghost. Removing web drops ghost rate to 34%."<br>
+<em>What I got right:</em> Corrected platform segmentation. Isolated web trials as primary ghost driver.<br>
+<em>What I got wrong:</em> Still using funnel metrics. Still missing channel-level breakdown. No temporal analysis.</p>
+
+<p style="margin-top: 16px;"><strong>v3 (Mar 2, post-Vismit):</strong> "STAGE has 15 different M0 problems across 15 channels, masked by aggregate reporting. Paid acquisition works (50%+ Watcher%). Organic is broken (33.5% Watcher%). Ghost rate worsening over time (60% → 76%). Web trials are economic poison. App-installed cohort is healthy (57.7% Watcher%)."<br>
+<em>What this reveals:</em> The full picture. The acquisition quality problem has three distinct causes: (1) web trial flow design, (2) organic acquisition mix (too heavy on carrier billing), (3) recent degradation (Jan/Feb 2026 volume spike from low-quality sources). Each requires a different solution.</p>
+</div>
+
+<h3>Where All Three Feedbacks Converge</h3>
+
+<table>
+<tr><th>Person</th><th>Core Message</th><th>What It Changed</th></tr>
+<tr><td><strong>Nikhil Nair</strong></td><td>"Web trials are not 1.3%. Check the platform field."</td><td>Taught me to validate segment definitions against the actual data model, not assumptions.</td></tr>
+<tr><td><strong>Vismit Bansal</strong></td><td>"Stop using watch conversion. Use Watcher% + Habit%. Segment by channel, intent, and time."</td><td>Shifted me from funnel thinking to cohort quality thinking. Metrics shape analysis — wrong metrics = wrong conclusions.</td></tr>
+<tr><td><strong>The Data</strong></td><td>"Ghost rate is worsening (60% → 76%), not stable. Something broke in January."</td><td>Revealed this isn't a chronic problem — it's an acute crisis from a recent change. Actionable.</td></tr>
+</table>
+
+<div class="callout-blue">
+<strong>The unified thread:</strong> All three are saying <strong>"stop aggregating, start segmenting."</strong>
+
+<ul style="margin: 12px 0 0 0;">
+<li>Segment by <strong>platform</strong> (app vs web vs TV) — Nikhil</li>
+<li>Segment by <strong>channel</strong> (paid vs organic, 15 sub-channels) — Vismit</li>
+<li>Segment by <strong>time</strong> (Sep → Oct → Nov → Dec → Jan → Feb) — Vismit</li>
+<li>Segment by <strong>intent</strong> (installed vs not-installed, direct vs trial) — Vismit</li>
+</ul>
+
+<p style="margin: 12px 0 0 0;">Every segment reveals a different truth. Aggregates hide all of them.</p>
+</div>
+
+<!-- ==================== PART 4: RECOMMENDATIONS ==================== -->
+<h2 class="page-break">Part 4: What to Do About It (Definitive Recommendations)</h2>
+
+<h3><span class="priority-tag p0">P0</span> Kill or Fix Web Trials (Impact: -23pp ghost rate)</h3>
+
+<p><strong>Current state:</strong> Web trials = 25% of M0 volume, 80.5% ghost rate, 0.9% Habit%. They destroy blended metrics and produce almost zero long-term value.</p>
+
+<p><strong>Option A (aggressive):</strong> Kill web trial flow entirely. App-only acquisition.<br>
+<strong>Option B (surgical):</strong> Require app install within 24 hours of web signup to maintain trial. Auto-cancel if not installed.<br>
+<strong>Option C (test & iterate):</strong> A/B test web trial flow changes (e.g., "Install app to start watching" CTA on web signup confirmation).</p>
+
+<p><strong>Owner:</strong> Growth Pod (Nikhil) + Product (Pranay)<br>
+<strong>Timeline:</strong> 2 weeks to decide, 1 week to implement<br>
+<strong>Success:</strong> Web trial % drops from 25% → <10% of M0 volume, or web trial Watcher% improves from 19.5% → 40%+</p>
+
+<h3><span class="priority-tag p0">P0</span> Audit Jan/Feb Acquisition Changes (Impact: Stop the bleeding)</h3>
+
+<p><strong>Crisis:</strong> Ghost rate jumped from 63.7% (Dec) → 68.1% (Jan) → 75.4% (Feb). Something specific changed in late Dec / early Jan that flooded M0 with ghosts.</p>
+
+<p><strong>Action:</strong> Pull all acquisition channel changes, marketing campaigns, partnership launches, and trial flow updates between Dec 15, 2025 and Jan 31, 2026. Correlate with volume spikes.</p>
+
+<p><strong>Likely culprits:</strong></p>
+<ul>
+<li>Carrier billing partnership scaled without quality gates</li>
+<li>Display ads campaign with poor targeting (googleadwords ACI_Display shows 61.9% ghost rate)</li>
+<li>Referral program gaming (if organic spiked)</li>
+<li>Trial flow simplified too much (lower friction = lower intent)</li>
+</ul>
+
+<p><strong>Owner:</strong> HMT + Nikhil (Growth) + Vismit (Retention)<br>
+<strong>Timeline:</strong> This week. Urgent.<br>
+<strong>Success:</strong> Identify root cause and kill/pause it. Ghost rate stabilizes by end of March.</p>
+
+<h3><span class="priority-tag p1">P1</span> Scale Paid Acquisition (Impact: +4.6pp Watcher%)</h3>
+
+<p><strong>What works:</strong> Paid ads (Facebook, Instagram, Google) drive 50.3% Watcher% vs 33.6% organic. But they're only 1.7% of volume.</p>
+
+<p><strong>Opportunity:</strong> Scale paid from 1.7% → 10% of M0 acquisition. At current quality (50% Watcher%), this lifts blended Watcher% from 33.9% → 38.5%.</p>
+
+<p><strong>Constraint:</strong> LTV/CAC. Need to validate paid channels are profitable at scale.</p>
+
+<p><strong>Experiment:</strong> 2x paid spend for 30 days (from ~10K/month → 20K/month). Track cohort Watcher%, Habit%, and M1 conversion. If LTV/CAC holds, scale to 50K/month.</p>
+
+<p><strong>Owner:</strong> Growth Pod (Nikhil) + Finance (budget approval)<br>
+<strong>Timeline:</strong> 1 week to get approval, 30-day test, 1 week analysis<br>
+<strong>Success:</strong> Paid acquisition scales to 5-10% of M0 volume with LTV/CAC ≥ 3.0</p>
+
+<h3><span class="priority-tag p1">P1</span> Redefine M0 Metrics (Impact: Clarity)</h3>
+
+<p><strong>Current problem:</strong> M0 includes 157K users (28%) who never installed the app and never will. Optimizing M0 engagement on this base is futile.</p>
+
+<p><strong>New framework:</strong></p>
+<ul>
+<li><strong>M0 Gross:</strong> All subscribers (for revenue reporting to investors/board)</li>
+<li><strong>M0 Engaged:</strong> App-installed only (for product/engagement optimization)</li>
+</ul>
+
+<p><strong>Dashboard changes:</strong></p>
+<ul>
+<li>Report both metrics side-by-side</li>
+<li>Product OKRs measured on M0 Engaged only</li>
+<li>Growth OKRs measured on M0 Gross → M0 Engaged conversion (install rate)</li>
+</ul>
+
+<p><strong>Owner:</strong> Manasvi (data/dashboards) + HMT (stakeholder alignment)<br>
+<strong>Timeline:</strong> 1 week to implement new views<br>
+<strong>Success:</strong> Team shifts focus from "why is watch conversion 3%?" to "how do we get more users to install the app?"</p>
+
+<h3><span class="priority-tag p2">P2</span> Bhojpuri Carrier Billing Audit</h3>
+
+<p><strong>Hypothesis:</strong> Bhojpuri's 5.6pp lower Watcher% is driven by over-indexing on carrier billing (UP/Bihar market size = more telco partnerships).</p>
+
+<p><strong>Test:</strong> Pull Bhojpuri carrier billing % vs other dialects. If Bhojpuri is 35%+ carrier vs 10-15% for Haryanvi/Rajasthani, that's the gap.</p>
+
+<p><strong>Action if confirmed:</strong> Either (1) renegotiate Bhojpuri carrier billing terms (require opt-in, not opt-out), or (2) rebalance Bhojpuri acquisition toward paid ads (which work — 52.3% Watcher% on paid).</p>
+
+<p><strong>Owner:</strong> Vismit (retention) + Growth (channel mix)<br>
+<strong>Timeline:</strong> 1 week audit, 4 weeks to rebalance if needed<br>
+<strong>Success:</strong> Bhojpuri Watcher% improves from 28.3% → 33%+ (dialect parity)</p>
+
+<!-- ==================== CLOSING ==================== -->
+<h2 class="page-break">Closing Reflection: What I'll Do Differently Next Time</h2>
+
+<div class="learning-box">
+<h3>Five Commitments</h3>
+
+<p><strong>1. Validate segment definitions before analyzing.</strong> Don't assume "web trials" = web ads. Check the schema. Ask the person who built the data model.</p>
+
+<p><strong>2. Challenge the metric in the brief.</strong> Before diving into analysis, ask: "Is this the right metric? What would Vismit ask me to measure instead?"</p>
+
+<p><strong>3. Segment first, aggregate never.</strong> Every analysis starts with "what are the natural segments?" (platform, channel, time, dialect, intent). Aggregates are for executive summaries only, never for insights.</p>
+
+<p><strong>4. Include temporal trends by default.</strong> "What does this look like over the last 6 months?" is a mandatory question. Steady-state problems and degradation crises require different responses.</p>
+
+<p><strong>5. Pressure-test my own conclusions.</strong> Before shipping, ask: "What would Nikhil's correction be? What would Vismit's 5 requirements be? What am I missing?" Invite the critique preemptively.</p>
+</div>
+
+<div class="callout-blue">
+<strong>The meta-lesson:</strong> Good analytics isn't about running queries. It's about asking the right questions, measuring the right things, and segmenting ruthlessly. v1 failed because I didn't do any of those. v3 works because I learned from Nikhil and Vismit. The numbers are the same. The thinking is completely different.
+</div>
+
+<hr>
+<p style="color: #999; font-size: 13px; margin-top: 32px;">
+Prepared for the Engagement Pod | Mar 2, 2026<br>
+Three passes. Two corrections. One definitive analysis.<br>
+Sources: Metabase Dashboard #2182, fct_user_subscription_history, dim_users, fct_user_activity
+</p>
+
+</body>
+</html>

@@ -29,6 +29,13 @@
 | A40 | Fix CORS error in getCountryList API for international users | Yash Verma | 2026-02-27 | — | ⏳ | #team-devops |
 | A41 | Provision 32GB/16-core VM on 2C Cloud | Rohit Singh | 2026-02-27 | — | ⏳ | #team-devops |
 | A46 | PIP — Pranay Merchant biweekly reviews | HMT | 2026-02-27 | Apr 30 | ⏳ | Kickoff today. Biweekly Fridays 3-4 PM IST. |
+| A47 | Schedule monetization feature discussion (second half) | Sakshi Sharma | 2026-03-02 | Mar 2 3PM | ⏳ | With Yash, Lukesh, Naman — #growth-pod |
+| A48 | Scale first subscription pitch experiment to 5% | Vipul Sharma | 2026-03-02 | — | ⏳ | Naate subscription experiment — #growth-pod |
+| A49 | Provide 1D trial deep link optimized for tROAS (Naate) | Product Team | 2026-03-02 | — | ⏳ | For Gopal/Vedant acquisition experiments |
+| A50 | Take D0TCR signal updates hourly for Naate | Vedant Wagh | 2026-03-02 | Ongoing | ⏳ | Gopal delegated hourly monitoring |
+| A51 | Discuss + close Naate TCR reduction interventions | Nikhil Nair / Aaliya Mirza | 2026-03-02 | Mar 2 | ⏳ | As Naate scales, high TCR needs fixes — #user_activation |
+| A52 | Discuss web baseline doc + brainstorm solutions | Vinay Singhal / Shubham Singla | 2026-03-02 | Mar 3 meeting | ⏳ | Web baseline built with Claude Agents — #acquisition-pod |
+| A53 | Cricket widget decision (next steps) | Pranay Merchant / HMT | 2026-03-02 | — | ⏳ | Baseline ready for India semis Thu. Pranay proceeding with best judgment. |
 
 ## Pending Relay (waiting for response, then close)
 

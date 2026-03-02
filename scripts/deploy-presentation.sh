@@ -90,9 +90,9 @@ echo ""
 echo "Deploying to Netlify..."
 
 FILES_JSON="{}"
-for f in *.html *.png *.jpg *.svg 2>/dev/null; do
+for f in *.html *.png *.jpg *.svg *.ico; do
   [ -f "$f" ] || continue
-  HASH=$(openssl dgst -sha1 "$f" | awk '{print $2}')
+  HASH=$(openssl dgst -sha1 "$f" | awk '{print $2}') 2>/dev/null
   FILES_JSON=$(echo "$FILES_JSON" | jq --arg path "/$f" --arg hash "$HASH" '. + {($path): $hash}')
 done
 
@@ -110,7 +110,7 @@ fi
 
 UPLOAD_COUNT=0
 for HASH in $REQUIRED; do
-  for f in *.html *.png *.jpg *.svg 2>/dev/null; do
+  for f in *.html *.png *.jpg *.svg *.ico; do
     [ -f "$f" ] || continue
     H=$(openssl dgst -sha1 "$f" | awk '{print $2}')
     if [ "$H" = "$HASH" ]; then
@@ -126,11 +126,35 @@ done
 
 log "Netlify deployed (ID: $DEPLOY_ID, uploaded: $UPLOAD_COUNT files)"
 
-# ── Step 4: Verify deployment ──
-sleep 2
-HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" "$SITE_URL/index.html")
+# ── Step 4: Verify deployment + Auto-heal ──
+sleep 3
+HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" "$SITE_URL/")
 if [ "$HTTP_CODE" = "200" ]; then
-  log "Site live: $SITE_URL (HTTP $HTTP_CODE)"
+  log "Site homepage live: $SITE_URL (HTTP $HTTP_CODE)"
+elif [ "$HTTP_CODE" = "404" ]; then
+  warn "⚠️ HOMEPAGE 404 DETECTED — Auto-healing..."
+  
+  # Emergency redeploy of index.html only
+  INDEX_HASH=$(openssl dgst -sha1 index.html | awk '{print $2}')
+  HEAL_DEPLOY=$(curl -s -X POST "https://api.netlify.com/api/v1/sites/$SITE_ID/deploys" \
+    -H "Authorization: Bearer $NETLIFY_TOKEN" \
+    -H "Content-Type: application/json" \
+    -d "{\"files\": {\"/index.html\": \"$INDEX_HASH\"}}")
+  
+  HEAL_ID=$(echo "$HEAL_DEPLOY" | jq -r '.id')
+  
+  curl -s -X PUT "https://api.netlify.com/api/v1/deploys/$HEAL_ID/files//index.html" \
+    -H "Authorization: Bearer $NETLIFY_TOKEN" \
+    -H "Content-Type: application/octet-stream" \
+    --data-binary "@index.html" > /dev/null
+  
+  sleep 2
+  HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" "$SITE_URL/")
+  if [ "$HTTP_CODE" = "200" ]; then
+    log "✅ Auto-heal successful — homepage restored"
+  else
+    fail "Auto-heal failed — homepage still returns $HTTP_CODE"
+  fi
 else
   warn "Site returned HTTP $HTTP_CODE — may still be propagating"
 fi
