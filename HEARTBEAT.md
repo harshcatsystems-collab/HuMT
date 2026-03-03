@@ -17,8 +17,11 @@ This runs FIRST, before any other check. Not optional. Not skippable.
 ## Channel Membership Diff (EVERY HEARTBEAT — before Slack scan)
 
 Run `bash scripts/slack-channel-diff.sh` to detect if HuMT was added to or removed from any Slack channels.
-- If `NEW_CHANNELS`: log to daily memory, add to `memory/slack-channel-map.json` under appropriate tier, read last 10 messages for context, and relay to HMT: "I've been added to #channel-name — recording it."
+- If `NEW_CHANNELS`: log to daily memory, add to `memory/slack-channel-map.json` under appropriate tier, read last 10 messages for context
+- Route alert to **General topic**: "I've been added to #channel-name — recording it."
 - If `NO_CHANGES`: proceed silently.
+
+**Routing:** `bash scripts/send-alert.sh --type slack_channel_add --message "..."`
 
 **Why:** HMT added me to #ai-character-bots and I didn't notice for 6+ hours. Never again.
 
@@ -39,9 +42,11 @@ Even during active HMT conversations, run a quick mention check before replying.
 Check for new DMs to HuMT on Slack BEFORE doing the full scan:
 1. `bash scripts/slack-read-channel.sh D0AE2D6CZ26 3` (HMT's DM channel)
 2. Also check `im.list` for any OTHER new DM conversations (not just HMT)
-3. If new DM found (timestamp > last check): relay to Telegram IMMEDIATELY
+3. If new DM found (timestamp > last check): **route by content** (if finance → Finance topic, if product → Product+Design, else → General)
 4. Track last DM check timestamp in `memory/slack-digest-state.json` → `lastDmCheck`
 5. This runs FIRST because DM latency matters more than the full scan
+
+**Routing:** Determine domain from DM content, use `bash scripts/send-alert.sh --type slack_dm --message "..."`
 
 **Why first:** Full Slack scan takes 60+ seconds. DM check takes <2 seconds. Don't make people wait behind a full scan.
 
@@ -57,14 +62,15 @@ Check for new DMs to HuMT on Slack BEFORE doing the full scan:
 2. Check #tech-mates for outage/critical language
 3. Scan for HMT mentions (@harsh, "Harsh", "HMT") across Tier 1+2
 
-### Alert triggers (send to Telegram IMMEDIATELY if found):
-| Trigger | Format |
-|---------|--------|
-| DM to HuMT needing HMT's decision | 📩 DM from [Name]: [1 line] |
-| HMT asked for by name (question/request) | 📢 [Channel]: [Person] asking for you |
-| Outage / critical incident (2+ messages or #tech-mates) | 🚨 Incident: [summary] |
-| Resignation / exit signal | 🚨 Confidential: [relay] |
-| Co-founder decision in HMT's domain | ⚡ [Founder]: [1 line] |
+### Alert triggers (route to Telegram topics):
+| Trigger | Topic | Format |
+|---------|-------|--------|
+| DM to HuMT needing HMT's decision | Route by domain | 📩 DM from [Name]: [1 line] |
+| HMT asked for by name (question/request) | Route by channel | 📢 [Channel]: [Person] asking for you |
+| Outage / critical incident | Daily Ops | 🚨 Incident: [summary] |
+| Resignation / exit signal | People & Culture | 🚨 Confidential: [relay] |
+| Co-founder decision in HMT's domain | Route by domain | ⚡ [Founder]: [1 line] |
+| Payment approval | Finance | 💰 Payment approval needed |
 
 ### NOT alert-worthy:
 - "Blocked" language (goes in morning brief)

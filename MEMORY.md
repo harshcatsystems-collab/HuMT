@@ -231,3 +231,59 @@ Phase 5 = embed in STAGE operations (systems, dashboards, mobile)
 ---
 
 *Last updated: 2026-02-16*
+
+---
+
+## March 3, 2026 — Key Learnings
+
+### Telegram Collaboration Workspace
+
+Built complete domain-organized workspace with HMT:
+- **Architecture:** One supergroup with 10 topics (not 10 separate channels)
+- **Framing shift:** Not "notification management" but "dedicated collaboration space HMT is crafting"
+- **Purpose:** Contextual conversations by domain (Growth, Retention, Content, etc.)
+- **Status:** 100% operational, goes live March 4 with morning brief
+
+**The insight:** HMT said "i use telegram ONLY for our collaboration. its a dedicated space i am crafting for you." This isn't about filtering noise — it's about organizing partnership by context. Each topic preserves domain conversation history.
+
+### V4 Course Correction
+
+**What happened:** Delivered M0 V4 with "acquisition quality collapse" conclusion. Vismit + Kawaljeet challenged it: "Trial engagement proves acquisition worked — the problem is post-subscription."
+
+**App open analysis confirmed:** They were right. Users engaged during trial but stopped opening app post-subscription (-2.3% decline). NOT an acquisition problem.
+
+**What I learned:**
+- Trial engagement is a litmus test — if users pass it, acquisition worked
+- Tier degradation when tiers are defined BY trial engagement ≠ acquisition quality
+- Post-subscription disengagement = product/reengagement issue, not sourcing
+- When team corrects your conclusion, fix it publicly (intellectual honesty > ego)
+
+**Action taken:** Updated V4 with correction section, revised root cause, republished.
+
+### Sub-Agent QA Process
+
+**Lesson from today:** I approved V4 sub-agent's work on surface check (template, framework present), missed 3 analytical errors. HMT caught me: "are you sure about this?"
+
+**Deep review found:**
+- Ghost rate definition confusion
+- Attribution math not shown
+- LTV claim inflated (5x → should be 2x)
+
+**The standard:** Don't rubber-stamp sub-agent work. Review analytical logic, not just format. HMT's test: "Can you maintain quality control over delegated work?" Barely passed.
+
+### Communication Nuance Refined
+
+**Progress sharing vs status reporting:**
+- Good: "Pulling data, found X, analyzing Y" (keeps HMT connected)
+- Bad: "Status: in progress, will update" (just announces you're busy)
+
+HMT wants thinking shared during deep work, not project management updates.
+
+**NO_REPLY usage:**
+- Use for: True silence moments (heartbeats with nothing)
+- DON'T use after: HMT gives feedback, asks questions, shows warmth
+- He notices conversational gaps ("kahan gaye?") and expects continuity
+
+---
+
+*Updated: March 3, 2026*

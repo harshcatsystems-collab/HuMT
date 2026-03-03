@@ -91,13 +91,27 @@ else
   echo "  [DRY RUN] Would post: '$ACK_MESSAGE'"
 fi
 
-# Step 3: Relay to HMT on Telegram
+# Step 3: Relay to HMT on Telegram (routed to topic)
 echo "Step 3/8: Relay to HMT on Telegram..."
-TELEGRAM_MSG="🏷️ @HuMT mentioned in #$CHANNEL by $USER_NAME: ${TEXT:0:100}"
+
+# Determine topic based on Slack channel
+TOPIC_KEY="general"  # default
+case "$CHANNEL" in
+  *finance*|*payment*) TOPIC_KEY="finance" ;;
+  *growth*|*acquisition*|*trial*) TOPIC_KEY="growth" ;;
+  *retention*|*engagement*|*m0*|*m1*) TOPIC_KEY="retention" ;;
+  *content*|*cms*) TOPIC_KEY="content" ;;
+  *people*|*culture*|*hiring*) TOPIC_KEY="people_culture" ;;
+  *product*|*design*) TOPIC_KEY="product_design" ;;
+  *research*) TOPIC_KEY="consumer_insights" ;;
+  *board*|*investor*|*strategy*) TOPIC_KEY="strategy" ;;
+esac
+
+TELEGRAM_MSG="🏷️ @HuMT mentioned by $USER_NAME in #$CHANNEL:\n\n${TEXT:0:150}\n\nThread: https://stageottpvt.slack.com/archives/$CHANNEL/p${THREAD_TS//./}"
 
 if [ "$DRY_RUN" = false ]; then
-  # Would use message tool here in production
-  echo "  ✓ Relayed to HMT: '$TELEGRAM_MSG'"
+  bash /home/harsh/.openclaw/workspace/scripts/send-telegram-topic.sh --topic "$TOPIC_KEY" --message "$TELEGRAM_MSG"
+  echo "  ✓ Relayed to HMT ($TOPIC_KEY topic)"
 else
   echo "  [DRY RUN] Would relay: '$TELEGRAM_MSG'"
 fi

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body { font-family: 'Google Sans', Arial, sans-serif; max-width: 900px; margin: 40px auto; line-height: 1.6; color: #202124; padding: 0 20px; }
+h1 { color: #1a73e8; border-bottom: 3px solid #1a73e8; padding-bottom: 10px; }
+h2 { color: #1a73e8; margin-top: 36px; border-bottom: 2px solid #e8e8e8; padding-bottom: 8px; }
+h3 { color: #5f6368; margin-top: 28px; }
+table { border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 14px; }
+th { background: #1a73e8; color: white; padding: 12px; text-align: left; }
+td { padding: 10px 12px; border-bottom: 1px solid #e8e8e8; }
+tr:nth-child(even) td { background: #f8f9fa; }
+code { background: #f1f3f4; padding: 2px 6px; border-radius: 3px; font-family: 'Courier New', monospace; }
+pre { background: #f1f3f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+ul, ol { margin-left: 20px; }
+.warning { background: #fef7e0; border-left: 4px solid #f9ab00; padding: 15px; margin: 20px 0; }
+</style>
+</head>
+<body>
+<h1>OpenRouter Usage Report — Feb 28 - March 3, 2026</h1>
+<p><strong>Generated:</strong> March 3, 2026 3:31 PM UTC<br />
+<strong>Period:</strong> Since OpenRouter migration (Feb 28, 2026)<br />
+<strong>Method:</strong> OpenClaw session logs + credits API</p>
+<hr />
+<h2>Credits Summary</h2>
+<p><strong>Account Balance:</strong><br />
+- <strong>Purchased:</strong> $50.10<br />
+- <strong>Used:</strong> $41.81 (83.5%)<br />
+- <strong>Remaining:</strong> $8.29 (16.5%)</p>
+<p><strong>Usage Rate:</strong> ~$8.36/day (based on 5 days Feb 28 - Mar 3)<br />
+<strong>Days Remaining:</strong> ~1 day at current rate ⚠️</p>
+<hr />
+<h2>Active Sessions (Current)</h2>
+<table>
+<thead>
+<tr>
+<th>Session</th>
+<th>Type</th>
+<th>Tokens</th>
+<th>Model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Main (HMT × HuMT)</td>
+<td>Primary</td>
+<td>444,113</td>
+<td>claude-sonnet-4.5</td>
+</tr>
+<tr>
+<td>App Open Analysis</td>
+<td>Sub-agent</td>
+<td>126,753</td>
+<td>claude-sonnet-4.5</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td>—</td>
+<td><strong>570,866</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Session Breakdown</h2>
+<h3>Main Session (agent:main:main)</h3>
+<ul>
+<li><strong>Channel:</strong> Telegram → HMT</li>
+<li><strong>Model:</strong> openrouter/anthropic/claude-sonnet-4.5</li>
+<li><strong>Tokens:</strong> 444,113 total</li>
+<li><strong>Cache hits:</strong> 100% (867k cached, 0 new in latest turn)</li>
+<li><strong>Context:</strong> 441k/1.0m (44% utilized)</li>
+<li><strong>Last active:</strong> 3 minutes ago</li>
+<li><strong>Transcript:</strong> <code>09b0e449-3f2c-4e48-b5db-8739cbd464cf.jsonl</code></li>
+</ul>
+<p><strong>Work completed:</strong><br />
+- V4 M0 analysis (framework, execution, QA, corrections)<br />
+- Telegram workspace implementation (10 topics, routing system)<br />
+- Vismit + Kawaljeet feedback integration<br />
+- Daily operations (briefs, alerts, Slack monitoring)</p>
+<h3>Sub-Agent: App Open Analysis</h3>
+<ul>
+<li><strong>Label:</strong> app-open-analysis</li>
+<li><strong>Model:</strong> claude-sonnet-4.5</li>
+<li><strong>Tokens:</strong> 126,753</li>
+<li><strong>Runtime:</strong> 4 minutes 27 seconds</li>
+<li><strong>Status:</strong> Completed successfully</li>
+<li><strong>Deliverable:</strong> App open diagnostic posted to Slack</li>
+<li><strong>Transcript:</strong> <code>b6d51a3c-06c1-4601-a023-417a2693655f.jsonl</code></li>
+</ul>
+<hr />
+<h2>Estimated Costs (Claude Sonnet 4.5 via OpenRouter)</h2>
+<p><strong>Pricing:</strong><br />
+- Input: $3.00 per 1M tokens<br />
+- Output: $15.00 per 1M tokens<br />
+- Cached: $0.30 per 1M tokens (90% discount)</p>
+<p><strong>Approximate breakdown (based on typical 10:1 input:output ratio):</strong><br />
+- Main session (444k tokens): ~$3.50<br />
+- Sub-agent (127k tokens): ~$1.00<br />
+- <strong>Estimated today:</strong> ~$4.50</p>
+<p><strong>Note:</strong> Cache hits significantly reduce cost (867k cached tokens at $0.30/1M vs $3/1M)</p>
+<hr />
+<h2>Usage Visibility Limitations</h2>
+<p><strong>What we CAN see:</strong><br />
+- ✅ Session-level token totals (via <code>sessions_list</code>)<br />
+- ✅ Per-turn token usage (via <code>session_status</code>)<br />
+- ✅ Credits balance (via OpenRouter API)<br />
+- ✅ Model configuration</p>
+<p><strong>What we CANNOT see via API:</strong><br />
+- ❌ Per-query token breakdown<br />
+- ❌ Historical session logs (only active sessions visible)<br />
+- ❌ Detailed cost per generation<br />
+- ❌ Time-series usage graphs</p>
+<p><strong>For detailed logs:</strong> Visit https://openrouter.ai/activity (web dashboard)</p>
+<hr />
+<h2>Historical Context</h2>
+<p><strong>Before OpenRouter (Direct Anthropic):</strong><br />
+- Used <code>anthropic/claude-opus-4-6</code> directly<br />
+- Credits ran out Feb 27, 2026<br />
+- Migrated to OpenRouter Feb 28</p>
+<p><strong>OpenRouter Benefits:</strong><br />
+- Unified billing across providers<br />
+- Fallback routing (if Anthropic down, auto-route to alternatives)<br />
+- Better uptime<br />
+- Usage analytics dashboard</p>
+<hr />
+<h2>Recommendations</h2>
+<h3>Immediate (Credits Low)</h3>
+<p>⚠️ <strong>$8.29 remaining at $8.36/day usage = ~1 day until depleted</strong></p>
+<p><strong>Action needed:</strong> Add credits to OpenRouter account<br />
+<strong>Threshold:</strong> Set low-balance alert at $10 remaining</p>
+<h3>Short-term (Monitoring)</h3>
+<ol>
+<li>
+<p><strong>Weekly credits check</strong> (automate via cron):<br />
+<code>bash
+   curl https://openrouter.ai/api/v1/credits -H "Authorization: Bearer $KEY"</code><br />
+   Alert if balance &lt;$10</p>
+</li>
+<li>
+<p><strong>Session cleanup:</strong></p>
+</li>
+<li>Archive old session transcripts monthly</li>
+<li>Keep only last 30 days active</li>
+</ol>
+<h3>Long-term (Optimization)</h3>
+<ol>
+<li><strong>Cache optimization:</strong></li>
+<li>Current: 100% cache hit rate (excellent)</li>
+<li>
+<p>Continue using prompt caching effectively</p>
+</li>
+<li>
+<p><strong>Model selection:</strong></p>
+</li>
+<li>Main sessions: Sonnet 4.5 (current, good balance)</li>
+<li>Simple tasks: Consider Haiku (cheaper)</li>
+<li>
+<p>Complex reasoning: Reserve Opus for when needed</p>
+</li>
+<li>
+<p><strong>Cost tracking:</strong></p>
+</li>
+<li>Build local usage logger (log every completion)</li>
+<li>Daily/weekly aggregation</li>
+<li>Budget alerts</li>
+</ol>
+<hr />
+<h2>Today's Snapshot (March 3, 2026)</h2>
+<p><strong>Sessions active:</strong> 2 (main + 1 sub-agent)<br />
+<strong>Tokens processed:</strong> 570,866<br />
+<strong>Estimated cost today:</strong> ~$4.50<br />
+<strong>Work delivered:</strong><br />
+- M0 V4 analysis (corrected)<br />
+- Telegram workspace (10 topics, operational)<br />
+- App open diagnostic<br />
+- Vismit/Kawaljeet feedback integration</p>
+<p><strong>Efficiency:</strong> High cache hit rate (867k cached) = significant cost savings</p>
+<hr />
+<h2>Next Steps</h2>
+<ol>
+<li><strong>Add OpenRouter credits</strong> — balance critically low</li>
+<li><strong>Set up weekly monitoring</strong> — automate credits check</li>
+<li><strong>For detailed analysis</strong> — visit OpenRouter web dashboard monthly</li>
+</ol>
+<p><strong>Report saved:</strong> <code>data/openrouter-usage-report.md</code><br />
+<strong>Last updated:</strong> March 3, 2026 15:31 UTC</p>
+<hr style="margin-top: 60px; border: none; border-top: 2px solid #e8e8e8;">
+<p style="text-align: center; color: #5f6368; font-size: 14px;">Generated by HuMT | March 3, 2026</p>
+</body>
+</html>

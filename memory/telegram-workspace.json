@@ -1,0 +1,52 @@
+{
+  "group_id": "-1003890401527",
+  "group_name": "HMT \u00d7 HuMT Workspace",
+  "topics": {
+    "general": {
+      "name": "General",
+      "thread_id": null,
+      "note": "Main chat (no thread_id needed)"
+    },
+    "daily_ops": {
+      "name": "\ud83d\udcca Daily Ops",
+      "thread_id": 4
+    },
+    "growth": {
+      "name": "\ud83d\udcc8 Growth",
+      "thread_id": 5
+    },
+    "retention": {
+      "name": "\ud83d\udd01 Retention",
+      "thread_id": 6
+    },
+    "content": {
+      "name": "\ud83c\udfac Content",
+      "thread_id": 7
+    },
+    "consumer_insights": {
+      "name": "\ud83d\udd2c Consumer Insights",
+      "thread_id": 8
+    },
+    "people_culture": {
+      "name": "\ud83d\udc65 People & Culture",
+      "thread_id": 9
+    },
+    "product_design": {
+      "name": "\ud83c\udfa8 Product+Design",
+      "thread_id": 10
+    },
+    "finance": {
+      "name": "\ud83d\udcb0 Finance",
+      "thread_id": 11
+    },
+    "strategy": {
+      "name": "\ud83c\udfaf Strategy",
+      "thread_id": 12
+    },
+    "personal": {
+      "name": "\ud83c\udfe0 Personal",
+      "thread_id": 13
+    }
+  },
+  "created": "2026-03-03"
+}

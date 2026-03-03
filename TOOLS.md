@@ -193,3 +193,42 @@ If you skip any step, HMT will catch it. He already caught the Drive gap once.
 ---
 
 *Last updated: 2026-02-28*
+
+---
+
+## Telegram Workspace (Added March 3, 2026)
+
+**Group:** HMT × HuMT Workspace  
+**ID:** -1003890401527  
+**Type:** Private Supergroup with Topics (Forum Mode)  
+**Status:** Fully operational
+
+### 10 Topics
+
+| Topic | Thread ID | Domain |
+|-------|-----------|--------|
+| General | main chat | Misc, catch-all |
+| 📊 Daily Ops | 4 | Briefs, calendar, alerts |
+| 📈 Growth | 5 | Nikhil - acquisition, trials |
+| 🔁 Retention | 6 | Vismit - M0/M1, engagement |
+| 🎬 Content | 7 | Content strategy, pipeline |
+| 🔬 Consumer Insights | 8 | Nishita - research |
+| 👥 People & Culture | 9 | Nisha - team health |
+| 🎨 Product+Design | 10 | Pranay/Samir - product, UX |
+| 💰 Finance | 11 | Payment approvals |
+| 🎯 Strategy | 12 | Board, investors, archive |
+| 🏠 Personal | 13 | Non-work conversations |
+
+**Routing:** `bash scripts/send-telegram-topic.sh --topic <key> --message "..."`  
+**Mapping:** `memory/telegram-workspace.json`  
+**Docs:** `memory/telegram-workspace-final.md`
+
+### OpenRouter Usage Tracking
+
+**Credits API:** `curl https://openrouter.ai/api/v1/credits -H "Authorization: Bearer $KEY"`  
+**Current:** $8.29 remaining of $50.10 (as of March 3, 2026)  
+**Usage rate:** ~$8.36/day  
+**Alert threshold:** <$10 remaining
+
+**For detailed logs:** https://openrouter.ai/activity (web dashboard)  
+**Per-session:** Use `session_status` or `sessions_list`

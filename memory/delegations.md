@@ -31,6 +31,9 @@
 | D20 | Provide 1D trial deep link for Naate (tROAS optimized) | Product Team → Gopal/Vedant | 2026-03-02 | #product-growth | Gopal requested for acquisition | 0 |
 | D21 | Take D0TCR signal updates hourly | Vedant Wagh | 2026-03-02 | #product-growth | Gopal delegated | 0 |
 | D22 | Discuss + close Naate TCR reduction interventions | Nikhil Nair → Aaliya Mirza | 2026-03-02 | #user_activation | As Naate scales, TCR critical | 0 |
+| D23 | Provide CTA creatives count breakdown | pratyush | 2026-03-03 | #stage_maino | Kunal delegated | 0 |
+| D24 | Report Saanwri HD YouTube piracy to Markscan | Renu Rana / Anushka | 2026-03-03 | #content-compliance-hiren | Hiren delegated | 0 |
+| D25 | Guide HuMT on V4 framework | Vismit Bansal | 2026-03-03 | #growth-pod | HMT delegated | 0 |
 
 ## Completed
 

@@ -36,6 +36,10 @@
 | A51 | Discuss + close Naate TCR reduction interventions | Nikhil Nair / Aaliya Mirza | 2026-03-02 | Mar 2 | ⏳ | As Naate scales, high TCR needs fixes — #user_activation |
 | A52 | Discuss web baseline doc + brainstorm solutions | Vinay Singhal / Shubham Singla | 2026-03-02 | Mar 3 meeting | ⏳ | Web baseline built with Claude Agents — #acquisition-pod |
 | A53 | Cricket widget decision (next steps) | Pranay Merchant / HMT | 2026-03-02 | — | ⏳ | Baseline ready for India semis Thu. Pranay proceeding with best judgment. |
+| A54 | Scene AI pipeline — Script-to-Film tool demo + short film | Sushant Kaushik / team | 2026-03-03 | Mar 13 | ⏳ | Demo complete tool + create short film by March 13. Team: Sushant (lead), U0A2LUCQCE9 (char consistency), U09AU76EHEE (env), U09LM6696F2 (agents+UI) |
+| A55 | Provide understanding on CTA live creatives count (₹1/7d vs Watch Now) | pratyush | 2026-03-03 | — | ⏳ | Kunal requested for #stage_maino |
+| A56 | V4 analysis follow-up — app open vs funnel drop diagnosis | HuMT | 2026-03-03 | — | ⏳ | Vismit requested: check if it's app open drop or open-to-watch funnel. If app open drop, check organic vs re-engagement. Framework from #growth-pod. |
+| A57 | Report "Saanwri HD version" to Markscan | Renu Rana / Anushka Shrivastava | 2026-03-03 | — | ⏳ | Hiren flagged YouTube piracy — #content-compliance-hiren |
 
 ## Pending Relay (waiting for response, then close)
 
@@ -124,3 +128,13 @@
 ---
 
 *Last updated: 2026-02-27 12:58 UTC (weekly commitment review with HMT)*
+
+## Parked (Non-Urgent)
+
+**Slack Bot Link Previews**
+- Issue: HuMT bot messages don't generate link preview cards
+- Root cause: Missing `links:write` OAuth scope
+- Fix: Add scope in Slack app settings + reinstall
+- Impact: Low (links work, just no preview cards)
+- Parked: March 3, 2026
+- Documentation: `memory/slack-unfurl-issue.md`

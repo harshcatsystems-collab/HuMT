@@ -99,3 +99,13 @@
   "ts": 1772459461,
   "date": "2026-03-02T13:51:01Z"
 }
+{
+  "type": "slack_post",
+  "channel": "C0AFDSFD3PA",
+  "thread_ts": "1772536238.318579",
+  "message_ts": "1772536302.206559",
+  "message_preview": "Captured and tracking. Added to memory/projects/scene-ai-pipeline.md — March 13 demo milestone noted",
+  "tagged_users": [],
+  "ts": 1772536302,
+  "date": "2026-03-03T11:11:42Z"
+}

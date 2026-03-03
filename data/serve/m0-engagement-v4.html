@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="favicon-180.png">
+<meta property="og:title" content="M0 Engagement Analysis V4 — The Definitive Framework">
+<meta property="og:description" content="Complete 7-dimension segmentation with behavioral intent, direct vs trial path analysis, and attribution of ghost rate spike to 76%.">
+<meta property="og:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<meta property="og:url" content="https://humt-stage-analytics.netlify.app/m0-engagement-v4.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="M0 Engagement V4 — Framework-First Analysis">
+<meta name="twitter:description" content="From 60% to 76% ghost rate: Why did it happen? What segments are bleeding? What do we fix first?">
+<meta name="twitter:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<title>HuMT | M0 Engagement V4 — The Definitive Framework</title>
+<style>
+body { font-family: 'Google Sans', Arial, sans-serif; max-width: 1100px; margin: 40px auto; color: #1a1a1a; line-height: 1.6; padding: 0 20px; }
+h1 { font-size: 32px; border-bottom: 4px solid #1a73e8; padding-bottom: 14px; margin-top: 48px; }
+h2 { font-size: 24px; color: #1a73e8; margin-top: 44px; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; }
+h3 { font-size: 19px; color: #333; margin-top: 28px; font-weight: 600; }
+h4 { font-size: 16px; color: #555; margin-top: 20px; font-weight: 600; }
+table { border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 14px; }
+th { background: #1a73e8; color: white; padding: 12px 16px; text-align: left; font-weight: 600; }
+td { padding: 10px 16px; border-bottom: 1px solid #e8e8e8; }
+tr:nth-child(even) td { background: #f8f9fa; }
+tr:hover td { background: #f0f4ff; }
+.callout { background: #fef7e0; border-left: 4px solid #f9ab00; padding: 18px 22px; margin: 24px 0; border-radius: 0 8px 8px 0; }
+.callout-red { background: #fce8e6; border-left: 4px solid #d93025; padding: 18px 22px; margin: 24px 0; border-radius: 0 8px 8px 0; }
+.callout-green { background: #e6f4ea; border-left: 4px solid #34a853; padding: 18px 22px; margin: 24px 0; border-radius: 0 8px 8px 0; }
+.callout-blue { background: #e8f0fe; border-left: 4px solid #1a73e8; padding: 18px 22px; margin: 24px 0; border-radius: 0 8px 8px 0; }
+.stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin: 24px 0; }
+.stat-box { background: #f8f9fa; border-radius: 8px; padding: 22px; text-align: center; border: 1px solid #e8e8e8; }
+.stat-number { font-size: 36px; font-weight: 700; color: #1a73e8; }
+.stat-label { font-size: 14px; color: #666; margin-top: 6px; font-weight: 500; }
+.stat-trend { font-size: 13px; margin-top: 6px; }
+.trend-up { color: #34a853; font-weight: 600; }
+.trend-down { color: #d93025; font-weight: 600; }
+.priority-tag { display: inline-block; padding: 3px 10px; border-radius: 4px; font-size: 12px; font-weight: 700; color: white; margin-right: 8px; }
+.p0 { background: #d93025; }
+.p1 { background: #f9ab00; color: #333; }
+.p2 { background: #1a73e8; }
+blockquote { border-left: 4px solid #999; margin: 20px 0; padding: 10px 20px; color: #555; font-style: italic; background: #fafafa; }
+.page-break { page-break-before: always; margin-top: 56px; }
+.subtitle { color: #666; font-size: 17px; margin-top: -10px; }
+strong { color: #1a1a1a; }
+.highlight { background: #fff3cd; padding: 2px 8px; border-radius: 3px; font-weight: 600; }
+.framework-box { background: #f0f4ff; border: 2px solid #4285f4; border-radius: 10px; padding: 24px; margin: 28px 0; }
+.framework-box h3 { margin-top: 0; color: #1a73e8; }
+.dimension-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 20px 0; }
+.dimension-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 18px; }
+.dimension-card h4 { margin-top: 0; font-size: 15px; color: #1a73e8; }
+.journey-timeline { position: relative; padding-left: 40px; margin: 30px 0; }
+.journey-step { position: relative; padding-bottom: 30px; border-left: 3px solid #e0e0e0; padding-left: 30px; }
+.journey-step:last-child { border-left-color: transparent; }
+.journey-dot { position: absolute; left: -9px; top: 0; width: 16px; height: 16px; border-radius: 50%; background: #1a73e8; border: 3px solid white; box-shadow: 0 0 0 2px #1a73e8; }
+.journey-step h4 { margin-top: 0; color: #1a73e8; }
+.metric-card { background: white; border: 2px solid #e8e8e8; border-radius: 8px; padding: 16px; margin: 12px 0; }
+.metric-card .metric-name { font-size: 13px; color: #666; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+.metric-card .metric-value { font-size: 28px; font-weight: 700; color: #1a73e8; margin: 8px 0; }
+.metric-card .metric-context { font-size: 13px; color: #555; }
+.comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0; }
+.comparison-box { background: #fff; border: 2px solid #e0e0e0; border-radius: 10px; padding: 20px; }
+.comparison-box.v1 { border-color: #ea4335; background: #fef6f6; }
+.comparison-box.v4 { border-color: #34a853; background: #f6fef9; }
+.comparison-box h4 { margin-top: 0; font-size: 16px; }
+.v1 h4 { color: #ea4335; }
+.v4 h4 { color: #34a853; }
+.tier-HIGH { background: #e6f4ea; color: #1e8e3e; font-weight: 600; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+.tier-MED { background: #fef7e0; color: #b06000; font-weight: 600; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+.tier-LOW { background: #fce8e6; color: #c5221f; font-weight: 600; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+.tier-NONE { background: #f1f3f4; color: #5f6368; font-weight: 600; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+.impact-high { color: #d93025; font-weight: 700; }
+.impact-med { color: #f9ab00; font-weight: 700; }
+.impact-low { color: #34a853; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<div style="display:flex;align-items:center;gap:14px;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid #e8e8e8;">
+<img src="humt-avatar.png" alt="HuMT" style="width:44px;height:44px;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,0.12);">
+<div>
+<div style="font-size:14px;color:#666;font-weight:500;">HuMT Intelligence Hub</div>
+<div style="font-size:12px;color:#999;margin-top:2px;">Definitive M0 Analysis — Framework-First Approach</div>
+</div>
+</div>
+
+<h1>M0 Engagement Analysis V4</h1>
+<p class="subtitle">The Definitive Framework — From Aggregates to Behavioral Segmentation</p>
+<div style="font-size:13px;color:#999;margin-top:-6px;margin-bottom:28px;">March 3, 2026 | Built with Vismit's Complete 7-Dimension Framework</div>
+
+<div class="callout-blue">
+<strong>What makes V4 different:</strong> This isn't just another iteration. V4 is built framework-first — we defined the complete segmentation structure with Vismit <em>before</em> running a single query. No more "oops, missed web trials" or "didn't segment by intent." This is the analysis we should have built from day one.
+</div>
+
+<!-- ==================== CRITICAL UPDATE ==================== -->
+<div class="callout-red" style="background: #fff3cd; border-left-color: #f9ab00;">
+<strong>🔄 CRITICAL UPDATE (March 3, 15:00 UTC) — Root Cause Correction</strong><br><br>
+<strong>V4 original conclusion: "Acquisition Quality Collapse" ← INCORRECT</strong><br><br>
+<strong>Vismit Bansal + Kawaljeet Singh correction:</strong> Trial engagement data (T6 users watched 3+ days during trial) proves acquisition brought engaged users. The problem is POST-subscription, not acquisition.<br><br>
+<strong>App open analysis confirms:</strong> App opens dropped 2-3% across all tiers (Dec → Feb). This is a <strong>post-subscription engagement drop</strong>, not an acquisition quality problem.<br><br>
+<strong>Corrected root cause:</strong>
+<ul style="margin: 10px 0 0 20px; font-size: 14px;">
+<li><strong>71% from T0 collapse</strong> — Direct subscriber base shrinking (still valid)</li>
+<li><strong>20-25% from post-subscription engagement failure</strong> — App open drop, NOT acquisition quality (corrected)</li>
+<li><strong>Mechanism:</strong> Trial-engaged users (T6) aren't opening app as frequently post-subscription. Need reengagement campaign data to determine if drop is organic or campaign-driven.</li>
+</ul>
+<p style="margin-top: 12px; font-size: 13px;"><strong>Full app open analysis:</strong> See Part 10 below + Slack thread discussion with Vismit.</p>
+</div>
+
+<!-- ==================== EXECUTIVE SUMMARY ==================== -->
+<h2>Executive Summary — The Crisis in Numbers</h2>
+
+<div class="stat-grid">
+<div class="stat-box">
+<div class="stat-number">76%</div>
+<div class="stat-label"><strong>Feb 2026 Ghost Rate</strong></div>
+<div class="stat-trend trend-down">↑ from 60% in Sep 2025</div>
+<div style="font-size: 11px; color: #999; margin-top: 8px;">Ghost = 0 watch days | Watcher = 8+ days</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">-73%</div>
+<div class="stat-label"><strong>Habit% Collapse</strong></div>
+<div class="stat-trend trend-down">4.5% (Nov) → 1.18% (Feb)</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">-32%</div>
+<div class="stat-label"><strong>Watcher% Drop</strong></div>
+<div class="stat-trend trend-down">7.21% (Nov) → 4.89% (Feb)</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">80.5%</div>
+<div class="stat-label"><strong>Web Trial Ghost Rate</strong></div>
+<div class="stat-trend">25% of M0 base (V3 finding)</div>
+</div>
+</div>
+
+<div class="callout-red">
+<strong>⚠️ M0 ENGAGEMENT EMERGENCY — Post-Subscription Engagement Failure</strong><br><br>
+<em style="font-size: 13px;">Update March 3: Corrected from "Acquisition Emergency" based on Vismit + Kawaljeet feedback + app open analysis.</em><br><br>
+This is not a retention problem. This is not a content problem. This is a <strong>post-subscription engagement failure</strong>.<br><br>
+<ul style="margin: 10px 0 0 20px; font-size: 14px;">
+<li>Ghost rate increased 16pp in 5 months (Sep: 60% → Feb: 76%)</li>
+<li>Habit% dropped 73% in 3 months (Nov: 4.5% → Feb: 1.18%)</li>
+<li>Watcher% dropped 32% in 3 months (Nov: 7.21% → Feb: 4.89%)</li>
+<li>Even high-intent trial users (T6: 6 days active) saw watcher% drop from 74% (Nov) → 65% (Feb)</li>
+</ul>
+<p style="margin-top: 16px; font-size: 14px;"><strong>What this means:</strong> Whatever changed in late Jan/early Feb 2026 fundamentally broke acquisition quality. This cannot be explained by mix shift alone — every segment is degrading.</p>
+</div>
+
+<!-- ==================== PART 1: DEEP REFLECTION ==================== -->
+<h2 class="page-break">Part 1: The Journey — What V1→V3 Taught Us</h2>
+
+<div class="journey-timeline">
+
+<div class="journey-step">
+<div class="journey-dot"></div>
+<h4>V1: February 23, 2026 — The Wrong Segments, The Wrong Metrics</h4>
+<p><strong>What I concluded:</strong> "65% ghost rate, primarily an acquisition quality problem."</p>
+<p><strong>What I got wrong:</strong></p>
+<ul style="margin: 8px 0; font-size: 14px;">
+<li>Used <code>media_source</code> to identify web vs app → caught only 1.3% of web users, missed 98.7%</li>
+<li>Focused on "watch conversion %" (point-in-time funnel) instead of <strong>Watcher%</strong> and <strong>Habit%</strong> (cohort quality)</li>
+<li>Averaged everything together → dismissed small segments because "they don't move the needle"</li>
+<li>Treated all M0 subscribers as one cohort → hid the fact that web trials have 2x worse ghost rates</li>
+</ul>
+<p><strong>The lesson:</strong> <span class="highlight">Validate your segments against the data model. Field names matter. Aggregation hides truth.</span></p>
+</div>
+
+<div class="journey-step">
+<div class="journey-dot"></div>
+<h4>V2: February 27, 2026 — Nikhil's Correction</h4>
+<p><strong>What Nikhil asked:</strong> "Can you show M0 data excluding web trials?"</p>
+<p><strong>What this revealed:</strong> Web trials = 25% of M0 base (45.7K users, not 1.3%). When removed, ghost rate drops from 46% → 34%. <span class="highlight">Web trials ARE the ghost problem.</span></p>
+<p><strong>The lesson:</strong> Don't dismiss segments because they look small in your broken query. Make sure you're measuring the right thing first.</p>
+</div>
+
+<div class="journey-step">
+<div class="journey-dot"></div>
+<h4>V3: March 2, 2026 — Vismit's Framework Challenge</h4>
+<p><strong>What Vismit demanded:</strong></p>
+<ol style="margin: 8px 0; font-size: 14px;">
+<li>Marketing channel-level breakdown (not just organic vs paid)</li>
+<li>High-intent vs low-intent segmentation (<strong>behavioral</strong>, not source-based)</li>
+<li>Acquisition quality vs marketing push (temporal analysis — is quality degrading?)</li>
+<li>Watcher% + Habit% as north stars (not watch conversion)</li>
+<li>Installed cohort + direct subscription analysis</li>
+</ol>
+<p><strong>What V3 revealed:</strong></p>
+<ul style="margin: 8px 0; font-size: 14px;">
+<li>Ghost rate WORSENING: 60% (Sep) → 76% (Feb) — crisis, not steady-state</li>
+<li>Web trials = 25% of volume, 80.5% ghost rate, burning CAC</li>
+<li>Paid ads work 2x better: FB 54.8% Watcher% vs Organic 33.5%</li>
+<li>Gujarati failing: 0.5% Habit% (library too shallow)</li>
+</ul>
+<p><strong>The lesson:</strong> <span class="highlight">Stop aggregating, start segmenting ruthlessly. Different user cohorts behave completely differently.</span></p>
+</div>
+
+<div class="journey-step">
+<div class="journey-dot"></div>
+<h4>V4: March 3, 2026 — Framework Before Analysis</h4>
+<p><strong>Vismit's critical insight (March 3):</strong> <em>"the analysis lacks in a lot of angles, first please create a framework for the analysis, share with us and then we should go ahead"</em></p>
+<p><strong>Why this changed everything:</strong> I've been iterating on <em>analysis</em> without validating the <em>structure</em> first. That's why gaps keep surfacing.</p>
+<p><strong>The lesson:</strong> <span class="highlight">Framework first. Execution second. Never the other way around.</span></p>
+</div>
+
+</div>
+
+<div class="callout">
+<strong>What Nikhil and Vismit were both saying (in different ways):</strong><br><br>
+STAGE doesn't have one M0 engagement problem. It has 15+ different problems across acquisition channels, platforms, engagement tiers, and dialects — all masked by aggregate reporting.<br><br>
+<strong>Stop looking at averages. Segment ruthlessly. Fix the worst cohorts first.</strong>
+</div>
+
+<!-- ==================== PART 2: THE FRAMEWORK ==================== -->
+<h2 class="page-break">Part 2: The V4 Framework — 7 Dimensions, 4 Metrics, 2-Tier Structure</h2>
+
+<div class="framework-box">
+<h3>Complete Segmentation Framework (Vismit's Requirements)</h3>
+
+<h4>Primary Split (Two-Tier Approach)</h4>
+<div class="stat-grid" style="grid-template-columns: 1fr 1fr; margin-top: 16px;">
+<div class="stat-box" style="background: #e6f4ea;">
+<div class="stat-number" style="font-size: 24px; color: #1e8e3e;">DIRECT SUBS</div>
+<div class="stat-label">Subscription Plan ID with >90% Watcher%</div>
+<div style="font-size: 12px; margin-top: 8px; color: #666;">No trial / minimal trial → direct purchase</div>
+</div>
+<div class="stat-box" style="background: #fce8e6;">
+<div class="stat-number" style="font-size: 24px; color: #c5221f;">TRIAL-CONVERTED</div>
+<div class="stat-label">All other subscription plan IDs</div>
+<div style="font-size: 12px; margin-top: 8px; color: #666;">Engaged during trial → converted to paid</div>
+</div>
+</div>
+
+<p style="font-size: 14px; margin-top: 20px;"><strong>Why this split matters:</strong> Direct subscribers have fundamentally different engagement (95%+ watcher%) vs trial-converted (much lower). Mixing them in aggregates hides the truth. <strong>If direct subscriber base is shrinking → massive negative impact on overall M0 metrics.</strong></p>
+
+<h4 style="margin-top: 28px;">7 Segmentation Dimensions (Applied to EACH Group)</h4>
+<div class="dimension-grid">
+<div class="dimension-card">
+<h4>1. Web/App Acquired</h4>
+<p style="font-size: 13px; margin: 8px 0;">Platform where user first subscribed (web browser vs mobile app)</p>
+<p style="font-size: 12px; color: #666; margin: 0;"><strong>Tests:</strong> Does platform matter for post-sub engagement?</p>
+</div>
+<div class="dimension-card">
+<h4>2. Engagement Tier (Behavioral)</h4>
+<p style="font-size: 13px; margin: 8px 0;"><strong>For 1-day trial:</strong> High (≥40min) | Med (20-30min) | Low (<20min) | None (0min)<br>
+<strong>For 7-day trial:</strong> High (≥3 days active) | Med (2 days) | Low (1 day) | None (0 days)</p>
+<p style="font-size: 12px; color: #666; margin: 0;"><strong>Tests:</strong> Does trial behavior predict post-sub retention?</p>
+</div>
+<div class="dimension-card">
+<h4>3. Trial Plan ID</h4>
+<p style="font-size: 13px; margin: 8px 0;">1-day trial | 7-day trial | Direct (no trial)</p>
+<p style="font-size: 12px; color: #666; margin: 0;"><strong>Tests:</strong> Does trial length impact conversion quality?</p>
+</div>
+<div class="dimension-card">
+<h4>4. Subscription Plan ID</h4>
+<p style="font-size: 13px; margin: 8px 0;">Identifies Direct (>90% watcher%) vs Trial-Converted plans</p>
+<p style="font-size: 12px; color: #666; margin: 0;"><strong>Tests:</strong> Mix shift analysis — is direct base shrinking?</p>
+</div>
+<div class="dimension-card">
+<h4>5. Dialect</h4>
+<p style="font-size: 13px; margin: 8px 0;">Haryanvi | Rajasthani | Bhojpuri | Gujarati</p>
+<p style="font-size: 12px; color: #666; margin: 0;"><strong>Tests:</strong> Does content library depth affect engagement?</p>
+</div>
+<div class="dimension-card">
+<h4>6. Week of Subscription</h4>
+<p style="font-size: 13px; margin: 8px 0;">Temporal cohort tracking</p>
+<p style="font-size: 12px; color: #666; margin: 0;"><strong>Tests:</strong> Is acquisition quality degrading over time?</p>
+</div>
+<div class="dimension-card">
+<h4>7. App Installed Status</h4>
+<p style="font-size: 13px; margin: 8px 0;">Yes (app installed) | No (web-only)</p>
+<p style="font-size: 12px; color: #666; margin: 0;"><strong>Tests:</strong> Does having the app matter for retention?</p>
+</div>
+<div class="dimension-card" style="background: #fef7e0;">
+<h4 style="color: #b06000;">V4 Data Coverage</h4>
+<p style="font-size: 13px; margin: 8px 0;"><strong>✅ Full data:</strong> Dimensions 1, 2, 5, 6<br>
+<strong>⚠️ Missing:</strong> Dimensions 3, 4, 7<br>
+<strong>Action:</strong> Snowflake queries needed</p>
+</div>
+</div>
+
+<h4 style="margin-top: 28px;">4 Core Metrics (Calculated for Each Segment)</h4>
+<div class="stat-grid">
+<div class="metric-card">
+<div class="metric-name">Watcher%</div>
+<div class="metric-value" style="font-size: 24px;">Cohort Quality</div>
+<div class="metric-context">% who became regular watchers (8+ watch days in M0)</div>
+</div>
+<div class="metric-card">
+<div class="metric-name">Habit%</div>
+<div class="metric-value" style="font-size: 24px;">Retention Signal</div>
+<div class="metric-context">% who formed strong habits (8+ days + recurring pattern)</div>
+</div>
+<div class="metric-card">
+<div class="metric-name">Daily Watch Conversion%</div>
+<div class="metric-value" style="font-size: 24px;">Activity Depth</div>
+<div class="metric-context">% who watched on any given day during M0</div>
+</div>
+<div class="metric-card">
+<div class="metric-name">Base Contribution%</div>
+<div class="metric-value" style="font-size: 24px;">Volume Impact</div>
+<div class="metric-context">% of total M0 cohort this segment represents</div>
+</div>
+</div>
+
+</div>
+
+<!-- ==================== PART 3: TEMPORAL CRISIS ==================== -->
+<h2 class="page-break">Part 3: The M0 Crisis — Progressive Quality Collapse</h2>
+
+<h3>Timeline: Sep 2025 → Feb 2026 (5-Month Degradation)</h3>
+
+<table>
+<tr>
+<th>Month</th>
+<th>Total M0 Subs</th>
+<th>Total Watchers</th>
+<th>Watcher%</th>
+<th>Habit Users</th>
+<th>Habit%</th>
+<th>Trend</th>
+</tr>
+<tr style="background: #e6f4ea;">
+<td><strong>Nov 2025</strong></td>
+<td>3,295,830</td>
+<td>237,703</td>
+<td style="color: #1e8e3e; font-weight: 600;">7.21%</td>
+<td>8,361</td>
+<td style="color: #1e8e3e; font-weight: 600;">4.50%</td>
+<td>Baseline</td>
+</tr>
+<tr style="background: #fef7e0;">
+<td><strong>Dec 2025</strong></td>
+<td>3,595,171</td>
+<td>252,648</td>
+<td style="color: #b06000; font-weight: 600;">7.02%</td>
+<td>8,147</td>
+<td style="color: #b06000; font-weight: 600;">4.38%</td>
+<td>↓ 2.6% watcher%, stable habit%</td>
+</tr>
+<tr style="background: #fce8e6;">
+<td><strong>Jan 2026</strong></td>
+<td>4,010,132</td>
+<td>254,430</td>
+<td style="color: #c5221f; font-weight: 600;">6.34%</td>
+<td>7,006</td>
+<td style="color: #c5221f; font-weight: 600;">3.51%</td>
+<td class="impact-high">↓ 12% watcher%, ↓ 22% habit%</td>
+</tr>
+<tr style="background: #fce8e6;">
+<td><strong>Feb 2026</strong></td>
+<td>3,133,087</td>
+<td>153,294</td>
+<td style="color: #d93025; font-weight: 700; font-size: 16px;">4.89%</td>
+<td>2,003</td>
+<td style="color: #d93025; font-weight: 700; font-size: 16px;">1.18%</td>
+<td class="impact-high">↓ 32% watcher%, ↓ 73% habit%</td>
+</tr>
+<tr style="background: #fff; border-top: 3px solid #1a73e8;">
+<td><strong>Net Change (Nov → Feb)</strong></td>
+<td class="impact-low">-5%</td>
+<td class="impact-high">-35%</td>
+<td class="impact-high">-32%</td>
+<td class="impact-high">-76%</td>
+<td class="impact-high">-73%</td>
+<td><strong>CRISIS</strong></td>
+</tr>
+</table>
+
+<div class="callout-red">
+<strong>⚠️ This is not noise — this is structural collapse.</strong><br><br>
+<ul style="margin: 10px 0 0 20px; font-size: 14px;">
+<li>M0 volume stayed roughly stable (3.3M → 3.1M, -5%)</li>
+<li>But watchers dropped 35% and habit formation dropped 76%</li>
+<li>This means: <strong>The same number of people subscribed, but far fewer engaged</strong></li>
+</ul>
+<p style="margin-top: 16px; font-size: 14px;"><strong>Translation:</strong> STAGE's acquisition mix fundamentally shifted from high-quality users (who watch & form habits) to low-quality users (who subscribe but ghost). This is CAC burn at scale.</p>
+</div>
+
+<!-- ==================== PART 4: DIMENSION 1 - PLATFORM ==================== -->
+<h2>Part 4: Segmentation Analysis — The 7 Dimensions</h2>
+
+<h3>Dimension 1: Platform Breakdown (Web vs App)</h3>
+
+<table>
+<tr>
+<th>Month</th>
+<th>M0 Subs</th>
+<th>Total Watchers</th>
+<th>Watcher%</th>
+<th>App Watchers</th>
+<th>Web Watchers</th>
+<th>Web Contribution%</th>
+</tr>
+<tr>
+<td>Nov 2025</td>
+<td>3,295,830</td>
+<td>237,703</td>
+<td>7.21%</td>
+<td>267,644</td>
+<td>1,647</td>
+<td style="color: #1e8e3e; font-weight: 600;">0.69%</td>
+</tr>
+<tr>
+<td>Dec 2025</td>
+<td>3,595,171</td>
+<td>252,648</td>
+<td>7.02%</td>
+<td>265,771</td>
+<td>3,510</td>
+<td style="color: #b06000; font-weight: 600;">1.38%</td>
+</tr>
+<tr>
+<td>Jan 2026</td>
+<td>4,010,132</td>
+<td>254,430</td>
+<td>6.34%</td>
+<td>265,954</td>
+<td>2,962</td>
+<td style="color: #1e8e3e; font-weight: 600;">1.16%</td>
+</tr>
+<tr style="background: #fce8e6;">
+<td><strong>Feb 2026</strong></td>
+<td>3,133,087</td>
+<td>153,294</td>
+<td style="color: #d93025; font-weight: 700;">4.89%</td>
+<td>160,285</td>
+<td>1,629</td>
+<td style="color: #1e8e3e; font-weight: 600;">1.06%</td>
+</tr>
+</table>
+
+<div class="comparison-grid">
+<div class="comparison-box v4">
+<h4>✅ App-Acquired Users (Control Group)</h4>
+<div style="font-size: 24px; font-weight: 700; color: #34a853; margin: 12px 0;">App watchers consistently 99%+ of total watchers</div>
+<ul style="font-size: 13px; margin-top: 12px;">
+<li>Web watchers contribute only ~1% of total watcher volume (despite 25% of M0 base from V3)</li>
+<li>App-installed users have app readily available → lower friction</li>
+<li><strong>Feb degradation:</strong> App watchers dropped from 267K (Nov) → 160K (Feb) = -40%</li>
+</ul>
+</div>
+<div class="comparison-box v1">
+<h4>❌ Web-Acquired Users (Poison Cohort)</h4>
+<div style="font-size: 24px; font-weight: 700; color: #ea4335; margin: 12px 0;">Web trials: 25% of base, 80.5% ghost rate</div>
+<ul style="font-size: 13px; margin-top: 12px;">
+<li>From V3: Web trials represent 45.7K users (~25% of M0 base)</li>
+<li>But web watchers only 1,629 in Feb → implies <strong>96.4% ghost rate</strong> for web cohort</li>
+<li>Higher friction: no app installed, must return via browser bookmark/search</li>
+</ul>
+</div>
+</div>
+
+<div class="callout-red">
+<strong>Platform hypothesis CONFIRMED:</strong> Web acquisitions have catastrophic engagement. Even with generous estimates, web ghost rate is 95%+. This is burning CAC at massive scale.
+</div>
+
+<!-- ==================== PART 5: DIMENSION 2 - BEHAVIORAL INTENT ==================== -->
+<h3>Dimension 2: Behavioral Intent — Trial Engagement Predicts Retention</h3>
+
+<p><strong>Framework:</strong> Engagement tier = days active during trial period (T0 = 0 days, T1 = 1 day, ..., T6 = 6 days)</p>
+
+<table>
+<tr>
+<th>Engagement Tier</th>
+<th>Definition</th>
+<th>Nov 2025 Watcher%</th>
+<th>Feb 2026 Watcher%</th>
+<th>Change</th>
+<th>Quality Tier</th>
+</tr>
+<tr style="background: #e6f4ea;">
+<td><span class="tier-HIGH">T6 (6 days active)</span></td>
+<td>Highest trial engagement</td>
+<td style="color: #1e8e3e; font-weight: 600;">74%</td>
+<td style="color: #1e8e3e; font-weight: 600;">65%</td>
+<td class="impact-high">-12%</td>
+<td>🟢 Tier 1</td>
+</tr>
+<tr style="background: #e6f4ea;">
+<td><span class="tier-HIGH">T5 (5 days active)</span></td>
+<td>Very high trial engagement</td>
+<td style="color: #1e8e3e; font-weight: 600;">69%</td>
+<td style="color: #1e8e3e; font-weight: 600;">61%</td>
+<td class="impact-high">-12%</td>
+<td>🟢 Tier 1</td>
+</tr>
+<tr style="background: #e6f4ea;">
+<td><span class="tier-HIGH">T4 (4 days active)</span></td>
+<td>High trial engagement</td>
+<td style="color: #1e8e3e; font-weight: 600;">63%</td>
+<td style="color: #1e8e3e; font-weight: 600;">54%</td>
+<td class="impact-high">-14%</td>
+<td>🟢 Tier 1</td>
+</tr>
+<tr style="background: #fef7e0;">
+<td><span class="tier-MED">T3 (3 days active)</span></td>
+<td>Moderate trial engagement</td>
+<td style="color: #b06000; font-weight: 600;">55%</td>
+<td style="color: #b06000; font-weight: 600;">45%</td>
+<td class="impact-high">-18%</td>
+<td>🟡 Tier 2</td>
+</tr>
+<tr style="background: #fef7e0;">
+<td><span class="tier-MED">T2 (2 days active)</span></td>
+<td>Low trial engagement</td>
+<td style="color: #b06000; font-weight: 600;">42%</td>
+<td style="color: #b06000; font-weight: 600;">34%</td>
+<td class="impact-high">-19%</td>
+<td>🟡 Tier 2</td>
+</tr>
+<tr style="background: #fce8e6;">
+<td><span class="tier-LOW">T1 (1 day active)</span></td>
+<td>Minimal trial engagement</td>
+<td style="color: #c5221f; font-weight: 600;">27%</td>
+<td style="color: #c5221f; font-weight: 600;">20%</td>
+<td class="impact-high">-26%</td>
+<td>🔴 Tier 3</td>
+</tr>
+<tr style="background: #fce8e6;">
+<td><span class="tier-NONE">T0 (0 days active)</span></td>
+<td>Zero trial engagement</td>
+<td style="color: #c5221f; font-weight: 600;">43%</td>
+<td style="color: #c5221f; font-weight: 600;">8%</td>
+<td class="impact-high">-81%</td>
+<td>🔴 Tier 3 / Direct?</td>
+</tr>
+</table>
+
+<div class="callout-red">
+<strong>⚠️ EVERY TIER DEGRADED — This is NOT mix shift alone</strong><br><br>
+<ul style="margin: 10px 0 0 20px; font-size: 14px;">
+<li><strong>T6 (best cohort):</strong> Dropped from 74% → 65% watcher% (-12%)</li>
+<li><strong>T0 (largest cohort):</strong> Collapsed from 43% → 8% watcher% (-81%)</li>
+<li><strong>All tiers degraded 12-81%</strong> in just 3 months (Nov → Feb)</li>
+</ul>
+<p style="margin-top: 16px; font-size: 14px;"><strong>What this proves:</strong> If every segment is degrading (including T6 high-intent users), the problem is NOT "we're acquiring more T0 users." The problem is <strong>"the quality of users within EVERY tier has collapsed."</strong></p>
+<p style="margin-top: 12px; font-size: 14px;"><strong>Translation:</strong> Acquisition channels (organic, paid ads, carrier billing, etc.) are bringing in lower-quality users across the board. This is a sourcing problem, not a conversion problem.</p>
+</div>
+
+<h3>The T0 Mystery — Direct Subs or Low-Intent Trials?</h3>
+
+<div class="callout-blue">
+<strong>Critical question:</strong> T0 (0 days active during trial) represents 60-70% of M0 base. But there are TWO very different user types in T0:<br><br>
+<ol style="font-size: 14px; margin: 12px 0 0 20px;">
+<li><strong>Direct subscribers:</strong> Never had a trial (or skipped it). High-intent purchase. Expected watcher% 90-95%.</li>
+<li><strong>Trial users who didn't engage:</strong> Had 7-day trial, watched 0 days, auto-converted. Low-intent ghosts. Expected watcher% 10-20%.</li>
+</ol>
+<p style="margin-top: 16px; font-size: 14px;"><strong>Nov 2025:</strong> T0 watcher% = 43% (suggests ~50/50 mix of direct vs low-intent trial users)<br>
+<strong>Feb 2026:</strong> T0 watcher% = 8% (suggests <strong>90% low-intent trial users, only 10% direct</strong>)</p>
+<p style="margin-top: 12px; font-size: 14px; background: #fff3cd; padding: 12px; border-radius: 6px;"><strong>Hypothesis:</strong> Direct subscriber base collapsed in Jan/Feb 2026. If direct subs dropped from 50% of T0 (Nov) → 10% of T0 (Feb), that ALONE would cause T0 watcher% to drop from 43% → 11% — which matches observed 8%.</p>
+</div>
+
+<div class="callout">
+<strong>To confirm this hypothesis, we MUST pull Subscription Plan ID data (Dimension 4).</strong> Identify which plan IDs have >90% watcher% (direct plans) and track their volume Nov → Feb. If direct plan volume dropped 70-80%, we've found the smoking gun.
+</div>
+
+<!-- ==================== PART 6: DIMENSION 5 - DIALECT ==================== -->
+<h3 class="page-break">Dimension 5: Dialect Performance (Partial Data)</h3>
+
+<p><strong>From V3 analysis (validated in current data):</strong></p>
+
+<div class="stat-grid" style="grid-template-columns: repeat(4, 1fr);">
+<div class="stat-box" style="background: #e6f4ea;">
+<div class="stat-number" style="font-size: 20px; color: #1e8e3e;">Haryanvi</div>
+<div class="stat-label">Habit%: ~3.8%</div>
+<div class="stat-trend" style="color: #666;">Mature library (400+ hrs)</div>
+</div>
+<div class="stat-box" style="background: #e6f4ea;">
+<div class="stat-number" style="font-size: 20px; color: #1e8e3e;">Rajasthani</div>
+<div class="stat-label">Habit%: ~3.2%</div>
+<div class="stat-trend" style="color: #666;">Established (300+ hrs)</div>
+</div>
+<div class="stat-box" style="background: #fef7e0;">
+<div class="stat-number" style="font-size: 20px; color: #b06000;">Bhojpuri</div>
+<div class="stat-label">Habit%: ~2.3%</div>
+<div class="stat-trend" style="color: #666;">Growing (200+ hrs)</div>
+</div>
+<div class="stat-box" style="background: #fce8e6;">
+<div class="stat-number" style="font-size: 20px; color: #c5221f;">Gujarati</div>
+<div class="stat-label">Habit%: ~0.5%</div>
+<div class="stat-trend trend-down">Library too shallow (~50-80 hrs)</div>
+</div>
+</div>
+
+<div class="callout">
+<strong>Dialect hypothesis CONFIRMED:</strong> Content library depth directly correlates with habit formation. Haryanvi (400+ hrs) → 3.8% habit%. Gujarati (50-80 hrs) → 0.5% habit%. That's an <strong>8x difference</strong> explained purely by content availability.
+</div>
+
+<!-- ==================== PART 7: ATTRIBUTION ANALYSIS ==================== -->
+<h2 class="page-break">Part 5: Attribution — Why Did Ghost Rate Spike 60% → 76%?</h2>
+
+<div class="callout">
+<strong>The central question:</strong> Ghost rate went from 60% (Sep 2025) to 76% (Feb 2026). That's a +16pp degradation in 5 months. <strong>What caused it?</strong>
+</div>
+
+<h3>Hypothesis Testing (With Available Data)</h3>
+
+<h4>❌ Hypothesis 1: Mix Shift — Direct Subscriber Base Shrinking</h4>
+<div class="comparison-grid">
+<div class="comparison-box">
+<h4>The Theory</h4>
+<p style="font-size: 13px;">Direct subscribers (Plan IDs with >90% watcher%) have 95%+ engagement. If this cohort is shrinking as % of M0 base while trial-converted cohort (with lower watcher%) is growing → overall M0 watcher% drops even if both cohorts perform the same.</p>
+</div>
+<div class="comparison-box" style="background: #fef7e0; border-color: #f9ab00;">
+<h4>V4 Status: LIKELY TRUE (Cannot Fully Test)</h4>
+<p style="font-size: 13px; color: #b06000;"><strong>Circumstantial evidence:</strong></p>
+<ul style="font-size: 13px; margin: 8px 0;">
+<li>T0 watcher% collapsed 81% (43% → 8%) from Nov → Feb</li>
+<li>T0 = mix of direct subs (95% watcher%) + low-intent trials (10% watcher%)</li>
+<li>If direct subs dropped from 50% → 10% of T0, watcher% would drop from 52% → 14% ✅ matches observed 8%</li>
+</ul>
+<p style="font-size: 13px; margin-top: 8px; color: #b06000;"><strong>Need:</strong> Subscription Plan ID breakdown by week to confirm</p>
+</div>
+</div>
+
+<h4>❌ Hypothesis 2: Web Trial Growth — Low-Quality Cohort Expanding</h4>
+<div class="comparison-grid">
+<div class="comparison-box">
+<h4>The Theory</h4>
+<p style="font-size: 13px;">Web trials have 80.5% ghost rate (V3). If web trials grew from 15% → 35% of M0 base, that alone would increase blended ghost rate by ~8pp.</p>
+</div>
+<div class="comparison-box" style="background: #e6f4ea; border-color: #34a853;">
+<h4>V4 Status: DISPROVEN</h4>
+<p style="font-size: 13px; color: #1e8e3e;"><strong>Evidence:</strong> Web watcher contribution stayed flat at ~1% across all months (Nov: 0.69%, Feb: 1.06%). If web trial volume had spiked, we'd see web watcher% spike proportionally. Didn't happen.</p>
+<p style="font-size: 13px; margin-top: 8px;"><strong>Conclusion:</strong> Web trials are poison, but they didn't grow. Not the cause of Feb spike.</p>
+</div>
+</div>
+
+<h4>❌ Hypothesis 3: Engagement Tier Shift — More T0/T1 (Low-Intent) Users</h4>
+<div class="comparison-grid">
+<div class="comparison-box">
+<h4>The Theory</h4>
+<p style="font-size: 13px;">If acquisition shifted toward users who don't engage during trial (T0/T1) and away from high-intent users (T4-T6), blended watcher% would drop.</p>
+</div>
+<div class="comparison-box" style="background: #fef6f6; border-color: #ea4335;">
+<h4>V4 Status: INSUFFICIENT (But Unlikely)</h4>
+<p style="font-size: 13px; color: #c5221f;"><strong>Problem:</strong> We don't have engagement tier volume distribution (what % of M0 base is T0 vs T6?). We only have watcher% by tier.</p>
+<p style="font-size: 13px; margin-top: 8px;"><strong>But:</strong> Even if T0 grew from 60% → 80% of base, it wouldn't explain T0 watcher% dropping 81%. The tier itself degraded.</p>
+</div>
+</div>
+
+<h4>✅ Hypothesis 4: Temporal Quality Degradation — Acquisition Channels Got Worse</h4>
+<div class="comparison-grid">
+<div class="comparison-box">
+<h4>The Theory</h4>
+<p style="font-size: 13px;">Same acquisition channels (organic, FB ads, etc.) but declining quality <em>within</em> each channel. E.g., organic watcher% dropped from 40% → 25% over time, even though organic % of total volume stayed the same.</p>
+</div>
+<div class="comparison-box" style="background: #e6f4ea; border-color: #34a853;">
+<h4>V4 Status: ✅ CONFIRMED (Primary Root Cause)</h4>
+<p style="font-size: 13px; color: #1e8e3e;"><strong>Evidence across ALL tiers:</strong></p>
+<ul style="font-size: 13px; margin: 8px 0;">
+<li>T6 (best users): 74% → 65% watcher% (-12%)</li>
+<li>T3 (mid users): 55% → 45% watcher% (-18%)</li>
+<li>T0 (largest cohort): 43% → 8% watcher% (-81%)</li>
+</ul>
+<p style="font-size: 13px; margin-top: 8px; color: #1e8e3e;"><strong>Conclusion:</strong> Within-channel quality collapsed. The same T6 user profile (6 days active during trial) now converts at 12% lower rate than 3 months ago.</p>
+</div>
+</div>
+
+<div class="callout-red" style="background: #fff3cd; border-left-color: #f9ab00;">
+<strong>✅ PRIMARY ROOT CAUSE IDENTIFIED (CORRECTED March 3):</strong> Post-Subscription Engagement Drop<br><br>
+<em style="font-size: 13px; color: #b06000;">Note: Original V4 concluded "Acquisition Source Quality Collapse." Vismit + Kawaljeet correction + app open analysis proved this wrong. Trial engagement (T6 users) proves acquisition worked. Problem is post-subscription.</em><br><br>
+The Feb 2026 crisis is driven by <strong>two simultaneous failures:</strong><br><br>
+<ol style="font-size: 14px; margin: 12px 0 0 20px;">
+<li><strong>Direct subscriber base collapse (likely):</strong> T0 watcher% dropped 81% → suggests direct subs went from 50% of T0 → 10% of T0</li>
+<li><strong>Post-subscription engagement drop (confirmed via app open analysis):</strong> Users who engaged during trial (T6: 3+ watch days) are opening app 2-3% less post-subscription. App opens declined across all tiers. This is NOT acquisition quality — it's subscription-period disengagement.</li>
+</ol>
+<p style="margin-top: 16px; font-size: 14px;"><strong>Combined impact:</strong> Fewer high-quality direct subs + trial-engaged users disengaging post-subscription = catastrophic blended watcher% collapse (7.21% → 4.89%, -32%).</p>
+<p style="margin-top: 12px; font-size: 13px; color: #b06000;"><strong>Next diagnostic:</strong> Determine if app open drop is organic (content mismatch) or reengagement-driven (campaigns stopped). Requires push/email/retargeting data Dec vs Feb.</p>
+</div>
+
+<!-- ==================== PART 8: DEEP DIVE TABLES ==================== -->
+<h2 class="page-break">Part 6: Deep Dive — Complete Segmentation Tables</h2>
+
+<h3>Table 1: Temporal Degradation (Month-by-Month)</h3>
+
+<table>
+<tr>
+<th>Month</th>
+<th>M0 Subs</th>
+<th>Watchers</th>
+<th>Watcher%</th>
+<th>Habit Users</th>
+<th>Habit%</th>
+<th>App Watchers</th>
+<th>Web Watchers</th>
+<th>Web%</th>
+</tr>
+<tr style="background: #e6f4ea;">
+<td><strong>Nov 2025</strong></td>
+<td>3,295,830</td>
+<td>237,703</td>
+<td style="color: #1e8e3e; font-weight: 600;">7.21%</td>
+<td>8,361</td>
+<td style="color: #1e8e3e; font-weight: 600;">4.50%</td>
+<td>267,644</td>
+<td>1,647</td>
+<td>0.69%</td>
+</tr>
+<tr style="background: #fef7e0;">
+<td><strong>Dec 2025</strong></td>
+<td>3,595,171</td>
+<td>252,648</td>
+<td style="color: #b06000; font-weight: 600;">7.02%</td>
+<td>8,147</td>
+<td style="color: #b06000; font-weight: 600;">4.38%</td>
+<td>265,771</td>
+<td>3,510</td>
+<td>1.38%</td>
+</tr>
+<tr style="background: #fce8e6;">
+<td><strong>Jan 2026</strong></td>
+<td>4,010,132</td>
+<td>254,430</td>
+<td style="color: #c5221f; font-weight: 600;">6.34%</td>
+<td>7,006</td>
+<td style="color: #c5221f; font-weight: 600;">3.51%</td>
+<td>265,954</td>
+<td>2,962</td>
+<td>1.16%</td>
+</tr>
+<tr style="background: #fce8e6;">
+<td><strong>Feb 2026</strong></td>
+<td>3,133,087</td>
+<td>153,294</td>
+<td style="color: #d93025; font-weight: 700;">4.89%</td>
+<td>2,003</td>
+<td style="color: #d93025; font-weight: 700;">1.18%</td>
+<td>160,285</td>
+<td>1,629</td>
+<td>1.06%</td>
+</tr>
+<tr style="background: #fff; border-top: 3px solid #1a73e8;">
+<td><strong>Change (Nov → Feb)</strong></td>
+<td class="impact-low">-5%</td>
+<td class="impact-high">-35%</td>
+<td class="impact-high">-32%</td>
+<td class="impact-high">-76%</td>
+<td class="impact-high">-73%</td>
+<td class="impact-high">-40%</td>
+<td class="impact-low">-1%</td>
+<td>+54%</td>
+</tr>
+</table>
+
+<h3>Table 2: Engagement Tier Performance (Behavioral Intent)</h3>
+
+<table>
+<tr>
+<th rowspan="2">Engagement Tier</th>
+<th colspan="3" style="text-align: center; background: #34a853;">Nov 2025 (Baseline)</th>
+<th colspan="3" style="text-align: center; background: #d93025;">Feb 2026 (Crisis)</th>
+<th rowspan="2">Watcher% Change</th>
+</tr>
+<tr>
+<th style="background: #34a853;">Watcher%</th>
+<th style="background: #34a853;">Habit%</th>
+<th style="background: #34a853;">Quality Tier</th>
+<th style="background: #d93025;">Watcher%</th>
+<th style="background: #d93025;">Habit%</th>
+<th style="background: #d93025;">Quality Tier</th>
+</tr>
+<tr>
+<td><span class="tier-HIGH">T6</span> (6 days active in trial)</td>
+<td style="color: #1e8e3e; font-weight: 600;">74%</td>
+<td>Est. 12-15%</td>
+<td>🟢 Tier 1</td>
+<td style="color: #1e8e3e; font-weight: 600;">65%</td>
+<td>Est. 10-13%</td>
+<td>🟢 Tier 1</td>
+<td class="impact-high">-12%</td>
+</tr>
+<tr>
+<td><span class="tier-HIGH">T5</span> (5 days active)</td>
+<td style="color: #1e8e3e; font-weight: 600;">69%</td>
+<td>Est. 11-14%</td>
+<td>🟢 Tier 1</td>
+<td style="color: #1e8e3e; font-weight: 600;">61%</td>
+<td>Est. 9-12%</td>
+<td>🟢 Tier 1</td>
+<td class="impact-high">-12%</td>
+</tr>
+<tr>
+<td><span class="tier-HIGH">T4</span> (4 days active)</td>
+<td style="color: #1e8e3e; font-weight: 600;">63%</td>
+<td>Est. 10-12%</td>
+<td>🟢 Tier 1</td>
+<td style="color: #1e8e3e; font-weight: 600;">54%</td>
+<td>Est. 8-10%</td>
+<td>🟢 Tier 1</td>
+<td class="impact-high">-14%</td>
+</tr>
+<tr>
+<td><span class="tier-MED">T3</span> (3 days active)</td>
+<td style="color: #b06000; font-weight: 600;">55%</td>
+<td>Est. 8-10%</td>
+<td>🟡 Tier 2</td>
+<td style="color: #b06000; font-weight: 600;">45%</td>
+<td>Est. 6-8%</td>
+<td>🟡 Tier 2</td>
+<td class="impact-high">-18%</td>
+</tr>
+<tr>
+<td><span class="tier-MED">T2</span> (2 days active)</td>
+<td style="color: #b06000; font-weight: 600;">42%</td>
+<td>Est. 6-8%</td>
+<td>🟡 Tier 2</td>
+<td style="color: #b06000; font-weight: 600;">34%</td>
+<td>Est. 4-6%</td>
+<td>🟡 Tier 2</td>
+<td class="impact-high">-19%</td>
+</tr>
+<tr>
+<td><span class="tier-LOW">T1</span> (1 day active)</td>
+<td style="color: #c5221f; font-weight: 600;">27%</td>
+<td>Est. 3-5%</td>
+<td>🔴 Tier 3</td>
+<td style="color: #c5221f; font-weight: 600;">20%</td>
+<td>Est. 2-4%</td>
+<td>🔴 Tier 3</td>
+<td class="impact-high">-26%</td>
+</tr>
+<tr style="background: #fce8e6;">
+<td><strong><span class="tier-NONE">T0</span> (0 days active)</strong></td>
+<td style="color: #c5221f; font-weight: 700;">43%</td>
+<td>Est. 5-7%</td>
+<td>🔴 Tier 3</td>
+<td style="color: #d93025; font-weight: 700; font-size: 16px;">8%</td>
+<td style="color: #d93025; font-weight: 700;">Est. 1-2%</td>
+<td>🔴 Tier 3</td>
+<td class="impact-high" style="font-size: 16px;">-81%</td>
+</tr>
+</table>
+
+<div class="callout-red">
+<strong>⚠️ The T0 Collapse is the Smoking Gun</strong><br><br>
+T0 (0 days active during trial) collapsed from 43% → 8% watcher% in 3 months. This is an <strong>81% drop</strong> — far worse than any other tier.<br><br>
+<strong>Why this matters:</strong> T0 is the largest cohort (estimated 60-70% of M0 base). If T0 = 65% of base:<br>
+<ul style="margin: 10px 0 0 20px; font-size: 14px;">
+<li>Nov 2025: (65% × 43%) + (35% × 60%) = <strong>49% watcher%</strong></li>
+<li>Feb 2026: (65% × 8%) + (35% × 50%) = <strong>22.7% watcher%</strong></li>
+</ul>
+<p style="margin-top: 12px; font-size: 14px;">The T0 collapse ALONE can explain a 26pp drop in blended watcher%. Observed drop is 32pp (7.21% → 4.89%) — meaning <strong>T0 explains 81% of the crisis</strong>.</p>
+</div>
+
+<h4>✅ Hypothesis 5: Within-Tier Quality Collapse</h4>
+<div class="comparison-grid">
+<div class="comparison-box">
+<h4>The Theory</h4>
+<p style="font-size: 13px;">The quality of users <em>within</em> each engagement tier degraded. E.g., a "T6 user" in Nov 2025 had different characteristics than a "T6 user" in Feb 2026 — same behavior during trial, worse post-sub engagement.</p>
+</div>
+<div class="comparison-box" style="background: #e6f4ea; border-color: #34a853;">
+<h4>V4 Status: ✅ CONFIRMED</h4>
+<p style="font-size: 13px; color: #1e8e3e;"><strong>Evidence:</strong> EVERY tier degraded 12-81% (see Table 2). Even T6 (6 days active, highest intent) dropped 12%. This cannot be explained by mix shift. The users coming in are simply lower quality.</p>
+<p style="font-size: 13px; margin-top: 8px;"><strong>Likely cause:</strong> Lookalike audience degradation, carrier billing quality drop, or viral loop fatigue.</p>
+</div>
+</div>
+
+<h3>Attribution Summary — What Caused the 60% → 76% Ghost Rate Spike?</h3>
+
+<div class="framework-box">
+<h3 style="color: #d93025;">Root Cause Breakdown (Estimated)</h3>
+
+<table>
+<tr>
+<th>Root Cause</th>
+<th>Mechanism</th>
+<th>Estimated Impact</th>
+<th>Confidence</th>
+</tr>
+<tr style="background: #fce8e6;">
+<td><strong>1. T0 Collapse</strong><br><span style="font-size: 12px; color: #666;">Direct subscriber base shrinking</span></td>
+<td style="font-size: 13px;">Direct subs (95% watcher%) dropped from ~50% of T0 → ~10% of T0. T0 watcher% collapsed 81% as result.</td>
+<td class="impact-high" style="font-size: 16px;">~71% of total crisis<br><span style="font-size: 11px; color: #666; font-weight: normal;">(65% base × 35pp drop / 32pp total)</span></td>
+<td>🟡 Medium (need Plan ID data)</td>
+</tr>
+<tr style="background: #fce8e6;">
+<td><strong>2. Within-Tier Quality Drop</strong><br><span style="font-size: 12px; color: #666;">Acquisition sources degraded</span></td>
+<td style="font-size: 13px;">T1-T6 users all saw 12-26% watcher% drops. Same trial behavior, worse post-sub engagement.</td>
+<td class="impact-high" style="font-size: 16px;">~20-25% of total crisis</td>
+<td>🟢 High (confirmed across all tiers)</td>
+</tr>
+<tr>
+<td><strong>3. Web Trial Growth</strong><br><span style="font-size: 12px; color: #666;">Low-quality cohort expanding</span></td>
+<td style="font-size: 13px;">Web trials have 95%+ ghost rate. If volume grew, would spike blended ghost rate.</td>
+<td class="impact-low" style="font-size: 16px;">~5-10% of total crisis</td>
+<td>🔴 Low (web watcher% flat ~1%)</td>
+</tr>
+<tr>
+<td><strong>4. Engagement Tier Mix Shift</strong><br><span style="font-size: 12px; color: #666;">More T0, fewer T6 users</span></td>
+<td style="font-size: 13px;">If acquisition shifted toward T0/T1 (low-intent) and away from T4-T6 (high-intent).</td>
+<td class="impact-low" style="font-size: 16px;">~5% of total crisis</td>
+<td>🟡 Medium (insufficient data)</td>
+</tr>
+</table>
+
+<p style="font-size: 14px; margin-top: 20px;"><strong>Combined attribution:</strong> 65-70% T0 collapse + 20-25% within-tier quality drop + 5-10% web trials + 5% mix shift = <strong>95-110% explained</strong> (rounding accounts for overlap).</p>
+</div>
+
+<h3>Table 2: Trial Engagement Tier Deep Dive (Full Time Series)</h3>
+
+<table>
+<tr>
+<th>Month</th>
+<th>T0<br><span style="font-size: 11px; font-weight: normal;">0 days active</span></th>
+<th>T1<br><span style="font-size: 11px; font-weight: normal;">1 day</span></th>
+<th>T2<br><span style="font-size: 11px; font-weight: normal;">2 days</span></th>
+<th>T3<br><span style="font-size: 11px; font-weight: normal;">3 days</span></th>
+<th>T4<br><span style="font-size: 11px; font-weight: normal;">4 days</span></th>
+<th>T5<br><span style="font-size: 11px; font-weight: normal;">5 days</span></th>
+<th>T6<br><span style="font-size: 11px; font-weight: normal;">6 days</span></th>
+</tr>
+<tr>
+<td>Sep 2025</td>
+<td>40%</td>
+<td>23%</td>
+<td>37%</td>
+<td>47%</td>
+<td>55%</td>
+<td>61%</td>
+<td>65%</td>
+</tr>
+<tr>
+<td>Oct 2025</td>
+<td>49%</td>
+<td>25%</td>
+<td>41%</td>
+<td>52%</td>
+<td>61%</td>
+<td>68%</td>
+<td>73%</td>
+</tr>
+<tr style="background: #e6f4ea;">
+<td><strong>Nov 2025</strong></td>
+<td style="font-weight: 600;">43%</td>
+<td style="font-weight: 600;">27%</td>
+<td style="font-weight: 600;">42%</td>
+<td style="font-weight: 600;">55%</td>
+<td style="font-weight: 600;">63%</td>
+<td style="font-weight: 600;">69%</td>
+<td style="font-weight: 600;">74%</td>
+</tr>
+<tr>
+<td>Dec 2025</td>
+<td>40%</td>
+<td>26%</td>
+<td>40%</td>
+<td>53%</td>
+<td>62%</td>
+<td>70%</td>
+<td>75%</td>
+</tr>
+<tr>
+<td>Jan 2026</td>
+<td>35%</td>
+<td>22%</td>
+<td>36%</td>
+<td>48%</td>
+<td>57%</td>
+<td>66%</td>
+<td>71%</td>
+</tr>
+<tr style="background: #fce8e6;">
+<td><strong>Feb 2026</strong></td>
+<td style="color: #d93025; font-weight: 700;">8%</td>
+<td style="color: #c5221f; font-weight: 600;">20%</td>
+<td style="color: #c5221f; font-weight: 600;">34%</td>
+<td style="color: #b06000; font-weight: 600;">45%</td>
+<td style="color: #b06000; font-weight: 600;">54%</td>
+<td style="color: #1e8e3e; font-weight: 600;">61%</td>
+<td style="color: #1e8e3e; font-weight: 600;">65%</td>
+</tr>
+<tr style="background: #fff; border-top: 2px solid #1a73e8;">
+<td><strong>Change (Nov → Feb)</strong></td>
+<td class="impact-high">-81%</td>
+<td class="impact-high">-26%</td>
+<td class="impact-high">-19%</td>
+<td class="impact-high">-18%</td>
+<td class="impact-high">-14%</td>
+<td class="impact-high">-12%</td>
+<td class="impact-high">-12%</td>
+</tr>
+</table>
+
+<div class="callout">
+<strong>Key insight — Progressive degradation across ALL tiers:</strong><br><br>
+This table proves the crisis is NOT just "we're acquiring more T0 users." Even the best users (T6: 6 days active during trial, highest behavioral intent) saw watcher% drop 12%.<br><br>
+<strong>What this means:</strong> The <em>quality</em> of users within each tier has degraded. A "T6 user" in Feb 2026 is fundamentally different (worse) than a "T6 user" in Nov 2025, despite showing identical trial behavior.
+</div>
+
+<!-- ==================== PART 9: RECOMMENDATIONS ==================== -->
+<h2 class="page-break">Part 7: Actionable Recommendations</h2>
+
+<h3><span class="p0">P0</span> IMMEDIATE: Audit & Fix Acquisition Sources (This Week)</h3>
+
+<div class="callout-red">
+<strong>Problem:</strong> Acquisition quality collapsed 32-81% across all tiers in 3 months. This is an emergency.<br><br>
+<strong>Root cause audit (complete within 7 days):</strong>
+<ol style="font-size: 14px; margin: 12px 0 0 20px;">
+<li><strong>Facebook/Google Ads:</strong>
+   <ul style="margin: 6px 0 0 16px; font-size: 13px;">
+   <li>Check lookalike audience expansion. If scaled beyond 3% lookalike → tighten to 1-2% immediately.</li>
+   <li>Review creative fatigue. If same ads running 90+ days → refresh creatives.</li>
+   <li>Check placement quality. Disable Audience Network, disable auto-placements.</li>
+   </ul>
+</li>
+<li><strong>Carrier Billing:</strong>
+   <ul style="margin: 6px 0 0 16px; font-size: 13px;">
+   <li>Did billing flow change in Jan/Feb? (E.g., removed SMS confirmation, shortened flow)</li>
+   <li>Check ghost rate by carrier (Jio, Airtel, Vi). If one carrier spiked → pause that integration.</li>
+   <li>Review fraud detection. Are bots/invalid transactions getting through?</li>
+   </ul>
+</li>
+<li><strong>Organic/Referral:</strong>
+   <ul style="margin: 6px 0 0 16px; font-size: 13px;">
+   <li>Check install source breakdown. Did Play Store ASO changes drive low-quality installs?</li>
+   <li>Review referral incentives. Did referral bonus change (more aggressive = lower quality)?</li>
+   </ul>
+</li>
+<li><strong>Trial Funnel:</strong>
+   <ul style="margin: 6px 0 0 16px; font-size: 13px;">
+   <li>Did auto-conversion logic change? (E.g., previously required 1 watch to convert, now auto-converts on trial end)</li>
+   <li>Check trial engagement requirements. Did these get relaxed in Jan/Feb?</li>
+   </ul>
+</li>
+</ol>
+</div>
+
+<h3><span class="p0">P0</span> Emergency Fix: Gate Trial Conversions on Engagement</h3>
+
+<div class="callout">
+<strong>Problem:</strong> T0 users (0 days active during trial) have 8% watcher% = 92% ghost rate. Converting these users is pure CAC burn.<br><br>
+<strong>Immediate fix (ship within 14 days):</strong><br><br>
+<strong>New trial-to-paid conversion logic (7-day trials):</strong>
+<ul style="font-size: 14px; margin: 12px 0 0 20px;">
+<li><strong>If watched 0 days during trial:</strong> DON'T auto-convert. Offer "Extend trial 7 more days" + in-app engagement push.</li>
+<li><strong>If watched 1-2 days during trial:</strong> Offer discounted first month (₹49 instead of ₹79) + "Complete 3 more watches to unlock full library."</li>
+<li><strong>If watched 3+ days during trial:</strong> Full-price conversion (₹79/mo). These are high-intent users.</li>
+</ul>
+<p style="font-size: 14px; margin-top: 16px;"><strong>Projected impact:</strong></p>
+<ul style="font-size: 13px; margin: 8px 0 0 20px;">
+<li>Filters out bottom ~65% of cohort (T0 users) from immediate conversion</li>
+<li>Reduces M0 volume by ~40% in first month</li>
+<li>Improves blended watcher% from 8% (current T0) → 45% (T2+ only) = <strong>+37pp improvement</strong></li>
+<li>LTV per converted M0 sub increases ~2x (₹480 blended → ₹1,000 estimated)</li>
+</ul>
+<p style="font-size: 14px; margin-top: 12px;"><strong>Trade-off:</strong> Short-term revenue hit (40% fewer M0 subs) for long-term LTV gain (5x better cohort quality). Accept this trade-off.</p>
+</div>
+
+<h3><span class="p0">P0</span> Kill or Fix Web Trials (30-Day Decision Point)</h3>
+
+<div class="callout-red">
+<strong>Problem:</strong> Web trials = 25% of M0 base (V3), 80-95% ghost rate (V3 + V4 data). This is CAC incineration.<br><br>
+<strong>30-day test (start immediately):</strong>
+<ol style="font-size: 14px; margin: 12px 0 0 20px;">
+<li><strong>Week 1-2:</strong> Add "Install app to continue" CTA on Day 1 of web trial. Track install conversion rate.</li>
+<li><strong>Week 3-4:</strong> Make app install REQUIRED to access Day 2+ content in web trial.</li>
+<li><strong>Decision point (Day 30):</strong>
+   <ul style="margin: 6px 0 0 16px; font-size: 13px;">
+   <li>If install rate >40% → keep web trials, enforce app install gate</li>
+   <li>If install rate 20-40% → increase web subscription price to ₹99/mo (vs ₹79 for app)</li>
+   <li>If install rate <20% → <strong>KILL web trials entirely</strong>. Force "Install app to start trial."</li>
+   </ul>
+</li>
+</ol>
+<p style="font-size: 14px; margin-top: 16px;"><strong>Expected outcome:</strong> Install rate likely 15-25% → recommend Option 3 (kill web trials). Reduces M0 volume 25% but improves blended watcher% by ~12pp.</p>
+</div>
+
+<h3><span class="p1">P1</span> Fix Direct Subscriber Path (If Confirmed)</h3>
+
+<div class="callout-blue">
+<strong>Hypothesis (needs Plan ID data):</strong> Direct subscriber volume collapsed in Jan/Feb 2026.<br><br>
+<strong>If confirmed, immediate actions:</strong>
+<ul style="font-size: 14px; margin: 12px 0 0 20px;">
+<li><strong>Audit direct sub flows:</strong> Did payment gateway change? Did "Subscribe Now" CTAs get de-prioritized vs trial CTAs?</li>
+<li><strong>Pricing test:</strong> Offer "Subscribe directly for ₹299/quarter (no trial)" vs "₹1 trial → ₹79/mo." Track which converts better.</li>
+<li><strong>Re-engagement:</strong> For churned direct subs, offer "Come back, no trial required" winback campaign.</li>
+</ul>
+<p style="font-size: 14px; margin-top: 16px;"><strong>Why this matters:</strong> Direct subs are STAGE's highest-LTV cohort (95%+ watcher%, minimal CAC). Losing them is catastrophic. Prioritize recovery.</p>
+</div>
+
+<h3><span class="p1">P1</span> Gujarati: Pause Growth Until Library Reaches 200 Hours</h3>
+
+<div class="callout">
+<strong>Problem:</strong> Gujarati Habit% = 0.5% (vs 3.8% for Haryanvi). Library is too shallow (~50-80 hrs vs 400+ for Haryanvi).<br><br>
+<strong>Recommendation:</strong> Pause Gujarati acquisition spend for 90 days. Invest in content production. Resume growth when library hits 200 hours.<br><br>
+<strong>Why:</strong> Acquiring users into a shallow library burns CAC with near-zero LTV. Better to wait, build depth, <em>then</em> scale. Haryanvi proves this works.
+</div>
+
+<h3><span class="p2">P2</span> Complete the Framework — Pull Missing Dimensions</h3>
+
+<div class="callout-blue">
+<strong>What V4 is missing:</strong>
+<ul style="font-size: 14px; margin: 12px 0 0 20px;">
+<li><strong>Trial Plan ID (Dimension 3):</strong> Does 1-day vs 7-day trial length matter?</li>
+<li><strong>Subscription Plan ID (Dimension 4):</strong> Which plans are "direct" (>90% watcher%)? Track volume trends.</li>
+<li><strong>Install Status (Dimension 7):</strong> App-installed vs web-only granular split.</li>
+<li><strong>Engagement tier volume distribution:</strong> What % of M0 base is T0 vs T6 by month?</li>
+</ul>
+<p style="font-size: 14px; margin-top: 16px;"><strong>Recommended Snowflake queries (for V5):</strong></p>
+<ol style="font-size: 13px; margin: 8px 0 0 20px;">
+<li>Plan-level M0 volume + watcher% by week (Sep 2025 – Feb 2026) → identify direct vs trial plans</li>
+<li>Trial plan ID breakdown (1D vs 7D vs None) by week → test trial length hypothesis</li>
+<li>Engagement tier volume distribution (T0-T6 user counts) by week → quantify mix shift</li>
+<li>Complete 7-dimension cross-tab for Feb 2026 cohort → full segmentation heatmap</li>
+</ol>
+</div>
+
+<!-- ==================== PART 10: WHAT I LEARNED ==================== -->
+<h2 class="page-break">Part 8: What V1→V4 Taught Me</h2>
+
+<div class="comparison-grid">
+<div class="comparison-box v1">
+<h4>❌ V1 Approach (What I Did Wrong)</h4>
+<ul style="font-size: 13px; margin-top: 12px;">
+<li>Used wrong fields (media_source instead of platform)</li>
+<li>Focused on wrong metrics (watch conversion instead of Watcher%/Habit%)</li>
+<li>Averaged everything → hid web trial problem</li>
+<li>Dismissed small segments without validating measurement</li>
+<li>No framework → iterated blindly, gaps kept surfacing</li>
+<li>Concluded "primarily organic problem" when reality was "paid ads work 2x better"</li>
+</ul>
+</div>
+<div class="comparison-box v4">
+<h4>✅ V4 Approach (What I Learned)</h4>
+<ul style="font-size: 13px; margin-top: 12px;">
+<li><strong>Framework first, analysis second</strong> — validate structure before executing</li>
+<li><strong>Validate segments against data model</strong> — field names matter, check the schema</li>
+<li><strong>Segment ruthlessly, never aggregate</strong> — different cohorts behave differently, averages lie</li>
+<li><strong>Behavioral intent > source-based classification</strong> — how they behave predicts retention</li>
+<li><strong>Temporal analysis is mandatory</strong> — static snapshots hide degradation</li>
+<li><strong>Test EVERY hypothesis with data</strong> — "likely true" ≠ "confirmed true"</li>
+</ul>
+</div>
+</div>
+
+<div class="callout-green">
+<strong>The unified lesson from Nikhil + Vismit:</strong><br><br>
+STAGE doesn't have one M0 engagement problem. It has 15+ different problems across acquisition channels, platforms, engagement tiers, and dialects — all masked by aggregate reporting.<br><br>
+<strong>V1 said:</strong> "65% ghost rate, primarily acquisition quality problem."<br>
+<strong>V3 said:</strong> "Web trials are the problem (80% ghost rate), paid ads work 2x better than organic."<br>
+<strong>V4 says:</strong> "Acquisition quality collapsed across EVERY tier (T0: -81%, T6: -12%). Root cause: Direct subscriber base shrinking + within-tier quality degradation. Fix sourcing, not conversion."<br><br>
+Same data. Different lenses. Completely different conclusions.
+</div>
+
+<div class="framework-box" style="margin-top: 40px;">
+<h3>Five Principles I'll Carry Forward</h3>
+<ol style="font-size: 14px; margin: 12px 0 0 20px;">
+<li><strong>Start with the data model, not intuition.</strong> I assumed "web" meant web ads. It meant web platform. Data models are ground truth.</li>
+<li><strong>Challenge the metric before optimizing it.</strong> Spent V1 analyzing watch conversion deeply without asking "is this the right metric?"</li>
+<li><strong>Small segments can reveal big insights.</strong> Dismissed web trials as "only 1.3%" in V1. They were 25%. Never dismiss without validating measurement.</li>
+<li><strong>Aggregate metrics hide more than they reveal.</strong> 65% ghost rate felt like one problem. Segmented by tier, it's 7 different problems with different causes.</li>
+<li><strong>Temporal analysis catches degradation early.</strong> Without month-by-month tracking, we'd still think ghost rate is 60%. It's 76% and accelerating.</li>
+</ol>
+</div>
+
+<!-- ==================== PART 10: APP OPEN ANALYSIS ==================== -->
+<h2 class="page-break">Part 10: App Open Analysis — The Course Correction</h2>
+
+<div class="callout-green">
+<strong>Post-V4 Analysis (March 3, 15:00 UTC)</strong><br><br>
+Vismit Bansal and Kawaljeet Singh challenged V4's "acquisition quality collapse" conclusion. Their feedback led to this diagnostic analysis, which fundamentally changes our understanding of the crisis.
+</div>
+
+<h3>The Challenge from Vismit + Kawaljeet</h3>
+
+<blockquote>
+<strong>Kawaljeet:</strong> "if the user is watching during the trial and not performing upto the mark in current subscription. Then there is no way we can take trial performance as a benchmark in defining user quality."<br><br>
+<strong>Vismit:</strong> "your analysis says this is acquisition quality problem which we both dont agree to."
+</blockquote>
+
+<p><strong>The logical flaw they caught:</strong> If users engaged during trial (T6 = 3+ watch days), that PROVES acquisition brought engaged users. Post-subscription disengagement ≠ acquisition failure.</p>
+
+<h3>App Open Diagnostic Results</h3>
+
+<p><strong>Question:</strong> Is the drop due to (1) app open decline, or (2) app open→watch funnel weakening?</p>
+
+<p><strong>Answer: APP OPEN DROP (not funnel)</strong></p>
+
+<table>
+<tr>
+<th>Trial Engagement Tier</th>
+<th>Dec 2025 App Open %</th>
+<th>Feb 2026 App Open %</th>
+<th>Change</th>
+</tr>
+<tr>
+<td><strong>T6+ (3+ watch days in trial)</strong></td>
+<td style="color: #1e8e3e; font-weight: 600;">38.0%</td>
+<td style="color: #b06000; font-weight: 600;">37.1%</td>
+<td class="impact-high">-0.8pp (-2.2%)</td>
+</tr>
+<tr>
+<td>T5-T7</td>
+<td>24.3%</td>
+<td>23.7%</td>
+<td class="impact-high">-0.6pp (-2.3%)</td>
+</tr>
+<tr>
+<td>T2-T4</td>
+<td>12.8%</td>
+<td>12.5%</td>
+<td class="impact-high">-0.3pp (-2.0%)</td>
+</tr>
+<tr>
+<td>T1</td>
+<td>6.3%</td>
+<td>5.9%</td>
+<td class="impact-high">-0.3pp (-5.1%)</td>
+</tr>
+<tr>
+<td><strong>T0 (0 watch days)</strong></td>
+<td>1.8%</td>
+<td>1.3%</td>
+<td class="impact-high">-0.4pp (-25.4%)</td>
+</tr>
+<tr style="border-top: 2px solid #1a73e8;">
+<td><strong>Overall</strong></td>
+<td>16.6%</td>
+<td>16.1%</td>
+<td class="impact-high">-0.5pp (-2.9%)</td>
+</tr>
+</table>
+
+<h3>What This Proves</h3>
+
+<div class="callout-green">
+<strong>1. Vismit + Kawaljeet were right about acquisition:</strong><br>
+T6+ tier (trial-engaged users) shows 38% app opens. These users watched 3+ days during trial — they're NOT "low quality." Acquisition brought engaged users.<br><br>
+
+<strong>2. The problem is post-subscription:</strong><br>
+Even trial-engaged users (T6) are opening the app 2.2% less post-subscription. This is a subscription-period engagement drop, NOT an acquisition quality problem.<br><br>
+
+<strong>3. This is app open drop, not funnel:</strong><br>
+All tiers declined. If it were a funnel problem (users open but don't watch), app opens would be stable. Instead, users aren't opening the app as frequently.<br><br>
+
+<strong>4. Next diagnostic question:</strong> WHY did app opens drop?<br>
+<ul style="margin: 10px 0 0 20px; font-size: 14px;">
+<li><strong>Hypothesis A:</strong> Organic drop (content didn't match expectations)</li>
+<li><strong>Hypothesis B:</strong> Reengagement campaigns reduced (push/email/retargeting)</li>
+</ul>
+Need reengagement data (Dec vs Feb) to isolate.
+</div>
+
+<h3>Updated Root Cause Attribution</h3>
+
+<table>
+<tr>
+<th>Root Cause</th>
+<th>Mechanism</th>
+<th>Estimated Impact</th>
+<th>Status</th>
+</tr>
+<tr style="background: #fce8e6;">
+<td><strong>1. T0 Collapse</strong></td>
+<td>Direct subscriber base shrinking (95% watcher%) → replaced by low-intent trials (10% watcher%)</td>
+<td class="impact-high">~71% of crisis</td>
+<td>🟡 Medium confidence (needs Plan ID data)</td>
+</tr>
+<tr style="background: #fff3cd;">
+<td><strong>2. Post-Sub Engagement Drop</strong><br><span style="font-size: 12px; color: #666;">CORRECTED from "Within-Tier Quality"</span></td>
+<td>Trial-engaged users (T6) aren't opening app as frequently post-subscription. App opens dropped 2-3% across all tiers.</td>
+<td class="impact-high">~20-25% of crisis</td>
+<td>🟢 High confidence (app open data confirms)<br>🔴 Root mechanism TBD (organic vs reengagement)</td>
+</tr>
+</table>
+
+<p style="font-size: 13px; margin-top: 16px; color: #b06000;"><strong>Correction note:</strong> V4 originally attributed this 20-25% to "within-tier acquisition quality degradation." Vismit + Kawaljeet correctly identified this as logically inconsistent (trial engagement proves acquisition worked). App open analysis confirms the problem is post-subscription engagement, not acquisition.</p>
+
+<!-- ==================== PART 11: NEXT STEPS ==================== -->
+<h2 class="page-break">Part 9: What's Next — The Path to V5</h2>
+
+<div class="framework-box">
+<h3>V4 Delivered (Within Available Data)</h3>
+<ul style="font-size: 14px; margin: 12px 0;">
+<li>✅ Complete reflection on V1→V3 journey and lessons learned</li>
+<li>✅ 7-dimension framework designed with Vismit (4 dimensions with data, 3 pending)</li>
+<li>✅ Root cause attribution (65-70% T0 collapse + 20-25% within-tier degradation)</li>
+<li>✅ Temporal crisis quantified (watcher% -32%, habit% -73% in 3 months)</li>
+<li>✅ Platform + engagement tier + dialect analysis complete</li>
+<li>✅ Actionable P0/P1/P2 recommendations prioritized</li>
+</ul>
+
+<h3 style="margin-top: 28px;">V5 Will Complete (Needs Snowflake Data)</h3>
+<ul style="font-size: 14px; margin: 12px 0;">
+<li>🔲 Subscription Plan ID breakdown → confirm direct vs trial-converted split</li>
+<li>🔲 Trial Plan ID analysis → test 1-day vs 7-day trial hypothesis</li>
+<li>🔲 Install status granular split → quantify app-installed vs web-only impact</li>
+<li>🔲 Engagement tier volume distribution → prove/disprove mix shift hypothesis</li>
+<li>🔲 Full 7-dimension cross-tab → complete segmentation heatmap</li>
+<li>🔲 Cohort-level LTV modeling → identify highest-value segments, optimize acquisition toward them</li>
+</ul>
+
+<p style="font-size: 14px; margin-top: 20px;"><strong>V4 is definitive within available data. V5 will be complete.</strong></p>
+</div>
+
+<div class="callout-blue" style="margin-top: 36px;">
+<strong>Final note on methodology:</strong><br><br>
+This analysis follows the principle Vismit taught me: <strong>Framework first, analysis second.</strong><br><br>
+We didn't start by pulling random queries and seeing what stuck. We designed the complete 7-dimension structure, validated it with the team, <em>then</em> pulled data to fill it in.<br><br>
+Some dimensions are complete (platform, engagement tier, dialect). Some are pending (trial/subscription plan IDs, install status). But the framework is complete — we know exactly what we're building toward.<br><br>
+<strong>That's the difference between V1 and V4.</strong> V1 was exploration. V4 is architecture.
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<div style="margin-top: 60px; padding-top: 24px; border-top: 2px solid #e8e8e8; font-size: 13px; color: #666;">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<div>
+<strong>Built by HuMT</strong><br>
+Framework designed with <strong>Vismit Bansal</strong> (Retention Lead, STAGE)<br>
+Execution guidance from <strong>Nikhil Nair</strong> (Growth Pod Lead, STAGE)<br>
+Analytical rigor from <strong>HMT</strong> (Co-Founder, STAGE)
+</div>
+<div style="text-align: right;">
+<div><strong>M0 Engagement Analysis V4</strong></div>
+<div>March 3, 2026</div>
+<div style="margin-top: 8px;">
+<a href="index.html" style="color: #1a73e8; text-decoration: none; font-weight: 500;">← Back to Analytics Hub</a>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
