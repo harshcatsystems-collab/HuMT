@@ -271,6 +271,23 @@ Before surfacing ANY item as "pending" or "needs action":
 
 ---
 
+## Slack Leak Detection (DAILY — end of day)
+
+At the end of each day (around evening debrief time), run:
+```bash
+bash scripts/slack-leak-detector.sh 24
+```
+
+If leaks found (exit code > 0):
+1. Review each leaked message
+2. Delete if it's process noise
+3. Log to daily memory: "### Slack Leak Alert — N leaks found and cleaned"
+4. Update leak patterns in slack-post-filter.sh if needed
+
+**Purpose:** Catch thinking leaks, sub-agent output, API debug messages before they compound.
+
+---
+
 ## Rules
 - Late night (23:00-08:00 IST): Skip unless urgent (but ALWAYS do Slack alert scan)
 - Already checked <30 min ago: Skip email/calendar. STILL do Slack alert scan.

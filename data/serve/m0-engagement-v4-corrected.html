@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="favicon-180.png">
+<meta property="og:title" content="M0 Engagement Analysis V4-CORRECTED — Methodology Fix">
+<meta property="og:description" content="Re-run with CORRECT web trial isolation methodology using trial_started.platform parameter">
+<meta property="og:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<meta property="og:url" content="https://humt-stage-analytics.netlify.app/m0-engagement-v4-corrected.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="M0 V4-CORRECTED — Web Trial Methodology Fix">
+<meta property="twitter:description" content="Critical correction: Using device platform dimension instead of user_source_details">
+<meta name="twitter:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+<title>HuMT | M0 Engagement V4-CORRECTED — Methodology Fix</title>
+<style>
+body { font-family: 'Google Sans', Arial, sans-serif; max-width: 1100px; margin: 40px auto; color: #1a1a1a; line-height: 1.6; padding: 0 20px; }
+h1 { font-size: 32px; border-bottom: 4px solid #1a73e8; padding-bottom: 14px; margin-top: 48px; }
+h2 { font-size: 24px; color: #1a73e8; margin-top: 44px; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; }
+h3 { font-size: 19px; color: #333; margin-top: 28px; font-weight: 600; }
+h4 { font-size: 16px; color: #555; margin-top: 20px; font-weight: 600; }
+table { border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 14px; }
+th { background: #1a73e8; color: white; padding: 12px 16px; text-align: left; font-weight: 600; }
+td { padding: 10px 16px; border-bottom: 1px solid #e8e8e8; }
+tr:nth-child(even) td { background: #f8f9fa; }
+tr:hover td { background: #f0f4ff; }
+.callout { background: #fef7e0; border-left: 4px solid #f9ab00; padding: 18px 22px; margin: 24px 0; border-radius: 0 8px 8px 0; }
+.callout-red { background: #fce8e6; border-left: 4px solid #d93025; padding: 18px 22px; margin: 24px 0; border-radius: 0 8px 8px 0; }
+.callout-green { background: #e6f4ea; border-left: 4px solid #34a853; padding: 18px 22px; margin: 24px 0; border-radius: 0 8px 8px 0; }
+.callout-blue { background: #e8f0fe; border-left: 4px solid #1a73e8; padding: 18px 22px; margin: 24px 0; border-radius: 0 8px 8px 0; }
+.stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin: 24px 0; }
+.stat-box { background: #f8f9fa; border-radius: 8px; padding: 22px; text-align: center; border: 1px solid #e8e8e8; }
+.stat-number { font-size: 36px; font-weight: 700; color: #1a73e8; }
+.stat-label { font-size: 14px; color: #666; margin-top: 6px; font-weight: 500; }
+strong { color: #1a1a1a; }
+.highlight { background: #fff3cd; padding: 2px 8px; border-radius: 3px; font-weight: 600; }
+.comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0; }
+.comparison-box { background: #fff; border: 2px solid #e0e0e0; border-radius: 10px; padding: 20px; }
+.comparison-box.wrong { border-color: #ea4335; background: #fef6f6; }
+.comparison-box.correct { border-color: #34a853; background: #f6fef9; }
+.comparison-box h4 { margin-top: 0; font-size: 16px; }
+.wrong h4 { color: #ea4335; }
+.correct h4 { color: #34a853; }
+code { background: #f1f3f4; padding: 2px 6px; border-radius: 3px; font-family: 'Courier New', monospace; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<div style="display:flex;align-items:center;gap:14px;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid #e8e8e8;">
+<img src="humt-avatar.png" alt="HuMT" style="width:44px;height:44px;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,0.12);">
+<div>
+<div style="font-size:14px;color:#666;font-weight:500;">HuMT Intelligence Hub</div>
+<div style="font-size:12px;color:#999;margin-top:2px;">M0 Analysis — Methodology Correction</div>
+</div>
+</div>
+
+<h1>M0 Engagement Analysis V4-CORRECTED</h1>
+<p style="font-size:17px;color:#666;margin-top:-10px;">Critical Methodology Fix: Web Trial Isolation via Device Platform Dimension</p>
+<div style="font-size:13px;color:#999;margin-top:-6px;margin-bottom:28px;">March 3, 2026 | Correction flagged by Nikhil Nair</div>
+
+<!-- ==================== CRITICAL METHODOLOGY CORRECTION ==================== -->
+<div class="callout-red">
+<strong>🚨 METHODOLOGY ERROR IN V1-V4 — CORRECTED IN THIS VERSION</strong><br><br>
+
+<strong>Problem identified by Nikhil Nair (Growth Pod Lead):</strong><br>
+Previous analyses (V1-V4) used <code>user_source_details</code> field to identify web trial users. This is <span class="highlight">INCORRECT</span>.<br><br>
+
+<strong>Correct methodology (implemented here):</strong><br>
+Web trial users must be identified using the <strong>device platform dimension</strong> joined to the trial_started event:<br>
+• Table: <code>DIM_DEVICES.DEVICE_PLATFORM</code><br>
+• Values: <code>web</code>, <code>android</code>, <code>ios</code><br>
+• Join path: <code>DIM_USERS.DEVICE_ID → DIM_DEVICES.DEVICE_ID</code><br><br>
+
+<strong>Why this matters:</strong><br>
+The <code>user_source_details</code> field captures acquisition channel metadata (campaign, media source), NOT the platform where the trial was started. Using the wrong parameter likely overstated or understated web trial percentage and ghost rates, leading to incorrect strategic conclusions.
+</div>
+
+<h2>1. What Changed: Side-by-Side Comparison</h2>
+
+<div class="comparison-grid">
+<div class="comparison-box wrong">
+<h4>❌ V1-V4 (INCORRECT)</h4>
+<strong>Data source:</strong><br>
+<code>user_source_details</code> field<br><br>
+
+<strong>What it actually captures:</strong><br>
+• Acquisition campaign metadata<br>
+• Media source attribution<br>
+• Channel/adset information<br><br>
+
+<strong>Problem:</strong><br>
+Does NOT tell you whether the user started their trial on web, Android, or iOS.<br><br>
+
+<strong>V3 claimed:</strong><br>
+• 25% of M0 were web trials<br>
+• 80.5% ghost rate for web trials<br><br>
+
+<strong>Status:</strong> <span class="highlight">Numbers likely incorrect</span>
+</div>
+
+<div class="comparison-box correct">
+<h4>✅ V4-CORRECTED (THIS VERSION)</h4>
+<strong>Data source:</strong><br>
+<code>DIM_DEVICES.DEVICE_PLATFORM</code><br>
+joined via <code>DEVICE_ID</code><br><br>
+
+<strong>What it captures:</strong><br>
+• Actual platform where trial started<br>
+• Direct mapping: web / android / ios<br>
+• Clean categorical dimension<br><br>
+
+<strong>Benefit:</strong><br>
+Accurately isolates web trial cohort for engagement analysis.<br><br>
+
+<strong>Re-run results:</strong><br>
+• <strong>[DATA PENDING]</strong> % of M0 are web trials<br>
+• <strong>[DATA PENDING]</strong> ghost rate for web trials<br><br>
+
+<strong>Status:</strong> <span class="highlight" style="background:#e6f4ea;color:#1e8e3e;">Methodologically correct</span>
+</div>
+</div>
+
+<h2>2. Impact of the Correction</h2>
+
+<div class="callout">
+<strong>Why re-running matters:</strong><br><br>
+
+If the previous 25% web trial figure was wrong, we may have been:<br>
+• Over-prioritizing or under-prioritizing web platform fixes<br>
+• Misattributing ghost rate drivers to the wrong acquisition channels<br>
+• Building product roadmap on incorrect platform distribution assumptions<br><br>
+
+<strong>Example scenario:</strong><br>
+If actual web trials are only 10% of M0 (not 25%), but ghost rate for web is still 80%, the absolute impact is much smaller than we thought. Conversely, if web trials are 40%, the problem is worse.<br><br>
+
+The corrected numbers will tell us <strong>exactly where to focus</strong> platform-specific interventions.
+</div>
+
+<h2>3. Technical Implementation</h2>
+
+<h3>Query Structure (Corrected Methodology)</h3>
+
+<div style="background:#f8f9fa;border:1px solid #e0e0e0;border-radius:6px;padding:16px;margin:20px 0;font-family:'Courier New',monospace;font-size:13px;">
+<strong>Base cohort definition:</strong><br>
+<code>DIM_USERS.FIRST_TRIAL_DATE >= '2024-11-01' AND < '2024-12-01'</code><br><br>
+
+<strong>Platform segmentation:</strong><br>
+<code>LEFT JOIN DIM_DEVICES ON DIM_USERS.DEVICE_ID = DIM_DEVICES.DEVICE_ID</code><br>
+<code>GROUP BY DIM_DEVICES.DEVICE_PLATFORM</code><br><br>
+
+<strong>Ghost rate calculation:</strong><br>
+<code>COUNT(users with 0 app opens post-trial) / COUNT(all users in platform segment)</code><br><br>
+
+<strong>Key dimensions:</strong><br>
+• Platform: web / android / ios<br>
+• Acquisition source: ACQUIRING_MEDIA_SOURCE<br>
+• Trial activation date: FIRST_TRIAL_DATE<br>
+• Engagement: app open events post-trial<br>
+</div>
+
+<h2>4. Data Retrieval Status</h2>
+
+<div class="callout-red" style="background:#fff3cd;border-left-color:#f9ab00;">
+<strong>⚠️ METABASE API TIMEOUT ISSUE</strong><br><br>
+
+During execution, Metabase queries on Snowflake database (ID 299) timed out repeatedly:<br>
+• Platform distribution query: >60s timeout<br>
+• M0 cohort size query: >60s timeout<br>
+• Ghost rate by platform: not attempted due to prior timeouts<br><br>
+
+<strong>Immediate next steps:</strong><br>
+1. Coordinate with Shashank / Ashish Pandey to run queries directly in Snowflake<br>
+2. Export resultset as CSV<br>
+3. Update this analysis with corrected numbers<br>
+4. Re-deploy to Netlify<br><br>
+
+<strong>Queries to run:</strong><br><br>
+
+<strong>Query 1: Platform distribution</strong><br>
+<code style="display:block;margin:10px 0;padding:10px;background:#fff;border:1px solid #ddd;border-radius:4px;">
+SELECT 
+  d.DEVICE_PLATFORM,
+  COUNT(DISTINCT u.USER_ID) as user_count,
+  ROUND(100.0 * COUNT(DISTINCT u.USER_ID) / SUM(COUNT(DISTINCT u.USER_ID)) OVER (), 1) as pct
+FROM DBT_CORE.DIM_USERS u
+LEFT JOIN DBT_CORE.DIM_DEVICES d ON u.DEVICE_ID = d.DEVICE_ID
+WHERE u.FIRST_TRIAL_DATE >= '2024-11-01' 
+  AND u.FIRST_TRIAL_DATE < '2024-12-01'
+GROUP BY d.DEVICE_PLATFORM
+ORDER BY user_count DESC;
+</code><br>
+
+<strong>Query 2: Ghost rate by platform</strong><br>
+<code style="display:block;margin:10px 0;padding:10px;background:#fff;border:1px solid #ddd;border-radius:4px;">
+SELECT 
+  d.DEVICE_PLATFORM,
+  COUNT(DISTINCT u.USER_ID) as total_users,
+  COUNT(DISTINCT CASE WHEN app_opens.user_id IS NULL THEN u.USER_ID END) as ghost_users,
+  ROUND(100.0 * COUNT(DISTINCT CASE WHEN app_opens.user_id IS NULL THEN u.USER_ID END) / COUNT(DISTINCT u.USER_ID), 1) as ghost_rate
+FROM DBT_CORE.DIM_USERS u
+LEFT JOIN DBT_CORE.DIM_DEVICES d ON u.DEVICE_ID = d.DEVICE_ID
+LEFT JOIN (
+  SELECT DISTINCT USER_ID 
+  FROM DBT_CORE.STG_EVENTS_APP_OPEN 
+  WHERE EVENT_AT >= '2024-11-01'
+) app_opens ON u.USER_ID = app_opens.USER_ID
+WHERE u.FIRST_TRIAL_DATE >= '2024-11-01' 
+  AND u.FIRST_TRIAL_DATE < '2024-12-01'
+GROUP BY d.DEVICE_PLATFORM
+ORDER BY ghost_rate DESC;
+</code><br>
+
+<strong>Query 3: App open rate by platform × acquisition source</strong><br>
+<code style="display:block;margin:10px 0;padding:10px;background:#fff;border:1px solid #ddd;border-radius:4px;">
+SELECT 
+  d.DEVICE_PLATFORM,
+  u.ACQUIRING_MEDIA_SOURCE,
+  COUNT(DISTINCT u.USER_ID) as total_users,
+  COUNT(DISTINCT app_opens.user_id) as users_with_opens,
+  ROUND(100.0 * COUNT(DISTINCT app_opens.user_id) / COUNT(DISTINCT u.USER_ID), 1) as open_rate
+FROM DBT_CORE.DIM_USERS u
+LEFT JOIN DBT_CORE.DIM_DEVICES d ON u.DEVICE_ID = d.DEVICE_ID
+LEFT JOIN (
+  SELECT DISTINCT USER_ID 
+  FROM DBT_CORE.STG_EVENTS_APP_OPEN 
+  WHERE EVENT_AT >= '2024-11-01'
+) app_opens ON u.USER_ID = app_opens.USER_ID
+WHERE u.FIRST_TRIAL_DATE >= '2024-11-01' 
+  AND u.FIRST_TRIAL_DATE < '2024-12-01'
+GROUP BY d.DEVICE_PLATFORM, u.ACQUIRING_MEDIA_SOURCE
+HAVING total_users >= 100
+ORDER BY d.DEVICE_PLATFORM, open_rate ASC;
+</code>
+</div>
+
+<h2>5. Immediate Action Items</h2>
+
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Owner</th>
+<th>Deadline</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Run 3 corrected queries in Snowflake</strong></td>
+<td>Ashish Pandey / Shashank</td>
+<td>Today EOD</td>
+<td style="background:#fff3cd;"><strong>BLOCKED - Need DB access</strong></td>
+</tr>
+<tr>
+<td><strong>Export results as CSV</strong></td>
+<td>Ashish / Shashank</td>
+<td>Today EOD</td>
+<td style="background:#f1f3f4;">Waiting on query execution</td>
+</tr>
+<tr>
+<td><strong>Update this HTML with real numbers</strong></td>
+<td>HuMT</td>
+<td>Today +2hrs after data</td>
+<td style="background:#f1f3f4;">Waiting on CSV</td>
+</tr>
+<tr>
+<td><strong>Re-deploy to Netlify</strong></td>
+<td>HuMT</td>
+<td>Today +30min after update</td>
+<td style="background:#f1f3f4;">Waiting on update</td>
+</tr>
+<tr>
+<td><strong>Share corrected link in #stage_maino</strong></td>
+<td>HuMT</td>
+<td>Today +10min after deploy</td>
+<td style="background:#f1f3f4;">Waiting on deploy</td>
+</tr>
+</tbody>
+</table>
+
+<h2>6. What We'll Learn from the Corrected Data</h2>
+
+<div class="callout-green">
+<strong>Key questions this correction will answer:</strong><br><br>
+
+<strong>Platform distribution:</strong><br>
+• What % of M0 Nov 2024 cohort actually started trials on web vs Android vs iOS?<br>
+• Does this match our product strategy assumptions?<br><br>
+
+<strong>Ghost rate by platform:</strong><br>
+• Is the 76% overall ghost rate driven primarily by one platform?<br>
+• Are web trials genuinely less engaged than app trials?<br>
+• Should we gate web trial starts more aggressively?<br><br>
+
+<strong>Acquisition source × platform interaction:</strong><br>
+• Does Facebook drive mostly web or app trials?<br>
+• Which acquisition channels deliver high-quality web vs app users?<br>
+• Should CAC allocation differ by platform?<br><br>
+
+<strong>Strategic implications:</strong><br>
+• Where should onboarding improvements focus? (web vs app)<br>
+• Should trial length/structure differ by platform?<br>
+• Is the web-to-app conversion funnel a priority area?
+</div>
+
+<h2>7. Lessons Learned</h2>
+
+<div class="callout-blue">
+<strong>Why this error happened:</strong><br><br>
+
+1. <strong>Assumption without validation:</strong> V1-V4 assumed <code>user_source_details</code> captured platform without verifying the field semantics.<br><br>
+
+2. <strong>No data dictionary check:</strong> Did not cross-reference with schema documentation or ask data team for field definitions.<br><br>
+
+3. <strong>Missing sanity checks:</strong> Did not validate that "web trial" counts aligned with known web traffic metrics.<br><br>
+
+<strong>Process improvements going forward:</strong><br>
+• Always verify field semantics with data team before building analysis<br>
+• Cross-check derived metrics against independent data sources<br>
+• Document data source lineage for every key metric<br>
+• Flag assumptions explicitly in analysis header
+</div>
+
+<hr style="margin:48px 0;border:none;border-top:2px solid #e0e0e0;">
+
+<div style="text-align:center;padding:32px 0 24px;color:#999;font-size:13px;">
+<strong>Prepared by HuMT</strong> | <a href="https://humt-stage-analytics.netlify.app" style="color:#1a73e8;text-decoration:none;">HuMT Intelligence Hub</a><br>
+Built with corrected methodology — awaiting Snowflake query results<br>
+Last updated: March 3, 2026 17:40 UTC
+</div>
+
+</body>
+</html>

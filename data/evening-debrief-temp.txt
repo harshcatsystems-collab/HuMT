@@ -1,0 +1,100 @@
+🌆 Evening Debrief — Wed Mar 4, 2026
+
+⚡ DECISIONS MADE
+
+• Randeep Hooda campaign SHUTDOWN (EOD Mar 3) — burning ₹20L/week with 40-50% TCR vs 30% benchmark. Root cause: weak hook/visual impact. Parveen delegated shutdown (OVERDUE — flagged D29).
+
+• Chatbot release UAT approved — Aaliya's new UI (Instagram Stories-style home + chat bubble) passed UAT. FAB button removal requested. Release after fix. New banner always visible regardless of subscription state.
+
+• Trial plan ID switch — trial-exp-1-199-next-trigger discontinued, using trial-exp-nov-1-199 instead. PhonePe triggers now every 15 min (down from 5 AM daily cron). Instant PDN at 0%, 1-day trial at 55%, 7-day at 45%.
+
+• Re-engagement weekly catchup launched — Parveen initiated fresh weekly meeting for dormant/churned strategy. Vismit + Hemabh tasked with market-wise data (lifetime users, churn, trial churn, re-engagement numbers). Meeting scheduled.
+
+👥 CO-FOUNDER ROUNDUP
+
+Vinay Singhal:
+• Asked "what numbers moved up?" on chatbot update — strategic focus on outcome metrics vs shipping notes
+• Corrected PhonePe trigger timing (24hr, not instant) after initial confusion
+• Requested Aaliya develop 50% DAU coverage strategy for chatbot (strategic delegation, D32)
+
+Parveen Singhal:
+• Posted Acquisition Pod Executive Summary highlighting Randeep Hooda shutdown
+• Launched weekly re-engagement meeting, asked for market-wise data prep
+• Requested OpenRouter usage report access (shared by HuMT — credits at $8.29/$50.10, ~1 day left)
+
+Shashank Vaishnav:
+• Quiet day — no activity detected across scanned channels
+
+📊 COMPANY ROUNDUP
+
+Product (Growth Pod):
+• Happy Holi messages across team
+• Chatbot new UI UAT approved, awaiting FAB button fix before release
+• Trial plan ID migration executed (instant PDN now 0%, 1-day 55%, 7-day 45%)
+• Aaliya tasked with 50% DAU chatbot coverage strategy (Vinay's ask, D32)
+
+Retention/Lifecycle:
+• Parveen initiated fresh weekly re-engagement catchup
+• Vismit + Hemabh delegated market-wise data compilation (D30)
+• Data accuracy flagged by Vismit (not correct, will figure out with Harshit)
+
+Acquisition/Growth:
+• Randeep Hooda campaign shutdown decision (EOD Mar 3, now overdue D29)
+• Trial plan ID switch to trial-exp-nov-1-199
+• PDN intervals reduced to 15 min (from 5 AM daily)
+• Shubham delegated PDN compilation for all plans in 24hr + 5min intervals (D28, due Mar 5)
+
+Content Strategy:
+• Quiet day post-Holi
+
+People & Culture:
+• Quiet day
+
+Consumer Insights:
+• Quiet day
+
+Cross-Org Strategy:
+• Chatbot scale momentum: 871 daily chatters (Feb 28–Mar 3) vs 395/day (Feb 21–27) = +120% WoW
+• OpenRouter credits alert: $8.29 remaining of $50.10 (~1 day left at current usage). Parveen requested report access (shared).
+• AI governance: Vinay pushing for outcome-based tracking vs feature shipping
+
+Tech:
+• Multiple OTA branches for v4.64.1/v4.64.2 (testing workflow)
+• Trameline release workflow test (Mofidul)
+• Preprod patch deployments for v0.0.1 and v1.0.0
+• No major incidents
+
+Regional:
+• Quiet Holi day
+
+Hiring:
+• Quiet day
+
+🔄 DELEGATION TRACKER
+
+Movement (8 active):
+
+• D26 — Chatbot data updates (Aaliya) — NEW, just delegated
+• D27 — Infrastructure upgrade (Rohit) — NEW, self-announced
+• D28 — PDN compilation (Yash) — NEW, due Mar 5 13:15 UTC
+• D30 — Re-engagement data (Vismit + Hemabh) — NEW today
+• D31 — Remove FAB button (Lukesh) — NEW today, blocking chatbot release
+• D32 — Chatbot 50% DAU strategy (Aaliya) — NEW strategic ask from Vinay
+
+Stale (3):
+
+• D5 — CLM setup for chatbot (Vismit) — 4 days silent ⚠️
+• D6 — Chatbot UAT video (Junaid) — 4 days silent ⚠️
+• D29 — Shutdown Randeep Hooda campaign (Acquisition Pod) — 1 day overdue ⚠️ (was EOD Mar 3)
+
+Today's additions: 6 new delegations detected across #growth-pod, #ai-character-bots, #retention, #acquisition-pod
+
+💡 WORTH KNOWING
+
+• Holi day — light Slack activity across most channels. Team posted Happy Holi greetings early, then quiet.
+
+• Tech release velocity — 6 OTA branches shipped today for v4.64.1/v4.64.2 testing. Mobile team iterating fast on chatbot UI refinements.
+
+—
+
+Read time: 2.5 min | Coverage: 353 channels, 19 active, 132 messages analyzed

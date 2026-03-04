@@ -1,7 +1,10 @@
 {
-  "lastMorningBrief": "2026-03-03T04:30:00Z",
-  "lastEveningDebrief": "2026-03-03T13:00:00Z",
-  "lastFounderPulse": "2026-03-03T11:52:00Z",
-  "lastCompanyPulse": null,
-  "updatedAt": "2026-03-03T13:00:00Z"
+  "evening_debrief": {
+    "last_run": "2026-03-04T13:00:00Z",
+    "scan_window_hours": 24,
+    "messages_analyzed": 132,
+    "channels_active": 19,
+    "key_decisions": 4,
+    "new_delegations": 6
+  }
 }
