@@ -1,0 +1,43 @@
+{
+  "monthly_trends": {
+    "oct_25": {"subs": 222087, "watchers": 85575, "watcher_pct": 38.5, "habit_users": 8438, "habit_pct": 3.8},
+    "nov_25": {"subs": 185534, "watchers": 74317, "watcher_pct": 40.1, "habit_users": 8361, "habit_pct": 4.5},
+    "dec_25": {"subs": 185955, "watchers": 73443, "watcher_pct": 39.5, "habit_users": 8155, "habit_pct": 4.4},
+    "jan_26": {"subs": 199486, "watchers": 73248, "watcher_pct": 36.7, "habit_users": 7002, "habit_pct": 3.5}
+  },
+  "trial_distribution_jan26": {
+    "0_days": {"subs": 22321, "pct": 11.5},
+    "1_day": {"subs": 85437, "pct": 43.9},
+    "2_days": {"subs": 43506, "pct": 22.3},
+    "3_days": {"subs": 21624, "pct": 11.1},
+    "4_days": {"subs": 11775, "pct": 6.0},
+    "5_days": {"subs": 6628, "pct": 3.4},
+    "6plus_days": {"subs": 3535, "pct": 1.8}
+  },
+  "trial_distribution_feb26": {
+    "0_days": {"subs": 46328, "pct": 27.7},
+    "1_day": {"subs": 65550, "pct": 39.2},
+    "2_days": {"subs": 29453, "pct": 17.6},
+    "3_days": {"subs": 13911, "pct": 8.3},
+    "4_days": {"subs": 6933, "pct": 4.1},
+    "5_days": {"subs": 3457, "pct": 2.1},
+    "6plus_days": {"subs": 1775, "pct": 1.1}
+  },
+  "top_playback_channels_oct25_jan26": {
+    "reengoogleads_m0": 62937,
+    "inapp": 31306,
+    "meta": 29554,
+    "reengoogleads": 25528,
+    "meta-ret-m0": 21629,
+    "googlepaid-ret-m0": 17731,
+    "Others": 17261,
+    "meta-ret-M0": 8141,
+    "pn": 7793,
+    "reenmetaads_m0": 6672,
+    "google": 5114,
+    "googlepaid-ret-mn": 4095,
+    "googlepaid": 3105,
+    "whatsapp": 2991,
+    "share.stage.in": 2683
+  }
+}

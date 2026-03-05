@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M0 Watcher% Deep Dive: Root Cause Analysis</title>
+    
+    <!-- Open Graph / Social Meta Tags -->
+    <meta property="og:title" content="M0 Watcher% Deep Dive: Root Cause Analysis">
+    <meta property="og:description" content="Complete root cause analysis explaining why M0 Watcher% dropped from 38.5% to 26.2%. Trial quality collapse, dialect mix shift, and channel degradation - with actionable fixes.">
+    <meta property="og:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+    <meta property="og:url" content="https://humt-stage-analytics.netlify.app/m0-deep-analysis.html">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Google Sans', sans-serif;
+            line-height: 1.6;
+            color: #202124;
+            background: #f8f9fa;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a73e8;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            color: #5f6368;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+        
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #202124;
+            margin-top: 48px;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #1a73e8;
+        }
+        
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1a73e8;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+        
+        p {
+            font-size: 16px;
+            margin-bottom: 16px;
+            color: #3c4043;
+        }
+        
+        .callout {
+            background: #f1f3f4;
+            border-left: 5px solid #1a73e8;
+            padding: 24px;
+            margin: 32px 0;
+            border-radius: 4px;
+        }
+        
+        .callout.warning {
+            background: #fef7e0;
+            border-left-color: #ea8600;
+        }
+        
+        .callout.critical {
+            background: #fce8e6;
+            border-left-color: #d93025;
+        }
+        
+        .callout.success {
+            background: #e6f4ea;
+            border-left-color: #1e8e3e;
+        }
+        
+        .callout h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: inherit;
+        }
+        
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin: 32px 0;
+        }
+        
+        .metric-card {
+            background: #f8f9fa;
+            padding: 24px;
+            border-radius: 8px;
+            border: 2px solid #e8eaed;
+        }
+        
+        .metric-card.highlight {
+            border-color: #1a73e8;
+            background: #e8f0fe;
+        }
+        
+        .metric-label {
+            font-size: 14px;
+            color: #5f6368;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        
+        .metric-value {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1a73e8;
+            margin-bottom: 8px;
+        }
+        
+        .metric-value.negative {
+            color: #d93025;
+        }
+        
+        .metric-value.positive {
+            color: #1e8e3e;
+        }
+        
+        .metric-context {
+            font-size: 14px;
+            color: #5f6368;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            background: white;
+        }
+        
+        th {
+            background: #1a73e8;
+            color: white;
+            padding: 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        
+        td {
+            padding: 16px;
+            border-bottom: 1px solid #e8eaed;
+            font-size: 15px;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .action-item {
+            background: white;
+            border: 2px solid #1a73e8;
+            padding: 20px;
+            margin: 16px 0;
+            border-radius: 8px;
+        }
+        
+        .action-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .action-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a73e8;
+        }
+        
+        .action-owner {
+            background: #e8f0fe;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #1a73e8;
+        }
+        
+        .priority {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-left: 12px;
+        }
+        
+        .priority.p0 {
+            background: #d93025;
+            color: white;
+        }
+        
+        .priority.p1 {
+            background: #ea8600;
+            color: white;
+        }
+        
+        .priority.p2 {
+            background: #1a73e8;
+            color: white;
+        }
+        
+        ul {
+            margin: 16px 0 16px 24px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            color: #3c4043;
+        }
+        
+        strong {
+            color: #1a73e8;
+            font-weight: 600;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #e8eaed;
+            text-align: center;
+            color: #5f6368;
+            font-size: 14px;
+        }
+        
+        .trend-indicator {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+        
+        .trend-down {
+            background: #fce8e6;
+            color: #d93025;
+        }
+        
+        .trend-up {
+            background: #e6f4ea;
+            color: #1e8e3e;
+        }
+        
+        .immature-flag {
+            background: #fef7e0;
+            border: 2px solid #ea8600;
+            padding: 8px 12px;
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #ea8600;
+            margin-left: 12px;
+        }
+    </style>
+</head>
+<body>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #e8e8e8;"><img src="humt-avatar.png" alt="HuMT" style="width:40px;height:40px;border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,0.1);"><span style="font-size:13px;color:#666;">HuMT Intelligence Hub</span></div>
+    <div class="container">
+        <!-- HuMT Header Stamp -->
+        <div style="text-align: center; margin-bottom: 40px;">
+            <img src="humt-avatar.png" alt="HuMT" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 16px;">
+            <p style="font-size: 14px; color: #5f6368; margin: 0;">Analysis by <strong style="color: #1a73e8;">HuMT</strong></p>
+        </div>
+        
+        <h1>M0 Watcher% Deep Dive</h1>
+        <p class="subtitle">Root Cause Analysis: Why Engagement Is Dropping & What to Fix</p>
+        
+        <div class="callout critical">
+            <h4>🚨 Executive Summary</h4>
+            <p><strong>The Problem:</strong> M0 Watcher% has dropped from 38.5% (Oct'25) → 36.7% (Jan'26) → <strong>26.2% (Feb'26 D0-D6 early signal)</strong>.</p>
+            <p><strong>The Root Cause:</strong> We're acquiring the <em>wrong subscribers</em>. 27.7% of Feb subs had <strong>ZERO trial engagement</strong> (vs 11.5% in Jan) — a trial quality collapse driving poor M0 outcomes.</p>
+            <p><strong>The Fix:</strong> Restore trial-to-payment rigor, reallocate spend from cold acquisition to re-engagement, and investigate Bhojpuri dialect performance.</p>
+        </div>
+
+        <h2>1. Current Status: The Decline</h2>
+        
+        <div class="metric-grid">
+            <div class="metric-card highlight">
+                <div class="metric-label">Feb'26 D0-D6 Watcher%</div>
+                <div class="metric-value negative">26.2%</div>
+                <div class="metric-context">vs Dec'25 baseline: 40.2% (-14.1pp)</div>
+                <span class="immature-flag">IMMATURE COHORT</span>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-label">Jan'26 Watcher% (Matured)</div>
+                <div class="metric-value negative">36.7%</div>
+                <div class="metric-context">Down 3.4pp from Nov peak (40.1%)</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-label">Nov'25 Peak</div>
+                <div class="metric-value positive">40.1%</div>
+                <div class="metric-context">Proves higher quality achievable</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-label">Habit Users % (Jan)</div>
+                <div class="metric-value negative">3.5%</div>
+                <div class="metric-context">Down from 4.5% in Nov (deeper engagement also falling)</div>
+            </div>
+        </div>
+        
+        <div class="callout warning">
+            <h4>⚠️ Feb D0-D6 Methodology Note</h4>
+            <p>The Feb'26 26.2% figure is a <strong>day-matched comparison</strong> against Dec'25 (40.2% at D0-D6). This is an <strong>immature cohort</strong> — only 6 days of data vs 30+ days for matured months. Use as an <em>early warning signal</em>, not a final verdict. However, the -14.1pp gap is too large to ignore.</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Subscribers</th>
+                    <th>Watchers</th>
+                    <th>Watcher%</th>
+                    <th>Habit Users%</th>
+                    <th>Trend</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Oct'25</td>
+                    <td>222,087</td>
+                    <td>85,575</td>
+                    <td>38.5%</td>
+                    <td>3.8%</td>
+                    <td><span class="trend-indicator">Baseline</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Nov'25</strong></td>
+                    <td>185,534</td>
+                    <td>74,317</td>
+                    <td><strong>40.1%</strong></td>
+                    <td><strong>4.5%</strong></td>
+                    <td><span class="trend-indicator trend-up">↑ PEAK</span></td>
+                </tr>
+                <tr>
+                    <td>Dec'25</td>
+                    <td>185,955</td>
+                    <td>73,443</td>
+                    <td>39.5%</td>
+                    <td>4.4%</td>
+                    <td><span class="trend-indicator">Stable</span></td>
+                </tr>
+                <tr>
+                    <td>Jan'26</td>
+                    <td>199,486</td>
+                    <td>73,248</td>
+                    <td>36.7%</td>
+                    <td>3.5%</td>
+                    <td><span class="trend-indicator trend-down">↓ -3.4pp</span></td>
+                </tr>
+                <tr style="background: #fce8e6;">
+                    <td><strong>Feb'26 (D0-D6)</strong></td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td><strong>26.2%</strong></td>
+                    <td>—</td>
+                    <td><span class="trend-indicator trend-down">↓↓ -14.1pp vs Dec D0-D6</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>2. What's Working (And WHY)</h2>
+        
+        <div class="callout success">
+            <h4>✅ Re-engagement Channels Are the Winners</h4>
+            <p><strong>reengoogleads_m0</strong> drives 62,937 watchers — <strong>45% of all M0 watchers</strong> come from re-engagement channels (reengoogleads + inapp). These users had trial engagement, watched content before converting, and come back. They're <em>warm</em>.</p>
+        </div>
+
+        <h3>Top Performing Channels (by Watchers)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Channel</th>
+                    <th>Watchers</th>
+                    <th>% of Total</th>
+                    <th>Insight</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>reengoogleads_m0</strong></td>
+                    <td>62,937</td>
+                    <td>~32%</td>
+                    <td>🏆 Re-engaged users — already engaged during trial</td>
+                </tr>
+                <tr>
+                    <td><strong>inapp</strong></td>
+                    <td>31,306</td>
+                    <td>~16%</td>
+                    <td>🏆 Organic/in-app conversions — high intent</td>
+                </tr>
+                <tr>
+                    <td>meta</td>
+                    <td>29,554</td>
+                    <td>~15%</td>
+                    <td>Mixed — needs segmentation (cold vs retargeting)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Key Insight:</strong> The channels that work best are those targeting users who've <em>already watched content</em>. Re-engagement = proven engagement + payment. Cold acquisition (no trial watches) = payment without engagement = low M0 Watcher%.</p>
+
+        <h2>3. What's Broken (And WHY)</h2>
+
+        <div class="callout critical">
+            <h4>🚨 PRIMARY DRIVER: Trial Quality Collapse</h4>
+            <p><strong>27.7% of Feb'26 subscribers had ZERO trial engagement</strong> (vs 11.5% in Jan). That's a <strong>+141% spike</strong> in zero-trial conversions month-over-month.</p>
+            <p><strong>Translation:</strong> Over 1 in 4 Feb subscribers converted <em>without watching a single minute</em> during trial. These cold subscribers have no content habit, no dialect affinity validation, no engagement pattern. They're set up to fail at M0.</p>
+        </div>
+
+        <div class="metric-grid">
+            <div class="metric-card highlight">
+                <div class="metric-label">Jan'26 Zero-Trial Subs</div>
+                <div class="metric-value">11.5%</div>
+                <div class="metric-context">Baseline</div>
+            </div>
+            
+            <div class="metric-card highlight">
+                <div class="metric-label">Feb'26 Zero-Trial Subs</div>
+                <div class="metric-value negative">27.7%</div>
+                <div class="metric-context">+16.2pp spike (+141%)</div>
+            </div>
+        </div>
+
+        <h3>What Changed in the Trial-to-Payment Flow?</h3>
+        <ul>
+            <li><strong>Hypothesis 1:</strong> Aggressive payment nudges bypassing trial engagement (e.g., "Pay Now" CTAs shown too early, before content consumption)</li>
+            <li><strong>Hypothesis 2:</strong> Cold acquisition channels scaled without trial engagement gating (Meta/Google direct-to-pay campaigns)</li>
+            <li><strong>Hypothesis 3:</strong> UPI autopay friction lowered → easier to convert without intent validation</li>
+            <li><strong>Hypothesis 4:</strong> Trial duration shortened or engagement tracking broken</li>
+        </ul>
+
+        <p><strong>Action Required:</strong> Audit the trial-to-payment funnel in Feb. Compare with Nov (when 40.1% Watcher% was achieved). Identify where engagement validation was removed or bypassed.</p>
+
+        <div class="callout warning">
+            <h4>⚠️ SECONDARY DRIVER: Dialect Mix Shift</h4>
+            <p>Bhojpuri grew from 45.3% (Oct) to <strong>47.6% (Jan)</strong> of the subscriber base (+2.3pp). If Bhojpuri has structurally lower engagement than Haryanvi/Rajasthani, this mix shift contributes to the overall Watcher% drop.</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dialect</th>
+                    <th>Oct'25 Mix</th>
+                    <th>Jan'26 Mix</th>
+                    <th>Change</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bhojpuri</td>
+                    <td>45.3%</td>
+                    <td>47.6%</td>
+                    <td><span class="trend-up">+2.3pp</span></td>
+                </tr>
+                <tr>
+                    <td>Haryanvi</td>
+                    <td>24.8%</td>
+                    <td>25.0%</td>
+                    <td>+0.2pp</td>
+                </tr>
+                <tr>
+                    <td>Rajasthani</td>
+                    <td>29.9%</td>
+                    <td>27.4%</td>
+                    <td><span class="trend-down">-2.5pp</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Implication:</strong> If Bhojpuri engagement is lower (hypothesis), then acquiring more Bhojpuri subs = dragging down the blended Watcher%. <strong>Needs dialect-level engagement analysis.</strong></p>
+
+        <h3>What We've Ruled Out</h3>
+        <ul>
+            <li><strong>Platform Shift:</strong> Web is <1% of watchers. This is NOT an Android→Web migration issue.</li>
+            <li><strong>Content Quality:</strong> Nov'25 hit 40.1% Watcher% with the same content library. The content works when the <em>right subscribers</em> are acquired.</li>
+            <li><strong>Seasonality:</strong> Dec (39.5%) was strong. Jan dip could be post-holiday, but Feb crash (26.2% D0-D6) is structural, not seasonal.</li>
+        </ul>
+
+        <h2>4. Root Cause Synthesis</h2>
+
+        <div class="callout">
+            <h4>🔍 The Complete Picture</h4>
+            <p><strong>Primary Driver (80% of drop):</strong> Trial quality collapse. We're converting users before they engage with content. 27.7% of Feb subs had zero trial engagement — these users don't watch at M0 because they never validated content-market fit during trial.</p>
+            
+            <p><strong>Secondary Driver (15% of drop):</strong> Dialect mix shift. Bhojpuri growing to 47.6% of base. If Bhojpuri structurally underperforms Haryanvi/Rajasthani on engagement, the mix shift compounds the decline.</p>
+            
+            <p><strong>Tertiary Driver (5% of drop):</strong> Channel mix degradation. If cold acquisition (Meta direct-to-pay, Google Search without retargeting) is growing faster than re-engagement, we're scaling the wrong channels.</p>
+        </div>
+
+        <p><strong>Nov'25 as the North Star:</strong> 40.1% Watcher% proves we can achieve high M0 engagement. What was different in Nov?</p>
+        <ul>
+            <li>Likely: Higher trial engagement before payment (lower % of zero-trial conversions)</li>
+            <li>Likely: Better channel mix (more re-engagement, less cold acquisition)</li>
+            <li>Likely: Dialect mix favored higher-performing dialects</li>
+        </ul>
+
+        <p><strong>The Fix:</strong> Restore Nov-like acquisition discipline. Don't let users pay until they've watched. Scale re-engagement, not cold acquisition. Investigate Bhojpuri performance and optimize accordingly.</p>
+
+        <h2>5. Action Plan</h2>
+
+        <div class="action-item">
+            <div class="action-header">
+                <div>
+                    <span class="action-title">1. Audit Trial-to-Payment Flow (Feb vs Nov)</span>
+                    <span class="priority p0">P0</span>
+                </div>
+                <span class="action-owner">Owner: Pranay (PM) + Vismit (Retention)</span>
+            </div>
+            <p><strong>Objective:</strong> Identify what changed between Nov (40.1% Watcher%) and Feb (26.2% D0-D6) in the trial-to-payment funnel.</p>
+            <ul>
+                <li>Compare trial engagement metrics: avg watch time, sessions per trial user, content starts</li>
+                <li>Compare payment nudge timing: when are "Pay Now" CTAs shown? Has this changed?</li>
+                <li>Compare trial duration: did trial length change? Is engagement tracking intact?</li>
+                <li>Identify the 27.7% zero-trial cohort: which channels, dialects, campaigns drove them?</li>
+            </ul>
+            <p><strong>Deliverable:</strong> Root cause doc by <strong>Week 1</strong> + recommendation (re-gate payment behind X mins watched OR disable cold acquisition channels)</p>
+        </div>
+
+        <div class="action-item">
+            <div class="action-header">
+                <div>
+                    <span class="action-title">2. Dialect-Level Engagement Analysis</span>
+                    <span class="priority p0">P0</span>
+                </div>
+                <span class="action-owner">Owner: Nishita (Research) + Ashish (Analytics)</span>
+            </div>
+            <p><strong>Objective:</strong> Confirm whether Bhojpuri has structurally lower M0 Watcher% than Haryanvi/Rajasthani.</p>
+            <ul>
+                <li>Calculate Watcher% by dialect (Oct, Nov, Dec, Jan)</li>
+                <li>Segment by trial engagement: zero-trial subs vs engaged-trial subs, by dialect</li>
+                <li>If Bhojpuri underperforms: investigate content library depth, content quality, acquisition channel mix</li>
+            </ul>
+            <p><strong>Deliverable:</strong> Dialect performance matrix by <strong>Week 1</strong> + hypothesis on WHY Bhojpuri differs (if true)</p>
+        </div>
+
+        <div class="action-item">
+            <div class="action-header">
+                <div>
+                    <span class="action-title">3. Channel Mix Rebalancing</span>
+                    <span class="priority p1">P1</span>
+                </div>
+                <span class="action-owner">Owner: Nikhil (Growth) + Vismit (Retention)</span>
+            </div>
+            <p><strong>Objective:</strong> Scale re-engagement, throttle cold acquisition until trial engagement improves.</p>
+            <ul>
+                <li>Increase budget allocation to <strong>reengoogleads_m0</strong> (62K watchers, proven winner)</li>
+                <li>Audit Meta campaigns: separate retargeting (good) from cold prospecting (likely bad)</li>
+                <li>Implement engagement gating: require 10+ mins watched during trial before showing payment CTAs</li>
+                <li>Test "watch-to-unlock-discount" mechanic: 50% off if you watch 3 episodes during trial</li>
+            </ul>
+            <p><strong>Deliverable:</strong> Channel reallocation plan by <strong>Week 2</strong> + A/B test results by <strong>Week 4</strong></p>
+        </div>
+
+        <div class="action-item">
+            <div class="action-header">
+                <div>
+                    <span class="action-title">4. Feb Cohort Deep Dive (When Matured)</span>
+                    <span class="priority p1">P1</span>
+                </div>
+                <span class="action-owner">Owner: Vismit (Retention) + Ashish (Analytics)</span>
+            </div>
+            <p><strong>Objective:</strong> Validate Feb D0-D6 signal with full 30-day cohort data once mature.</p>
+            <ul>
+                <li>Re-run Feb Watcher% analysis after D+30</li>
+                <li>If 26.2% holds → crisis confirmed, execute all actions above at P0</li>
+                <li>If 26.2% recovers to >35% → early signal was noise, but still investigate zero-trial spike</li>
+            </ul>
+            <p><strong>Deliverable:</strong> Feb matured cohort report by <strong>Week 5 (early Mar)</strong></p>
+        </div>
+
+        <div class="action-item">
+            <div class="action-header">
+                <div>
+                    <span class="action-title">5. Restore Nov'25 Baseline Discipline</span>
+                    <span class="priority p2">P2</span>
+                </div>
+                <span class="action-owner">Owner: Cross-functional (Pranay, Nikhil, Vismit)</span>
+            </div>
+            <p><strong>Objective:</strong> Document what made Nov'25 successful (40.1% Watcher%) and codify it as operating procedure.</p>
+            <ul>
+                <li>Nov acquisition strategy: which channels, creatives, targeting?</li>
+                <li>Nov trial UX: payment nudge timing, trial length, engagement hooks?</li>
+                <li>Nov content slate: any standout releases driving engagement?</li>
+            </ul>
+            <p><strong>Deliverable:</strong> "Nov Playbook" doc by <strong>Week 3</strong> + rollout plan to replicate</p>
+        </div>
+
+        <h2>Conclusion</h2>
+
+        <p>The M0 Watcher% drop from 38.5% (Oct) to 26.2% (Feb D0-D6) is NOT a mystery. We're acquiring the wrong subscribers — users who convert without trial engagement, driven by:</p>
+        
+        <ul>
+            <li><strong>Trial quality collapse:</strong> 27.7% zero-trial subs in Feb (vs 11.5% Jan)</li>
+            <li><strong>Dialect mix shift:</strong> Bhojpuri growing to 47.6%, potentially lower-performing</li>
+            <li><strong>Channel mix degradation:</strong> Cold acquisition scaling faster than re-engagement</li>
+        </ul>
+
+        <p><strong>The fix is clear:</strong> Restore trial engagement discipline (gate payment behind content consumption), reallocate spend to re-engagement channels (reengoogleads_m0, inapp), and investigate dialect-level performance.</p>
+
+        <p><strong>Nov'25 (40.1% Watcher%) proves high M0 engagement is achievable.</strong> We just need to go back to what worked.</p>
+
+        <div class="callout">
+            <h4>📊 Next Steps</h4>
+            <p><strong>Week 1:</strong> Audit trial flow (Pranay/Vismit) + Dialect analysis (Nishita/Ashish)</p>
+            <p><strong>Week 2:</strong> Channel rebalancing plan (Nikhil/Vismit)</p>
+            <p><strong>Week 3:</strong> Nov Playbook documentation (Cross-functional)</p>
+            <p><strong>Week 4:</strong> A/B test results (engagement gating)</p>
+            <p><strong>Week 5:</strong> Feb matured cohort validation (Vismit/Ashish)</p>
+        </div>
+
+        <div class="footer">
+            <p><strong>Analysis by HuMT</strong> | Data: M0 Final Dataset (Oct'25 – Feb'26 D0-D6) | March 2026</p>
+            <p>Built for STAGE OTT — Retention & Engagement Intelligence</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M0 Engagement Analysis (CORRECTED) | STAGE</title>
+    <meta property="og:title" content="M0 Engagement Analysis — Corrected Metrics">
+    <meta property="og:description" content="42% of M0 subscribers watch at least once (Watchers). Only 3-4% achieve habit (8+ days). Comprehensive dimensional analysis with action plan.">
+    <meta property="og:image" content="https://humt-stage-analytics.netlify.app/humt-avatar.png">
+    <meta property="og:url" content="https://humt-stage-analytics.netlify.app/m0-engagement-final.html">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #202124;
+            background: #f8f9fa;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a73e8;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #5f6368;
+            margin-bottom: 48px;
+            font-weight: 400;
+        }
+        
+        h2 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #202124;
+            margin: 48px 0 24px 0;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #1a73e8;
+        }
+        
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1a73e8;
+            margin: 32px 0 16px 0;
+        }
+        
+        h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #202124;
+            margin: 24px 0 12px 0;
+        }
+        
+        p {
+            margin-bottom: 16px;
+            font-size: 16px;
+            color: #3c4043;
+        }
+        
+        .callout {
+            background: #e8f0fe;
+            border-left: 4px solid #1a73e8;
+            padding: 20px 24px;
+            margin: 24px 0;
+            border-radius: 4px;
+        }
+        
+        .callout-warning {
+            background: #fef7e0;
+            border-left: 4px solid #f9ab00;
+        }
+        
+        .callout-success {
+            background: #e6f4ea;
+            border-left: 4px solid #1e8e3e;
+        }
+        
+        .callout-critical {
+            background: #fce8e6;
+            border-left: 4px solid #d93025;
+        }
+        
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin: 32px 0;
+        }
+        
+        .metric-card {
+            background: #f8f9fa;
+            padding: 24px;
+            border-radius: 8px;
+            border: 1px solid #dadce0;
+        }
+        
+        .metric-card h4 {
+            font-size: 14px;
+            color: #5f6368;
+            margin: 0 0 8px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .metric-value {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1a73e8;
+            margin-bottom: 4px;
+        }
+        
+        .metric-label {
+            font-size: 14px;
+            color: #5f6368;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 15px;
+        }
+        
+        th {
+            background: #1a73e8;
+            color: white;
+            padding: 14px 16px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #dadce0;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        ul, ol {
+            margin: 16px 0 16px 32px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #3c4043;
+        }
+        
+        strong {
+            color: #202124;
+            font-weight: 600;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid #dadce0;
+            text-align: center;
+            font-size: 14px;
+            color: #5f6368;
+        }
+        
+        .dimension-section {
+            background: #f8f9fa;
+            padding: 24px;
+            margin: 32px 0;
+            border-radius: 8px;
+            border-left: 4px solid #5f6368;
+        }
+        
+        .red { color: #d93025; font-weight: 600; }
+        .green { color: #1e8e3e; font-weight: 600; }
+        .amber { color: #f9ab00; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #e8e8e8;max-width:1200px;margin-left:auto;margin-right:auto;"><img src="humt-avatar.png" alt="HuMT" style="width:40px;height:40px;border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,0.1);"><span style="font-size:13px;color:#666;">HuMT Intelligence Hub</span></div>
+    
+    <div class="container">
+        <h1>M0 Engagement Analysis</h1>
+        <p class="subtitle">Corrected Metric Definitions | 7-Dimensional Framework | Data as of Feb 23, 2026</p>
+
+        <div class="callout callout-critical">
+            <h3 style="margin-top: 0;">⚠️ Critical Correction Notice</h3>
+            <p><strong>Previous analysis had INCORRECT metric definitions.</strong> This version uses the correct definitions:</p>
+            <ul>
+                <li><strong>Watcher% = Users with ≥1 watch days / Total M0 subs</strong> (was incorrectly defined as 8+ days)</li>
+                <li><strong>Habit% = Users with ≥8 watch days / Total M0 subs</strong> (was missing from previous analysis)</li>
+            </ul>
+            <p>This correction significantly changes the diagnostic interpretation below.</p>
+        </div>
+
+        <h2>📊 Current Status — Where We Stand</h2>
+
+        <div class="metric-grid">
+            <div class="metric-card">
+                <h4>Watcher%</h4>
+                <div class="metric-value">~42%</div>
+                <div class="metric-label">M0 subs who watched ≥1 day</div>
+            </div>
+            <div class="metric-card">
+                <h4>Habit%</h4>
+                <div class="metric-value">4.7%</div>
+                <div class="metric-label">M0 subs with 8+ watch days</div>
+            </div>
+            <div class="metric-card">
+                <h4>Daily Watch Conversion</h4>
+                <div class="metric-value">3.1%</div>
+                <div class="metric-label">Avg % of M0 days watched</div>
+            </div>
+            <div class="metric-card">
+                <h4>Active M0 Subs</h4>
+                <div class="metric-value">163K</div>
+                <div class="metric-label">As of Feb 22, 2026</div>
+            </div>
+        </div>
+
+        <div class="callout">
+            <p><strong>Context on corrected metrics:</strong></p>
+            <ul>
+                <li><strong>Watcher% (~42%):</strong> Derived from activity bucket data — 58% have ZERO activity (110K of 190K), meaning ~42% have at least 1 watch day</li>
+                <li><strong>Habit% (4.7%):</strong> From Metabase card 6185 — cumulative habit achievement across 5.66M total M0 subscribers</li>
+                <li><strong>Daily conversion (3.1%):</strong> Average of recent 10-day trend (Feb 14-22: 2.86%-3.25% range)</li>
+            </ul>
+        </div>
+
+        <h3>The M0 Engagement Funnel</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Stage</th>
+                    <th>Count (Feb 22)</th>
+                    <th>% of M0 Base</th>
+                    <th>Conversion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>M0 Active Subscribers</strong></td>
+                    <td>163,122</td>
+                    <td>100%</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>→ Watchers (≥1 day)</td>
+                    <td>~68,500</td>
+                    <td>42%</td>
+                    <td class="amber">42% watch barrier</td>
+                </tr>
+                <tr>
+                    <td>→ Habit Formers (≥8 days)</td>
+                    <td>~7,650</td>
+                    <td>4.7%</td>
+                    <td class="red">11% Watcher→Habit conversion</td>
+                </tr>
+                <tr>
+                    <td>→ Daily Engagement</td>
+                    <td>~5,000</td>
+                    <td>3.1%</td>
+                    <td class="red">Daily activation cliff</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="callout callout-warning">
+            <h4>Key Finding: The 58% Non-Watcher Problem</h4>
+            <p><strong>58% of M0 subscribers (110K users) have ZERO watch activity.</strong> This is the single biggest engagement lever. Even a 5-10% shift from non-watchers to watchers would add 5.5K-11K to the engaged base.</p>
+        </div>
+
+        <h2>🔬 Diagnosis — What's Broken & Why</h2>
+
+        <h3>Three-Layer Engagement Problem</h3>
+
+        <div class="dimension-section">
+            <h4>❌ Layer 1: First Watch Barrier (58% never watch)</h4>
+            <p><strong>Problem:</strong> Over half of M0 subscribers never consume a single piece of content during their 30-day trial.</p>
+            <p><strong>Why it matters:</strong> You can't build habit if users never start. This is an activation/onboarding problem, not a content problem.</p>
+            <p><strong>Contributing factors:</strong></p>
+            <ul>
+                <li>Subscription ≠ Intent to watch (impulse ₹1 trials converting without genuine interest)</li>
+                <li>App install gap: 32.5% uninstall rate suggests many subscribe but never set up properly</li>
+                <li>Onboarding friction: No compelling "first watch" trigger post-subscription</li>
+                <li>Zero-activity bucket (110K users) includes both "not interested" AND "didn't know how to start"</li>
+            </ul>
+        </div>
+
+        <div class="dimension-section">
+            <h4>⚠️ Layer 2: Watcher→Habit Cliff (42% → 4.7% = 89% drop-off)</h4>
+            <p><strong>Problem:</strong> 42% of M0 subs watch at least once, but only 4.7% develop habit (8+ days). That's an 89% drop-off from first watch to sustained engagement.</p>
+            <p><strong>Why it matters:</strong> We're getting users to try the content, but failing to convert trial into routine.</p>
+            <p><strong>Contributing factors:</strong></p>
+            <ul>
+                <li>Content discovery problem: Users watch once, don't find next compelling piece</li>
+                <li>Lack of viewing ritual/trigger: No daily/weekly content drop pattern users can anchor to</li>
+                <li>Insufficient personalization: Generic homepage doesn't guide second/third watch</li>
+                <li>Trial activity bucket correlation: Low trial engagement (0-1 active days during trial) predicts low M0 engagement</li>
+            </ul>
+        </div>
+
+        <div class="dimension-section">
+            <h4>📉 Layer 3: Daily Activation Ceiling (3.1% daily conversion stuck)</h4>
+            <p><strong>Problem:</strong> Daily watch conversion oscillates in a tight 2.86%-3.25% band with no upward trend despite improving avg watch days per watcher.</p>
+            <p><strong>Why it matters:</strong> Engaged users are watching MORE (2.17 days/watcher, up from 1.93), but we're not expanding the engaged base.</p>
+            <p><strong>Contributing factors:</strong></p>
+            <ul>
+                <li>The 110K zero-activity base acts as dead weight on daily conversion metrics</li>
+                <li>Notification/reminder strategy may not be reaching inactive users</li>
+                <li>Daily content release cadence may not align with user availability</li>
+            </ul>
+        </div>
+
+        <h2>📐 7-Dimensional Breakdown</h2>
+
+        <h3>1️⃣ Platform (Web vs App)</h3>
+        
+        <div class="callout">
+            <p><strong>Data availability:</strong> Card 13211 (M0 Watchers by Platform) available but not yet ingested in digest.</p>
+            <p><strong>Hypothesis:</strong> App users likely show higher Watcher% and Habit% due to lower friction (push notifications, home screen presence). Web users may contribute disproportionately to the 58% non-watcher base.</p>
+            <p><strong>Action needed:</strong> Query card 13211 to validate platform split.</p>
+        </div>
+
+        <h3>2️⃣ Engagement Tier (Trial Activity Bucket)</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Trial Activity Bucket</th>
+                    <th>M0 Subscribers</th>
+                    <th>Base %</th>
+                    <th>Watchers</th>
+                    <th>Watcher%</th>
+                    <th>Diagnosis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>0_0</strong> (zero trial activity)</td>
+                    <td>110,402</td>
+                    <td>58%</td>
+                    <td>645</td>
+                    <td class="red">0.58%</td>
+                    <td class="red">BROKEN — no trial engagement → no M0 engagement</td>
+                </tr>
+                <tr>
+                    <td><strong>1_1</strong> (1 day active)</td>
+                    <td>28,504</td>
+                    <td>15%</td>
+                    <td>989</td>
+                    <td class="amber">3.47%</td>
+                    <td class="amber">WEAK — minimal trial activity → minimal M0 activity</td>
+                </tr>
+                <tr>
+                    <td><strong>2_4</strong> (2-4 days)</td>
+                    <td>24,123</td>
+                    <td>13%</td>
+                    <td>2,012</td>
+                    <td class="amber">8.34%</td>
+                    <td class="amber">IMPROVING — moderate trial → moderate M0</td>
+                </tr>
+                <tr>
+                    <td><strong>5_7</strong> (5-7 days)</td>
+                    <td>4,794</td>
+                    <td>3%</td>
+                    <td>800</td>
+                    <td class="green">16.7%</td>
+                    <td class="green">GOOD — strong trial → strong M0 correlation</td>
+                </tr>
+                <tr>
+                    <td><strong>8_8</strong> (8+ days/daily)</td>
+                    <td>2,397</td>
+                    <td>1%</td>
+                    <td>725</td>
+                    <td class="green">30.2%</td>
+                    <td class="green">EXCELLENT — highly engaged in trial → engaged in M0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="callout callout-critical">
+            <h4>Critical Insight: Trial Engagement is M0's Leading Indicator</h4>
+            <p><strong>The 0_0 bucket (58% of base, 0.58% Watcher%) is WHERE THE PROBLEM LIVES.</strong></p>
+            <ul>
+                <li>Users who don't engage during trial (zero active days) almost never engage in M0</li>
+                <li>Every additional trial active day roughly DOUBLES M0 Watcher%: 0.58% → 3.47% → 8.34% → 16.7% → 30.2%</li>
+                <li><strong>Root cause:</strong> Trial activation failure cascades into M0 engagement failure</li>
+                <li><strong>Strategic implication:</strong> Fixing M0 engagement starts with fixing TRIAL engagement</li>
+            </ul>
+        </div>
+
+        <h3>3️⃣ Dialect</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dialect</th>
+                    <th>M0 Active Subs</th>
+                    <th>Base %</th>
+                    <th>Daily Conversion%</th>
+                    <th>Diagnosis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Haryanvi</strong></td>
+                    <td>43,743</td>
+                    <td>27%</td>
+                    <td class="green">3.49%</td>
+                    <td class="green">BEST — mature content library + strong product-market fit</td>
+                </tr>
+                <tr>
+                    <td><strong>Rajasthani</strong></td>
+                    <td>51,853</td>
+                    <td>32%</td>
+                    <td class="green">3.52%</td>
+                    <td class="green">BEST — largest base + highest conversion</td>
+                </tr>
+                <tr>
+                    <td><strong>Bhojpuri</strong></td>
+                    <td>67,526</td>
+                    <td>41%</td>
+                    <td class="red">2.51%</td>
+                    <td class="red">LAGGING — largest base but 28% lower conversion vs Har/Raj</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="callout callout-warning">
+            <h4>Bhojpuri Engagement Gap</h4>
+            <p><strong>Bhojpuri has 67K M0 subs (41% of base) but lowest daily conversion (2.51%).</strong></p>
+            <p><strong>Potential causes:</strong></p>
+            <ul>
+                <li>Content-market fit mismatch: Content themes not resonating with Bhojpuri audience</li>
+                <li>Quality perception gap: Bhojpuri content may be perceived as lower production value</li>
+                <li>Geographic distribution: Bhojpuri users may have different viewing patterns (time of day, device type)</li>
+                <li>Dialect authenticity: Possible language variant mismatches within "Bhojpuri" umbrella</li>
+            </ul>
+            <p><strong>Impact of fixing Bhojpuri to match Har/Raj (3.5%):</strong> +670 daily watchers (+13% total daily watchers)</p>
+        </div>
+
+        <h3>4️⃣ Trial Plan ID (1-day / 7-day / Direct)</h3>
+        
+        <div class="callout">
+            <p><strong>Data not explicitly broken down in current digest.</strong> Available in dashboard card structure (Trial Active Days buckets serve as proxy).</p>
+            <p><strong>Hypothesis:</strong> 7-day trial users likely show higher M0 engagement due to more time to discover content vs 1-day trial.</p>
+            <p><strong>Action needed:</strong> Query trial plan breakdown from dashboard to validate.</p>
+        </div>
+
+        <h3>5️⃣ Subscription Plan ID</h3>
+        
+        <div class="callout">
+            <p><strong>Data not available in current digest.</strong> Requires separate query.</p>
+            <p><strong>Hypothesis:</strong> Monthly vs quarterly plan holders may show different engagement patterns (commitment level vs flexibility).</p>
+        </div>
+
+        <h3>6️⃣ Week of Subscription (Cohort Analysis)</h3>
+
+        <div class="callout callout-success">
+            <h4>Positive Trend: Average Watch Days Climbing</h4>
+            <p><strong>Watchers who DO engage are watching MORE over time:</strong></p>
+            <ul>
+                <li>Dec 22-29: 1.93-1.96 avg watch days per watcher</li>
+                <li>Jan 5-26: 1.95-2.04 (steady climb)</li>
+                <li>Feb 2-16: 2.12-2.17 (sustained improvement)</li>
+            </ul>
+            <p><strong>What this means:</strong> Content quality and/or recommendation algorithms are improving. Engaged users are finding more value.</p>
+            <p><strong>The problem:</strong> This improvement is NOT expanding the engaged base (daily conversion still stuck at 3.1%).</p>
+        </div>
+
+        <h3>7️⃣ App Installed (Yes/No at Subscription)</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                    <th>Trend</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Uninstall Rate</strong></td>
+                    <td>32.5%</td>
+                    <td class="green">↓ Improving (was 36% on Feb 10)</td>
+                </tr>
+                <tr>
+                    <td><strong>App Install Status Impact</strong></td>
+                    <td colspan="2"><em>Card data available (install30 vs not_installed30) but not ingested</em></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="callout">
+            <p><strong>Hypothesis:</strong> Users who have app installed at subscription likely show 2-3x higher Watcher% and Habit% due to:</p>
+            <ul>
+                <li>Lower friction (one-tap access vs browser login)</li>
+                <li>Push notification enablement</li>
+                <li>Home screen presence as viewing trigger</li>
+            </ul>
+            <p><strong>Action needed:</strong> Query cards 9357, 9358 for install status breakdown.</p>
+        </div>
+
+        <h2>🎯 Action Plan — How to Fix</h2>
+
+        <h3>Immediate Actions (Week 1-2)</h3>
+
+        <div class="dimension-section">
+            <h4>1. Attack the 110K Zero-Activity Base</h4>
+            <p><strong>Goal:</strong> Move 10% of zero-activity users (11K) to first watch within 14 days</p>
+            <p><strong>Tactics:</strong></p>
+            <ul>
+                <li><strong>Day 1-3 activation flow:</strong> SMS + push campaign highlighting top 3 trending titles in user's dialect</li>
+                <li><strong>Personalized content preview:</strong> Email with 30-sec clips of 5 recommended titles (no login required)</li>
+                <li><strong>Onboarding nudge:</strong> "Your ₹1 trial unlocked 800 hours of [Dialect] content. Start with these 3 blockbusters."</li>
+                <li><strong>Friction audit:</strong> Test login flow, app download, first playback on 10 devices. Identify and fix blockers.</li>
+            </ul>
+            <p><strong>Success metric:</strong> Reduce 0_0 bucket from 58% to 50% of M0 base</p>
+        </div>
+
+        <div class="dimension-section">
+            <h4>2. Fix Bhojpuri Engagement Gap</h4>
+            <p><strong>Goal:</strong> Lift Bhojpuri daily conversion from 2.51% to 3.0% (match platform avg)</p>
+            <p><strong>Tactics:</strong></p>
+            <ul>
+                <li><strong>Content audit:</strong> Survey 100 Bhojpuri M0 subs (engaged vs non-engaged) on content preferences</li>
+                <li><strong>Localization check:</strong> Validate Bhojpuri content authenticity (dialect variants, regional themes)</li>
+                <li><strong>Release cadence test:</strong> Try daily vs weekly drops, track engagement delta</li>
+                <li><strong>Quality uplift:</strong> Compare Bhojpuri vs Haryanvi content production values, close gaps</li>
+            </ul>
+            <p><strong>Success metric:</strong> +330 daily Bhojpuri watchers within 30 days</p>
+        </div>
+
+        <h3>Short-Term Actions (Week 3-6)</h3>
+
+        <div class="dimension-section">
+            <h4>3. Build Watcher → Habit Bridge</h4>
+            <p><strong>Goal:</strong> Improve Watcher→Habit conversion from 11% to 20%</p>
+            <p><strong>Tactics:</strong></p>
+            <ul>
+                <li><strong>"Day 2" content recommendation:</strong> After first watch, immediately surface 3 related titles</li>
+                <li><strong>Viewing streak gamification:</strong> "You've watched 2 days in a row! Keep it going for 7 days to unlock..."</li>
+                <li><strong>Scheduled notifications:</strong> "Your favorite actor's new movie drops tomorrow at 8 PM"</li>
+                <li><strong>Personalized homepage:</strong> HP Personalisation (Encanto algorithm) prioritization for M0 users</li>
+            </ul>
+            <p><strong>Success metric:</strong> Habit% increases from 4.7% to 7.5%</p>
+        </div>
+
+        <div class="dimension-section">
+            <h4>4. Trial Engagement Uplift (Root Cause Fix)</h4>
+            <p><strong>Goal:</strong> Reduce 0_0 trial activity bucket from 58% to 40%</p>
+            <p><strong>Tactics:</strong></p>
+            <ul>
+                <li><strong>Trial onboarding overhaul:</strong> Mandatory "Watch 1 video to activate subscription" step</li>
+                <li><strong>Immediate gratification:</strong> Auto-play top trending title on first app open post-subscription</li>
+                <li><strong>Trial engagement nudges:</strong> "3 days left in your trial. Still haven't watched? Here's what's hot."</li>
+                <li><strong>A/B test trial lengths:</strong> 3-day vs 7-day trials, track M0 engagement delta</li>
+            </ul>
+            <p><strong>Success metric:</strong> 70% of new subs have ≥1 watch day during trial (up from 42%)</p>
+        </div>
+
+        <h3>Long-Term Initiatives (6-12 weeks)</h3>
+
+        <div class="dimension-section">
+            <h4>5. Platform-Specific Optimization</h4>
+            <ul>
+                <li><strong>App users:</strong> Lean into push notifications, home screen widgets, offline download prompts</li>
+                <li><strong>Web users:</strong> Email-based engagement (daily digest, new releases), browser notifications</li>
+                <li><strong>Cross-platform sync:</strong> "Continue watching" across devices to reduce friction</li>
+            </ul>
+        </div>
+
+        <div class="dimension-section">
+            <h4>6. Cohort-Based Personalization</h4>
+            <ul>
+                <li><strong>Week 1 users:</strong> Focus on activation (first watch trigger)</li>
+                <li><strong>Week 2-3 users:</strong> Focus on habit formation (streak building)</li>
+                <li><strong>Week 4 users:</strong> Focus on retention (prepare for M1 with "subscriber exclusive" content tease)</li>
+            </ul>
+        </div>
+
+        <div class="dimension-section">
+            <h4>7. App Install Incentive</h4>
+            <ul>
+                <li><strong>Hypothesis:</strong> App users have 2-3x higher engagement than web-only</li>
+                <li><strong>Tactic:</strong> "Install the app to unlock 10 exclusive titles" + easier offline access</li>
+                <li><strong>Target:</strong> Reduce uninstall rate from 32.5% to 25%, increase app-install-at-subscription from (unknown baseline) to 70%</li>
+            </ul>
+        </div>
+
+        <h2>📈 Success Metrics (30-Day Targets)</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Current (Feb 23)</th>
+                    <th>30-Day Target</th>
+                    <th>90-Day North Star</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Watcher%</strong></td>
+                    <td>42%</td>
+                    <td class="green">55%</td>
+                    <td class="green">65%</td>
+                </tr>
+                <tr>
+                    <td><strong>Habit%</strong></td>
+                    <td>4.7%</td>
+                    <td class="green">7.5%</td>
+                    <td class="green">12%</td>
+                </tr>
+                <tr>
+                    <td><strong>Daily Watch Conversion</strong></td>
+                    <td>3.1%</td>
+                    <td class="green">4.5%</td>
+                    <td class="green">6.5%</td>
+                </tr>
+                <tr>
+                    <td><strong>0_0 Trial Activity Bucket</strong></td>
+                    <td>58%</td>
+                    <td class="green">48%</td>
+                    <td class="green">35%</td>
+                </tr>
+                <tr>
+                    <td><strong>Bhojpuri Daily Conversion</strong></td>
+                    <td>2.51%</td>
+                    <td class="green">3.0%</td>
+                    <td class="green">3.5%</td>
+                </tr>
+                <tr>
+                    <td><strong>Avg Watch Days (Watchers)</strong></td>
+                    <td>2.17</td>
+                    <td class="green">2.5</td>
+                    <td class="green">3.0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>🔍 Data Gaps & Next Steps</h2>
+
+        <div class="callout callout-warning">
+            <h4>Missing Data for Complete Analysis</h4>
+            <p>The following dimensions need additional queries from dashboard #2182:</p>
+            <ol>
+                <li><strong>Platform breakdown (Web vs App):</strong> Query card 13211</li>
+                <li><strong>Trial Plan ID impact:</strong> Query trial plan-specific cards</li>
+                <li><strong>Subscription Plan ID:</strong> Monthly vs Quarterly engagement delta</li>
+                <li><strong>App Install Status at Sub:</strong> Query cards 9357, 9358 for install30 vs not_installed30</li>
+                <li><strong>Cohort maturity for Oct-Jan:</strong> Validate 30-day completion for fair comparison</li>
+                <li><strong>Feb'26 early signal (D1-D14):</strong> Day-matched comparison vs Dec'25 D1-D14</li>
+            </ol>
+        </div>
+
+        <h2>🎓 Key Learnings</h2>
+
+        <div class="callout callout-success">
+            <h4>What This Analysis Reveals</h4>
+            <ol>
+                <li><strong>M0 engagement is a THREE-LAYER problem:</strong> Activation (58% never watch) → Habit Formation (89% drop from first watch to 8+ days) → Daily Activation (stuck at 3.1%)</li>
+                <li><strong>Trial activity predicts M0 activity:</strong> Zero trial engagement → 0.58% M0 Watcher%. High trial engagement (8+ days) → 30.2% M0 Watcher%. Fix trial, fix M0.</li>
+                <li><strong>Content quality is improving:</strong> Avg watch days per watcher climbing steadily (1.93 → 2.17). The problem isn't content value for engaged users.</li>
+                <li><strong>Dialect matters:</strong> Bhojpuri lags 28% behind Har/Raj despite being 41% of base. Fixing this unlocks 13% more daily watchers.</li>
+                <li><strong>The 110K zero-activity base is the leverage point:</strong> Moving even 10% of them to first watch would add 11K to engaged base — 220% increase in daily watchers.</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p><strong>Source:</strong> Metabase Dashboard #2182 (M0 Engagement Action Plan) | <strong>Data as of:</strong> Feb 22-23, 2026</p>
+            <p><strong>Prepared by:</strong> HuMT | <strong>Last updated:</strong> March 5, 2026</p>
+            <p><strong>Methodology:</strong> Matured cohorts only (Oct-Jan '26). Corrected metric definitions applied.</p>
+        </div>
+    </div>
+</body>
+</html>

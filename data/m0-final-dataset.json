@@ -1,0 +1,49 @@
+{
+  "summary": "Complete M0 engagement dataset for deep root cause analysis",
+  
+  "feb26_d0_d6_early_signal": {
+    "watcher_pct": 26.2,
+    "baseline_dec25": 40.2,
+    "drop_pp": -14.1,
+    "note": "Immature cohort - day-matched comparison for early warning"
+  },
+  
+  "monthly_trends_matured": {
+    "oct25": {"subs": 222087, "watchers": 85575, "watcher_pct": 38.5, "habit_users": 8438, "habit_pct": 3.8},
+    "nov25": {"subs": 185534, "watchers": 74317, "watcher_pct": 40.1, "habit_users": 8361, "habit_pct": 4.5},
+    "dec25": {"subs": 185955, "watchers": 73443, "watcher_pct": 39.5, "habit_users": 8155, "habit_pct": 4.4},
+    "jan26": {"subs": 199486, "watchers": 73248, "watcher_pct": 36.7, "habit_users": 7002, "habit_pct": 3.5}
+  },
+  
+  "trial_quality_shift": {
+    "jan26_0days_pct": 11.5,
+    "feb26_0days_pct": 27.7,
+    "spike_pct": 141,
+    "diagnosis": "PRIMARY DRIVER - Trial-to-payment flow broken, acquiring cold subscribers"
+  },
+  
+  "dialect_base_shift": {
+    "oct25": {"bho": 45.3, "har": 24.8, "raj": 29.9},
+    "jan26": {"bho": 47.6, "har": 25.0, "raj": 27.4},
+    "insight": "Bhojpuri growing (+2.3pp), likely lower-performing dialect"
+  },
+  
+  "platform_mix": {
+    "web_pct_of_watchers": 1.0,
+    "insight": "Web is tiny (<1%) - NOT a driver of drop"
+  },
+  
+  "top_channels": {
+    "reengoogleads_m0": 62937,
+    "inapp": 31306,
+    "meta": 29554,
+    "pattern": "Re-engagement = 45% of watchers (highest quality)"
+  },
+  
+  "root_cause_summary": {
+    "primary_80pct": "Trial quality collapse - 27.7% acquiring without trial engagement",
+    "secondary_15pct": "Dialect mix shift - Bhojpuri growing as % of base",
+    "tertiary_5pct": "Channel mix - if cold acquisition growing vs re-engagement",
+    "ruled_out": "Platform shift (web <1%), content issues (Nov peak proves quality achievable)"
+  }
+}

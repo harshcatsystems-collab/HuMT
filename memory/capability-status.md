@@ -5,25 +5,25 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-04 00:00 UTC
+## Last Verified: 2026-03-05 00:00 UTC
 ## Environment: VPS (Debian 12, GCP, 34.93.212.225)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files | 2026-03-04 |
-| 2 | Files | ✅ | read/write/edit tools | 2026-03-04 |
-| 3 | Terminal | ✅ | exec tool (`echo ok` = ok) | 2026-03-04 |
-| 4 | Web Search | ✅ | Brave API returned results | 2026-03-04 |
-| 5 | Gmail | ✅ | gog CLI returned latest email | 2026-03-04 |
-| 6 | Calendar | ✅ | gog CLI returned today's events | 2026-03-04 |
-| 7 | Cron/Reminders | ✅ | 20 cron jobs listed successfully | 2026-03-04 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram active, Slack socket OK | 2026-03-04 |
+| 1 | Memory | ✅ | Read/write workspace files | 2026-03-05 |
+| 2 | Files | ✅ | read/write/edit tools | 2026-03-05 |
+| 3 | Terminal | ✅ | exec tool (`echo ok` = ok) | 2026-03-05 |
+| 4 | Web Search | ✅ | Brave API returned results | 2026-03-05 |
+| 5 | Gmail | ✅ | gog CLI returned latest email | 2026-03-05 |
+| 6 | Calendar | ✅ | gog CLI returned today's events | 2026-03-05 |
+| 7 | Cron/Reminders | ✅ | 20 cron jobs listed successfully | 2026-03-05 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram active, Slack socket OK | 2026-03-05 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-02-28 |
-| 9 | Images (DALL-E) | ✅ | OpenAI API key present in config | 2026-03-04 |
+| 9 | Images (DALL-E) | ✅ | OpenAI API key present in config | 2026-03-05 |
 | 10 | Voice Transcription | ⚠️ | openai-whisper-api skill apiKey MISSING in config (DALL-E key exists separately) | 2026-02-28 |
 | 11 | Memory Search | ⚠️ | Embeddings broken — OpenRouter key ≠ OpenAI embeddings | 2026-02-28 |
-| 12 | Google Drive | ✅ | gog CLI (shares same auth as Gmail/Calendar) | 2026-03-04 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) active | 2026-02-28 |
+| 12 | Google Drive | ✅ | gog CLI (shares same auth as Gmail/Calendar) | 2026-03-05 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) active | 2026-03-05 |
 
 ## Config Dependencies
 

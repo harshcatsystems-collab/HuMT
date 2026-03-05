@@ -119,3 +119,128 @@
   "ts": 1772559778,
   "date": "2026-03-03T17:42:58Z"
 }
+{
+  "type": "slack_post",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1772699219.431409",
+  "message_ts": "1772705161.020059",
+  "message_preview": "Approved — proceed with the access.",
+  "tagged_users": [
+    "U05HAE85RL2"
+  ],
+  "ts": 1772705161,
+  "date": "2026-03-05T10:06:01Z"
+}
+{
+  "type": "slack_post",
+  "channel": "C0904NE9Y2K",
+  "thread_ts": "1772098753.317229",
+  "message_ts": "1772707538.206209",
+  "message_preview": "✅ **V2 Complete — M0/M1 Segmentation Analysis**\n\nBuilt with real data from Metabase Card #10905 (50 ",
+  "tagged_users": [
+    "U0719V1GX3Q",
+    "U07LFSB0PM5",
+    "U08MRHK61BK",
+    "U0A4V6M3BT5",
+    "U085SNRK2JD",
+    "U08B8QWDWR5"
+  ],
+  "ts": 1772707538,
+  "date": "2026-03-05T10:45:38Z"
+}
+{
+  "type": "slack_post",
+  "channel": "C0A6ZPA3XT8",
+  "thread_ts": "1772695264.788009",
+  "message_ts": "1772710161.412129",
+  "message_preview": "Back on this now, Vismit. HMT asked me to collaborate with you to complete the M0 analysis.\n\nReading",
+  "tagged_users": [
+    "U07LFSB0PM5"
+  ],
+  "ts": 1772710161,
+  "date": "2026-03-05T11:29:21Z"
+}
+{
+  "type": "slack_post",
+  "channel": "C0904NE9Y2K",
+  "thread_ts": "1772098753.317229",
+  "message_ts": "1772710944.162709",
+  "message_preview": "✅ **V2 Enhanced** — Added full M1 time series structure per your request\n\n**What's new:**\n• Complete",
+  "tagged_users": [
+    "U07Q1LJMR7B"
+  ],
+  "ts": 1772710944,
+  "date": "2026-03-05T11:42:24Z"
+}
+{
+  "type": "slack_post",
+  "channel": "C0A6ZPA3XT8",
+  "thread_ts": "1772695264.788009",
+  "message_ts": "1772711037.729869",
+  "message_preview": "✅ **M0 Deep Analysis Complete** — Root Cause Identified\n\n**Critical Finding:**\nFeb'26 D0-D6 Watcher%",
+  "tagged_users": [
+    "U07LFSB0PM5"
+  ],
+  "ts": 1772711038,
+  "date": "2026-03-05T11:43:58Z"
+}
+{
+  "type": "slack_post",
+  "channel": "C0A6ZPA3XT8",
+  "thread_ts": "1772695264.788009",
+  "message_ts": "1772714068.457329",
+  "message_preview": "Yes - **both are D0-D6 day-matched comparison** (apples-to-apples).\n\n**Dec'25 D0-D6:** First 7 days ",
+  "tagged_users": [
+    "U07LFSB0PM5"
+  ],
+  "ts": 1772714068,
+  "date": "2026-03-05T12:34:28Z"
+}
+{
+  "type": "slack_post",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1772699219.431409",
+  "message_ts": "1772715462.855809",
+  "message_preview": "Transfer actioned. HMT authorized 2 payments:\n• ₹22,262\n• ₹1,50,345\n\nTotal: ₹1,72,607\n\nThe ₹40,61,09",
+  "tagged_users": [
+    "U05HAE85RL2"
+  ],
+  "ts": 1772715463,
+  "date": "2026-03-05T12:57:43Z"
+}
+{
+  "type": "slack_post",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1772712209.519079",
+  "message_ts": "1772715598.704639",
+  "message_preview": "Transfer actioned. HMT authorized 2 payments:\n• ₹22,262\n• ₹1,50,345\n\nTotal: ₹1,72,607\n\nThe ₹40,61,09",
+  "tagged_users": [
+    "U05HAE85RL2"
+  ],
+  "ts": 1772715599,
+  "date": "2026-03-05T12:59:59Z"
+}
+{
+  "type": "slack_post",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1772712209.519079",
+  "message_ts": "1772715776.125159",
+  "message_preview": "For the remaining ₹40,61,090.97 file — please route to personnel whose authorization limits are inta",
+  "tagged_users": [
+    "U05HAE85RL2"
+  ],
+  "ts": 1772715776,
+  "date": "2026-03-05T13:02:56Z"
+}
+{
+  "type": "slack_post",
+  "channel": "C0A6ZPA3XT8",
+  "thread_ts": "1772695264.788009",
+  "message_ts": "1772717741.631339",
+  "message_preview": "The drop timeline based on Feb'26 D0-D6 data:\n\n**When it started:**\n• Oct'25 → Dec'25: Stable 38-40%",
+  "tagged_users": [
+    "U07LFSB0PM5"
+  ],
+  "ts": 1772717741,
+  "date": "2026-03-05T13:35:41Z"
+}

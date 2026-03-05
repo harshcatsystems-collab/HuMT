@@ -116,3 +116,71 @@ Scanning C09TLDLA7GE...
 {"ts":"2026-03-04T16:09:56Z","_type":"logger_run","people_tracked":11}
 {"ts":"2026-03-04T16:40:02Z","_type":"logger_run","people_tracked":11}
 {"ts":"2026-03-04T17:08:59Z","_type":"logger_run","people_tracked":11,"channels_scanned":17,"activity_found":0}
+{"ts":"2026-03-04T17:38:57Z","_type":"logger_run","people_tracked":11,"channels_scanned":17,"channels_accessible":12,"activity_found":0}
+{"ts":"2026-03-04T18:08:37+00:00","_type":"logger_run","people_tracked":11,"channels_scanned":17,"activity_detected":0,"window_minutes":30}
+{
+  "ts": "2026-03-04T18:39:21Z",
+  "_type": "logger_run",
+  "people_tracked": 11
+}
+{"ts": "2026-03-04T18:40:26.271637Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-04T19:09:31Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-04T19:39:46.871971+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-04T20:09:23Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-04T20:39:22Z","_type":"logger_run","people_tracked":11,"window_minutes":30,"channels_scanned":17,"activity_found":0}
+{"ts":"2026-03-04T21:09:27Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-04T21:39:15Z","_type":"logger_run","people_tracked":11,"messages_scanned":0,"active_people":0}
+{"ts": "2026-03-04T22:09:27.885584+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-04T22:39:20Z","_type":"logger_run","people_tracked":11,"channels_scanned":17,"activity_found":0,"note":"No activity in 30min window"}
+{"ts":"2026-03-04T23:08:55Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-04T23:40:33.191Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-05T00:08:58Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-05T00:40:06Z","_type":"logger_run","people_tracked":11,"window_seconds":1800,"messages_found":0}
+{"ts":"2026-03-05T01:09:44Z","_type":"logger_run","people_tracked":11,"channels_scanned":17,"messages_found":0}
+{"ts":"2026-03-05T01:39:18Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-05T02:10:21.227Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-05T02:39:25Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-05T03:09:16Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-05T03:39:21Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-05T04:08:57Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-05T04:40:01.489049+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-05T05:09:19Z","_type":"logger_run","people_tracked":11,"channels_scanned":17,"messages_found":0}
+{"ts":"2026-03-05T05:40:22Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-05T06:09:25Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-05T07:09:24.563164+00:00", "_type": "logger_run", "people_tracked": 11}
+{
+  "ts": "2026-03-05T07:39:28Z",
+  "_type": "logger_run",
+  "people_tracked": 11
+}
+{"ts": "2026-03-05T08:09:41.547620+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-05T08:38:56Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-05T09:08:59Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-05T09:39:17Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-05T10:39:58Z","_type":"logger_run","people_tracked":11}
+{
+  "ts": "2026-03-05T11:09:27Z",
+  "_type": "logger_run",
+  "people_tracked": 11
+}
+{"ts": "2026-03-05T11:39:28.947212+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-05T12:09:41.367373+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-05T12:39:18Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-05T13:08:00Z","user":"UEJV57HQW","name":"Parveen Singhal","messages":0,"thread_replies":1,"channels_active":1,"channel_ids":["C07T7047TEZ"],"after_hours":0,"avg_response_latency_sec":518121}
+{"ts":"2026-03-05T13:08:00Z","_type":"logger_run","people_tracked":11}
+{
+  "ts": "2026-03-05T13:39:26Z",
+  "_type": "logger_run",
+  "people_tracked": 11
+}
+{
+  "ts": "2026-03-05T14:09:57Z",
+  "_type": "logger_run",
+  "people_tracked": 11
+}
+{"ts":"2026-03-05T15:09:11Z","_type":"logger_run","people_tracked":11,"messages_scanned":0}
+{"ts":"2026-03-05T15:39:25Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-05T15:39:56Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-05T16:09:18Z","_type":"logger_run","people_tracked":11,"activity_found":0}
+{"ts": "2026-03-05T16:40:10.171530+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-05T17:08:59Z","_type":"logger_run","people_tracked":11,"channels_scanned":18,"messages_found":0}

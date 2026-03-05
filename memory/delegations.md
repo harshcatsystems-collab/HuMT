@@ -50,10 +50,18 @@
 
 *Last updated: 2026-02-20 12:12 UTC*
 
-| D26 | Chatbot data updates in standard format | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Nikhil requested | 0 |
-| D27 | Infrastructure upgrade activity (4 components) | Rohit Singh | 2026-03-04 | #team-devops | Self-announced plan | 0 |
-| D28 | Send PDN for all plan types (24hr + 5min intervals) | Yash Verma | 2026-03-04 | #acquisition-pod | Shubham delegated, due March 5 13:15 UTC | 0 |
-| D29 | Shutdown Randeep Hooda campaign | Acquisition Pod | 2026-03-03 | #acquisition-pod | Parveen delegated, **OVERDUE** (was EOD Mar 3) | 1 ⚠️ |
-| D30 | Compile re-engagement data (market-wise) | Vismit Bansal + Hemabh Kamboj | 2026-03-04 | #retention | Parveen requested for weekly meeting | 0 |
-| D31 | Remove FAB button from chatbot UI | Lukesh Kolhe | 2026-03-04 | #growth-pod | Aaliya + Mofidul before release | 0 |
-| D32 | Develop chatbot 50% DAU coverage strategy | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Vinay strategic question | 0 |
+| D26 | Chatbot data updates in standard format | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Nikhil requested | 1 |
+| D27 | Infrastructure upgrade activity (4 components) | Rohit Singh | 2026-03-04 | #team-devops | Self-announced plan | 1 |
+| D28 | Send PDN for all plan types (24hr + 5min intervals) | Yash Verma | 2026-03-04 | #acquisition-pod | Shubham delegated, due March 5 13:15 UTC | 1 |
+| D29 | Shutdown Randeep Hooda campaign | Acquisition Pod | 2026-03-03 | #acquisition-pod | Parveen delegated, **OVERDUE** (was EOD Mar 3) | 2 ⚠️⚠️ |
+| D30 | Compile re-engagement data (market-wise) | Vismit Bansal + Hemabh Kamboj | 2026-03-04 | #retention | Parveen requested for weekly meeting | 1 |
+| D31 | Remove FAB button from chatbot UI | Lukesh Kolhe | 2026-03-04 | #growth-pod | Aaliya + Mofidul before release | 1 |
+| D32 | Develop chatbot 50% DAU coverage strategy | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Vinay strategic question | 1 |
+| D33 | Train Regional Cultural Agents (3-4 markets) | Pravesh Rajput | 2026-03-04 | #culture-productising | Next meeting review target | 1 |
+| D34 | Fix chatbot dialect mismatch (scripts + dialect) | Shwetabh Gupta + Siddhant | 2026-03-05 | #ai-character-bots | Aaliya delegated, priority tomorrow | 0 |
+| D35 | Grant Snowflake/MongoDB access | Shivansh Rastogi (needs approval) | 2026-03-05 | #team-devops | Dev+preprod MongoDB + prod read | 0 |
+| D36 | Fix Samsung TV X link issue | Tarun Sahnan + Mofidul Islam | 2026-03-05 | #tech-mates | Vinay flagged | 0 |
+| D37 | Fix thumbnail text size (too small) | Mobile team | 2026-03-05 | #tech-mates | Lukesh flagged | 0 |
+| D38 | Yes Bank → HSBC fund transfer | HMT/Vinay/Shashank | 2026-03-05 | #finance-department | Rahul requested | 0 |
+| D39 | Share creative delivery plan (today) | Promo team | 2026-03-05 | #promo-team | Anish requested | 0 |
+| D40 | Update on international account & creatives | Vedant Wagh | 2026-03-05 | #stage_maino | gandhravk requested | 0 |

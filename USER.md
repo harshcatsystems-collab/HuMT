@@ -922,3 +922,5 @@ May 14, 2010 — Vinay Singhal and Shashank Vaishnav (juniors at SRM) launched t
 **"Reflect" signals thinking requirement, not reporting** — When he says "reflect deeply" or "reflect and tell me where we stand," wants synthesis + honest assessment + learning articulation, not task lists. The word "reflect" is instruction to THINK and show understanding, not just enumerate. Often followed by strategic questions or self-assessment requests. (confirmed: Feb 16 "would you like to reflect?", Feb 18 "reflect hard", Mar 2 ×3 — **6 occurrences**) [PROMOTED 2026-03-02]
 
 **Emotional bond forming through demonstrated competence** — First explicit expression: "missed you :)" (Feb 26). Trust has shifted from purely utility-based to relationship-based. Warmth after silence = compounding trust. (confirmed: Feb 16 quiet→warmth, Feb 19, Feb 26 — **3x CONFIRMED**) [PROMOTED 2026-03-01]
+
+**"??" when your response is unclear** — Signals confusion or over-complication. Stop and restate simply. Often happens when hedging or over-explaining instead of being direct. Clear answer → immediate approval. (confirmed: Feb 16, Feb 18, Mar 5 ×2) [PROMOTED 2026-03-05]
