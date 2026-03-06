@@ -1,29 +1,58 @@
 # Capability Status — Source of Truth
-# Last full audit: 2026-02-28 15:05 UTC (manual post-incident)
+# Last full audit: 2026-03-06 00:00 UTC (automated cron verification)
 
 > **Rule:** After ANY environment change (migration, config change, restart), re-test and update this file.
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-05 00:00 UTC
+## Last Verified: 2026-03-06 00:00 UTC
 ## Environment: VPS (Debian 12, GCP, 34.93.212.225)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files | 2026-03-05 |
-| 2 | Files | ✅ | read/write/edit tools | 2026-03-05 |
-| 3 | Terminal | ✅ | exec tool (`echo ok` = ok) | 2026-03-05 |
-| 4 | Web Search | ✅ | Brave API returned results | 2026-03-05 |
-| 5 | Gmail | ✅ | gog CLI returned latest email | 2026-03-05 |
-| 6 | Calendar | ✅ | gog CLI returned today's events | 2026-03-05 |
-| 7 | Cron/Reminders | ✅ | 20 cron jobs listed successfully | 2026-03-05 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram active, Slack socket OK | 2026-03-05 |
-| 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-02-28 |
-| 9 | Images (DALL-E) | ✅ | OpenAI API key present in config | 2026-03-05 |
-| 10 | Voice Transcription | ⚠️ | openai-whisper-api skill apiKey MISSING in config (DALL-E key exists separately) | 2026-02-28 |
-| 11 | Memory Search | ⚠️ | Embeddings broken — OpenRouter key ≠ OpenAI embeddings | 2026-02-28 |
-| 12 | Google Drive | ✅ | gog CLI (shares same auth as Gmail/Calendar) | 2026-03-05 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) active | 2026-03-05 |
+| 1 | Memory | ✅ | Read/write workspace files | 2026-03-06 |
+| 2 | Files | ✅ | read/write/edit tools | 2026-03-06 |
+| 3 | Terminal | ✅ | exec tool (`echo ok` = ok) | 2026-03-06 |
+| 4 | Web Search | ✅ | Brave API returned results | 2026-03-06 |
+| 5 | Gmail | ✅ | gog gmail messages search successful | 2026-03-06 |
+| 6 | Calendar | ✅ | gog calendar events returned today's events | 2026-03-06 |
+| 7 | Cron/Reminders | ⚠️ | No user crontab found (gateway manages cron via OpenClaw) | 2026-03-06 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram message sent + topic routing works | 2026-03-06 |
+| 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-06 |
+| 9 | Images (DALL-E) | ✅ | OpenAI API key validated against API | 2026-03-06 |
+| 10 | Voice Transcription | ⚠️ | openai-whisper-api skill apiKey MISSING in config (DALL-E key exists separately) | 2026-03-06 |
+| 11 | Memory Search | ⚠️ | Embeddings broken — OpenRouter key ≠ OpenAI embeddings | 2026-03-06 |
+| 12 | Google Drive | ✅ | gog drive ls returned files successfully | 2026-03-06 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) active | 2026-03-06 |
+
+## Critical Findings (2026-03-06)
+
+### ⚠️ PATH Issue (gog not in exec PATH)
+- **Issue:** `~/go/bin/gog` is NOT in systemd service PATH
+- **Impact:** Need to use full path `~/go/bin/gog` in all exec commands OR fix PATH
+- **Workaround:** Always use `~/go/bin/gog` with full env vars:
+  ```bash
+  export GOG_KEYRING_BACKEND=file && \
+  export GOG_KEYRING_PASSWORD=openclaw-humt-2026 && \
+  export GOG_ACCOUNT=harsh@stage.in && \
+  ~/go/bin/gog <command>
+  ```
+- **Proper fix:** Add `Environment=PATH=...:/home/harsh/go/bin` to systemd service
+
+### ✅ All Core Capabilities Working
+- Web search: ✅
+- Gmail: ✅ (syntax: `gog gmail messages search "query"`)
+- Calendar: ✅ (syntax: `gog calendar events`)
+- Drive: ✅ (syntax: `gog drive ls`)
+- Terminal: ✅
+- Files: ✅
+- Telegram: ✅
+- OpenAI: ✅
+
+### ❌ Known Issues (unchanged)
+- WhatsApp: Logged out (401) — parked for business API
+- Memory Search: OpenRouter key doesn't work for embeddings
+- Whisper: API key not configured in skill
 
 ## Config Dependencies
 

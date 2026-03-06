@@ -244,3 +244,13 @@
   "ts": 1772717741,
   "date": "2026-03-05T13:35:41Z"
 }
+{
+  "type": "slack_post",
+  "channel": "C08PY53QYSU",
+  "thread_ts": "1771928118.250259",
+  "message_ts": "1772795083.401259",
+  "message_preview": "Acknowledged — ingesting Cricket Saathi thread and setting up tracking. Will have infrastructure rea",
+  "tagged_users": [],
+  "ts": 1772795083,
+  "date": "2026-03-06T11:04:43Z"
+}

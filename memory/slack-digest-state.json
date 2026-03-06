@@ -1,4 +1,8 @@
 {
-  "morningBrief": "2026-03-05T03:45:00Z",
-  "lastEvening": "2026-03-05T13:00:00Z"
+  "last_evening_debrief": "2026-03-06T13:00:00Z",
+  "channels_scanned": 353,
+  "active_channels": 29,
+  "messages_analyzed": 116,
+  "intensity_level": "light",
+  "week_meeting_count": 10
 }

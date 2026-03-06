@@ -238,7 +238,7 @@ Today: Rs 672Cr valuation, 5.5M+ paying subscribers, Haryanvi segment *cash-flow
 | **Nikhil Nair** | Growth Pod Lead | Fortnightly 1:1, weekly reviews |
 | **Nishita Banerjee** | Research Lead | As needed, frequent |
 | **Vismit Bansal** | Head - Retention Marketing | 3×/week (MWF engagement pod) |
-| **Manasvi Dobhal** | Product/Data Consultant (Direct Report) | Weekly (HP Personalisation) |
+| **Manasvi Dobhal** | Product/Data Lead - HP Personalisation | Weekly (HP Personalisation execution lead) |
 | **Samir Kumar** | Design | Monthly check-in |
 | **Nisha Ali** | Sr. Manager - People & Culture | Weekly/biweekly |
 
@@ -256,7 +256,7 @@ Today: Rs 672Cr valuation, 5.5M+ paying subscribers, Haryanvi segment *cash-flow
 Nikhil Nair (lead), Junaid Qureshi (QA), Kamal Kumar (eng), Tarun Sahnan (Samsung TV frontend), Rohit Deshmukh (SDE II / OKR lead)
 
 **Engagement Pod** (retention, personalisation, homepage, watch time):
-Vismit Bansal (retention lead), Pranay Merchant (PM), Manasvi Dobhal (product/data), Samir Kumar (design), Ashish Pandey (analytics)
+Vismit Bansal (retention lead), Manasvi Dobhal (product/data lead, HP Personalisation), Shwetabh (HP Personalisation execution), Samir Kumar (design), Ashish Pandey (analytics)
 
 ---
 

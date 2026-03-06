@@ -1,7 +1,7 @@
 {
-  "lastTriageUTC": "2026-03-05T03:03:00Z",
-  "urgent": 1,
-  "important": 5,
-  "fyi": 3,
-  "responseDebt": 2
+  "lastTriageUTC": "2026-03-06T03:00:00Z",
+  "urgent": 2,
+  "important": 4,
+  "fyi": 6,
+  "responseDebt": 0
 }

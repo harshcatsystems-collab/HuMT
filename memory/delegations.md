@@ -34,6 +34,8 @@
 | D23 | Provide CTA creatives count breakdown | pratyush | 2026-03-03 | #stage_maino | Kunal delegated | 0 |
 | D24 | Report Saanwri HD YouTube piracy to Markscan | Renu Rana / Anushka | 2026-03-03 | #content-compliance-hiren | Hiren delegated | 0 |
 | D25 | Guide HuMT on V4 framework | Vismit Bansal | 2026-03-03 | #growth-pod | HMT delegated | 0 |
+| D26 | Track + maintain Cricket Saathi project | HuMT | 2026-03-06 | #ai-at-stage | HMT delegated — "ingest this entire thread and start maintaining and tracking the project" | 0 |
+| D27 | Track Pranay's PIP + all associated projects (standing delegation) | HuMT | 2026-03-06 | Strategy topic (Telegram) | HMT: "please track pranay's PIP context proactively and all projects associated with it" — continuous monitoring | 0 |
 
 ## Completed
 
@@ -45,6 +47,9 @@
 | D-C4 | Snowflake read-only access for HuMT | Harshit Singh + Hemabh Kamboj | 2026-02-20 | Resolved — access via Hemabh, 72 tables, DBT model fully mapped |
 | D-C5 | Test chatbot instrumentation end-to-end | Hemabh Kamboj | 2026-02-21 | Hemabh: "Looks good. Let's go!" — sanity passed |
 | D-C6 | Samsung F2F visit — Fri Feb 21 | Saurabh Assija + Ashish Pandey | 2026-02-21 | Saurabh met Samsung, Ashish online for demo |
+| D-C7 | Upgrade non-prod EKS cluster 1.32→1.33 | Rohit Singh | 2026-03-05 20:21 UTC | Successfully upgraded, prod + DB pending |
+| D-C8 | Fix chatbot dialect mismatch | Shwetabh + Siddhant | 2026-03-06 06:42 UTC | Fixed — character dialect now matches script dialect |
+| D-C9 | Approve 1 of 3 finance payments (partial) | Shashank | 2026-03-06 14:30 UTC | Approved (HMT/Vinay approvals still pending) |
 
 ---
 
@@ -64,4 +69,13 @@
 | D37 | Fix thumbnail text size (too small) | Mobile team | 2026-03-05 | #tech-mates | Lukesh flagged | 0 |
 | D38 | Yes Bank → HSBC fund transfer | HMT/Vinay/Shashank | 2026-03-05 | #finance-department | Rahul requested | 0 |
 | D39 | Share creative delivery plan (today) | Promo team | 2026-03-05 | #promo-team | Anish requested | 0 |
-| D40 | Update on international account & creatives | Vedant Wagh | 2026-03-05 | #stage_maino | gandhravk requested | 0 |
+| D40 | Update on international account & creatives | Vedant Wagh | 2026-03-05 | #stage_maino | gandhravk requested | 1 |
+| D41 | Pre-trial onboarding code cleanup | Shubham/Aaliya/Nikhil/Vipul | 2026-03-06 | #growth-pod | Shivansh requested, Shubham confirmed | 0 |
+| D42 | Fix Spin the Wheel payment options (None bug) | Shivansh/Vipul | 2026-03-06 | #growth-pod | Shubham flagged | 0 |
+| D43 | Fix pause subscription API (200 but trial active) | Naman/Prakash | 2026-03-06 | #growth-pod | Testing blocked — URGENT | 0 |
+| D44 | Explore app exit event for HP Personalisation | Manasvi | 2026-03-06 | #homepage-personalisation | Self-tasked in notes | 0 |
+| D45 | STATSIG event limit decision | Nikhil/Pranay | 2026-03-06 | #product-internal | Ashish flagged — overage coming | 0 |
+| D46 | Temporary Gemini API key for Ishant | Rohit Singh | 2026-03-06 | #team-devops | Ishant blocked — IMMEDIATE | 0 |
+| D47 | Debug pre-prod build loading | Tech team | 2026-03-06 | #tech-mates | Shubham blocked from testing | 0 |
+| D48 | Assess GitHub Actions outage impact | Tech team | 2026-03-05 | #tech-mates | Mofidul flagged major outage | 1 |
+| D49 | Approve Freepik Pro + Google AI Ultra | Sushant Kaushik | 2026-03-06 | #credit_card_invoices | Kaustubh requested ₹41,750 | 0 |

@@ -175,6 +175,48 @@ bash scripts/scan-tracked-threads.sh
 
 ---
 
+## Pranay's PIP Proactive Tracking (EVERY HEARTBEAT — standing delegation)
+
+**Delegated:** Mar 6, 2026 — "please track pranay's PIP context proactively and all projects associated with it"
+
+**What to monitor:**
+1. **Strategic bets:** Multi-device/account sharing, Cricket Saathi, Character bots
+2. **Slack activity in key channels:**
+   - #ai-at-stage (Cricket Saathi updates)
+   - #product, #growth-pod, #product-growth (multi-device work)
+   - #ai-character-bots (character bots)
+   - Pranay's DM (channel: D0AHJNQ1W10)
+3. **Project milestones:**
+   - Cricket Saathi: Final match Sun Mar 9, architecture improvements
+   - Multi-device: launch timelines, engagement metrics
+   - Character bots: UX redesign progress (Vinay pushing)
+4. **Behavioral signals for scorecard:**
+   - Stakeholder management (how he coordinates cross-functionally)
+   - Data literacy (quality of analyses, dashboard usage)
+   - Competency (systems-level thinking, not just feature work)
+
+**When to surface to HMT:**
+- Major project updates (launches, milestones, blockers)
+- Significant Slack posts/analyses by Pranay (like Cricket Saathi deep-dives)
+- **Pre-biweekly review** (next: Mar 13) — compile recent activity into brief
+- Changes to strategic bet priorities or resourcing
+- Any signals that affect PIP assessment (positive or concerning)
+
+**Where context lives:**
+- `memory/pip-pranay.md` — main PIP tracker
+- `memory/pip-pranay-cricket-saathi-synthesis.md` — Cricket Saathi context merge
+- `memory/projects/cricket-saathi.md` — full Cricket Saathi project state
+- `memory/delegations.md` — D27 (this standing delegation)
+
+**Check cadence:**
+- Light scan: Every heartbeat (Pranay's DM + #ai-at-stage for new posts)
+- Deep scan: Daily (review all 3 strategic bet channels for progress)
+- Synthesis: Weekly (compile for Sunday debrief, prep for biweekly reviews)
+
+**Principle:** This is continuous performance window monitoring, not reactive ticket tracking. The goal is to help HMT see the full picture of Pranay's work without having to ask.
+
+---
+
 ## Checks (rotate through, don't spam)
 
 ### Gmail (via gog CLI)
@@ -294,6 +336,7 @@ If leaks found (exit code > 0):
 - Nothing new: Reply HEARTBEAT_OK
 - **Always** do persona capture check, even if everything else is skipped
 - **Always** do Slack alert scan, even if everything else is skipped
+- **Always** do Pranay PIP tracking check (new standing delegation)
 
 ## State
 Track last checks in `memory/heartbeat-state.json`

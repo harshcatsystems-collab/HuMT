@@ -10,7 +10,15 @@
       "messageTs": "1772098753.317229",
       "threadTs": "1772453923.587749",
       "postedBy": "HMT",
-      "tagged_team": ["U0719V1GX3Q", "U07LFSB0PM5", "U08MRHK61BK", "U07Q1LJMR7B", "U0A4V6M3BT5", "U085SNRK2JD", "U08B8QWDWR5"],
+      "tagged_team": [
+        "U0719V1GX3Q",
+        "U07LFSB0PM5",
+        "U08MRHK61BK",
+        "U07Q1LJMR7B",
+        "U0A4V6M3BT5",
+        "U085SNRK2JD",
+        "U08B8QWDWR5"
+      ],
       "snapshot": {
         "as_of": "2026-03-02T12:33:00Z",
         "status": "awaiting_engagement",
@@ -25,7 +33,14 @@
       "messageTs": "1772098782.271929",
       "threadTs": "1772453947.092939",
       "postedBy": "HMT",
-      "tagged_team": ["U07LFSB0PM5", "U0A4V6M3BT5", "U04A980D1N3", "U07Q1LJMR7B", "U085SNRK2JD", "U08B8QWDWR5"],
+      "tagged_team": [
+        "U07LFSB0PM5",
+        "U0A4V6M3BT5",
+        "U04A980D1N3",
+        "U07Q1LJMR7B",
+        "U085SNRK2JD",
+        "U08B8QWDWR5"
+      ],
       "snapshot": {
         "as_of": "2026-03-02T12:33:00Z",
         "status": "awaiting_engagement",
@@ -40,7 +55,15 @@
       "messageTs": "1772098843.845249",
       "threadTs": "1772453984.248539",
       "postedBy": "HMT",
-      "tagged_team": ["U0719V1GX3Q", "U08B8QWDWR5", "U09QGG6HLG0", "U07Q1LJMR7B", "U0A4V6M3BT5", "U07LFSB0PM5", "U085SNRK2JD"],
+      "tagged_team": [
+        "U0719V1GX3Q",
+        "U08B8QWDWR5",
+        "U09QGG6HLG0",
+        "U07Q1LJMR7B",
+        "U0A4V6M3BT5",
+        "U07LFSB0PM5",
+        "U085SNRK2JD"
+      ],
       "snapshot": {
         "as_of": "2026-03-02T12:33:00Z",
         "status": "awaiting_engagement",
@@ -55,7 +78,15 @@
       "messageTs": "1772098874.095239",
       "threadTs": "1772454008.272579",
       "postedBy": "HMT",
-      "tagged_team": ["U04A980D1N3", "U0719V1GX3Q", "U0A4V6M3BT5", "U07Q1LJMR7B", "U07LFSB0PM5", "U085SNRK2JD", "U08B8QWDWR5"],
+      "tagged_team": [
+        "U04A980D1N3",
+        "U0719V1GX3Q",
+        "U0A4V6M3BT5",
+        "U07Q1LJMR7B",
+        "U07LFSB0PM5",
+        "U085SNRK2JD",
+        "U08B8QWDWR5"
+      ],
       "snapshot": {
         "as_of": "2026-03-02T12:33:00Z",
         "status": "awaiting_engagement",
@@ -70,7 +101,15 @@
       "messageTs": "1772098927.049649",
       "threadTs": "1772454053.681009",
       "postedBy": "HMT",
-      "tagged_team": ["U0719V1GX3Q", "U04A980D1N3", "U07LFSB0PM5", "U07Q1LJMR7B", "U0A4V6M3BT5", "U085SNRK2JD", "U08B8QWDWR5"],
+      "tagged_team": [
+        "U0719V1GX3Q",
+        "U04A980D1N3",
+        "U07LFSB0PM5",
+        "U07Q1LJMR7B",
+        "U0A4V6M3BT5",
+        "U085SNRK2JD",
+        "U08B8QWDWR5"
+      ],
       "snapshot": {
         "as_of": "2026-03-02T12:33:00Z",
         "status": "awaiting_engagement",
@@ -85,7 +124,16 @@
       "messageTs": "1772098975.035529",
       "threadTs": "1772454092.769849",
       "postedBy": "HMT",
-      "tagged_team": ["U0719V1GX3Q", "U07LFSB0PM5", "U04A980D1N3", "U08L99D58PK", "U07Q1LJMR7B", "U0A4V6M3BT5", "U085SNRK2JD", "U08B8QWDWR5"],
+      "tagged_team": [
+        "U0719V1GX3Q",
+        "U07LFSB0PM5",
+        "U04A980D1N3",
+        "U08L99D58PK",
+        "U07Q1LJMR7B",
+        "U0A4V6M3BT5",
+        "U085SNRK2JD",
+        "U08B8QWDWR5"
+      ],
       "snapshot": {
         "as_of": "2026-03-02T12:33:00Z",
         "status": "awaiting_engagement",
@@ -102,9 +150,34 @@
       "snapshot": {
         "as_of": "2026-03-02T12:33:00Z",
         "status": "active_engagement",
-        "replies": ["Kawaljeet Kaur (Feb 27)", "Vismit Bansal (Mar 2)", "HuMT responses"],
+        "replies": [
+          "Kawaljeet Kaur (Feb 27)",
+          "Vismit Bansal (Mar 2)",
+          "HuMT responses"
+        ],
         "v3_posted": "1772451828.989899"
       }
+    },
+    {
+      "key": "C08NYRWKC1Q:1772798324.998959",
+      "channel": "C08NYRWKC1Q",
+      "thread_ts": "1772798324.998959",
+      "added_at": "2026-03-06T11:59:07Z",
+      "context": "HuMT mentioned"
+    },
+    {
+      "key": "C08NYRWKC1Q:1772798339.514089",
+      "channel": "C08NYRWKC1Q",
+      "thread_ts": "1772798339.514089",
+      "added_at": "2026-03-06T11:59:21Z",
+      "context": "HuMT mentioned"
+    },
+    {
+      "key": "C08NYRWKC1Q:1772799015.019279",
+      "channel": "C08NYRWKC1Q",
+      "thread_ts": "1772799015.019279",
+      "added_at": "2026-03-06T12:10:30Z",
+      "context": "HuMT mentioned"
     }
   ]
 }

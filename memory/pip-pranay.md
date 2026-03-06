@@ -21,7 +21,7 @@
 ## Strategic Bets (Visible Focus)
 
 1. **Multi-device / account sharing** — grow engagement
-2. **Cricket widget** — combat cricket season drop
+2. **Cricket Saathi** — interactive cricket engagement widget (India semis Thu Mar 6, final Sun Mar 9)
 3. **Character bots** — (product domain, Vinay pushing UX redesign)
 
 ## North Star
@@ -97,6 +97,8 @@ _(Behavioral signals from Slack, meetings, deliverables — captured between rev
 
 - **Feb 25:** Shared Performance Window doc proactively, 2 days before kickoff. Structured with scorecard, asks, clear accountability framing.
 - **Feb 25:** Scheduled the biweekly cadence himself.
+- **Feb 24:** Posted comprehensive Cricket Saathi architecture deep-dive in #ai-at-stage (5-match World Cup analysis, structured with comments for deeper insights). Shows systems-thinking depth.
+- **Mar 6:** Updated PIP doc with Cricket Saathi project tab (confirmed by HMT).
 
 ---
 

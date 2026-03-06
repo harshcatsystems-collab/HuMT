@@ -1,5 +1,5 @@
 # People Baseline — Slack Activity (7-day window)
-**Calibrated:** 2026-02-27 (Feb 23-27)
+**Calibrated:** 2026-03-06 (Feb 28–Mar 6)
 **Method:** Slack search API (from:<@ID>) + JSONL activity logger + qualitative assessment
 
 ---
@@ -7,52 +7,52 @@
 ## Direct Reports
 
 ### Nikhil Nair (U08L99D58PK) — ⭐ Most Active
-- **Estimated messages/week:** 15-20+
-- **Primary channels:** #growth-pod, #user_activation, #ai-character-bots, leadership MPIM, #playstore-ratings
-- **Signal:** Strategic feedback on presentations, pushing experiments, challenging data. Thought partner level.
-- **Trend:** → Stable high (was 25/wk baseline)
+- **Estimated messages/week:** 50-60
+- **Primary channels:** #growth-pod, #acquisition-pod, #user_activation, #ai-character-bots, #playstore-ratings, #stage_maino
+- **Signal:** Leading Cricket Saathi (5-match deep-dive), ChatBot oversight, trial analysis. Thought partner + execution driver.
+- **Trend:** → Stable high (consistently 50-60/wk)
 
-### Radhika Vijay (U08KBHHV9J4) — High (↑ from Active)
+### Radhika Vijay (U08KBHHV9J4) — High (→ Stable)
 - **Estimated messages/week:** 10-15
-- **Primary channels:** #growth-pod, #growtht-tracker, #leave-intimation
-- **Signal:** Launched GATI bot, task tracking, WFH productivity. Leave Mar 2-6.
-- **Trend:** ↑ Up from ~12/wk — proactive tooling initiative
+- **Primary channels:** #growth-pod, #growtht-tracker, #ai-character-bots, #leave-intimation
+- **Signal:** GATI bot launch (design task tracker), Character bot homepage designs. Pre-approved leave Mar 2-6.
+- **Trend:** → Stable high (~12/wk baseline)
 
-### Pranay Merchant (U0719V1GX3Q) — Normal (↑ from Low)
+### Pranay Merchant (U0719V1GX3Q) — Normal (→ Stable)
 - **Estimated messages/week:** 5-8
-- **Primary channels:** #ai-at-stage, #reel-format, #memes, #product-feedback
-- **Signal:** Cross-functional engagement, AI governance, channel cleanup
-- **Trend:** ↑ Up from ~1/wk — significant improvement
+- **Primary channels:** #ai-at-stage, #tech-mates, #stage-product-feedback, #tech-product-updates
+- **Signal:** Cross-functional engagement, AI governance, channel cleanup. Late to office Feb 26.
+- **Trend:** → Stable normal (~5-8/wk)
 
-### Ashish Pandey (U04A980D1N3) — Normal (↑ from Silent)
+### Ashish Pandey (U04A980D1N3) — Normal (→ Stable)
 - **Estimated messages/week:** 5-8
-- **Primary channels:** #playstore-ratings, #tech-product-updates, #product-feedback, MPIM
-- **Signal:** Execution-focused, chasing ETAs, rating thresholds
-- **Trend:** ↑ Up from 0/wk — back from Samsung delegation
+- **Primary channels:** #engagement-solver-team, #tech-mates, #tech-product-updates, #playstore-ratings
+- **Signal:** Challenging data interpretations, execution-focused, asking hard questions on microdrama analysis.
+- **Trend:** → Stable normal (~5-8/wk)
 
-### Nisha Ali (U068F2RS5PV) — High (↑ from Silent)
-- **Estimated messages/week:** 10-15
-- **Primary channels:** #stage-ke-krantikaari, DMs, @channel announcements
-- **Signal:** Salary delay comms, insurance sessions, Slack prank investigation, wifi mgmt
-- **Trend:** ↑ Major jump from 0/wk — previous baseline was misleading (she's active in channels we weren't scanning)
+### Nisha Ali (U068F2RS5PV) — 🔥 High Volume
+- **Estimated messages/week:** 60-70
+- **Primary channels:** #stage-ke-krantikaari, #announcements, #leave-intimation, multiple hiring channels
+- **Signal:** Salary delay comms (→ Mar 6), insurance session (Niva Bupa, Mar 11), Slack moderation, birthday wishes. Operational backbone.
+- **Trend:** ↑ Major jump from previous baseline (was undertracked)
 
-### Nishita Banerjee (U07R906K9K5) — Normal (↑ from Low)
+### Nishita Banerjee (U07R906K9K5) — Normal (→ Stable)
 - **Estimated messages/week:** 5-8
-- **Primary channels:** #content_strategy, #stage-ke-krantikaari, #leave-intimation
-- **Signal:** Field analysis research output, social engagement
-- **Trend:** ↑ Up from ~1/wk
+- **Primary channels:** #culture-productising, #content_strategy, #stage-ke-krantikaari
+- **Signal:** Field analysis outputs, Productising Culture POD anchoring. Pre-approved leave Mar 2, 3, 5, 6.
+- **Trend:** → Stable normal (~5-8/wk)
 
 ### Vismit Bansal (U07LFSB0PM5) — Normal (→ Stable)
-- **Estimated messages/week:** 5-8
-- **Primary channels:** #dormant-resurrection, #ai-at-stage, #stage-ke-krantikaari
-- **Signal:** Pushing AI experiments, flagging resource issues (Claude API)
-- **Trend:** ↑ Up from ~3/wk
+- **Estimated messages/week:** 5-10
+- **Primary channels:** #m0-strategy, DMs (private analytics work)
+- **Signal:** Deep M0 cohort analysis, watcher % drops, data integrity challenges. Tenacious on root causes.
+- **Trend:** → Stable normal (~5-10/wk)
 
-### Samir Kumar (U08UL9EHKKP) — Low (→ Stable, context: family emergency)
-- **Estimated messages/week:** 3-5
-- **Primary channels:** #tech-mates, DMs, #leave-intimation
-- **Signal:** Design coordination, but family emergency leave this week
-- **Trend:** → Stable low (~1/wk baseline, but leave explains it)
+### Samir Kumar (U08UL9EHKKP) — Low (Context: Family Emergency)
+- **Estimated messages/week:** 0-3
+- **Primary channels:** #tech-mates, #leave-intimation, DMs
+- **Signal:** Emergency leave Feb 22 + Feb 26. Design coordination minimal but available on calls.
+- **Trend:** → Low (justified by emergency)
 
 ---
 
