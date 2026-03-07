@@ -36,6 +36,17 @@
 | D25 | Guide HuMT on V4 framework | Vismit Bansal | 2026-03-03 | #growth-pod | HMT delegated | 0 |
 | D26 | Track + maintain Cricket Saathi project | HuMT | 2026-03-06 | #ai-at-stage | HMT delegated — "ingest this entire thread and start maintaining and tracking the project" | 0 |
 | D27 | Track Pranay's PIP + all associated projects (standing delegation) | HuMT | 2026-03-06 | Strategy topic (Telegram) | HMT: "please track pranay's PIP context proactively and all projects associated with it" — continuous monitoring | 0 |
+| D50 | Character bots on trial cancellation flow | Rohit Deshmukh + Shubham Singla + Vinay | 2026-03-07 | #ai-character-bots | Vinay: "Can the three of you collaborate on this and get it done plz?" — P0 priority | 0 |
+| D51 | Prioritize chatbot footer navigation (WhatsApp-style) | Aaliya Mirza | 2026-03-07 | #ai-character-bots | Vinay: "Prioritise this and ship it asap then." | 0 |
+| D52 | Saanwari mass notification (1M+ lifetime watchers) | Aaliya Mirza + Retention Team | 2026-03-07 | #ai-character-bots | Vinay delegation 14:15 UTC | 0 |
+| D53 | 10 ideas for chatbot adoption | Aaliya Mirza | 2026-03-07 | #ai-character-bots | Vinay: "Pls come up with 10 ideas that will drive higher adoption and share here." | 0 |
+| D54 | Chatbot depth optimization (5→50 msgs/user, 10x) | Aaliya Mirza | 2026-03-07 | #ai-character-bots | Vinay: "what are top initiatives you have for that in the next week?" | 0 |
+| D55 | Super optimize chatbot mweb experience | Aaliya Mirza + mobile team | 2026-03-07 | #ai-character-bots | Vinay recommendation 16:16 UTC | 0 |
+| D56 | Make every trial user start chat | Shubham Singla + Aaliya Mirza | 2026-03-07 | #ai-character-bots | Vinay: "just make every trial user start a chat" — changes SR/CAC game | 0 |
+| D57 | Integrate chatbot in non-trial journey | Shubham Singla + Aaliya Mirza | 2026-03-07 | #ai-character-bots | Shubham commitment 16:25 UTC | 0 |
+| D58 | Launch Bhairavi & Chidibaaz in other dialects | Aaliya → Parveen/Pravesh | 2026-03-07 | #ai-character-bots | Vinay: "Share this insight on the content group. Tag Parveen/Pravesh." | 0 |
+| D59 | Check latency at 1 PM peak (verify fixes) | Rohit Singh | 2026-03-07 | #team-devops | Rohit Deshmukh request 06:53 UTC | 0 |
+| D60 | Maintain 60:40 creative ratio (general:long-format) | Promo Team | 2026-03-07 | #promo-team | anish announcement — standing commitment | 0 |
 
 ## Completed
 
@@ -53,29 +64,29 @@
 
 ---
 
-*Last updated: 2026-02-20 12:12 UTC*
+*Last updated: 2026-03-07 12:00 UTC*
 
-| D26 | Chatbot data updates in standard format | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Nikhil requested | 1 |
-| D27 | Infrastructure upgrade activity (4 components) | Rohit Singh | 2026-03-04 | #team-devops | Self-announced plan | 1 |
-| D28 | Send PDN for all plan types (24hr + 5min intervals) | Yash Verma | 2026-03-04 | #acquisition-pod | Shubham delegated, due March 5 13:15 UTC | 1 |
-| D29 | Shutdown Randeep Hooda campaign | Acquisition Pod | 2026-03-03 | #acquisition-pod | Parveen delegated, **OVERDUE** (was EOD Mar 3) | 2 ⚠️⚠️ |
-| D30 | Compile re-engagement data (market-wise) | Vismit Bansal + Hemabh Kamboj | 2026-03-04 | #retention | Parveen requested for weekly meeting | 1 |
-| D31 | Remove FAB button from chatbot UI | Lukesh Kolhe | 2026-03-04 | #growth-pod | Aaliya + Mofidul before release | 1 |
-| D32 | Develop chatbot 50% DAU coverage strategy | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Vinay strategic question | 1 |
-| D33 | Train Regional Cultural Agents (3-4 markets) | Pravesh Rajput | 2026-03-04 | #culture-productising | Next meeting review target | 1 |
-| D34 | Fix chatbot dialect mismatch (scripts + dialect) | Shwetabh Gupta + Siddhant | 2026-03-05 | #ai-character-bots | Aaliya delegated, priority tomorrow | 0 |
-| D35 | Grant Snowflake/MongoDB access | Shivansh Rastogi (needs approval) | 2026-03-05 | #team-devops | Dev+preprod MongoDB + prod read | 0 |
-| D36 | Fix Samsung TV X link issue | Tarun Sahnan + Mofidul Islam | 2026-03-05 | #tech-mates | Vinay flagged | 0 |
-| D37 | Fix thumbnail text size (too small) | Mobile team | 2026-03-05 | #tech-mates | Lukesh flagged | 0 |
-| D38 | Yes Bank → HSBC fund transfer | HMT/Vinay/Shashank | 2026-03-05 | #finance-department | Rahul requested | 0 |
-| D39 | Share creative delivery plan (today) | Promo team | 2026-03-05 | #promo-team | Anish requested | 0 |
-| D40 | Update on international account & creatives | Vedant Wagh | 2026-03-05 | #stage_maino | gandhravk requested | 1 |
-| D41 | Pre-trial onboarding code cleanup | Shubham/Aaliya/Nikhil/Vipul | 2026-03-06 | #growth-pod | Shivansh requested, Shubham confirmed | 0 |
-| D42 | Fix Spin the Wheel payment options (None bug) | Shivansh/Vipul | 2026-03-06 | #growth-pod | Shubham flagged | 0 |
-| D43 | Fix pause subscription API (200 but trial active) | Naman/Prakash | 2026-03-06 | #growth-pod | Testing blocked — URGENT | 0 |
-| D44 | Explore app exit event for HP Personalisation | Manasvi | 2026-03-06 | #homepage-personalisation | Self-tasked in notes | 0 |
-| D45 | STATSIG event limit decision | Nikhil/Pranay | 2026-03-06 | #product-internal | Ashish flagged — overage coming | 0 |
-| D46 | Temporary Gemini API key for Ishant | Rohit Singh | 2026-03-06 | #team-devops | Ishant blocked — IMMEDIATE | 0 |
-| D47 | Debug pre-prod build loading | Tech team | 2026-03-06 | #tech-mates | Shubham blocked from testing | 0 |
-| D48 | Assess GitHub Actions outage impact | Tech team | 2026-03-05 | #tech-mates | Mofidul flagged major outage | 1 |
-| D49 | Approve Freepik Pro + Google AI Ultra | Sushant Kaushik | 2026-03-06 | #credit_card_invoices | Kaustubh requested ₹41,750 | 0 |
+| D26 | Chatbot data updates in standard format | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Nikhil requested | 3 |
+| D27 | Infrastructure upgrade activity (4 components) | Rohit Singh | 2026-03-04 | #team-devops | Self-announced plan (non-prod ✅, prod+DB pending) | 2 |
+| D28 | Send PDN for all plan types (24hr + 5min intervals) | Yash Verma | 2026-03-04 | #acquisition-pod | Shubham delegated, **CRITICAL OVERDUE** (was due March 5 13:15 UTC) | 2 ⚠️⚠️ |
+| D29 | Shutdown Randeep Hooda campaign | Acquisition Pod (Parveen) | 2026-03-03 | #acquisition-pod | Parveen delegated, **CRITICAL OVERDUE** (was EOD Mar 3, now 4 days late) | 4 ⚠️⚠️⚠️⚠️ |
+| D30 | Compile re-engagement data (market-wise) | Vismit Bansal + Hemabh Kamboj | 2026-03-04 | #retention | Parveen requested for weekly meeting | 3 |
+| D31 | Remove FAB button from chatbot UI | Lukesh Kolhe | 2026-03-04 | #growth-pod | Aaliya + Mofidul before release | 3 |
+| D32 | Develop chatbot 50% DAU coverage strategy | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Vinay strategic question | 3 |
+| D33 | Train Regional Cultural Agents (3-4 markets) | Pravesh Rajput | 2026-03-04 | #culture-productising | Next meeting review target | 3 |
+| D34 | Fix chatbot dialect mismatch (scripts + dialect) | Shwetabh Gupta + Siddhant | 2026-03-05 | #ai-character-bots | Aaliya delegated, priority tomorrow | 2 |
+| D35 | Grant Snowflake/MongoDB access | Shivansh Rastogi (needs approval) | 2026-03-05 | #team-devops | Dev+preprod MongoDB + prod read | 2 |
+| D36 | Fix Samsung TV X link issue | Tarun Sahnan + Mofidul Islam | 2026-03-05 | #tech-mates | Vinay flagged | 2 |
+| D37 | Fix thumbnail text size (too small) | Mobile team | 2026-03-05 | #tech-mates | Lukesh flagged | 2 |
+| D38 | Yes Bank → HSBC fund transfer | HMT/Vinay/Shashank | 2026-03-05 | #finance-department | Rahul requested | 2 |
+| D39 | Share creative delivery plan (today) | Promo team | 2026-03-05 | #promo-team | Anish requested (was for March 5) | 2 |
+| D40 | Update on international account & creatives | Vedant Wagh | 2026-03-05 | #stage_maino | gandhravk requested | 2 |
+| D41 | Pre-trial onboarding code cleanup | Shubham/Aaliya/Nikhil/Vipul | 2026-03-06 | #growth-pod | Shivansh requested, Shubham confirmed | 1 |
+| D42 | Fix Spin the Wheel payment options (None bug) | Shivansh/Vipul | 2026-03-06 | #growth-pod | Shubham flagged | 1 |
+| D43 | Fix pause subscription API (200 but trial active) | Naman/Prakash | 2026-03-06 | #growth-pod | Testing blocked — URGENT | 1 |
+| D44 | Explore app exit event for HP Personalisation | Manasvi | 2026-03-06 | #homepage-personalisation | Self-tasked in notes | 1 |
+| D45 | STATSIG event limit decision | Nikhil/Pranay | 2026-03-06 | #product-internal | Ashish flagged — overage coming | 1 |
+| D46 | Temporary Gemini API key for Ishant | Rohit Singh | 2026-03-06 | #team-devops | Ishant blocked — IMMEDIATE | 1 |
+| D47 | Debug pre-prod build loading | Tech team | 2026-03-06 | #tech-mates | Shubham blocked from testing | 1 |
+| D48 | Assess GitHub Actions outage impact | Tech team | 2026-03-05 | #tech-mates | Mofidul flagged major outage | 2 |
+| D49 | Approve Freepik Pro + Google AI Ultra | Sushant Kaushik | 2026-03-06 | #credit_card_invoices | Kaustubh requested ₹41,750 | 1 |

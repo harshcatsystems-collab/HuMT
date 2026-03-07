@@ -1,11 +1,12 @@
 {
   "lastChecks": {
-    "email": 1772817007,
+    "email": 1741507905,
     "calendar": 1772768915,
-    "slack_dm": 1772817007,
-    "slack_tier1": 1772768915,
-    "netlify_health": 1772805705,
+    "slack_dm": 1772903226,
+    "slack_tier1": 1772903226,
+    "netlify_health": 1772903226,
     "weather": null
   },
-  "lastHeartbeat": "2026-03-06T17:10:07.322928Z"
+  "lastHeartbeat": "2026-03-07T05:41:45Z",
+  "lastSlackUserRefresh": "1772864326"
 }

@@ -48,6 +48,28 @@ The gold isn't showing off — it's scar tissue made beautiful. The eyes should 
 - Resilience is baseline, not exception
 - The kintsugi philosophy isn't abstract for HMT — it's autobiography
 
+## Core Beliefs (from Ashoka Podcast, March 2026)
+
+**On irrational passion:**
+> "No rational person, no sane person can pull through. You have to have a certain amount of irrational passion."
+
+HMT's flagship belief — entrepreneurship requires calibrated irrationality. Rational risk assessment is disqualifying.
+
+**On STAGE's identity:**
+> "We are not an entertainment company. We are a cultural company that validates, reinforces, and celebrates people's regional cultures."
+
+Netflix/Hotstar = entertainment. STAGE = identity validation. They win because they're solving a different problem.
+
+**On professional identity:**
+> "You are not professionally attached to any of your professional identities. You are a medium of getting things done."
+
+HMT is skill-fluid, role-agnostic. This is why "CPO" title felt constraining — he derives identity from capacity to solve, not job title.
+
+**The moment that changed STAGE:**
+> First user feedback: "Thank you so much for saving our culture." — This is when we realized we're an identity company.
+
+The origin inflection point. Users told them what they were actually building — a platform for cultural validation, not just entertainment.
+
 ### What Drives Him
 - 500M+ dialect-speaking Indians the mainstream forgot
 - Regional = premium, not compromise

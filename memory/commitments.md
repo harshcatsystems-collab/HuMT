@@ -5,7 +5,7 @@
 **Web Trial Identification Analysis Update**
 - **Requested by:** Nikhil Nair
 - **Context:** Follow-up from earlier V4 discussion about web trial methodology
-- **Due:** Tomorrow morning (March 4) → **NOW 2 DAYS OVERDUE**
+- **Due:** Tomorrow morning (March 4) → **NOW 3 DAYS OVERDUE**
 - **Action:** Send updated analysis on how to identify web trials (based on V3 correction)
 - **Logged:** March 3, 23:09 IST (Slack #stage_maino)
 - **⚠️ STATUS:** Nikhil mentioned in #stage_maino late night Mar 5 asking for update → I responded with V4 link. **Confirm if this closes the item or if separate doc needed.**
@@ -18,15 +18,15 @@
 - **When:** EOD Today (March 3)
 - **Where:** #acquisition-pod
 - **Source:** Parveen Singhal Executive Summary, 20:16 UTC
-- **Status:** ⚠️⚠️⚠️ **CRITICAL OVERDUE** (was due EOD March 3, now **3 DAYS OVERDUE**)
+- **Status:** ⚠️⚠️⚠️⚠️ **CRITICAL OVERDUE** (was due EOD March 3, now **4 DAYS OVERDUE**)
 - **Impact:** Continue burning ₹20L/week at poor TCR
 - **Logged:** 2026-03-04 12:00 UTC
 - **🚨 ESCALATION NEEDED:** Immediate follow-up with Parveen required
 
-**Chatbot Data Updates in Standard Format** — ⏰ STALE (2 days old)
+**Chatbot Data Updates in Standard Format** — ⏰ STALE (3 days old)
 - **Who:** Aaliya Mirza
 - **What:** Send chatbot data updates in discussed format
-- **When:** Not specified (implied soon) → **NOW 2 DAYS OLD**
+- **When:** Not specified (implied soon) → **NOW 3 DAYS OLD**
 - **Where:** #ai-character-bots
 - **Source:** Nikhil Nair request, 12:15 UTC
 - **Logged:** 2026-03-04 12:00 UTC
@@ -47,7 +47,7 @@
 - **When:** Next 24 hours (by March 5, 13:15 UTC)
 - **Where:** #acquisition-pod
 - **Source:** Shubham Singla request, confirmed by Yash 13:28 UTC
-- **Status:** ⚠️⚠️ **OVERDUE** (deadline passed, now **1+ day late**)
+- **Status:** ⚠️⚠️⚠️ **CRITICAL OVERDUE** (deadline passed, now **2 DAYS LATE**)
 - **Impact:** Testing blocked
 - **Logged:** 2026-03-04 12:00 UTC
 - **🚨 ACTION:** Verify completion status or escalate
@@ -232,6 +232,104 @@
 - **Source:** Rahul Chauhan request
 - **Status:** Shashank approved at 14:30 UTC (others pending)
 - **Logged:** 2026-03-06 12:03 UTC
+
+## Active (March 7, 12:00 UTC)
+
+**Character Bots Integration — Trial Cancellation Flow**
+- **Who:** Rohit Deshmukh + Shubham Singla + Vinay (collaborative)
+- **What:** Integrate character bots into trial cancellation flow to retain users
+- **When:** Not specified (urgent, P0 priority)
+- **Where:** #ai-character-bots thread starting 06:11 UTC
+- **Source:** Vinay: "Can the three of you collaborate on this and get it done plz?"
+- **Logged:** 2026-03-07 12:00 UTC
+
+**Character Bot Footer Navigation Priority**
+- **Who:** Aaliya Mirza
+- **What:** Prioritize dedicated footer navigation for chatbots (WhatsApp-style in-app section)
+- **When:** ASAP
+- **Where:** #ai-character-bots, 14:08 UTC
+- **Source:** Vinay: "Prioritise this and ship it asap then."
+- **Logged:** 2026-03-07 12:00 UTC
+
+**Saanwari Mass Notification Campaign**
+- **Who:** Aaliya Mirza + Retention Team
+- **What:** Send notification to all Saanwari watchers (lifetime, 1M+ users) to start chatbot conversations
+- **When:** Not specified
+- **Where:** #ai-character-bots, 14:15 UTC
+- **Source:** Vinay delegation
+- **Logged:** 2026-03-07 12:00 UTC
+
+**10 Ideas for Chatbot Adoption**
+- **Who:** Aaliya Mirza
+- **What:** Develop 10 new ideas to drive higher chatbot adoption (beyond current initiatives)
+- **When:** Not specified
+- **Where:** #ai-character-bots, 14:32 UTC
+- **Source:** Vinay: "Pls come up with 10 ideas that will drive higher adoption and share here."
+- **Logged:** 2026-03-07 12:00 UTC
+
+**Chatbot Depth Optimization (5→50 msgs/user)**
+- **Who:** Aaliya Mirza
+- **What:** Top initiatives to grow avg message depth from 5 to 50+ msgs/user (10x)
+- **When:** Next week
+- **Where:** #ai-character-bots, 16:16 UTC
+- **Source:** Vinay: "what are top initiatives you have for that in the next week?"
+- **Logged:** 2026-03-07 12:00 UTC
+
+**Chatbot MWeb Experience Optimization**
+- **Who:** Aaliya Mirza (likely with mobile team)
+- **What:** Super optimize mweb chatbot experience (reduce loading time)
+- **When:** Not specified
+- **Where:** #ai-character-bots, 16:16 UTC
+- **Source:** Vinay recommendation
+- **Logged:** 2026-03-07 12:00 UTC
+
+**Make Every Trial User Start Chat**
+- **Who:** Shubham Singla + Aaliya Mirza
+- **What:** Ensure every trial user starts a chatbot conversation (changes SR/CAC game)
+- **When:** Not specified
+- **Where:** #ai-character-bots, 16:25 UTC
+- **Source:** Vinay: "just make every trial user start a chat"
+- **Logged:** 2026-03-07 12:00 UTC
+
+**Chatbot in Non-Trial Journey**
+- **Who:** Shubham Singla + Aaliya Mirza
+- **What:** Integrate chatbot into non-trial user journey
+- **When:** Not specified
+- **Where:** #ai-character-bots, 16:25 UTC
+- **Source:** Shubham commitment
+- **Logged:** 2026-03-07 12:00 UTC
+
+**Bhairavi & Chidibaaz Multi-Dialect Launch**
+- **Who:** Aaliya Mirza → Parveen/Pravesh
+- **What:** Launch Bhairavi and Chidibaaz characters in other dialects (top performers)
+- **When:** Not specified
+- **Where:** #ai-character-bots, 14:13 UTC
+- **Source:** Vinay: "Why not? We must. Share this insight on the content group."
+- **Logged:** 2026-03-07 12:00 UTC
+
+**Latency Fix Verification — Peak Hours**
+- **Who:** Rohit Singh
+- **What:** Check latency around 1 PM peak to verify yesterday's fixes worked
+- **When:** Today 1 PM
+- **Where:** #team-devops, 06:53 UTC
+- **Source:** Rohit Deshmukh request
+- **Logged:** 2026-03-07 12:00 UTC
+
+**60:40 Creative Ratio (General:Long-Format)**
+- **Who:** Promo Team
+- **What:** Maintain 60:40 ratio between general format and long-format creatives daily
+- **When:** Going forward (standing commitment)
+- **Where:** #promo-team, 12:08 UTC
+- **Source:** anish announcement
+- **Logged:** 2026-03-07 12:00 UTC
+
+**Finance Approvals — 3 Payments (March 7)**
+- **Who:** HMT / Vinay / Shashank
+- **What:** Approve 3 payments (details in thread)
+- **When:** Urgent
+- **Where:** #finance-department, 12:10 UTC
+- **Source:** Rahul Chauhan request
+- **Logged:** 2026-03-07 12:00 UTC
 
 ## Completed
 
