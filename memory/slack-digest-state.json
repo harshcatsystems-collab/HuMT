@@ -1,13 +1,5 @@
 {
-  "last_evening_debrief": "2026-03-07T13:00:00Z",
-  "channels_scanned": 353,
-  "active_channels": 27,
-  "messages_analyzed": 138,
-  "intensity_level": "light",
-  "week_meeting_count": 10,
-  "processedMentions": [
-    "1772799015.019279",
-    "1771928118.250259",
-    "1772695264.788009"
-  ]
+  "morningBrief": "2026-03-08T10:44:00Z",
+  "lastEveningDebrief": "2026-03-08T13:00:00Z",
+  "lastFullScan": "2026-03-08T10:44:00Z"
 }

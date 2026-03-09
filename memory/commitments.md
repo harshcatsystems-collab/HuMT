@@ -356,3 +356,37 @@
 - **Where:** #ai-character-bots
 - **Status:** ✅ COMPLETED
 - **Logged:** 2026-03-06 12:03 UTC
+
+## Active Commitments
+
+### C-2026-03-08-01: Cron Run Verification & Proactive Confirmation
+- **Committed:** 2026-03-08 11:37 UTC
+- **To:** HMT
+- **What:** Monitor 11:45 UTC cron run, proactively confirm stability
+- **Deliverable:** Message HMT on Telegram when verified (or if anything breaks)
+- **Status:** PENDING (execute at 11:46 UTC)
+- **Promise:** "If the 11:45 cron run passes cleanly, then yes - you can rest assured. I'll confirm either way."
+
+
+### Completed
+
+#### C-2026-03-08-01: Cron Run Verification ✅
+- **Completed:** 2026-03-08 11:46 UTC
+- **Delivered:** Proactive Telegram confirmation after first cron run passed
+- **Outcome:** All checks passed, HMT notified
+
+
+### C-2026-03-08-01: ✅ COMPLETE
+- **Committed:** 2026-03-08 11:37 UTC
+- **Completed:** 2026-03-08 11:48 UTC
+- **Deliverable:** Confirmed cron run success on Telegram
+- **Result:** "✅ You can rest assured" - sent to HMT
+
+### C-2026-03-08-02: Slack Group File Protection
+- **Committed:** 2026-03-08 11:48 UTC
+- **To:** HMT
+- **What:** Protect personal files from Slack groups while keeping collaboration working
+- **Status:** ✅ IMPLEMENTED & TESTED (7/7 tests pass)
+- **QA:** scripts/check-file-access.sh tested, 0 impact on team collaboration verified
+- **Pending:** Real-world validation (next Slack group interaction)
+

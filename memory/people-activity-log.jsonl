@@ -362,3 +362,44 @@ Scanning C09TLDLA7GE...
 {"ts":"2026-03-07T16:09:32Z","_type":"logger_run","people_tracked":11}
 {"ts":"2026-03-07T16:39:33Z","_type":"logger_run","people_tracked":11}
 {"ts":"2026-03-07T17:09:39Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-07T17:39:11Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-07T18:09:25Z","_type":"logger_run","people_tracked":11,"channels_scanned":17,"active_people":0}
+{
+  "ts": "2026-03-07T18:40:20Z",
+  "_type": "logger_run",
+  "people_tracked": 11
+}
+{"ts":"2026-03-07T19:08:50Z","_type":"logger_run","people_tracked":11,"channels_scanned":17,"channels_found":10,"messages_scanned":0}
+{"ts":"2026-03-07T19:39:36Z","_type":"logger_run","people_tracked":11}
+{
+  "ts": "2026-03-07T20:09:40Z",
+  "_type": "logger_run",
+  "people_tracked": 11
+}
+{"ts": "2026-03-07T20:39:34.441201Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-07T21:09:53.216739Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-07T21:40:12+00:00","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-08T11:39:28Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-08T12:08:57Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-08T12:39:28Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-08T13:09:16Z","_type":"logger_run","people_tracked":11}
+{
+  "ts": "2026-03-08T13:39:34Z",
+  "_type": "logger_run",
+  "people_tracked": 11
+}
+{"ts":"2026-03-08T13:40:22Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-08T14:09:19+00:00","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-08T14:39:12Z","_type":"logger_run","people_tracked":11}
+{
+  "ts": "2026-03-08T15:09:19Z",
+  "_type": "logger_run",
+  "people_tracked": 11
+}
+{"ts": "2026-03-08T15:39:22.672642+00:00", "_type": "logger_run", "people_tracked": 11}
+{
+  "ts": "2026-03-08T16:09:18Z",
+  "_type": "logger_run",
+  "people_tracked": 11
+}
+{"ts":"2026-03-08T16:39:38+00:00","_type":"logger_run","people_tracked":11}
