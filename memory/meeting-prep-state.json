@@ -1,11 +1,12 @@
 {
   "preppedToday": [
-    "Tech - Product Standup (Growth POD) @ 2026-03-06T09:30:00+05:30",
-    "Alignment: Strategy, Fundraise & Execution @ 2026-03-06T12:00:00+05:30",
-    "AI Film Making Update @ 2026-03-06T12:00:00+05:30",
-    "Engagement pod discussion @ 2026-03-06T12:00:00+05:30",
-    "Harsh/Pranay Weekly @ 2026-03-06T16:00:00+05:30",
-    "Home Page Personalisation Update @ 2026-03-06T17:00:00+05:30"
+    {
+      "id": "itgaqp1jqttqubmsq5thoaq0a6_20260309T063000Z",
+      "summary": "Engagement pod discussion",
+      "start": "2026-03-09T12:00:00+05:30",
+      "preppedAt": "2026-03-09T12:00:00Z",
+      "topic": "retention"
+    }
   ],
-  "date": "2026-03-06"
+  "date": "2026-03-09"
 }

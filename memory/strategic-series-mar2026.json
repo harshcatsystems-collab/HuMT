@@ -1,0 +1,53 @@
+{
+  "title": "Strategic Series: Full Funnel & LTV Optimization",
+  "period": "March 6-9, 2026",
+  "status": "in_progress",
+  "consolidated_doc": {
+    "local_path": "data/meetings/strategic-context-funnel-ltv-consolidation.md",
+    "drive_id": "126Merzxz6-ULE-VWIX5vdgZXNv7FoHKz",
+    "drive_link": "https://drive.google.com/file/d/126Merzxz6-ULE-VWIX5vdgZXNv7FoHKz/view?usp=drivesdk",
+    "last_updated": "2026-03-09T12:35:00Z"
+  },
+  "meetings": [
+    {
+      "date": "2026-03-06",
+      "title": "Harsh / Parveen",
+      "participants": ["Harsh Mani Tripathi", "Parveen Singhal"],
+      "doc_id": "1eHHDxQYI75Ppd1TY19M99sbAeQVQQsdmzFAI8t6Qf0E",
+      "local_notes": "data/meetings/2026-03-06-harsh-parveen-notes.md",
+      "key_themes": ["runway optimization", "content pipeline growth", "market-wise strategy", "CleverTap audit"]
+    },
+    {
+      "date": "2026-03-09",
+      "time": "11:13 AM IST",
+      "title": "LTV optimisation - Strategy (Metrics ownerships and action plan)",
+      "participants": ["Parveen Singhal", "team"],
+      "doc_id": "1Apw6vtOqehp48toMs8jrzMvkUxJYIKhNE5xzuZ8HpjY",
+      "local_notes": "data/meetings/ltv-optimisation-strategy-2026-03-09.md",
+      "key_themes": ["LTV-centric thinking", "content as product", "3 business outcomes", "dormant subscribers crisis", "pan-India expansion"]
+    },
+    {
+      "date": "2026-03-09",
+      "time": "2:10 PM IST",
+      "title": "Full - Funnel - Accountability and Ownership",
+      "participants": ["Parveen Singhal", "Shubham", "Nikl", "Alia", "Jagrati", "team"],
+      "doc_id": "13vi4aQHlmf24BiIpSLZjs3reyZjve-_rtkTlJ3KakrY",
+      "local_notes": "data/meetings/full-funnel-accountability-2026-03-09.md",
+      "key_themes": ["metric ownership", "role assignments", "2-week execution window", "reacquisition vs reactivation"]
+    }
+  ],
+  "pending_meetings": [
+    "Follow-up on M0 bucket & renewal rate execution",
+    "Alia's product ops model finalization",
+    "Format lead knowledge transfer sessions",
+    "Language launch execution planning"
+  ],
+  "next_actions": {
+    "when_series_complete": [
+      "Complete deep dive analysis",
+      "Reflection check with HMT",
+      "Strategic implications synthesis",
+      "Update consolidated doc with final insights"
+    ]
+  }
+}

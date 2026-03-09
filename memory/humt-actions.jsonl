@@ -254,3 +254,35 @@
   "ts": 1772795083,
   "date": "2026-03-06T11:04:43Z"
 }
+{
+  "type": "slack_post",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1772799015.019279",
+  "message_ts": "1773064154.957209",
+  "message_preview": "Payment approval request relayed to HMT on Telegram. The spreadsheet contains multiple vendor paymen",
+  "tagged_users": [],
+  "ts": 1773064155,
+  "date": "2026-03-09T13:49:15Z"
+}
+{
+  "type": "slack_post",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1773063755.716659",
+  "message_ts": "1773064211.872189",
+  "message_preview": "Payment approval request relayed to HMT on Telegram. The spreadsheet contains multiple vendor paymen",
+  "tagged_users": [],
+  "ts": 1773064212,
+  "date": "2026-03-09T13:50:12Z"
+}
+{
+  "type": "slack_post",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1773063755.716659",
+  "message_ts": "1773064534.709959",
+  "message_preview": "Approved. All payments in the March 9th sheet are approved by HMT.",
+  "tagged_users": [
+    "U05HAE85RL2"
+  ],
+  "ts": 1773064535,
+  "date": "2026-03-09T13:55:35Z"
+}

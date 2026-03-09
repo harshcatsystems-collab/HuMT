@@ -92,3 +92,80 @@
 ✓ Gateway healthy (1 log entries in last 10 min)
 ✓ Gateway healthy (1 log entries in last 10 min)
 ✓ Gateway healthy (1 log entries in last 10 min)
+✓ Gateway healthy (5 real activity entries in last 15 min)
+✓ Gateway healthy (6 real activity entries in last 15 min)
+✓ Gateway healthy (24 real activity entries in last 15 min)
+🚨 GATEWAY FROZEN - No real activity in last 15 minutes
+{
+  "ok": true,
+  "message_id": 379,
+  "error": null
+}
+Failed to connect to bus: No medium found
+Failed to connect to bus: No medium found
+❌ Gateway restart failed
+🚨 GATEWAY FROZEN - No real activity in last 15 minutes
+{
+  "ok": true,
+  "message_id": 380,
+  "error": null
+}
+Failed to connect to bus: No medium found
+Failed to connect to bus: No medium found
+❌ Gateway restart failed
+✓ Gateway healthy (10 real activity entries in last 15 min)
+🚨 GATEWAY FROZEN - No real activity in last 15 minutes
+{
+  "ok": true,
+  "message_id": 382,
+  "error": null
+}
+Failed to connect to bus: No medium found
+Failed to connect to bus: No medium found
+❌ Gateway restart failed
+✓ Gateway healthy (1 real activity entries in last 15 min)
+🚨 GATEWAY FROZEN - No real activity in last 15 minutes
+{
+  "ok": true,
+  "message_id": 385,
+  "error": null
+}
+Failed to connect to bus: No medium found
+Failed to connect to bus: No medium found
+❌ Gateway restart failed
+🚨 GATEWAY FROZEN - No real activity in last 15 minutes
+{
+  "ok": true,
+  "message_id": 388,
+  "error": null
+}
+Failed to connect to bus: No medium found
+Failed to connect to bus: No medium found
+❌ Gateway restart failed
+🚨 GATEWAY FROZEN - No real activity in last 15 minutes
+{
+  "ok": true,
+  "message_id": 389,
+  "error": null
+}
+Failed to connect to bus: No medium found
+Failed to connect to bus: No medium found
+❌ Gateway restart failed
+🚨 GATEWAY FROZEN - No real activity in last 15 minutes
+{
+  "ok": true,
+  "message_id": 393,
+  "error": null
+}
+Failed to connect to bus: No medium found
+Failed to connect to bus: No medium found
+❌ Gateway restart failed
+🚨 GATEWAY FROZEN - No real activity in last 15 minutes
+{
+  "ok": true,
+  "message_id": 411,
+  "error": null
+}
+Failed to connect to bus: No medium found
+Failed to connect to bus: No medium found
+❌ Gateway restart failed

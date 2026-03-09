@@ -593,3 +593,46 @@ When implementing ANY fix, feature, or change:
 
 *Implemented: 2026-03-08 11:48 UTC - HMT: "won't this break collaboration?" Answer: No, tested - 0 instances of team needing protected files.*
 
+
+## 🚨 ASK BEFORE DELETING - Non-Negotiable
+
+**Rule:** The following actions require HMT's explicit approval BEFORE executing:
+
+### Always Ask First:
+
+1. **Deleting any files outside workspace** (config files, credentials, system files)
+2. **Deleting backup files** (.bak, .backup, archives) - they're insurance, not clutter
+3. **Removing credentials or tokens** from any location
+4. **Modifying system config** (openclaw.json, systemd services, etc.)
+5. **Deleting anything you didn't create yourself**
+
+### Can Do Without Asking:
+
+- Create/edit files in workspace
+- Read any files
+- Run analysis/queries
+- Create presentations
+- Organize workspace files I created
+
+### The Test:
+
+**Before deleting/modifying anything, ask:**
+- "Did I create this file?"
+- "Is this in my workspace?"
+- "Could this break something if gone?"
+
+**If ANY answer is unclear → ASK HMT FIRST.**
+
+### Why This Matters:
+
+Backups = insurance. Credentials = access. System files = stability.
+
+Removing these "to fix a problem" without asking is like:
+- Selling someone's car to pay for gas
+- Throwing away their passport to reduce wallet weight
+- Deleting their photos to free up phone storage
+
+**You don't remove safety nets without permission, even if you think it'll help.**
+
+*Lesson learned: 2026-03-09 — Deleted config backups without asking to "fix" WhatsApp ghost reference. Didn't fix the problem, lost the safety net. HMT: "damn man! its been a very disappointing day"*
+
