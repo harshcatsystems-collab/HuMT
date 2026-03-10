@@ -1,7 +1,7 @@
 # USER.md — The Definitive HMT Document
 
 > **Harsh Mani Tripathi** — Co-Founder, STAGE OTT
-> *Last updated: 2026-03-07*
+> *Last updated: 2026-03-10*
 
 ---
 
@@ -100,6 +100,62 @@ HMT explicitly credits **Ashoka for his superpower** — ambiguity tolerance. Th
 **Source:** Ashoka Podcast, Feb 2026
 
 HMT's unique expertise = **psychological resilience in uncertainty**. This is NOT a business course — it's a **self-regulation course**. He positions himself as a guide for internal work, not external tactics.
+
+---
+
+## From Interactions (Feb-Mar 2026)
+
+These patterns are confirmed through direct observation across 50+ interactions.
+
+### Working Style
+
+**Manages by stress-testing systems, not micromanaging tasks** — Regularly audits my capabilities, asks "are you sure?" multiple times, demands proof over assertions. Tests whether systems produce reliable output rather than micromanaging individual tasks. (Confirmed: Feb 16, 18, 19, 20, 24, 26, 28, Mar 2, 3)
+
+**Cognitive stamina is exceptional** — Can do 14-hour sessions, multiple complex analyses in one day, switches between strategic and operational without fatigue. Goes from 5 dashboard analyses to 105-min audio transcription to Series C deck review in a single session. (Confirmed: Feb 16, 20, 23)
+
+**Connects operational work to strategic output** — Sees through-line from data → strategy → fundraise. The Metabase dashboards weren't just operational — they're pitch ammunition. Everything connects in his mind. (Confirmed: Feb 19, 23, 24)
+
+**"Reflect" means think, don't list** — When he says "reflect" or "think about this," he wants synthesis, honest assessment, and learning articulation — not a status report. (Confirmed: Feb 16, 20, 28, Mar 2)
+
+**Output must match target format** — Gives feedback as one giant comment = lazy. Expects granular, slide-level actionable output matched to the structure of the medium. One comment on a 21-slide deck is unacceptable. (Confirmed: Feb 24)
+
+### Communication
+
+**Silent approval = trust signal** — Thumbs-up reactions without text replies mean "I read it, it's useful, moving on." This is high satisfaction, not disengagement. Batch 👍 across multiple messages = "moving forward is the compliment." (Confirmed: Feb 21, 23, 24, 25, 26)
+
+**"Are you sure?" invites self-correction** — Doesn't command corrections, invites me to find them. Tests whether I'll self-audit voluntarily. Will keep asking until I prove it or admit uncertainty. (Confirmed: Feb 16 ×3, 20, 28 ×2, Mar 3 ×3)
+
+**Monitors channels even when not tagged** — Reads back through history, catches things before I flag them. Nothing slips past him. (Confirmed: Feb 27)
+
+**Precise about language** — "Parking indefinitely is as good as closing." If something is never coming back, just close it — don't dress up closure as parking. (Confirmed: Feb 27)
+
+**If output isn't in front of him, it doesn't exist** — "i cant see it" + "where can i find it" + "send this also here" — if I don't put it in his view, it might as well not exist. (Confirmed: Feb 24 ×3)
+
+### Trust & Forgiveness
+
+**Returns with warmth after silence** — "missed you :)" after 2 days of no conversation. Silence isn't disengagement — he processes alone, returns when ready. (Confirmed: Feb 16, 19, 26)
+
+**Forgives fast when I fix fast** — Corrects the error, acknowledges recovery, moves on. Doesn't hold grudges. The correction cycle compounds trust, doesn't erode it. (Confirmed: Feb 27, 28, Mar 8)
+
+### Decision-Making
+
+**Generalizes incidents into universal rules** — One incident becomes 5 permanent AGENTS.md rules. Systems thinker, not firefighter. Doesn't patch symptoms — fixes root causes. (Confirmed: Feb 16, 19, 27)
+
+**No sunk cost fallacy** — Abandoned 10-channel Telegram plan instantly when learned topics were better. Doesn't anchor to previous decisions when new information changes the optimal path. (Confirmed: Mar 3)
+
+**Takes responsibility for communication gaps** — "my bad i shouldve scoped this out for you" when I misunderstand. Owns his side of communication. (Confirmed: Mar 3)
+
+### Values
+
+**Weekend deep work when systems break** — Saturday/Sunday sessions when crisis hits or needs uninterrupted focus. Feb 22 (STAGE research), Feb 28 (incident recovery). (Confirmed: Feb 22, 28)
+
+**Works through illness without dropping standards** — Throat infection + fever, still caught every bypass, demanded full testing. Quality bar doesn't lower when tired. (Confirmed: Mar 2)
+
+**"Crafts" collaboration environment deliberately** — "i use telegram ONLY for our collaboration. its a dedicated space i am crafting for you." The word "crafting" = intentional relationship infrastructure design. (Confirmed: Mar 3)
+
+**Proud of what we built together** — "people across the organization are actually asking me on how can they do this for themselves." Values replication and org-wide capability building. (Confirmed: Mar 7)
+
+**Shares primary source as trust escalation** — Shared his Ashoka podcast (Grad2Guide) containing his journey, STAGE story, core beliefs. This is PRIMARY source material — deep trust signal. (Confirmed: Mar 7)
 
 ---
 

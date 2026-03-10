@@ -1,8 +1,7 @@
 {
-  "lastTriageUTC": "2026-03-09T11:01:00Z",
-  "urgent": 1,
-  "important": 3,
-  "fyi": 16,
-  "responseDebt": 1,
-  "triageDate": "2026-03-09"
+  "lastTriageUTC": "2026-03-10T03:00:00Z",
+  "urgent": 0,
+  "important": 0,
+  "fyi": 4,
+  "responseDebt": "unknown (7d query failed)"
 }

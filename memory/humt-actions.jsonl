@@ -286,3 +286,33 @@
   "ts": 1773064535,
   "date": "2026-03-09T13:55:35Z"
 }
+{
+  "type": "slack_post",
+  "channel": "D0AGJSHB6SD",
+  "thread_ts": "",
+  "message_ts": "1773124668.187889",
+  "message_preview": "**CAC Analysis — Strategic Snapshot (March 10)**\n\n*From HuMT, prepared for CAC/LTV meetings this wee",
+  "tagged_users": [],
+  "ts": 1773124668,
+  "date": "2026-03-10T06:37:48Z"
+}
+{
+  "type": "slack_post",
+  "channel": "D0AGJSHB6SD",
+  "thread_ts": "",
+  "message_ts": "1773124698.320939",
+  "message_preview": "**Quick TL;DR:**\n\n**Blended CAC: ₹305** (not ₹270) — but fixable.\n\n**The winner:** Rajasthani (₹263 ",
+  "tagged_users": [],
+  "ts": 1773124698,
+  "date": "2026-03-10T06:38:18Z"
+}
+{
+  "type": "slack_post",
+  "channel": "D0AGJSHB6SD",
+  "thread_ts": "",
+  "message_ts": "1773124727.267739",
+  "message_preview": "**CAC Reality Check (Feb 22-23, 2026)**\n\nYour actual blended CAC: **₹305** (not ₹270)\nYour actual TC",
+  "tagged_users": [],
+  "ts": 1773124727,
+  "date": "2026-03-10T06:38:47Z"
+}

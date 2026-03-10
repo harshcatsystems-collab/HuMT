@@ -5,24 +5,24 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-09 10:54 UTC
+## Last Verified: 2026-03-10 00:00 UTC (automated cron)
 ## Environment: VPS (Debian 12, GCP, 34.93.212.225)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files | 2026-03-09 |
-| 2 | Files | ✅ | read/write/edit tools | 2026-03-09 |
-| 3 | Terminal | ✅ | exec tool (`echo ok` = ok) | 2026-03-09 |
-| 4 | Web Search | ✅ | Brave API returned results | 2026-03-09 |
-| 5 | Gmail | ✅ | gog gmail messages search "in:inbox" returned results | 2026-03-09 |
-| 6 | Calendar | ✅ | gog calendar list returned events | 2026-03-09 |
-| 7 | Cron/Reminders | ✅ | OpenClaw cron system (this job proves it works) | 2026-03-09 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram message sent + topic routing works | 2026-03-09 |
+| 1 | Memory | ✅ | Read/write workspace files | 2026-03-10 |
+| 2 | Files | ✅ | read/write/edit tools | 2026-03-10 |
+| 3 | Terminal | ✅ | exec tool (`echo ok` = ok) | 2026-03-10 |
+| 4 | Web Search | ✅ | Brave API returned results | 2026-03-10 |
+| 5 | Gmail | ✅ | gog gmail messages search "in:inbox" returned results | 2026-03-10 |
+| 6 | Calendar | ✅ | gog calendar list returned events | 2026-03-10 |
+| 7 | Cron/Reminders | ✅ | OpenClaw cron system (this job proves it works) | 2026-03-10 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram message sent + topic routing works | 2026-03-10 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | OpenAI API key validated against /v1/models/dall-e-3 | 2026-03-09 |
+| 9 | Images (DALL-E) | ✅ | OpenAI API key validated against /v1/models/dall-e-3 | 2026-03-10 |
 | 10 | Voice Transcription | ⚠️ | openai-whisper-api skill apiKey MISSING in config (DALL-E key exists separately) | 2026-03-09 |
-| 11 | Memory Search | ✅ | Embeddings working (OpenAI key present) | 2026-03-09 |
-| 12 | Google Drive | ✅ | gog drive ls returned files successfully | 2026-03-09 |
+| 11 | Memory Search | ✅ | Embeddings working (OpenAI key present) | 2026-03-10 |
+| 12 | Google Drive | ✅ | gog drive ls returned files successfully | 2026-03-10 |
 | 13 | Slack History | ✅ | Slack user token (xoxp) active | 2026-03-09 |
 
 ## Critical Findings (2026-03-06)

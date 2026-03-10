@@ -1,5 +1,16 @@
-{"ts":"2026-03-09T15:15:00Z","_type":"logger_run","people_tracked":11,"messages_scanned":0,"note":"No activity in 30-minute window"}
-{"ts":"2026-03-09T15:45:15Z","_type":"logger_run","people_tracked":11}
-{"ts":"2026-03-09T16:15:50Z","_type":"logger_run","people_tracked":11}
-{"ts":"2026-03-09T16:45:16Z","_type":"logger_run","people_tracked":11,"channels_scanned":17,"channels_accessible":10,"activity_detected":0}
-{"ts": "2026-03-09T17:17:54.284433Z", "_type": "logger_run", "people_tracked": 11, "window_start": 1773074814, "window_end": 1773076614, "active_people": 0}
+{"ts":"2026-03-10T06:48:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-10T07:19:05.742386+00:00", "user": "UEHET2Q2G", "name": "Vinay Singhal", "messages": 1, "thread_replies": 0, "channels_active": 1, "channel_ids": ["C07T7047TEZ"], "after_hours": 0, "avg_response_latency_sec": null}
+{"ts": "2026-03-10T07:19:05.742386+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-10T07:48:41Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-10T08:19:18.755835Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-10T08:48:47Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-10T12:18:00Z","user":"U09AK8X90Q0","name":"Unknown","messages":0,"thread_replies":0,"channels_active":0,"channel_ids":[],"after_hours":0,"avg_response_latency_sec":null}
+{"ts":"2026-03-10T12:18:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-10T13:48:15Z","_type":"logger_run","people_tracked":11,"messages_found":0}
+{"ts":"2026-03-10T14:18:56Z","_type":"logger_run","people_tracked":11,"channels_scanned":17,"channels_found":1,"activity_count":0}
+{"ts":"2026-03-10T14:48:00Z","_type":"logger_run","people_tracked":11,"channels_scanned":17,"channels_found":10,"channels_not_found":7,"messages_found":0}
+{"ts": "2026-03-10T15:19:21.349665Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-10T15:49:49.177232Z", "_type": "logger_run", "people_tracked": 11, "status": "channel_ids_not_found", "note": "Slack channel IDs provided do not match any accessible channels in workspace"}
+{"ts":"2026-03-10T16:18:15Z","_type":"logger_run","people_tracked":11,"active_count":0}
+{"ts":"2026-03-10T16:48:15Z","_type":"logger_run","people_tracked":11,"active_people":0,"channels_scanned":16}
+{"ts":"2026-03-10T17:18:14Z","_type":"logger_run","people_tracked":11,"channels_scanned":16,"messages_found":0}

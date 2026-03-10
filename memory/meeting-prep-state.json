@@ -1,12 +1,40 @@
 {
   "preppedToday": [
     {
-      "id": "itgaqp1jqttqubmsq5thoaq0a6_20260309T063000Z",
-      "summary": "Engagement pod discussion",
-      "start": "2026-03-09T12:00:00+05:30",
-      "preppedAt": "2026-03-09T12:00:00Z",
-      "topic": "retention"
+      "id": "u1g9nr3jef9nbqrdbvtl864igg_20260310T040000Z",
+      "summary": "Tech - Product Standup (Growth POD)",
+      "start": "2026-03-10T09:30:00+05:30",
+      "preppedAt": "2026-03-10T03:30:00Z",
+      "topic": "growth"
+    },
+    {
+      "id": "73qsi7oeaa612qjsovmfju3mfa_20260310T060000Z",
+      "summary": "CAC & Deep Funnel Solver for Promo & Performance",
+      "start": "2026-03-10T11:30:00+05:30",
+      "preppedAt": "2026-03-10T05:30:00Z",
+      "topic": "growth"
+    },
+    {
+      "id": "3chtinurf7ec27ajcq93i6tcr8_20260310T063000Z",
+      "summary": "AI Film Making Update",
+      "start": "2026-03-10T12:00:00+05:30",
+      "preppedAt": "2026-03-10T06:00:00Z",
+      "topic": "content"
+    },
+    {
+      "id": "7veqm2r4k9neto9ajmdfkbag5g_20260309T083000Z",
+      "summary": "Harsh/Pranay Weekly",
+      "start": "2026-03-10T14:00:00+05:30",
+      "preppedAt": "2026-03-10T08:00:00Z",
+      "topic": "product_design"
+    },
+    {
+      "id": "4ossm5a0c78o5tlvm12epk8ak4",
+      "summary": "Final - Accountability and Ownership / Full Funnel",
+      "start": "2026-03-10T14:00:00+05:30",
+      "preppedAt": "2026-03-10T08:00:00Z",
+      "topic": "growth"
     }
   ],
-  "date": "2026-03-09"
+  "date": "2026-03-10"
 }
