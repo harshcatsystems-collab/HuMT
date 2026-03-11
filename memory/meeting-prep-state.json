@@ -1,40 +1,54 @@
 {
   "preppedToday": [
     {
-      "id": "u1g9nr3jef9nbqrdbvtl864igg_20260310T040000Z",
+      "id": "u1g9nr3jef9nbqrdbvtl864igg_20260311T040000Z",
       "summary": "Tech - Product Standup (Growth POD)",
-      "start": "2026-03-10T09:30:00+05:30",
-      "preppedAt": "2026-03-10T03:30:00Z",
+      "start": "2026-03-11T09:30:00+05:30",
+      "preppedAt": "2026-03-11T03:30:00Z",
       "topic": "growth"
     },
     {
-      "id": "73qsi7oeaa612qjsovmfju3mfa_20260310T060000Z",
-      "summary": "CAC & Deep Funnel Solver for Promo & Performance",
-      "start": "2026-03-10T11:30:00+05:30",
-      "preppedAt": "2026-03-10T05:30:00Z",
-      "topic": "growth"
-    },
-    {
-      "id": "3chtinurf7ec27ajcq93i6tcr8_20260310T063000Z",
-      "summary": "AI Film Making Update",
-      "start": "2026-03-10T12:00:00+05:30",
-      "preppedAt": "2026-03-10T06:00:00Z",
-      "topic": "content"
-    },
-    {
-      "id": "7veqm2r4k9neto9ajmdfkbag5g_20260309T083000Z",
-      "summary": "Harsh/Pranay Weekly",
-      "start": "2026-03-10T14:00:00+05:30",
-      "preppedAt": "2026-03-10T08:00:00Z",
+      "id": "57j054riais1pi966mi3uer4be_20260311T050000Z",
+      "summary": "Mid-Sprint Review Meeting",
+      "start": "2026-03-11T10:30:00+05:30",
+      "preppedAt": "2026-03-11T04:35:00Z",
       "topic": "product_design"
     },
     {
-      "id": "4ossm5a0c78o5tlvm12epk8ak4",
-      "summary": "Final - Accountability and Ownership / Full Funnel",
-      "start": "2026-03-10T14:00:00+05:30",
-      "preppedAt": "2026-03-10T08:00:00Z",
-      "topic": "growth"
+      "id": "3chtinurf7ec27ajcq93i6tcr8_20260311T063000Z",
+      "summary": "AI Film Making Update",
+      "start": "2026-03-11T12:00:00+05:30",
+      "preppedAt": "2026-03-11T06:00:00Z",
+      "topic": "content"
+    },
+    {
+      "id": "itgaqp1jqttqubmsq5thoaq0a6_20260311T063000Z",
+      "summary": "Engagement pod discussion",
+      "start": "2026-03-11T12:00:00+05:30",
+      "preppedAt": "2026-03-11T06:00:00Z",
+      "topic": "retention"
+    },
+    {
+      "id": "5mpuabphrv2928tofmavr8uj2r",
+      "summary": "Watch Retention Solver - Group Onboarding",
+      "start": "2026-03-11T11:00:00+05:30",
+      "preppedAt": "2026-03-11T06:00:00Z",
+      "topic": "retention"
+    },
+    {
+      "id": "1ic8tvtqta1049i5lrlimk48hp_20260311T093000Z",
+      "summary": "Bi-Monthly Research Update",
+      "start": "2026-03-11T15:00:00+05:30",
+      "preppedAt": "2026-03-11T09:00:00Z",
+      "topic": "consumer_insights"
+    }
+{
+      "id": "idrg4an12rhajeqaqvk3ra0rdg",
+      "summary": "AI Film making agentic framework demo",
+      "start": "2026-03-11T16:00:00+05:30",
+      "preppedAt": "2026-03-11T06:30:00Z",
+      "topic": "content"
     }
   ],
-  "date": "2026-03-10"
+  "date": "2026-03-11"
 }

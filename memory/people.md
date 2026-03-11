@@ -70,6 +70,13 @@
 - **Slack (STAGE):** U05QMQHCVNY
 - **Notes:** The boss. Serial entrepreneur. Phoenix story (WittyFeed → STAGE). Strategic thinker, values precision.
 
+### Divya Mehrotra
+- **Role:** Founder & Chef, Kitchen Cuddle by Divya
+- **YouTube:** Kisse Daani ("Every food has a story")
+- **Background:** TISS Gold Medalist, Ex-Programme Manager at Development Alternatives
+- **Details:** See `memory/people-divya.md` for full profile
+- **Notes:** HMT's wife. Birthday: March 11
+
 ---
 
 ## STAGE Team

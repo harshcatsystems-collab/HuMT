@@ -1,885 +1,680 @@
 {
-  "_scope": "HMT owns: activation, retention (m0/m1/m1+), dormants, reacquisition, people & culture, consumer insights/research, content strategy, and cross-org strategy. He cuts across the ENTIRE org on strategy.",
-  "tier1_product": {
-    "CEWV0GMMG": "#product",
-    "C080EJU9873": "#growth-pod",
-    "C07T7047TEZ": "#product-growth",
-    "C035F6W8DK9": "#product-design",
-    "C0368KVCL2D": "#product-analytics",
-    "C035QJ5A8G6": "#product_prd",
-    "C08N82UFN3F": "#productdesign",
-    "C06LLFTK7NK": "#product-internal",
-    "C084ZC2RNUA": "#product-discussions",
-    "C073D2D5FRP": "#pm-only-top-secret",
-    "C0ABCG0RV1N": "#homepage-personalisation"
-  },
-  "tier1_founders": {
-    "GEJUR0WA2": "#founders_sync",
-    "C085P594G7N": "#founders-plus",
-    "C06C97L05JP": "#quarterly_investor_updates"
-  },
-  "tier1_retention_lifecycle": {
-    "C06QTJMKLUA": "#retention",
-    "C0A3N67V0G2": "#retention-pod",
-    "C0A5GJRCQTZ": "#m1-watchers-retention",
-    "C0A6ZPA3XT8": "#m0-strategy",
-    "C0AAKDTMY82": "#retention_cost_optimization",
-    "C0A2QNQSA0P": "#dormant-resurrection",
-    "C0914FW9WE9": "#user_activation",
-    "C07TTQQL8JU": "#user-activation-strategy",
-    "C094EJU35L7": "#biggest-delta",
-    "C081AG7J7EC": "#retention_nikhil",
-    "C08SAF7RBUZ": "#project_data-active-subscriber-watch-retention",
-    "C08NV50KE7Q": "#content_writing_retention",
-    "C07QVKNB16C": "#retention-_-creative",
-    "C07QSGLSK97": "#copy--retention",
-    "C0AK6NSDHFH": "#watch-retention-solver"
-  },
-  "tier1_acquisition_growth": {
-    "C092XDNSDB9": "#acquisition-pod",
-    "C0904NE9Y2K": "#engagement-solver-team",
-    "C09PM1DNK34": "#growth-clm",
-    "C07N9G9LH0B": "#reengagement-pf-ads-creatives",
-    "C0905UNGLJK": "#brand-health-funnel-metrics",
-    "C09DKG689HR": "#paywall-creation"
-  },
-  "tier1_people_culture": {
-    "C082Z8FUBRV": "#all-things-people-and-culture",
-    "C084HQGH9T6": "#managers-aspiring-to-be-leaders",
-    "C0765HXVBFB": "#project-streamline-new-employee-onboarding",
-    "C0AEG5645RT": "#culture-productising"
-  },
-  "tier1_consumer_insights": {
-    "C09PWTHF44A": "#building-consumer-insights-team",
-    "C097XAP8493": "#user-research-lab",
-    "C07RVS92YT0": "#research_updates",
-    "C08G27WDN4S": "#conversion-survey"
-  },
-  "tier1_content_strategy": {
-    "C08HQ89S797": "#content_strategy",
-    "C0800A3GERY": "#stage-content-growth",
-    "C0A07SN8C6N": "#content-title-stack",
-    "C076AUFK74Z": "#content-product-jugalbandi",
-    "C090SNCDT8T": "#project-reels-and-microdramas",
-    "C090D5UJFM4": "#team-bhojpuri",
-    "C05BQLDB1SM": "#content-categorization"
-  },
-  "tier1_strategy_cross_org": {
-    "C08AY77063V": "#stage-ai",
-    "C08BPD4FJHH": "#weekly-mis",
-    "C08K7RS42RM": "#media-mentions",
-    "C08GL5NN7MK": "#stage_legal-and-finance",
-    "C06GK2M36P9": "#company-imp-docs",
-    "C09FW03KB2S": "#maha-punarjanam",
-    "C0A87E17UMS": "#monetisation",
-    "C0A4BF8HTN3": "#monetisation-core",
-    "C07N3RN9FH7": "#recommendation-engine",
-    "C08AM06AMRC": "#mini-to-main-migration",
-    "C0A8JDHNKHC": "#baahubali-squad",
-    "C0AFKKM6Y5C": "#ai-character-bots"
-  },
-  "tier2_hiring": {
-    "C095EKEC0LX": "#hiring-approval",
-    "C08QC5UHQUS": "#productgrowth-hiring",
-    "C079LSSQA0Y": "#product-and-analytics-hiring",
-    "C09TLDLA7GE": "#retention-hiring",
-    "C04DKHJKV5W": "#tech-hiring"
-  },
-  "tier2_tech": {
-    "CEHPPGSN9": "#tech-mates",
-    "C06NYMGLNGH": "#tech-frontend",
-    "C07CU8W8R5H": "#tech-growth",
-    "C07TNBUAWPP": "#tech-mobile",
-    "C07SXBJTZJ7": "#team-data",
-    "C08L4EMHR0X": "#team-devops",
-    "C08KMK43JN6": "#release-cycle",
-    "C07DC1S9JQ1": "#proj-analytics-infra"
-  },
-  "tier2_regional": {
-    "C02178ASC4X": "#haryanvi_stage",
-    "C039S74GNP2": "#rajasthani_stage",
-    "C0810CKG1C1": "#bhojpuri_stage"
-  },
-  "tier2_other": {
-    "CS75DM3KQ": "#stage-product-feedback-and-requests",
-    "C037H0GLYP4": "#marketing",
-    "C047HLH7T26": "#promo-team",
-    "C08E6782AKT": "#proj-onboarding",
-    "C06L5FQL3GU": "#credit_card_invoices",
-    "C08PGK8CM32": "#finance-department",
-    "C08HKLHM7AN": "#founder-travel",
-    "C07MZ6YVDPS": "#cre-engagement-campaign-rcs-wa",
-    "C093EC443K5": "#socials-team",
-    "C082STFKC5V": "#team-brand",
-    "C08Q2MSCEB1": "#reel-format",
-    "C07KWTTB98W": "#stage_maino"
-  },
-  "tier3_key": {
-    "CEHPZTVD3": "#stage-ke-krantikaari",
-    "CDZFAJLBV": "#announcements"
-  },
-  "tier3_all": "353 channels total (307 public + 46 private) \u2014 all joined, including #growth-pod and #monetisation (invited Feb 18)",
-  "co_founders": {
-    "Vinay Singhal": "UEHET2Q2G",
-    "Parveen Singhal": "UEJV57HQW",
-    "Shashank Vaishnav": "UE0KTBS8P"
-  },
-  "hmt": "U05QMQHCVNY",
-  "direct_reports": {
-    "Nikhil Nair": "U08L99D58PK",
-    "Pranay Merchant": "U0719V1GX3Q",
-    "Ashish Pandey": "U04A980D1N3",
-    "Samir Kumar": "U08UL9EHKKP",
-    "Radhika Vijay": "U08KBHHV9J4",
-    "Nishita Banerjee": "U07R906K9K5",
-    "Vismit Bansal": "U07LFSB0PM5",
-    "Nisha Ali": "U068F2RS5PV"
-  },
-  "people_directory": {
-    "USLACKBOT": {
-      "name": "slackbot",
-      "real_name": "Slackbot",
-      "email": ""
-    },
-    "UDYTZ0NBS": {
-      "name": "junaid",
-      "real_name": "Junaid Qureshi",
-      "email": "junaid@vatsana.com"
-    },
-    "UE0KTBS8P": {
-      "name": "shashank",
-      "real_name": "Shashank Vaishnav",
-      "email": "shashank@stage.in"
-    },
-    "UEHET2Q2G": {
-      "name": "vinay",
-      "real_name": "Vinay Singhal",
-      "email": "vinay@stage.in"
-    },
-    "UEJV57HQW": {
-      "name": "parveen",
-      "real_name": "Parveen Singhal",
-      "email": "parveen@stage.in"
-    },
-    "UEK09GX7G": {
-      "name": "kunal",
-      "real_name": "Kunal Kumrawat",
-      "email": "kunal@stage.in"
-    },
-    "U013U47GNM6": {
-      "name": "rohit.deshmukh",
-      "real_name": "Rohit Deshmukh",
-      "email": "rohit.deshmukh@stage.in"
-    },
-    "U02NX6HD7AS": {
-      "name": "neeraj",
-      "real_name": "Neeraj Kumar",
-      "email": "neeraj@stage.in"
-    },
-    "U02QS5RU0CE": {
-      "name": "stark",
-      "real_name": "Stark",
-      "email": "stark@stage.in"
-    },
-    "U030DT75RPB": {
-      "name": "sunil",
-      "real_name": "Sunil Mittal",
-      "email": "sunil@stage.in"
-    },
-    "U039SEJGKNZ": {
-      "name": "yash518",
-      "real_name": "Yash Verma",
-      "email": "yash@stage.in"
-    },
-    "U039VC42JAF": {
-      "name": "mofidul",
-      "real_name": "Mofidul Islam",
-      "email": "mofidul@stage.in"
-    },
-    "U03CN38BV7U": {
-      "name": "pravesh",
-      "real_name": "Pravesh Rajput",
-      "email": "pravesh@stage.in"
-    },
-    "U04643C2RK3": {
-      "name": "kishan",
-      "real_name": "Kishan Kumar",
-      "email": "kishan@stage.in"
-    },
-    "U047B3FRW0N": {
-      "name": "manish080",
-      "real_name": "Manish Joshi",
-      "email": "manish@stage.in"
-    },
-    "U04A980D1N3": {
-      "name": "ashishpandey",
-      "real_name": "Ashish Pandey",
-      "email": "ashishpandey@stage.in"
-    },
-    "U04B4KB3PNF": {
-      "name": "pavan",
-      "real_name": "Pavan Shukla",
-      "email": "pavan@stage.in"
-    },
-    "U04DAKA92BA": {
-      "name": "abhisheksaini",
-      "real_name": "Abhishek Saini",
-      "email": "abhisheksaini@stage.in"
-    },
-    "U04K05C125C": {
-      "name": "saurabhassija",
-      "real_name": "Saurabh Assija",
-      "email": "saurabhassija@stage.in"
-    },
-    "U04MD7BT04D": {
-      "name": "manpreet",
-      "real_name": "Manpreet Singh",
-      "email": "manpreet@stage.in"
-    },
-    "U04Q3HCSV4N": {
-      "name": "mahendrasaini",
-      "real_name": "MAHENDRA",
-      "email": "mahendra@stage.in"
-    },
-    "U05HAE85RL2": {
-      "name": "rahul.chauhan",
-      "real_name": "Rahul Chauhan",
-      "email": "rahul.chauhan@stage.in"
-    },
-    "U05MX9ALLVB": {
-      "name": "anushka",
-      "real_name": "Anushka Shrivastava",
-      "email": "anushka@stage.in"
-    },
-    "U05QMQHCVNY": {
-      "name": "harsh500",
-      "real_name": "Harsh Mani Tripathi",
-      "email": "harsh@stage.in"
-    },
-    "U05UY430AEQ": {
-      "name": "himanshi",
-      "real_name": "Himanshi Pruthi",
-      "email": "himanshi@stage.in"
-    },
-    "U0632CEKM0B": {
-      "name": "vipan",
-      "real_name": "Vipan Malawat",
-      "email": "vipan@stage.in"
-    },
-    "U068F2RS5PV": {
-      "name": "nisha",
-      "real_name": "Nisha",
-      "email": "nisha@stage.in"
-    },
-    "U06BGE5FME2": {
-      "name": "vaidik",
-      "real_name": "Vaidik Kapoor",
-      "email": "vaidik@stage.in"
-    },
-    "U06FGK8P2GZ": {
-      "name": "ankit.parashar",
-      "real_name": "Ankit Parashar",
-      "email": "ankit.parashar@stage.in"
-    },
-    "U06H0VARP97": {
-      "name": "renu",
-      "real_name": "Renu Rana",
-      "email": "renu@stage.in"
-    },
-    "U06K1FFPT71": {
-      "name": "manoj",
-      "real_name": "Manoj Mehra",
-      "email": "manoj@stage.in"
-    },
-    "U06LCQRJ35L": {
-      "name": "charu",
-      "real_name": "Charu Sharma",
-      "email": "charu@stage.in"
-    },
-    "U06M9123QJC": {
-      "name": "ajay935",
-      "real_name": "Ajay Kumar",
-      "email": "ajay@stage.in"
-    },
-    "U0719V1GX3Q": {
-      "name": "pranay",
-      "real_name": "Pranay Merchant",
-      "email": "pranay@stage.in"
-    },
-    "U0779EHEUK1": {
-      "name": "anisha",
-      "real_name": "Anisha",
-      "email": "anisha@stage.in"
-    },
-    "U078AEUH7SR": {
-      "name": "jogender",
-      "real_name": "Jogender Singh",
-      "email": "jogender@stage.in"
-    },
-    "U078P1T1ULW": {
-      "name": "kushagra675",
-      "real_name": "Kushagra Gour",
-      "email": "Kushagra@stage.in"
-    },
-    "U07A91AB7GW": {
-      "name": "tarun",
-      "real_name": "Tarun Sahnan",
-      "email": "tarun@stage.in"
-    },
-    "U07BGHYQKE1": {
-      "name": "nikhil.soni",
-      "real_name": "Nikhil Soni",
-      "email": "nikhil.soni@stage.in"
-    },
-    "U07BHN4SDHV": {
-      "name": "shwetabh",
-      "real_name": "Shwetabh Gupta",
-      "email": "shwetabh@stage.in"
-    },
-    "U07CRBXGTEK": {
-      "name": "akshay.kumar",
-      "real_name": "Akshay",
-      "email": "akshay.kumar@stage.in"
-    },
-    "U07EJ9P4CTV": {
-      "name": "pragun",
-      "real_name": "Pragun Bhutani",
-      "email": "pragun@stage.in"
-    },
-    "U07EV6ZBPNE": {
-      "name": "sushant",
-      "real_name": "Sushant Kaushik",
-      "email": "sushant@stage.in"
-    },
-    "U07FXP4MKDY": {
-      "name": "saloni.goyal",
-      "real_name": "Saloni Goyal",
-      "email": "saloni.goyal@stage.in"
-    },
-    "U07GDMPCU3X": {
-      "name": "cs",
-      "real_name": "Lalit Sangwan",
-      "email": "cs@stage.in"
-    },
-    "U07LFSB0PM5": {
-      "name": "vismit",
-      "real_name": "Vismit Bansal",
-      "email": "vismit@stage.in"
-    },
-    "U07PE084LNQ": {
-      "name": "jyoti",
-      "real_name": "Jyoti Jakhar",
-      "email": "jyoti@stage.in"
-    },
-    "U07Q1LJMR7B": {
-      "name": "yatika",
-      "real_name": "Yatika kashyap",
-      "email": "yatika@stage.in"
-    },
-    "U07R906K9K5": {
-      "name": "nishita",
-      "real_name": "Nishita",
-      "email": "nishita@stage.in"
-    },
-    "U07S9DUU43U": {
-      "name": "abhay.p",
-      "real_name": "Abhay Pratap Singh",
-      "email": "abhay.p@stage.in"
-    },
-    "U07TQ7P64SK": {
-      "name": "naman",
-      "real_name": "Naman Girdhaar",
-      "email": "naman@stage.in"
-    },
-    "U0800Q5T1A6": {
-      "name": "amar.dubey",
-      "real_name": "Amar Dubey",
-      "email": "amar.dubey@stage.in"
-    },
-    "U081VG95FE3": {
-      "name": "sushant.sharma",
-      "real_name": "Sushant Sharma",
-      "email": "sushant.sharma@stage.in"
-    },
-    "U0826M8J8EM": {
-      "name": "vinodkumar",
-      "real_name": "Vinod Kumar",
-      "email": "vinod@stage.in"
-    },
-    "U082Q7F56F8": {
-      "name": "priyanka",
-      "real_name": "Priyanka Gupta",
-      "email": "priyanka@stage.in"
-    },
-    "U082Q7JQ9AS": {
-      "name": "ankur",
-      "real_name": "Ankur Hooda",
-      "email": "ankur@stage.in"
-    },
-    "U083JL19UMD": {
-      "name": "akriti",
-      "real_name": "Akriti Kaushik",
-      "email": "akriti@stage.in"
-    },
-    "U083W1PQXKP": {
-      "name": "anish",
-      "real_name": "anish",
-      "email": "anish@stage.in"
-    },
-    "U085SNRK2JD": {
-      "name": "prashant.verma",
-      "real_name": "Prashant K Verma",
-      "email": "prashant.verma@stage.in"
-    },
-    "U086LB19E0P": {
-      "name": "vedant.w",
-      "real_name": "Vedant Wagh",
-      "email": "vedant.w@stage.in"
-    },
-    "U088MJL8D4Z": {
-      "name": "mayur130",
-      "real_name": "Mayur Manchundia",
-      "email": "mayur@stage.in"
-    },
-    "U089APN985P": {
-      "name": "hemabh",
-      "real_name": "Hemabh Kamboj",
-      "email": "hemabh@stage.in"
-    },
-    "U089FV02X4M": {
-      "name": "rajesh.k",
-      "real_name": "Rajesh",
-      "email": "rajesh.k@stage.in"
-    },
-    "U089MA16V1S": {
-      "name": "mohit.k",
-      "real_name": "Mohit Kumar",
-      "email": "mohit.k@stage.in"
-    },
-    "U089YDN9GQP": {
-      "name": "ritu",
-      "real_name": "Ritu Seshma",
-      "email": "ritu@stage.in"
-    },
-    "U08AEKHKV1R": {
-      "name": "dineshpradhan70",
-      "real_name": "Dinesh Pradhan",
-      "email": "dineshpradhan70@gmail.com"
-    },
-    "U08AH85CEFN": {
-      "name": "parth.lekhak",
-      "real_name": "Anurag",
-      "email": "parth.lekhak@gmail.com"
-    },
-    "U08B0GNMR39": {
-      "name": "namneesh",
-      "real_name": "Namneesh Sharma",
-      "email": "namneesh@stage.in"
-    },
-    "U08B8QWDWR5": {
-      "name": "harshit.singh",
-      "real_name": "Harshit Singh",
-      "email": "Harshit.Singh@stage.in"
-    },
-    "U08DLCSK7QS": {
-      "name": "kashish",
-      "real_name": "Kashish Thakur",
-      "email": "Kashish@stage.in"
-    },
-    "U08E8NSJY8P": {
-      "name": "dharmendra",
-      "real_name": "Dharmendra Singh",
-      "email": "Dharmendra@stage.in"
-    },
-    "U08EGARFW5C": {
-      "name": "sumit.dhankar",
-      "real_name": "Sumit Dhankher",
-      "email": "sumit.dhankar@stage.in"
-    },
-    "U08HF39U1GC": {
-      "name": "mayank683",
-      "real_name": "Mayank Keserwani",
-      "email": "Mayank@stage.in"
-    },
-    "U08HTBH8MFA": {
-      "name": "vipul",
-      "real_name": "Vipul Sharma",
-      "email": "vipul@stage.in"
-    },
-    "U08HU6RSC7P": {
-      "name": "bikram.singh",
-      "real_name": "Bikram Singh",
-      "email": "bikram.singh@stage.in"
-    },
-    "U08HXUP5U3D": {
-      "name": "ankit.saxena",
-      "real_name": "Ankit Saxena",
-      "email": "ankit.saxena@stage.in"
-    },
-    "U08JESKNT24": {
-      "name": "purushottam",
-      "real_name": "Purushottam Jha",
-      "email": "Purushottam@stage.in"
-    },
-    "U08JF7050AK": {
-      "name": "vaibhav.goyal",
-      "real_name": "Vaibhav Goyal",
-      "email": "vaibhav.goyal@stage.in"
-    },
-    "U08K1CXSHTJ": {
-      "name": "amit.kumar",
-      "real_name": "Amit Kumar",
-      "email": "amit.kumar@stage.in"
-    },
-    "U08KBHHV9J4": {
-      "name": "radhika.vijay",
-      "real_name": "Radhika Vijay",
-      "email": "radhika.vijay@stage.in"
-    },
-    "U08L99D58PK": {
-      "name": "nikhil.nair",
-      "real_name": "Nikhil Nair",
-      "email": "nikhil.nair@stage.in"
-    },
-    "U08L99DK9NV": {
-      "name": "harsh.chaudhary",
-      "real_name": "Harsh Chaudhary",
-      "email": "harsh.chaudhary@stage.in"
-    },
-    "U08M3FB9EN5": {
-      "name": "siddhant.chettri",
-      "real_name": "siddhant",
-      "email": "siddhant.chettri@stage.in"
-    },
-    "U08M4LD47BR": {
-      "name": "prakash.kumar",
-      "real_name": "Prakash Kumar",
-      "email": "prakash.kumar@stage.in"
-    },
-    "U08MRHK61BK": {
-      "name": "manasvi.dobhal",
-      "real_name": "Manasvi Dobhal",
-      "email": "manasvi.dobhal@stage.in"
-    },
-    "U08P2NXR8G0": {
-      "name": "aditya.rao",
-      "real_name": "Aditya Rao",
-      "email": "aditya.rao@stage.in"
-    },
-    "U08Q3B6A770": {
-      "name": "siddhartha.mondal",
-      "real_name": "Siddhartha",
-      "email": "siddhartha.mondal@stage.in"
-    },
-    "U08QBSH99EK": {
-      "name": "suhani",
-      "real_name": "Suhani",
-      "email": "suhani@stage.in"
-    },
-    "U08QCRJM1PA": {
-      "name": "sakshi.sharma",
-      "real_name": "Sakshi Sharma",
-      "email": "sakshi.sharma@stage.in"
-    },
-    "U08TGV2B8TY": {
-      "name": "aadhya.palwa",
-      "real_name": "Aadhya Palwa",
-      "email": "aadhya.palwa@stage.in"
-    },
-    "U08UCNVRKR7": {
-      "name": "lukesh.kolhe",
-      "real_name": "Lukesh Kolhe",
-      "email": "lukesh.kolhe@stage.in"
-    },
-    "U08UL9EHKKP": {
-      "name": "samir.kumar",
-      "real_name": "Samir Kumar",
-      "email": "samir.kumar@stage.in"
-    },
-    "U0959DWCSR4": {
-      "name": "engineering",
-      "real_name": "TECH",
-      "email": "engineering@stage.in"
-    },
-    "U096E4RCGHF": {
-      "name": "sahil.sharma",
-      "real_name": "Sahil Sharma",
-      "email": "sahil.sharma@stage.in"
-    },
-    "U099E81PQ7J": {
-      "name": "deepak.prajapati",
-      "real_name": "Deepak Prajapati",
-      "email": "deepak.prajapati@stage.in"
-    },
-    "U09AK8X90Q0": {
-      "name": "shubham.singla",
-      "real_name": "Shubham Singla",
-      "email": "shubham.singla@stage.in"
-    },
-    "U09APNQ00LU": {
-      "name": "sneha.singh",
-      "real_name": "Sneha Singh",
-      "email": "sneha.singh@stage.in"
-    },
-    "U09AU76EHEE": {
-      "name": "ishant.sehrawat",
-      "real_name": "Ishant Sehrawat",
-      "email": "ishant.sehrawat@stage.in"
-    },
-    "U09AZ6SV9TL": {
-      "name": "rohit.singh",
-      "real_name": "Rohit Singh",
-      "email": "rohit.singh@stage.in"
-    },
-    "U09CCHFJH28": {
-      "name": "nidhi.mishra",
-      "real_name": "Nidhi Mishra",
-      "email": "Nidhi.Mishra@stage.in"
-    },
-    "U09CCLQ3P0U": {
-      "name": "aditya.swaroop",
-      "real_name": "Aditya Swaroop",
-      "email": "Aditya.Swaroop@stage.in"
-    },
-    "U09CFGN5TRU": {
-      "name": "akash.kumar",
-      "real_name": "Akash Kumar",
-      "email": "akash.Kumar@stage.in"
-    },
-    "U09CMRNBKQA": {
-      "name": "himanshu.vadhera",
-      "real_name": "Himanshu Vadhera",
-      "email": "himanshu.vadhera@stage.in"
-    },
-    "U09CTERRYGK": {
-      "name": "nikita",
-      "real_name": "Nikita",
-      "email": "nikita@stage.in"
-    },
-    "U09FGKVMS81": {
-      "name": "nikhil.gupta",
-      "real_name": "Nikhil Gupta",
-      "email": "nikhil.gupta@stage.in"
-    },
-    "U09G0SABZ4P": {
-      "name": "akhilesh",
-      "real_name": "Akhilesh kumar",
-      "email": "akhilesh@stage.in"
-    },
-    "U09HZD8085S": {
-      "name": "naman.rao",
-      "real_name": "Naman Rao",
-      "email": "Naman.rao@stage.in"
-    },
-    "U09JSL09GKF": {
-      "name": "saurav",
-      "real_name": "Saurav Dutta",
-      "email": "saurav@stage.in"
-    },
-    "U09LHTE4LDT": {
-      "name": "vaibhav.verma",
-      "real_name": "Vaibhav Verma",
-      "email": "vaibhav.verma@stage.in"
-    },
-    "U09LM6696F2": {
-      "name": "kamal.kumar",
-      "real_name": "Kamal Singh Chauhan",
-      "email": "kamal.kumar@stage.in"
-    },
-    "U09NCC9M3AT": {
-      "name": "rajiv",
-      "real_name": "Rajiv S",
-      "email": "rajiv@stage.in"
-    },
-    "U09QGG6HLG0": {
-      "name": "ts.vishnu",
-      "real_name": "Vishnu TS",
-      "email": "ts.vishnu@stage.in"
-    },
-    "U09RA7GRW1M": {
-      "name": "himanshu.g",
-      "real_name": "Himanshu Gupta",
-      "email": "himanshu.g@stage.in"
-    },
-    "U09S4HRMG7K": {
-      "name": "sunil.y",
-      "real_name": "Sunil Yadav",
-      "email": "sunil.y@stage.in"
-    },
-    "U09TYHJFQLB": {
-      "name": "piyush.prabhakar",
-      "real_name": "Piyush Prabhakar",
-      "email": "piyush.prabhakar@stage.in"
-    },
-    "U0A0GPCUZ6G": {
-      "name": "gauri",
-      "real_name": "Gauri Prajapat",
-      "email": "Gauri@stage.in"
-    },
-    "U0A0S22RN4Q": {
-      "name": "ashish.meena",
-      "real_name": "Ashish Meena",
-      "email": "Ashish.meena@stage.in"
-    },
-    "U0A20D0M7FD": {
-      "name": "shivani.sharma",
-      "real_name": "Shivani Sharma",
-      "email": "shivani.sharma@stage.in"
-    },
-    "U0A232U4Z70": {
-      "name": "shantanu.chatterjee",
-      "real_name": "Shantanu Chatterjee",
-      "email": "shantanu.chatterjee@stage.in"
-    },
-    "U0A2LUCQCE9": {
-      "name": "kaustubh",
-      "real_name": "Kaustubh",
-      "email": "kaustubh@stage.in"
-    },
-    "U0A3B4GLZRS": {
-      "name": "gopal",
-      "real_name": "Gopal Iyer",
-      "email": "gopal@stage.in"
-    },
-    "U0A3C27NJGN": {
-      "name": "hiren94setiya",
-      "real_name": "Hiren Setiya",
-      "email": "hiren94setiya@gmail.com"
-    },
-    "U0A3QQQ3J21": {
-      "name": "shivansh",
-      "real_name": "Shivansh Rastogi",
-      "email": "shivansh@stage.in"
-    },
-    "U0A4BA697BL": {
-      "name": "jagriti",
-      "real_name": "Jagriti Raman",
-      "email": "jagriti@stage.in"
-    },
-    "U0A4V6M3BT5": {
-      "name": "kawaljeet",
-      "real_name": "Kawaljeet Kaur",
-      "email": "kawaljeet@stage.in"
-    },
-    "U0A51N5SYRH": {
-      "name": "aaliya",
-      "real_name": "Aaliya Mirza",
-      "email": "aaliya@stage.in"
-    },
-    "U0A54GY20FQ": {
-      "name": "lalit",
-      "real_name": "Lalit Sangwan",
-      "email": "lalit@stage.in"
-    },
-    "U0A54LTEXQV": {
-      "name": "shivangi",
-      "real_name": "shivangi",
-      "email": "shivangi@stage.in"
-    },
-    "U0A5BMGA7UL": {
-      "name": "ankur.kanaujia",
-      "real_name": "Ankur Kanaujia",
-      "email": "ankur.Kanaujia@stage.in"
-    },
-    "U0A688ATJN6": {
-      "name": "cos",
-      "real_name": "cos",
-      "email": "cos@stage.in"
-    },
-    "U0A6KADGZLM": {
-      "name": "surbhi.aggarwal",
-      "real_name": "Surbhi Aggarwal",
-      "email": "surbhi.Aggarwal@stage.in"
-    },
-    "U0A6NA4PH1T": {
-      "name": "haider",
-      "real_name": "Haider Ali",
-      "email": "haider@stage.in"
-    },
-    "U0A7B92UL8L": {
-      "name": "sanjeevani",
-      "real_name": "Sanjeevani",
-      "email": "sanjeevani@stage.in"
-    },
-    "U0A7YN8LH0W": {
-      "name": "ankit.sharma",
-      "real_name": "Ankit Sharma",
-      "email": "ankit.sharma@stage.in"
-    },
-    "U0A92L5NM1V": {
-      "name": "rishit.gupta",
-      "real_name": "Rishit Gupta",
-      "email": "rishit.gupta@stage.in"
-    },
-    "U0A9AUKQ1B5": {
-      "name": "saurabh.s",
-      "real_name": "SAURABH SUMAN",
-      "email": "saurabh.s@stage.in"
-    },
-    "U0A9BN4JNNP": {
-      "name": "saurav.deep",
-      "real_name": "Saurav Deep",
-      "email": "saurav.deep@stage.in"
-    },
-    "U0A9FJ8SR2R": {
-      "name": "deepak.kumar",
-      "real_name": "Deepak Kumar Yadav",
-      "email": "deepak.kumar@stage.in"
-    },
-    "U0AA5FTLL2H": {
-      "name": "vikram.singh",
-      "real_name": "Vikram Singh",
-      "email": "vikram.singh@stage.in"
-    },
-    "U0AAX8NCSDC": {
-      "name": "vishwendra",
-      "real_name": "Vishwendra",
-      "email": "Vishwendra@stage.in"
-    },
-    "U0ABUUWNY78": {
-      "name": "kabir.dahiya",
-      "real_name": "kabir dahiya",
-      "email": "kabir.dahiya@stage.in"
-    },
-    "U0ACE1BGWLT": {
-      "name": "junaid940",
-      "real_name": "Junaid Qureshi",
-      "email": "junaid@stage.in"
-    },
-    "U0AEKLKTM98": {
-      "name": "vishal.sharma",
-      "real_name": "Vishal Sharma",
-      "email": "vishal.sharma@stage.in"
-    },
-    "U0AEP8PTH4L": {
-      "name": "aayush.chauhan",
-      "real_name": "Aayush Chauhan",
-      "email": "aayush.chauhan@stage.in"
-    },
-    "U0AF4KAJHDL": {
-      "name": "yash.khare",
-      "real_name": "Yash Khare",
-      "email": "yash.khare@stage.in"
-    },
-    "U0AGH4X92UA": {
-      "name": "daksh.jigyasi",
-      "real_name": "Daksh Jigyasi",
-      "email": "daksh.jigyasi@stage.in"
-    },
-    "U0AGZE7FXJN": {
-      "name": "akshay.b",
-      "real_name": "Akshay Badhara",
-      "email": "akshay.b@stage.in"
-    },
-    "U0AH3NSHCBB": {
-      "name": "simran.pathak",
-      "real_name": "Simran Pathak",
-      "email": "simran.pathak@stage.in"
-    },
-    "U0AHB9L9J3S": {
-      "name": "komal.mathur",
-      "real_name": "Komal Mathur",
-      "email": "komal.mathur@stage.in"
+  "channels": {
+    "CDZFAJLBV": {
+      "name": "announcements",
+      "id": "CDZFAJLBV"
+    },
+    "CE277N1PH": {
+      "name": "onefeed-sdk",
+      "id": "CE277N1PH"
+    },
+    "CE2HG4LA2": {
+      "name": "mobiletech",
+      "id": "CE2HG4LA2"
+    },
+    "CE8TGJHC4": {
+      "name": "team1",
+      "id": "CE8TGJHC4"
+    },
+    "CEAB2BUSF": {
+      "name": "vatsanaemail",
+      "id": "CEAB2BUSF"
+    },
+    "CEAF06RGE": {
+      "name": "v9-onefeed-dashboard",
+      "id": "CEAF06RGE"
+    },
+    "CEC2ED2RX": {
+      "name": "onefeed_media",
+      "id": "CEC2ED2RX"
+    },
+    "CEGS1SLFJ": {
+      "name": "theofficialwittyfeed",
+      "id": "CEGS1SLFJ"
+    },
+    "CEHDDUBQU": {
+      "name": "wittyfeed",
+      "id": "CEHDDUBQU"
+    },
+    "CEHDVRC83": {
+      "name": "thecxos",
+      "id": "CEHDVRC83"
+    },
+    "CEHLABRL2": {
+      "name": "programmaticsmediadek",
+      "id": "CEHLABRL2"
+    },
+    "CEHPPGSN9": {
+      "name": "tech-mates",
+      "id": "CEHPPGSN9"
+    },
+    "CEHPZTVD3": {
+      "name": "stage-ke-krantikaari",
+      "id": "CEHPZTVD3"
+    },
+    "CEHUDR108": {
+      "name": "geeksmate_bd",
+      "id": "CEHUDR108"
+    },
+    "CEJ2VN8CR": {
+      "name": "innervoice_bd",
+      "id": "CEJ2VN8CR"
+    },
+    "CEJF806R2": {
+      "name": "onefeedtech",
+      "id": "CEJF806R2"
+    },
+    "CEJG8B70T": {
+      "name": "leadseod",
+      "id": "CEJG8B70T"
+    },
+    "CEJJXA5AN": {
+      "name": "hrandadmin",
+      "id": "CEJJXA5AN"
+    },
+    "CEJK31TFD": {
+      "name": "thedesignmafia",
+      "id": "CEJK31TFD"
+    },
+    "CEJK4RB4K": {
+      "name": "mumbai-team",
+      "id": "CEJK4RB4K"
+    },
+    "CEK1C296W": {
+      "name": "v9-affiliate-data",
+      "id": "CEK1C296W"
+    },
+    "CEK4HN9GD": {
+      "name": "thepopple_socialmedia",
+      "id": "CEK4HN9GD"
+    },
+    "CEKQZFR8A": {
+      "name": "conferenceroom",
+      "id": "CEKQZFR8A"
+    },
+    "CELKMUL9F": {
+      "name": "ard-programmatics",
+      "id": "CELKMUL9F"
+    },
+    "CELRJQ682": {
+      "name": "thepopple--marcomm",
+      "id": "CELRJQ682"
+    },
+    "CEN2W1DGA": {
+      "name": "onefeed",
+      "id": "CEN2W1DGA"
+    },
+    "CENTYFW6M": {
+      "name": "onefeed_distribution",
+      "id": "CENTYFW6M"
+    },
+    "CEPAML3B6": {
+      "name": "daily_traffic_report",
+      "id": "CEPAML3B6"
+    },
+    "CESRF1WR1": {
+      "name": "jaiho",
+      "id": "CESRF1WR1"
+    },
+    "CEV13S971": {
+      "name": "bread_foodmate",
+      "id": "CEV13S971"
+    },
+    "CEVCU66G2": {
+      "name": "thepopple",
+      "id": "CEVCU66G2"
+    },
+    "CEVLA7BFX": {
+      "name": "mostlyhealth",
+      "id": "CEVLA7BFX"
+    },
+    "CEW94N20L": {
+      "name": "mostlymoney",
+      "id": "CEW94N20L"
+    },
+    "CEWV0GMMG": {
+      "name": "product",
+      "id": "CEWV0GMMG"
+    },
+    "CEX4WFYAJ": {
+      "name": "thepoppleeod",
+      "id": "CEX4WFYAJ"
+    },
+    "CEX7B2TAA": {
+      "name": "programmaticfinance",
+      "id": "CEX7B2TAA"
+    },
+    "CEZRCN61K": {
+      "name": "adidas_article",
+      "id": "CEZRCN61K"
+    },
+    "CF0QU7CH2": {
+      "name": "hp_laptops",
+      "id": "CF0QU7CH2"
+    },
+    "CF59ANPT6": {
+      "name": "accounts_finance",
+      "id": "CF59ANPT6"
+    },
+    "CF5AU9H6H": {
+      "name": "content-programmatics",
+      "id": "CF5AU9H6H"
+    },
+    "CF71LHK9C": {
+      "name": "mirzapur",
+      "id": "CF71LHK9C"
+    },
+    "CF84JQWAC": {
+      "name": "indialeads",
+      "id": "CF84JQWAC"
+    },
+    "CF8B4RS6M": {
+      "name": "innervoice",
+      "id": "CF8B4RS6M"
+    },
+    "CFH3M3F26": {
+      "name": "wittyhacks",
+      "id": "CFH3M3F26"
+    },
+    "CFWAZ8Q2C": {
+      "name": "product_design",
+      "id": "CFWAZ8Q2C"
+    },
+    "CG4LEN5HV": {
+      "name": "reddit-content-team",
+      "id": "CG4LEN5HV"
+    },
+    "CG50W2JTY": {
+      "name": "contech",
+      "id": "CG50W2JTY"
+    },
+    "CG91NNEHE": {
+      "name": "videos_internal",
+      "id": "CG91NNEHE"
+    },
+    "CG9L0M3PV": {
+      "name": "videos-and-us_leads",
+      "id": "CG9L0M3PV"
+    },
+    "CGQ80KBRV": {
+      "name": "wittyfeedcontent",
+      "id": "CGQ80KBRV"
+    },
+    "CJPKMFV54": {
+      "name": "deployment",
+      "id": "CJPKMFV54"
+    },
+    "CJPL664JJ": {
+      "name": "build",
+      "id": "CJPL664JJ"
+    },
+    "CK16CHKLN": {
+      "name": "omji-chetan",
+      "id": "CK16CHKLN"
+    },
+    "CL13DF93K": {
+      "name": "thinktank",
+      "id": "CL13DF93K"
+    },
+    "CL7DS8ZLY": {
+      "name": "stage",
+      "id": "CL7DS8ZLY"
+    },
+    "CL8CN59B2": {
+      "name": "catchuphr",
+      "id": "CL8CN59B2"
+    },
+    "CL9HWGAR4": {
+      "name": "traffic_usasites",
+      "id": "CL9HWGAR4"
+    },
+    "CM61EHG6L": {
+      "name": "wittyfeedupdates",
+      "id": "CM61EHG6L"
+    },
+    "CMQFSQA0J": {
+      "name": "product-stagecontent",
+      "id": "CMQFSQA0J"
+    },
+    "CNPPHBDT8": {
+      "name": "innervoicesocial",
+      "id": "CNPPHBDT8"
+    },
+    "CNYPWRY83": {
+      "name": "team-nukkad",
+      "id": "CNYPWRY83"
+    },
+    "CRGL272DP": {
+      "name": "zeplin",
+      "id": "CRGL272DP"
+    },
+    "CS75DM3KQ": {
+      "name": "stage-product-feedback-and-requests",
+      "id": "CS75DM3KQ"
+    },
+    "C0101V0KR1N": {
+      "name": "wfcontentstandup",
+      "id": "C0101V0KR1N"
+    },
+    "C0107GZBRAQ": {
+      "name": "wfh-worklog",
+      "id": "C0107GZBRAQ"
+    },
+    "C0115DZPDMG": {
+      "name": "hrworklogs",
+      "id": "C0115DZPDMG"
+    },
+    "C0121EQ4SCT": {
+      "name": "stagegrowthandmarketing",
+      "id": "C0121EQ4SCT"
+    },
+    "C013GQHKNM8": {
+      "name": "build_1",
+      "id": "C013GQHKNM8"
+    },
+    "C013H9CP7AR": {
+      "name": "retention-old",
+      "id": "C013H9CP7AR"
+    },
+    "C015XEMKN3G": {
+      "name": "we_work_for_our_customer",
+      "id": "C015XEMKN3G"
+    },
+    "C016TU33PU1": {
+      "name": "funatwork",
+      "id": "C016TU33PU1"
+    },
+    "C017KEVC3V2": {
+      "name": "all_character_video",
+      "id": "C017KEVC3V2"
+    },
+    "C018L6S1G6R": {
+      "name": "\u0918\u0930-\u0915\u093e-quora",
+      "id": "C018L6S1G6R"
+    },
+    "C01B905KNJZ": {
+      "name": "stagecms",
+      "id": "C01B905KNJZ"
+    },
+    "C01PPHA8F34": {
+      "name": "testforamplitude",
+      "id": "C01PPHA8F34"
+    },
+    "C01QY8UAQP6": {
+      "name": "monetization",
+      "id": "C01QY8UAQP6"
+    },
+    "C020VPVFZUL": {
+      "name": "alert_gcp",
+      "id": "C020VPVFZUL"
+    },
+    "C021635LEQN": {
+      "name": "payment-success",
+      "id": "C021635LEQN"
+    },
+    "C02178ASC4X": {
+      "name": "haryanvi_stage",
+      "id": "C02178ASC4X"
+    },
+    "C021SC8GYJD": {
+      "name": "payment-failure",
+      "id": "C021SC8GYJD"
+    },
+    "C025J6WKVFE": {
+      "name": "reengagement",
+      "id": "C025J6WKVFE"
+    },
+    "C02F43TJEG7": {
+      "name": "crash-reports",
+      "id": "C02F43TJEG7"
+    },
+    "C02G45C345U": {
+      "name": "cos-projects",
+      "id": "C02G45C345U"
+    },
+    "C02HBN8F0SK": {
+      "name": "ios-internal-testing",
+      "id": "C02HBN8F0SK"
+    },
+    "C02K0BBP75J": {
+      "name": "live-streamings",
+      "id": "C02K0BBP75J"
+    },
+    "C02MQC6MSN5": {
+      "name": "my-note",
+      "id": "C02MQC6MSN5"
+    },
+    "C02QWQ7FXRA": {
+      "name": "discussion",
+      "id": "C02QWQ7FXRA"
+    },
+    "C02SS03EZM3": {
+      "name": "good-reads",
+      "id": "C02SS03EZM3"
+    },
+    "C033GF3BVMZ": {
+      "name": "tv-android-platter",
+      "id": "C033GF3BVMZ"
+    },
+    "C0346C5LWPN": {
+      "name": "prd-changes",
+      "id": "C0346C5LWPN"
+    },
+    "C035F6W8DK9": {
+      "name": "product-design",
+      "id": "C035F6W8DK9"
+    },
+    "C035QJ5A8G6": {
+      "name": "product_prd",
+      "id": "C035QJ5A8G6"
+    },
+    "C035XUG0D24": {
+      "name": "weekly-initiatives",
+      "id": "C035XUG0D24"
+    },
+    "C035Y3QTD7Y": {
+      "name": "jira-learnings",
+      "id": "C035Y3QTD7Y"
+    },
+    "C0368KVCL2D": {
+      "name": "product-analytics",
+      "id": "C0368KVCL2D"
+    },
+    "C037H0GLYP4": {
+      "name": "marketing",
+      "id": "C037H0GLYP4"
+    },
+    "C037U7RUS2F": {
+      "name": "subscription_ads_haryanvi",
+      "id": "C037U7RUS2F"
+    },
+    "C0382PLRWRL": {
+      "name": "copies-conversion",
+      "id": "C0382PLRWRL"
+    },
+    "C039S74GNP2": {
+      "name": "rajasthani_stage",
+      "id": "C039S74GNP2"
+    },
+    "C03BWBS957X": {
+      "name": "cms-issues",
+      "id": "C03BWBS957X"
+    },
+    "C03C4QAPABU": {
+      "name": "leave-intimation",
+      "id": "C03C4QAPABU"
+    },
+    "C03CH44KLUT": {
+      "name": "stage-backend",
+      "id": "C03CH44KLUT"
+    },
+    "C03H1HU1FRD": {
+      "name": "backend",
+      "id": "C03H1HU1FRD"
+    },
+    "C03JCM4FG75": {
+      "name": "standup_meeting",
+      "id": "C03JCM4FG75"
+    },
+    "C03JX2Q1S94": {
+      "name": "social-media-trends-",
+      "id": "C03JX2Q1S94"
+    },
+    "C03S73A1R7C": {
+      "name": "nukkad-wali-chai",
+      "id": "C03S73A1R7C"
+    },
+    "C045RSY0WSZ": {
+      "name": "analytics-with-anujay",
+      "id": "C045RSY0WSZ"
+    },
+    "C04612FQ3RS": {
+      "name": "tv_discussion_crash",
+      "id": "C04612FQ3RS"
+    },
+    "C0474AMMP61": {
+      "name": "diwalicampaignrajasthani",
+      "id": "C0474AMMP61"
+    },
+    "C0475A8TV5L": {
+      "name": "release-plan-raj",
+      "id": "C0475A8TV5L"
+    },
+    "C0479T52GMT": {
+      "name": "social-media-hr",
+      "id": "C0479T52GMT"
+    },
+    "C047BGNCKFC": {
+      "name": "copywriting-rj",
+      "id": "C047BGNCKFC"
+    },
+    "C047BKTJ01G": {
+      "name": "laptop_request",
+      "id": "C047BKTJ01G"
+    },
+    "C047BR7EDFV": {
+      "name": "release-plan-hr",
+      "id": "C047BR7EDFV"
+    },
+    "C047CS5H9PC": {
+      "name": "social-media-raj",
+      "id": "C047CS5H9PC"
+    },
+    "C047DV94G4C": {
+      "name": "stage_leads_cmc",
+      "id": "C047DV94G4C"
+    },
+    "C047E57Q2VA": {
+      "name": "procurement-and-vendor-payment-group-",
+      "id": "C047E57Q2VA"
+    },
+    "C047EJXV268": {
+      "name": "requesting-advance-sallery-",
+      "id": "C047EJXV268"
+    },
+    "C047F65FQRK": {
+      "name": "subscription-ads-rajasthani",
+      "id": "C047F65FQRK"
+    },
+    "C047H8326TX": {
+      "name": "content-lead-hr",
+      "id": "C047H8326TX"
+    },
+    "C047HLH7T26": {
+      "name": "promo-team",
+      "id": "C047HLH7T26"
+    },
+    "C047Q5M6SCR": {
+      "name": "copywriting-hr",
+      "id": "C047Q5M6SCR"
+    },
+    "C04849DUKBJ": {
+      "name": "mohit-bharti-creator",
+      "id": "C04849DUKBJ"
+    },
+    "C0488M474TS": {
+      "name": "marketing-humanresources",
+      "id": "C0488M474TS"
+    },
+    "C048HV2P8SX": {
+      "name": "payments_legal_hr_agreement",
+      "id": "C048HV2P8SX"
+    },
+    "C048P8ECGBZ": {
+      "name": "tech-erd",
+      "id": "C048P8ECGBZ"
+    },
+    "C048YGP4P43": {
+      "name": "stage_growweasy_",
+      "id": "C048YGP4P43"
+    },
+    "C049B8XUZ0R": {
+      "name": "stage_growweasy",
+      "id": "C049B8XUZ0R"
+    },
+    "C0ALA37HGE5": {
+      "name": "admin-workflow",
+      "tier": "Tier 2"
+    },
+    "C0AFKKM6Y5C": {
+      "name": "ai-character-bots",
+      "tier": "Tier 2"
+    },
+    "C0AFDSFD3PA": {
+      "name": "ai-native-agentic-framework-content",
+      "tier": "Tier 2"
+    },
+    "C0AELUDV1QT": {
+      "name": "ai-native-performance-marketing",
+      "tier": "Tier 2"
+    },
+    "C0AETCSJSCA": {
+      "name": "ai-native-title-marketing",
+      "tier": "Tier 2"
+    },
+    "C0ADHK6L2P3": {
+      "name": "ai-trailer-generator",
+      "tier": "Tier 2"
+    },
+    "C0ADBCH4Y30": {
+      "name": "ai-videos",
+      "tier": "Tier 2"
+    },
+    "C0A8JDHNKHC": {
+      "name": "baahubali-squad",
+      "tier": "Tier 2"
+    },
+    "C0A7YPZMZ8T": {
+      "name": "code-review-mobile-dev",
+      "tier": "Tier 2"
+    },
+    "C0A810BTASG": {
+      "name": "collab-feedback",
+      "tier": "Tier 2"
+    },
+    "C01R4A0H1UP": {
+      "name": "external-catchup-searce",
+      "tier": "Tier 2"
+    },
+    "GEJUR0WA2": {
+      "name": "founders_sync",
+      "tier": "Tier 1"
+    },
+    "C0AH5AVJ5PV": {
+      "name": "growtht-tracker",
+      "tier": "Tier 2"
+    },
+    "C0A7QKTFCDN": {
+      "name": "gujarati_stage",
+      "tier": "Tier 2"
+    },
+    "C0ABCG0RV1N": {
+      "name": "homepage-personalisation",
+      "tier": "Tier 2"
+    },
+    "C0AETMC52DQ": {
+      "name": "life-at-stage-bot",
+      "tier": "Tier 2"
+    },
+    "C0A6ZPA3XT8": {
+      "name": "m0-strategy",
+      "tier": "Tier 2"
+    },
+    "C0A5GJRCQTZ": {
+      "name": "m1-watchers-retention",
+      "tier": "Tier 2"
+    },
+    "C0A87E17UMS": {
+      "name": "monetisation",
+      "tier": "Tier 2"
+    },
+    "C0A4BF8HTN3": {
+      "name": "monetisation-core-devs",
+      "tier": "Tier 2"
+    },
+    "C081FH29W7P": {
+      "name": "morphic-stage",
+      "tier": "Tier 2"
+    },
+    "C0AH4FP8VR9": {
+      "name": "mpdm-vipul--harsh500--nikhil.nair--gopal--humt-1",
+      "tier": "Tier 1"
+    },
+    "C0AC851HPAN": {
+      "name": "my-data",
+      "tier": "Tier 2"
+    },
+    "C0A40S430F8": {
+      "name": "production-tech",
+      "tier": "Tier 2"
+    },
+    "C0A8J8HTS5N": {
+      "name": "randeep-hooda-performance-campaigns",
+      "tier": "Tier 2"
+    },
+    "C0A4S84UA4R": {
+      "name": "realfiction_md_agency",
+      "tier": "Tier 2"
+    },
+    "C0AAKDTMY82": {
+      "name": "retention_cost_optimization",
+      "tier": "Tier 2"
+    },
+    "C0A5LU7UD5X": {
+      "name": "saathi-support",
+      "tier": "Tier 2"
+    },
+    "C0A8HDGU669": {
+      "name": "social-media-gujarati",
+      "tier": "Tier 2"
+    },
+    "C0A75FY5RMJ": {
+      "name": "stage-vip-club",
+      "tier": "Tier 2"
+    },
+    "C07KWTTB98W": {
+      "name": "stage_maino",
+      "tier": "Tier 2"
+    },
+    "C0A99V9BHEV": {
+      "name": "stage_maino_manthan",
+      "tier": "Tier 2"
+    },
+    "C0A8QB9UGJY": {
+      "name": "subscription-ads-gujarati",
+      "tier": "Tier 2"
+    },
+    "C0A79N9NDR6": {
+      "name": "test-dd-alerts",
+      "tier": "Tier 2"
+    },
+    "C0AALBN04KW": {
+      "name": "test-leave-bot",
+      "tier": "Tier 2"
+    },
+    "C0ADY14SRFX": {
+      "name": "testing-vouchers",
+      "tier": "Tier 2"
+    },
+    "C0A8EJR4J7L": {
+      "name": "trendingstories",
+      "tier": "Tier 2"
+    },
+    "C0A4LRBCLQ2": {
+      "name": "watch-along",
+      "tier": "Tier 2"
+    },
+    "C0AK6NSDHFH": {
+      "name": "watch-retention-solver",
+      "tier": "Tier 2"
+    },
+    "C0A99NA9S3T": {
+      "name": "web-alerts",
+      "tier": "Tier 2"
     }
+  },
+  "metadata": {
+    "lastUpdated": "2026-03-11T10:06:53.824409",
+    "totalChannels": 438
   }
 }

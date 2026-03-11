@@ -1,12 +1,1 @@
-{
-  "lastChecks": {
-    "email": 1741507905,
-    "calendar": 1772768915,
-    "slack_dm": 1741761360,
-    "slack_tier1": 1741761360,
-    "netlify_health": 1741761360,
-    "weather": null
-  },
-  "lastHeartbeat": "2026-03-10T15:58:00Z",
-  "lastSlackUserRefresh": "1772864326"
-}
+{"lastChecks": {"email": 1773247983, "calendar": 1772768915, "slack_dm": 1741761360, "slack_tier1": 1741761360, "netlify_health": 1741761360, "weather": null, "lastDmCheck": 1772541055.699369, "slack_channel_diff": 1772571900, "lastHeartbeat": 1772571900}, "lastHeartbeat": "2026-03-11T03:47:00Z", "lastSlackUserRefresh": "1772864326"}

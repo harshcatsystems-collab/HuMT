@@ -1,16 +1,36 @@
-{"ts":"2026-03-10T06:48:00Z","_type":"logger_run","people_tracked":11}
-{"ts": "2026-03-10T07:19:05.742386+00:00", "user": "UEHET2Q2G", "name": "Vinay Singhal", "messages": 1, "thread_replies": 0, "channels_active": 1, "channel_ids": ["C07T7047TEZ"], "after_hours": 0, "avg_response_latency_sec": null}
-{"ts": "2026-03-10T07:19:05.742386+00:00", "_type": "logger_run", "people_tracked": 11}
-{"ts":"2026-03-10T07:48:41Z","_type":"logger_run","people_tracked":11}
-{"ts": "2026-03-10T08:19:18.755835Z", "_type": "logger_run", "people_tracked": 11}
-{"ts":"2026-03-10T08:48:47Z","_type":"logger_run","people_tracked":11}
-{"ts":"2026-03-10T12:18:00Z","user":"U09AK8X90Q0","name":"Unknown","messages":0,"thread_replies":0,"channels_active":0,"channel_ids":[],"after_hours":0,"avg_response_latency_sec":null}
-{"ts":"2026-03-10T12:18:00Z","_type":"logger_run","people_tracked":11}
-{"ts":"2026-03-10T13:48:15Z","_type":"logger_run","people_tracked":11,"messages_found":0}
-{"ts":"2026-03-10T14:18:56Z","_type":"logger_run","people_tracked":11,"channels_scanned":17,"channels_found":1,"activity_count":0}
-{"ts":"2026-03-10T14:48:00Z","_type":"logger_run","people_tracked":11,"channels_scanned":17,"channels_found":10,"channels_not_found":7,"messages_found":0}
-{"ts": "2026-03-10T15:19:21.349665Z", "_type": "logger_run", "people_tracked": 11}
-{"ts": "2026-03-10T15:49:49.177232Z", "_type": "logger_run", "people_tracked": 11, "status": "channel_ids_not_found", "note": "Slack channel IDs provided do not match any accessible channels in workspace"}
-{"ts":"2026-03-10T16:18:15Z","_type":"logger_run","people_tracked":11,"active_count":0}
-{"ts":"2026-03-10T16:48:15Z","_type":"logger_run","people_tracked":11,"active_people":0,"channels_scanned":16}
-{"ts":"2026-03-10T17:18:14Z","_type":"logger_run","people_tracked":11,"channels_scanned":16,"messages_found":0}
+{"ts":"2026-03-11T08:48:00Z","_type":"logger_run","people_tracked":11,"active_count":0}
+{"ts":"2026-03-11T09:18:00Z","_type":"logger_run","people_tracked":11,"active_count":0}
+{"ts": "2026-03-11T09:49:03.688290+00:00", "_type": "logger_run", "people_tracked": 11, "messages_found": 0}
+{"ts":"2026-03-11T10:18:00Z","_type":"logger_run","people_tracked":11,"activity_found":0}
+{"ts":"2026-03-11T10:48:49Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-11T11:18:24Z","_type":"logger_run","people_tracked":11,"activity_count":0}
+{"ts": "2026-03-11T11:51:10.142753Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-11T12:18:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-11T12:48:52Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-11T12:49:19Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-11T12:49:41Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-11T12:50:15Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-11T12:50:50Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-11T12:51:02Z", "_type": "logger_run", "people_tracked": 11, "activity_count": 0}
+{"ts":"2026-03-11T13:18:34Z","_type":"logger_run","people_tracked":11,"messages_found":0}
+{"ts":"2026-03-11T13:49:12Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-11T14:20:50Z","user":"UEHET2Q2G","name":"Vinay Singhal","messages":0,"thread_replies":1,"channels_active":1,"channel_ids":["CEHPPGSN9"],"after_hours":1,"avg_response_latency_sec":28140}
+{"ts":"2026-03-11T14:20:50Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-11T14:48:53Z","user":"UEHET2Q2G","name":"Vinay Singhal","messages":1,"thread_replies":0,"channels_active":1,"channel_ids":["CEHPPGSN9"],"after_hours":1,"avg_response_latency_sec":null}
+{"ts":"2026-03-11T14:48:53Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-11T15:19:14Z","user":"U0719V1GX3Q","name":"Pranay Merchant","messages":0,"thread_replies":0,"channels_active":0,"channel_ids":"","after_hours":0,"avg_response_latency_sec":null}
+{"ts":"2026-03-11T15:19:14Z","user":"U08UL9EHKKP","name":"Samir Kumar","messages":0,"thread_replies":0,"channels_active":0,"channel_ids":"","after_hours":0,"avg_response_latency_sec":null}
+{"ts":"2026-03-11T15:19:14Z","user":"UE0KTBS8P","name":"Shashank Vaishnav","messages":0,"thread_replies":0,"channels_active":0,"channel_ids":"","after_hours":0,"avg_response_latency_sec":null}
+{"ts":"2026-03-11T15:19:14Z","user":"U08KBHHV9J4","name":"Radhika Vijay","messages":0,"thread_replies":0,"channels_active":0,"channel_ids":"","after_hours":0,"avg_response_latency_sec":null}
+{"ts":"2026-03-11T15:19:14Z","user":"U07R906K9K5","name":"Nishita Banerjee","messages":0,"thread_replies":0,"channels_active":0,"channel_ids":"","after_hours":0,"avg_response_latency_sec":null}
+{"ts":"2026-03-11T15:19:14Z","user":"U068F2RS5PV","name":"Nisha Ali","messages":0,"thread_replies":0,"channels_active":0,"channel_ids":"","after_hours":0,"avg_response_latency_sec":null}
+{"ts":"2026-03-11T15:19:14Z","user":"U08L99D58PK","name":"Nikhil Nair","messages":0,"thread_replies":0,"channels_active":0,"channel_ids":"","after_hours":0,"avg_response_latency_sec":null}
+{"ts":"2026-03-11T15:19:14Z","user":"U04A980D1N3","name":"Ashish Pandey","messages":0,"thread_replies":0,"channels_active":0,"channel_ids":"","after_hours":0,"avg_response_latency_sec":null}
+{"ts":"2026-03-11T15:19:14Z","user":"UEHET2Q2G","name":"Vinay Singhal","messages":0,"thread_replies":0,"channels_active":0,"channel_ids":"","after_hours":0,"avg_response_latency_sec":null}
+{"ts":"2026-03-11T15:19:14Z","user":"U07LFSB0PM5","name":"Vismit Bansal","messages":0,"thread_replies":0,"channels_active":0,"channel_ids":"","after_hours":0,"avg_response_latency_sec":null}
+{"ts":"2026-03-11T15:19:14Z","user":"UEJV57HQW","name":"Parveen Singhal","messages":0,"thread_replies":0,"channels_active":0,"channel_ids":"","after_hours":0,"avg_response_latency_sec":null}
+{"ts":"2026-03-11T15:19:14Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-11T15:48:01Z","_type":"logger_run","people_tracked":11,"active_count":0}
+{"ts":"2026-03-11T16:18:29Z","_type":"logger_run","people_tracked":11,"active_people":0}
+{"ts":"2026-03-11T16:48:01Z","_type":"logger_run","people_tracked":11,"active_in_window":0}
+{"ts":"2026-03-11T17:18:03Z","_type":"logger_run","people_tracked":11}
