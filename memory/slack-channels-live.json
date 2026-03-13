@@ -1,0 +1,642 @@
+[
+  {
+    "id": "CDZFAJLBV",
+    "name": "announcements",
+    "is_private": false
+  },
+  {
+    "id": "CE277N1PH",
+    "name": "onefeed-sdk",
+    "is_private": false
+  },
+  {
+    "id": "CE2HG4LA2",
+    "name": "mobiletech",
+    "is_private": false
+  },
+  {
+    "id": "CE8TGJHC4",
+    "name": "team1",
+    "is_private": false
+  },
+  {
+    "id": "CEAB2BUSF",
+    "name": "vatsanaemail",
+    "is_private": false
+  },
+  {
+    "id": "CEAF06RGE",
+    "name": "v9-onefeed-dashboard",
+    "is_private": false
+  },
+  {
+    "id": "CEC2ED2RX",
+    "name": "onefeed_media",
+    "is_private": false
+  },
+  {
+    "id": "CEGS1SLFJ",
+    "name": "theofficialwittyfeed",
+    "is_private": false
+  },
+  {
+    "id": "CEHDDUBQU",
+    "name": "wittyfeed",
+    "is_private": false
+  },
+  {
+    "id": "CEHDVRC83",
+    "name": "thecxos",
+    "is_private": false
+  },
+  {
+    "id": "CEHLABRL2",
+    "name": "programmaticsmediadek",
+    "is_private": false
+  },
+  {
+    "id": "CEHPPGSN9",
+    "name": "tech-mates",
+    "is_private": false
+  },
+  {
+    "id": "CEHPZTVD3",
+    "name": "stage-ke-krantikaari",
+    "is_private": false
+  },
+  {
+    "id": "CEHUDR108",
+    "name": "geeksmate_bd",
+    "is_private": false
+  },
+  {
+    "id": "CEJ2VN8CR",
+    "name": "innervoice_bd",
+    "is_private": false
+  },
+  {
+    "id": "CEJF806R2",
+    "name": "onefeedtech",
+    "is_private": false
+  },
+  {
+    "id": "CEJG8B70T",
+    "name": "leadseod",
+    "is_private": false
+  },
+  {
+    "id": "CEJJXA5AN",
+    "name": "hrandadmin",
+    "is_private": false
+  },
+  {
+    "id": "CEJK31TFD",
+    "name": "thedesignmafia",
+    "is_private": false
+  },
+  {
+    "id": "CEJK4RB4K",
+    "name": "mumbai-team",
+    "is_private": false
+  },
+  {
+    "id": "CEK1C296W",
+    "name": "v9-affiliate-data",
+    "is_private": false
+  },
+  {
+    "id": "CEK4HN9GD",
+    "name": "thepopple_socialmedia",
+    "is_private": false
+  },
+  {
+    "id": "CEKQZFR8A",
+    "name": "conferenceroom",
+    "is_private": false
+  },
+  {
+    "id": "CELKMUL9F",
+    "name": "ard-programmatics",
+    "is_private": false
+  },
+  {
+    "id": "CELRJQ682",
+    "name": "thepopple--marcomm",
+    "is_private": false
+  },
+  {
+    "id": "CEN2W1DGA",
+    "name": "onefeed",
+    "is_private": false
+  },
+  {
+    "id": "CENTYFW6M",
+    "name": "onefeed_distribution",
+    "is_private": false
+  },
+  {
+    "id": "CEPAML3B6",
+    "name": "daily_traffic_report",
+    "is_private": false
+  },
+  {
+    "id": "CESRF1WR1",
+    "name": "jaiho",
+    "is_private": false
+  },
+  {
+    "id": "CEV13S971",
+    "name": "bread_foodmate",
+    "is_private": false
+  },
+  {
+    "id": "CEVCU66G2",
+    "name": "thepopple",
+    "is_private": false
+  },
+  {
+    "id": "CEVLA7BFX",
+    "name": "mostlyhealth",
+    "is_private": false
+  },
+  {
+    "id": "CEW94N20L",
+    "name": "mostlymoney",
+    "is_private": false
+  },
+  {
+    "id": "CEWV0GMMG",
+    "name": "product",
+    "is_private": false
+  },
+  {
+    "id": "CEX4WFYAJ",
+    "name": "thepoppleeod",
+    "is_private": false
+  },
+  {
+    "id": "CEX7B2TAA",
+    "name": "programmaticfinance",
+    "is_private": false
+  },
+  {
+    "id": "CEZRCN61K",
+    "name": "adidas_article",
+    "is_private": false
+  },
+  {
+    "id": "CF0QU7CH2",
+    "name": "hp_laptops",
+    "is_private": false
+  },
+  {
+    "id": "CF59ANPT6",
+    "name": "accounts_finance",
+    "is_private": false
+  },
+  {
+    "id": "CF5AU9H6H",
+    "name": "content-programmatics",
+    "is_private": false
+  },
+  {
+    "id": "CF71LHK9C",
+    "name": "mirzapur",
+    "is_private": false
+  },
+  {
+    "id": "CF84JQWAC",
+    "name": "indialeads",
+    "is_private": false
+  },
+  {
+    "id": "CF8B4RS6M",
+    "name": "innervoice",
+    "is_private": false
+  },
+  {
+    "id": "CFH3M3F26",
+    "name": "wittyhacks",
+    "is_private": false
+  },
+  {
+    "id": "CFWAZ8Q2C",
+    "name": "product_design",
+    "is_private": false
+  },
+  {
+    "id": "CG4LEN5HV",
+    "name": "reddit-content-team",
+    "is_private": false
+  },
+  {
+    "id": "CG50W2JTY",
+    "name": "contech",
+    "is_private": false
+  },
+  {
+    "id": "CG91NNEHE",
+    "name": "videos_internal",
+    "is_private": false
+  },
+  {
+    "id": "CG9L0M3PV",
+    "name": "videos-and-us_leads",
+    "is_private": false
+  },
+  {
+    "id": "CGQ80KBRV",
+    "name": "wittyfeedcontent",
+    "is_private": false
+  },
+  {
+    "id": "CJPKMFV54",
+    "name": "deployment",
+    "is_private": false
+  },
+  {
+    "id": "CJPL664JJ",
+    "name": "build",
+    "is_private": false
+  },
+  {
+    "id": "CK16CHKLN",
+    "name": "omji-chetan",
+    "is_private": false
+  },
+  {
+    "id": "CL13DF93K",
+    "name": "thinktank",
+    "is_private": false
+  },
+  {
+    "id": "CL7DS8ZLY",
+    "name": "stage",
+    "is_private": false
+  },
+  {
+    "id": "CL8CN59B2",
+    "name": "catchuphr",
+    "is_private": false
+  },
+  {
+    "id": "CL9HWGAR4",
+    "name": "traffic_usasites",
+    "is_private": false
+  },
+  {
+    "id": "CM61EHG6L",
+    "name": "wittyfeedupdates",
+    "is_private": false
+  },
+  {
+    "id": "CMQFSQA0J",
+    "name": "product-stagecontent",
+    "is_private": false
+  },
+  {
+    "id": "CNPPHBDT8",
+    "name": "innervoicesocial",
+    "is_private": false
+  },
+  {
+    "id": "CNYPWRY83",
+    "name": "team-nukkad",
+    "is_private": false
+  },
+  {
+    "id": "CRGL272DP",
+    "name": "zeplin",
+    "is_private": false
+  },
+  {
+    "id": "CS75DM3KQ",
+    "name": "stage-product-feedback-and-requests",
+    "is_private": false
+  },
+  {
+    "id": "C0101V0KR1N",
+    "name": "wfcontentstandup",
+    "is_private": false
+  },
+  {
+    "id": "C0107GZBRAQ",
+    "name": "wfh-worklog",
+    "is_private": false
+  },
+  {
+    "id": "C0115DZPDMG",
+    "name": "hrworklogs",
+    "is_private": false
+  },
+  {
+    "id": "C0121EQ4SCT",
+    "name": "stagegrowthandmarketing",
+    "is_private": false
+  },
+  {
+    "id": "C013GQHKNM8",
+    "name": "build_1",
+    "is_private": false
+  },
+  {
+    "id": "C013H9CP7AR",
+    "name": "retention-old",
+    "is_private": false
+  },
+  {
+    "id": "C015XEMKN3G",
+    "name": "we_work_for_our_customer",
+    "is_private": false
+  },
+  {
+    "id": "C016TU33PU1",
+    "name": "funatwork",
+    "is_private": false
+  },
+  {
+    "id": "C017KEVC3V2",
+    "name": "all_character_video",
+    "is_private": false
+  },
+  {
+    "id": "C018L6S1G6R",
+    "name": "घर-का-quora",
+    "is_private": false
+  },
+  {
+    "id": "C01B905KNJZ",
+    "name": "stagecms",
+    "is_private": false
+  },
+  {
+    "id": "C01PPHA8F34",
+    "name": "testforamplitude",
+    "is_private": false
+  },
+  {
+    "id": "C01QY8UAQP6",
+    "name": "monetization",
+    "is_private": false
+  },
+  {
+    "id": "C020VPVFZUL",
+    "name": "alert_gcp",
+    "is_private": false
+  },
+  {
+    "id": "C021635LEQN",
+    "name": "payment-success",
+    "is_private": false
+  },
+  {
+    "id": "C02178ASC4X",
+    "name": "haryanvi_stage",
+    "is_private": false
+  },
+  {
+    "id": "C021SC8GYJD",
+    "name": "payment-failure",
+    "is_private": false
+  },
+  {
+    "id": "C025J6WKVFE",
+    "name": "reengagement",
+    "is_private": false
+  },
+  {
+    "id": "C02F43TJEG7",
+    "name": "crash-reports",
+    "is_private": false
+  },
+  {
+    "id": "C02G45C345U",
+    "name": "cos-projects",
+    "is_private": false
+  },
+  {
+    "id": "C02HBN8F0SK",
+    "name": "ios-internal-testing",
+    "is_private": false
+  },
+  {
+    "id": "C02K0BBP75J",
+    "name": "live-streamings",
+    "is_private": false
+  },
+  {
+    "id": "C02MQC6MSN5",
+    "name": "my-note",
+    "is_private": false
+  },
+  {
+    "id": "C02QWQ7FXRA",
+    "name": "discussion",
+    "is_private": false
+  },
+  {
+    "id": "C02SS03EZM3",
+    "name": "good-reads",
+    "is_private": false
+  },
+  {
+    "id": "C033GF3BVMZ",
+    "name": "tv-android-platter",
+    "is_private": false
+  },
+  {
+    "id": "C0346C5LWPN",
+    "name": "prd-changes",
+    "is_private": false
+  },
+  {
+    "id": "C035F6W8DK9",
+    "name": "product-design",
+    "is_private": false
+  },
+  {
+    "id": "C035QJ5A8G6",
+    "name": "product_prd",
+    "is_private": false
+  },
+  {
+    "id": "C035XUG0D24",
+    "name": "weekly-initiatives",
+    "is_private": false
+  },
+  {
+    "id": "C035Y3QTD7Y",
+    "name": "jira-learnings",
+    "is_private": false
+  },
+  {
+    "id": "C0368KVCL2D",
+    "name": "product-analytics",
+    "is_private": false
+  },
+  {
+    "id": "C037H0GLYP4",
+    "name": "marketing",
+    "is_private": false
+  },
+  {
+    "id": "C037U7RUS2F",
+    "name": "subscription_ads_haryanvi",
+    "is_private": false
+  },
+  {
+    "id": "C0382PLRWRL",
+    "name": "copies-conversion",
+    "is_private": false
+  },
+  {
+    "id": "C039S74GNP2",
+    "name": "rajasthani_stage",
+    "is_private": false
+  },
+  {
+    "id": "C03BWBS957X",
+    "name": "cms-issues",
+    "is_private": false
+  },
+  {
+    "id": "C03C4QAPABU",
+    "name": "leave-intimation",
+    "is_private": false
+  },
+  {
+    "id": "C03CH44KLUT",
+    "name": "stage-backend",
+    "is_private": false
+  },
+  {
+    "id": "C03H1HU1FRD",
+    "name": "backend",
+    "is_private": false
+  },
+  {
+    "id": "C03JCM4FG75",
+    "name": "standup_meeting",
+    "is_private": false
+  },
+  {
+    "id": "C03JX2Q1S94",
+    "name": "social-media-trends-",
+    "is_private": false
+  },
+  {
+    "id": "C03S73A1R7C",
+    "name": "nukkad-wali-chai",
+    "is_private": false
+  },
+  {
+    "id": "C045RSY0WSZ",
+    "name": "analytics-with-anujay",
+    "is_private": false
+  },
+  {
+    "id": "C04612FQ3RS",
+    "name": "tv_discussion_crash",
+    "is_private": false
+  },
+  {
+    "id": "C0474AMMP61",
+    "name": "diwalicampaignrajasthani",
+    "is_private": false
+  },
+  {
+    "id": "C0475A8TV5L",
+    "name": "release-plan-raj",
+    "is_private": false
+  },
+  {
+    "id": "C0479T52GMT",
+    "name": "social-media-hr",
+    "is_private": false
+  },
+  {
+    "id": "C047BGNCKFC",
+    "name": "copywriting-rj",
+    "is_private": false
+  },
+  {
+    "id": "C047BKTJ01G",
+    "name": "laptop_request",
+    "is_private": false
+  },
+  {
+    "id": "C047BR7EDFV",
+    "name": "release-plan-hr",
+    "is_private": false
+  },
+  {
+    "id": "C047CS5H9PC",
+    "name": "social-media-raj",
+    "is_private": false
+  },
+  {
+    "id": "C047DV94G4C",
+    "name": "stage_leads_cmc",
+    "is_private": false
+  },
+  {
+    "id": "C047E57Q2VA",
+    "name": "procurement-and-vendor-payment-group-",
+    "is_private": false
+  },
+  {
+    "id": "C047EJXV268",
+    "name": "requesting-advance-sallery-",
+    "is_private": false
+  },
+  {
+    "id": "C047F65FQRK",
+    "name": "subscription-ads-rajasthani",
+    "is_private": false
+  },
+  {
+    "id": "C047H8326TX",
+    "name": "content-lead-hr",
+    "is_private": false
+  },
+  {
+    "id": "C047HLH7T26",
+    "name": "promo-team",
+    "is_private": false
+  },
+  {
+    "id": "C047Q5M6SCR",
+    "name": "copywriting-hr",
+    "is_private": false
+  },
+  {
+    "id": "C04849DUKBJ",
+    "name": "mohit-bharti-creator",
+    "is_private": false
+  },
+  {
+    "id": "C0488M474TS",
+    "name": "marketing-humanresources",
+    "is_private": false
+  },
+  {
+    "id": "C048HV2P8SX",
+    "name": "payments_legal_hr_agreement",
+    "is_private": false
+  },
+  {
+    "id": "C048P8ECGBZ",
+    "name": "tech-erd",
+    "is_private": false
+  },
+  {
+    "id": "C048YGP4P43",
+    "name": "stage_growweasy_",
+    "is_private": false
+  },
+  {
+    "id": "C049B8XUZ0R",
+    "name": "stage_growweasy",
+    "is_private": false
+  }
+]

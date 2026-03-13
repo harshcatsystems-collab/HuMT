@@ -317,3 +317,36 @@
   "date": "2026-03-10T06:38:47Z"
 }
 {"ts":1773201031,"date":"2026-03-11T03:50:31+00:00","type":"payment_approval_request","channel":"C08PGK8CM32","channel_name":"finance-department","thread_ts":"1773143374.557839","message_ts":"1773200906.642039","action":"Payment request relayed to HMT on Telegram","requestor":"Rahul Chauhan","requestor_id":"U05HAE85RL2","subject":"7 payments totaling ₹67,99,686","status":"pending"}
+{
+  "type": "approval_requested",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1773308740.532049",
+  "action": "FB payment approval requested",
+  "requestor": "Saloni Goyal",
+  "amount": "₹9,03,840",
+  "vendor": "Meta Platforms",
+  "status": "awaiting_response",
+  "ts": 1773308788,
+  "date": "2026-03-12T09:46:28Z"
+}
+{
+  "type": "slack_post",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "",
+  "message_ts": "1773310289.353699",
+  "message_preview": "@Saloni Goyal Approved ✓ — ₹9,03,840 to Meta Platforms India for Facebook Ads February 2026.",
+  "tagged_users": [],
+  "ts": 1773310289,
+  "date": "2026-03-12T10:11:29Z"
+}
+{
+  "type": "payment_approval_requested",
+  "channel": "CEX7B2TAA",
+  "thread_ts": "1773308740.532049",
+  "action": "Payment approval requested from Rahul (12th March)",
+  "requestor": "Rahul Chauhan",
+  "status": "open",
+  "amount": "unknown - file not accessible",
+  "ts": 1773317110,
+  "date": "2026-03-12T12:05:10Z"
+}

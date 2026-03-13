@@ -2,1755 +2,3076 @@
   "channels": [
     {
       "id": "CDZFAJLBV",
-      "name": "announcements"
+      "name": "announcements",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CE277N1PH",
-      "name": "onefeed-sdk"
+      "name": "onefeed-sdk",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CE2HG4LA2",
-      "name": "mobiletech"
+      "name": "mobiletech",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CE8TGJHC4",
-      "name": "team1"
+      "name": "team1",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEAB2BUSF",
-      "name": "vatsanaemail"
+      "name": "vatsanaemail",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEAF06RGE",
-      "name": "v9-onefeed-dashboard"
+      "name": "v9-onefeed-dashboard",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEC2ED2RX",
-      "name": "onefeed_media"
+      "name": "onefeed_media",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEGS1SLFJ",
-      "name": "theofficialwittyfeed"
+      "name": "theofficialwittyfeed",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEHDDUBQU",
-      "name": "wittyfeed"
+      "name": "wittyfeed",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEHDVRC83",
-      "name": "thecxos"
+      "name": "thecxos",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEHLABRL2",
-      "name": "programmaticsmediadek"
+      "name": "programmaticsmediadek",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEHPPGSN9",
-      "name": "tech-mates"
+      "name": "tech-mates",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEHPZTVD3",
-      "name": "stage-ke-krantikaari"
+      "name": "stage-ke-krantikaari",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEHUDR108",
-      "name": "geeksmate_bd"
+      "name": "geeksmate_bd",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEJ2VN8CR",
-      "name": "innervoice_bd"
+      "name": "innervoice_bd",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEJF806R2",
-      "name": "onefeedtech"
+      "name": "onefeedtech",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEJG8B70T",
-      "name": "leadseod"
+      "name": "leadseod",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEJJXA5AN",
-      "name": "hrandadmin"
+      "name": "hrandadmin",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEJK31TFD",
-      "name": "thedesignmafia"
+      "name": "thedesignmafia",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEJK4RB4K",
-      "name": "mumbai-team"
+      "name": "mumbai-team",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEK1C296W",
-      "name": "v9-affiliate-data"
+      "name": "v9-affiliate-data",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEK4HN9GD",
-      "name": "thepopple_socialmedia"
+      "name": "thepopple_socialmedia",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEKQZFR8A",
-      "name": "conferenceroom"
+      "name": "conferenceroom",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CELKMUL9F",
-      "name": "ard-programmatics"
+      "name": "ard-programmatics",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CELRJQ682",
-      "name": "thepopple--marcomm"
+      "name": "thepopple--marcomm",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEN2W1DGA",
-      "name": "onefeed"
+      "name": "onefeed",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CENTYFW6M",
-      "name": "onefeed_distribution"
+      "name": "onefeed_distribution",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEPAML3B6",
-      "name": "daily_traffic_report"
+      "name": "daily_traffic_report",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CESRF1WR1",
-      "name": "jaiho"
+      "name": "jaiho",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEV13S971",
-      "name": "bread_foodmate"
+      "name": "bread_foodmate",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEVCU66G2",
-      "name": "thepopple"
+      "name": "thepopple",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEVLA7BFX",
-      "name": "mostlyhealth"
+      "name": "mostlyhealth",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEW94N20L",
-      "name": "mostlymoney"
+      "name": "mostlymoney",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEWV0GMMG",
-      "name": "product"
+      "name": "product",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEX4WFYAJ",
-      "name": "thepoppleeod"
+      "name": "thepoppleeod",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEX7B2TAA",
-      "name": "programmaticfinance"
+      "name": "programmaticfinance",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CEZRCN61K",
-      "name": "adidas_article"
+      "name": "adidas_article",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CF0QU7CH2",
-      "name": "hp_laptops"
+      "name": "hp_laptops",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CF59ANPT6",
-      "name": "accounts_finance"
+      "name": "accounts_finance",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CF5AU9H6H",
-      "name": "content-programmatics"
+      "name": "content-programmatics",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CF71LHK9C",
-      "name": "mirzapur"
+      "name": "mirzapur",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CF84JQWAC",
-      "name": "indialeads"
+      "name": "indialeads",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CF8B4RS6M",
-      "name": "innervoice"
+      "name": "innervoice",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CFH3M3F26",
-      "name": "wittyhacks"
+      "name": "wittyhacks",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CFWAZ8Q2C",
-      "name": "product_design"
+      "name": "product_design",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CG4LEN5HV",
-      "name": "reddit-content-team"
+      "name": "reddit-content-team",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CG50W2JTY",
-      "name": "contech"
+      "name": "contech",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CG91NNEHE",
-      "name": "videos_internal"
+      "name": "videos_internal",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CG9L0M3PV",
-      "name": "videos-and-us_leads"
+      "name": "videos-and-us_leads",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CGQ80KBRV",
-      "name": "wittyfeedcontent"
+      "name": "wittyfeedcontent",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CJPKMFV54",
-      "name": "deployment"
+      "name": "deployment",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CJPL664JJ",
-      "name": "build"
+      "name": "build",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CK16CHKLN",
-      "name": "omji-chetan"
+      "name": "omji-chetan",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CL13DF93K",
-      "name": "thinktank"
+      "name": "thinktank",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CL7DS8ZLY",
-      "name": "stage"
+      "name": "stage",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CL8CN59B2",
-      "name": "catchuphr"
+      "name": "catchuphr",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CL9HWGAR4",
-      "name": "traffic_usasites"
+      "name": "traffic_usasites",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CM61EHG6L",
-      "name": "wittyfeedupdates"
+      "name": "wittyfeedupdates",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CMQFSQA0J",
-      "name": "product-stagecontent"
+      "name": "product-stagecontent",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CNPPHBDT8",
-      "name": "innervoicesocial"
+      "name": "innervoicesocial",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CNYPWRY83",
-      "name": "team-nukkad"
+      "name": "team-nukkad",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CRGL272DP",
-      "name": "zeplin"
+      "name": "zeplin",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "CS75DM3KQ",
-      "name": "stage-product-feedback-and-requests"
+      "name": "stage-product-feedback-and-requests",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0101V0KR1N",
-      "name": "wfcontentstandup"
+      "name": "wfcontentstandup",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0107GZBRAQ",
-      "name": "wfh-worklog"
+      "name": "wfh-worklog",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0115DZPDMG",
-      "name": "hrworklogs"
+      "name": "hrworklogs",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0121EQ4SCT",
-      "name": "stagegrowthandmarketing"
+      "name": "stagegrowthandmarketing",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C013GQHKNM8",
-      "name": "build_1"
+      "name": "build_1",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C013H9CP7AR",
-      "name": "retention-old"
+      "name": "retention-old",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C015XEMKN3G",
-      "name": "we_work_for_our_customer"
+      "name": "we_work_for_our_customer",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C016TU33PU1",
-      "name": "funatwork"
+      "name": "funatwork",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C017KEVC3V2",
-      "name": "all_character_video"
+      "name": "all_character_video",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C018L6S1G6R",
-      "name": "घर-का-quora"
+      "name": "घर-का-quora",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C01B905KNJZ",
-      "name": "stagecms"
+      "name": "stagecms",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C01PPHA8F34",
-      "name": "testforamplitude"
+      "name": "testforamplitude",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C01QY8UAQP6",
-      "name": "monetization"
+      "name": "monetization",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C020VPVFZUL",
-      "name": "alert_gcp"
+      "name": "alert_gcp",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C021635LEQN",
-      "name": "payment-success"
+      "name": "payment-success",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C02178ASC4X",
-      "name": "haryanvi_stage"
+      "name": "haryanvi_stage",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C021SC8GYJD",
-      "name": "payment-failure"
+      "name": "payment-failure",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C025J6WKVFE",
-      "name": "reengagement"
+      "name": "reengagement",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C02F43TJEG7",
-      "name": "crash-reports"
+      "name": "crash-reports",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C02G45C345U",
-      "name": "cos-projects"
+      "name": "cos-projects",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C02HBN8F0SK",
-      "name": "ios-internal-testing"
+      "name": "ios-internal-testing",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C02K0BBP75J",
-      "name": "live-streamings"
+      "name": "live-streamings",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C02MQC6MSN5",
-      "name": "my-note"
+      "name": "my-note",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C02QWQ7FXRA",
-      "name": "discussion"
+      "name": "discussion",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C02SS03EZM3",
-      "name": "good-reads"
+      "name": "good-reads",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C033GF3BVMZ",
-      "name": "tv-android-platter"
+      "name": "tv-android-platter",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0346C5LWPN",
-      "name": "prd-changes"
+      "name": "prd-changes",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C035F6W8DK9",
-      "name": "product-design"
+      "name": "product-design",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C035QJ5A8G6",
-      "name": "product_prd"
+      "name": "product_prd",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C035XUG0D24",
-      "name": "weekly-initiatives"
+      "name": "weekly-initiatives",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C035Y3QTD7Y",
-      "name": "jira-learnings"
+      "name": "jira-learnings",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0368KVCL2D",
-      "name": "product-analytics"
+      "name": "product-analytics",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C037H0GLYP4",
-      "name": "marketing"
+      "name": "marketing",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C037U7RUS2F",
-      "name": "subscription_ads_haryanvi"
+      "name": "subscription_ads_haryanvi",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0382PLRWRL",
-      "name": "copies-conversion"
+      "name": "copies-conversion",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C039S74GNP2",
-      "name": "rajasthani_stage"
+      "name": "rajasthani_stage",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C03BWBS957X",
-      "name": "cms-issues"
+      "name": "cms-issues",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C03C4QAPABU",
-      "name": "leave-intimation"
+      "name": "leave-intimation",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C03CH44KLUT",
-      "name": "stage-backend"
+      "name": "stage-backend",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C03H1HU1FRD",
-      "name": "backend"
+      "name": "backend",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C03JCM4FG75",
-      "name": "standup_meeting"
+      "name": "standup_meeting",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C03JX2Q1S94",
-      "name": "social-media-trends-"
+      "name": "social-media-trends-",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C03S73A1R7C",
-      "name": "nukkad-wali-chai"
+      "name": "nukkad-wali-chai",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C045RSY0WSZ",
-      "name": "analytics-with-anujay"
+      "name": "analytics-with-anujay",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04612FQ3RS",
-      "name": "tv_discussion_crash"
+      "name": "tv_discussion_crash",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0474AMMP61",
-      "name": "diwalicampaignrajasthani"
+      "name": "diwalicampaignrajasthani",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0475A8TV5L",
-      "name": "release-plan-raj"
+      "name": "release-plan-raj",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0479T52GMT",
-      "name": "social-media-hr"
+      "name": "social-media-hr",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C047BGNCKFC",
-      "name": "copywriting-rj"
+      "name": "copywriting-rj",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C047BKTJ01G",
-      "name": "laptop_request"
+      "name": "laptop_request",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C047BR7EDFV",
-      "name": "release-plan-hr"
+      "name": "release-plan-hr",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C047CS5H9PC",
-      "name": "social-media-raj"
+      "name": "social-media-raj",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C047DV94G4C",
-      "name": "stage_leads_cmc"
+      "name": "stage_leads_cmc",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C047E57Q2VA",
-      "name": "procurement-and-vendor-payment-group-"
+      "name": "procurement-and-vendor-payment-group-",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C047EJXV268",
-      "name": "requesting-advance-sallery-"
+      "name": "requesting-advance-sallery-",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C047F65FQRK",
-      "name": "subscription-ads-rajasthani"
+      "name": "subscription-ads-rajasthani",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C047H8326TX",
-      "name": "content-lead-hr"
+      "name": "content-lead-hr",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C047HLH7T26",
-      "name": "promo-team"
+      "name": "promo-team",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C047Q5M6SCR",
-      "name": "copywriting-hr"
+      "name": "copywriting-hr",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04849DUKBJ",
-      "name": "mohit-bharti-creator"
+      "name": "mohit-bharti-creator",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0488M474TS",
-      "name": "marketing-humanresources"
+      "name": "marketing-humanresources",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C048HV2P8SX",
-      "name": "payments_legal_hr_agreement"
+      "name": "payments_legal_hr_agreement",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C048P8ECGBZ",
-      "name": "tech-erd"
+      "name": "tech-erd",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C048YGP4P43",
-      "name": "stage_growweasy_"
+      "name": "stage_growweasy_",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C049B8XUZ0R",
-      "name": "stage_growweasy"
+      "name": "stage_growweasy",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04AW6J5U49",
-      "name": "shark_tank_2"
+      "name": "shark_tank_2",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04B5QVEVK8",
-      "name": "analytics-requirements"
+      "name": "analytics-requirements",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04BF3XCH6H",
-      "name": "clevertap-notification-"
+      "name": "clevertap-notification-",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04BSQRHP0B",
-      "name": "goddies_for_marketing"
+      "name": "goddies_for_marketing",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04D2NNQENA",
-      "name": "stage-user-experience-design-nirav"
+      "name": "stage-user-experience-design-nirav",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04DKHJKV5W",
-      "name": "tech-hiring"
+      "name": "tech-hiring",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04DUM2GHB3",
-      "name": "gupshup-bot-"
+      "name": "gupshup-bot-",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04EPFEE9U5",
-      "name": "travel-bills-tanuj"
+      "name": "travel-bills-tanuj",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04FVE61LHK",
-      "name": "qa-hiring"
+      "name": "qa-hiring",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04GFFY9LBC",
-      "name": "leadership-office"
+      "name": "leadership-office",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04H5RF55RQ",
-      "name": "content-notification"
+      "name": "content-notification",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04H786U80H",
-      "name": "short-film-competition"
+      "name": "short-film-competition",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04H8URE5V1",
-      "name": "shark-tank-support"
+      "name": "shark-tank-support",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04J31U3JE9",
-      "name": "rajasthan-launch-event"
+      "name": "rajasthan-launch-event",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04JWCPM17W",
-      "name": "alert_from_servers"
+      "name": "alert_from_servers",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04K6JUC8LX",
-      "name": "test_channel_2"
+      "name": "test_channel_2",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04KKUZ2M50",
-      "name": "reality-show-hr"
+      "name": "reality-show-hr",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04L07HSQF3",
-      "name": "stage--backend"
+      "name": "stage--backend",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04LZFNDCAE",
-      "name": "stage-sugarbox"
+      "name": "stage-sugarbox",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04LZRZH61L",
-      "name": "pod-time-spent"
+      "name": "pod-time-spent",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04M2CENJEB",
-      "name": "brand_partnerships"
+      "name": "brand_partnerships",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04M3G0SD3P",
-      "name": "pod-haryanvi-growth"
+      "name": "pod-haryanvi-growth",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04M3GATFRT",
-      "name": "pod-free-user-retention"
+      "name": "pod-free-user-retention",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04M6EDV58S",
-      "name": "pod-rajasthani-growth"
+      "name": "pod-rajasthani-growth",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04MG5W7ZTM",
-      "name": "given-subscription-by-cms"
+      "name": "given-subscription-by-cms",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04MK41J873",
-      "name": "pod-renewals"
+      "name": "pod-renewals",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04MYP30FAB",
-      "name": "branding_exercise"
+      "name": "branding_exercise",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04MZHQFYGG",
-      "name": "payment-request-"
+      "name": "payment-request-",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04N6A2PG4Q",
-      "name": "referral_payments"
+      "name": "referral_payments",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04N9E37QH3",
-      "name": "office-table-bill"
+      "name": "office-table-bill",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04NKC4NRC3",
-      "name": "brandingteam1"
+      "name": "brandingteam1",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04Q2N9TVGR",
-      "name": "sabot"
+      "name": "sabot",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04R5010E5D",
-      "name": "stage-content-research-hr"
+      "name": "stage-content-research-hr",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04R6S655DW",
-      "name": "hiring_marketing_rj"
+      "name": "hiring_marketing_rj",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04RMDY4B6C",
-      "name": "hr-creatives-for-social-media-handles"
+      "name": "hr-creatives-for-social-media-handles",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04RR27AS21",
-      "name": "expense-reimbursement"
+      "name": "expense-reimbursement",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04RWQQQG4D",
-      "name": "deep-links"
+      "name": "deep-links",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04S394MZ45",
-      "name": "support-meeting"
+      "name": "support-meeting",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04TDHELB4G",
-      "name": "recomendation-engine"
+      "name": "recomendation-engine",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04TLPLHQ4U",
-      "name": "product_marketing_hiring"
+      "name": "product_marketing_hiring",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04UALJSZ7Z",
-      "name": "subtitle-qc-hr"
+      "name": "subtitle-qc-hr",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04UH5NELMS",
-      "name": "content-partnerships"
+      "name": "content-partnerships",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04UKR5A6EM",
-      "name": "creative-assets-promos-all"
+      "name": "creative-assets-promos-all",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04UPBMHGSX",
-      "name": "weekly_goals_marketing"
+      "name": "weekly_goals_marketing",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04UPDMESSE",
-      "name": "content-qc-frame-io-rj"
+      "name": "content-qc-frame-io-rj",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04UWSUEW30",
-      "name": "haryanvi-social-media-copies"
+      "name": "haryanvi-social-media-copies",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04UZPE9WLU",
-      "name": "payment-haryanvi"
+      "name": "payment-haryanvi",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C04V3MZ7XA4",
-      "name": "api-endpoints"
+      "name": "api-endpoints",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C050FRHCQ5T",
-      "name": "karnal-hiff-expenses"
+      "name": "karnal-hiff-expenses",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C050JBJCEKH",
-      "name": "content-for-marketing-product"
+      "name": "content-for-marketing-product",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C050M6F5ZFW",
-      "name": "creator-onboarding-haryana"
+      "name": "creator-onboarding-haryana",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C051M0HEE85",
-      "name": "iconwave"
+      "name": "iconwave",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C051S6J4QUU",
-      "name": "shriram-group"
+      "name": "shriram-group",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C051ZFBPXSR",
-      "name": "cloudtv"
+      "name": "cloudtv",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C052YCJPVH6",
-      "name": "notification-banner"
+      "name": "notification-banner",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C053ABYNLN9",
-      "name": "jan-nayak-project"
+      "name": "jan-nayak-project",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C053HVAF8D8",
-      "name": "red-tv"
+      "name": "red-tv",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C053XNFAD27",
-      "name": "playbox-tv"
+      "name": "playbox-tv",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05412V49TP",
-      "name": "aditya-channel"
+      "name": "aditya-channel",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C054PNFKZNG",
-      "name": "appsflyer"
+      "name": "appsflyer",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C054QFMQ2AZ",
-      "name": "filmbaaz"
+      "name": "filmbaaz",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C055KUNLE0P",
-      "name": "xonware"
+      "name": "xonware",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05603QSE74",
-      "name": "yupp-tv"
+      "name": "yupp-tv",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C056GKRGSPJ",
-      "name": "ott-play"
+      "name": "ott-play",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C057959JJ74",
-      "name": "mobyads"
+      "name": "mobyads",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C058T5J1FN3",
-      "name": "new-posters"
+      "name": "new-posters",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05A7QB2UHH",
-      "name": "splash-animation"
+      "name": "splash-animation",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05B0C7K48L",
-      "name": "stage_internal_mis"
+      "name": "stage_internal_mis",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05C97KQ3PC",
-      "name": "sm-assets-hr"
+      "name": "sm-assets-hr",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05F70EE1T7",
-      "name": "haryana-captions-requirement"
+      "name": "haryana-captions-requirement",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05F84C3MEK",
-      "name": "1-1shubham"
+      "name": "1-1shubham",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05FEER0QB0",
-      "name": "1-0-1-uttam"
+      "name": "1-0-1-uttam",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05FY174F2N",
-      "name": "entire-growth-updates"
+      "name": "entire-growth-updates",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05GAU71LN9",
-      "name": "anonet"
+      "name": "anonet",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05GUF74F8B",
-      "name": "data_pipeline"
+      "name": "data_pipeline",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05HH2PGLRM",
-      "name": "cac-ads-solver"
+      "name": "cac-ads-solver",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05HTBEHT52",
-      "name": "cac-playstore-to-paid-solver"
+      "name": "cac-playstore-to-paid-solver",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05J1PR1RSL",
-      "name": "catchup-with-surbhi"
+      "name": "catchup-with-surbhi",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05J6S6PWNL",
-      "name": "content-subtitles"
+      "name": "content-subtitles",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05JCFTR2J3",
-      "name": "airtel-xstream-"
+      "name": "airtel-xstream-",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05RNEPTALQ",
-      "name": "brand_integration_haryana"
+      "name": "brand_integration_haryana",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05RNET3C0Y",
-      "name": "brand_integration_rajasthan"
+      "name": "brand_integration_rajasthan",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C05S2L634EB",
-      "name": "user-feedbacks"
+      "name": "user-feedbacks",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0637KE40CB",
-      "name": "dada-lakhmi-success"
+      "name": "dada-lakhmi-success",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C064TDSRJKS",
-      "name": "1-1-creative-team"
+      "name": "1-1-creative-team",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C06C2ALHM4H",
-      "name": "project-test-automation"
+      "name": "project-test-automation",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C06FZT3190B",
-      "name": "project-neeraj-load-testing"
+      "name": "project-neeraj-load-testing",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C06LHQKUS3X",
-      "name": "rajasthan-fgd"
+      "name": "rajasthan-fgd",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C06NYMGLNGH",
-      "name": "tech-frontend"
+      "name": "tech-frontend",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C06P3SQMZEY",
-      "name": "project-react-website-vercel-events"
+      "name": "project-react-website-vercel-events",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C06PD3K9TN2",
-      "name": "project-mobile-continuous-delivery"
+      "name": "project-mobile-continuous-delivery",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C06QTJMKLUA",
-      "name": "retention"
+      "name": "retention",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C06S248NR34",
-      "name": "socialmedia-stage-hr-team"
+      "name": "socialmedia-stage-hr-team",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C06SAHCEBHV",
-      "name": "haryana-casting"
+      "name": "haryana-casting",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C06UT8KB9DH",
-      "name": "tech-craft"
+      "name": "tech-craft",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C06UW1S5CGJ",
-      "name": "truecaller-stage"
+      "name": "truecaller-stage",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C073A1Q7U01",
-      "name": "hr-sm-caption"
+      "name": "hr-sm-caption",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C073VRBFTUH",
-      "name": "retention-creative-requirements"
+      "name": "retention-creative-requirements",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C076AUFK74Z",
-      "name": "content-product-jugalbandi"
+      "name": "content-product-jugalbandi",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C078Y0EKLN7",
-      "name": "making-frontend-better"
+      "name": "making-frontend-better",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C079N49UVUK",
-      "name": "jashan_eod"
+      "name": "jashan_eod",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07ACCVEEAD",
-      "name": "crime-haryana-gtm"
+      "name": "crime-haryana-gtm",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07AV7HKT7S",
-      "name": "production-creative-sync"
+      "name": "production-creative-sync",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07CU8W8R5H",
-      "name": "tech-growth"
+      "name": "tech-growth",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07EGVDQ3SL",
-      "name": "rajasthani-marketing"
+      "name": "rajasthani-marketing",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07ES2RN7T9",
-      "name": "data-infrastructure"
+      "name": "data-infrastructure",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07F4660QF7",
-      "name": "github_alerts"
+      "name": "github_alerts",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07F86R0CET",
-      "name": "sentry-web"
+      "name": "sentry-web",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07FPLKR2N7",
-      "name": "pg-alert"
+      "name": "pg-alert",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07JLD7JL0P",
-      "name": "playstore-ratings"
+      "name": "playstore-ratings",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07LD4HL3PT",
-      "name": "cms-content"
+      "name": "cms-content",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07M9APSM5Y",
-      "name": "content-tagging"
+      "name": "content-tagging",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07MZ6YVDPS",
-      "name": "cre-engagement-campaign-rcs-wa"
+      "name": "cre-engagement-campaign-rcs-wa",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07N9G9LH0B",
-      "name": "reengagement-pf-ads-creatives"
+      "name": "reengagement-pf-ads-creatives",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07P7C0T267",
-      "name": "memes"
+      "name": "memes",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07PL69UAFL",
-      "name": "promo_ideas_discussion"
+      "name": "promo_ideas_discussion",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07PZS5MWR4",
-      "name": "bhairavi-tshirts"
+      "name": "bhairavi-tshirts",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07QSGLSK97",
-      "name": "copy--retention"
+      "name": "copy--retention",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07QVKNB16C",
-      "name": "retention-_-creative"
+      "name": "retention-_-creative",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07RVS92YT0",
-      "name": "research_updates"
+      "name": "research_updates",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07SHGWPZGF",
-      "name": "backend-alerts"
+      "name": "backend-alerts",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07SXBJTZJ7",
-      "name": "team-data"
+      "name": "team-data",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07T7047TEZ",
-      "name": "product-growth"
+      "name": "product-growth",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07TNBUAWPP",
-      "name": "tech-mobile"
+      "name": "tech-mobile",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C07TTQQL8JU",
-      "name": "user-activation-strategy"
+      "name": "user-activation-strategy",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0810CKG1C1",
-      "name": "bhojpuri_stage"
+      "name": "bhojpuri_stage",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0811TJDPLH",
-      "name": "title-marketing-all"
+      "name": "title-marketing-all",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C081AG7J7EC",
-      "name": "retention_nikhil"
+      "name": "retention_nikhil",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C081G4RPDC2",
-      "name": "cms-deliveries"
+      "name": "cms-deliveries",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C081K05ULR2",
-      "name": "new-office"
+      "name": "new-office",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08251LKGL8",
-      "name": "insight-engine-discussion"
+      "name": "insight-engine-discussion",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C082ZCU8VQA",
-      "name": "rj-content-planning"
+      "name": "rj-content-planning",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C083G6MMJ0K",
-      "name": "small-wins"
+      "name": "small-wins",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C083NFDTJ4Q",
-      "name": "rj-script"
+      "name": "rj-script",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C083STSVDEX",
-      "name": "casting"
+      "name": "casting",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C083WGY5QE4",
-      "name": "creative-director-workshop"
+      "name": "creative-director-workshop",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C084EE30XPD",
-      "name": "random-ideas"
+      "name": "random-ideas",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C084JVD7Q68",
-      "name": "referrals"
+      "name": "referrals",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C084KMZ00HG",
-      "name": "product-alerts"
+      "name": "product-alerts",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C084SA913PV",
-      "name": "hoodie-distribution-24"
+      "name": "hoodie-distribution-24",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C084TNRH7QE",
-      "name": "daily-cac"
+      "name": "daily-cac",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C084XJUCSKS",
-      "name": "ml-work"
+      "name": "ml-work",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C084ZAGHT7B",
-      "name": "better-productivity"
+      "name": "better-productivity",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0858PR0V50",
-      "name": "slack-profile-update"
+      "name": "slack-profile-update",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C085BSBRPJ8",
-      "name": "social-media-bh"
+      "name": "social-media-bh",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C085HDR1BS4",
-      "name": "tech-product-updates"
+      "name": "tech-product-updates",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C086984K7LY",
-      "name": "dd-alerts"
+      "name": "dd-alerts",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C086HJ52M19",
-      "name": "bhojpuri-sm-creatives"
+      "name": "bhojpuri-sm-creatives",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0875TQ8SNB",
-      "name": "crew-workshop"
+      "name": "crew-workshop",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08798ABU65",
-      "name": "actors-relationship"
+      "name": "actors-relationship",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C087DEHCF8T",
-      "name": "skill-framework"
+      "name": "skill-framework",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C087XA4J7LZ",
-      "name": "legal-requirements"
+      "name": "legal-requirements",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0889P3V6MV",
-      "name": "stage-atlabs-ai"
+      "name": "stage-atlabs-ai",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C088QBLURQ9",
-      "name": "welcome-mayur"
+      "name": "welcome-mayur",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C088QBVCTEE",
-      "name": "work-travel-expectations"
+      "name": "work-travel-expectations",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C089479SHMM",
-      "name": "icp-project"
+      "name": "icp-project",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08A30P413J",
-      "name": "performance-events"
+      "name": "performance-events",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08AD0XFDU0",
-      "name": "subscription-ads-bhojpuri"
+      "name": "subscription-ads-bhojpuri",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08AGEVAZ37",
-      "name": "data-alerts"
+      "name": "data-alerts",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08AM06AMRC",
-      "name": "mini-to-main-migration"
+      "name": "mini-to-main-migration",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08ANGS3SJG",
-      "name": "policevspolice-hr"
+      "name": "policevspolice-hr",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08AY77063V",
-      "name": "weekly-mis"
+      "name": "weekly-mis",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08B33D2TCG",
-      "name": "bhangarh-series-stage"
+      "name": "bhangarh-series-stage",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08B9N85WHW",
-      "name": "xyz"
+      "name": "xyz",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08BMDB9BPZ",
-      "name": "creative-directors-stage"
+      "name": "creative-directors-stage",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08BPD4FJHH",
-      "name": "stage-ai"
+      "name": "stage-ai",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08C4RLD89K",
-      "name": "welcome-harshit"
+      "name": "welcome-harshit",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08CBP3K1ME",
-      "name": "mukundpura-film"
+      "name": "mukundpura-film",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08CC98AM7G",
-      "name": "jholachaap--film"
+      "name": "jholachaap--film",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08CD1F95FG",
-      "name": "punarjanm-bhojpuri-film-"
+      "name": "punarjanm-bhojpuri-film-",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08CK5ZDZCJ",
-      "name": "manthan-bhojpuri-film-"
+      "name": "manthan-bhojpuri-film-",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08CM57S4CC",
-      "name": "cinema-discussion-and-appreciation"
+      "name": "cinema-discussion-and-appreciation",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08DAD291BL",
-      "name": "bhakk-"
+      "name": "bhakk-",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08DK4CE0QY",
-      "name": "friday-meeting-agenda"
+      "name": "friday-meeting-agenda",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08DU25FAQN",
-      "name": "welcome-dharmendra"
+      "name": "welcome-dharmendra",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08E2P5F16Y",
-      "name": "bhojpuri--manthan-film"
+      "name": "bhojpuri--manthan-film",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08E30BUTQD",
-      "name": "casting-saangi-"
+      "name": "casting-saangi-",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08E6782AKT",
-      "name": "proj-onboarding"
+      "name": "proj-onboarding",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08EA844NP7",
-      "name": "ghak-ki-baat-"
+      "name": "ghak-ki-baat-",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08EH1EPJF8",
-      "name": "welcome-vishal"
+      "name": "welcome-vishal",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08FKN7P516",
-      "name": "stage-celetel"
+      "name": "stage-celetel",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08FXHZK2UD",
-      "name": "biff-travel"
+      "name": "biff-travel",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08GCK3BTFF",
-      "name": "ai4stage-user-interviews"
+      "name": "ai4stage-user-interviews",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08HQ89S797",
-      "name": "content_strategy"
+      "name": "content_strategy",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08K7RS42RM",
-      "name": "media-mentions"
+      "name": "media-mentions",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08K9NUT5TN",
-      "name": "eod-work"
+      "name": "eod-work",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08KGJ3GG4B",
-      "name": "stage-xrmedia"
+      "name": "stage-xrmedia",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08KHSS8HM5",
-      "name": "welcome-harsh"
+      "name": "welcome-harsh",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08KU4RJAFN",
-      "name": "muhurat-scenes"
+      "name": "muhurat-scenes",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08L4EMHR0X",
-      "name": "team-devops"
+      "name": "team-devops",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08L9GET6NM",
-      "name": "welcome-nikhil"
+      "name": "welcome-nikhil",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08LG2JJDPE",
-      "name": "intern-requirement-marketing"
+      "name": "intern-requirement-marketing",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08LH3HCDPZ",
-      "name": "cd-kaand-"
+      "name": "cd-kaand-",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08LND29R50",
-      "name": "online-edit-data-hr-rj-bh"
+      "name": "online-edit-data-hr-rj-bh",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08MGJRDTEW",
-      "name": "tv-adoption"
+      "name": "tv-adoption",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08MNMEBGHE",
-      "name": "welcome-siddhant"
+      "name": "welcome-siddhant",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08MNPX5L58",
-      "name": "welcome-prakash"
+      "name": "welcome-prakash",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08MP840NM6",
-      "name": "ncanto_integration"
+      "name": "ncanto_integration",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08N0CA2LG7",
-      "name": "ai-avengers"
+      "name": "ai-avengers",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08N4F1PU1G",
-      "name": "bh-branding"
+      "name": "bh-branding",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08N82UFN3F",
-      "name": "productdesign"
+      "name": "productdesign",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08N8KK4CG1",
-      "name": "video_comments"
+      "name": "video_comments",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08NBL74AMQ",
-      "name": "mobile-gradle-upgrade"
+      "name": "mobile-gradle-upgrade",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08NEKQT69E",
-      "name": "awareness-consideratin-promo-scripts"
+      "name": "awareness-consideratin-promo-scripts",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08NV50KE7Q",
-      "name": "content_writing_retention"
+      "name": "content_writing_retention",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08P1NEVCDN",
-      "name": "ask-data-ai"
+      "name": "ask-data-ai",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08PWSQ02EB",
-      "name": "prod_feedback"
+      "name": "prod_feedback",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08PY53QYSU",
-      "name": "ai-at-stage"
+      "name": "ai-at-stage",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08Q1HT10N5",
-      "name": "short_scripts_and_cta"
+      "name": "short_scripts_and_cta",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08QPLQ4MJN",
-      "name": "cricket"
+      "name": "cricket",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08QQQ8T7C2",
-      "name": "competency-framework"
+      "name": "competency-framework",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08QUFA03G9",
-      "name": "waves2025"
+      "name": "waves2025",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08SAF7RBUZ",
-      "name": "project_data-active-subscriber-watch-retention"
+      "name": "project_data-active-subscriber-watch-retention",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08SLA2NTN0",
-      "name": "stage-mate"
+      "name": "stage-mate",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08SXM7NB6Z",
-      "name": "title-design"
+      "name": "title-design",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08SYGQ80MP",
-      "name": "test-channel"
+      "name": "test-channel",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08T55AS9V5",
-      "name": "welcome-harish"
+      "name": "welcome-harish",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08U68MAEHM",
-      "name": "brand-health-on-ground-resarch"
+      "name": "brand-health-on-ground-resarch",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08UKLM22JZ",
-      "name": "asset-requisition"
+      "name": "asset-requisition",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08ULSU2DEH",
-      "name": "welcome-samir"
+      "name": "welcome-samir",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C08UWJFTZN3",
-      "name": "welcome-muskan"
+      "name": "welcome-muskan",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0903MMQFU6",
-      "name": "rc-submission"
+      "name": "rc-submission",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0904NE9Y2K",
-      "name": "engagement-solver-team"
+      "name": "engagement-solver-team",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0905UNGLJK",
-      "name": "brand-health-funnel-metrics"
+      "name": "brand-health-funnel-metrics",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C090D3DAZL5",
-      "name": "dubbing-rj"
+      "name": "dubbing-rj",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C090D5UJFM4",
-      "name": "team-bhojpuri"
+      "name": "team-bhojpuri",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C090DSB90DT",
-      "name": "demo-agent"
+      "name": "demo-agent",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C090Y99T9LZ",
-      "name": "copy-and-promo-rock"
+      "name": "copy-and-promo-rock",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0914FW9WE9",
-      "name": "user_activation"
+      "name": "user_activation",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C092E0F764W",
-      "name": "research-update"
+      "name": "research-update",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C092ENBK63A",
-      "name": "stage-microdrama-idea-suggestion"
+      "name": "stage-microdrama-idea-suggestion",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C092JCWL56Z",
-      "name": "tech-product-update"
+      "name": "tech-product-update",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C092JE3KZ37",
-      "name": "content-production-update"
+      "name": "content-production-update",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C092LSKTU1E",
-      "name": "whatsapp-bot"
+      "name": "whatsapp-bot",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C092SDD9UAX",
-      "name": "xroad-media-alerts"
+      "name": "xroad-media-alerts",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C092XDNSDB9",
-      "name": "acquisition-pod"
+      "name": "acquisition-pod",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C092YVANF9P",
-      "name": "marketing-updates"
+      "name": "marketing-updates",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0937NF6R4Y",
-      "name": "all-hands-meeting"
+      "name": "all-hands-meeting",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C093UMPANS0",
-      "name": "ask-data-ai-dev"
+      "name": "ask-data-ai-dev",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C095BT8LUFK",
-      "name": "mongo_changes"
+      "name": "mongo_changes",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0960L7BH88",
-      "name": "growthx-stage-hiring"
+      "name": "growthx-stage-hiring",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C097XAP8493",
-      "name": "user-research-lab"
+      "name": "user-research-lab",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C099RHXATDL",
-      "name": "d0-d1-calling-process-setup"
+      "name": "d0-d1-calling-process-setup",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09A26FH8S0",
-      "name": "welcome-shubham-singla"
+      "name": "welcome-shubham-singla",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09AF5ECYHM",
-      "name": "hr-legal"
+      "name": "hr-legal",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09ARKERDT7",
-      "name": "rajasthan-pride-videos"
+      "name": "rajasthan-pride-videos",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09BMSJE3N3",
-      "name": "welcome-chetan"
+      "name": "welcome-chetan",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09C8E0Q9RD",
-      "name": "welcome-himanshu"
+      "name": "welcome-himanshu",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09CSE2PN9J",
-      "name": "welcome-akash-kumar"
+      "name": "welcome-akash-kumar",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09CV63KRHT",
-      "name": "sanwari-artist-promo"
+      "name": "sanwari-artist-promo",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09CYEHBSBY",
-      "name": "welcome-nikita"
+      "name": "welcome-nikita",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09D1SY2KEV",
-      "name": "welcome-nidhi-mishra"
+      "name": "welcome-nidhi-mishra",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09DKG689HR",
-      "name": "paywall-creation"
+      "name": "paywall-creation",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09EAC10ETC",
-      "name": "daily-work-report-hr"
+      "name": "daily-work-report-hr",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09F49E7C4T",
-      "name": "office-shifting-and-day-1-experience"
+      "name": "office-shifting-and-day-1-experience",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09FE42TRC7",
-      "name": "hr-cac-daily-updates"
+      "name": "hr-cac-daily-updates",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09FVFY0P5F",
-      "name": "performance-management-framework"
+      "name": "performance-management-framework",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09H147TXU6",
-      "name": "behind-the-scenes"
+      "name": "behind-the-scenes",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09HUCE9PQB",
-      "name": "jholachhap-promotion-pwc-event"
+      "name": "jholachhap-promotion-pwc-event",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09PCDH8FPU",
-      "name": "cms-alerts"
+      "name": "cms-alerts",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09PDC19QJE",
-      "name": "randeep-hooda"
+      "name": "randeep-hooda",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09PM1DNK34",
-      "name": "growth-clm"
+      "name": "growth-clm",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09SWV3MVL2",
-      "name": "metrics-alert"
+      "name": "metrics-alert",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C09USBH29UY",
-      "name": "snapchat-ads"
+      "name": "snapchat-ads",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A0XS4L0GJ",
-      "name": "stage-saathi"
+      "name": "stage-saathi",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A1M91Q6P7",
-      "name": "haryanvi-promo-team"
+      "name": "haryanvi-promo-team",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A2KK6KP5W",
-      "name": "rudderstack-migration"
+      "name": "rudderstack-migration",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A2QNQSA0P",
-      "name": "dormant-resurrection"
+      "name": "dormant-resurrection",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A3CJTNMST",
-      "name": "content-compliance-hiren"
+      "name": "content-compliance-hiren",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A3N67V0G2",
-      "name": "retention-pod"
+      "name": "retention-pod",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A40S430F8",
-      "name": "production-tech"
+      "name": "production-tech",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A4LRBCLQ2",
-      "name": "watch-along"
+      "name": "watch-along",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A4S84UA4R",
-      "name": "realfiction_md_agency"
+      "name": "realfiction_md_agency",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A5LU7UD5X",
-      "name": "saathi-support"
+      "name": "saathi-support",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A75FY5RMJ",
-      "name": "stage-vip-club"
+      "name": "stage-vip-club",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A79N9NDR6",
-      "name": "test-dd-alerts"
+      "name": "test-dd-alerts",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A7QKTFCDN",
-      "name": "gujarati_stage"
+      "name": "gujarati_stage",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A7YPZMZ8T",
-      "name": "code-review-mobile-dev"
+      "name": "code-review-mobile-dev",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A810BTASG",
-      "name": "collab-feedback"
+      "name": "collab-feedback",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A8EJR4J7L",
-      "name": "trendingstories"
+      "name": "trendingstories",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A8HDGU669",
-      "name": "social-media-gujarati"
+      "name": "social-media-gujarati",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A8J8HTS5N",
-      "name": "randeep-hooda-performance-campaigns"
+      "name": "randeep-hooda-performance-campaigns",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A8QB9UGJY",
-      "name": "subscription-ads-gujarati"
+      "name": "subscription-ads-gujarati",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A99NA9S3T",
-      "name": "web-alerts"
+      "name": "web-alerts",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AA87MURL3",
-      "name": "external_rudderstack"
+      "name": "external_rudderstack",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AALBN04KW",
-      "name": "test-leave-bot"
+      "name": "test-leave-bot",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AC851HPAN",
-      "name": "my-data"
+      "name": "my-data",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0ACQU93MC1",
-      "name": "haryanvi-ads-shop"
+      "name": "haryanvi-ads-shop",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0ADBCH4Y30",
-      "name": "ai-videos"
+      "name": "ai-videos",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0ADHK6L2P3",
-      "name": "ai-trailer-generator"
+      "name": "ai-trailer-generator",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0ADY14SRFX",
-      "name": "testing-vouchers"
+      "name": "testing-vouchers",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AEG5645RT",
-      "name": "culture-productising"
+      "name": "culture-productising",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AELUDV1QT",
-      "name": "ai-native-performance-marketing"
+      "name": "ai-native-performance-marketing",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AETCSJSCA",
-      "name": "ai-native-title-marketing"
+      "name": "ai-native-title-marketing",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AETMC52DQ",
-      "name": "life-at-stage-bot"
+      "name": "life-at-stage-bot",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AFDSFD3PA",
-      "name": "ai-native-agentic-framework-content"
+      "name": "ai-native-agentic-framework-content",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AFFKNRM6K",
-      "name": "android-tv-code-review"
+      "name": "android-tv-code-review",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AFJCPPG8P",
-      "name": "long-series-pod"
+      "name": "long-series-pod",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AFKKM6Y5C",
-      "name": "ai-character-bots"
+      "name": "ai-character-bots",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AFPCNMRAP",
-      "name": "custom-store-listings"
+      "name": "custom-store-listings",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AFZSHT7D0",
-      "name": "microdrama-pod"
+      "name": "microdrama-pod",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AGNMYMSQM",
-      "name": "content-legal"
+      "name": "content-legal",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AGU1BCL6T",
-      "name": "my-channel"
+      "name": "my-channel",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AK2RR6AJY",
-      "name": "csl-work-flow-updates"
+      "name": "csl-work-flow-updates",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AK6NSDHFH",
-      "name": "watch-retention-solver"
+      "name": "watch-retention-solver",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
+    },
+    {
+      "id": "C0AKJCKC45D",
+      "name": "film-pod-stage",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AKV4E2JMQ",
-      "name": "reacquisition"
+      "name": "reacquisition",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0AL9G2CH7S",
-      "name": "tam-expansion-dubbing"
+      "name": "tam-expansion-dubbing",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C01R4A0H1UP",
-      "name": "external-catchup-searce"
+      "name": "external-catchup-searce",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C081FH29W7P",
-      "name": "morphic-stage"
+      "name": "morphic-stage",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     },
     {
       "id": "C0A99V9BHEV",
-      "name": "stage_maino_manthan"
+      "name": "stage_maino_manthan",
+      "is_channel": true,
+      "is_group": false,
+      "is_private": false
     }
   ]
 }

@@ -48,6 +48,9 @@
 | D59 | Check latency at 1 PM peak (verify fixes) | Rohit Singh | 2026-03-07 | #team-devops | Rohit Deshmukh request 06:53 UTC | 0 |
 | D60 | Maintain 60:40 creative ratio (general:long-format) | Promo Team | 2026-03-07 | #promo-team | anish announcement — standing commitment | 0 |
 
+| D61 | Chatbot weekly report on Friday EOD | Aaliya Mirza | 2026-03-12 | #ai-character-bots | Self-commitment: "I will be sharing chatbot's next report on friday eod" — current scale/exposure down, performance slow due to architectural issues | 0 |
+| D62 | Compensation benchmarking for consumer insights role | HR Team | 2026-03-12 | #team-hr | Nisha: "Please do it today only" | 0 |
+
 ## Completed
 
 | # | What | Delegated To | Completed | Outcome |
@@ -64,7 +67,7 @@
 
 ---
 
-*Last updated: 2026-03-07 12:00 UTC*
+*Last updated: 2026-03-12 12:00 UTC*
 
 | D26 | Chatbot data updates in standard format | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Nikhil requested | 3 |
 | D27 | Infrastructure upgrade activity (4 components) | Rohit Singh | 2026-03-04 | #team-devops | Self-announced plan (non-prod ✅, prod+DB pending) | 2 |

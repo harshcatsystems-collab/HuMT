@@ -92,8 +92,10 @@ Supports: .ogg (WhatsApp voice notes)
 
 ## VPS (Production)
 
-- **Host:** GCP Debian 12, `34.93.212.225`
-- **CPU:** 2 vCPU (Xeon 2.2GHz) | **RAM:** 1.9GB + 2GB swap | **Disk:** 20GB
+- **Host:** GCP Debian 12, `34.87.53.162` (was `34.93.212.225` on openclaw1 — machine switched 2026-03-13)
+- **Hostname:** openclaw2 (was openclaw)
+- **Zone:** asia-southeast1-b / Singapore (was asia-south1 / Mumbai)
+- **CPU:** 2 vCPU | **RAM:** 3.8GB + 2GB swap (upgraded from 1.9GB) | **Disk:** 20GB
 - **Node:** v22.22.0 | **OpenClaw:** 2026.2.15
 - **Service:** user-level systemd (`openclaw gateway install`)
 - **Service file:** `~/.config/systemd/user/openclaw-gateway.service`
@@ -182,13 +184,13 @@ If you skip any step, HMT will catch it. He already caught the Drive gap once.
 
 ## LLM Provider
 
-- **Provider:** OpenRouter (via `openrouter/openrouter/auto`)
-- **API Key:** `sk-or-v1-...` (in auth-profiles.json)
-- **Auth profiles:** `openrouter:default` + `openai:openrouter` (fallback via OpenAI-compatible endpoint)
-- **Previous:** Direct Anthropic API (`anthropic/claude-opus-4-6`) — deprecated 2026-02-28 (credits ran out)
-- **Model format:** Must be `openrouter/<provider>/<model>` (e.g., `openrouter/anthropic/claude-sonnet-4-5`)
-- **⚠️ NEVER** use bare model names like `gpt-4` or `anthropic/claude-opus-4-6` — causes config validation failure + crash loop
-- **Embeddings:** Still need OpenAI API key for memory_search (OpenRouter key doesn't auth against OpenAI embedding endpoint)
+- **Provider:** Anthropic direct (via `company/claude-sonnet-4-6`)
+- **API Key:** Anthropic OAuth token (in openclaw.json → models.providers.company)
+- **Model format:** `company/<model>` (e.g., `company/claude-sonnet-4-6`)
+- **Switched back:** 2026-03-13 — OpenRouter `auto` model stopped resolving (404). Switched to Anthropic direct.
+- **Previous:** OpenRouter (`openrouter/openrouter/auto`) — used Feb 28 → Mar 13 after Anthropic credits ran out
+- **⚠️ NEVER** use bare model names like `gpt-4` or `openrouter/openrouter/auto` — can cause 404 errors
+- **Embeddings:** memory_search still uses OpenRouter key (OpenAI-compatible endpoint at openrouter.ai/api/v1)
 
 ---
 

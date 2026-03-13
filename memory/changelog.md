@@ -4,6 +4,27 @@
 
 ---
 
+## 2026-03-13 — Model Switch Back to Anthropic + Machine Changes
+
+| Time (UTC) | What Changed | Before → After | Impact |
+|------------|-------------|----------------|--------|
+| ~08:00 | Multiple cron jobs failed | Working → LLM timeout / model_not_found | morning-brief, email-triage, capability-verify, git-backup, security-audit all failed |
+| ~08:00 | Root cause: `openrouter/auto` model 404 | openrouter/openrouter/auto → not found | meeting-prep-jit: 4 consecutive errors |
+| ~09:46 | Model switched to Anthropic direct | openrouter/openrouter/auto → company/claude-sonnet-4-6 | Gateway restarted, all crons self-healing |
+| ~09:46 | Machine changes made by HMT | Unknown (to be documented) | Gateway restart counter at 4 |
+| ~10:05 | Disk cleanup: MP3 audio files removed | 90% disk → 90% (sudo needed for apt/journal) | ~82MB freed from live files; git history still holds ~54MB |
+| ~10:05 | .gitignore updated | none → *.mp3, *.ogg excluded | Audio files no longer tracked in git |
+| 10:xx | Catch-up morning brief sent manually | Missed → Sent | Covers 12h Slack window |
+
+### Notes
+- Transcripts + notes from podcast fully preserved (hmt-ashoka-podcast-transcript.txt, hmt-podcast-summary.md)
+- **Sudo access not available from gateway process** — apt clean + journal vacuum must be run from HMT's terminal
+- To free ~820MB more: `sudo apt-get clean && sudo journalctl --vacuum-size=50M`
+- OpenRouter key still active for memory_search (embeddings) — unchanged
+- cron jobs will self-heal on next scheduled run now that model is fixed
+
+---
+
 ## 2026-02-28 — INCIDENT: Anthropic Credits Depletion + Recovery
 
 | Time (UTC) | What Changed | Before → After | Impact |

@@ -2,679 +2,426 @@
   "channels": {
     "CDZFAJLBV": {
       "name": "announcements",
-      "id": "CDZFAJLBV"
+      "purpose": "This channel is for workspace-wide communication and announcements. All members are in this channel."
     },
     "CE277N1PH": {
       "name": "onefeed-sdk",
-      "id": "CE277N1PH"
+      "purpose": "for communicating about onefeed"
     },
     "CE2HG4LA2": {
       "name": "mobiletech",
-      "id": "CE2HG4LA2"
+      "purpose": ""
     },
     "CE8TGJHC4": {
       "name": "team1",
-      "id": "CE8TGJHC4"
+      "purpose": "Hackathon"
     },
     "CEAB2BUSF": {
       "name": "vatsanaemail",
-      "id": "CEAB2BUSF"
+      "purpose": ""
     },
     "CEAF06RGE": {
       "name": "v9-onefeed-dashboard",
-      "id": "CEAF06RGE"
+      "purpose": ""
     },
     "CEC2ED2RX": {
       "name": "onefeed_media",
-      "id": "CEC2ED2RX"
+      "purpose": "For tech communication"
     },
     "CEGS1SLFJ": {
       "name": "theofficialwittyfeed",
-      "id": "CEGS1SLFJ"
+      "purpose": "Internal team communication"
     },
     "CEHDDUBQU": {
       "name": "wittyfeed",
-      "id": "CEHDDUBQU"
+      "purpose": ""
     },
     "CEHDVRC83": {
       "name": "thecxos",
-      "id": "CEHDVRC83"
+      "purpose": "CXOs"
     },
     "CEHLABRL2": {
       "name": "programmaticsmediadek",
-      "id": "CEHLABRL2"
+      "purpose": "Media deck for programmatics "
     },
     "CEHPPGSN9": {
       "name": "tech-mates",
-      "id": "CEHPPGSN9"
+      "purpose": "Only For Tech Team Conversation"
     },
     "CEHPZTVD3": {
       "name": "stage-ke-krantikaari",
-      "id": "CEHPZTVD3"
+      "purpose": "Stay updated with company-wide announcements, events, and important updates. Everything you need to know about STAGE, all in one place!"
     },
     "CEHUDR108": {
       "name": "geeksmate_bd",
-      "id": "CEHUDR108"
+      "purpose": "GeeksMate &lt;&gt; Brand Solutions"
     },
     "CEJ2VN8CR": {
       "name": "innervoice_bd",
-      "id": "CEJ2VN8CR"
+      "purpose": "InnerVoice &lt;&gt; Brand Solutions"
     },
     "CEJF806R2": {
       "name": "onefeedtech",
-      "id": "CEJF806R2"
+      "purpose": "OneFeed"
     },
     "CEJG8B70T": {
       "name": "leadseod",
-      "id": "CEJG8B70T"
+      "purpose": "staying connected on everyday action"
     },
     "CEJJXA5AN": {
       "name": "hrandadmin",
-      "id": "CEJJXA5AN"
+      "purpose": ""
     },
     "CEJK31TFD": {
       "name": "thedesignmafia",
-      "id": "CEJK31TFD"
+      "purpose": "Design Team"
     },
     "CEJK4RB4K": {
       "name": "mumbai-team",
-      "id": "CEJK4RB4K"
+      "purpose": "Internal communication"
     },
     "CEK1C296W": {
       "name": "v9-affiliate-data",
-      "id": "CEK1C296W"
+      "purpose": ""
     },
     "CEK4HN9GD": {
       "name": "thepopple_socialmedia",
-      "id": "CEK4HN9GD"
+      "purpose": "Extraordinary ideas we can must share on our social media platforms."
     },
     "CEKQZFR8A": {
       "name": "conferenceroom",
-      "id": "CEKQZFR8A"
+      "purpose": "Conference Room booking"
     },
     "CELKMUL9F": {
       "name": "ard-programmatics",
-      "id": "CELKMUL9F"
+      "purpose": ""
     },
     "CELRJQ682": {
       "name": "thepopple--marcomm",
-      "id": "CELRJQ682"
+      "purpose": ""
     },
     "CEN2W1DGA": {
       "name": "onefeed",
-      "id": "CEN2W1DGA"
+      "purpose": "OneFeed"
     },
     "CENTYFW6M": {
       "name": "onefeed_distribution",
-      "id": "CENTYFW6M"
+      "purpose": ""
     },
     "CEPAML3B6": {
       "name": "daily_traffic_report",
-      "id": "CEPAML3B6"
+      "purpose": ""
     },
     "CESRF1WR1": {
       "name": "jaiho",
-      "id": "CESRF1WR1"
+      "purpose": ""
     },
     "CEV13S971": {
       "name": "bread_foodmate",
-      "id": "CEV13S971"
+      "purpose": "bread foodmate"
     },
     "CEVCU66G2": {
       "name": "thepopple",
-      "id": "CEVCU66G2"
+      "purpose": "To discuss almost everything."
     },
     "CEVLA7BFX": {
       "name": "mostlyhealth",
-      "id": "CEVLA7BFX"
+      "purpose": ""
     },
     "CEW94N20L": {
       "name": "mostlymoney",
-      "id": "CEW94N20L"
+      "purpose": ""
     },
     "CEWV0GMMG": {
       "name": "product",
-      "id": "CEWV0GMMG"
+      "purpose": "Create something big"
     },
     "CEX4WFYAJ": {
       "name": "thepoppleeod",
-      "id": "CEX4WFYAJ"
+      "purpose": "Team EoDs"
     },
     "CEX7B2TAA": {
       "name": "programmaticfinance",
-      "id": "CEX7B2TAA"
+      "purpose": "Invoices"
     },
     "CEZRCN61K": {
       "name": "adidas_article",
-      "id": "CEZRCN61K"
+      "purpose": "adidas article"
     },
     "CF0QU7CH2": {
       "name": "hp_laptops",
-      "id": "CF0QU7CH2"
+      "purpose": "HP"
     },
     "CF59ANPT6": {
       "name": "accounts_finance",
-      "id": "CF59ANPT6"
+      "purpose": ""
     },
     "CF5AU9H6H": {
       "name": "content-programmatics",
-      "id": "CF5AU9H6H"
+      "purpose": ""
     },
     "CF71LHK9C": {
       "name": "mirzapur",
-      "id": "CF71LHK9C"
+      "purpose": "Numbers of Mirzapur campaign"
     },
     "CF84JQWAC": {
       "name": "indialeads",
-      "id": "CF84JQWAC"
+      "purpose": ""
     },
     "CF8B4RS6M": {
       "name": "innervoice",
-      "id": "CF8B4RS6M"
+      "purpose": ""
     },
     "CFH3M3F26": {
       "name": "wittyhacks",
-      "id": "CFH3M3F26"
+      "purpose": ""
     },
     "CFWAZ8Q2C": {
       "name": "product_design",
-      "id": "CFWAZ8Q2C"
+      "purpose": ""
     },
     "CG4LEN5HV": {
       "name": "reddit-content-team",
-      "id": "CG4LEN5HV"
+      "purpose": ""
     },
     "CG50W2JTY": {
       "name": "contech",
-      "id": "CG50W2JTY"
+      "purpose": "content and tech discussions"
     },
     "CG91NNEHE": {
       "name": "videos_internal",
-      "id": "CG91NNEHE"
+      "purpose": "Internal team Videos"
     },
     "CG9L0M3PV": {
       "name": "videos-and-us_leads",
-      "id": "CG9L0M3PV"
+      "purpose": "Leads can suggest videos that can go on any property."
     },
     "CGQ80KBRV": {
       "name": "wittyfeedcontent",
-      "id": "CGQ80KBRV"
+      "purpose": ""
     },
     "CJPKMFV54": {
       "name": "deployment",
-      "id": "CJPKMFV54"
+      "purpose": "Jenkins builds"
     },
     "CJPL664JJ": {
       "name": "build",
-      "id": "CJPL664JJ"
+      "purpose": ""
     },
     "CK16CHKLN": {
       "name": "omji-chetan",
-      "id": "CK16CHKLN"
+      "purpose": ""
     },
     "CL13DF93K": {
       "name": "thinktank",
-      "id": "CL13DF93K"
+      "purpose": ""
     },
     "CL7DS8ZLY": {
       "name": "stage",
-      "id": "CL7DS8ZLY"
+      "purpose": ""
     },
     "CL8CN59B2": {
       "name": "catchuphr",
-      "id": "CL8CN59B2"
+      "purpose": ""
     },
     "CL9HWGAR4": {
       "name": "traffic_usasites",
-      "id": "CL9HWGAR4"
+      "purpose": ""
     },
     "CM61EHG6L": {
       "name": "wittyfeedupdates",
-      "id": "CM61EHG6L"
+      "purpose": ""
     },
     "CMQFSQA0J": {
       "name": "product-stagecontent",
-      "id": "CMQFSQA0J"
+      "purpose": "For collaboration between the Stage content team and the product team"
     },
     "CNPPHBDT8": {
       "name": "innervoicesocial",
-      "id": "CNPPHBDT8"
+      "purpose": "InnerVoice Social Media"
     },
     "CNYPWRY83": {
       "name": "team-nukkad",
-      "id": "CNYPWRY83"
+      "purpose": "Nukkad Social Media"
     },
     "CRGL272DP": {
       "name": "zeplin",
-      "id": "CRGL272DP"
+      "purpose": ""
     },
     "CS75DM3KQ": {
       "name": "stage-product-feedback-and-requests",
-      "id": "CS75DM3KQ"
+      "purpose": "To report bugs on the STAGE app that we encounter"
     },
     "C0101V0KR1N": {
       "name": "wfcontentstandup",
-      "id": "C0101V0KR1N"
+      "purpose": ""
     },
     "C0107GZBRAQ": {
       "name": "wfh-worklog",
-      "id": "C0107GZBRAQ"
+      "purpose": ""
     },
     "C0115DZPDMG": {
       "name": "hrworklogs",
-      "id": "C0115DZPDMG"
+      "purpose": ""
     },
     "C0121EQ4SCT": {
       "name": "stagegrowthandmarketing",
-      "id": "C0121EQ4SCT"
+      "purpose": ""
     },
     "C013GQHKNM8": {
       "name": "build_1",
-      "id": "C013GQHKNM8"
+      "purpose": "jenkins notifications"
     },
     "C013H9CP7AR": {
       "name": "retention-old",
-      "id": "C013H9CP7AR"
+      "purpose": ""
     },
     "C015XEMKN3G": {
       "name": "we_work_for_our_customer",
-      "id": "C015XEMKN3G"
+      "purpose": ""
     },
     "C016TU33PU1": {
       "name": "funatwork",
-      "id": "C016TU33PU1"
+      "purpose": ""
     },
     "C017KEVC3V2": {
       "name": "all_character_video",
-      "id": "C017KEVC3V2"
+      "purpose": ""
     },
     "C018L6S1G6R": {
       "name": "\u0918\u0930-\u0915\u093e-quora",
-      "id": "C018L6S1G6R"
+      "purpose": "\u092c\u094b\u0932 \u0915\u093f \u0932\u092c \u0906\u095b\u093e\u0926 \u0939\u0948\u0902 \u0924\u0947\u0930\u0947 ...\u0964 (\u0938\u094d\u091f\u0947\u091c \u0938\u0947 \u091c\u0941\u095c\u0947 \u0938\u0935\u093e\u0932\u094b\u0902 \u0915\u093e \u091c\u0935\u093e\u092c \u0917\u0942\u0917\u0932 \u092a\u0930 \u0928\u0939\u0940\u0902, \u092f\u0939\u093e\u0902 \u092e\u093f\u0932\u0947\u0917\u093e)"
     },
     "C01B905KNJZ": {
       "name": "stagecms",
-      "id": "C01B905KNJZ"
+      "purpose": ""
     },
     "C01PPHA8F34": {
       "name": "testforamplitude",
-      "id": "C01PPHA8F34"
+      "purpose": ""
     },
     "C01QY8UAQP6": {
       "name": "monetization",
-      "id": "C01QY8UAQP6"
+      "purpose": "All about subscription"
     },
     "C020VPVFZUL": {
       "name": "alert_gcp",
-      "id": "C020VPVFZUL"
+      "purpose": "For gcp alerts"
     },
     "C021635LEQN": {
       "name": "payment-success",
-      "id": "C021635LEQN"
+      "purpose": ""
     },
     "C02178ASC4X": {
       "name": "haryanvi_stage",
-      "id": "C02178ASC4X"
+      "purpose": ""
     },
     "C021SC8GYJD": {
       "name": "payment-failure",
-      "id": "C021SC8GYJD"
+      "purpose": ""
     },
     "C025J6WKVFE": {
       "name": "reengagement",
-      "id": "C025J6WKVFE"
+      "purpose": "Everything about push notifications."
     },
     "C02F43TJEG7": {
       "name": "crash-reports",
-      "id": "C02F43TJEG7"
+      "purpose": ""
     },
     "C02G45C345U": {
       "name": "cos-projects",
-      "id": "C02G45C345U"
+      "purpose": ""
     },
     "C02HBN8F0SK": {
       "name": "ios-internal-testing",
-      "id": "C02HBN8F0SK"
+      "purpose": ""
     },
     "C02K0BBP75J": {
       "name": "live-streamings",
-      "id": "C02K0BBP75J"
+      "purpose": "All information about live streaming"
     },
     "C02MQC6MSN5": {
       "name": "my-note",
-      "id": "C02MQC6MSN5"
+      "purpose": ""
     },
     "C02QWQ7FXRA": {
       "name": "discussion",
-      "id": "C02QWQ7FXRA"
+      "purpose": ""
     },
     "C02SS03EZM3": {
       "name": "good-reads",
-      "id": "C02SS03EZM3"
+      "purpose": "Share anything you find interesting"
     },
     "C033GF3BVMZ": {
       "name": "tv-android-platter",
-      "id": "C033GF3BVMZ"
+      "purpose": ""
     },
     "C0346C5LWPN": {
       "name": "prd-changes",
-      "id": "C0346C5LWPN"
+      "purpose": ""
     },
     "C035F6W8DK9": {
       "name": "product-design",
-      "id": "C035F6W8DK9"
+      "purpose": "Discussions related the UI/UX design development"
     },
     "C035QJ5A8G6": {
       "name": "product_prd",
-      "id": "C035QJ5A8G6"
+      "purpose": "Discussions regarding the PRD for all product and features."
     },
     "C035XUG0D24": {
       "name": "weekly-initiatives",
-      "id": "C035XUG0D24"
+      "purpose": ""
     },
     "C035Y3QTD7Y": {
       "name": "jira-learnings",
-      "id": "C035Y3QTD7Y"
+      "purpose": ""
     },
     "C0368KVCL2D": {
       "name": "product-analytics",
-      "id": "C0368KVCL2D"
+      "purpose": "Discussion related to all the analytics, metabase, amplitude, events and everything around data"
     },
     "C037H0GLYP4": {
       "name": "marketing",
-      "id": "C037H0GLYP4"
+      "purpose": "Brainstorming ideas on marketing, social media, organic etc"
     },
     "C037U7RUS2F": {
       "name": "subscription_ads_haryanvi",
-      "id": "C037U7RUS2F"
+      "purpose": "This group is to discuss new subscription ads. Deliver ready subscription ads. and discuss their captions."
     },
     "C0382PLRWRL": {
       "name": "copies-conversion",
-      "id": "C0382PLRWRL"
-    },
-    "C039S74GNP2": {
-      "name": "rajasthani_stage",
-      "id": "C039S74GNP2"
-    },
-    "C03BWBS957X": {
-      "name": "cms-issues",
-      "id": "C03BWBS957X"
-    },
-    "C03C4QAPABU": {
-      "name": "leave-intimation",
-      "id": "C03C4QAPABU"
-    },
-    "C03CH44KLUT": {
-      "name": "stage-backend",
-      "id": "C03CH44KLUT"
-    },
-    "C03H1HU1FRD": {
-      "name": "backend",
-      "id": "C03H1HU1FRD"
-    },
-    "C03JCM4FG75": {
-      "name": "standup_meeting",
-      "id": "C03JCM4FG75"
-    },
-    "C03JX2Q1S94": {
-      "name": "social-media-trends-",
-      "id": "C03JX2Q1S94"
-    },
-    "C03S73A1R7C": {
-      "name": "nukkad-wali-chai",
-      "id": "C03S73A1R7C"
-    },
-    "C045RSY0WSZ": {
-      "name": "analytics-with-anujay",
-      "id": "C045RSY0WSZ"
-    },
-    "C04612FQ3RS": {
-      "name": "tv_discussion_crash",
-      "id": "C04612FQ3RS"
-    },
-    "C0474AMMP61": {
-      "name": "diwalicampaignrajasthani",
-      "id": "C0474AMMP61"
-    },
-    "C0475A8TV5L": {
-      "name": "release-plan-raj",
-      "id": "C0475A8TV5L"
-    },
-    "C0479T52GMT": {
-      "name": "social-media-hr",
-      "id": "C0479T52GMT"
-    },
-    "C047BGNCKFC": {
-      "name": "copywriting-rj",
-      "id": "C047BGNCKFC"
-    },
-    "C047BKTJ01G": {
-      "name": "laptop_request",
-      "id": "C047BKTJ01G"
-    },
-    "C047BR7EDFV": {
-      "name": "release-plan-hr",
-      "id": "C047BR7EDFV"
-    },
-    "C047CS5H9PC": {
-      "name": "social-media-raj",
-      "id": "C047CS5H9PC"
-    },
-    "C047DV94G4C": {
-      "name": "stage_leads_cmc",
-      "id": "C047DV94G4C"
-    },
-    "C047E57Q2VA": {
-      "name": "procurement-and-vendor-payment-group-",
-      "id": "C047E57Q2VA"
-    },
-    "C047EJXV268": {
-      "name": "requesting-advance-sallery-",
-      "id": "C047EJXV268"
-    },
-    "C047F65FQRK": {
-      "name": "subscription-ads-rajasthani",
-      "id": "C047F65FQRK"
-    },
-    "C047H8326TX": {
-      "name": "content-lead-hr",
-      "id": "C047H8326TX"
-    },
-    "C047HLH7T26": {
-      "name": "promo-team",
-      "id": "C047HLH7T26"
-    },
-    "C047Q5M6SCR": {
-      "name": "copywriting-hr",
-      "id": "C047Q5M6SCR"
-    },
-    "C04849DUKBJ": {
-      "name": "mohit-bharti-creator",
-      "id": "C04849DUKBJ"
-    },
-    "C0488M474TS": {
-      "name": "marketing-humanresources",
-      "id": "C0488M474TS"
-    },
-    "C048HV2P8SX": {
-      "name": "payments_legal_hr_agreement",
-      "id": "C048HV2P8SX"
-    },
-    "C048P8ECGBZ": {
-      "name": "tech-erd",
-      "id": "C048P8ECGBZ"
-    },
-    "C048YGP4P43": {
-      "name": "stage_growweasy_",
-      "id": "C048YGP4P43"
-    },
-    "C049B8XUZ0R": {
-      "name": "stage_growweasy",
-      "id": "C049B8XUZ0R"
+      "purpose": ""
     },
     "C0ALA37HGE5": {
       "name": "admin-workflow",
-      "tier": "Tier 2"
-    },
-    "C0AFKKM6Y5C": {
-      "name": "ai-character-bots",
-      "tier": "Tier 2"
-    },
-    "C0AFDSFD3PA": {
-      "name": "ai-native-agentic-framework-content",
-      "tier": "Tier 2"
-    },
-    "C0AELUDV1QT": {
-      "name": "ai-native-performance-marketing",
-      "tier": "Tier 2"
-    },
-    "C0AETCSJSCA": {
-      "name": "ai-native-title-marketing",
-      "tier": "Tier 2"
-    },
-    "C0ADHK6L2P3": {
-      "name": "ai-trailer-generator",
-      "tier": "Tier 2"
-    },
-    "C0ADBCH4Y30": {
-      "name": "ai-videos",
-      "tier": "Tier 2"
-    },
-    "C0A8JDHNKHC": {
-      "name": "baahubali-squad",
-      "tier": "Tier 2"
-    },
-    "C0A7YPZMZ8T": {
-      "name": "code-review-mobile-dev",
-      "tier": "Tier 2"
-    },
-    "C0A810BTASG": {
-      "name": "collab-feedback",
-      "tier": "Tier 2"
+      "tier": "unknown"
     },
     "C01R4A0H1UP": {
       "name": "external-catchup-searce",
-      "tier": "Tier 2"
+      "tier": "unknown"
     },
     "GEJUR0WA2": {
       "name": "founders_sync",
-      "tier": "Tier 1"
-    },
-    "C0AH5AVJ5PV": {
-      "name": "growtht-tracker",
-      "tier": "Tier 2"
-    },
-    "C0A7QKTFCDN": {
-      "name": "gujarati_stage",
-      "tier": "Tier 2"
-    },
-    "C0ABCG0RV1N": {
-      "name": "homepage-personalisation",
-      "tier": "Tier 2"
-    },
-    "C0AETMC52DQ": {
-      "name": "life-at-stage-bot",
-      "tier": "Tier 2"
-    },
-    "C0A6ZPA3XT8": {
-      "name": "m0-strategy",
-      "tier": "Tier 2"
-    },
-    "C0A5GJRCQTZ": {
-      "name": "m1-watchers-retention",
-      "tier": "Tier 2"
-    },
-    "C0A87E17UMS": {
-      "name": "monetisation",
-      "tier": "Tier 2"
-    },
-    "C0A4BF8HTN3": {
-      "name": "monetisation-core-devs",
-      "tier": "Tier 2"
+      "tier": "tier1"
     },
     "C081FH29W7P": {
       "name": "morphic-stage",
-      "tier": "Tier 2"
-    },
-    "C0AH4FP8VR9": {
-      "name": "mpdm-vipul--harsh500--nikhil.nair--gopal--humt-1",
-      "tier": "Tier 1"
-    },
-    "C0AC851HPAN": {
-      "name": "my-data",
-      "tier": "Tier 2"
-    },
-    "C0A40S430F8": {
-      "name": "production-tech",
-      "tier": "Tier 2"
-    },
-    "C0A8J8HTS5N": {
-      "name": "randeep-hooda-performance-campaigns",
-      "tier": "Tier 2"
-    },
-    "C0A4S84UA4R": {
-      "name": "realfiction_md_agency",
-      "tier": "Tier 2"
-    },
-    "C0AAKDTMY82": {
-      "name": "retention_cost_optimization",
-      "tier": "Tier 2"
-    },
-    "C0A5LU7UD5X": {
-      "name": "saathi-support",
-      "tier": "Tier 2"
-    },
-    "C0A8HDGU669": {
-      "name": "social-media-gujarati",
-      "tier": "Tier 2"
-    },
-    "C0A75FY5RMJ": {
-      "name": "stage-vip-club",
-      "tier": "Tier 2"
+      "tier": "unknown"
     },
     "C07KWTTB98W": {
       "name": "stage_maino",
-      "tier": "Tier 2"
+      "tier": "unknown"
     },
     "C0A99V9BHEV": {
       "name": "stage_maino_manthan",
-      "tier": "Tier 2"
+      "tier": "unknown"
     },
-    "C0A8QB9UGJY": {
-      "name": "subscription-ads-gujarati",
-      "tier": "Tier 2"
-    },
-    "C0A79N9NDR6": {
-      "name": "test-dd-alerts",
-      "tier": "Tier 2"
-    },
-    "C0AALBN04KW": {
-      "name": "test-leave-bot",
-      "tier": "Tier 2"
-    },
-    "C0ADY14SRFX": {
-      "name": "testing-vouchers",
-      "tier": "Tier 2"
-    },
-    "C0A8EJR4J7L": {
-      "name": "trendingstories",
-      "tier": "Tier 2"
-    },
-    "C0A4LRBCLQ2": {
-      "name": "watch-along",
-      "tier": "Tier 2"
-    },
-    "C0AK6NSDHFH": {
-      "name": "watch-retention-solver",
-      "tier": "Tier 2"
-    },
-    "C0A99NA9S3T": {
-      "name": "web-alerts",
-      "tier": "Tier 2"
+    "C0AL2NUKAP7": {
+      "name": "cricket-saathi",
+      "tier": "unknown"
     }
   },
-  "metadata": {
-    "lastUpdated": "2026-03-11T10:06:53.824409",
-    "totalChannels": 438
-  }
+  "last_updated": "2026-03-12 02:21:58",
+  "total_count": 117,
+  "lastRefresh": "2026-03-12T03:50:00Z"
 }
