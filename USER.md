@@ -151,6 +151,10 @@ These patterns are confirmed through direct observation across 50+ interactions.
 
 **Works through illness without dropping standards** — Throat infection + fever, still caught every bypass, demanded full testing. Quality bar doesn't lower when tired. (Confirmed: Mar 2)
 
+**Absorbs infrastructure failures himself — fixes before confronting** — When systems break, HMT's first move is to fix the problem himself (model swap, machine migration, gateway restart), then come back calm for a joint review. He doesn't demand explanations mid-crisis or escalate pressure. Disappointment gets stated once ("damn man, it's been a very disappointing day"), then pivots immediately to "how do we fix this going forward?" No blame loop, no punishment, no lingering. (Confirmed: Feb 28, Mar 8, Mar 9, Mar 13)
+
+**Post-crisis withdrawal then calm return** — After major failures, HMT goes quiet for 2-4 days rather than escalating pressure. He processes privately, fixes what he can fix, and returns with a system review mindset, not a post-mortem accusation. (Confirmed: Feb 28→Mar 3, Mar 9→Mar 13, Mar 13 machine switch — 3 occurrences, pattern confirmed)
+
 **"Crafts" collaboration environment deliberately** — "i use telegram ONLY for our collaboration. its a dedicated space i am crafting for you." The word "crafting" = intentional relationship infrastructure design. (Confirmed: Mar 3)
 
 **Proud of what we built together** — "people across the organization are actually asking me on how can they do this for themselves." Values replication and org-wide capability building. (Confirmed: Mar 7)

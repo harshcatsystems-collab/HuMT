@@ -164,6 +164,7 @@
 **Vismit Bansal** (Head - Retention Marketing)
 - **Observations:**
   - Running live game show MVP for app subscribers — low-budget, scrappy experimentation (requested conference room for 4-5 Sundays). Product-minded marketer, not just campaigns. (Feb 17)
+  - **Mar 13:** Added by HMT to lead HP Personalisation project. Taking over from Manasvi/Shwetabh metapod structure. Scope expansion: Retention → Personalisation.
 
 **Nisha Ali** (Sr. Manager - People & Culture)
 - **Observations:** Shared HR roster when HMT asked — responsive. (Watch for: how she handles sensitive people issues, communication with HMT, proactiveness on HR matters)
