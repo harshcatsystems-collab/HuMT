@@ -18,3 +18,53 @@
 {"ts": "2026-03-13T16:22:00+00:00", "_type": "logger_run", "people_tracked": 11}
 {"ts": "2026-03-13T16:52:34Z", "_type": "logger_run", "people_tracked": 11}
 {"ts":"2026-03-13T17:23:02Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-13T17:52:34Z","user":"UEJV57HQW","name":"Parveen Singhal","messages":1,"thread_replies":0,"channels_active":1,"channel_ids":["C082Z8FUBRV"],"after_hours":1,"avg_response_latency_sec":null}
+{"ts":"2026-03-13T17:52:34Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-13T18:22:50.881256+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-13T18:52:00Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-13T19:22:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-13T19:52:53.851225+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-13T20:22:53Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-13T20:52:52Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-13T21:22:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-13T21:52:36Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-13T22:22:34Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-13T22:53:14Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-13T23:22:50Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-13T23:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-14T00:23:03.357348+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-14T00:52:35Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-14T01:22:00Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-14T01:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-14T02:22:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-14T02:52:53Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-14T03:23:07Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-14T03:52:53.470148+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-14T04:22:52.914049+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-14T04:52:35Z", "user": "UEJV57HQW", "name": "Parveen Singhal", "messages": 1, "thread_replies": 0, "channels_active": 1, "channel_ids": ["CEWV0GMMG"], "after_hours": 0, "avg_response_latency_sec": null}
+{"ts": "2026-03-14T04:52:35Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-14T05:22:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-14T05:52:53.162115+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-14T06:23:05.953002+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-14T06:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-14T07:23:16Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-14T07:53:04Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-14T08:22:35Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-14T08:52:36Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-14T09:22:56Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-14T09:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-14T10:22:52Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-14T10:52:00Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-14T11:22:59Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-14T11:53:08Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-14T12:22:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-14T12:52:55.396856+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-14T13:23:11Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-14T13:52:53.479929Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-14T14:23:05Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-14T14:52:55.416067+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-14T15:22:55Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-14T15:53:00.482995+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-14T16:22:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-14T16:52:35Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-14T17:22:00Z","_type":"logger_run","people_tracked":11}

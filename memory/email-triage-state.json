@@ -1,7 +1,9 @@
 {
-  "lastTriageUTC": "2026-03-12T03:00:00Z",
+  "lastTriageUTC": "2026-03-14T03:00:00Z",
   "urgent": 0,
   "important": 2,
-  "fyi": 4,
-  "responseDebt": 0
+  "fyi": 3,
+  "skip": 2,
+  "responseDebt": 1,
+  "notes": "Radhika Vijay WFH approval pending (Zoho People). Alex Turnbull helpdesk email looks like phishing (domain: helplycentralonline.info). No investor/board/co-founder emails. No starred unread."
 }

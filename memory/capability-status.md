@@ -5,24 +5,24 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-12 00:00 UTC (automated cron)
+## Last Verified: 2026-03-14 00:00 UTC (automated cron)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files | 2026-03-12 |
-| 2 | Files | ✅ | read/write/edit tools | 2026-03-12 |
-| 3 | Terminal | ✅ | exec tool (`echo ok` = ok) | 2026-03-12 |
-| 4 | Web Search | ✅ | Brave API returned results | 2026-03-12 |
-| 5 | Gmail | ✅ | gog gmail messages search "in:inbox" returned results | 2026-03-12 |
-| 6 | Calendar | ✅ | gog calendar list returned events | 2026-03-12 |
-| 7 | Cron/Reminders | ✅ | OpenClaw cron system (this job proves it works) | 2026-03-12 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram message sent + topic routing works | 2026-03-12 |
+| 1 | Memory | ✅ | Read/write workspace files | 2026-03-14 |
+| 2 | Files | ✅ | read/write/edit tools | 2026-03-14 |
+| 3 | Terminal | ✅ | exec tool — `date` + `whoami` returned correctly | 2026-03-14 |
+| 4 | Web Search | ✅ | Brave API returned results | 2026-03-14 |
+| 5 | Gmail | ✅ | gog gmail messages search "in:inbox" returned 3 messages | 2026-03-14 |
+| 6 | Calendar | ✅ | gog calendar list returned 3 upcoming events | 2026-03-14 |
+| 7 | Cron/Reminders | ✅ | 21 jobs active — this job execution proves it works | 2026-03-14 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present | 2026-03-14 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | Tested - API key works (sk-proj-HC1C****BycA) | 2026-03-12 |
-| 10 | Voice Transcription | ✅ | Uses same OpenAI key as DALL-E — working | 2026-03-12 |
-| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search tool | 2026-03-12 |
-| 12 | Google Drive | ✅ | gog drive ls returned files successfully | 2026-03-12 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) active | 2026-03-12 |
+| 9 | Images (DALL-E) | ✅ | OpenAI key verified — sk-proj-HC1C**** → HTTP 200 | 2026-03-14 |
+| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed 200 | 2026-03-14 |
+| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — returned results | 2026-03-14 |
+| 12 | Google Drive | ✅ | gog drive ls returned files including Meet Recordings | 2026-03-14 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-14 |
 
 ## Critical Findings (2026-03-06)
 

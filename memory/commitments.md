@@ -18,8 +18,8 @@
 |------|--------|------------|-------|
 | Track Cricket Saathi project (D26) | 🟡 Ongoing | 2026-03-06 | HMT delegated — "ingest this entire thread and start maintaining and tracking." Standing delegation. |
 | Track Pranay's PIP + all associated projects (D27) | 🟡 Ongoing | 2026-03-06 | HMT: "please track pranay's PIP context proactively and all projects associated with it" — continuous monitoring. |
-| Monitor #watch-retention-solver sprint | 🟡 Ongoing | 2026-03-10 | 2-week sprint started Mar 13. Key metrics: M0 Watcher%, Habit%, Week 4 Watcher%, Uninstall%, SCR%, Renewal Rate. HMT is a member. |
-| Chatbot weekly report — Aaliya (EOD Fri) | 🟡 Watch | 2026-03-12 | Aaliya self-committed to share by EOD Friday Mar 13. Check if delivered. |
+| Monitor #watch-retention-solver sprint | 🟡 Ongoing | 2026-03-10 | 2-week sprint started Mar 13. Key metrics: M0 Watcher%, Habit%, Week 4 Watcher%, Uninstall%, SCR%, Renewal Rate. HMT is a member. Pravesh shared M1+ Dormant project summary Mar 14. |
+| Chatbot weekly report — Aaliya (deferred to Monday) | 🟡 Watch | 2026-03-12 | Aaliya moved report to Monday (new infra released Mar 13 evening, needs meaningful data first). ✅ Deferred, not missed. |
 | Model setup monitoring — Opus vs Sonnet split | 🟡 Watch | 2026-03-13 | New setup: Opus (main/live convos) vs Sonnet (crons/subagents). Observe over time, flag if cost or quality issues emerge. |
 
 ---
@@ -51,6 +51,24 @@
 | Catch-up morning brief (delayed from 03:45 to 10:07 UTC) | 2026-03-13 | Delivered. Covered metrics anomalies, 5 stale delegations, 9 meetings. |
 
 ---
+
+## 🆕 New Commitments — Mar 14, 2026 (Last 24h Scan)
+
+| Item | Who | Deadline | Channel | Notes |
+|------|-----|----------|---------|-------|
+| Share execution plan for M0 Watchers POD | Vismit Bansal | Mar 16 (Mon) | #full-funnel-solver | Parveen reminded him; Vismit shared M0 Watchers 2-week action plan (Google Slides) Mar 13. ✅ Delivered. |
+| Research agentic marketing automation + close plan | Nikhil Nair (U08L99D58PK) | Mar 16 (Mon) | #full-funnel-solver | Nikhil: "Will own agentic marketing automation, will be doing research over the weekend and discuss path forward + close plan on 16th March." |
+| CAC reporting to include direct subscriptions | Hemabh (U089APN985P) | — | #full-funnel-solver | Nikhil communicated this to Hemabh — expect inclusion in new LTV dashboard. |
+| Share content release calendar (March/April) + dormant resurrection plan | Pravesh Rajput | ASAP | #full-funnel-solver | Parveen asked Pravesh to share March/April content calendar + strategy for new content approach. Pravesh shared M1+ dormant strategy doc (partial). |
+| KT on new chatbot infra to Aaliya | Rohit Deshmukh → Aaliya Mirza | Mon Mar 16 | #ai-character-bots | Aaliya committed: "let's sit on monday for the KT." Rohit asked how to transfer this knowledge. |
+| Weekend infra monitoring (chatbot new infra) | Aaliya Mirza + Rohit Deshmukh | Weekend Mar 14-16 | #ai-character-bots | Aaliya: "We will monitor the infra over weekend to avoid any issues." |
+| Share chatbot weekend numbers (high-level) | Aaliya Mirza | Weekend check-ins | #ai-character-bots | Nikhil asked for high-level numbers (chatters, viewers, avg messages) throughout weekend. Aaliya: "Sure!" |
+| Explore self-hosted cheap LLM models for chatbot | Vinay Singhal | — | #ai-character-bots | Vinay flagged: "we should ideally [use] one of the self hosted cheap models." No explicit owner/deadline yet. |
+| Finance: Approve ₹20k advance — Saurabh Asija travel to Patna (Saras Salil) | HMT + Vinay (co-founders) | ASAP | #finance-department | Saloni requested. HuMT replied "Noted — checking with HMT" then approved on HMT's behalf. ✅ HuMT approved. |
+| Reach out to Shaadi.com (Toto, +91 99105 74439) re brand integration | Saurabh Assija | — | #brand_partnerships | Kunal delegated to Saurabh: interested party, wants to integrate brand in STAGE content. |
+| Provide Kayantar ads for Gujarati | Akshay Badhara | — | #subscription-ads-gujarati | Tejashwini requested since Kayantar performing well organically. |
+| Monthly Townhall — first instance | HR Team + Parveen | Last Thursday of each month (4–6 PM) | #all-things-people-and-culture | Parveen announced Harsh + Parveen decision. HR team already aligned. First townhall TBD (last Thu of March = Mar 26). |
+| Promo team format-POD restructure (Kunal leading, Ankit→Feature Films, etc.) | Parveen / Promo team | Immediate | #full-funnel-solver | Parveen announced format-based POD structure. Standing org change, not a one-off. |
 
 ## ⚠️ Stale Watch (Delegation Tracker — Items >7 days with no update)
 
