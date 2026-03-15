@@ -50,6 +50,8 @@
 
 | D61 | Chatbot weekly report on Friday EOD | Aaliya Mirza | 2026-03-12 | #ai-character-bots | Self-commitment: "I will be sharing chatbot's next report on friday eod" — current scale/exposure down, performance slow due to architectural issues | 0 |
 | D62 | Compensation benchmarking for consumer insights role | HR Team | 2026-03-12 | #team-hr | Nisha: "Please do it today only" | 0 |
+| D63 | Fix chatbot home section — 2 funnel-breaking issues (FAB regression + home stories disappearing post v4.64.0) | Rohit Deshmukh (U013U47GNM6) / Rohit W (U039VC42JAF) | 2026-03-15 | #ai-character-bots | Aaliya @channel'd at 08:53 UTC — "need immediate fixes". Peak was Mar 7 (43K views, 5.3K chatters), now nearly unusable. Rohit confirmed funnel declining since Mar 9. | 0 |
+| D64 | Investigate + resolve Airbyte→ClickHouse pipeline failures (Failed to get table schema) | Data/Devops team | 2026-03-15 | #data-alerts | 20+ failures throughout Mar 14-15 across users/subscriptions/mandates/watch histories. No assigned owner yet — surfaced in morning brief. | 0 |
 
 ## Completed
 
@@ -67,7 +69,7 @@
 
 ---
 
-*Last updated: 2026-03-12 12:00 UTC*
+*Last updated: 2026-03-15 12:00 UTC (commitment tracker cron — Sunday scan)*
 
 | D26 | Chatbot data updates in standard format | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Nikhil requested | 3 |
 | D27 | Infrastructure upgrade activity (4 components) | Rohit Singh | 2026-03-04 | #team-devops | Self-announced plan (non-prod ✅, prod+DB pending) | 2 |

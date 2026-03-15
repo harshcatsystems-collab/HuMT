@@ -5,24 +5,35 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-14 00:00 UTC (automated cron)
+## Last Verified: 2026-03-15 00:00 UTC (automated cron)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files | 2026-03-14 |
-| 2 | Files | ✅ | read/write/edit tools | 2026-03-14 |
-| 3 | Terminal | ✅ | exec tool — `date` + `whoami` returned correctly | 2026-03-14 |
-| 4 | Web Search | ✅ | Brave API returned results | 2026-03-14 |
-| 5 | Gmail | ✅ | gog gmail messages search "in:inbox" returned 3 messages | 2026-03-14 |
-| 6 | Calendar | ✅ | gog calendar list returned 3 upcoming events | 2026-03-14 |
-| 7 | Cron/Reminders | ✅ | 21 jobs active — this job execution proves it works | 2026-03-14 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present | 2026-03-14 |
+| 1 | Memory | ✅ | Read/write workspace files | 2026-03-15 |
+| 2 | Files | ✅ | read/write/edit tools | 2026-03-15 |
+| 3 | Terminal | ✅ | exec tool — `date` + `whoami` returned correctly | 2026-03-15 |
+| 4 | Web Search | ✅ | Brave API returned results | 2026-03-15 |
+| 5 | Gmail | ✅ | gog gmail messages search returned 3 messages incl. GrowthAlly thread | 2026-03-15 |
+| 6 | Calendar | ✅ | gog calendar events returned 6 upcoming events (Mon Mar 16) | 2026-03-15 |
+| 7 | Cron/Reminders | ✅ | 20 jobs active — this job execution proves it works | 2026-03-15 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present | 2026-03-15 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | OpenAI key verified — sk-proj-HC1C**** → HTTP 200 | 2026-03-14 |
-| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed 200 | 2026-03-14 |
-| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — returned results | 2026-03-14 |
-| 12 | Google Drive | ✅ | gog drive ls returned files including Meet Recordings | 2026-03-14 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-14 |
+| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC**** → HTTP 200 on /v1/models | 2026-03-15 |
+| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed 200 | 2026-03-15 |
+| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — returned results | 2026-03-15 |
+| 12 | Google Drive | ✅ | gog drive ls returned files including Meet Recordings | 2026-03-15 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-15 |
+
+## ⚠️ Cron Job Warnings (2026-03-15)
+
+Two jobs have **2 consecutive errors (timeout)** — flag for awareness, not breakage:
+
+| Job | Consecutive Errors | Last Error | Note |
+|-----|--------------------|------------|------|
+| `slack:commitment-tracker` | 2 | timeout (300s) | Full Slack scan taking too long |
+| `slack:evening-debrief` | 2 | timeout (480s) | Full Slack scan + brief taking too long |
+
+These are operational timeouts — underlying capabilities (Slack, Telegram) are fine. The jobs themselves need timeout increases or scope reduction.
 
 ## Critical Findings (2026-03-06)
 

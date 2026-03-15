@@ -1,9 +1,41 @@
 {
-  "lastTriageUTC": "2026-03-14T03:00:00Z",
-  "urgent": 0,
+  "lastTriageUTC": "2026-03-15T03:00:00Z",
+  "urgent": 1,
   "important": 2,
-  "fyi": 3,
-  "skip": 2,
+  "fyi": 4,
+  "skip": 7,
   "responseDebt": 1,
-  "notes": "Radhika Vijay WFH approval pending (Zoho People). Alex Turnbull helpdesk email looks like phishing (domain: helplycentralonline.info). No investor/board/co-founder emails. No starred unread."
+  "debtItems": [
+    {
+      "sender": "Radhika Vijay <radhika.vijay@stage.in>",
+      "subject": "Work From Home Request",
+      "firstEmailDate": "2026-03-13",
+      "followUpDate": "2026-03-14",
+      "daysOld": 2,
+      "urgencyReason": "Team member sent WFH request + follow-up within 24h — needs a reply to unblock her week"
+    }
+  ],
+  "urgentItems": [
+    {
+      "sender": "Shubhadeep Banerjee <shubhadeep@growthally.org>",
+      "subject": "STAGE <> GrowthAlly | Strategic Capital",
+      "date": "2026-03-14",
+      "threadCount": 3,
+      "action": "Read 3-message thread; determine if capital discussion is relevant — respond or park"
+    }
+  ],
+  "importantItems": [
+    {
+      "sender": "Vismit Bansal (via Google Slides)",
+      "subject": "M0 - Retention Redefined - 2 week plan",
+      "date": "2026-03-14",
+      "action": "Review the slides — Vismit just got HP Personalisation scope, this is likely his kickoff plan"
+    },
+    {
+      "sender": "Radhika Vijay",
+      "subject": "Follow-up: Work From Home Request",
+      "date": "2026-03-14",
+      "action": "Approve or decline WFH — she's waiting on this (original + follow-up both unread)"
+    }
+  ]
 }

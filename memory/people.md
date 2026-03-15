@@ -98,6 +98,7 @@
 - **Observations:**
   - Called HuMT's presentations "Gold" — first direct co-founder endorsement. Immediately went to execution framing: "block dedicated time → action items → execution plan." Mirrors HMT's action > appreciation bias. (Feb 26)
   - Launched Content Strategy 2.0 in #content_strategy after 30+ day dormancy — drives format-first restructuring of content org. (Feb 23-24) [UPDATED 2026-03-01]
+  - **Mar 15 (Sunday):** Active in #ai-native-performance-marketing on a Sunday — YouTube TOFU strategy + building a performance marketing agent. Founder-level weekend engagement: not ops catch-up, but strategic transformation thinking. Mirrors HMT's pattern of working deep on weekends when building something new. (Mar 15)
 
 **Shashank Vaishnav** — Co-Founder & CTO
 - **Slack:** UE0KTBS8P | **Email:** shashank@stage.in
@@ -153,7 +154,10 @@
 #### HMT Direct Report Observations (for people in tables above)
 
 **Pranay Merchant** (Product Management)
-- **Observations:** Dropped all other work for 2 days to help HMT prep Jan 29-30 board meeting — highly responsive to HMT's priorities. (Watch for: product decisions, scope management, how he handles tradeoffs)
+- **Observations:**
+  - Dropped all other work for 2 days to help HMT prep Jan 29-30 board meeting — highly responsive to HMT's priorities. (Watch for: product decisions, scope management, how he handles tradeoffs)
+  - **Mar 13:** Tagged HuMT directly in #cricket-saathi roadmap — treating HuMT as a product peer, not HMT's assistant. Building a real working relationship directly with the AI tool rather than routing through HMT. First direct report to do this.
+  - **Mar 14:** Posted Cricket Saathi IPL roadmap draft publicly in #cricket-saathi, tagged @here seeking collaboration. Sharing work-in-progress openly = building team collaboration culture around his work, not protecting drafts. Transparency as a working style signal.
 
 **Ashish Pandey** (Associate PM)
 - **Observations:** (none yet — watch for: analytics rigor, communication style, initiative level)
@@ -164,7 +168,8 @@
 **Vismit Bansal** (Head - Retention Marketing)
 - **Observations:**
   - Running live game show MVP for app subscribers — low-budget, scrappy experimentation (requested conference room for 4-5 Sundays). Product-minded marketer, not just campaigns. (Feb 17)
-  - **Mar 13:** Added by HMT to lead HP Personalisation project. Taking over from Manasvi/Shwetabh metapod structure. Scope expansion: Retention → Personalisation.
+  - **Mar 13:** Added by HMT to lead HP Personalisation project. Taking over from Manasvi/Shwetabh metapod structure. Scope expansion: Retention Marketing → Product Personalisation. This is a career-defining delegation — crossing from marketing into product ownership. Signals HMT's high trust in Vismit's analytical + execution capabilities.
+  - **Mar 15:** Shared M0 retention deck with HMT's email inbox (surfaced in email triage). Proactive deliverable sharing rather than waiting for a pull request. Data-first, structured reporting format even for an upstream pitch.
 
 **Nisha Ali** (Sr. Manager - People & Culture)
 - **Observations:** Shared HR roster when HMT asked — responsive. (Watch for: how she handles sensitive people issues, communication with HMT, proactiveness on HR matters)

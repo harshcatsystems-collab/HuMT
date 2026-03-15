@@ -52,6 +52,15 @@
 
 ---
 
+## 🆕 New Commitments — Mar 15, 2026 (Last 24h Scan — 12:00 UTC)
+
+| Item | Who | Deadline | Channel | Notes |
+|------|-----|----------|---------|-------|
+| Fix chatbot home section — 2 funnel-breaking issues (FAB version regression + home stories disappearing) | Rohit Deshmukh (U013U47GNM6) / Rohit (U039VC42JAF) | ASAP / immediate | #ai-character-bots | Aaliya @channel'd at 08:53 UTC: hit 43K home views peak Mar 7, now degraded to nearly unusable. Two issues: (1) home stories disappearing post 4.64.0 patch, (2) showing oldest FAB version without images. Rohit analyzed amplitude at 11:25 UTC — funnel declining since Mar 9. |
+| ⚠️ Data pipeline sustained failures (Airbyte → ClickHouse) | Devops/Data team | Ongoing | #data-alerts | 20+ failures overnight Mar 14–15: users/shows/episodes, subscription history, mandates, watch histories all failing with "Failed to get table schema". Already flagged in morning brief. No owner assigned yet — Sunday. |
+
+---
+
 ## 🆕 New Commitments — Mar 14, 2026 (Last 24h Scan)
 
 | Item | Who | Deadline | Channel | Notes |
@@ -84,4 +93,4 @@ These live in `delegations.md` but are flagged here for HMT awareness:
 
 ---
 
-*Last updated: 2026-03-13 12:30 UTC (weekly commitment review)*
+*Last updated: 2026-03-15 12:00 UTC (commitment tracker cron — Sunday scan)*
