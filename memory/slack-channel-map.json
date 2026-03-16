@@ -289,8 +289,8 @@
       "purpose": ""
     },
     "C018L6S1G6R": {
-      "name": "घर-का-quora",
-      "purpose": "बोल कि लब आज़ाद हैं तेरे ...। (स्टेज से जुड़े सवालों का जवाब गूगल पर नहीं, यहां मिलेगा)"
+      "name": "\u0918\u0930-\u0915\u093e-quora",
+      "purpose": "\u092c\u094b\u0932 \u0915\u093f \u0932\u092c \u0906\u095b\u093e\u0926 \u0939\u0948\u0902 \u0924\u0947\u0930\u0947 ...\u0964 (\u0938\u094d\u091f\u0947\u091c \u0938\u0947 \u091c\u0941\u095c\u0947 \u0938\u0935\u093e\u0932\u094b\u0902 \u0915\u093e \u091c\u0935\u093e\u092c \u0917\u0942\u0917\u0932 \u092a\u0930 \u0928\u0939\u0940\u0902, \u092f\u0939\u093e\u0902 \u092e\u093f\u0932\u0947\u0917\u093e)"
     },
     "C01B905KNJZ": {
       "name": "stagecms",
@@ -410,7 +410,8 @@
     },
     "C07KWTTB98W": {
       "name": "stage_maino",
-      "tier": "unknown"
+      "tier": "tier1",
+      "purpose": "Performance marketing, CAC/LTV"
     },
     "C0A99V9BHEV": {
       "name": "stage_maino_manthan",
@@ -418,7 +419,58 @@
     },
     "C0AL2NUKAP7": {
       "name": "cricket-saathi",
-      "tier": "unknown"
+      "tier": "tier1",
+      "purpose": "Cricket Saathi project (Pranay PIP)"
+    },
+    "C092XDNSDB9": {
+      "name": "full-funnel-solver",
+      "purpose": "Main coordination - ALL Full Funnel PODs",
+      "tier": "tier1"
+    },
+    "C0AK6NSDHFH": {
+      "name": "watch-retention-solver",
+      "purpose": "Retention-specific, Vismit's announcements",
+      "tier": "tier1"
+    },
+    "C080EJU9873": {
+      "name": "growth-pod",
+      "purpose": "Activation/acquisition updates",
+      "tier": "tier1"
+    },
+    "C0904NE9Y2K": {
+      "name": "engagement-solver-team",
+      "purpose": "Engagement metrics, WoW retention",
+      "tier": "tier1"
+    },
+    "C0A6ZPA3XT8": {
+      "name": "m0-strategy",
+      "purpose": "M0 Watcher analysis",
+      "tier": "tier1"
+    },
+    "C0AFKKM6Y5C": {
+      "name": "ai-character-bots",
+      "purpose": "Character bots for M0 re-engagement (Pranay PIP)",
+      "tier": "tier1"
+    },
+    "C07T7047TEZ": {
+      "name": "product-growth",
+      "purpose": "Product \u00d7 Growth sync",
+      "tier": "tier1"
+    },
+    "C0A75FY5RMJ": {
+      "name": "stage-vip-club",
+      "purpose": "Tambola updates, gamification",
+      "tier": "tier1"
+    },
+    "C047HLH7T26": {
+      "name": "promo-team",
+      "purpose": "Promo content, creative strategy",
+      "tier": "tier1"
+    },
+    "C06NYMGLNGH": {
+      "name": "tech-frontend",
+      "purpose": "Dev updates for activation features",
+      "tier": "tier1"
     }
   },
   "last_updated": "2026-03-12 02:21:58",

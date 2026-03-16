@@ -217,6 +217,57 @@ bash scripts/scan-tracked-threads.sh
 
 ---
 
+## Full Funnel Sprint Tracking (Mar 16-30, 2026) — DAILY UPDATES
+
+**Standing delegation from HMT (Mar 16):** "I want dedicated daily updates on all of these full funnel projects"
+
+**Master doc:** `memory/projects/full-funnel-sprint-mar16-30.md`
+
+### What to track (4 PODs):
+
+| POD | Owner | Channel | Daily Meeting |
+|-----|-------|---------|---------------|
+| M0 Watcher % | Vismit | #full-funnel-solver | 11:30 AM IST |
+| Dormants (PunarJanam) | Pravesh | #full-funnel-solver | 12:00 PM IST |
+| Reactivation | Nikhil | #full-funnel-solver | 12:30 PM IST |
+| Activation (D0 TCR) | Nikhil/Gopal | #full-funnel-solver | 1:00 PM IST |
+
+### Daily scan (every heartbeat during sprint):
+
+1. **#full-funnel-solver** — Check for updates from Vismit, Pravesh, Nikhil, Gopal, Parveen
+2. **#watch-retention-solver** — Retention-specific discussions
+3. **#ai-character-bots** — Character bots for M0 (links to Pranay PIP)
+
+### What triggers an update to HMT:
+
+- Milestone completions (Phase 1/2/3 of PunarJanam)
+- Metric movements (TCR, Watcher %, Dormant reactivation rate)
+- Blockers or delays flagged by POD owners
+- Campaign launches or results
+- Co-founder decisions or direction changes
+
+### Daily update delivery:
+
+- **When:** Evening (after daily meetings complete, ~3-4 PM IST)
+- **Where:** Telegram Daily Ops topic (or webchat if active)
+- **Format:** Brief summary of each POD's progress + any flags
+
+### Key dates:
+
+- **Mar 17:** Dormants campaign go-live
+- **Mar 19:** D0 TCR dev release (payment success iterations)
+- **Mar 20:** ★ Review 1 — POD-wise Full Funnel
+- **Mar 25:** Mid-Sprint Review
+- **Mar 27:** ★ Review 2 — Final sprint review
+
+### Related docs to monitor:
+
+- [M0 Watcher % Deck](https://docs.google.com/presentation/d/1SkCRpH7sjZ0sgiPX1APeEYfKs5zJZbrgx54rAS-b9wQ/edit)
+- [Re-activation Plan](https://docs.google.com/document/d/1vs93HRFjx9OYxTn7WslK6cv1uTDZtKnSFFk-TZs5E6E/edit)
+- [Full LTV Funnel Deep Dive](https://docs.google.com/document/d/1MZJukvogrbbfriS3nsAgaQU0iPL6xYyybiJklwTDb5I/edit)
+
+---
+
 ## Checks (rotate through, don't spam)
 
 ### Gmail (via gog CLI)

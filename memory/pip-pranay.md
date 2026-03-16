@@ -99,6 +99,16 @@ _(Behavioral signals from Slack, meetings, deliverables — captured between rev
 - **Feb 25:** Scheduled the biweekly cadence himself.
 - **Feb 24:** Posted comprehensive Cricket Saathi architecture deep-dive in #ai-at-stage (5-match World Cup analysis, structured with comments for deeper insights). Shows systems-thinking depth.
 - **Mar 6:** Updated PIP doc with Cricket Saathi project tab (confirmed by HMT).
+- **Mar 16:** Character Bots featured as Strategic Initiative 3 in M0 Watcher % deck. Bots positioned as re-engagement vehicle for M0 cohort — aligns with Pranay's strategic bet. See `memory/projects/m0-watcher-initiative.md`.
+
+---
+
+## Related Projects
+
+| Project | Link | Pranay's Role |
+|---------|------|---------------|
+| Cricket Saathi | `memory/projects/cricket-saathi.md` | Strategic bet #2 — owner |
+| M0 Watcher Initiative | `memory/projects/m0-watcher-initiative.md` | Strategic bet #3 (Character Bots) — contributor |
 
 ---
 

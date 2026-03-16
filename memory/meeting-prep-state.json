@@ -1,26 +1,68 @@
 {
   "preppedToday": [
     {
-      "id": "3626ce0psecrb62usapij8koe5_20260313T103000Z",
-      "summary": "Activation+Reactivation 2 week plan daily review",
-      "start": "2026-03-13T16:00:00+05:30",
-      "preppedAt": "2026-03-13T10:00:00Z",
+      "id": "7ijhbljetsd75f3sa5egfmmben_20260316T043000Z",
+      "summary": "All Hands Meeting | STAGE",
+      "start": "2026-03-16T10:00:00+05:30",
+      "preppedAt": "2026-03-16T04:00:00Z",
+      "topic": "daily_ops"
+    },
+    {
+      "id": "itgaqp1jqttqubmsq5thoaq0a6_20260316T063000Z",
+      "summary": "Engagement pod discussion",
+      "start": "2026-03-16T12:00:00+05:30",
+      "preppedAt": "2026-03-16T06:00:00Z",
       "topic": "retention"
     },
     {
-      "id": "21dhp39r0062i3arg0obvsvp7b",
-      "summary": "Reacquisition POD alignment",
-      "start": "2026-03-13T17:00:00+05:30",
-      "preppedAt": "2026-03-13T11:00:00Z",
+      "id": "0c7aahhdvv20srt8o3tfrsfd3n_20260316T070000Z",
+      "summary": "Reactivation daily catchup",
+      "start": "2026-03-16T14:00:00+05:30",
+      "preppedAt": "2026-03-16T07:00:00Z",
+      "topic": "retention"
+    },
+    {
+      "id": "4fn9dg546p8rn44i65r9v006do",
+      "summary": "STAGE X KD",
+      "start": "2026-03-16T12:30:00+05:30",
+      "preppedAt": "2026-03-16T07:00:00Z",
+      "topic": "strategy"
+    },
+    {
+      "id": "62elh1hmvcnna83d7frv33pskv_20260316T073000Z",
+      "summary": "Activation daily catchup",
+      "start": "2026-03-16T15:00:00+05:30",
+      "preppedAt": "2026-03-16T07:00:00Z",
       "topic": "growth"
     },
     {
-      "id": "4vu9u9r44iumam9ol2f0hbvjpm_20260313T113000Z",
-      "summary": "Home Page Personalisation Update",
-      "start": "2026-03-13T17:00:00+05:30",
-      "preppedAt": "2026-03-13T11:00:00Z",
+      "id": "7veqm2r4k9neto9ajmdfkbag5g_20260316T083000Z",
+      "summary": "Harsh/Pranay Weekly",
+      "start": "2026-03-16T14:00:00+05:30",
+      "preppedAt": "2026-03-16T07:30:00Z",
       "topic": "product_design"
+    },
+    {
+      "id": "advq1iqc26so9fb7ubaci33hfc",
+      "summary": "STAGE X Pravesh Lal Yadav",
+      "start": "2026-03-16T15:00:00+05:30",
+      "preppedAt": "2026-03-16T07:30:00Z",
+      "topic": "strategy"
+    },
+    {
+      "id": "4c5ptjpp4anvg44igfnvmuje6s_20260316T103000Z",
+      "summary": "Harsh X Nisha",
+      "start": "2026-03-16T16:00:00+05:30",
+      "preppedAt": "2026-03-16T10:00:00Z",
+      "topic": "people_culture"
+    },
+    {
+      "id": "0k4aobfibpgban678msdtnce6h",
+      "summary": "M1+ Watchers (PW) : Deep Data Mining & User Segmentation",
+      "start": "2026-03-16T16:45:00+05:30",
+      "preppedAt": "2026-03-16T10:30:00Z",
+      "topic": "retention"
     }
   ],
-  "date": "2026-03-13"
+  "date": "2026-03-16"
 }

@@ -1,41 +1,28 @@
 {
-  "lastTriageUTC": "2026-03-15T03:00:00Z",
-  "urgent": 1,
-  "important": 2,
+  "lastTriageUTC": "2026-03-16T03:00:00Z",
+  "urgent": 3,
+  "important": 5,
   "fyi": 4,
-  "skip": 7,
-  "responseDebt": 1,
+  "skip": 3,
+  "responseDebt": 3,
   "debtItems": [
     {
-      "sender": "Radhika Vijay <radhika.vijay@stage.in>",
-      "subject": "Work From Home Request",
-      "firstEmailDate": "2026-03-13",
-      "followUpDate": "2026-03-14",
-      "daysOld": 2,
-      "urgencyReason": "Team member sent WFH request + follow-up within 24h — needs a reply to unblock her week"
-    }
-  ],
-  "urgentItems": [
-    {
-      "sender": "Shubhadeep Banerjee <shubhadeep@growthally.org>",
-      "subject": "STAGE <> GrowthAlly | Strategic Capital",
-      "date": "2026-03-14",
-      "threadCount": 3,
-      "action": "Read 3-message thread; determine if capital discussion is relevant — respond or park"
-    }
-  ],
-  "importantItems": [
-    {
-      "sender": "Vismit Bansal (via Google Slides)",
-      "subject": "M0 - Retention Redefined - 2 week plan",
-      "date": "2026-03-14",
-      "action": "Review the slides — Vismit just got HP Personalisation scope, this is likely his kickoff plan"
+      "sender": "Nisha Ali",
+      "subject": "Resignation | Nisha Ali",
+      "age_days": 1,
+      "note": "Re-confirmed exit, requesting last day 31 Mar or 15 Apr — needs HMT decision"
     },
     {
       "sender": "Radhika Vijay",
       "subject": "Follow-up: Work From Home Request",
-      "date": "2026-03-14",
-      "action": "Approve or decline WFH — she's waiting on this (original + follow-up both unread)"
+      "age_days": 2,
+      "note": "Follow-up to WFH request sent Mar 13 — still unresponded"
+    },
+    {
+      "sender": "Shubhadeep Banerjee (GrowthAlly)",
+      "subject": "STAGE <> GrowthAlly | Strategic Capital",
+      "age_days": 6,
+      "note": "Cold outreach re: capital strategy, 6 days old"
     }
   ]
 }
