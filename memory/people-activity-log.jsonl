@@ -164,3 +164,52 @@
 {"ts":"2026-03-16T16:52:00Z","_type":"logger_run","people_tracked":11}
 {"ts": "2026-03-16T17:23:27Z", "user": "UEHET2Q2G", "name": "Vinay Singhal", "messages": 0, "thread_replies": 1, "channels_active": 1, "channel_ids": ["GEJUR0WA2"], "after_hours": 1, "avg_response_latency_sec": 6074.4}
 {"ts": "2026-03-16T17:23:27Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-16T17:52:58Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-16T18:22:41Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-16T18:52:38Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-16T19:22:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-16T19:53:23Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-16T20:23:18.513280+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-16T20:52:00+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-16T21:23:06Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-16T21:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-16T22:22:57.676082+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-16T22:52:55Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-16T23:22:39Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-16T23:53:50Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-17T00:23:12.320004+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-17T00:53:01.117877+00:00","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-17T01:22:41Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-17T01:53:02.341280+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-17T02:23:04Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-17T02:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-17T03:22:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-17T03:52:38Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-17T04:22:46+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-17T04:53:14Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-17T05:23:04Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-17T05:52:39Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-17T06:23:10Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-17T06:53:14Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-17T07:23:29Z", "user": "UEHET2Q2G", "name": "Vinay Singhal", "messages": 1, "thread_replies": 0, "channels_active": 1, "channel_ids": ["CS75DM3KQ"], "after_hours": 0, "avg_response_latency_sec": null}
+{"ts": "2026-03-17T07:23:29Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-17T07:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-17T08:22:39Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-17T08:53:09Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-17T09:53:09Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-17T10:22:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-17T10:52:00Z","user":"U08KBHHV9J4","name":"Radhika Vijay","messages":1,"thread_replies":0,"channels_active":1,"channel_ids":["C080EJU9873"],"after_hours":0,"avg_response_latency_sec":null}
+{"ts":"2026-03-17T10:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-17T11:23:04Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-17T11:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-17T12:22:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-17T12:52:41Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-17T13:23:07.984738+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-17T13:53:02Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-17T14:23:04Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-17T14:55:26Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-17T15:23:14Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-17T15:52:45Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-17T16:22:00Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-17T16:52:40Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-17T17:23:17.822769+00:00", "_type": "logger_run", "people_tracked": 11}

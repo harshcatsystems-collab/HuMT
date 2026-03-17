@@ -93,6 +93,9 @@ STAGE is running a 2-week intensive sprint to improve full-funnel metrics. This 
 3. **Character Bots** — Bots as re-engagement channel for M0 cohort (Pranay's PIP)
 4. **Web Consumption** — One Tap Login, PWA, Watch Without Login
 
+**Cross-Cutting Initiative:**
+- **Homepage Personalisation** (#homepage-personalisation) — AI-native discovery layer, limited HP experiment validated. Cuts across M0 AND Dormants pods.
+
 **Deck:** [M0 Watcher % Plan](https://docs.google.com/presentation/d/1SkCRpH7sjZ0sgiPX1APeEYfKs5zJZbrgx54rAS-b9wQ/edit)
 
 ---
@@ -326,4 +329,38 @@ STAGE is running a 2-week intensive sprint to improve full-funnel metrics. This 
 
 ---
 
-*Last updated: Mar 16, 2026 12:31 UTC*
+### Mar 17, 2026
+
+**DORMANTS WATCH Meeting (12:00 PM IST) — Pre-Meeting Context**
+
+**Source:** Gemini Meeting Notes (email 7:00 AM) + Slack + earlier prep
+
+**From Previous Session (Gemini Notes 12:29 PM IST):**
+
+| Theme | Detail |
+|-------|--------|
+| **User Base** | Running Tumbula ads on 1L users (50K considered too low for reliable learnings) |
+| **Cadence** | Daily micromanagement via #full-funnel-solver |
+| **Conversion Issues** | Current LVU/MVU/HVU definitions broken — drops in high-energy conversions |
+| **Instrumentation Gap** | Need to track "subscribers who never watched" |
+| **Segmentation** | Prioritize simplicity; initial pillar = depth of engagement; 2-week timeline |
+
+**Pravesh's Ownership:**
+- Daily cadence for project micromanagement
+- 3 agendas per meeting (keep to 10 min structure)
+- Canvas for collaboration in full-funnel solver
+
+**Open Questions for Today:**
+1. "Previously watched" cohort definition — 30d? 60d? 90d?
+2. Push/content trigger experiments lined up for this cohort?
+3. Overlap check: dormants who were M0 non-watchers vs. those who DID watch — different playbooks needed?
+
+**Adjacent Context (last 24h):**
+- Activation pod: D0 smart content routing plan releasing Mar 25 — home platter shows only high-completion titles for D3 retention
+- HMT shared Instagram reel "very good for re-engagement and re-acquisition" — potential dormant win-back creative reference
+- UPI Collect deprecated yesterday — audit dormant win-back flows using UPI Collect
+- M0 Watcher % 2-week plan discussed at 11:30 AM — ensure dormant targets don't conflict with M0 cohort definitions
+
+---
+
+*Last updated: Mar 17, 2026 08:35 UTC*

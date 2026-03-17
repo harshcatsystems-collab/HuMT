@@ -62,6 +62,13 @@ Check for new DMs to HuMT on Slack BEFORE doing the full scan:
 2. Check #tech-mates for outage/critical language
 3. Scan for HMT mentions (@harsh, "Harsh", "HMT") across Tier 1+2
 
+### Tier 2 Channels (proactive tracking):
+| Channel | ID | Why |
+|---------|-----|-----|
+| #homepage-personalisation | C0ABCG0RV1N | Strategic AI initiative — Vismit/Manasvi/Shwetabh |
+
+Scan Tier 2 for: experiment results, blockers, key decisions, co-founder involvement.
+
 ### Alert triggers (route to Telegram topics):
 | Trigger | Topic | Format |
 |---------|-------|--------|
@@ -237,6 +244,7 @@ bash scripts/scan-tracked-threads.sh
 1. **#full-funnel-solver** — Check for updates from Vismit, Pravesh, Nikhil, Gopal, Parveen
 2. **#watch-retention-solver** — Retention-specific discussions
 3. **#ai-character-bots** — Character bots for M0 (links to Pranay PIP)
+4. **#homepage-personalisation** (C0ABCG0RV1N) — **CROSS-CUTTING: M0 + Dormants** — AI-native discovery layer, limited HP experiment (Owner: Manasvi)
 
 ### What triggers an update to HMT:
 

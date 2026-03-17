@@ -5,35 +5,38 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-16 00:00 UTC (automated cron)
+## Last Verified: 2026-03-17 00:00 UTC (automated cron)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files | 2026-03-16 |
-| 2 | Files | ✅ | read/write/edit tools | 2026-03-16 |
-| 3 | Terminal | ✅ | exec tool — `date` returned Mon Mar 16 00:00:08 UTC 2026 | 2026-03-16 |
-| 4 | Web Search | ✅ | Brave API returned 5 results for UTC time query | 2026-03-16 |
-| 5 | Gmail | ✅ | gog gmail returned 2 messages incl. STAGE × Pravesh Lal Yadav invite | 2026-03-16 |
-| 6 | Calendar | ✅ | gog calendar returned 3 events today (All Hands, Engagement pod, Lunch) | 2026-03-16 |
-| 7 | Cron/Reminders | ✅ | 20 jobs active — this job execution proves it works | 2026-03-16 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present | 2026-03-16 |
+| 1 | Memory | ✅ | Read/write workspace files | 2026-03-17 |
+| 2 | Files | ✅ | read/write/edit tools — write+read+delete /tmp/cap_test OK | 2026-03-17 |
+| 3 | Terminal | ✅ | exec tool — `date` returned Tue Mar 17 00:00:17 UTC 2026 | 2026-03-17 |
+| 4 | Web Search | ✅ | Brave API returned 3 results for UTC time query | 2026-03-17 |
+| 5 | Gmail | ✅ | gog gmail returned 6 messages incl. STAGE Gemini notes, Pravesh invite | 2026-03-17 |
+| 6 | Calendar | ✅ | gog calendar returned 10 events today incl. M0 watcher, CAC, Appraisal Review | 2026-03-17 |
+| 7 | Cron/Reminders | ✅ | 20 jobs active — this job execution proves it works | 2026-03-17 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present | 2026-03-17 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC**** → HTTP 200 on /v1/models | 2026-03-16 |
-| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed 200 | 2026-03-16 |
-| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — returned results | 2026-03-16 |
-| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token) | 2026-03-16 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-16 |
+| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1CTPi**** → HTTP 200 on /v1/models | 2026-03-17 |
+| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed 200 | 2026-03-17 |
+| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — returned results (score 0.56) | 2026-03-17 |
+| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token) | 2026-03-17 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-17 |
 
-## ⚠️ Cron Job Warnings (2026-03-16)
+## ⚠️ Cron Job Warnings (2026-03-17)
 
-One job has **3 consecutive errors (timeout)** — needs attention:
+Two jobs with consecutive errors — needs attention:
 
 | Job | Consecutive Errors | Last Error | Note |
 |-----|--------------------|------------|------|
-| `slack:evening-debrief` | 3 ⬆️ | timeout (480s) | Full Slack scan timing out at 480s limit — needs scope reduction or timeout increase |
+| `slack:commitment-tracker` | 1 ⬆️ | timeout (300s) | Full Slack scan timing out — scope too broad |
+| `slack:end-of-day-summary` | 1 ⬆️ | AI service overloaded | Transient — Claude API overloaded at run time |
 
-Previous warnings (now resolved or unchanged):
-- `slack:commitment-tracker` — was 2 errors, now 0 (resolved ✅)
+Previous warnings (resolved or changed):
+- `slack:evening-debrief` — was 3 errors (timeout), now 0 ✅ (resolved)
+- `slack:commitment-tracker` — was 0 errors, now 1 ⬆️ (new issue)
+- `persona:monthly-evolution-review` — 1 error (message failed) — monitoring
 
 ## Critical Findings (2026-03-06)
 
@@ -61,14 +64,14 @@ Previous warnings (now resolved or unchanged):
 
 ### ❌ Known Issues (unchanged)
 - WhatsApp: Logged out (401) — parked for business API
-- Memory Search: OpenRouter key doesn't work for embeddings
-- Whisper: API key not configured in skill
+- Memory Search: OpenRouter key doesn't work for embeddings (using OpenAI key directly — working ✅)
+- Whisper: API key not configured in skill (but OpenAI key is available)
 
 ## Config Dependencies
 
 | Key | Location in config | Required for |
 |-----|-------------------|--------------|
-| OpenRouter API key | auth-profiles.json → openrouter:default | Core LLM (via OpenRouter) |
+| OpenRouter API key | auth-profiles.json → openrouter:default | Embeddings fallback |
 | OpenAI API key | skills.entries.openai-image-gen.apiKey | DALL-E, Whisper |
 | Brave API key | tools.web.search.apiKey | Web search |
 | Telegram bot token | channels.telegram.botToken | Telegram |

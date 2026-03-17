@@ -471,6 +471,12 @@
       "name": "tech-frontend",
       "purpose": "Dev updates for activation features",
       "tier": "tier1"
+    },
+    "C0ABCG0RV1N": {
+      "name": "homepage-personalisation",
+      "purpose": "AI-native homepage personalisation initiative - ML reco + limited HP experiments",
+      "tier": 2,
+      "added": "2026-03-17"
     }
   },
   "last_updated": "2026-03-12 02:21:58",

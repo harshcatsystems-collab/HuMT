@@ -372,3 +372,4 @@
   "ts": 1773475562,
   "date": "2026-03-14T08:06:02Z"
 }
+{"timestamp":"2026-03-17T11:58:30Z","type":"payment_approval_request","channel":"C08PGK8CM32","thread_ts":"1773748690.967549","requestor":"Rahul Chauhan","requestor_id":"U05HAE85RL2","items":[{"vendor":"Sudhansu","amount":15840,"purpose":"Video editing 17 Guj + 10 Bho"},{"vendor":"Reset Entertainment","amount":348000,"purpose":"Kathiyawadi Tales movie"},{"vendor":"Cineman","amount":388800,"purpose":"20% signing Gharghatta web series"}],"total":752640,"status":"pending","relayed_to":"telegram_finance_topic"}
