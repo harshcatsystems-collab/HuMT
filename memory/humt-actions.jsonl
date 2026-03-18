@@ -373,3 +373,27 @@
   "date": "2026-03-14T08:06:02Z"
 }
 {"timestamp":"2026-03-17T11:58:30Z","type":"payment_approval_request","channel":"C08PGK8CM32","thread_ts":"1773748690.967549","requestor":"Rahul Chauhan","requestor_id":"U05HAE85RL2","items":[{"vendor":"Sudhansu","amount":15840,"purpose":"Video editing 17 Guj + 10 Bho"},{"vendor":"Reset Entertainment","amount":348000,"purpose":"Kathiyawadi Tales movie"},{"vendor":"Cineman","amount":388800,"purpose":"20% signing Gharghatta web series"}],"total":752640,"status":"pending","relayed_to":"telegram_finance_topic"}
+{
+  "type": "slack_post",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1773831971.772669",
+  "message_ts": "1773833788.019209",
+  "message_preview": "✅ All three approved by HMT:\\n\\n1. Pawan Impex — ₹24,10,440 ✓\\n2. Google — ₹50,00,000 ✓\\n3. Sudhansu",
+  "tagged_users": [
+    "U05HAE85RL2"
+  ],
+  "ts": 1773833788,
+  "date": "2026-03-18T11:36:28Z"
+}
+{
+  "type": "slack_post",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1773835744.653079",
+  "message_ts": "1773843746.856719",
+  "message_preview": "✅ Approved by HMT — Rajasthan Pravasi Foundation ₹1,47,000. Please proceed.",
+  "tagged_users": [
+    "U05HAE85RL2"
+  ],
+  "ts": 1773843747,
+  "date": "2026-03-18T14:22:27Z"
+}

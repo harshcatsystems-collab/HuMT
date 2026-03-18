@@ -69,7 +69,15 @@
 
 ---
 
-*Last updated: 2026-03-15 12:00 UTC (commitment tracker cron — Sunday scan)*
+| D65 | Add preprod secrets (per DM) | Rohit Singh | 2026-03-18 | #team-devops | Naman Rao requested 11:17. Status unconfirmed. | 0 |
+| D66 | Grant K9s + Jenkins/Nest/Stage backend access | Rohit Singh | 2026-03-18 | #team-devops | Sakshi Sharma requested 05:28. No acknowledgment yet. | 0 |
+| D67 | Fix Saathi media attachments | Rohit Deshmukh | 2026-03-18 | #saathi-support | Abhishek flagged. Rohit deferred to "today" (said yesterday evening). | 0 |
+| D68 | Test 4.66.3 build ASAP | Junaid Qureshi | 2026-03-18 | #tech-product-updates | Shubham delegated. Junaid: "Okay." | 0 |
+| D69 | Test + use WatchWithoutLogin for M0/dormant campaigns | Kawaljeet Kaur | 2026-03-19 | #retention | Vismit → Kawaljeet. Tomorrow test, then use in campaigns. | 0 |
+| D70 | Release rent + Google payments from ₹8.14cr backlog | Finance team (Saloni) | 2026-03-18 | #finance-department | Vinay approved direction. All other payments on hold. | 0 |
+| D71 | Fix Play Store rating automation (stuck on Mar 15) | Abhishek Saini | 2026-03-18 | #playstore-ratings | Nikhil delegated. | 0 |
+
+*Last updated: 2026-03-18 12:02 UTC (commitment tracker cron — Wednesday scan)*
 
 | D26 | Chatbot data updates in standard format | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Nikhil requested | 3 |
 | D27 | Infrastructure upgrade activity (4 components) | Rohit Singh | 2026-03-04 | #team-devops | Self-announced plan (non-prod ✅, prod+DB pending) | 2 |

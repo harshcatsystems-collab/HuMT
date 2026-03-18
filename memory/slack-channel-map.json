@@ -289,8 +289,8 @@
       "purpose": ""
     },
     "C018L6S1G6R": {
-      "name": "\u0918\u0930-\u0915\u093e-quora",
-      "purpose": "\u092c\u094b\u0932 \u0915\u093f \u0932\u092c \u0906\u095b\u093e\u0926 \u0939\u0948\u0902 \u0924\u0947\u0930\u0947 ...\u0964 (\u0938\u094d\u091f\u0947\u091c \u0938\u0947 \u091c\u0941\u095c\u0947 \u0938\u0935\u093e\u0932\u094b\u0902 \u0915\u093e \u091c\u0935\u093e\u092c \u0917\u0942\u0917\u0932 \u092a\u0930 \u0928\u0939\u0940\u0902, \u092f\u0939\u093e\u0902 \u092e\u093f\u0932\u0947\u0917\u093e)"
+      "name": "घर-का-quora",
+      "purpose": "बोल कि लब आज़ाद हैं तेरे ...। (स्टेज से जुड़े सवालों का जवाब गूगल पर नहीं, यहां मिलेगा)"
     },
     "C01B905KNJZ": {
       "name": "stagecms",
@@ -454,7 +454,7 @@
     },
     "C07T7047TEZ": {
       "name": "product-growth",
-      "purpose": "Product \u00d7 Growth sync",
+      "purpose": "Product × Growth sync",
       "tier": "tier1"
     },
     "C0A75FY5RMJ": {
@@ -492,6 +492,11 @@
       "name": "saloni.goyal",
       "real_name": "Saloni Goyal",
       "email": "saloni.goyal@stage.in"
+    },
+    "U05HAE85RL2": {
+      "name": "rahul.chauhan",
+      "real_name": "Rahul Chauhan",
+      "email": "rahul.chauhan@stage.in"
     }
   }
 }

@@ -1,6 +1,6 @@
 # Commitments & Follow-ups
 
-> Last updated: 2026-03-13 (Weekly review — Friday)
+> Last updated: 2026-03-18 12:02 UTC (commitment tracker cron — Wednesday scan)
 
 ---
 
@@ -49,6 +49,30 @@
 | Disk cleanup — podcast MP3s removed | 2026-03-13 | Freed ~82MB. .gitignore updated. HMT cleaned journalctl (freed ~820MB). Disk at 85% (2.9GB free). |
 | Compensation benchmarking (D62) | 2026-03-12 | Nisha closed — "Please do it today only" was fulfilled per morning brief. |
 | Catch-up morning brief (delayed from 03:45 to 10:07 UTC) | 2026-03-13 | Delivered. Covered metrics anomalies, 5 stale delegations, 9 meetings. |
+
+---
+
+## 🆕 New Commitments — Mar 18, 2026 (Last 24h Scan — 12:02 UTC)
+
+| Item | Who | Deadline | Channel | Notes |
+|------|-----|----------|---------|-------|
+| Release rent + Google payments (hold all other pending) | Vinay Singhal | Mar 18 (today) | #finance-department | Saloni flagged ₹8.14cr total pending. Vinay replied at 14:18: "Kal krenge isko solve.. you release rent.. and Google.. Hold everything else." Calendar booked for 15 min by Saloni. |
+| Fix Saathi media attachments (users' shared media not loading) | Rohit Deshmukh | Mar 18 (today) | #saathi-support | Abhishek Saini flagged at 03:12. Rohit: "would not be possible today would pick tmr" (said yesterday → due today). |
+| Add preprod secrets (Naman Rao DM) | Rohit Singh | ASAP | #team-devops | Naman Rao requested 11:17, confirmed "done?" at 11:54 — status unclear. |
+| Grant K9s + Jenkins/Nest/Stage backend access | Rohit Singh | ASAP | #team-devops | Sakshi Sharma requested at 05:28. No reply visible yet. |
+| Vaada on platter #1 position all markets till Friday | Promo/Content team | Mar 20 (Fri) | #content-notification | Priyanka Gupta delegated to Vipan Malawat. "Vaada ko in all markets till Friday." |
+| Post Vaada social promo today in all dialects | Social team (Priyanka Gupta) | Mar 18 (today) | #content-notification | Priyanka to social team: "Abhi aaj isko post kardo." |
+| Test WatchWithoutLogin for M0/dormant campaigns (then use) | Kawaljeet Kaur + Retention team | Mar 19 (tomorrow) | #retention | Vismit asked team to use for M0 + dormant uninstall users. Kawaljeet: "Sure, will test this once tomorrow and start using it post that." |
+| Fix Play Store automation (date stuck on Mar 15) | Abhishek Saini | ASAP | #playstore-ratings | Nikhil: "since last two days update has been of 15th March, please take a look at the automation logic." |
+| Test 4.66.3 build ASAP | Junaid Qureshi | ASAP | #tech-product-updates | Shubham: "can we do testing for the 4.66.3 build asap." Junaid: "Okay." |
+| Update collab.stage.in Claude version (or clarify deprecation) | Vinay Singhal / Rohit Deshmukh | — | #ai-at-stage | Nikhil flagged version mismatch error. Vinay: "It's mostly deprecated - do you need it for something specific?" Nikhil wants Claude Code VM. Vinay: "VM is a good idea btw" — no clear action owner yet. |
+
+## ✅ Completed — Mar 18, 2026 (From Scan)
+
+| Item | Completed | Outcome |
+|------|-----------|---------|
+| Approve 3 payments (Pawan Impex ₹24.1L + Google ₹50L + Sudhansu ₹1.48L) | 2026-03-18 11:36 UTC | HuMT approved on HMT's behalf in #finance-department thread. |
+| Vinay payment direction (₹8.14cr backlog) | 2026-03-17 14:18 UTC | Vinay: Release rent + Google. Hold everything else. 15-min calendar booked by Saloni. |
 
 ---
 

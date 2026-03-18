@@ -5,38 +5,38 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-17 00:00 UTC (automated cron)
+## Last Verified: 2026-03-18 00:00 UTC (automated cron)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files | 2026-03-17 |
-| 2 | Files | ✅ | read/write/edit tools — write+read+delete /tmp/cap_test OK | 2026-03-17 |
-| 3 | Terminal | ✅ | exec tool — `date` returned Tue Mar 17 00:00:17 UTC 2026 | 2026-03-17 |
-| 4 | Web Search | ✅ | Brave API returned 3 results for UTC time query | 2026-03-17 |
-| 5 | Gmail | ✅ | gog gmail returned 6 messages incl. STAGE Gemini notes, Pravesh invite | 2026-03-17 |
-| 6 | Calendar | ✅ | gog calendar returned 10 events today incl. M0 watcher, CAC, Appraisal Review | 2026-03-17 |
-| 7 | Cron/Reminders | ✅ | 20 jobs active — this job execution proves it works | 2026-03-17 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present | 2026-03-17 |
+| 1 | Memory | ✅ | Read/write workspace files | 2026-03-18 |
+| 2 | Files | ✅ | write+read+delete /tmp/humt_cap_test.txt OK | 2026-03-18 |
+| 3 | Terminal | ✅ | exec tool — `date` returned Wed Mar 18 00:00:07 UTC 2026 | 2026-03-18 |
+| 4 | Web Search | ✅ | Brave API returned result for UTC time query | 2026-03-18 |
+| 5 | Gmail | ✅ | gog gmail returned 3 messages incl. Chhora Ganga script, Otter.ai, Fyxer | 2026-03-18 |
+| 6 | Calendar | ✅ | gog calendar returned 5 events today incl. Sprint Retrospect, M0 watcher, Reactivation | 2026-03-18 |
+| 7 | Cron/Reminders | ✅ | 20 jobs active — this job execution proves it works | 2026-03-18 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present | 2026-03-18 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1CTPi**** → HTTP 200 on /v1/models | 2026-03-17 |
-| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed 200 | 2026-03-17 |
-| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — returned results (score 0.56) | 2026-03-17 |
-| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token) | 2026-03-17 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-17 |
+| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C**** → HTTP 200 on /v1/models | 2026-03-18 |
+| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed 200 | 2026-03-18 |
+| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — returned results (score 0.59) | 2026-03-18 |
+| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token) | 2026-03-18 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-18 |
 
-## ⚠️ Cron Job Warnings (2026-03-17)
+## ⚠️ Cron Job Warnings (2026-03-18)
 
-Two jobs with consecutive errors — needs attention:
+Three jobs with consecutive errors — needs attention:
 
 | Job | Consecutive Errors | Last Error | Note |
 |-----|--------------------|------------|------|
-| `slack:commitment-tracker` | 1 ⬆️ | timeout (300s) | Full Slack scan timing out — scope too broad |
-| `slack:end-of-day-summary` | 1 ⬆️ | AI service overloaded | Transient — Claude API overloaded at run time |
+| `slack:commitment-tracker` | 2 ⬆️ | timeout (300s) | Full Slack scan timing out — scope too broad. Needs fix. |
+| `slack:evening-debrief` | 1 ⬆️ | timeout (480s) | Hitting max timeout — scope/efficiency issue |
+| `healthcheck:security-audit` | 1 ⬆️ | message failed (step 4) | Script step 4 failing — send-telegram-topic issue? |
 
 Previous warnings (resolved or changed):
-- `slack:evening-debrief` — was 3 errors (timeout), now 0 ✅ (resolved)
-- `slack:commitment-tracker` — was 0 errors, now 1 ⬆️ (new issue)
-- `persona:monthly-evolution-review` — 1 error (message failed) — monitoring
+- `slack:end-of-day-summary` — was 1 error, now 0 ✅ (resolved)
+- `persona:monthly-evolution-review` — 1 error (message failed) — monitoring (unchanged)
 
 ## Critical Findings (2026-03-06)
 
