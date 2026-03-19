@@ -62,6 +62,11 @@ Check for new DMs to HuMT on Slack BEFORE doing the full scan:
 2. Check #tech-mates for outage/critical language
 3. Scan for HMT mentions (@harsh, "Harsh", "HMT") across Tier 1+2
 
+### Tier 1 Channels (aggressive tracking — every heartbeat):
+| Channel | ID | Why |
+|---------|-----|-----|
+| #full-funnel-solver | C092XDNSDB9 | **CRITICAL** Mar 16-30 sprint — all POD updates, daily syncs |
+
 ### Tier 2 Channels (proactive tracking):
 | Channel | ID | Why |
 |---------|-----|-----|

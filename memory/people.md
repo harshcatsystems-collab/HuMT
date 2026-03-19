@@ -75,7 +75,15 @@
 - **YouTube:** Kisse Daani ("Every food has a story")
 - **Background:** TISS Gold Medalist, Ex-Programme Manager at Development Alternatives
 - **Details:** See `memory/people-divya.md` for full profile
-- **Notes:** HMT's wife. Birthday: March 11
+- **Email:** mehrotra1993@gmail.com
+- **Telegram:** 7999212257
+- **Notes:** HMT's partner. Birthday: March 11. Pregnant (Week 16 as of Mar 19, 2026, EDD Sept 4). 
+- **Care Team:** OB-GYN: Dr. Madhulika | Care Manager: Dr. Rajeshwari Bangera (Ayurvedic, iMumz) | + Nutritionist
+- **Program:** iMumz Pregnancy Womb Care Program (daily yoga, Garbh Sanskar, couples yoga, nutrition)
+- **Observations:**
+  - Warm and open on first interaction — sent voice note expressing gratitude for Fatherhood OS, called me "Humpty" (Mar 19)
+  - Explicitly mentioned I'm "taking a lot of load off" her — values the practical help, not just the novelty
+  - "All good things only" — HMT has been talking about me positively to her
 
 ---
 

@@ -1,366 +1,264 @@
-# Full Funnel Sprint — Mar 16-30, 2026
+# Full Funnel Sprint — March 16-30, 2026
 
-> **Master Tracking Document**
-> **Source:** Email + Slack comprehensive scan (Mar 16, 2026)
-> **Daily Updates:** Enabled (see HEARTBEAT.md)
+> **Channel:** #full-funnel-solver (C092XDNSDB9)
+> **Deadline:** March 28, 2026
+> **First Progress Review:** March 20, 2026 (tomorrow)
+> **Analysis Date:** March 19, 2026
 
 ---
 
 ## Executive Summary
 
-STAGE is running a 2-week intensive sprint to improve full-funnel metrics. This is war room mode — daily standups across all lifecycle stages, with review milestones on Mar 20 and Mar 27.
+The Full Funnel Sprint is a **15-day intensive** (Mar 16-30) led by Parveen to solve STAGE's LTV optimization across the entire funnel. **6 PODs** are executing in parallel with daily syncs.
 
-**North Star:** LTV optimization (not individual metrics like trial or subscription)
-
----
-
-## Strategic Foundation (Mar 6-9 Meetings)
-
-**Source:** [Strategic Context Doc](https://drive.google.com/file/d/126Merzxz6-ULE-VWIX5vdgZXNv7FoHKz/view) + Gemini Notes
-
-### The Fundamental Shift
-
-| OLD MODEL | NEW MODEL |
-|-----------|-----------|
-| Content factory, all acquisition equal | Each content is unique product with specific business outcome |
-| Reactive problem-solving | Preemptive design with clear ownership |
-| Growth-at-all-costs | LTV-centric, full-funnel accountability |
-| Siloed optimization | Everything solved together |
-
-### Three Core Business Outcomes (Content-Driven)
-
-1. **Acquire** — bring new users
-2. **Re-engage** — activate dormant subscribers  
-3. **Reacquire** — bring back churned users
-
-**Critical insight:** Content format determines which outcome it solves
-
-### Content Strategy Realities
-
-| Format | Business Outcome |
-|--------|------------------|
-| **Feature films** | "Dead content" for TCR, can confuse users |
-| **Binge-worthy series** | Higher TCR, builds habit, drives frequency |
-
-**Key principle:** "Content is the core reality" — everything else layers on top
-
-### Metric Ownership (Mar 9)
-
-| Metric | Owner | Scope |
-|--------|-------|-------|
-| **Acquisition** | Shubham | Entire acquisition piece |
-| **Trial & Retention** | Nikhil | Activation phase (TCR, trial retention) |
-| **Subscription Rate (SR)** | TBD | Critical revenue metric (separate owner needed) |
-| **Reactivation** | Alia (proposed) | Trial takers who didn't subscribe |
-| **Reacquisition** | Jagrati (proposed) | Non-trial-takers (cold users) |
-
-### The Dormant Subscriber Crisis (Flagged Mar 9)
-
-> "The 1.1 million dormant subscribers are the biggest pain in the ass for sale right now"
-
-- **D0 watch %** among dormants = "very bad sign" and "biggest red flag"
-- **D1 retention** comparatively weaker than D3
-- **Habit moment** = 8 active watch days in first month
-- **Biggest factor for renewal:** recency to renewal date (NOT early habit formation)
-
-### Pan-India Expansion
-
-**Timeline:** Within 45 days  
-**Languages launching:** Punjabi, Bengali, Assami, Odia, Marathi, Tamil, Telugu, Kannada, Malayalam  
-**Hindi:** Still under discussion
-
-### Financial Context
-
-- Series C campaign launching soon
-- Venture debt being raised for 6-month cash flow bridge
-- **Operating reality:** Every decision must solve for next 9 months of cash flow
+**Progress Status (Day 4 of 15):** 🟡 **On Track, Early Stage**
+- Plans submitted ✅
+- Daily syncs happening ✅
+- First concrete results emerging (Re-acquisition)
+- Real outcomes still 7-10 days away
 
 ---
 
-## The Four PODs
+## 1. POD Structure & Ownership
 
-### POD 1: M0 Watcher % (New Subscriber Activation)
-**Owner:** Vismit Bansal
-**Daily Meeting:** 11:30 AM IST
-**Attendees:** Vismit, HMT, Kawaljeet, Ashish Pandey
-
-**Target:** Week 1 Watcher % from 30% → 36%
-**Key Insight:** 70% of M0 watchers consume first content in first 7 days
-
-**4 Strategic Initiatives:**
-1. **Sharp Reach-Outs** — Behavioral segmentation + content matching + timing + channel
-2. **Tambola** — Daily games → habit loop, Sunday flagship
-3. **Character Bots** — Bots as re-engagement channel for M0 cohort (Pranay's PIP)
-4. **Web Consumption** — One Tap Login, PWA, Watch Without Login
-
-**Cross-Cutting Initiative:**
-- **Homepage Personalisation** (#homepage-personalisation) — AI-native discovery layer, limited HP experiment validated. Cuts across M0 AND Dormants pods.
-
-**Deck:** [M0 Watcher % Plan](https://docs.google.com/presentation/d/1SkCRpH7sjZ0sgiPX1APeEYfKs5zJZbrgx54rAS-b9wQ/edit)
+| POD | Owner | Team | Focus |
+|-----|-------|------|-------|
+| **Content Factory** | Parveen | Pravesh, HMT | Content-led growth |
+| **D0 TCR Solver** | Parveen | Gopal, Nikhil, Kunal | Reduce Day-0 Trial Churn |
+| **Activation** | Nikhil | Aaliya, Gopal | Sign-up → Trial conversion |
+| **M0 Watcher / M1 Retention** | Vismit | HMT | First-month engagement |
+| **M1+ Watcher / Dormants** | Vismit | Pravesh | Dormant resurrection |
+| **Re-acquisition** | Gopal | Vipul, Shubham S | Win back churned subs |
 
 ---
 
-### POD 2: Dormants Watch — Project PunarJanam
-**Owner:** Pravesh Rajput
-**Daily Meeting:** 12:00 PM IST
-**Attendees:** Pravesh, Priyanka Gupta, Rajesh Khokhar, Sneha Singh, Harshit Singh, HMT
+## 2. Individual Project Progress Reports
 
-**The Problem:**
-- 15 Lakh subscriber base
-- 11 Lakh (85% of M2+ base) are "M1 Dormants" — paid but no content in 28 days
+### 2.1 D0 TCR Solver (Parveen → Gopal/Nikhil/Kunal)
+
+**Goal:** Reduce Day-0 Trial Churn Rate
+
+**Key Initiatives:**
+1. **CAC → LTV Optimization Shift**
+   - Moving from pure CAC to CAC:LTV framework
+   - Real-time dashboard to track CAC:LTV (in progress)
+   - 6-month LTV window, updating to 3-month after week 1
+
+2. **New CAC Benchmarks**
+   - Every campaign/ad/format now has individual CAC benchmark
+   - Recovery logic: If subscription cost recovers within 6 months → keep running
+
+3. **Gujarati Scale-Up**
+   - Current: ₹28L (10% of ₹2.8Cr spend)
+   - Target: ₹50-55L (15-20%) over next week
+
+4. **Content Mix Shift**
+   - Shifting Feature Film budgets to Series (better retention)
+   - Promoting long series & win series more
+
+**Promo Titles Being Optimized (Kunal):**
+
+| Category | Title | Priority | Goal |
+|----------|-------|----------|------|
+| Micro-drama | PsychoGirlFriend | P0 | TCR first, then CAC |
+| Micro-drama | HusbandOnSale | P0 | TCR first, then CAC |
+| Micro-drama | NaaginKaBadla | P1 | TCR & CAC both |
+| Micro-drama | Crorepati Biwi Ka Raaz | P1 | TCR & CAC both |
+| Long-Series | Bhairavi | P0 | TCR first, then CAC |
+| Long-Series | Police&Crime | P0 | TCR first, then CAC |
+| Long-Series | Mahapunarjanam | P1 | CAC & TCR both |
+| Feature Film | Naate | P0 | TCR across all markets |
+| Feature Film | PunarjanamBH | P0 | Optimize CAC (good TCR) |
+| Feature Film | 31st | P0 | Scale Meta web, optimize TCR |
+| Feature Film | Jagat | P1 | Scale Meta web |
+
+**Status:** 🟢 Plan locked, execution started
+
+---
+
+### 2.2 Activation (Nikhil → Aaliya)
+
+**Goal:** Improve Sign-up → Trial conversion
+
+**Key Initiatives:**
+1. **Wallet & Leaderboard Phase 1**
+   - Product definition & design: ✅ Done
+   - Dev started, targeting release by Friday (Mar 21)
+
+2. **Messenger-Style Chat Bubble**
+   - Flow definition & design: ✅ Done
+   - Dev starts Mar 19
+
+3. **Predictive Drop-off Identification**
+   - Working with Harshit Singh & Deepak Kumar Yadav
+   - Identifying user actions/inactions that preempt future drop-offs
+   - Insights expected Mar 19, action plan by Mar 20
+
+4. **Smart Content Routing**
+   - High retention content list extracted
+   - Watch Next bridge to serialize shows
+
+**Status:** 🟢 On track, multiple workstreams parallel
+
+---
+
+### 2.3 Re-activation (Nikhil → Shantanu)
+
+**Goal:** Convert sign-ups who didn't start trial (66% lost)
+
+**Problem Statement:**
+- 5.91L signups/month lost before trial
+- 3.90L reached paywall but didn't convert
+- UPI mandate setup is primary friction (38.6% failure at ₹1)
+- Recovery window is D1 morning only (82% of conversions)
+
+**Plan:** Detailed 2-week plan submitted by Shantanu
+- Pricing verification pending with Vinay
+
+**Status:** 🟡 Plan approved, awaiting Vinay pricing sign-off
+
+---
+
+### 2.4 M0 Watcher % (Vismit)
+
+**Goal:** Increase M0 (Month 0) watching percentage
+
+**Plan Document:** [Google Slides](https://docs.google.com/presentation/d/1SkCRpH7sjZ0sgiPX1APeEYfKs5zJZbrgx54rAS-b9wQ/edit)
+
+**Status:** 🟢 Plan submitted
+
+---
+
+### 2.5 Dormants / M1+ Watchers — Project PunarJanam (Vismit → Pravesh)
+
+**Goal:** Resurrect dormant M1+ subscribers
+
+**Problem Statement:**
+- 15L subscriber base → 11L (85%) are "M1 Dormants"
+- Definition: Paid subscription but no content watched in 28 days
 - High dormancy = major churn risk
 
-**Target:** Increase Pre-Watched Dormants watch rate by 1%
-**Current:** 0.4%/day reactivated (1,500-1,600/day) → **Target: 0.6%** (2,400-2,500/day)
+**Strategy:**
+- Moving to laser-sharp targeting
+- Personalized recommendations based on user data
+- Starting with "M1 Dormants (Previously Watched)" — proven engagement history
 
-**Strategy: Laser-Sharp Targeting (User "Kundali")**
-
-3 Pillars for user segmentation:
-1. **Taste** — Genre, format preferences
-2. **Activity/Inactivity** — Weekend vs daily, time of day, session depth
-3. **Depth** — Engagement history
-
-**Execution Phases:**
-
-| Phase | Timeline | Actions |
-|-------|----------|---------|
-| **Phase 1:** Deep Data Mining | By Mar 16 | Extract winning assets (CTR+VTR), fix trailer barrier (land on content, not trailer) |
-| **Phase 2:** User Segmentation | By Mar 16 | Deliver "Kundali" segments, draft master communications |
-| **Phase 3:** Campaign Go-Live | Mar 17+ | Launch targeted campaigns, track and optimize |
-
-**Team Accountability:**
-- Kashish: Meta + Google Ads winning assets
-- Yatika: WhatsApp, RCS, Push winning assets
-- Harshit: Backend user data segments
-- Rajesh/Sneha/Priyanka: Communication templates
+**Status:** 🟢 Strategy locked, execution started
 
 ---
 
-### POD 3: Reactivation (Churned Users)
-**Owner:** Nikhil Nair
-**Daily Meeting:** 12:30 PM IST
+### 2.6 Re-acquisition (Gopal → Vipul/Shubham S)
 
-**The Opportunity:**
-- 4.2M churned users (since Jan 2021)
-- 50% Haryanvi, 32% Rajasthani
-- 55% are "Gold Tier" — consumed 6+ titles before churning
+**Goal:** Win back churned subscribers
 
-**Key Insight:** Users who consumed more content before churning convert better:
-- 1 title watched → 10% reacquisition conversion
-- 6+ titles watched → 15% reacquisition conversion
+**Latest Update (Mar 19):**
+- ₹35K spend → 69 subscriptions
+- **30% SR** (vs 15% general baseline = 2x conversion)
+- Cancellation rate: 28% (same as baseline)
+- Current CAC: ₹463 against ₹99 plan
 
-**Parveen's Direction:** "Go after Gold tier. Full Gold tier. Period."
+**Issues Being Fixed:**
+1. Meta pushed all budget to Naate (1 of 3 creatives)
+2. Moving to ad-set level campaigns for equal distribution
 
-**Current Stats:**
-- 40% of pausers return to app voluntarily
-- Only 10% retake trial → **Target: 30%**
-- 70% of pausers should come back to app (currently 40%)
+**Vinay's Feedback:** "Let this campaign scale as-is, create new campaign with new settings"
 
-**Solution:** Special access for returning pausers (free 15-20 min)
+**Campaign Names Launched:**
+- RJ_Reacquisition_FB_AppPromotion_Subscribe_GoldChurnedUsers_ABO_190326
+- RJ_Reacquisition_FB_AppPromotion_Subscribe_AdditionalGoldChurnedUsers_ABO_190326
+- HR_Reacquisition_FB_AppPromotion_Subscribe_GoldChurnedUsers_ABO_190326
+- HR_Reacquisition_FB_AppPromotion_Subscribe_AdditionalGoldChurnedUsers_ABO_190326
 
-**Doc:** [Re-activation 2 Week Plan](https://docs.google.com/document/d/1vs93HRFjx9OYxTn7WslK6cv1uTDZtKnSFFk-TZs5E6E/edit)
-
----
-
-### POD 4: Activation (D0 TCR Reduction)
-**Owner:** Nikhil Nair + Gopal
-**Daily Meeting:** 1:00 PM IST
-
-**Target:** D0 TCR (Trial Cancellation Rate) from 50% → 40%
-
-**Key Discovery:** 60% of cancellations happen within 30 minutes
-- 25% cancel within 5 minutes
-- 35% more cancel within 30 minutes
-
-**D0 TCR Solver — 15-Day Execution Plan:**
-
-**Performance Tasks (Gopal):**
-- Shift from CAC to LTV optimization
-- Real-time CAC:LTV dashboard
-- LTV window: 6 months (will update to 3 months after week 1)
-- Gujarati scale-up: ₹28L → ₹50-55L (15-20% of spend)
-- Shift feature film budgets to series (better retention)
-
-**Activation Tasks (Nikhil):**
-- Microdrama users: After MD consumption, show hook clip of Long Series/Binge Series
-- Payment success page iterations:
-  - Add to wishlist on payment success (lower TCR for wishlist users)
-  - Remind users to cancel mandate later (reduce anxiety)
-  - 3 extra days trial on consumption completion
-- Timeline: Designs done, dev complete by Mar 19
-
-**Promo Tasks (Kunal):**
-- Pick top content from CAC solver based on CAC:LTV framework
-- Pick top 5-7 promo styles by channel and format
+**Status:** 🟢 First results in, promising (2x conversion), scaling
 
 ---
 
-## Key Docs & Links
+## 3. Outcomes Generated (As of Mar 19)
 
-| Document | Link | Owner |
-|----------|------|-------|
-| **Strategic Context (Mar 6-9)** | [Google Doc](https://drive.google.com/file/d/126Merzxz6-ULE-VWIX5vdgZXNv7FoHKz/view) | HuMT consolidated |
-| M0 Watcher % Deck | [Google Slides](https://docs.google.com/presentation/d/1SkCRpH7sjZ0sgiPX1APeEYfKs5zJZbrgx54rAS-b9wQ/edit) | Vismit |
-| Re-activation Plan | [Google Doc](https://docs.google.com/document/d/1vs93HRFjx9OYxTn7WslK6cv1uTDZtKnSFFk-TZs5E6E/edit) | Nikhil |
-| Full LTV Funnel Deep Dive | [Google Doc](https://docs.google.com/document/d/1MZJukvogrbbfriS3nsAgaQU0iPL6xYyybiJklwTDb5I/edit) | Parveen |
-| Microdrama 15-Day Plan | [Google Sheet](https://docs.google.com/spreadsheets/d/18szoGbb1jbp0nzUvj54NW8Uz-V0k1_TdGeC6zDGvXJw/edit) | Anish |
-
-### Gemini Meeting Notes (Email)
-
-| Date | Meeting | Key Insight |
-|------|---------|-------------|
-| Mar 9 | Full Funnel - Accountability | Metric ownership assigned, 2-week execution window |
-| Mar 10 | Final Accountability | LTV-efficient ad creative ranking index, TAM expansion |
-| Mar 11 | Watch Retention Solver Onboarding | Profitability metrics, retention goals |
-| Mar 12 | Full Funnel Execution Plan | Content strategy revamp, reacquisition goals |
-| Mar 16 | Activation Daily Catchup | 63.4-65% cancellation rate for users watching, content matchmaking |
+| Outcome | POD | Impact |
+|---------|-----|--------|
+| Re-acq showing 2x conversion | Re-acquisition | ₹35K spend → 69 subs at 30% SR |
+| Wallet/Leaderboard design done | Activation | Dev started, releasing Fri |
+| Chat bubble flow defined | Activation | Dev starts tomorrow |
+| 15-day microdrama plan locked | D0 TCR | [Spreadsheet ready](https://docs.google.com/spreadsheets/d/18szoGbb1jbp0nzUvj54NW8Uz-V0k1_TdGeC6zDGvXJw/edit) |
+| Daily Tambola game live | Activation | User engagement feature |
+| Promo formats document ready | D0 TCR | [Promo formats](https://docs.google.com/spreadsheets/d/1IhLwCSFtRuFb8HTDyQR-fC8xSHQSfr1c/edit) |
 
 ---
 
-## Slack Channels to Monitor
+## 4. Progress Assessment: Deadline Mar 28
 
-### Primary (Daily scan)
+**Days elapsed:** 4 of 15 (27%)
+**Days remaining:** 9
 
-| Channel | ID | Purpose | POD |
-|---------|----|---------| ----|
-| **#full-funnel-solver** | C092XDNSDB9 | Main coordination — ALL PODs post here | All |
-| **#watch-retention-solver** | C0AK6NSDHFH | Retention-specific, Vismit's announcements | M0, Dormants |
+### What's On Track:
+- ✅ All POD plans submitted
+- ✅ Daily syncs established
+- ✅ Re-acquisition showing early promise
+- ✅ Activation workstreams progressing in parallel
+- ✅ First progress review scheduled (Mar 20)
 
-### Secondary (Check 2-3x/day)
+### Where to Press the Pedal:
 
-| Channel | ID | Purpose | POD |
-|---------|----|---------|-----|
-| #growth-pod | C080EJU9873 | Activation/acquisition updates | Activation |
-| #engagement-solver-team | C0904NE9Y2K | Engagement metrics, WoW retention | M0, Dormants |
-| #m0-strategy | C0A6ZPA3XT8 | M0 Watcher analysis (historical) | M0 |
-| #ai-character-bots | C0AFKKM6Y5C | Character bots for M0 re-engagement | M0 (Pranay PIP) |
-| #product-growth | C07T7047TEZ | Product × Growth sync | Activation |
+| Area | Concern | Action Needed |
+|------|---------|---------------|
+| **M0 Watcher %** | No updates since plan submission | Need daily progress visibility |
+| **Dormants (PunarJanam)** | Strategy locked but no execution updates | Check if campaigns launched |
+| **Re-activation** | Pricing pending Vinay approval | Close pricing today |
+| **D0 TCR Dashboard** | "Real-time CAC:LTV dashboard" mentioned but not delivered | Push for dashboard by Mar 20 review |
+| **Gujarati Scale-Up** | Target ₹50-55L from ₹28L | Track daily spend ramp |
 
-### Tertiary (Check daily)
-
-| Channel | ID | Purpose | POD |
-|---------|----|---------|-----|
-| #stage-vip-club | C0A75FY5RMJ | Tambola updates, gamification | M0 |
-| #stage_maino | C07KWTTB98W | Performance marketing, CAC/LTV | Reactivation |
-| #promo-team | C047HLH7T26 | Promo content, creative strategy | Activation |
-| #tech-frontend | C06NYMGLNGH | Dev updates for activation features | Activation |
-| #cricket-saathi | C0AL2NUKAP7 | Cricket Saathi project (Pranay PIP) | M0 (Character Bots) |
-
-### Cross-Reference
-
-| Workstream | Primary Channel | Secondary Channels |
-|------------|-----------------|-------------------|
-| **M0 Watcher %** | #full-funnel-solver | #watch-retention-solver, #m0-strategy, #ai-character-bots, #stage-vip-club |
-| **Dormants (PunarJanam)** | #full-funnel-solver | #watch-retention-solver, #engagement-solver-team |
-| **Reactivation** | #full-funnel-solver | #stage_maino, #growth-pod |
-| **Activation (D0 TCR)** | #full-funnel-solver | #growth-pod, #product-growth, #promo-team, #tech-frontend |
+### Timeline Risk:
+- We're in **planning → early execution** phase
+- Real metric movement likely visible by **Mar 23-25**
+- Progress review tomorrow (Mar 20) is critical checkpoint
 
 ---
 
-## Sprint Milestones
+## 5. People Contribution Report
 
-| Date | Event | Focus |
-|------|-------|-------|
-| Mar 16 | Sprint Start | Phase 1 & 2 deadlines for Dormants |
-| Mar 17 | Campaign Go-Live | Dormants targeting begins |
-| Mar 19 | Dev Release | D0 TCR payment success iterations |
-| **Mar 20** | **Review 1** | POD-wise Full Funnel progress |
-| Mar 25 | Mid-Sprint Review | Course correction |
-| **Mar 27** | **Review 2** | Final sprint review |
-
----
-
-## Cross-Project Links
-
-- **Character Bots** → `memory/pip-pranay.md` (Pranay's PIP strategic bet)
-- **Tambola** → Engagement engine, M0 first week + trial focus
-- **HMT Calendar** → `memory/projects/hmt-focus-mar16-30.md`
-
----
-
-## Key People Directory
-
-| Name | Role | POD |
-|------|------|-----|
-| **Vismit Bansal** | Retention Lead | M0 Watcher % |
-| **Pravesh Rajput** | Content/Dormants | Project PunarJanam |
-| **Nikhil Nair** | Growth Lead | Reactivation + Activation |
-| **Gopal** | Performance Marketing | D0 TCR |
-| **Parveen Singhal** | Co-Founder | Strategy oversight |
-| **Vinay Singhal** | Co-Founder | Product/AI oversight |
-| **Kunal** | Promo | TCR solver |
-| **Jagriti** | Special Access | Full funnel |
-| **Aaliya Mirza** | Activation | D0 TCR |
-| **Harshit Singh** | Data/Segmentation | Dormants |
-| **Kashish Thakur** | Meta/Google Ads | Dormants assets |
-| **Yatika Kashyap** | WhatsApp/RCS/Push | Dormants assets |
-| **Rajesh Khokhar** | Content Marketing | Dormants comms |
-| **Sneha Singh** | Content Marketing | Dormants comms |
-| **Priyanka Gupta** | Content Marketing | Dormants comms |
+| Person | Role | Contributions |
+|--------|------|---------------|
+| **Parveen Singhal** | Sprint Lead | Set up POD structure, requested daily syncs, tracking progress |
+| **Vinay Singhal** | Approver/Advisor | Pricing approval, Re-acq strategic guidance ("let it scale") |
+| **Nikhil Nair** | Activation/Re-activation Owner | Owns 2 PODs, strong async updates, clear action plans |
+| **Vismit Bansal** | M0/Dormants Owner | Submitted M0 plan, needs more visible execution updates |
+| **Gopal Iyer** | Acquisition Lead | Strong async communication, leading re-acq |
+| **Kunal Kumrawat** | Promo Lead | Detailed title-level optimization plan |
+| **Pravesh Rajput** | Content/Dormants | PunarJanam strategy, content calendar pending |
+| **Aaliya Mirza** | Activation Exec | Wallet/Leaderboard dev, chat bubble design |
+| **Shubham Singla** | Re-acquisition | First concrete results (69 subs at 2x conversion) |
+| **Shantanu Chatterjee** | Re-activation | 2-week plan submitted, awaiting pricing |
+| **Jagriti Raman** | Acquisition | Figma board for 15-day acq plan |
+| **Kashish Thakur** | Performance Marketing | Campaign setup, event optimization |
+| **Harshit Singh** | Data | Predictive drop-off analysis |
 
 ---
 
-## Daily Update Log
+## 6. Key Documents & Links
 
-### Mar 16, 2026 (Sprint Start)
-- **Adhoc kickoff day** — daily recurring meetings start Mar 17
-- M0 Watcher % deck shared by Vismit
-- Project PunarJanam (Dormants) plan shared by Pravesh
-- Phase 1 & 2 deadlines today for Dormants workstream
-- Nikhil's Re-activation doc shared, Shantanu working on granular plan
-- **Context collection:** Email (Gemini notes), Slack (#full-funnel-solver), Drive (Strategic Context doc) — all consolidated
-- **Key finding from today's Activation catchup:** 63.4-65% cancellation rate for users who are watching — content matchmaking strategy defined
-
-**M1+ Dormants Deep Data Mining Meeting (4:45 PM IST) — Key Takeaways:**
-
-| Topic | Detail |
-|-------|--------|
-| **Execution mandate** | Pravesh: "Work like scientists, not copywriters" — focus on outcomes, not process |
-| **Timeline** | 2-week hard deadline for measurable resurrection results |
-| **Team concern** | Large team size may slow execution; need tighter accountability |
-| **Accountable** | Smith + Rome primarily accountable; Pravesh as guiding force |
-| **Target cohort** | 2.44 lakh dormant users (inactive 4-42 weeks) |
-| **High-value segment** | 29K users with 63.5% past weekly retention rate |
-| **Key channels** | Google, WhatsApp (primary for comms) |
-| **Genre preferences** | Drama, family, crime, romance drama |
-| **Segmentation model** | 3-segment probability model (A, B, C) for return likelihood |
-| **User properties** | "Taste" + channel data for cross-segment analysis |
-| **Next step** | Rajesh Khokhar taking up benchmark stars + Google Ads execution tomorrow
+| Document | Owner | Link |
+|----------|-------|------|
+| M0 Watcher % 2-Week Plan | Vismit | [Slides](https://docs.google.com/presentation/d/1SkCRpH7sjZ0sgiPX1APeEYfKs5zJZbrgx54rAS-b9wQ/edit) |
+| Re-activation Plan | Nikhil/Shantanu | [Doc](https://docs.google.com/document/d/1vs93HRFjx9OYxTn7WslK6cv1uTDZtKnSFFk-TZs5E6E/edit) |
+| Acquisition 15-Day Plan | Jagriti | [Figma](https://www.figma.com/board/FM5z7JSjqCiWg7r3IcJh6L/Untitled) |
+| Microdrama 15-Day Plan | Kunal | [Spreadsheet](https://docs.google.com/spreadsheets/d/18szoGbb1jbp0nzUvj54NW8Uz-V0k1_TdGeC6zDGvXJw/edit) |
+| Promo Formats | Kunal | [Spreadsheet](https://docs.google.com/spreadsheets/d/1IhLwCSFtRuFb8HTDyQR-fC8xSHQSfr1c/edit) |
 
 ---
 
-### Mar 17, 2026
+## 7. Tracking Setup
 
-**DORMANTS WATCH Meeting (12:00 PM IST) — Pre-Meeting Context**
+**Channel:** #full-funnel-solver added to Tier 1 proactive tracking
+**Alert triggers:**
+- POD owner updates
+- Metric movements
+- Blockers flagged
+- Co-founder decisions
 
-**Source:** Gemini Meeting Notes (email 7:00 AM) + Slack + earlier prep
-
-**From Previous Session (Gemini Notes 12:29 PM IST):**
-
-| Theme | Detail |
-|-------|--------|
-| **User Base** | Running Tumbula ads on 1L users (50K considered too low for reliable learnings) |
-| **Cadence** | Daily micromanagement via #full-funnel-solver |
-| **Conversion Issues** | Current LVU/MVU/HVU definitions broken — drops in high-energy conversions |
-| **Instrumentation Gap** | Need to track "subscribers who never watched" |
-| **Segmentation** | Prioritize simplicity; initial pillar = depth of engagement; 2-week timeline |
-
-**Pravesh's Ownership:**
-- Daily cadence for project micromanagement
-- 3 agendas per meeting (keep to 10 min structure)
-- Canvas for collaboration in full-funnel solver
-
-**Open Questions for Today:**
-1. "Previously watched" cohort definition — 30d? 60d? 90d?
-2. Push/content trigger experiments lined up for this cohort?
-3. Overlap check: dormants who were M0 non-watchers vs. those who DID watch — different playbooks needed?
-
-**Adjacent Context (last 24h):**
-- Activation pod: D0 smart content routing plan releasing Mar 25 — home platter shows only high-completion titles for D3 retention
-- HMT shared Instagram reel "very good for re-engagement and re-acquisition" — potential dormant win-back creative reference
-- UPI Collect deprecated yesterday — audit dormant win-back flows using UPI Collect
-- M0 Watcher % 2-week plan discussed at 11:30 AM — ensure dormant targets don't conflict with M0 cohort definitions
+**Routing:** Updates → Telegram Daily Ops topic
 
 ---
 
-*Last updated: Mar 17, 2026 08:35 UTC*
+*Report generated: March 19, 2026*
+*Next review: March 20, 2026 (Progress Review Meeting)*

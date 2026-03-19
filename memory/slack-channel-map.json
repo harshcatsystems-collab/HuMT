@@ -477,6 +477,16 @@
       "purpose": "AI-native homepage personalisation initiative - ML reco + limited HP experiments",
       "tier": 2,
       "added": "2026-03-17"
+    },
+    "C0AFJCPPG8P": {
+      "name": "#long-binge-series-pod",
+      "tier": 3,
+      "added": "2026-03-19"
+    },
+    "C0AFZSHT7D0": {
+      "name": "#microdrama-promo-pod",
+      "tier": 3,
+      "added": "2026-03-19"
     }
   },
   "last_updated": "2026-03-12 02:21:58",

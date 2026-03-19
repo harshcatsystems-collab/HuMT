@@ -397,3 +397,15 @@
   "ts": 1773843747,
   "date": "2026-03-18T14:22:27Z"
 }
+{
+  "type": "slack_post",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1773913912.903129",
+  "message_ts": "1773915818.260479",
+  "message_preview": "Done ✓",
+  "tagged_users": [
+    "U05HAE85RL2"
+  ],
+  "ts": 1773915818,
+  "date": "2026-03-19T10:23:38Z"
+}

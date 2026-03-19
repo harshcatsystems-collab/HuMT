@@ -1,9 +1,9 @@
 {
-  "lastTriageUTC": "2026-03-18T03:00:00Z",
-  "urgent": 1,
-  "important": 2,
-  "fyi": 4,
-  "skip": 2,
-  "responseDebt": 0,
-  "notes": "Blume monthly catchup CANCELLED for today (Mar 18). Script email from Sanya Jain (CHHORA GANGA KINARE WALA) needs attention. No 3+ day old unreplied emails from key contacts."
+  "lastTriageUTC": "2026-03-19T03:00:00Z",
+  "urgent": 2,
+  "important": 4,
+  "fyi": 6,
+  "skip": 5,
+  "responseDebt": 1,
+  "notes": "Blume catchup canceled by Marmik (Mar 17) — no reschedule yet. DailyHunt/VerSe partnership forwarded to Saurabh, handled internally. Sanya script received Mar 17 — content review needed."
 }

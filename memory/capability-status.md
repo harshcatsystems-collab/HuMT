@@ -5,38 +5,37 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-18 00:00 UTC (automated cron)
+## Last Verified: 2026-03-19 00:00 UTC (automated cron)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files | 2026-03-18 |
-| 2 | Files | ✅ | write+read+delete /tmp/humt_cap_test.txt OK | 2026-03-18 |
-| 3 | Terminal | ✅ | exec tool — `date` returned Wed Mar 18 00:00:07 UTC 2026 | 2026-03-18 |
-| 4 | Web Search | ✅ | Brave API returned result for UTC time query | 2026-03-18 |
-| 5 | Gmail | ✅ | gog gmail returned 3 messages incl. Chhora Ganga script, Otter.ai, Fyxer | 2026-03-18 |
-| 6 | Calendar | ✅ | gog calendar returned 5 events today incl. Sprint Retrospect, M0 watcher, Reactivation | 2026-03-18 |
-| 7 | Cron/Reminders | ✅ | 20 jobs active — this job execution proves it works | 2026-03-18 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present | 2026-03-18 |
+| 1 | Memory | ✅ | Read/write workspace files | 2026-03-19 |
+| 2 | Files | ✅ | write+read+delete /tmp/humt_cap_test.txt OK | 2026-03-19 |
+| 3 | Terminal | ✅ | exec tool — `date` returned Thu Mar 19 00:00:21 UTC 2026 | 2026-03-19 |
+| 4 | Web Search | ✅ | Brave API returned result for UTC time query | 2026-03-19 |
+| 5 | Gmail | ✅ | gog gmail search returned 3 messages incl. Google Cloud, Vinay Singhal, Josy Joseph | 2026-03-19 |
+| 6 | Calendar | ✅ | gog calendar events returned 5 events incl. M0 watcher, Dormants Watch, Reactivation | 2026-03-19 |
+| 7 | Cron/Reminders | ✅ | 20 jobs active — this job execution proves it works | 2026-03-19 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present | 2026-03-19 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C**** → HTTP 200 on /v1/models | 2026-03-18 |
-| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed 200 | 2026-03-18 |
-| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — returned results (score 0.59) | 2026-03-18 |
-| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token) | 2026-03-18 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-18 |
+| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C**** → HTTP 200 on /v1/models | 2026-03-19 |
+| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed 200 | 2026-03-19 |
+| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — returned results (score 0.58, provider: openai) | 2026-03-19 |
+| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token) | 2026-03-19 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-19 |
 
-## ⚠️ Cron Job Warnings (2026-03-18)
-
-Three jobs with consecutive errors — needs attention:
+## ⚠️ Cron Job Warnings (2026-03-19)
 
 | Job | Consecutive Errors | Last Error | Note |
 |-----|--------------------|------------|------|
-| `slack:commitment-tracker` | 2 ⬆️ | timeout (300s) | Full Slack scan timing out — scope too broad. Needs fix. |
-| `slack:evening-debrief` | 1 ⬆️ | timeout (480s) | Hitting max timeout — scope/efficiency issue |
-| `healthcheck:security-audit` | 1 ⬆️ | message failed (step 4) | Script step 4 failing — send-telegram-topic issue? |
+| `email:morning-triage` | 1 ⬆️ NEW | timeout (180s) | Full inbox scan + categorization timing out — scope too broad |
+| `slack:commitment-tracker` | 3 ⬆️ | Edit failed on delegations.md | File edit failing — likely concurrent write or format issue |
+| `persona:monthly-evolution-review` | 1 | message failed | Send script issue — monitor |
 
-Previous warnings (resolved or changed):
-- `slack:end-of-day-summary` — was 1 error, now 0 ✅ (resolved)
-- `persona:monthly-evolution-review` — 1 error (message failed) — monitoring (unchanged)
+Previous warnings (resolved):
+- `slack:end-of-day-summary` — 0 errors ✅
+- `healthcheck:security-audit` — 0 errors ✅ (resolved from yesterday)
+- `slack:evening-debrief` — 0 errors ✅ (resolved from yesterday)
 
 ## Critical Findings (2026-03-06)
 
@@ -54,8 +53,8 @@ Previous warnings (resolved or changed):
 
 ### ✅ All Core Capabilities Working
 - Web search: ✅
-- Gmail: ✅ (syntax: `gog gmail messages search "query"`)
-- Calendar: ✅ (syntax: `gog calendar events`)
+- Gmail: ✅ (syntax: `gog gmail search "query"`)
+- Calendar: ✅ (syntax: `gog calendar events --days 1`)
 - Drive: ✅ (syntax: `gog drive ls`)
 - Terminal: ✅
 - Files: ✅

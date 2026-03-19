@@ -1,81 +1,262 @@
-# Homepage Personalisation — Project Context
+# Homepage Personalisation — Full Project Report
 
-> Added to tracking: 2026-03-17 per HMT — cross-cuts M0 Watcher % and Dormants pods
+> **Channel:** #homepage-personalisation (C0ABCG0RV1N)
+> **Last Updated:** 2026-03-19
+> **Status:** Active — Phase 1 validated, scaling to 25%, moving to AI-native rearchitecture
 
-## Overview
+---
 
-Building an **AI-native personalisation layer** for STAGE homepage. End state: entire discovery experience adapts to individual user behavior, preferences, and context.
+## Executive Summary
 
-## Channel
+STAGE is building an **AI-native personalisation layer** for the homepage. The end state: entire discovery experience — what surfaces, when it surfaces, how it's framed — driven by a reasoning agent that knows each user individually.
 
-**#homepage-personalisation** (C0ABCG0RV1N)
+**Phase 1 MVP (Limited HP)** validated key hypothesis: reducing choice paralysis improves content discovery by 21-31% without hurting conversion.
+
+---
 
 ## Key People
 
-| Role | Person |
-|------|--------|
-| Lead | Manasvi Dobhal |
-| Tech | Shwetabh Gupta |
-| Data | Vishnu TS |
-| Stakeholder | Vismit Bansal (M0 POD owner) |
-| Sponsor | HMT |
+| Role | Person | Slack ID |
+|------|--------|----------|
+| **Lead** | Manasvi Dobhal | U08MRHK61BK |
+| **Tech Lead** | Shwetabh Gupta | U07BHN4SDHV |
+| **Data** | Vishnu TS | U0ABWRVN4UR |
+| **Sponsor** | HMT | U05QMQHCVNY |
+| **PM Oversight** | Pranay Gupta | U089APN985P |
+| **Eng Manager** | Kamill Panchal | U0719V1GX3Q |
+| **Product Analytics** | Vishnu (U09QGG6HLG0) | U09QGG6HLG0 |
 
-## Current Status (as of Mar 17)
+---
 
-**Limited Homepage Experiment — VALIDATED ✓**
-- Hypothesis confirmed: reducing choice paralysis improves conversion
-- Test+ML users complete 5pp more shows than control
-- Binge rate slightly higher (53% vs 51.5%)
-- Scaling test group to 25%
+## Current Phase: Phase 1 — Limited HP MVP
+
+### What We Built (Backend-only, zero frontend changes)
+
+1. **Hard cap at 6 rails per session**
+   - Data shows 87% of clicks happen in first 10 positions
+   - Currently serving 20-50 rails, most invisible
+   
+2. **No repeated content**
+   - Top title currently appears in 54 rails simultaneously
+   - Phase 1 fixes with strict per-session deduplication
+
+3. **Vibe/tone tagging**
+   - Using LLMs + subtitles/transcripts
+   - Rails surface content matched to what user actually finishes
+   - Not just globally trending or last watched
+   - *A specific agent will be built for this — key differentiator*
+
+4. **MicroDramas treated separately**
+   - 89% median episode completion
+   - 3-5 episode binge depth per session
+   - Current algorithm treats them same as 200-episode serial
+
+### Experiment Design
+
+- **Running since:** Feb 16, 2026 (33+ days)
+- **Total users:** 36,296 (as of Day 11)
+- **Cohort split:** 4-way factorial design
+  - Test + ML: 2,449 (6.7%) → scaled to 25%
+  - Test + Non-ML: 1,172 (3.2%)
+  - Control + ML: 21,910 (60.4%)
+  - Control + Non-ML: 10,765 (29.7%)
+
+### Validated Results (Day 11 — Feb 27)
+
+#### ✅ PROVEN — Content Discovery (+21-31%, p<0.01)
+
+| Cohort | Content/User | Lift |
+|--------|-------------|------|
+| Test + ML | 12.6 | +31% vs Control+Non-ML |
+| Test + Non-ML | 11.3 | +18% |
+| Control + ML | 10.1 | baseline |
+| Control + Non-ML | 9.6 | baseline |
+
+**Insight:** Limited HP reduces decision paralysis. ML recos amplify the effect.
+
+#### ✅ PROVEN — D1 Retention Dip Real But Temporary (-1.5pp, p<0.05)
+
+| Day | Test | Control | Notes |
+|-----|------|---------|-------|
+| D1 | 19.2% | 20.7% | -1.5pp dip |
+| D3 | ~11.5% | ~11.5% | Converged |
+| D7 | ~6.1% | ~6.1% | Converged |
+| D10 | 2.3% | 2.1% | **Test AHEAD** |
+
+**Projected D30:** Test+ML 7.0% vs Control+Non-ML 2.6% — **2.7x advantage**
+
+#### ✅ HP and ML Work Independently (No Interaction Effect)
+
+2x2 Factorial ANOVA across 5 metrics — ALL interaction effects NOT significant (p>0.49).
+
+**Implication:** Scale Limited HP independently of ML experiment. No need to couple rollout decisions.
+
+#### ✅ Revenue Impact — Churn-Driven, Not ARPU-Driven
+
+| Group | ARPU (₹) | Churn % | Active Sub % |
+|-------|----------|---------|--------------|
+| Test + ML | 30.30 | 7.9% | 92.1% |
+| Test + Non-ML | 33.78 | 8.4% | 91.6% |
+| Control + ML | 30.54 | 9.1% | 90.9% |
+| Control + Non-ML | 30.18 | 8.8% | 91.2% |
+
+**Annualized savings:** ₹11.3M at full scale (1.1pp lower churn × 96K M0 users/month × ₹118 LTV delta)
+
+#### ✅ Show Completion — Discovery Drives Depth
+
+| Group | Avg Content/User | Show Completion % | Binge Rate % |
+|-------|------------------|-------------------|--------------|
+| Test + ML | 12.6 | 56.6% | 53.0% |
+| Test + Non-ML | 11.3 | 54.8% | 53.7% |
+| Control + ML | 10.1 | 52.1% | 52.3% |
+| Control + Non-ML | 9.6 | 51.7% | 51.5% |
+
+**Insight:** Test+ML users complete 5pp more shows. Not "window shopping" — curated funnel converts browsers into completers.
+
+#### ✅ Power User Analysis — Discovery Flywheel
+
+Power users (5+ hrs watchtime):
+
+| Cohort | Titles Explored |
+|--------|----------------|
+| Test + ML | 82.1 |
+| Test + Non-ML | 67.9 |
+| Control + ML | 57.0 |
+| Control + Non-ML | 50.2 |
+
+**+64% discovery lift** with same time budget. Limited HP + ML creates a discovery flywheel.
+
+#### ✅ Segmentation — Rajasthani Best Responders
+
+| Dialect | Test+ML | Control | Lift |
+|---------|---------|---------|------|
+| Rajasthani | 10.9 content/user | 7.4 | +47% |
+| Bhojpuri | 12.3 | 8.5 | +45% |
+| Haryanvi | 14.5 | 11.1 | +31% |
+
+iOS users also strong responders: +77% lift (10.8 vs 6.1 content/user)
+
+---
+
+## Strategic Direction: AI-Native Personalisation
+
+> "Current approach is too incremental, still operating with 'encanto baggage'"
+> — HMT, Feb 27 HP Personalisation meeting
+
+### Vision
+
+**"One homepage per user"** — Netflix-level personalization where feed looks fresh for:
+- Different users
+- Same user at different instances (time of day, mood, context)
+
+### Technical Components (In Progress)
+
+1. **App exit event tracking** (proxy events for session detection)
+2. **Session-level information storage**
+3. **Auto-play tagging** (explicit LLM context for trailers)
+4. **Scroll depth tracking** (= # of rails displayed)
+5. **ML recommendation model** (embeddings + collaborative filtering)
+6. **Dedicated content vibe tagging agent** — key differentiator
+
+### Content Tagging Plan
+
+- Starting with **top 20% of titles**
+- Scene-level tagging every 2-5 mins
+- Human review for regional content
+- Targeting 70-80% accuracy
+- Evaluating multilingual embedding models: V38, OpenAI, Gemini
+
+**Blocker:** Not all episodes have subtitles — coverage audit needed post-migration
+
+---
+
+## Timeline
+
+### Jan 2026 — Setup & Planning
+
+| Date | Event |
+|------|-------|
+| Jan 23 | Channel created. Initial discussion on limited homepage for M0 users (<2 titles watched) |
+| Jan 28 | Limited HP MVP doc created |
+| Jan 29 | Feed Personalization PRD v1 shared (epics 1-5) |
+| Jan 30 | M0 Homepage Implementation Spec shared |
+
+### Feb 2026 — Phase 1 MVP Launch & Validation
+
+| Date | Event |
+|------|-------|
+| Feb 6 | **Phase 1 (Limited HP MVP) released** — 10% test, Statsig experiment |
+| Feb 17 | Limited HP dashboard replicated for 4-way split |
+| Feb 23 | Dashboard request for limited homepage |
+| Feb 26 | 4-way split dashboard built |
+| Feb 27 | **Day 11 Full Statistical Deep Dive** — HP validated ✓ |
+| Feb 27 | **Decision:** Scale test group to 25% |
+| Feb 27 | HP Personalisation Update meeting — Personalisation Metapod formed (Manasvi + Shwetabh) |
+
+### Mar 2026 — Phase 1 Scale-up + Phase 2 Planning
+
+| Date | Event |
+|------|-------|
+| Mar 3 | Phase 1 draft shared — AI-native personalisation agent vision |
+| Mar 4 | Shwetabh meets with Manasvi — session tracking, app exit events |
+| Mar 5 | Notes: Talk to Mofidul on events, move from MongoDB to Snowflake |
+| Mar 6 | Notes: App exit event nuances, scroll depth = # rails, timeline for events |
+| Mar 6 | **Week summary to HMT** — AI-native personalisation layer concept |
+| Mar 12 | Evaluating in-house tags + multilingual models |
+| Mar 13 | Vishnu TS joined channel |
+| Mar 17 | Cross-pod connection with M0 Watcher % and Dormants sprints |
+
+---
 
 ## Key Documents
 
-1. **Phase-wise Plan:** [Google Doc](https://docs.google.com/document/d/1H3loh9vufGUqryZ-5rD2I4YLnj38_kU1pEgy0iXCmy8/edit)
-2. **Metabase Dashboard:** [Dashboard 4822](https://stage.metabaseapp.com/dashboard/4822)
+1. **[Personalisation Agent Plan v1.4](https://docs.google.com/document/d/1H3loh9vufGUqryZ-5rD2I4YLnj38_kU1pEgy0iXCmy8/edit)** — Architecture, 4 phases, deduplication rules, measurement framework
+2. **[Limited HP MVP Doc](https://docs.google.com/document/d/1qpqPJZHTbDtKHlDIfiJXGdhQ91gy0LrVID2TRtmQHc8/edit)** — Original M0 Limited Homepage specification
+3. **[M0 MVP Dashboard 4822](https://stage.metabaseapp.com/dashboard/4822)** — 4-way split experiment tracking
 
-## Timeline / Updates
+---
 
-### Mar 17
-- Manasvi/Shwetabh/Vismit syncing at 2:30 PM IST
-- Vishnu joining for data alignment
-
-### Mar 13
-- M-o-M update: Limited HP experiment success validated
-- Re-checking numbers on titles consumed/started
-
-### Mar 12
-- Started evaluating in-house tags and multilingual models
-- Comprehensive content tagging plan WIP
-
-### Mar 6
-- Week summary shared with HMT
-- AI-native personalisation layer concept introduced
-
-### Mar 3-5
-- Phase 1 draft shared
-- Technical notes: app exit event, session storage, auto-play tagging, scroll-depth
-
-### Feb 27
-- MoM with HMT, Manasvi, Shwetabh
-- HuMT posted meeting minutes
-- Statistical deep dive: 2x2 Factorial ANOVA + Revenue + Retention projections
-
-## Cross-Cutting Impact
+## Cross-Cutting Impact (Full Funnel Sprint Mar 16-30)
 
 | POD | How HP Personalisation Helps |
 |-----|------------------------------|
 | **M0 Watcher %** | Smart content routing on D0 — show only high-completion, high-D3-retention titles |
-| **Dormants** | Personalized re-engagement surface for returning dormant users |
-
-## Technical Components
-
-- App exit event tracking (proxy events)
-- Session-level information storage
-- Auto-play tagging
-- Scroll-depth tracking
-- ML recommendation model
-- LLM context setting for trailer auto-play
+| **Dormants (PunarJanam)** | Personalized re-engagement surface for returning dormant users |
+| **Activation** | Faster time-to-first-watch with curated homepage |
 
 ---
 
-*Created: 2026-03-17 | Source: #homepage-personalisation catch-up scan*
+## Key Decisions
+
+| Date | Decision | Owner |
+|------|----------|-------|
+| Feb 27 | **Personalisation Metapod formed** — Manasvi + Shwetabh dedicated unit | HMT |
+| Feb 27 | Kamill and Pane removed from coordination loop | HMT |
+| Feb 27 | Friday weekly cadence confirmed (5-6 PM IST) | HMT |
+| Feb 27 | Manasvi's scope = personalisation only (Continue Watching separate) | HMT |
+| Feb 27 | **Scale test group from 10% → 25%** | HMT |
+| Mar 6 | Move toward AI-native, not incremental improvements | HMT |
+
+---
+
+## Open Questions / Blockers
+
+1. **Subtitle coverage:** Per Mahesh (U08M3FB9EN5), not all episodes have subtitles — affects vibe tagging coverage
+2. **Open code switch:** Migration hiccup for model evaluation
+3. **MicroDrama markers:** dim_content doesn't have markers for microdramas (asked Vishnu)
+4. **Timeline from Mofidul:** Extra events release + weightage addition
+
+---
+
+## Next Steps
+
+1. **Wait for D14/D30 retention** — make-or-break metric for full rollout
+2. **Complete content tagging** — top 20% titles, scene-level
+3. **Build dedicated vibe tagging agent** — key differentiator
+4. **Integrate with Full Funnel Sprint** — M0 Watcher % + Dormants
+5. **Rearchitecture planning** — requires a release for deeper changes
+
+---
+
+*Source: #homepage-personalisation (C0ABCG0RV1N) — full channel ingestion*
+*Generated: 2026-03-19 06:30 UTC*

@@ -1,54 +1,40 @@
 {
   "preppedToday": [
     {
-      "id": "6hpno1oidmiuganoouruhfonmu_20260318T050000Z",
-      "title": "Sprint Retrospect",
-      "startTime": "2026-03-18T10:30:00+05:30",
-      "preppedAt": "2026-03-18T04:30:00Z",
-      "topic": "product_design"
-    },
-    {
-      "id": "23e2e6ggo4dkufrrkh2nrj9d7d_20260318T053000Z",
-      "title": "Sprint Start",
-      "startTime": "2026-03-18T11:00:00+05:30",
-      "preppedAt": "2026-03-18T05:00:00Z",
-      "topic": "product_design"
-    },
-    {
-      "id": "73rhfktpi5os655o54oocbaphs_20260318T060000Z",
-      "title": "M0 watcher % - 2 Week Plan - discussion",
-      "startTime": "2026-03-18T11:30:00+05:30",
-      "preppedAt": "2026-03-18T05:30:00Z",
+      "id": "73rhfktpi5os655o54oocbaphs_20260319T060000Z",
+      "summary": "M0 watcher % - 2 Week Plan - discussion",
+      "start": "2026-03-19T11:30:00+05:30",
+      "preppedAt": "2026-03-19T05:30:00Z",
       "topic": "retention"
     },
     {
-      "id": "3saeb94ahos7o3if0vre6re30v_20260318T063000Z",
-      "title": "DORMANTS WATCH - Previously watched - 2 Week plan",
-      "startTime": "2026-03-18T12:00:00+05:30",
-      "preppedAt": "2026-03-18T06:00:00Z",
+      "id": "3saeb94ahos7o3if0vre6re30v_20260319T063000Z",
+      "summary": "DORMANTS WATCH - Previously watched - 2 Week plan",
+      "start": "2026-03-19T12:00:00+05:30",
+      "preppedAt": "2026-03-19T06:00:00Z",
       "topic": "retention"
     },
     {
-      "id": "0c7aahhdvv20srt8o3tfrsfd3n_20260318T070000Z",
-      "title": "Reactivation daily catchup",
-      "startTime": "2026-03-18T12:30:00+05:30",
-      "preppedAt": "2026-03-18T06:30:00Z",
+      "id": "0c7aahhdvv20srt8o3tfrsfd3n_20260319T070000Z",
+      "summary": "Reactivation daily catchup",
+      "start": "2026-03-19T12:30:00+05:30",
+      "preppedAt": "2026-03-19T06:30:00Z",
       "topic": "retention"
     },
     {
-      "id": "62elh1hmvcnna83d7frv33pskv_20260318T073000Z",
-      "title": "Activation daily catchup",
-      "startTime": "2026-03-18T13:00:00+05:30",
-      "preppedAt": "2026-03-18T07:00:00Z",
-      "topic": "growth"
+      "id": "62elh1hmvcnna83d7frv33pskv_20260319T073000Z",
+      "summary": "Activation daily catchup",
+      "start": "2026-03-19T13:00:00+05:30",
+      "preppedAt": "2026-03-19T06:30:00Z",
+      "topic": "retention"
     },
     {
-      "id": "4ocsmb7ralhadfu06kli55de8c",
-      "title": "Insurance Orientation Session – STAGE Employee Benefits",
-      "startTime": "2026-03-18T15:00:00+05:30",
-      "preppedAt": "2026-03-18T09:00:00Z",
+      "id": "4nvjrp17omdq67ra66e9epp1tm",
+      "summary": "Catch Up",
+      "start": "2026-03-19T15:00:00+05:30",
+      "preppedAt": "2026-03-19T09:00:00Z",
       "topic": "daily_ops"
     }
   ],
-  "date": "2026-03-18"
+  "date": "2026-03-19"
 }
