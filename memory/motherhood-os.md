@@ -222,6 +222,41 @@
 
 ---
 
+## 🩺 Care Manager Notes (Dr. Rajeshwari — Mar 1, 2026)
+
+### Blood Sugar Monitoring
+- Randomly check fasting & PP (postprandial) — just to keep a check
+
+### 🌟 Headache Remedies (important!)
+1. Cold headband
+2. Foot massage with sesame oil
+3. **Ajwain & clove potli** — roast 1 tsp ajwain + 10-15 cloves, make a potli, smell it
+4. Lavender oil steam
+5. Ginger tea
+6. Yoga & meditation
+
+### Acidity Management
+- Amla juice concentrate, fresh amla, or sundried amla (salted)
+- Avoid sour & spice to prevent acidity
+- Drink 3 litres of fluid daily
+
+### Daily Routine Targets
+| Activity | Target |
+|----------|--------|
+| Walk post meals | After 10-15 min rest |
+| Steps | 5-6K per day |
+| Yoga | 1 session daily |
+| Sleep | 7-8 hours |
+
+### Breastfeeding Prep & Body Care
+- **Coconut oil** — Apply on nipples & areola (keeps skin supple, prevents cracking)
+- **Sunlight exposure** — Early mornings or late evenings (Vitamin D, safe UV hours)
+
+### Weight Gain Target
+- **1 kg per month** — Healthy, steady gain
+
+---
+
 ## Symptom Toolkit 🩹
 
 ### Anxiety & Stress Relief

@@ -2,20 +2,21 @@
 
 > **Channel:** #full-funnel-solver (C092XDNSDB9)
 > **Deadline:** March 28, 2026
-> **First Progress Review:** March 20, 2026 (tomorrow)
-> **Analysis Date:** March 19, 2026
+> **Review 1:** ✅ March 20, 2026 (COMPLETED)
+> **Review 2:** March 27, 2026
+> **Last Updated:** March 20, 2026
 
 ---
 
 ## Executive Summary
 
-The Full Funnel Sprint is a **15-day intensive** (Mar 16-30) led by Parveen to solve STAGE's LTV optimization across the entire funnel. **6 PODs** are executing in parallel with daily syncs.
+The Full Funnel Sprint is a **15-day intensive** (Mar 16-30) led by Parveen to solve STAGE's LTV optimization across the entire funnel. **8 PODs** are executing in parallel with daily syncs.
 
-**Progress Status (Day 4 of 15):** 🟡 **On Track, Early Stage**
-- Plans submitted ✅
-- Daily syncs happening ✅
-- First concrete results emerging (Re-acquisition)
-- Real outcomes still 7-10 days away
+**Progress Status (Day 5 of 15):** 🟢 **Review 1 Complete — Strong Early Results**
+- Review 1 MoM: [Full doc](https://docs.google.com/document/d/1G8cWdPprGNSUJpFAWAPJnRr2JV5b5bY2wAfG2omP3nk/edit)
+- All PODs presented progress
+- Multiple initiatives showing 2-7x improvements
+- 7 strategic decisions locked
 
 ---
 
@@ -260,5 +261,55 @@ The Full Funnel Sprint is a **15-day intensive** (Mar 16-30) led by Parveen to s
 
 ---
 
-*Report generated: March 19, 2026*
-*Next review: March 20, 2026 (Progress Review Meeting)*
+## 8. Review 1 Summary (March 20, 2026)
+
+Full MoM: [Google Doc](https://docs.google.com/document/d/1G8cWdPprGNSUJpFAWAPJnRr2JV5b5bY2wAfG2omP3nk/edit)
+
+### 🔑 Strategic Decisions Made
+
+1. **Format-wise thesis is mandatory** — Stop treating content in abstraction. Each format (micro drama, long series, binge series, feature film) is a different product
+2. **Scale what's proven, stop experimenting** — Copy D0 TCR playbook for reactivation/reacquisition. Optimize for velocity
+3. **CSL across all markets immediately** — Haryanvi showed 69% IR improvement. Other markets at only 10% penetration
+4. **D3 retention is the activation metric** — Not D1. Character bot success = content consumption start
+5. **One full-funnel dashboard needed** — Acquisition → LTV, single source of truth (15-20 day build)
+6. **Efficiency optimization, not budget optimization** — Same budget, smarter deployment
+7. **Tambola = Content** — Games are content. Future: tie to consumption via coins
+
+### POD Highlights
+
+| POD | Key Win | Next Priority |
+|-----|---------|---------------|
+| **Content** | Content frequency tracker built | Add genre filter, WTR prediction |
+| **Acquisition** | CAC ₹626, top-down budget working | Full-funnel dashboard, D0 TCR tracking |
+| **Promos** | Haryanvi IR +69% via CSL, AI Promos pod created | Deploy CSL all markets, promo-level attribution |
+| **D0 TCR** | Special Access live 40+ titles, consistent conversion lift | Format-wise thesis, high-IR low-TR targeting |
+| **Activation** | Character bot scaled 10%→41%, retention holding | Coin redemption Tuesday, D3 as metric |
+| **Resurrection** | 3.15% conversion tier-1 vs 0.44% baseline (7x) | Scale proven, copy D0 TCR playbook |
+| **Re-engagement** | M0 watcher % trending up, Tambola daily live | Tambola→content bridge via coins |
+| **Reacquisition** | 30% SR from targeted binge-watchers (3x baseline) | Scale this, tiered pricing ladder |
+
+### Critical Action Items
+
+| # | Action | Owner | Timeline |
+|---|--------|-------|----------|
+| 1 | Full-funnel dashboard (acquisition→LTV) | Parveen + Nikhil + HMT | 15-20 days |
+| 2 | Deploy CSL all markets | Kunal + Mino | Immediate |
+| 3 | Format-wise thesis per POD | All owners | 2 weeks |
+| 4 | Promo-level attribution | Kunal + Nikhil | Next priority |
+| 5 | Town Hall Thursday | Parveen | Mar 27 |
+| 6 | Review 2 with outcomes | All | Friday Mar 28 |
+
+### Key Metrics Snapshot
+
+| Stage | Metric | Current | Target |
+|-------|--------|---------|--------|
+| Acquisition | Sub CAC | ₹626 | Optimize continuously |
+| Promos | IR | 6.4% overall | Double via CSL |
+| D0 TCR | Trial CR | 40-41% (₹1/7-day) | Improve via special access |
+| Resurrection | Daily resurrection | 0.35% | 1% per day |
+| Reacquisition | Targeted SR | 30% (early) | Scale + CAC-LTV positive |
+
+---
+
+*Report updated: March 20, 2026*
+*Next review: March 27, 2026 (Review 2 — Outcomes)*

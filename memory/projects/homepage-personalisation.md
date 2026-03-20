@@ -1,8 +1,8 @@
 # Homepage Personalisation — Full Project Report
 
 > **Channel:** #homepage-personalisation (C0ABCG0RV1N)
-> **Last Updated:** 2026-03-19
-> **Status:** Active — Phase 1 validated, scaling to 25%, moving to AI-native rearchitecture
+> **Last Updated:** 2026-03-20
+> **Status:** Active — ML variant live at 50-50 split, AI-led model scoping closing today, implementation Monday
 
 ---
 
@@ -205,6 +205,7 @@ iOS users also strong responders: +77% lift (10.8 vs 6.1 content/user)
 | Mar 12 | Evaluating in-house tags + multilingual models |
 | Mar 13 | Vishnu TS joined channel |
 | Mar 17 | Cross-pod connection with M0 Watcher % and Dormants sprints |
+| Mar 20 | **HP Personalisation Update call** — ML model performing well, AI-led model scoping |
 
 ---
 
@@ -242,21 +243,83 @@ iOS users also strong responders: +77% lift (10.8 vs 6.1 content/user)
 ## Open Questions / Blockers
 
 1. **Subtitle coverage:** Per Mahesh (U08M3FB9EN5), not all episodes have subtitles — affects vibe tagging coverage
-2. **Open code switch:** Migration hiccup for model evaluation
-3. **MicroDrama markers:** dim_content doesn't have markers for microdramas (asked Vishnu)
-4. **Timeline from Mofidul:** Extra events release + weightage addition
+2. **Hindi subtitle accuracy:** Hindi subtitles performing poorly for tagging (tagging "horribly" as neutral); English subtitles yielding correct accuracy
+3. **~80 titles need manual review:** LLM uncertain or didn't tag; Anushka from QC team to assist
+4. **Scripts vs subtitles:** Content scripts may provide better context for tagging (especially for character extraction for chatbot feature)
+5. **Timeline from Mofidul:** Extra events release + weightage addition
+
+---
+
+## Latest Updates (Mar 20, 2026 Meeting)
+
+### ML Model Performance (Live at 50-50 split)
+
+Changes taken live yesterday (prior stats: +12% content discovery, +2pp consumption start):
+- **Experiment split:** 50-50 for next 7-10 days
+- **Rail minimum:** Each rail must have at least 4 items after dedup check
+- **Dashboard:** Separate dashboard for Limited HP tracking (moving from Slack bot)
+- **Open question:** Can ML recommendations for MicroDramas be merged with shows/movies?
+
+**Key metrics outperforming control:**
+- Time to first playback start: +2pp (absolute)
+- Content discovery: +12% higher
+- Watch time: +4% higher
+
+### AI-Led Model for Personalisation (Scoping closes today, implementation Monday)
+
+**Two types of user vectors being created:**
+
+1. **Individual User Vectors:** Personalized profile per user based on own behavior, aggregated per session
+2. **Combined/Aggregate Vectors:** Patterns learned from successful user journeys across all users / clusters for similar users
+
+**POCs:** Vishnu (U09QGG6HLG0), Shwetabh (U07BHN4SDHV)
+
+### Content Tagging Status
+
+**Show/Movie Level:**
+- First version of LLM tagging done based on CMS tags
+- Manual verification pending (ask Anushka U089FV02X4M, Sneha U09APNQ00LU, Rajes U082Q7F56F8)
+- Hindi subtitles accuracy issue — English subtitles working correctly
+
+**Episode Level:**
+- Being explored via two routes: subtitles and scripts (WIP)
+- Need access to all subtitles and scripts (Manasvi to ping Mahesh U03CN38BV7U)
+- POC: Manasvi (U08MRHK61BK)
+
+### UI Considerations
+
+- Poor thumbnails may prevent users from clicking even on correctly recommended content (flagged by Vismit)
+- Rail order discussion: Continue Watching → Everyone's Watching → Highly Rated → Trending Now → Recommended For You
+- Balance needed: recency bias (latest content) vs recommended-for-you (often older content)
+
+### Monitoring Plan
+
+- Monitor ML performance for 7-10 days at 50-50 split
+- D14/D21 retention rates converging between test and control
+- True personalisation success = positive impact on retention metric
 
 ---
 
 ## Next Steps
 
-1. **Wait for D14/D30 retention** — make-or-break metric for full rollout
-2. **Complete content tagging** — top 20% titles, scene-level
-3. **Build dedicated vibe tagging agent** — key differentiator
-4. **Integrate with Full Funnel Sprint** — M0 Watcher % + Dormants
-5. **Rearchitecture planning** — requires a release for deeper changes
+1. **Manasvi:** Get 80 uncertain titles out for manual verification
+2. **Vismit:** Review feed for any other issues, connect with team for personalisation + session-level cleanup
+3. **Monitor:** ML 50-50 split for 7-10 days
+4. **Monday (Mar 24):** AI-led model implementation begins
+5. **Content access:** Manasvi to ping Mahesh for subtitle/script access
 
 ---
 
-*Source: #homepage-personalisation (C0ABCG0RV1N) — full channel ingestion*
-*Generated: 2026-03-19 06:30 UTC*
+## Key Documents
+
+1. **[Personalisation Agent Plan v1.6](https://docs.google.com/document/d/1H3loh9vufGUqryZ-5rD2I4YLnj38_kU1pEgy0iXCmy8/edit)** — Architecture, 4 phases, now includes User Blueprint API + Vector DB specs
+   - Tab: [User level foundational work](https://docs.google.com/document/d/1H3loh9vufGUqryZ-5rD2I4YLnj38_kU1pEgy0iXCmy8/edit?tab=t.a3n1wnb3w9sw)
+   - Tab: [Content level foundational work](https://docs.google.com/document/d/1H3loh9vufGUqryZ-5rD2I4YLnj38_kU1pEgy0iXCmy8/edit?tab=t.mqvrsnp4fdoz)
+2. **[Limited HP MVP Doc](https://docs.google.com/document/d/1qpqPJZHTbDtKHlDIfiJXGdhQ91gy0LrVID2TRtmQHc8/edit)** — Original M0 Limited Homepage specification
+3. **[M0 MVP Dashboard 4822](https://stage.metabaseapp.com/dashboard/4822)** — 4-way split experiment tracking
+4. **[Gemini Notes — Mar 20 meeting](https://docs.google.com/document/d/1AaLsxVn0ueKyw0DfjOdY3yTF2aS5rtAlk8t5Rx5aiMg/edit)** — Latest call notes
+
+---
+
+*Source: #homepage-personalisation (C0ABCG0RV1N) + Gemini meeting notes (Mar 20)*
+*Updated: 2026-03-20 13:25 UTC*

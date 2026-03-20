@@ -77,7 +77,22 @@
 | D70 | Release rent + Google payments from ₹8.14cr backlog | Finance team (Saloni) | 2026-03-18 | #finance-department | Vinay approved direction. All other payments on hold. | 0 |
 | D71 | Fix Play Store rating automation (stuck on Mar 15) | Abhishek Saini | 2026-03-18 | #playstore-ratings | Nikhil delegated. | 0 |
 
-*Last updated: 2026-03-18 12:02 UTC (commitment tracker cron — Wednesday scan)*
+| D72 | Hiring approval — Senior Associate Post Production (₹50–75K/month, 1 headcount) | Shashank Vaishnav | 2026-03-20 | #hiring-approval | Sushant Kaushik's team. Zapier request. Pending approval. | 0 |
+| D73 | Vinay interview slots — provide daily slot to close open hiring | Vinay Singhal | 2026-03-20 | #team-hr | Nisha escalated — candidates dropping due to slow process. | 0 |
+| D74 | Kunal performance review | Nisha + HR | 2026-03-20 | #team-hr | Nisha: "pending from how long?" — overdue, escalated. ⚠️ | 0 |
+| D75 | Try Stitch + new AI tools shared by Vinay | Sushant Kaushik | 2026-03-20 | #ai-native-agentic-framework-content | Vinay shared X links at 16:54/17:47. Sushant committed to try today. | 0 |
+| D76 | Prioritise Sorcerer integration (Komal API available) | Ankit Saxena | 2026-03-20 | #team-hr | Nisha: "Lets prioritise this for next week." | 0 |
+| D77 | Fund shortfall direction — ₹7.88cr due Mar 27, ₹5.30cr shortfall | Vinay Singhal + Shashank | 2026-03-20 | #finance-department | Saloni flagged. No reply yet. ⚠️ Needs direction ASAP. | 0 |
+
+## Completed (Mar 20 scan)
+
+| # | What | Delegated To | Completed | Outcome |
+|---|------|-------------|-----------|---------|
+| D-C10 | Sarvam TTS credits top-up | Rohit Deshmukh | 2026-03-20 04:42 UTC | Komal flagged exhaustion, Rohit added 10k credits. ✅ |
+| D-C11 | openart.ai subscription approval | Shashank Vaishnav + Vinay Singhal | 2026-03-20 11:56 UTC | Kaustubh requested, Saloni confirmed both approved. ✅ |
+| D-C12 | Brand integration — WPP/Sagar (Mother Dairy/Perfetti, Rajasthan) | Saurabh Assija | 2026-03-20 08:20 UTC | Kunal passed lead. Saurabh: "Yes I connected with him. Will take forward." ✅ |
+
+*Last updated: 2026-03-20 12:14 UTC (commitment tracker cron — Friday scan)*
 
 | D26 | Chatbot data updates in standard format | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Nikhil requested | 3 |
 | D27 | Infrastructure upgrade activity (4 components) | Rohit Singh | 2026-03-04 | #team-devops | Self-announced plan (non-prod ✅, prod+DB pending) | 2 |

@@ -51,6 +51,7 @@
 - ✅ First trimester screenings
 - ✅ NT/NB Scan (Level 1) — Feb 17, 2026
 - ✅ **Tetanus Shot 1** — Feb 17, 2026 (done at doc consult)
+- ✅ **First iMumz Yoga Session** — Mar 19, 2026, 4 PM IST (45 mins!) 🧘‍♀️
 
 ### Upcoming
 

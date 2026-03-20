@@ -5,37 +5,37 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-19 00:00 UTC (automated cron)
+## Last Verified: 2026-03-20 00:00 UTC (automated cron)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files | 2026-03-19 |
-| 2 | Files | ✅ | write+read+delete /tmp/humt_cap_test.txt OK | 2026-03-19 |
-| 3 | Terminal | ✅ | exec tool — `date` returned Thu Mar 19 00:00:21 UTC 2026 | 2026-03-19 |
-| 4 | Web Search | ✅ | Brave API returned result for UTC time query | 2026-03-19 |
-| 5 | Gmail | ✅ | gog gmail search returned 3 messages incl. Google Cloud, Vinay Singhal, Josy Joseph | 2026-03-19 |
-| 6 | Calendar | ✅ | gog calendar events returned 5 events incl. M0 watcher, Dormants Watch, Reactivation | 2026-03-19 |
-| 7 | Cron/Reminders | ✅ | 20 jobs active — this job execution proves it works | 2026-03-19 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present | 2026-03-19 |
+| 1 | Memory | ✅ | Read/write workspace files + memory_search returned results (score 0.576) | 2026-03-20 |
+| 2 | Files | ✅ | workspace ls + capability-status.md read OK | 2026-03-20 |
+| 3 | Terminal | ✅ | exec tool — `date` returned Fri Mar 20 00:00:13 UTC 2026 | 2026-03-20 |
+| 4 | Web Search | ✅ | Brave API returned result for date query | 2026-03-20 |
+| 5 | Gmail | ✅ | gog gmail search returned 2 messages incl. Barrett Parkman, Vinay Singhal | 2026-03-20 |
+| 6 | Calendar | ✅ | gog calendar events returned 8 events incl. POD Execution Review, M0 watcher, Dormants Watch | 2026-03-20 |
+| 7 | Cron/Reminders | ✅ | 24 active jobs — this job execution proves it works | 2026-03-20 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present | 2026-03-20 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C**** → HTTP 200 on /v1/models | 2026-03-19 |
-| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed 200 | 2026-03-19 |
-| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — returned results (score 0.58, provider: openai) | 2026-03-19 |
-| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token) | 2026-03-19 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-19 |
+| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C**** present in skill config | 2026-03-20 |
+| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed present | 2026-03-20 |
+| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — returned results (score 0.576, provider: openai) | 2026-03-20 |
+| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token) | 2026-03-20 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-20 |
 
-## ⚠️ Cron Job Warnings (2026-03-19)
+## ⚠️ Cron Job Warnings (2026-03-20)
 
 | Job | Consecutive Errors | Last Error | Note |
 |-----|--------------------|------------|------|
-| `email:morning-triage` | 1 ⬆️ NEW | timeout (180s) | Full inbox scan + categorization timing out — scope too broad |
-| `slack:commitment-tracker` | 3 ⬆️ | Edit failed on delegations.md | File edit failing — likely concurrent write or format issue |
-| `persona:monthly-evolution-review` | 1 | message failed | Send script issue — monitor |
+| `slack:commitment-tracker` | 4 ⬆️ | timeout (300s) | Full scan + file edits timing out consistently — needs scope reduction |
+| `slack:evening-debrief` | 1 ⬆️ NEW | timeout (480s) | Full scan timing out — monitor; was resolved yesterday |
+| `persona:monthly-evolution-review` | 1 | message send failed | Send script issue — monitor |
 
 Previous warnings (resolved):
 - `slack:end-of-day-summary` — 0 errors ✅
-- `healthcheck:security-audit` — 0 errors ✅ (resolved from yesterday)
-- `slack:evening-debrief` — 0 errors ✅ (resolved from yesterday)
+- `healthcheck:security-audit` — 0 errors ✅
+- `email:morning-triage` — 0 errors ✅ (was 1, resolved)
 
 ## Critical Findings (2026-03-06)
 

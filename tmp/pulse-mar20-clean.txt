@@ -1,0 +1,62 @@
+WEEKLY PEOPLE PULSE
+Week of Mar 14-20, 2026 | Friday 11:00 AM IST
+
+-----------------------------------------
+
+NIKHIL NAIR — Outstanding
+- Activity: 10+ msgs (est. 40-50 total), 5+ channels, heavy thread activity
+- Channels: #ai-character-bots, #ai-at-stage, #user-activation, #full-funnel-solver, #cricket-saathi
+- Trend: UP vs last week
+- Notable: Running multiple AI bots in parallel (login VM fix, engagement analytics build). Spotted Tambola feedback traction and immediately called out the scale opportunity. Breadth + depth = best week in recent memory.
+
+PRANAY MERCHANT — High Initiative
+- Activity: 10 msgs, 4+ channels, heavy thread + async collab
+- Channels: #cricket-saathi, #mpdm-group, #leave-intimation
+- Trend: UP — above baseline
+- Notable: Cricket Saathi CLM — structured co-creation agenda, closed BD outreach loop, gracefully caught and corrected own error. WFH day (house emergency) but fully present digitally. Calm, methodical ownership.
+
+ASHISH PANDEY — Solid
+- Activity: 10 msgs, 4 channels, active thread replies
+- Channels: #tech-product-updates, #stage-ke-krantikaari, #full-funnel-solver, #stage-product-feedback
+- Trend: UP vs last week
+- Notable: Daily Tambola launch — coordinated channel rollout for org-wide feedback. Active bug triage (popup sequencing, back button patch). ClevertapX onboarding constraint flagged proactively. Engineering + product ownership in one person.
+
+SAMIR KUMAR — Low-moderate [WATCH]
+- Activity: 3 msgs, 2 channels
+- Trend: FLAT (2nd-3rd low-activity week, health-related pattern)
+- Notable: Back post-illness — "lets work on getting the UX better" shows re-engagement. Device triage in product-feedback. Trajectory improving but worth a check-in if pattern continues next week.
+
+RADHIKA VIJAY — High Initiative
+- Activity: 7 msgs, 4 channels, Figma deliverables
+- Channels: #growth-pod, #monetisation-core-devs, #stage-product-feedback, #leave-intimation
+- Trend: STABLE high
+- Notable: Delivered 3 intent paywall experiment flows (Watch Later / Trial Extension / Timer). Principled UX rationale when challenged by Nikhil on auto-CTA design. Late-night session led to delayed morning arrival.
+- Mild flag: Late nights pattern emerging — worth monitoring.
+
+NISHITA BANERJEE — Deep-work Mode
+- Activity: 2 msgs visible, 2 channels
+- Trend: DOWN vs baseline (was 5 last week)
+- Notable: Shared Ormax Micro Drama report (channel in research-updates). Published Agent 01: Ideology Analyst (59KB framework). Quality high, volume low — likely in focused research sprint. No silence concern.
+
+VISMIT BANSAL — Strong Rebound
+- Activity: 10 msgs, 4 channels, multiple solver threads
+- Channels: #watch-retention-solver, #homepage-personalisation, #full-funnel-solver, #retention
+- Trend: UP — strong recovery (was 2 msgs Mar 9-13)
+- Notable: Shipped dormant tracker to #watch-retention-solver. Urgent coordination on recommended-content user properties. 3 after-hours messages — most of any DR this week. High intensity.
+- Flag: 3 late pings — keep an eye on sustainable pace.
+
+NISHA ALI — Ops Machine
+- Activity: 10 msgs, 4 channels (team-hr dominant)
+- Trend: STABLE high (consistent 10+/wk)
+- Notable: Org structure (Mar 19) uploaded + sent to function heads for validation. Pushed back on Vinay's slow hiring cadence. Flagged Kunal pending review. Sorcerer API prioritised for next week. Multiple HR tracks, zero dropped balls.
+
+-----------------------------------------
+WEEK SUMMARY
+
+MVPs: Nikhil, Pranay, Ashish
+Rising: Vismit (strong rebound), Radhika (delivery under fatigue)
+Deep-work: Nishita (low volume, high quality)
+Watch: Samir (health pattern — 3rd low week), Radhika (late nights), Vismit (after-hours intensity)
+No silence flags — all 8 DRs active this week
+
+Next pulse: Fri Mar 27

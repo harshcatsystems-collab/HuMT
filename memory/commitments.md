@@ -1,6 +1,6 @@
 # Commitments & Follow-ups
 
-> Last updated: 2026-03-19 12:00 UTC (commitment tracker cron — Thursday scan)
+> Last updated: 2026-03-20 12:30 UTC (weekly commitment review cron)
 
 ---
 
@@ -56,16 +56,16 @@
 
 | Item | Who | Deadline | Channel | Notes |
 |------|-----|----------|---------|-------|
-| Release rent + Google payments (hold all other pending) | Vinay Singhal | Mar 18 (today) | #finance-department | Saloni flagged ₹8.14cr total pending. Vinay replied at 14:18: "Kal krenge isko solve.. you release rent.. and Google.. Hold everything else." Calendar booked for 15 min by Saloni. |
-| Fix Saathi media attachments (users' shared media not loading) | Rohit Deshmukh | Mar 18 (today) | #saathi-support | Abhishek Saini flagged at 03:12. Rohit: "would not be possible today would pick tmr" (said yesterday → due today). |
-| Add preprod secrets (Naman Rao DM) | Rohit Singh | ASAP | #team-devops | Naman Rao requested 11:17, confirmed "done?" at 11:54 — status unclear. |
-| Grant K9s + Jenkins/Nest/Stage backend access | Rohit Singh | ASAP | #team-devops | Sakshi Sharma requested at 05:28. No reply visible yet. |
-| Vaada on platter #1 position all markets till Friday | Promo/Content team | Mar 20 (Fri) | #content-notification | Priyanka Gupta delegated to Vipan Malawat. "Vaada ko in all markets till Friday." |
-| Post Vaada social promo today in all dialects | Social team (Priyanka Gupta) | Mar 18 (today) | #content-notification | Priyanka to social team: "Abhi aaj isko post kardo." |
-| Test WatchWithoutLogin for M0/dormant campaigns (then use) | Kawaljeet Kaur + Retention team | Mar 19 (tomorrow) | #retention | Vismit asked team to use for M0 + dormant uninstall users. Kawaljeet: "Sure, will test this once tomorrow and start using it post that." |
-| Fix Play Store automation (date stuck on Mar 15) | Abhishek Saini | ASAP | #playstore-ratings | Nikhil: "since last two days update has been of 15th March, please take a look at the automation logic." |
-| Test 4.66.3 build ASAP | Junaid Qureshi | ASAP | #tech-product-updates | Shubham: "can we do testing for the 4.66.3 build asap." Junaid: "Okay." |
-| Update collab.stage.in Claude version (or clarify deprecation) | Vinay Singhal / Rohit Deshmukh | — | #ai-at-stage | Nikhil flagged version mismatch error. Vinay: "It's mostly deprecated - do you need it for something specific?" Nikhil wants Claude Code VM. Vinay: "VM is a good idea btw" — no clear action owner yet. |
+| Release rent + Google payments (hold all other pending) | Vinay Singhal | Mar 18 (today) | #finance-department | ✅ Direction given. Saloni executing. |
+| Fix Saathi media attachments (users' shared media not loading) | Rohit Deshmukh | Mar 18 (today) | #saathi-support | ⚠️ No fix confirmation in logs. Rohit Deshmukh may have missed — verify. |
+| Add preprod secrets (Naman Rao DM) | Rohit Singh | ASAP | #team-devops | Status unclear. Rohit Singh OOO today. Check Mon. |
+| Grant K9s + Jenkins/Nest/Stage backend access | Rohit Singh | ASAP | #team-devops | No acknowledgment. Rohit Singh OOO today. Check Mon. |
+| Vaada on platter #1 position all markets till Friday | Promo/Content team | Mar 20 (today) | #content-notification | ⚠️ Deadline is TODAY. Verify status. |
+| Post Vaada social promo today in all dialects | Social team (Priyanka Gupta) | Mar 18 (done) | #content-notification | Directed Mar 18. Likely completed. |
+| Test WatchWithoutLogin for M0/dormant campaigns (then use) | Kawaljeet Kaur + Retention team | Mar 19 | #retention | Kawaljeet committed to test Mar 19. Status? |
+| Fix Play Store automation (date stuck on Mar 15) | Abhishek Saini | ASAP | #playstore-ratings | No update in logs. Still open. |
+| Test 4.66.3 build ASAP | Junaid Qureshi | ASAP | #tech-product-updates | No confirmation. Still open. |
+| Update collab.stage.in Claude version (or clarify deprecation) | Vinay Singhal / Rohit Deshmukh | — | #ai-at-stage | Vinay: "mostly deprecated." No clear action. Parked unless Nikhil escalates. |
 
 ## ✅ Completed — Mar 18, 2026 (From Scan)
 
@@ -73,6 +73,25 @@
 |------|-----------|---------|
 | Approve 3 payments (Pawan Impex ₹24.1L + Google ₹50L + Sudhansu ₹1.48L) | 2026-03-18 11:36 UTC | HuMT approved on HMT's behalf in #finance-department thread. |
 | Vinay payment direction (₹8.14cr backlog) | 2026-03-17 14:18 UTC | Vinay: Release rent + Google. Hold everything else. 15-min calendar booked by Saloni. |
+
+---
+
+## 🆕 New Commitments — Mar 20, 2026 (Last 24h Scan — 12:14 UTC)
+
+| Item | Who | Deadline | Channel | Notes |
+|------|-----|----------|---------|-------|
+| ⚠️ Fund shortfall alert — ₹7.88cr due Mar 27, only ₹2.58cr available (shortfall ₹5.30cr) | Vinay Singhal | Mar 27 (next Friday) | #finance-department | Saloni flagged at 11:48. Vinay + Shashank tagged. Needs direction on which payments to prioritise — no reply yet as of scan time. |
+| New brand integration request — Mother Dairy / Perfetti via WPP (Rajasthan) | Saurabh Assija | — | #brand_partnerships | Kunal passed lead. Saurabh: "Yes I connected with him. Will take forward." ✅ Acknowledged. |
+| Try new AI tooling (Stitch + other shared X links) | Sushant Kaushik | Today | #ai-native-agentic-framework-content | Vinay shared X links, Sushant: "We'll try it out today." |
+| Storyboard QC agent update | Kamal Singh Chauhan | Ongoing | #ai-native-agentic-framework-content | Shashank asked for update at 06:09. Kamal replied at 09:11 — implemented QC agent with auto face-replace for inconsistencies. ✅ Update received. |
+| Prioritise Sorcerer integration (Komal API available) | Ankit Saxena | Next week | #team-hr | Nisha: "Lets prioritise this for next week. I want to see this close." |
+| Kunal's performance review | HR / Nisha | Overdue | #team-hr | Nisha: "Kunal ka review is pending from how long?" — escalated. No owner confirmed. ⚠️ Overdue. |
+| Vinay interview slots — daily slot needed to close hiring | Vinay Singhal | ASAP | #team-hr | Nisha: "Unko bolo daily ka ek slot de." Candidates dropping due to slow process. Urgent. |
+| Hiring approval — Senior Associate Post Production (1 headcount, ₹50–75K/month) | Shashank Vaishnav (approver) | ASAP | #hiring-approval | Zapier request for Sushant Kaushik's team. Pending response. |
+| ⚠️ Sarvam TTS credits exhausted → RESOLVED | Rohit Deshmukh | — | #stage-saathi | Komal flagged at 17:44 (yesterday). Rohit: "Added 10k credits" at 04:42 today. ✅ Resolved. |
+| HR screening voice bot — monitor results | Komal Mathur / Ankit Saxena | Ongoing | #stage-saathi | Komal added new HR screening voice bot. Vinay: "Looking forward to hear the results." Standing monitor. |
+| openart.ai subscription approval | Shashank + Vinay | — | #credit_card_invoices | Kaustubh requested at 11:02. Saloni confirmed at 11:56: "Approved by Shashank and Vinay." ✅ Resolved. |
+| Data pipeline failures (MongoDB → ClickHouse) continuing | Data/Devops team | Ongoing | #data-alerts | 4 new failures in 24h scan window (plans/shows/episodes + userwatchhistories). Pattern persisting since Mar 14. No owner yet. |
 
 ---
 
@@ -103,18 +122,37 @@
 | Monthly Townhall — first instance | HR Team + Parveen | Last Thursday of each month (4–6 PM) | #all-things-people-and-culture | Parveen announced Harsh + Parveen decision. HR team already aligned. First townhall TBD (last Thu of March = Mar 26). |
 | Promo team format-POD restructure (Kunal leading, Ankit→Feature Films, etc.) | Parveen / Promo team | Immediate | #full-funnel-solver | Parveen announced format-based POD structure. Standing org change, not a one-off. |
 
-## ⚠️ Stale Watch (Delegation Tracker — Items >7 days with no update)
+## ⚠️ Stale / Overdue — Requires HMT Input
 
-These live in `delegations.md` but are flagged here for HMT awareness:
+Items older than 7 days with no resolution update:
 
-| # | Item | Owner | Days | Status |
-|---|------|-------|------|--------|
-| D5 | CLM setup for chatbot launch | Vismit Bansal | 21+ days | Still open in delegations.md — likely superseded or completed without log. **Verify or close.** |
-| D6 | Chatbot UAT video | Junaid Qureshi | 21+ days | Same — very old. Chatbot has since launched. **Likely stale — close?** |
-| D7 | 1D plan tracking sheet | Deepak Kumar Yadav / Hemabh | 20+ days | No update. **Close or verify?** |
-| D28 | PhonePe PDN all plan types | Yash Verma | 9 days | Was CRITICAL OVERDUE as of Mar 8. Status unknown. **Verify.** |
-| D29 | Randeep Hooda campaign shutdown | Parveen | 10 days | Was CRITICAL OVERDUE (₹20L/week burn). Has it been actioned? **Must verify.** |
+| # | Item | Owner | Age | Flag |
+|---|------|-------|-----|------|
+| D5 | CLM setup for chatbot launch | Vismit Bansal | 28+ days | Chatbot has since launched + new infra deployed Mar 13. This is almost certainly superseded. **Close?** |
+| D6 | Chatbot UAT video | Junaid Qureshi | 28+ days | Chatbot launched, went live, regression fixed. UAT video no longer relevant. **Close?** |
+| D7 | 1D plan tracking sheet | Deepak Kumar Yadav / Hemabh | 27+ days | No updates in 27 days. Full Funnel Sprint has own tracking now. **Close?** |
+| D28 | PhonePe PDN all plan types | Yash Verma | 16 days | Was CRITICAL OVERDUE as of Mar 8. No status update captured. **Verify or close.** |
+| D29 | Randeep Hooda campaign shutdown | Parveen | 17 days | Was CRITICAL OVERDUE (₹20L/week burn). 17 days — either shut down or still burning. **Must verify.** |
+| D61 | Chatbot weekly report (Aaliya) | Aaliya Mirza | 8 days | Was deferred to Monday. Chatbot infra released Mar 13. Should have been sent. **Verify.** |
+| D63 | Fix chatbot home regression | Rohit Deshmukh | 5 days | ✅ RESOLVED per Mar 18 log (Gopal confirmed "This is fixed"). **Mark completed.** |
+| D64 | Airbyte→ClickHouse pipeline failures | Data/Devops | 5 days | GCP alerts recovered Mar 16. But Mar 20 brief shows 8+ new failures (Rohit Singh OOO today). **Still open.** |
+| D65 | Add preprod secrets (Naman Rao) | Rohit Singh | 2 days | Status unconfirmed. Rohit Singh OOO today (sick). **Check status.** |
+| D66 | K9s + Jenkins access (Sakshi) | Rohit Singh | 2 days | No acknowledgment. Rohit Singh OOO today. **Check Monday.** |
+| D67 | Fix Saathi media attachments | Rohit Deshmukh | 2 days | Rohit deferred to Mar 18 — no confirmation in logs. **Verify.** |
+| D68 | Test 4.66.3 build | Junaid Qureshi | 2 days | Status unknown. Should be tested by now. **Verify.** |
 
 ---
 
-*Last updated: 2026-03-15 12:00 UTC (commitment tracker cron — Sunday scan)*
+## 🆕 New Commitments — Mar 20, 2026 (Weekly Review Addition)
+
+| Item | Who | Deadline | Notes |
+|------|-----|----------|-------|
+| Cricket Saathi Match 1 ready | Pranay Merchant | Mar 28 (IPL Match 1) | 8 parallel streams: Chat with characters, ESPNcricinfo API, UI refresh, Predictions, Notifications. 2 eng tracks + 2 cross-team briefs started today. |
+| Jit Banerjee meeting prep | HMT + Vinay | Mon Mar 23, 2–4 PM IST | Goodwater Capital. Confirmed in morning brief. |
+| Full Funnel Review 2 | All POD leads | Fri Mar 27 | Second sprint milestone review. This is the accountability checkpoint. |
+| Paternity leave check (Nisha) | Nisha + HMT | Mar 20 (today) | Calendar event added during Fatherhood OS build. |
+| "The Talk" — finances/roles/family | HMT + Divya | Mar 28 | Personal, on calendar. |
+
+---
+
+*Last updated: 2026-03-20 12:30 UTC (weekly commitment review cron)*

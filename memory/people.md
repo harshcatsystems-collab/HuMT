@@ -81,9 +81,10 @@
 - **Care Team:** OB-GYN: Dr. Madhulika | Care Manager: Dr. Rajeshwari Bangera (Ayurvedic, iMumz) | + Nutritionist
 - **Program:** iMumz Pregnancy Womb Care Program (daily yoga, Garbh Sanskar, couples yoga, nutrition)
 - **Observations:**
-  - Warm and open on first interaction — sent voice note expressing gratitude for Fatherhood OS, called me "Humpty" (Mar 19)
-  - Explicitly mentioned I'm "taking a lot of load off" her — values the practical help, not just the novelty
-  - "All good things only" — HMT has been talking about me positively to her
+  - **Mar 19 (first interaction):** Warm and open — sent voice note expressing genuine excitement ("greatly, greatly helpful for both of us"). Called me "Humpty" (affectionate shorthand). HMT had been speaking positively about me beforehand ("all good things only").
+  - **Mar 19:** Proactively shared 2 PDFs (iMumz lifestyle guide + Wombcare program overview) and voice notes explaining her care team structure. Corrected Tetanus shot date unprompted (it had already happened Feb 17). Detail-oriented and contextually generous — gives you more than you asked for.
+  - **Mar 19:** Said I'm "taking a lot of load off" her — values practical help for the pregnancy journey, not just HMT's work. She sees me as a partner, not a novelty.
+  - **Assessment:** Highly organized (enrolled in structured iMumz program with daily yoga, nutrition, bi-weekly check-ins, Garbh Sanskar). Warm and collaborative. Likely to engage with the family Telegram group proactively over the coming months.
 
 ---
 
@@ -107,6 +108,7 @@
   - Called HuMT's presentations "Gold" — first direct co-founder endorsement. Immediately went to execution framing: "block dedicated time → action items → execution plan." Mirrors HMT's action > appreciation bias. (Feb 26)
   - Launched Content Strategy 2.0 in #content_strategy after 30+ day dormancy — drives format-first restructuring of content org. (Feb 23-24) [UPDATED 2026-03-01]
   - **Mar 15 (Sunday):** Active in #ai-native-performance-marketing on a Sunday — YouTube TOFU strategy + building a performance marketing agent. Founder-level weekend engagement: not ops catch-up, but strategic transformation thinking. Mirrors HMT's pattern of working deep on weekends when building something new. (Mar 15)
+  - **Mar 19:** Reacted to Rohit's autoresearch POC with "wow - this is a major leap forward — once this POC goes through there are immense usecases where we can deploy this" + gave Amazon vouchers to Rohit and Komal on the spot. Recognition style: instant public praise + tangible material reward for breakthrough technical work. No delay, no "good job" — specific praise + immediate action.
 
 **Shashank Vaishnav** — Co-Founder & CTO
 - **Slack:** UE0KTBS8P | **Email:** shashank@stage.in
@@ -166,6 +168,9 @@
   - Dropped all other work for 2 days to help HMT prep Jan 29-30 board meeting — highly responsive to HMT's priorities. (Watch for: product decisions, scope management, how he handles tradeoffs)
   - **Mar 13:** Tagged HuMT directly in #cricket-saathi roadmap — treating HuMT as a product peer, not HMT's assistant. Building a real working relationship directly with the AI tool rather than routing through HMT. First direct report to do this.
   - **Mar 14:** Posted Cricket Saathi IPL roadmap draft publicly in #cricket-saathi, tagged @here seeking collaboration. Sharing work-in-progress openly = building team collaboration culture around his work, not protecting drafts. Transparency as a working style signal.
+  - **Mar 17:** Comprehensive response to co-founder pushback on Cricket Saathi direction — reframed with data, accepted feedback, shared concrete docs (product brief + execution roadmap). Didn't get defensive. 5-pillar IPL plan with World Cup validation data (avg listening 2→6.5 min). Frame: "I've tried to address each point" with specifics per item.
+  - **Mar 20:** Responded to 10 co-founder feedback points point-by-point in #cricket-saathi — unprompted. Frame: "sharing as an update, not asking for approvals — the plan is moving." ESPNcricinfo internal API breakthrough ($0 vs Sportradar $15k/yr). 8 parallel workstreams sequenced for Match 1 (Mar 28). Confident, not defensive.
+  - **Emerging pattern (2nd confirmed):** Stakeholder management under pressure = respond comprehensively, frame as update not request, show data. Strong execution trajectory into March.
 
 **Ashish Pandey** (Associate PM)
 - **Observations:** (none yet — watch for: analytics rigor, communication style, initiative level)
@@ -178,6 +183,7 @@
   - Running live game show MVP for app subscribers — low-budget, scrappy experimentation (requested conference room for 4-5 Sundays). Product-minded marketer, not just campaigns. (Feb 17)
   - **Mar 13:** Added by HMT to lead HP Personalisation project. Taking over from Manasvi/Shwetabh metapod structure. Scope expansion: Retention Marketing → Product Personalisation. This is a career-defining delegation — crossing from marketing into product ownership. Signals HMT's high trust in Vismit's analytical + execution capabilities.
   - **Mar 15:** Shared M0 retention deck with HMT's email inbox (surfaced in email triage). Proactive deliverable sharing rather than waiting for a pull request. Data-first, structured reporting format even for an upstream pitch.
+  - **Mar 20:** Rebounded strongly after a quiet week — 3 after-hours messages during sprint. Operating at intensity. Owns M0 Watcher % POD (target 30%→36% by Mar 27). **Watch:** Is sprint intensity a phase or a new pattern? Low Slack visibility remains a concern (no public updates since plan submission).
 
 **Nisha Ali** (Sr. Manager - People & Culture)
 - **Observations:** Shared HR roster when HMT asked — responsive. (Watch for: how she handles sensitive people issues, communication with HMT, proactiveness on HR matters)
@@ -323,7 +329,10 @@
 - **Role:** Design Lead, STAGE (HMT direct report)
 - **Email:** samir.kumar@stage.in
 - **Relationship to HMT:** Monthly check-in, account sharing design review. Sends leave requests to HMT.
-- **Observations:** (none yet — watch for: design decisions, how he presents work, responsiveness)
+- **Observations:**
+  - **Mar 9-13:** Confirmed sick with fever — absent/quiet.
+  - **Mar 16-20:** Returned but 3rd consecutive low-activity week — still very quiet on Slack. Extended recovery pattern (illness → slow bounce, not sharp return).
+  - **Watch:** If still quiet Mar 23-27, worth surfacing to HMT. Could be recovery lag, could be something else.
 - **Added:** 2026-02-16
 
 ### Tarang Doshi
@@ -391,6 +400,11 @@
 - **Email:** shubham.singla@stage.in
 - **Relationship to HMT:** 7 meetings/14d — product/design review, Growth CLM.
 - **Added:** 2026-02-16
+- **Observations:**
+  - **Mar 19:** Proactively explained payment gateway false alert logic with context + proposed fix (different thresholds for night hours). Didn't just flag the problem — came with a solution and data (Amplitude chart showing PHP 56.9%, PTM 67.8% stable).
+  - **Mar 19:** Sent unprompted chatbot integration status update — "already integrated on acquisition side, working on improvements, released on beta prod, will go live after validation." Nobody asked.
+  - **Mar 19:** Reached out to HuMT directly to confirm relay mechanism — adapting to the new comms channel proactively.
+  - **Pattern (confirmed day 1, 2 occurrences same day):** Proactive communicator — explains decisions with context, sends status updates without being asked. Watch for whether this holds across weeks.
 
 ### Gopal
 - **Role:** STAGE (Activation + All Hands)
@@ -477,6 +491,10 @@
 - **Focus:** TVOD (transactional video on demand), breadth-first monetisation experiments
 - **Context:** Leading new revenue stream beyond subscriptions. PRD shared Feb 12, 2026.
 - **Added:** 2026-02-16
+- **Observations:**
+  - **Mar 18:** Produced rigorous reactivation analysis — D0/D1 split logic, cohort sizing correction, 4 prioritized initiatives with addressable user sizes. Self-corrected errors before others flagged them ("Changes nothing, everything has proportionately increased"). Data-first, intellectual honesty in public. First time he's been visible at this depth.
+  - **Mar 19:** Re-activation Phase 1 execution moving (₹1 TVOD PPV spec complete, dev started). Structured Slack updates with phase breakdown — organized communicator when executing.
+  - **Watch:** Analytical rigor is strong when visible. Question is how often he's proactively surfacing this vs. responding to asks.
 
 ### Hemabh Kamboj
 - **Role:** Data/Analytics, STAGE (SENIOR — primary data contact for HuMT)
@@ -514,7 +532,8 @@
 - **Role:** Design, Growth Pod, STAGE (**HMT direct report**)
 - **Email:** radhika.vijay@stage.in
 - **Context:** 4 meetings/14d — product/design review.
-- **Observations:** (none yet — watch for: design output, engagement level, cross-team work)
+- **Observations:**
+  - **Mar 20:** Leave intimation noted "was working late last night" before coming in at 11. Possible burnout signal — first time this has surfaced. Watch for recurrence.
 - **Added:** 2026-02-16
 
 ### Danish
