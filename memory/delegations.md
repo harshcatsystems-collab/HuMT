@@ -50,7 +50,6 @@
 
 | D61 | Chatbot weekly report on Friday EOD | Aaliya Mirza | 2026-03-12 | #ai-character-bots | Self-commitment: "I will be sharing chatbot's next report on friday eod" — current scale/exposure down, performance slow due to architectural issues | 0 |
 | D62 | Compensation benchmarking for consumer insights role | HR Team | 2026-03-12 | #team-hr | Nisha: "Please do it today only" | 0 |
-| D63 | Fix chatbot home section — 2 funnel-breaking issues (FAB regression + home stories disappearing post v4.64.0) | Rohit Deshmukh (U013U47GNM6) / Rohit W (U039VC42JAF) | 2026-03-15 | #ai-character-bots | Aaliya @channel'd at 08:53 UTC — "need immediate fixes". Peak was Mar 7 (43K views, 5.3K chatters), now nearly unusable. Rohit confirmed funnel declining since Mar 9. | 0 |
 | D64 | Investigate + resolve Airbyte→ClickHouse pipeline failures (Failed to get table schema) | Data/Devops team | 2026-03-15 | #data-alerts | 20+ failures throughout Mar 14-15 across users/subscriptions/mandates/watch histories. No assigned owner yet — surfaced in morning brief. | 0 |
 
 ## Completed
@@ -82,7 +81,11 @@
 | D74 | Kunal performance review | Nisha + HR | 2026-03-20 | #team-hr | Nisha: "pending from how long?" — overdue, escalated. ⚠️ | 0 |
 | D75 | Try Stitch + new AI tools shared by Vinay | Sushant Kaushik | 2026-03-20 | #ai-native-agentic-framework-content | Vinay shared X links at 16:54/17:47. Sushant committed to try today. | 0 |
 | D76 | Prioritise Sorcerer integration (Komal API available) | Ankit Saxena | 2026-03-20 | #team-hr | Nisha: "Lets prioritise this for next week." | 0 |
-| D77 | Fund shortfall direction — ₹7.88cr due Mar 27, ₹5.30cr shortfall | Vinay Singhal + Shashank | 2026-03-20 | #finance-department | Saloni flagged. No reply yet. ⚠️ Needs direction ASAP. | 0 |
+| D77 | Fund shortfall direction — ₹7.88cr due Mar 27, ₹5.30cr shortfall | Vinay Singhal + Shashank | 2026-03-20 | #finance-department | Saloni flagged. No reply yet. ⚠️ Needs direction ASAP. | 1 |
+| D78 | Approve Google India ₹67L payment | HMT + HuMT | 2026-03-20 | #finance-department | Saloni tagged both. Urgent — no reply as of Mar 21 12:00 UTC. ⚠️ | 0 |
+| D79 | Saathi bot rule — consumer court emails must create mandatory ticket | Rohit Deshmukh | 2026-03-21 | #saathi-support | Abhishek Saini flagged 12:51 UTC. Compliance-sensitive. | 0 |
+| D80 | Saathi bot reply language — improve subscription expiry message UX | Rohit Deshmukh / Saathi team | 2026-03-21 | #saathi-support | Abhishek flagged 07:22 UTC — message too technical for regional users. | 0 |
+| D81 | 4.67.4 build QA sign-off | QA team (Mofidul's build train) | 2026-03-21 | #tech-product-updates | 12 replies engaged. Monitor for release clearance. | 0 |
 
 ## Completed (Mar 20 scan)
 

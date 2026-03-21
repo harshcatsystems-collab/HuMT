@@ -1,9 +1,9 @@
 {
-  "lastTriageUTC": "2026-03-20T03:00:00Z",
+  "lastTriageUTC": "2026-03-21T03:00:00Z",
   "urgent": 1,
-  "important": 3,
-  "fyi": 3,
-  "skip": 2,
+  "important": 4,
+  "fyi": 6,
+  "skip": 18,
   "responseDebt": 0,
-  "notes": "Jit Banerjee meeting confirmed Mon Mar 23 (2pm-4pm IST). Darshan x STAGE invite Tue Mar 24. Divya babymoon calendar Sat Mar 21. Barrett Parkman (Goodwater) newsletter — no action needed. No 3+ day old unreplied threads from key senders."
+  "notes": "11 mailer-daemon bounces (possible email delivery issue to watch). Anish Patel requesting access to HuMT's Ormax analysis doc (duplicate request). Jit Banerjee meeting confirmed Mon Mar 23. Divya babymoon planning confirmed Sat Mar 21 10am."
 }

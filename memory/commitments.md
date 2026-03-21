@@ -155,4 +155,24 @@ Items older than 7 days with no resolution update:
 
 ---
 
-*Last updated: 2026-03-20 12:30 UTC (weekly commitment review cron)*
+---
+
+## 🆕 New Commitments — Mar 21, 2026 (Last 24h Scan — 12:00 UTC)
+
+| Item | Who | Deadline | Channel | Notes |
+|------|-----|----------|---------|-------|
+| Approve Google India ₹67L payment | HMT + HuMT | ASAP | #finance-department | Saloni tagged both at 13:18 UTC Mar 20. Still pending — no reply in thread as of scan. ⚠️ Urgent. |
+| Saathi bot rule — consumer court emails → mandatory ticket creation | Rohit Deshmukh | ASAP | #saathi-support | Abhishek flagged at 12:51 UTC. Consumer court escalations must auto-ticket. 1 reply in thread (status unclear). |
+| Saathi bot reply language improvement (subscription expiry message) | Rohit Deshmukh / Saathi team | — | #saathi-support | Abhishek flagged at 07:22 UTC — current reply too technical/unfriendly for user base. |
+| 4.67.4 build QA — all mobile testers | QA team (subteam S06CC4EMSH2 + S0A3Q34NLF5) | ASAP | #tech-product-updates | Mofidul started build train at 12:21 UTC. 12 replies — QA team engaged. Monitor for go/no-go. |
+| Monitor autoresearch for live voice campaigns | Komal Mathur (HuMT to track) | Ongoing | #stage-saathi | Komal: "Autoresearch is active... Limited autonomy as of now, will monitor." Self-committed standing monitor. |
+
+## ⚠️ Continuing Issues — Mar 21, 2026
+
+| Issue | Status | Channel | Notes |
+|-------|--------|---------|-------|
+| MongoDB→ClickHouse pipeline failures (userwatchhistories + plans/shows/episodes) | 🔴 Ongoing (D64) | #data-alerts | 14 failures in 24h window. Two error types now: "Something went wrong within source connector" AND "Saved offset is not valid — reset needed." Second error type is new/escalating. No owner assigned. Weekend. |
+| Nest Backend High Error Rate | 🔴 Recurring | #backend-alerts | 20 alerts in 24h (13:05–17:13 UTC Mar 20 + 16:01 UTC). Datadog firing repeatedly. No human response captured. |
+| Akshay leave Mar 23–27 | 📋 FYI | #leave-intimation | Akshay OOO full week next week. Flagged to Nishita. HMT awareness item. |
+
+*Last updated: 2026-03-21 12:00 UTC (commitment tracker cron — Saturday scan)*

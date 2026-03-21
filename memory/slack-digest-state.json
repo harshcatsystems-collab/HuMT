@@ -1,11 +1,7 @@
 {
-  "morningBrief": "2026-03-20T03:48:35.700570+00:00",
-  "lastScan": "2026-03-18T13:03:55.210713Z",
-  "eveningDebrief": "2026-03-18T13:03:55.210567Z",
+  "morningBrief": "2026-03-21T03:47:25.912415Z",
+  "lastScan": "2026-03-21T13:07:01.221721Z",
+  "eveningDebrief": "2026-03-21T13:07:01.221754Z",
   "intensity": "light",
-  "processedMentions": [
-    "1773919121.747769",
-    "1773913912.903129",
-    "1773475291.101869"
-  ]
+  "processedMentions": []
 }

@@ -5,31 +5,31 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-20 00:00 UTC (automated cron)
+## Last Verified: 2026-03-21 00:00 UTC (automated cron)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files + memory_search returned results (score 0.576) | 2026-03-20 |
-| 2 | Files | ✅ | workspace ls + capability-status.md read OK | 2026-03-20 |
-| 3 | Terminal | ✅ | exec tool — `date` returned Fri Mar 20 00:00:13 UTC 2026 | 2026-03-20 |
-| 4 | Web Search | ✅ | Brave API returned result for date query | 2026-03-20 |
-| 5 | Gmail | ✅ | gog gmail search returned 2 messages incl. Barrett Parkman, Vinay Singhal | 2026-03-20 |
-| 6 | Calendar | ✅ | gog calendar events returned 8 events incl. POD Execution Review, M0 watcher, Dormants Watch | 2026-03-20 |
-| 7 | Cron/Reminders | ✅ | 24 active jobs — this job execution proves it works | 2026-03-20 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present | 2026-03-20 |
+| 1 | Memory | ✅ | Read/write workspace files + memory_search returned results (score 0.626) | 2026-03-21 |
+| 2 | Files | ✅ | workspace ls + capability-status.md read OK | 2026-03-21 |
+| 3 | Terminal | ✅ | exec tool — `date` returned Sat Mar 21 00:00:09 UTC 2026 | 2026-03-21 |
+| 4 | Web Search | ✅ | Brave API returned result for date query | 2026-03-21 |
+| 5 | Gmail | ✅ | gog gmail search returned 3 messages incl. Global Venture Index, Warp, Axis Direct | 2026-03-21 |
+| 6 | Calendar | ✅ | gog calendar events returned 3 events (Babymoon planning sessions, Mar 21) | 2026-03-21 |
+| 7 | Cron/Reminders | ✅ | 24 active jobs — this job execution proves it works | 2026-03-21 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present | 2026-03-21 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C**** present in skill config | 2026-03-20 |
-| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed present | 2026-03-20 |
-| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — returned results (score 0.576, provider: openai) | 2026-03-20 |
-| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token) | 2026-03-20 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-20 |
+| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C**** present in skill config | 2026-03-21 |
+| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed present | 2026-03-21 |
+| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — returned results (score 0.626, provider: openai/text-embedding-3-small) | 2026-03-21 |
+| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token) | 2026-03-21 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-21 |
 
-## ⚠️ Cron Job Warnings (2026-03-20)
+## ⚠️ Cron Job Warnings (2026-03-21)
 
 | Job | Consecutive Errors | Last Error | Note |
 |-----|--------------------|------------|------|
-| `slack:commitment-tracker` | 4 ⬆️ | timeout (300s) | Full scan + file edits timing out consistently — needs scope reduction |
-| `slack:evening-debrief` | 1 ⬆️ NEW | timeout (480s) | Full scan timing out — monitor; was resolved yesterday |
+| `slack:commitment-tracker` | 0 ✅ | — | Resolved — was timing out, now OK (0 errors today) |
+| `slack:evening-debrief` | 2 ⬆️ | timeout (480s) | Escalating — was 1 yesterday, now 2. Full scan timing out consistently. Needs scope reduction or timeout increase. |
 | `persona:monthly-evolution-review` | 1 | message send failed | Send script issue — monitor |
 
 Previous warnings (resolved):
