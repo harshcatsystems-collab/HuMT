@@ -394,6 +394,31 @@ If leaks found (exit code > 0):
 
 ---
 
+---
+
+## Motherhood/Fatherhood OS — Content Intake (ON NEW CONTENT)
+
+**Trigger:** When HMT shares pregnancy/parenting content (workshop recordings, PDFs, doctor advice, expert calls)
+
+**Protocol:** `memory/motherhood-os-intake.md`
+
+**Quick checklist:**
+1. Transcribe/process → Save to `data/`
+2. Add section to `memory/motherhood-os.md`
+3. Add phase-specific items to `memory/motherhood-checklist.md`
+4. Update relevant crons with trimester-aware logic:
+   - `divya-weekly-wellness` (Monday)
+   - `pregnancy-weekly-milestone` (Wednesday)
+   - `divya-symptom-checkin` (Thursday)
+   - `fatherhood-biweekly-checkin` (bi-weekly)
+5. Verify with grep + cron check
+
+**Trigger words:** "transcribe this", "structure this", "add to motherhood OS", "Divya should know", "for the pregnancy", "workshop recording", "doctor said"
+
+**Quality bar:** Content must surface automatically at the right week. No manual "go read this" required.
+
+---
+
 ## Rules
 - Late night (23:00-08:00 IST): Skip unless urgent (but ALWAYS do Slack alert scan)
 - Already checked <30 min ago: Skip email/calendar. STILL do Slack alert scan.

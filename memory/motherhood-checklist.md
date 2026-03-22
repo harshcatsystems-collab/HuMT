@@ -49,6 +49,9 @@ Your job: Take care of yourself. We'll help you remember the rest.
 | Watch recommended videos | Week 17-18 | ⏳ | Calendar event set (Mar 26) |
 | Learn Sheetali Pranayama | Week 17 | ⏳ | Cooling breath for anxiety |
 | Start Garbh Samvad practice | Week 18 | ⏳ | Talking to baby daily |
+| **Read Pelvic Floor Guide** | Week 17 | ⏳ | `data/pelvic-floor-guide.pdf` — understand the "hammock" |
+| Practice diaphragmatic breathing | Daily | ⏳ | Naturally trains pelvic floor |
+| Moderate Kegels | 2nd tri | ⏳ | Once daily, not aggressive |
 
 ### 🏥 Medical
 
@@ -189,6 +192,17 @@ Your job: Take care of yourself. We'll help you remember the rest.
 | Gentle movement only | Week 34+ | ⏳ | Walking, stretching |
 | Pamper before baby | Week 35 | ⏳ | Hair, nails, massage |
 
+### 🪷 Pelvic Floor — Labor Prep
+
+| Item | Target | Status | Notes |
+|------|--------|--------|-------|
+| **Reduce Kegels** | Week 35+ | ⏳ | You need loosening now, not tightening |
+| Start perineal massage | Week 34+ | ⏳ | Improves tissue flexibility |
+| Hip-opening exercises | Week 32+ | ⏳ | Malasana, side lunges, elevated lunges |
+| Practice horse breathing | Week 34+ | ⏳ | Loose jaw = loose pelvis |
+| Practice jaw relaxation | Week 35+ | ⏳ | Key for labor |
+| Re-read pelvic floor guide | Week 36 | ⏳ | Focus on labor prep section |
+
 ---
 
 ## Phase 4: Ready Mode (Week 37-40)
@@ -247,8 +261,21 @@ Your job: Take care of yourself. We'll help you remember the rest.
 |-------|-------|
 | Watch for warning signs | Fever, heavy bleeding, severe pain → call doctor |
 | Postpartum checkup | Usually 6 weeks post-delivery |
-| Pelvic floor | Kegels when cleared by doctor |
 | Give yourself grace | Your body did something incredible |
+
+### 🪷 Pelvic Floor Recovery (Postpartum)
+
+| Phase | What to Do |
+|-------|------------|
+| **Week 1-2** | ONLY gentle breathing. No exercise. Let body heal. |
+| **Week 2-6** | Continue gentle breathing. Very light movement if comfortable. |
+| **After 6 weeks** | Get doctor clearance, then gentle Kegels + postnatal yoga |
+| **Warning** | Don't rush core exercises — risk of diastasis recti ("mummy tummy") |
+
+**Signs of good recovery:** Gradually regaining bladder control, decreasing heaviness
+**Signs to seek help:** Persistent incontinence, pain during movement, feeling of "falling out"
+
+See `data/pelvic-floor-guide.pdf` → Part 7: Postpartum Recovery
 
 ### 🧠 Mental & Emotional Health — IMPORTANT
 
@@ -307,6 +334,7 @@ Your job: Take care of yourself. We'll help you remember the rest.
 | `hospital-bag.md` | What to pack (Mom + Baby) |
 | `nursery-checklist.md` | Room setup & essentials |
 | `divya-imumz-lifestyle-guide-mar19.pdf` | Original doctor's guide |
+| **`data/pelvic-floor-guide.pdf`** | **Pelvic floor care — anatomy, trimester guide, labor prep, postpartum** |
 
 ---
 

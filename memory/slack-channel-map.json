@@ -493,20 +493,725 @@
   "total_count": 117,
   "lastRefresh": "2026-03-12T03:50:00Z",
   "people_directory": {
-    "U07LFSB0PM5": {
-      "name": "vismit",
-      "real_name": "Vismit Bansal",
-      "email": "vismit@stage.in"
+    "USLACKBOT": {
+      "name": "slackbot",
+      "real_name": "Slackbot",
+      "email": ""
+    },
+    "UDYTZ0NBS": {
+      "name": "junaid",
+      "real_name": "Junaid Qureshi",
+      "email": "junaid@vatsana.com"
+    },
+    "UE0KTBS8P": {
+      "name": "shashank",
+      "real_name": "Shashank Vaishnav",
+      "email": "shashank@stage.in"
+    },
+    "UEHET2Q2G": {
+      "name": "vinay",
+      "real_name": "Vinay Singhal",
+      "email": "vinay@stage.in"
+    },
+    "UEJV57HQW": {
+      "name": "parveen",
+      "real_name": "Parveen Singhal",
+      "email": "parveen@stage.in"
+    },
+    "UEK09GX7G": {
+      "name": "kunal",
+      "real_name": "Kunal Kumrawat",
+      "email": "kunal@stage.in"
+    },
+    "U013U47GNM6": {
+      "name": "rohit.deshmukh",
+      "real_name": "Rohit Deshmukh",
+      "email": "rohit.deshmukh@stage.in"
+    },
+    "U02NX6HD7AS": {
+      "name": "neeraj",
+      "real_name": "Neeraj Kumar",
+      "email": "neeraj@stage.in"
+    },
+    "U02QS5RU0CE": {
+      "name": "stark",
+      "real_name": "Stark",
+      "email": "stark@stage.in"
+    },
+    "U030DT75RPB": {
+      "name": "sunil",
+      "real_name": "Sunil Mittal",
+      "email": "sunil@stage.in"
+    },
+    "U039SEJGKNZ": {
+      "name": "yash518",
+      "real_name": "Yash Verma",
+      "email": "yash@stage.in"
+    },
+    "U039VC42JAF": {
+      "name": "mofidul",
+      "real_name": "Mofidul Islam",
+      "email": "mofidul@stage.in"
+    },
+    "U03CN38BV7U": {
+      "name": "pravesh",
+      "real_name": "Pravesh Rajput",
+      "email": "pravesh@stage.in"
+    },
+    "U04643C2RK3": {
+      "name": "kishan",
+      "real_name": "Kishan Kumar",
+      "email": "kishan@stage.in"
+    },
+    "U047B3FRW0N": {
+      "name": "manish080",
+      "real_name": "Manish Joshi",
+      "email": "manish@stage.in"
+    },
+    "U04A980D1N3": {
+      "name": "ashishpandey",
+      "real_name": "Ashish Pandey",
+      "email": "ashishpandey@stage.in"
+    },
+    "U04B4KB3PNF": {
+      "name": "pavan",
+      "real_name": "Pavan Shukla",
+      "email": "pavan@stage.in"
+    },
+    "U04DAKA92BA": {
+      "name": "abhisheksaini",
+      "real_name": "Abhishek Saini",
+      "email": "abhisheksaini@stage.in"
+    },
+    "U04K05C125C": {
+      "name": "saurabhassija",
+      "real_name": "Saurabh Assija",
+      "email": "saurabhassija@stage.in"
+    },
+    "U04MD7BT04D": {
+      "name": "manpreet",
+      "real_name": "Manpreet Singh",
+      "email": "manpreet@stage.in"
+    },
+    "U04Q3HCSV4N": {
+      "name": "mahendrasaini",
+      "real_name": "MAHENDRA",
+      "email": "mahendra@stage.in"
+    },
+    "U05HAE85RL2": {
+      "name": "rahul.chauhan",
+      "real_name": "Rahul Chauhan",
+      "email": "rahul.chauhan@stage.in"
+    },
+    "U05MX9ALLVB": {
+      "name": "anushka",
+      "real_name": "Anushka Shrivastava",
+      "email": "anushka@stage.in"
+    },
+    "U05QMQHCVNY": {
+      "name": "harsh500",
+      "real_name": "Harsh Mani Tripathi",
+      "email": "harsh@stage.in"
+    },
+    "U05UY430AEQ": {
+      "name": "himanshi",
+      "real_name": "Himanshi Pruthi",
+      "email": "himanshi@stage.in"
+    },
+    "U0632CEKM0B": {
+      "name": "vipan",
+      "real_name": "Vipan Malawat",
+      "email": "vipan@stage.in"
+    },
+    "U068F2RS5PV": {
+      "name": "nisha",
+      "real_name": "Nisha",
+      "email": "nisha@stage.in"
+    },
+    "U06BGE5FME2": {
+      "name": "vaidik",
+      "real_name": "Vaidik Kapoor",
+      "email": "vaidik@stage.in"
+    },
+    "U06FGK8P2GZ": {
+      "name": "ankit.parashar",
+      "real_name": "Ankit Parashar",
+      "email": "ankit.parashar@stage.in"
+    },
+    "U06H0VARP97": {
+      "name": "renu",
+      "real_name": "Renu Rana",
+      "email": "renu@stage.in"
+    },
+    "U06K1FFPT71": {
+      "name": "manoj",
+      "real_name": "Manoj Mehra",
+      "email": "manoj@stage.in"
+    },
+    "U06LCQRJ35L": {
+      "name": "charu",
+      "real_name": "Charu Sharma",
+      "email": "charu@stage.in"
+    },
+    "U06M9123QJC": {
+      "name": "ajay935",
+      "real_name": "Ajay Sarewa",
+      "email": "ajay@stage.in"
+    },
+    "U0719V1GX3Q": {
+      "name": "pranay",
+      "real_name": "Pranay Merchant",
+      "email": "pranay@stage.in"
+    },
+    "U0779EHEUK1": {
+      "name": "anisha",
+      "real_name": "Anisha",
+      "email": "anisha@stage.in"
+    },
+    "U078AEUH7SR": {
+      "name": "jogender",
+      "real_name": "Jogender Singh",
+      "email": "jogender@stage.in"
+    },
+    "U078P1T1ULW": {
+      "name": "kushagra675",
+      "real_name": "Kushagra Gour",
+      "email": "Kushagra@stage.in"
+    },
+    "U07A91AB7GW": {
+      "name": "tarun",
+      "real_name": "Tarun Sahnan",
+      "email": "tarun@stage.in"
+    },
+    "U07BGHYQKE1": {
+      "name": "nikhil.soni",
+      "real_name": "Nikhil Soni",
+      "email": "nikhil.soni@stage.in"
+    },
+    "U07BHN4SDHV": {
+      "name": "shwetabh",
+      "real_name": "Shwetabh Gupta",
+      "email": "shwetabh@stage.in"
+    },
+    "U07CRBXGTEK": {
+      "name": "akshay.kumar",
+      "real_name": "Akshay",
+      "email": "akshay.kumar@stage.in"
+    },
+    "U07EJ9P4CTV": {
+      "name": "pragun",
+      "real_name": "Pragun Bhutani",
+      "email": "pragun@stage.in"
+    },
+    "U07EV6ZBPNE": {
+      "name": "sushant",
+      "real_name": "Sushant Kaushik",
+      "email": "sushant@stage.in"
     },
     "U07FXP4MKDY": {
       "name": "saloni.goyal",
       "real_name": "Saloni Goyal",
       "email": "saloni.goyal@stage.in"
     },
-    "U05HAE85RL2": {
-      "name": "rahul.chauhan",
-      "real_name": "Rahul Chauhan",
-      "email": "rahul.chauhan@stage.in"
+    "U07GDMPCU3X": {
+      "name": "cs",
+      "real_name": "Lalit Sangwan",
+      "email": "cs@stage.in"
+    },
+    "U07LFSB0PM5": {
+      "name": "vismit",
+      "real_name": "Vismit Bansal",
+      "email": "vismit@stage.in"
+    },
+    "U07PE084LNQ": {
+      "name": "jyoti",
+      "real_name": "Jyoti Jakhar",
+      "email": "jyoti@stage.in"
+    },
+    "U07Q1LJMR7B": {
+      "name": "yatika",
+      "real_name": "Yatika kashyap",
+      "email": "yatika@stage.in"
+    },
+    "U07R906K9K5": {
+      "name": "nishita",
+      "real_name": "Nishita",
+      "email": "nishita@stage.in"
+    },
+    "U07S9DUU43U": {
+      "name": "abhay.p",
+      "real_name": "Abhay Pratap Singh",
+      "email": "abhay.p@stage.in"
+    },
+    "U07TQ7P64SK": {
+      "name": "naman",
+      "real_name": "Naman Girdhaar",
+      "email": "naman@stage.in"
+    },
+    "U0800Q5T1A6": {
+      "name": "amar.dubey",
+      "real_name": "Amar Dubey",
+      "email": "amar.dubey@stage.in"
+    },
+    "U081VG95FE3": {
+      "name": "sushant.sharma",
+      "real_name": "Sushant Sharma",
+      "email": "sushant.sharma@stage.in"
+    },
+    "U0826M8J8EM": {
+      "name": "vinodkumar",
+      "real_name": "Vinod Kumar",
+      "email": "vinod@stage.in"
+    },
+    "U082Q7F56F8": {
+      "name": "priyanka",
+      "real_name": "Priyanka Gupta",
+      "email": "priyanka@stage.in"
+    },
+    "U082Q7JQ9AS": {
+      "name": "ankur",
+      "real_name": "Ankur Hooda",
+      "email": "ankur@stage.in"
+    },
+    "U083JL19UMD": {
+      "name": "akriti",
+      "real_name": "Akriti Kaushik",
+      "email": "akriti@stage.in"
+    },
+    "U083W1PQXKP": {
+      "name": "anish",
+      "real_name": "anish",
+      "email": "anish@stage.in"
+    },
+    "U086LB19E0P": {
+      "name": "vedant.w",
+      "real_name": "Vedant Wagh",
+      "email": "vedant.w@stage.in"
+    },
+    "U088MJL8D4Z": {
+      "name": "mayur130",
+      "real_name": "Mayur Manchundia",
+      "email": "mayur@stage.in"
+    },
+    "U089APN985P": {
+      "name": "hemabh",
+      "real_name": "Hemabh Kamboj",
+      "email": "hemabh@stage.in"
+    },
+    "U089FV02X4M": {
+      "name": "rajesh.k",
+      "real_name": "Rajesh",
+      "email": "rajesh.k@stage.in"
+    },
+    "U089MA16V1S": {
+      "name": "mohit.k",
+      "real_name": "Mohit Kumar",
+      "email": "mohit.k@stage.in"
+    },
+    "U089YDN9GQP": {
+      "name": "ritu",
+      "real_name": "Ritu Seshma",
+      "email": "ritu@stage.in"
+    },
+    "U08AEKHKV1R": {
+      "name": "dineshpradhan70",
+      "real_name": "Dinesh Pradhan",
+      "email": "dineshpradhan70@gmail.com"
+    },
+    "U08AH85CEFN": {
+      "name": "parth.lekhak",
+      "real_name": "Anurag",
+      "email": "parth.lekhak@gmail.com"
+    },
+    "U08B0GNMR39": {
+      "name": "namneesh",
+      "real_name": "Namneesh Sharma",
+      "email": "namneesh@stage.in"
+    },
+    "U08B8QWDWR5": {
+      "name": "harshit.singh",
+      "real_name": "Harshit Singh",
+      "email": "Harshit.Singh@stage.in"
+    },
+    "U08DLCSK7QS": {
+      "name": "kashish",
+      "real_name": "Kashish Thakur",
+      "email": "Kashish@stage.in"
+    },
+    "U08E8NSJY8P": {
+      "name": "dharmendra",
+      "real_name": "Dharmendra Singh",
+      "email": "Dharmendra@stage.in"
+    },
+    "U08EGARFW5C": {
+      "name": "sumit.dhankar",
+      "real_name": "Sumit Dhankher",
+      "email": "sumit.dhankar@stage.in"
+    },
+    "U08HF39U1GC": {
+      "name": "mayank683",
+      "real_name": "Mayank Keserwani",
+      "email": "Mayank@stage.in"
+    },
+    "U08HTBH8MFA": {
+      "name": "vipul",
+      "real_name": "Vipul Sharma",
+      "email": "vipul@stage.in"
+    },
+    "U08HU6RSC7P": {
+      "name": "bikram.singh",
+      "real_name": "Bikram Singh",
+      "email": "bikram.singh@stage.in"
+    },
+    "U08HXUP5U3D": {
+      "name": "ankit.saxena",
+      "real_name": "Ankit Saxena",
+      "email": "ankit.saxena@stage.in"
+    },
+    "U08K1CXSHTJ": {
+      "name": "amit.kumar",
+      "real_name": "Amit Kumar",
+      "email": "amit.kumar@stage.in"
+    },
+    "U08KBHHV9J4": {
+      "name": "radhika.vijay",
+      "real_name": "Radhika Vijay",
+      "email": "radhika.vijay@stage.in"
+    },
+    "U08L99D58PK": {
+      "name": "nikhil.nair",
+      "real_name": "Nikhil Nair",
+      "email": "nikhil.nair@stage.in"
+    },
+    "U08M3FB9EN5": {
+      "name": "siddhant.chettri",
+      "real_name": "siddhant",
+      "email": "siddhant.chettri@stage.in"
+    },
+    "U08M4LD47BR": {
+      "name": "prakash.kumar",
+      "real_name": "Prakash Kumar",
+      "email": "prakash.kumar@stage.in"
+    },
+    "U08MRHK61BK": {
+      "name": "manasvi.dobhal",
+      "real_name": "Manasvi Dobhal",
+      "email": "manasvi.dobhal@stage.in"
+    },
+    "U08P2NXR8G0": {
+      "name": "aditya.rao",
+      "real_name": "Aditya Rao",
+      "email": "aditya.rao@stage.in"
+    },
+    "U08Q3B6A770": {
+      "name": "siddhartha.mondal",
+      "real_name": "Siddhartha",
+      "email": "siddhartha.mondal@stage.in"
+    },
+    "U08QBSH99EK": {
+      "name": "suhani",
+      "real_name": "Suhani",
+      "email": "suhani@stage.in"
+    },
+    "U08QCRJM1PA": {
+      "name": "sakshi.sharma",
+      "real_name": "Sakshi Sharma",
+      "email": "sakshi.sharma@stage.in"
+    },
+    "U08TGV2B8TY": {
+      "name": "aadhya.palwa",
+      "real_name": "Aadhya Palwa",
+      "email": "aadhya.palwa@stage.in"
+    },
+    "U08UCNVRKR7": {
+      "name": "lukesh.kolhe",
+      "real_name": "Lukesh Kolhe",
+      "email": "lukesh.kolhe@stage.in"
+    },
+    "U08UL9EHKKP": {
+      "name": "samir.kumar",
+      "real_name": "Samir Kumar",
+      "email": "samir.kumar@stage.in"
+    },
+    "U0959DWCSR4": {
+      "name": "engineering",
+      "real_name": "TECH",
+      "email": "engineering@stage.in"
+    },
+    "U096E4RCGHF": {
+      "name": "sahil.sharma",
+      "real_name": "Sahil Sharma",
+      "email": "sahil.sharma@stage.in"
+    },
+    "U099E81PQ7J": {
+      "name": "deepak.prajapati",
+      "real_name": "Deepak Prajapati",
+      "email": "deepak.prajapati@stage.in"
+    },
+    "U09AK8X90Q0": {
+      "name": "shubham.singla",
+      "real_name": "Shubham Singla",
+      "email": "shubham.singla@stage.in"
+    },
+    "U09APNQ00LU": {
+      "name": "sneha.singh",
+      "real_name": "Sneha Singh",
+      "email": "sneha.singh@stage.in"
+    },
+    "U09AZ6SV9TL": {
+      "name": "rohit.singh",
+      "real_name": "Rohit Singh",
+      "email": "rohit.singh@stage.in"
+    },
+    "U09CCHFJH28": {
+      "name": "nidhi.mishra",
+      "real_name": "Nidhi Mishra",
+      "email": "Nidhi.Mishra@stage.in"
+    },
+    "U09CCLQ3P0U": {
+      "name": "aditya.swaroop",
+      "real_name": "Aditya Swaroop",
+      "email": "Aditya.Swaroop@stage.in"
+    },
+    "U09CFGN5TRU": {
+      "name": "akash.kumar",
+      "real_name": "Akash Kumar",
+      "email": "akash.Kumar@stage.in"
+    },
+    "U09CMRNBKQA": {
+      "name": "himanshu.vadhera",
+      "real_name": "Himanshu Vadhera",
+      "email": "himanshu.vadhera@stage.in"
+    },
+    "U09CTERRYGK": {
+      "name": "nikita",
+      "real_name": "Nikita",
+      "email": "nikita@stage.in"
+    },
+    "U09FGKVMS81": {
+      "name": "nikhil.gupta",
+      "real_name": "Nikhil Gupta",
+      "email": "nikhil.gupta@stage.in"
+    },
+    "U09G0SABZ4P": {
+      "name": "akhilesh",
+      "real_name": "Akhilesh kumar",
+      "email": "akhilesh@stage.in"
+    },
+    "U09HZD8085S": {
+      "name": "naman.rao",
+      "real_name": "Naman Rao",
+      "email": "Naman.rao@stage.in"
+    },
+    "U09JSL09GKF": {
+      "name": "saurav",
+      "real_name": "Saurav Dutta",
+      "email": "saurav@stage.in"
+    },
+    "U09LHTE4LDT": {
+      "name": "vaibhav.verma",
+      "real_name": "Vaibhav Verma",
+      "email": "vaibhav.verma@stage.in"
+    },
+    "U09LM6696F2": {
+      "name": "kamal.kumar",
+      "real_name": "Kamal Singh Chauhan",
+      "email": "kamal.kumar@stage.in"
+    },
+    "U09NCC9M3AT": {
+      "name": "rajiv",
+      "real_name": "Rajiv S",
+      "email": "rajiv@stage.in"
+    },
+    "U09QGG6HLG0": {
+      "name": "ts.vishnu",
+      "real_name": "Vishnu TS",
+      "email": "ts.vishnu@stage.in"
+    },
+    "U09RA7GRW1M": {
+      "name": "himanshu.g",
+      "real_name": "Himanshu Gupta",
+      "email": "himanshu.g@stage.in"
+    },
+    "U09S4HRMG7K": {
+      "name": "sunil.y",
+      "real_name": "Sunil Yadav",
+      "email": "sunil.y@stage.in"
+    },
+    "U09TYHJFQLB": {
+      "name": "piyush.prabhakar",
+      "real_name": "Piyush Prabhakar",
+      "email": "piyush.prabhakar@stage.in"
+    },
+    "U0A0GPCUZ6G": {
+      "name": "gauri",
+      "real_name": "Gauri Prajapat",
+      "email": "Gauri@stage.in"
+    },
+    "U0A0S22RN4Q": {
+      "name": "ashish.meena",
+      "real_name": "Ashish Meena",
+      "email": "Ashish.meena@stage.in"
+    },
+    "U0A20D0M7FD": {
+      "name": "shivani.sharma",
+      "real_name": "Shivani Sharma",
+      "email": "shivani.sharma@stage.in"
+    },
+    "U0A232U4Z70": {
+      "name": "shantanu.chatterjee",
+      "real_name": "Shantanu Chatterjee",
+      "email": "shantanu.chatterjee@stage.in"
+    },
+    "U0A2LUCQCE9": {
+      "name": "kaustubh",
+      "real_name": "Kaustubh",
+      "email": "kaustubh@stage.in"
+    },
+    "U0A3C27NJGN": {
+      "name": "hiren94setiya",
+      "real_name": "Hiren Setiya",
+      "email": "hiren94setiya@gmail.com"
+    },
+    "U0A3QQQ3J21": {
+      "name": "shivansh",
+      "real_name": "Shivansh Rastogi",
+      "email": "shivansh@stage.in"
+    },
+    "U0A4BA697BL": {
+      "name": "jagriti",
+      "real_name": "Jagriti Raman",
+      "email": "jagriti@stage.in"
+    },
+    "U0A4V6M3BT5": {
+      "name": "kawaljeet",
+      "real_name": "Kawaljeet Kaur",
+      "email": "kawaljeet@stage.in"
+    },
+    "U0A51N5SYRH": {
+      "name": "aaliya",
+      "real_name": "Aaliya Mirza",
+      "email": "aaliya@stage.in"
+    },
+    "U0A54GY20FQ": {
+      "name": "lalit",
+      "real_name": "Lalit Sangwan",
+      "email": "lalit@stage.in"
+    },
+    "U0A54LTEXQV": {
+      "name": "shivangi",
+      "real_name": "shivangi",
+      "email": "shivangi@stage.in"
+    },
+    "U0A5BMGA7UL": {
+      "name": "ankur.kanaujia",
+      "real_name": "Ankur Kanaujia",
+      "email": "ankur.Kanaujia@stage.in"
+    },
+    "U0A688ATJN6": {
+      "name": "cos",
+      "real_name": "cos",
+      "email": "cos@stage.in"
+    },
+    "U0A6KADGZLM": {
+      "name": "surbhi.aggarwal",
+      "real_name": "Surbhi Aggarwal",
+      "email": "surbhi.Aggarwal@stage.in"
+    },
+    "U0A6NA4PH1T": {
+      "name": "haider",
+      "real_name": "Haider Ali",
+      "email": "haider@stage.in"
+    },
+    "U0A7YN8LH0W": {
+      "name": "ankit.sharma",
+      "real_name": "Ankit Sharma",
+      "email": "ankit.sharma@stage.in"
+    },
+    "U0A92L5NM1V": {
+      "name": "rishit.gupta",
+      "real_name": "Rishit Gupta",
+      "email": "rishit.gupta@stage.in"
+    },
+    "U0A9AUKQ1B5": {
+      "name": "saurabh.s",
+      "real_name": "SAURABH SUMAN",
+      "email": "saurabh.s@stage.in"
+    },
+    "U0A9FJ8SR2R": {
+      "name": "deepak.kumar",
+      "real_name": "Deepak Kumar Yadav",
+      "email": "deepak.kumar@stage.in"
+    },
+    "U0AA5FTLL2H": {
+      "name": "vikram.singh",
+      "real_name": "Vikram Singh",
+      "email": "vikram.singh@stage.in"
+    },
+    "U0AAX8NCSDC": {
+      "name": "vishwendra",
+      "real_name": "Vishwendra",
+      "email": "Vishwendra@stage.in"
+    },
+    "U0ABUUWNY78": {
+      "name": "kabir.dahiya",
+      "real_name": "Kabir Dahiya",
+      "email": "kabir.dahiya@stage.in"
+    },
+    "U0ACE1BGWLT": {
+      "name": "junaid940",
+      "real_name": "Junaid Qureshi",
+      "email": "junaid@stage.in"
+    },
+    "U0AEKLKTM98": {
+      "name": "vishal.sharma",
+      "real_name": "Vishal Sharma",
+      "email": "vishal.sharma@stage.in"
+    },
+    "U0AEP8PTH4L": {
+      "name": "aayush.chauhan",
+      "real_name": "Aayush Chauhan",
+      "email": "aayush.chauhan@stage.in"
+    },
+    "U0AF4KAJHDL": {
+      "name": "yash.khare",
+      "real_name": "Yash Khare",
+      "email": "yash.khare@stage.in"
+    },
+    "U0AGH4X92UA": {
+      "name": "daksh.jigyasi",
+      "real_name": "Daksh Jigyasi",
+      "email": "daksh.jigyasi@stage.in"
+    },
+    "U0AGZE7FXJN": {
+      "name": "akshay.b",
+      "real_name": "Akshay Badhara",
+      "email": "akshay.b@stage.in"
+    },
+    "U0AH3NSHCBB": {
+      "name": "simran.pathak",
+      "real_name": "Simran Pathak",
+      "email": "simran.pathak@stage.in"
+    },
+    "U0AHB9L9J3S": {
+      "name": "komal.mathur",
+      "real_name": "Komal Mathur",
+      "email": "komal.mathur@stage.in"
+    },
+    "U0AMC8G3Q1H": {
+      "name": "rajesh.pathak",
+      "real_name": "Raajesh Pathak",
+      "email": "rajesh.pathak@stage.in"
+    },
+    "U0AN75C0GGZ": {
+      "name": "himanshu.singh",
+      "real_name": "Himanshu Singh",
+      "email": "himanshu.singh@stage.in"
+    },
+    "U0ANDL16NU8": {
+      "name": "support",
+      "real_name": "support",
+      "email": "support@stage.in"
     }
   }
 }

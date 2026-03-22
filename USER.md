@@ -1,7 +1,7 @@
 # USER.md — The Definitive HMT Document
 
 > **Harsh Mani Tripathi** — Co-Founder, STAGE OTT
-> *Last updated: 2026-03-10*
+> *Last updated: 2026-03-22*
 
 ---
 
@@ -160,6 +160,16 @@ These patterns are confirmed through direct observation across 50+ interactions.
 **Proud of what we built together** — "people across the organization are actually asking me on how can they do this for themselves." Values replication and org-wide capability building. (Confirmed: Mar 7)
 
 **Shares primary source as trust escalation** — Shared his Ashoka podcast (Grad2Guide) containing his journey, STAGE story, core beliefs. This is PRIMARY source material — deep trust signal. (Confirmed: Mar 7)
+
+### Thinking & Learning Patterns (Added Mar 22, 2026)
+
+**Systems thinker: wants repeatable MO, not one-off execution** — When I complete a task, he asks "would you now remember the MO on this?" He doesn't want the task done — he wants the *process* built so future-me follows it automatically. One-off execution < systematic capability. (Confirmed: Mar 19 Motherhood OS, Mar 21 skill framework, Mar 22 autoresearch)
+
+**Learning pattern: accumulate sources → request synthesis** — Shares multiple articles/links/screenshots rapidly without comment, then asks for integrated reflection. Doesn't want reactive takes on each piece — wants me to *accumulate* the full picture, then synthesize. "Properly consume and reflect on everything I have shared with you today." (Confirmed: Mar 22 autoresearch session)
+
+**Identity coherence: expand capabilities, don't fragment** — When building the @ba/@sa/@pm modes, rejected separate persona names (Maya/Arun/Priya) in favor of HuMT@ba syntax. Same identity, different lenses. "Expand, not fragment." This mirrors how he thinks about STAGE — regional identity as stable foundation, features as layers on top. (Confirmed: Mar 21)
+
+**Conversational > mechanical** — Prefers natural language interactions over command syntax. Chose "thanks @ba" as exit pattern because "feels more like me." UI/UX preference: human-feeling > efficient-feeling. (Confirmed: Mar 21)
 
 ---
 

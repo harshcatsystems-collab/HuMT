@@ -5,37 +5,38 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-21 00:00 UTC (automated cron)
+## Last Verified: 2026-03-22 00:00 UTC (automated cron)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files + memory_search returned results (score 0.626) | 2026-03-21 |
-| 2 | Files | ✅ | workspace ls + capability-status.md read OK | 2026-03-21 |
-| 3 | Terminal | ✅ | exec tool — `date` returned Sat Mar 21 00:00:09 UTC 2026 | 2026-03-21 |
-| 4 | Web Search | ✅ | Brave API returned result for date query | 2026-03-21 |
-| 5 | Gmail | ✅ | gog gmail search returned 3 messages incl. Global Venture Index, Warp, Axis Direct | 2026-03-21 |
-| 6 | Calendar | ✅ | gog calendar events returned 3 events (Babymoon planning sessions, Mar 21) | 2026-03-21 |
-| 7 | Cron/Reminders | ✅ | 24 active jobs — this job execution proves it works | 2026-03-21 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present | 2026-03-21 |
+| 1 | Memory | ✅ | Read/write workspace files + memory_search returned result (score 0.593, provider: openai/text-embedding-3-small) | 2026-03-22 |
+| 2 | Files | ✅ | workspace ls + capability-status.md read/write OK, 106 memory files present | 2026-03-22 |
+| 3 | Terminal | ✅ | exec tool — `date` returned Sun Mar 22 00:00:20 UTC 2026 | 2026-03-22 |
+| 4 | Web Search | ✅ | Brave API returned result for date query (calendar-365.com) | 2026-03-22 |
+| 5 | Gmail | ✅ | gog gmail search returned messages incl. Cyril AM/STAGE calendar invite from Varun Mehta | 2026-03-22 |
+| 6 | Calendar | ✅ | gog calendar events returned 9 events (All Hands, M0 watcher, Dormants, Jit S Banerjee/STAGE, Harsh X Nisha etc. for Mar 23) | 2026-03-22 |
+| 7 | Cron/Reminders | ✅ | 24 active jobs — this job execution proves it works | 2026-03-22 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present | 2026-03-22 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C**** present in skill config | 2026-03-21 |
-| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed present | 2026-03-21 |
-| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — returned results (score 0.626, provider: openai/text-embedding-3-small) | 2026-03-21 |
-| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token) | 2026-03-21 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-21 |
+| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C**** present in skill config | 2026-03-22 |
+| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed present | 2026-03-22 |
+| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — returned results (score 0.593, provider: openai/text-embedding-3-small) | 2026-03-22 |
+| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token) | 2026-03-22 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-22 |
 
-## ⚠️ Cron Job Warnings (2026-03-21)
+## ⚠️ Cron Job Warnings (2026-03-22)
 
 | Job | Consecutive Errors | Last Error | Note |
 |-----|--------------------|------------|------|
-| `slack:commitment-tracker` | 0 ✅ | — | Resolved — was timing out, now OK (0 errors today) |
-| `slack:evening-debrief` | 2 ⬆️ | timeout (480s) | Escalating — was 1 yesterday, now 2. Full scan timing out consistently. Needs scope reduction or timeout increase. |
+| `slack:commitment-tracker` | 1 ⬆️ | Edit failed on commitments.md (2059 chars) | File edit conflict — likely concurrent write during scan. Monitor. |
+| `metabase:daily-anomaly-check` | 1 ⬆️ | Edit failed on 2026-03-21.md (451 chars) | Concurrent write collision on daily log. Monitor. |
 | `persona:monthly-evolution-review` | 1 | message send failed | Send script issue — monitor |
+| `slack:evening-debrief` | 0 ✅ | — | Resolved from yesterday (was 2 consecutive errors) |
 
 Previous warnings (resolved):
 - `slack:end-of-day-summary` — 0 errors ✅
 - `healthcheck:security-audit` — 0 errors ✅
-- `email:morning-triage` — 0 errors ✅ (was 1, resolved)
+- `email:morning-triage` — 0 errors ✅
 
 ## Critical Findings (2026-03-06)
 

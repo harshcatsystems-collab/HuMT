@@ -101,6 +101,50 @@
 
 ---
 
+## 🪷 Pelvic Floor Care — The Foundation
+
+**NEW ADDITION (March 22, 2026):** Based on Sheetal Anand's expert workshop
+
+Your pelvic floor is the "hammock" supporting baby, bladder, and organs. Training it properly makes labor easier and recovery faster.
+
+### The Core Insight
+> Your pelvic floor isn't just about being "strong" — it needs to be **flexible, controlled, and dynamic**. What helps at Week 16 may hurt at Week 38.
+
+### Trimester-Specific Care
+
+| Trimester | Your Week | Goal | Do | Avoid |
+|-----------|-----------|------|----|----|
+| **1st** | 1-13 | Build support | Kegels ✅, breathing | — |
+| **2nd** | 14-27 | Maintain | Moderate Kegels, dynamic movement | Deep squat holds, over-loosening |
+| **3rd** | 28-40 (especially 35+) | Prepare to release | Hip openers, perineal massage, relaxation | Frequent Kegels (you need loosening!) |
+
+**You're at Week 16** → Moderate Kegels are good now. Continue breathing practice. Don't overdo hip openers yet.
+
+### The Kegels Myth ⚠️
+Most women do Kegels constantly until delivery. **This is a mistake.**
+- Overdoing Kegels near labor = tight pelvic floor = harder pushing, risk of tearing
+- After Week 35, REDUCE Kegels and focus on LOOSENING
+
+### The Breathing Connection
+Every deep breath trains your pelvic floor naturally:
+- **Inhale** → Pelvic floor stretches down (like someone lying in a hammock)
+- **Exhale** → Pelvic floor returns up
+
+Your daily diaphragmatic breathing is already doing the work!
+
+### Jaw-Pelvis Connection
+Relaxed jaw = relaxed pelvic floor. They're neurologically connected.
+- Keep jaw loose throughout the day
+- During labor, loose jaw helps baby descend
+- Practice "horse breathing" (floppy lips while exhaling) in 3rd trimester
+
+### Full Guide
+📄 **Complete 15-page PDF:** `data/pelvic-floor-guide.pdf`
+
+Covers: anatomy, trimester guide, exercises, warning signs, postpartum recovery, Q&A
+
+---
+
 ## What's Happening Right Now 🌱
 
 **Week 16:**

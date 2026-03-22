@@ -189,6 +189,30 @@ Apply the same observation muscle to key people:
 - Don't confuse facts with persona data — "FY25 = ₹143.4 Cr" is a fact; "corrects revenue figures in real-time from memory" is a persona observation
 - Don't skip micro-writes because you're busy — the busiest moments produce the richest observations
 
+## Motherhood/Fatherhood OS — Content Integration MO
+
+When HMT shares pregnancy/parenting content (workshop recordings, expert calls, doctor advice, PDFs):
+
+**Don't just process it — INTEGRATE it:**
+
+1. **Process:** Transcribe → Structure → Create PDF reference in `data/`
+2. **Static integration:** 
+   - Add summary section to `memory/motherhood-os.md`
+   - Add phase-specific items to `memory/motherhood-checklist.md` (Phases 1-5)
+3. **Active integration:**
+   - Update relevant crons with trimester-aware logic
+   - Wire symptoms to symptom check-in cron
+   - Add HMT reminders if dad-relevant
+4. **Verify:** Content surfaces automatically at the right week
+
+**The quality bar:** "If Divya reaches Week 35, will she automatically get this advice without anyone remembering?" YES or redo it.
+
+**Full protocol:** `memory/motherhood-os-intake.md`
+
+*Lesson learned: 2026-03-22 — Pelvic floor guide was processed and saved, but initially no cron updates. Gap identified: content existed but wasn't being surfaced. Fixed by updating 3 crons with trimester-aware logic.*
+
+---
+
 ## Principles → Operations Sync
 
 **Every behavioral rule that requires periodic action MUST have a corresponding HEARTBEAT.md entry.** A principle without a scan loop is just a wish.

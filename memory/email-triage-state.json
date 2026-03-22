@@ -1,9 +1,32 @@
 {
-  "lastTriageUTC": "2026-03-21T03:00:00Z",
+  "lastTriageUTC": "2026-03-22T03:00:00Z",
+  "totalUnread": 40,
+  "last24h": 4,
   "urgent": 1,
-  "important": 4,
-  "fyi": 6,
-  "skip": 18,
-  "responseDebt": 0,
-  "notes": "11 mailer-daemon bounces (possible email delivery issue to watch). Anish Patel requesting access to HuMT's Ormax analysis doc (duplicate request). Jit Banerjee meeting confirmed Mon Mar 23. Divya babymoon planning confirmed Sat Mar 21 10am."
+  "important": 5,
+  "fyi": 8,
+  "skip": 14,
+  "responseDebt": 1,
+  "debtItems": [
+    {
+      "sender": "Anish Patel (via Google Drive)",
+      "subject": "Share request for Ormax Micro Drama Analysis",
+      "date": "2026-03-20",
+      "daysOld": 2,
+      "note": "2 duplicate share requests, likely from team member needing access to HuMT document"
+    },
+    {
+      "sender": "Mail Delivery Subsystem",
+      "subject": "Delivery Status Notification (Failure)",
+      "date": "2026-03-20",
+      "daysOld": 2,
+      "count": 11,
+      "note": "11 bounce notifications from Mar 20 — may indicate email blast or outreach campaign with bad addresses"
+    }
+  ],
+  "upcomingFromEmail": [
+    "Mon Mar 23 2pm — Jit S Banerjee / STAGE (confirmed by Vinay)",
+    "Tue Mar 24 11:30am — Darshan x STAGE (Parveen invite)",
+    "Wed Mar 25 4:30pm — Cyril AM / STAGE (legal, confirmed by Varun Mehta)"
+  ]
 }
