@@ -3,7 +3,61 @@
 **Dad-to-be:** Harsh Mani Tripathi (HMT)
 **Partner:** Divya Mehrotra
 **Due Date:** September 4, 2026
-**Current Week:** 16 (as of March 19, 2026)
+**Current Week:** 16+3 (as of March 23, 2026) — **Month 5 just started**
+
+### ⚠️ PREGNANCY DATING — PERMANENT REFERENCE
+| Detail | Value |
+|--------|-------|
+| **LMP (actual)** | November 23, 2025 |
+| **EDD by LMP** | August 30, 2026 |
+| **EDD by USG (PRIMARY)** | September 4, 2026 |
+
+**For week calculation:** Use adjusted reference of **Nov 28, 2025** as Day 0 (aligns with USG EDD).
+**Formula:** `(Current Date - Nov 28, 2025) ÷ 7`
+**If confused:** Ask Divya. Never guess.
+
+---
+
+## 📊 Divya's Health Tracking
+
+*Your job: Know these numbers. They matter.*
+
+### Blood Pressure Log
+
+| Date | Time | BP | Pulse | Context |
+|------|------|-----|-------|---------|
+| Mar 22 | Afternoon | 128/84 | — | 30-45 min post-lunch |
+| Mar 23 | Morning | 120/81 | 111 | Fasting, ~45 min after waking |
+
+**What to watch for:**
+- Systolic consistently >130 → Flag
+- Diastolic consistently >90 → Flag
+- Headaches + elevated BP together → **Doctor immediately**
+
+*Baseline phase: Daily tracking until Mar 27, then reassess frequency*
+
+---
+
+### Weight Log
+
+| Date | Weight | Week | Notes |
+|------|--------|------|-------|
+| Dec 31, 2025 | 74.0 kg | 0 | Pregnancy confirmed |
+| ~Feb (end T1) | 73.0 kg | ~12 | Lost 1 kg (normal in T1) |
+| ~Mar 8-13 | 73.5 kg | ~23-24 | — |
+| Mar 23, 2026 | 74.8 kg | 16+3 (Month 5) | Current |
+
+**Total gain from pre-pregnancy:** +0.8 kg  
+**Weekly tracking** — no daily weighing (causes stress)
+
+---
+
+### Why This Matters for Dad
+
+1. **Know the numbers** — If something's off, you should notice too
+2. **Morning BP routine** — Gentle reminder if she forgets (baseline phase only)
+3. **No nagging about weight** — Track together, don't police
+4. **Headache + high BP = action** — This combo needs immediate attention
 
 ---
 
@@ -52,8 +106,8 @@ Your job: Show up. I'll tell you what needs attention.
 | Item | Target | Status | Notes |
 |------|--------|--------|-------|
 | Confirm hospital for delivery | Week 20 | ⏳ | Where in Noida? Pre-registration needed? |
-| Attend anomaly scan together | Week 18-20 (Apr 2-16) | ⏳ | Non-negotiable. Be there. |
-| Tetanus Shot 1 | Week 18 (Apr 2) | ⏳ | Calendar reminder set |
+| Attend anomaly scan together | Week 18-20 (Apr 3-17) | ⏳ | Non-negotiable. Be there. |
+| Tetanus Shot 1 | Week 18 (Apr 3) | ⏳ | Calendar reminder set |
 | Understand insurance coverage | Week 18 | ⏳ | Check GHI policy — delivery covered? Room category? |
 
 ### 💰 Financial
@@ -218,19 +272,19 @@ Your job: Show up. I'll tell you what needs attention.
 |------|------|-------|
 | Mar 21-22 | 16 | Plan babymoon 🏖️ |
 | Mar 28-29 | 17 | Have "The Talk" 💬 |
-| Apr 10 | 18 | Baby can hear you! Start talking 🗣️ |
-| Apr 10 | 18 | Tetanus Shot 1 💉 |
-| Apr 10-24 | 18-20 | Anomaly Scan window 🔬 |
-| Apr 24 | 20 | Halfway point! 🎉 |
-| May 22 | 24 | Viability milestone ⭐ |
-| May 22 | 24 | OGTT Glucose Test 🩸 |
-| May 22 | 24 | Tetanus Shot 2 💉 |
-| Jun 12 | 27 | Third Trimester begins 🎊 |
-| Jul 17 | 32 | Nursery should be ready 🏠 |
-| Jul 31 | 34 | Hospital bag packed 🧳 |
-| Aug 7 | 35 | Car seat installed 🚗 |
-| Aug 14 | 36 | Final prep complete ✅ |
-| Aug 21 | 37 | Full term — baby can come! 👶 |
+| Apr 3 | 18 | Baby can hear you! Start talking 🗣️ |
+| Apr 3 | 18 | Tetanus Shot 1 💉 |
+| Apr 3-17 | 18-20 | Anomaly Scan window 🔬 |
+| Apr 17 | 20 | Halfway point! 🎉 |
+| May 15 | 24 | Viability milestone ⭐ |
+| May 15 | 24 | OGTT Glucose Test 🩸 |
+| May 15 | 24 | Tetanus Shot 2 💉 |
+| Jun 5 | 27 | Third Trimester begins 🎊 |
+| Jul 10 | 32 | Nursery should be ready 🏠 |
+| Jul 24 | 34 | Hospital bag packed 🧳 |
+| Jul 31 | 35 | Car seat installed 🚗 |
+| Aug 7 | 36 | Final prep complete ✅ |
+| Aug 14 | 37 | Full term — baby can come! 👶 |
 | Sep 4 | 40 | Estimated due date 🎂 |
 
 ---

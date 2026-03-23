@@ -12,12 +12,18 @@
 | **Name** | Divya Mehrotra |
 | **Age** | 33 |
 | **Location** | Noida |
-| **Current Week** | 16 (as of Mar 19, 2026) |
+| **LMP (actual)** | November 23, 2025 |
+| **EDD by LMP** | August 30, 2026 |
+| **EDD by USG (PRIMARY)** | **September 4, 2026** |
 | **Trimester** | Second |
-| **Due Date** | **September 4, 2026** |
 | **OB-GYN** | **Dr. Madhulika** (primary gynecologist) |
 | **Care Manager** | Dr. Rajeshwari Bangera (Ayurvedic, iMumz) |
 | **Program** | iMumz Pregnancy Womb Care Program |
+
+### ⚠️ WEEK CALCULATION
+**Reference:** Nov 28, 2025 = Day 0 (aligns with USG EDD of Sep 4)
+**Formula:** `(Current Date - Nov 28, 2025) ÷ 7 = Weeks + Days`
+**If confused:** Ask Divya. Never guess.
 
 ---
 
@@ -25,22 +31,22 @@
 
 | Week | Date | Milestone |
 |------|------|-----------|
-| 16 | Mar 19 | Current - Baby's nervous system developing, can feel movements |
+| 16 | Mar 19 | Nervous system developing, can feel movements |
 | 17 | Mar 26 | Baby starts storing fat |
-| 18 | Apr 10 | **Baby can hear heartbeat & voice!** Fingerprints forming |
-| 19 | Apr 17 | Vernix (protective coating) forming |
-| 20 | Apr 24 | **Halfway point!** Anomaly scan window opens |
-| 21 | May 1 | Baby can swallow |
-| 22 | May 8 | Eyebrows & eyelids developed |
-| 23 | May 15 | Baby practices breathing movements |
-| 24 | May 22 | **Viability milestone** - OGTT window opens |
-| 25 | May 29 | Baby responds to sounds |
-| 26 | Jun 5 | Eyes begin to open |
-| 27 | Jun 12 | **Third trimester begins!** |
-| 32 | Jul 17 | Nursery should be ready |
-| 34 | Jul 31 | Hospital bag packed |
-| 36 | Aug 14 | Final prep check |
-| 37 | Aug 21 | **Full term - baby can come anytime!** |
+| 18 | Apr 3 | **Baby can hear heartbeat & voice!** Fingerprints forming |
+| 19 | Apr 10 | Vernix (protective coating) forming |
+| 20 | Apr 17 | **Halfway point!** Anomaly scan window opens |
+| 21 | Apr 24 | Baby can swallow |
+| 22 | May 1 | Eyebrows & eyelids developed |
+| 23 | May 8 | Baby practices breathing movements |
+| 24 | May 15 | **Viability milestone** - OGTT window opens |
+| 25 | May 22 | Baby responds to sounds |
+| 26 | May 29 | Eyes begin to open |
+| 27 | Jun 5 | **Third trimester begins!** |
+| 32 | Jul 10 | Nursery should be ready |
+| 34 | Jul 24 | Hospital bag packed |
+| 36 | Aug 7 | Final prep check |
+| 37 | Aug 14 | **Full term - baby can come anytime!** |
 | 40 | Sep 4 | **Estimated Due Date** 🎂 |
 
 ---
@@ -57,11 +63,11 @@
 
 | Test | Window | Recommended Date | Status |
 |------|--------|------------------|--------|
-| **Anomaly Scan** | Week 18-23 | Apr 10-May 15 | ⏳ Schedule |
+| **Anomaly Scan** | Week 18-23 | Apr 3-May 8 | ⏳ Schedule |
 | **Tetanus Shot 1** | Week 12 | Feb 17 | ✅ Done |
 | **Quadruple Marker** | Week 18-23 | If needed | Optional (35+ or high-risk) |
-| **Tetanus Shot 2** | Week 24 | May 22 | ⏳ Upcoming |
-| **OGTT (Glucose)** | Week 24-28 | May 22-Jun 19 | ⏳ Upcoming |
+| **Tetanus Shot 2** | Week 24 | May 15 | ⏳ Upcoming |
+| **OGTT (Glucose)** | Week 24-28 | May 15-Jun 12 | ⏳ Upcoming |
 | **COVID Booster** | 2nd/3rd trimester | Anytime | ⏳ Optional |
 
 ### Anomaly Scan - What They Check

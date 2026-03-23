@@ -3,7 +3,9 @@
 **For:** Divya Mehrotra  
 **Source:** Dr. Simran (Nutritionist, iMumz) — Voice Call Recordings  
 **Compiled:** March 20, 2026  
-**Status:** Awaiting PDF for final consolidation
+**Status:** ✅ CONSOLIDATED — See `memory/divya-diet-plan-master.md` for complete plan
+
+**PDF received:** March 23, 2026 — saved to `data/divya-diet-plan-drsimran-official.pdf`
 
 ---
 

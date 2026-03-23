@@ -3,8 +3,19 @@
 **Mom-to-be:** Divya Mehrotra
 **Partner:** Harsh Mani Tripathi (HMT)
 **Due Date:** September 4, 2026
-**Current Week:** 16 (as of March 19, 2026)
+**Current Week:** 16+3 (as of March 23, 2026) — **Month 5 just started**
 **Doctor:** Dr. Rajeshwari Bangera (iMumz)
+
+### ⚠️ PREGNANCY DATING — PERMANENT REFERENCE
+| Detail | Value |
+|--------|-------|
+| **LMP (actual)** | November 23, 2025 |
+| **EDD by LMP** | August 30, 2026 |
+| **EDD by USG (PRIMARY)** | September 4, 2026 |
+
+**For week calculation:** Use adjusted reference of **Nov 28, 2025** as Day 0 (aligns with USG EDD).
+**Formula:** `(Current Date - Nov 28, 2025) ÷ 7`
+**If confused:** Ask Divya. Never guess.
 
 ---
 
@@ -314,13 +325,13 @@ See `data/pelvic-floor-guide.pdf` → Part 7: Postpartum Recovery
 
 | Date | Week | Event |
 |------|------|-------|
-| Apr 10 | 18 | 🎧 Baby can hear you! + Tetanus 1 + Anomaly Scan |
-| Apr 24 | 20 | 🎉 Halfway point! |
-| May 22 | 24 | ⭐ Viability + OGTT + Tetanus 2 |
-| Jun 12 | 27 | 🎊 Third Trimester begins! |
-| Jul 17 | 32 | 🏠 Nursery ready |
-| Jul 31 | 34 | 🧳 Hospital bag packed |
-| Aug 21 | 37 | ⭐ Full term — baby can come! |
+| Apr 3 | 18 | 🎧 Baby can hear you! + Tetanus 1 + Anomaly Scan |
+| Apr 17 | 20 | 🎉 Halfway point! |
+| May 15 | 24 | ⭐ Viability + OGTT + Tetanus 2 |
+| Jun 5 | 27 | 🎊 Third Trimester begins! |
+| Jul 10 | 32 | 🏠 Nursery ready |
+| Jul 24 | 34 | 🧳 Hospital bag packed |
+| Aug 14 | 37 | ⭐ Full term — baby can come! |
 | Sep 4 | 40 | 🎂 Due date! |
 
 ---

@@ -10,10 +10,81 @@
 
 | Detail | Value |
 |--------|-------|
-| **Current Week** | 16 |
+| **LMP (actual)** | November 23, 2025 |
+| **EDD by LMP** | August 30, 2026 |
+| **EDD by USG (USE THIS)** | September 4, 2026 |
 | **Trimester** | Second (the golden one!) |
-| **Due Date** | **September 4, 2026** |
 | **Location** | Noida |
+
+### ⚠️ WEEK CALCULATION — ALWAYS USE USG-ADJUSTED DATING
+
+**The rule:** USG dating takes precedence over LMP because it reflects actual fetal development.
+
+**Adjusted reference point:** For calculation purposes, treat **November 28, 2025** as "Day 0" (this aligns LMP dating with the USG EDD of Sep 4).
+
+**Formula:** `(Current Date - Nov 28, 2025) ÷ 7 = Weeks + Days`
+
+| Date | Calculation | Week | Month |
+|------|-------------|------|-------|
+| Mar 23, 2026 | 115 days ÷ 7 | **16+3** | Starting Month 5 |
+| Apr 6, 2026 | 129 days ÷ 7 | 18+3 | Month 5 |
+| Sep 4, 2026 | 280 days ÷ 7 | 40+0 | EDD |
+
+**Current status (Mar 23, 2026):** 16 weeks complete, 3 days into Week 17 = **Just entered Month 5**
+
+**If ever confused:** ASK DIVYA. Don't guess.
+
+---
+
+## 📊 Health Tracking
+
+### Blood Pressure Log
+
+*Goal: Establish baseline over 3-4 days, then reassess frequency*
+
+| Date | Time | BP | Pulse | Context |
+|------|------|-----|-------|---------|
+| Mar 22 | Afternoon | 128/84 | — | 30-45 min post-lunch |
+| Mar 23 | Morning | 120/81 | 111 | Fasting, ~45 min after waking |
+
+**Normal ranges for pregnancy:**
+- Systolic: <130 mmHg ✅
+- Diastolic: <90 mmHg ✅
+- Pulse: 60-100 bpm (but +10-20 bpm is normal in pregnancy)
+
+**When to flag:**
+- Systolic consistently >130
+- Diastolic consistently >90
+- Headaches + elevated BP together
+
+---
+
+### Weight Log
+
+*Weekly tracking — no daily weighing!*
+
+| Date | Weight | Week | Notes |
+|------|--------|------|-------|
+| Dec 31, 2025 | 74.0 kg | 0 | Pregnancy confirmed |
+| ~Feb (end T1) | 73.0 kg | ~12 | Lost 1 kg (normal in T1) |
+| ~Mar 8-13 | 73.5 kg | ~23-24 | — |
+| Mar 23, 2026 | 74.8 kg | 16+3 (Month 5) | Current |
+
+**Total gain from pre-pregnancy:** +0.8 kg
+**Recommended gain (2nd trimester):** ~0.5 kg/week
+**Status:** Healthy — on the lower end, recent uptick is good ✅
+
+---
+
+### Headache Log
+
+*Tracking for pattern identification (started due to frequent headaches)*
+
+| Date | Time | Severity | BP at time | Possible triggers | Relief |
+|------|------|----------|------------|-------------------|--------|
+| (Add entries as they occur) |
+
+**Headache + Elevated BP = Always flag to doctor**
 
 ### Your Care Team
 
@@ -46,11 +117,22 @@
 
 | Feature | Details |
 |---------|---------|
-| **Personal Coach** | 1-on-1 video sessions with Nutrition Coach |
-| **Diet Plan** | Customized to your preferences |
-| **Bi-weekly Catchups** | Regular video check-ins |
-| **Pregnancy-specific** | Plans adjusted to your month + any complications |
-| **Quick Access** | WhatsApp chat with your Nutrition Coach |
+| **Personal Coach** | Dr. Simran (Nutritionist, iMumz) |
+| **Diet Plan** | Customized — see [Diet Module](motherhood-diet-module.md) |
+| **Check-ins** | Every 15 days via video call |
+| **Full Reference** | [Master Diet Plan](divya-diet-plan-master.md) |
+| **Quick Access** | WhatsApp chat with Dr. Simran |
+
+### 🔗 Diet Module (Pluggable)
+
+**→ [motherhood-diet-module.md](motherhood-diet-module.md)**
+
+Quick reference:
+- **4 Critical Rules:** Iron-calcium separation, non-veg timing, dinner target, tea rule
+- **7 Meals/Day:** On Rising → Breakfast → Mid-Morning → Lunch → Evening → Dinner → Bedtime
+- **Bedtime Sequence:** Iron → 10 min → Amla → 2 hrs → Turmeric milk
+
+For full meal options and shopping list, see the module.
 
 ---
 
@@ -412,9 +494,9 @@ Covers: anatomy, trimester guide, exercises, warning signs, postpartum recovery,
 |------|------|----------------|
 | **Routine Check** | Week 15 & 20 | Weight, BP, fundal height |
 | **Tetanus Shot 1** | ✅ **Done Feb 17** | At NT/NB scan consult |
-| **Anomaly Scan** | Week 18-23 (Apr 10-May 15) | Baby's organs, growth, placenta |
+| **Anomaly Scan** | Week 18-23 (Apr 3-May 8) | Baby's organs, growth, placenta |
 | **Tetanus Shot 2 / T-DAP** | Week 24 or 32 | Booster protection |
-| **OGTT (Glucose Test)** | Week 24-28 (May 22-Jun 19) | Gestational diabetes screening |
+| **OGTT (Glucose Test)** | Week 24-28 (May 15-Jun 12) | Gestational diabetes screening |
 | **Random Blood Sugar** | Week 28+ | Regular monitoring |
 | **COVID Booster** | 2nd/3rd trimester | Recommended |
 | **Flu Shot** | If advised | If susceptible to flu or in infection-prone area |
@@ -456,13 +538,13 @@ Since you're 33, it's NOT automatic. But discuss with Dr. Rajeshwari if you'd li
 
 | Week | Date | What's Happening |
 |------|------|------------------|
-| **18** | Apr 10 | Baby hears your heartbeat & voice! Anomaly scan window opens |
-| **20** | Apr 24 | **Halfway there!** 🎉 |
-| **24** | May 22 | **Viability milestone** — OGTT time |
-| **27** | Jun 12 | **Third trimester begins!** |
-| **32** | Jul 17 | Nursery should be ready |
-| **34** | Jul 31 | Hospital bag packed |
-| **37** | Aug 21 | **Full term** — baby can come anytime! |
+| **18** | Apr 3 | Baby hears your heartbeat & voice! Anomaly scan window opens |
+| **20** | Apr 17 | **Halfway there!** 🎉 |
+| **24** | May 15 | **Viability milestone** — OGTT time |
+| **27** | Jun 5 | **Third trimester begins!** |
+| **32** | Jul 10 | Nursery should be ready |
+| **34** | Jul 24 | Hospital bag packed |
+| **37** | Aug 14 | **Full term** — baby can come anytime! |
 | **40** | Sep 4 | **Due date!** 🎂 |
 
 ---
@@ -525,6 +607,7 @@ From Week 18, baby can hear you! **Garbh Samvad** is the practice of conscious c
 - [ ] Fresh air
 - [ ] Sunlight (10-15 min)
 - [ ] Breathing exercises
+- [ ] **Take BP** (baseline phase: daily until Mar 27)
 - [ ] Light breakfast
 - [ ] Calming music
 

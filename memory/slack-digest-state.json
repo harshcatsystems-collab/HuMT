@@ -1,7 +1,27 @@
 {
-  "morningBrief": "2026-03-22T03:47:00.023139Z",
+  "morningBrief": "2026-03-23T03:48:20.092641Z",
   "lastScan": "2026-03-22T13:00:00.000000Z",
   "eveningDebrief": "2026-03-22T13:01:00.000000Z",
   "intensity": "light",
-  "processedMentions": []
+  "processedMentions": [
+    "1774267053.991069",
+    "1774264711.261109"
+  ],
+  "lastEveningDebrief": {
+    "sentAt": "2026-03-23T13:07:38.588794Z",
+    "sentAtIST": "2026-03-23T18:30:00+05:30",
+    "messageId": 1004,
+    "topic": "daily_ops",
+    "scanHours": 12,
+    "channelsActive": 18,
+    "messagesAnalyzed": 82,
+    "keyItems": [
+      "Illness wave (10+ people)",
+      "GROK $1K approved by Vinay",
+      "Web UI overhaul shipped",
+      "SEO automation live",
+      "D64 Airbyte pipeline unresolved",
+      "Claude seats pending Shashank"
+    ]
+  }
 }
