@@ -1,61 +1,62 @@
 {
   "preppedToday": [
     {
-      "id": "7ijhbljetsd75f3sa5egfmmben_20260323T043000Z",
-      "summary": "All Hands Meeting | STAGE",
-      "start": "2026-03-23T10:00:00+05:30",
-      "preppedAt": "2026-03-23T04:00:00Z",
-      "topic": "daily_ops"
-    },
-    {
-      "id": "73rhfktpi5os655o54oocbaphs_20260323T060000Z",
-      "summary": "M0 watcher % - 2 Week Plan - discussion",
-      "start": "2026-03-23T11:30:00+05:30",
-      "preppedAt": "2026-03-23T05:00:00Z",
-      "topic": "retention"
-    },
-    {
-      "id": "3saeb94ahos7o3if0vre6re30v_20260323T063000Z",
-      "summary": "DORMANTS WATCH - Previously watched - 2 Week plan",
-      "start": "2026-03-23T12:00:00+05:30",
-      "preppedAt": "2026-03-23T06:00:00Z",
-      "topic": "retention"
-    },
-    {
-      "id": "0c7aahhdvv20srt8o3tfrsfd3n_20260323T070000Z",
-      "summary": "Reactivation daily catchup",
-      "start": "2026-03-23T12:30:00+05:30",
-      "preppedAt": "2026-03-23T06:00:00Z",
-      "topic": "retention"
-    },
-    {
-      "id": "62elh1hmvcnna83d7frv33pskv_20260323T073000Z",
-      "summary": "Activation daily catchup",
-      "start": "2026-03-23T13:00:00+05:30",
-      "preppedAt": "2026-03-23T07:00:00Z",
+      "id": "3f0cckdcqf5oo499a61ib2n229_20260324T042000Z",
+      "summary": "Tech - Product Standup (Growth POD)",
+      "start": "2026-03-24T09:50:00+05:30",
+      "preppedAt": "2026-03-24T03:30:00Z",
       "topic": "growth"
     },
     {
-      "id": "a3edo7fk4hacc6jairp4g9usfc",
-      "summary": "Jit S Banerjee/ STAGE",
-      "start": "2026-03-23T14:00:00+05:30",
-      "preppedAt": "2026-03-23T08:00:00Z",
-      "topic": "strategy"
+      "id": "73rhfktpi5os655o54oocbaphs_20260324T060000Z",
+      "summary": "M0 watcher % - 2 Week Plan - discussion",
+      "start": "2026-03-24T11:30:00+05:30",
+      "preppedAt": "2026-03-24T05:30:00Z",
+      "topic": "retention"
     },
     {
-      "id": "4d0b9rdq52s15o02vr1pubq505",
-      "summary": "Townhall Agenda",
-      "start": "2026-03-23T16:00:00+05:30",
-      "preppedAt": "2026-03-23T10:00:00Z",
+      "id": "3saeb94ahos7o3if0vre6re30v_20260324T063000Z",
+      "summary": "DORMANTS WATCH - Previously watched - 2 Week plan",
+      "start": "2026-03-24T12:00:00+05:30",
+      "preppedAt": "2026-03-24T06:00:00Z",
+      "topic": "retention"
+    },
+    {
+      "id": "5g1me5tdae94nb3q438bsprtvm",
+      "summary": "Darshan x STAGE",
+      "start": "2026-03-24T12:00:00+05:30",
+      "preppedAt": "2026-03-24T06:00:00Z",
       "topic": "daily_ops"
     },
     {
-      "id": "4c5ptjpp4anvg44igfnvmuje6s_20260323T103000Z",
-      "summary": "Harsh X Nisha",
-      "start": "2026-03-23T16:30:00+05:30",
-      "preppedAt": "2026-03-23T10:00:00Z",
-      "topic": "people_culture"
+      "id": "0c7aahhdvv20srt8o3tfrsfd3n_20260324T070000Z",
+      "summary": "Reactivation daily catchup",
+      "start": "2026-03-24T12:30:00+05:30",
+      "preppedAt": "2026-03-24T06:30:00Z",
+      "topic": "retention"
+    },
+    {
+      "id": "62elh1hmvcnna83d7frv33pskv_20260324T073000Z",
+      "summary": "Activation daily catchup",
+      "start": "2026-03-24T13:00:00+05:30",
+      "preppedAt": "2026-03-24T06:30:00Z",
+      "topic": "retention"
+    },
+    {
+      "id": "b87dfe2pmj15tgm26lh67m7o0m_20260324T083000Z",
+      "summary": "CAC & Deep Funnel Solver for Promo & Performance",
+      "start": "2026-03-24T14:00:00+05:30",
+      "preppedAt": "2026-03-24T08:01:00Z",
+      "topic": "growth"
+    },
+    {
+      "id": "0prghe1ksdsl88osukv957rfv1_20260324T110000Z",
+      "summary": "Fortnightly catchup w Nikhil",
+      "start": "2026-03-24T16:30:00+05:30",
+      "preppedAt": "2026-03-24T10:30:00Z",
+      "topic": "growth"
     }
   ],
-  "date": "2026-03-23"
+  "date": "2026-03-24",
+  "_lastUpdated": "2026-03-24T10:30:00Z"
 }

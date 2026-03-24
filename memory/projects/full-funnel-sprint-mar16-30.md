@@ -4,7 +4,7 @@
 > **Deadline:** March 28, 2026
 > **Review 1:** ✅ March 20, 2026 (COMPLETED)
 > **Review 2:** March 27, 2026
-> **Last Updated:** March 20, 2026
+> **Last Updated:** March 24, 2026
 
 ---
 
@@ -12,11 +12,14 @@
 
 The Full Funnel Sprint is a **15-day intensive** (Mar 16-30) led by Parveen to solve STAGE's LTV optimization across the entire funnel. **8 PODs** are executing in parallel with daily syncs.
 
-**Progress Status (Day 5 of 15):** 🟢 **Review 1 Complete — Strong Early Results**
+**Progress Status (Day 9 of 15):** 🟢 **Week 2 Execution Phase**
 - Review 1 MoM: [Full doc](https://docs.google.com/document/d/1G8cWdPprGNSUJpFAWAPJnRr2JV5b5bY2wAfG2omP3nk/edit)
+- Review 1 Gemini Notes: [Detailed transcript](https://docs.google.com/document/d/1CNbWkcOG3n1Rc4wuRGQDdLm3DMJ-Z0xI4qYlVOTThvE/edit)
 - All PODs presented progress
 - Multiple initiatives showing 2-7x improvements
 - 7 strategic decisions locked
+- **Perf Agent Wave 1 complete:** +87 subs/day
+- **T+36h assessment:** Tomorrow (Mar 25)
 
 ---
 
@@ -311,5 +314,400 @@ Full MoM: [Google Doc](https://docs.google.com/document/d/1G8cWdPprGNSUJpFAWAPJn
 
 ---
 
-*Report updated: March 20, 2026*
-*Next review: March 27, 2026 (Review 2 — Outcomes)*
+## 9. Review 1 Detailed Notes (Gemini Transcript — March 20, 2026)
+
+Source: [Full Gemini Notes](https://docs.google.com/document/d/1CNbWkcOG3n1Rc4wuRGQDdLm3DMJ-Z0xI4qYlVOTThvE/edit)
+
+### Core Strategic Framework
+
+**LTV is the Core Game**
+- All solutions must connect to content and fundamental transformation
+- Key metrics: Frequency (monthly user frequency) and DCR (Depth Completion Rate)
+- Content engagement and re-engagement understanding drives everything
+
+**Format-Wise Thesis**
+- Each content format is a DIFFERENT PRODUCT:
+  - Micro-dramas
+  - Long series
+  - Binge series
+  - Feature films
+- Approach must be format-specific, not generic
+- Standardization needed on how each format is approached
+
+### Performance Marketing Shifts
+
+**Budget Reallocation:**
+- Shifted budgets FROM other markets TO Gujarati market (observed success)
+- Reallocated FROM feature films TO long series and binge series
+
+**Promo Strategy Evolution:**
+- Previously: Heavy reliance on individual titles
+- Now: Selling "platform value" and "book value"
+- Long-form promos = new norm; short-form = exception
+- Micro-dramas under scrutiny — LTV not justifying scale
+
+**Campaign Optimization:**
+- Limit budget increases to 20%/day (19.9%)
+- Optimize for best-performing markets from LTV perspective
+- TCR optimization = efficiency optimization, NOT budget optimization
+
+**CSL (Content Success Leads) Performance:**
+- Initial figures: 6.4 → 4 → 10.3 after CSL adjustments
+- Room for optimization without extra effort
+- Deploy CSL across all markets immediately (Haryanvi showed 69% IR improvement)
+
+### Activation Deep Dive
+
+**D3 Retention = Primary Metric**
+- NOT D1 retention
+- Goal: Get as many users to D3 as possible
+- D3-D7 journey: Drive users to "aha moments"
+
+**Coin & Leaderboard Architecture:**
+- Consumption-based reinforcement
+- Achievable goals (e.g., discounts) to motivate users
+- Wallet usage data expected by Friday
+- Leaderboard Phase 1: Released for 50% trial active users (Mar 23)
+
+**Character Bot Performance:**
+- Scaled from 10% → 41% of users
+- ~30% higher retention vs control group
+- PRIMARY metric: Driving content consumption (not just chat engagement)
+- Quality of chat-engaging users still under investigation
+
+**Content Consumption Initiatives:**
+- Auto-resume on return (high focus)
+- Payment success screen context setting (delay pause/revoke decision)
+- Reactivation for sign-ups who left without trial
+
+### Special Access Initiative
+
+**Concept:**
+- Free content exposure to users who exit on trial paywall
+- 99% of non-converters lack trailer/content exposure
+- Higher conversion when users get special access WITHOUT needing to watch prior content
+
+**Status:**
+- Live across 40+ titles
+- Consistent conversion lift observed
+- Being integrated across all content types
+
+### Dormants / M1+ Resurrection (PunarJanam)
+
+**Performance Data:**
+- Tier 1 cohort conversion: 3.15% (vs 0.44% baseline = **7x improvement**)
+- Previously watched users: 0.34% conversion (target: 1%)
+- 33.3% upward trend goal
+
+**Strategy:**
+- High-level content targeting for tier 1 cohorts
+- Four distinct strategies including content-based
+- ~₹35K spent on targeted campaigns
+
+**Initiatives:**
+- Product: Optimized flows for subscription users
+- CRM: Push notifications
+- Experiments: Temporary paywall (₹99/₹51), micro-access for 15 episodes
+
+### Re-acquisition
+
+**Early Results:**
+- ₹35K spend → 69 subscriptions
+- **30% SR** vs 15% baseline (2x conversion)
+- Targeting binge-watchers specifically
+
+**Strategy:**
+- Movie-wise subscriptions planned
+- Free content for non-₹100 payers
+- Building tiered pricing ladder
+
+### Content Strategy
+
+**New Formats in Development:**
+- Daily shows
+- Weekly shows
+- Multiple alternate series concept
+
+**Promo Creation Tools:**
+- Third-party tools: Go live this week
+- In-house AI tool: Complete by Monday, deploy Tuesday
+- AI voice calls and WhatsApp for subscriber communication
+
+### M0 Watcher % Improvement
+
+**Current State:**
+- M0 watcher: 40-42%
+- First-week organic watching: 36%
+- First-day conversion spike correlates with direct M0 subscriptions
+
+**Initiatives:**
+- Improved acquisition strategies → better user quality
+- Tambola (live game) promoted to M0 users
+- Tambola = Content (behavioral model integration)
+
+### Blockers & Risks
+
+| Blocker | Impact | Resolution |
+|---------|--------|------------|
+| One-time non-recurring payment structure | Full deployment pushed to Tuesday | System fix needed |
+| Strategy + Promo execution disjointed | Inefficiency | Dedicated strategy session needed |
+| Correlation vs causation in engagement metrics | False conclusions | Monitor consumption dilution |
+
+### Key Quotes from Meeting
+
+> "The core game is to solve for LTV."
+
+> "Each format is a different product."
+
+> "Promo strategy is shifting to selling platform value and book value."
+
+> "D3 retention is the main metric we are chasing."
+
+> "This is efficiency optimization, not budget optimization."
+
+### Next Steps (from Gemini)
+
+1. **Pravesh** — Share aligned content document
+2. **All** — Close content strategy by end of March
+3. **All** — Sit down and decide content strategy after synopses/story pitches
+4. **Nikhil** — Third-party promos live this week; UC tool by Monday, deploy Tuesday
+
+---
+
+## 10. Week 2 Progress (Mar 23-24)
+
+### Perf Agent Wave 1 (Nikhil — Mar 23)
+
+**Status:** ✅ COMPLETE
+
+**Actions Taken:**
+- 5 campaigns scaled (+19% each): S1-S4, S7
+- 2 campaigns cut: C1 (-50%), C2 (-40%)
+- Gujarat priority honored
+
+**Impact:** **+87 subs/day**
+
+**Next:** T+36h assessment Mar 25 before Wave 2
+
+### Activation Updates (Aaliya — Mar 23)
+
+| Initiative | Status |
+|------------|--------|
+| Leaderboard experiment | ✅ Live (50% trial users) |
+| Chatbot navbar | ✅ Dev done, release tomorrow |
+| Loss aversion trigger training | ✅ Done |
+| Suggest & Auto Resume | ✅ Dev done |
+| Messenger-style chatbot | 🔴 BLOCKER: Backend dev needed |
+
+**Post-HMT meeting direction:** Focus chatbot on content suggestions & watch retention
+
+### Dormants Watch Meeting (Mar 23 — Pravesh, Vismit, Harshit, Priyanka, Rajesh, Sneha)
+
+**Source:** [Meeting Notes + Transcript](https://docs.google.com/document/d/1djL46nyZl4hDNvWw4yTqaYDRL0be8BP8zM2gYBt2qGQ/edit)
+**Duration:** ~11 minutes
+**Transcript Quality:** Partial (Gemini auto-transcription choppy)
+
+**Key Decisions:**
+
+1. **Content Customization Priority**
+   - Focus work strictly on specific titles only
+   - Manual filtering confirmed as simple for team
+   - Customization important for "government users" (dormants with prior consumption)
+   - Not just from ads channel — also RCS and WhatsApp
+
+2. **Consumption Definition Clarified**
+   - NOT just app open
+   - Defined as: User returning AND engaging with something
+   - Character bot engagement counts ✅
+   - Tambola engagement counts ✅
+   - "Y selection define resection as user coming back and doing engaging with something"
+
+3. **New Tracking Requirements (Immediate)**
+   | Metric | Channel | Priority |
+   |--------|---------|----------|
+   | App opens | All | Start immediately |
+   | Cancellations | All | Very important |
+   | Engagement | Ads, RCS, WhatsApp | Comprehensive |
+
+4. **Performance Concern Flagged — ALARMING**
+   - App opens dropped: **5,300 → 3,100** (17th Sunday baseline)
+   - One metric at **158** — described as "alarming"
+   - "50% problem" mentioned
+   - Team response: "They're like driving" (unclear from transcript)
+   - Task: Analyze, synthesize, post latest performance data
+
+5. **Tambola Integration**
+   - Tambola game engagement counts as valid consumption
+   - "Game started. They started. Repeat all."
+   - Planning daily Tambola for dormant re-engagement
+
+**Transcript Excerpts:**
+> "Let's only work on those titles. So actually it manually filter most second cont. How many will not be a difficult thing?"
+
+> "Customization is important because consumption started is content."
+
+> "Start we should start tracking app opens also in case also track cancellations. Yes. Oh that's very important."
+
+> "Alarming type Robert was saying 158."
+
+**Daily Updates:**
+- Daily PunarJanam reports continuing
+- M1+ Dormant User Resurrection tracking live
+
+### Dormants Watch Meeting (Mar 24 — Pravesh, Vismit, Harshit, Rajesh, Priyanka, Sneha)
+
+**Source:** [Meeting Notes + Transcript](https://docs.google.com/document/d/1AwND-nNMpZGrf_uCv_V1lRrfefnzbINYLZooaNthAk4/edit)
+**Duration:** ~55 minutes
+**Date:** March 24, 2026 (TODAY)
+
+**Key Decisions:**
+
+1. **In-House Recommendation System — CONFIRMED WORKING**
+   - System functioning properly
+   - Serving **17,000 users**
+   - 50% of properties tagged (since July)
+   - Decision: **Continue with in-house system** (NOT reverting to collaborative filtering)
+
+2. **Engagement Metrics Breakdown**
+   | Metric | Percentage |
+   |--------|------------|
+   | Users engaging with games | 37.36% |
+   | Users watching videos | 37.36% |
+   
+3. **Collaborative Filtering Assessment**
+   - May NOT be suitable for users "lacking patience to sit and watch"
+   - In-house system preferred for current user base
+   - Top collaborative filtering mentioned as backup option
+
+4. **14-Day Incremental Progress**
+   - "Second level watch games resection day watch"
+   - By end of 14 days: 2.5 → 2.38 → 38 → 57 (incremental)
+   - Additional metrics: 34.2, 23, 1.94
+
+5. **Targeting Strategy**
+   - Target users to engage on weekdays
+   - Multiple touchpoints: WhatsApp, games, video
+   - Saturday/Sunday pattern analysis ongoing
+
+6. **Baseline Established**
+   - Sunday baseline expectations set
+   - Weekly targets for user engagement defined
+   - Saturday to Sunday tracking window
+
+7. **Demographics**
+   - Have some demographic data
+   - Team believes they have "more accurate data" than external sources
+
+**Next Steps:**
+- Screening room meeting at 12:30
+- Continue Saturday → Sunday analysis cycle
+- Track incremental engagement daily
+
+**Transcript Excerpts:**
+> "Are we in a good state to start using or should we move back to collaborative filtering? Yes. Top collaborative."
+
+> "Inhouse recommendation is working fine."
+
+> "Games 61 may say 37% ... watch 37.36. This is that number."
+
+> "Targeting... need multiple WhatsApp WhatsApp. Saturday."
+
+> "I need patience to sit and watch." (on why collaborative filtering may not work)
+
+---
+
+### M1+ Dormant Resurrection Deep Dive (Mar 23 — Pravesh)
+
+**Source:** #full-funnel-solver thread (Mar 23-24)
+**Owner:** Pravesh Rajput
+
+#### Segmentation Strategy
+- **12 micro-segments:** 4 spend tiers × 3 dialects (Haryanvi, Rajasthani, Bhojpuri)
+- **4 personalized content picks per user:**
+  - 2 from collaborative filtering (watch history based)
+  - 2 curated latest titles (same genre, new on app)
+
+#### 6-Channel Orchestration (Live)
+
+| Channel | Strategy |
+|---------|----------|
+| WhatsApp | Personalized carousels per user |
+| RCS | 12 unique creative variants |
+| Google Ads | Tambola hook + top content, personalized creatives |
+| Meta Ads | Budget scaled ₹3K → ₹10K/campaign/day (testing ceiling) |
+| Outbound Calls | Periodic touchpoints across week |
+| Push Notifications | Timed mid-week and weekend |
+
+#### Target Benchmark
+- **Goal:** 1% DoD (Day-over-Day) resurrection rate
+- Not a spike — sustainable, repeatable number at scale
+
+#### Results
+
+| Metric | Performance |
+|--------|-------------|
+| Overall cumulative resurrection | ~5% of targetable pool |
+| Highest-intent tier | ~11.8% |
+| DoD resurrection (Mar cohort, Tier 2) | 2.5–3.0% (holding steady) |
+| Feb cohort (no campaign) | Decayed 3.15% → 1.54% |
+
+**Key Insight:** Mar cohort is holding flat/growing while Feb cohort decayed. Campaign is **preventing natural decay**, not just organic behavior.
+
+#### Channel Contribution to Daily Resurrection
+
+| Channel | Contribution |
+|---------|--------------|
+| Google Ads | ~27% (highest) |
+| Meta Ads | ~22% |
+| CLM (RCS + WhatsApp) | ~15% |
+| Organic / Tambola / Other | ~36% |
+
+#### Curve Behavior
+- WhatsApp blasts → Initial Day 1-2 spike
+- Google + Meta ads → Sustained curve, prevented drop-off
+- Result: **"Smile curve"** — no decay where decay was expected
+
+#### Tambola Performance
+- ✅ 70% of solo game completers → converted to Sunday live (strong funnel)
+- ⚠️ Registration below fold → lost ~45% of interested users
+- ⚠️ Solo game: 50% bounce in first 15 seconds
+- ⚠️ IVR reminders firing 2 hours early — useless by game time
+
+#### NEW: 50/50 Personalization Split Test
+
+| Engine | Methodology |
+|--------|-------------|
+| Collaborative (50%) | 1:1 individual behavior (watch history, taste, engagement) |
+| Segment-Based (50%) | Cluster curation (cohort, region, dialect, lifecycle) |
+
+**Measuring:** Consumption starts, resurrection rate, cancellation rate
+**Goal:** Find which model drives better resurrection, retention, consumption at scale
+
+#### Action Items (Locked)
+
+| Priority | Action |
+|----------|--------|
+| **Scale** | Google Ads (highest contributor at 27%) — increase budget |
+| **Scale** | Monitor Meta at ₹10K/day — find ceiling, then optimize |
+| **Tambola Fix** | Move registration above the fold |
+| **Tambola Fix** | Build 5-min-before reminder (vibration + WhatsApp + push) |
+| **Tambola Fix** | Fix IVR timing (30 min before, not 2 hours) |
+| **Tracking** | Separate Tambola opens vs Content starts vs Cancellations |
+| **Ops** | Expand dashboard chatbot across multiple dashboards |
+| **Creative** | Build copywriting framework per channel × segment |
+| **Reco** | Clean recommendation pool (remove stale, surface proven performers) |
+
+#### Risk Acknowledged
+> "If we push too hard, dormant users cancel rather than come back. Still, that's not a problem if users cancel organically."
+
+#### Day 9 Actions (Mar 24 — Pravesh)
+- OB Calling on 11K Tier 1 users (results EOD)
+- Meta ads activation on 3L remaining dormant users (Top Creatives)
+- Targeting 17K users: 50% 1:1 reco vs 50% Collaborative Engine (split test live)
+
+---
+
+*Report updated: March 24, 2026*
+*Day 9 of 15 — Week 2 Execution*
+*Next: T+36h Perf Agent assessment (Mar 25)*
+*Review 2: March 27, 2026*

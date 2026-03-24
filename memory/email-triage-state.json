@@ -1,13 +1,24 @@
 {
-  "lastTriageUTC": "2026-03-23T03:00:00Z",
-  "urgent": 2,
-  "important": 5,
-  "fyi": 6,
-  "skip": 20,
-  "responseDebt": 3,
+  "lastTriageUTC": "2026-03-24T03:00:00Z",
+  "urgent": 3,
+  "important": 8,
+  "fyi": 9,
+  "skip": 8,
+  "responseDebt": 2,
   "debtItems": [
-    {"sender": "Anish Patel (via Google Drive)", "subject": "Share request for Ormax Micro Drama Analysis", "date": "2026-03-20", "daysOld": 3},
-    {"sender": "Sarita Verma (Ennoble IP)", "subject": "Drive Innovation with Expert Market and Patent Insights", "date": "2026-03-20", "daysOld": 3},
-    {"sender": "Jit Shankar Banerjee", "subject": "Accepted: Jit S Banerjee/ STAGE meeting Mar 23", "date": "2026-03-20", "daysOld": 3}
+    {
+      "from": "Anish Patel (via Google Drive)",
+      "subject": "Share request for Ormax Micro Drama Analysis",
+      "date": "2026-03-20",
+      "daysOld": 4,
+      "note": "2 share requests from Anish Patel — 4 days pending"
+    },
+    {
+      "from": "Pravesh Rajput (via Google Drive)",
+      "subject": "Share request for Ormax Micro Drama Analysis",
+      "date": "2026-03-22",
+      "daysOld": 2,
+      "note": "3rd share request for same doc — pending access decision"
+    }
   ]
 }

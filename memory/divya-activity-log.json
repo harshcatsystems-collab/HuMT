@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "created": "2026-03-24",
+    "description": "Daily activity tracker for Divya's pregnancy wellness",
+    "activities": {
+      "sleep": {
+        "name": "Sleep",
+        "target": "7-8 hours",
+        "unit": "hours",
+        "emoji": "😴"
+      },
+      "hydration": {
+        "name": "Hydration",
+        "target": "3 liters",
+        "unit": "liters",
+        "emoji": "💧"
+      },
+      "yoga": {
+        "name": "Yoga",
+        "target": "1 session",
+        "unit": "sessions",
+        "emoji": "🧘‍♀️"
+      },
+      "steps": {
+        "name": "Steps",
+        "target": "5000-6000",
+        "unit": "steps",
+        "emoji": "🚶‍♀️"
+      }
+    }
+  },
+  "log": {
+    "2026-03-24": {
+      "sleep": {
+        "value": 8.5,
+        "target": 8,
+        "met": true
+      },
+      "hydration": {
+        "value": 2,
+        "target": 3,
+        "met": false
+      },
+      "yoga": {
+        "value": 1,
+        "target": 1,
+        "met": true
+      },
+      "steps": {
+        "value": 7200,
+        "target": 5500,
+        "met": true
+      },
+      "score": "3/4",
+      "logged_at": "2026-03-24T21:36:00+05:30",
+      "logged_via": "text"
+    }
+  }
+}

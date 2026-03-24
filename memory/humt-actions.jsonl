@@ -421,3 +421,5 @@
   "ts": 1774012860,
   "date": "2026-03-20T13:21:00Z"
 }
+{"type":"mention_handled","thread_ts":"1774264711.261109","channel":"C08PGK8CM32","channel_name":"finance-department","user":"U07FXP4MKDY","requestor":"Saloni Goyal","subject":"Zoho Expense reimbursements","action":"Acknowledged + approved HR pending reimbursement","status":"closed","ts":1774271914,"date":"2026-03-23T13:38:34Z"}
+{"type":"mention_handled","thread_ts":"1774267053.991069","channel":"C08PGK8CM32","channel_name":"finance-department","user":"U05HAE85RL2","requestor":"Rahul Chauhan","subject":"Payment sheet approval (₹1Cr+)","action":"Acknowledged, payment breakdown posted","status":"pending_founders","ts":1774267096,"date":"2026-03-23T12:58:16Z"}

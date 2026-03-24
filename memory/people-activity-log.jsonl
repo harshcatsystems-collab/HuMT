@@ -516,3 +516,64 @@
 {"ts": "2026-03-23T16:22:00+00:00", "_type": "logger_run", "people_tracked": 11}
 {"ts":"2026-03-23T16:53:08Z","_type":"logger_run","people_tracked":11}
 {"ts": "2026-03-23T17:23:15Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-23T17:53:27Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-23T18:23:31Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-23T18:52:50Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-23T19:22:49Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-23T19:53:01Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-23T20:22:00Z", "user": "U08L99D58PK", "name": "Nikhil Nair", "messages": 42, "thread_replies": 0, "channels_active": 4, "channel_ids": ["C07T7047TEZ", "C080EJU9873", "C08QC5UHQUS", "C0A87E17UMS"], "after_hours": 7, "avg_response_latency_sec": null}
+{"ts": "2026-03-23T20:22:00Z", "user": "U08KBHHV9J4", "name": "Radhika Vijay", "messages": 6, "thread_replies": 0, "channels_active": 4, "channel_ids": ["C07T7047TEZ", "C080EJU9873", "CEHPPGSN9", "CS75DM3KQ"], "after_hours": 0, "avg_response_latency_sec": null}
+{"ts": "2026-03-23T20:22:00Z", "user": "UE0KTBS8P", "name": "Shashank Vaishnav", "messages": 10, "thread_replies": 0, "channels_active": 5, "channel_ids": ["C080EJU9873", "C082Z8FUBRV", "CEHPPGSN9", "CS75DM3KQ", "GEJUR0WA2"], "after_hours": 2, "avg_response_latency_sec": null}
+{"ts": "2026-03-23T20:22:00Z", "user": "UEHET2Q2G", "name": "Vinay Singhal", "messages": 27, "thread_replies": 0, "channels_active": 6, "channel_ids": ["C037H0GLYP4", "C07T7047TEZ", "C082Z8FUBRV", "C08HQ89S797", "C0A3N67V0G2", "GEJUR0WA2"], "after_hours": 16, "avg_response_latency_sec": null}
+{"ts": "2026-03-23T20:22:00Z", "user": "UEJV57HQW", "name": "Parveen Singhal", "messages": 22, "thread_replies": 0, "channels_active": 3, "channel_ids": ["C082Z8FUBRV", "C08HQ89S797", "GEJUR0WA2"], "after_hours": 5, "avg_response_latency_sec": null}
+{"ts": "2026-03-23T20:22:00Z", "user": "U07R906K9K5", "name": "Nishita Banerjee", "messages": 13, "thread_replies": 0, "channels_active": 2, "channel_ids": ["C08HQ89S797", "CS75DM3KQ"], "after_hours": 5, "avg_response_latency_sec": null}
+{"ts": "2026-03-23T20:22:00Z", "user": "U0719V1GX3Q", "name": "Pranay Merchant", "messages": 7, "thread_replies": 0, "channels_active": 3, "channel_ids": ["C08HQ89S797", "CEHPPGSN9", "CS75DM3KQ"], "after_hours": 1, "avg_response_latency_sec": null}
+{"ts": "2026-03-23T20:22:00Z", "user": "U068F2RS5PV", "name": "Nisha Ali", "messages": 34, "thread_replies": 0, "channels_active": 5, "channel_ids": ["C082Z8FUBRV", "C08QC5UHQUS", "C095EKEC0LX", "C09TLDLA7GE", "CS75DM3KQ"], "after_hours": 6, "avg_response_latency_sec": null}
+{"ts": "2026-03-23T20:22:00Z", "user": "U07LFSB0PM5", "name": "Vismit Bansal", "messages": 3, "thread_replies": 0, "channels_active": 1, "channel_ids": ["C09TLDLA7GE"], "after_hours": 0, "avg_response_latency_sec": null}
+{"ts": "2026-03-23T20:22:00Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-23T20:52:00Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-23T21:23:11Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-23T21:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-23T22:23:01.342158+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-23T22:52:59Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-23T23:23:02Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-23T23:53:11Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-24T00:22:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-24T00:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-24T01:22:46Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-24T01:53:12Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-24T02:23:07Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-24T02:53:33Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-24T03:23:21Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-24T03:52:48Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-24T04:23:15Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-24T04:52:48Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-24T05:23:09Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-24T05:53:12Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-24T06:23:26Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-24T06:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-24T07:23:20Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-24T07:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-24T08:23:30Z", "user": "U068F2RS5PV", "name": "Nisha Ali", "messages": 1, "thread_replies": 0, "channels_active": 1, "channel_ids": ["C082Z8FUBRV"], "after_hours": 0, "avg_response_latency_sec": null}
+{"ts": "2026-03-24T08:23:30Z", "_type": "logger_run", "people_tracked": 11}
+
+{"ts": "2026-03-24T08:23:35Z", "user": "U068F2RS5PV", "name": "Nisha Ali", "messages": 1, "thread_replies": 0, "channels_active": 1, "channel_ids": ["C082Z8FUBRV"], "after_hours": 0, "avg_response_latency_sec": null}
+{"ts": "2026-03-24T08:23:35Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-24T08:53:12Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-24T09:22:49Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-24T09:53:17Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-24T10:23:15Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-24T10:52:51Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-24T11:23:10Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-24T11:53:14.633358+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-24T12:23:14Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-24T12:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-24T13:23:44Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-24T13:53:09Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-24T14:23:11Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-24T14:53:06.584138Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-24T15:23:09Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-24T15:53:37Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-24T16:23:28Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-24T16:53:14Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-24T17:22:00Z","_type":"logger_run","people_tracked":11}

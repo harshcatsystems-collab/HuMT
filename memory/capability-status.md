@@ -5,31 +5,32 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-23 00:00 UTC (automated cron)
+## Last Verified: 2026-03-24 00:00 UTC (automated cron)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files + memory_search responded (provider: openai/text-embedding-3-small, hybrid mode) | 2026-03-23 |
-| 2 | Files | ✅ | workspace ls OK, 110+ memory files present, capability-status.md read/write confirmed | 2026-03-23 |
-| 3 | Terminal | ✅ | exec tool — `date` returned Mon Mar 23 00:00:18 UTC 2026 | 2026-03-23 |
-| 4 | Web Search | ✅ | Brave API returned result for date query (utctime.net, confirmed March 22/23 2026) | 2026-03-23 |
-| 5 | Gmail | ✅ | gog gmail search returned messages incl. Cyril AM/STAGE calendar invite (Mar 21 14:39) | 2026-03-23 |
-| 6 | Calendar | ✅ | gog calendar events returned 10 events for Mar 23 (All Hands, M0 watcher, Dormants, Jit S Banerjee/STAGE, Harsh X Nisha, etc.) | 2026-03-23 |
-| 7 | Cron/Reminders | ✅ | 24 active jobs — this job execution proves it works; 0 errors on most jobs | 2026-03-23 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present in config | 2026-03-23 |
+| 1 | Memory | ✅ | Read/write workspace files + memory_search responded (provider: openai/text-embedding-3-small, hybrid mode) | 2026-03-24 |
+| 2 | Files | ✅ | workspace ls OK, 110+ memory files present, capability-status.md read/write confirmed | 2026-03-24 |
+| 3 | Terminal | ✅ | exec tool — `date` returned Tue Mar 24 00:00:28 UTC 2026 | 2026-03-24 |
+| 4 | Web Search | ✅ | Brave API returned result for date query (utctime.net, confirmed March 2026) | 2026-03-24 |
+| 5 | Gmail | ✅ | gog gmail search returned 10 messages incl. board meeting invite, town hall, Nisha invite (latest Mar 23 17:07) | 2026-03-24 |
+| 6 | Calendar | ✅ | gog calendar list returned 10 events for Mar 24 (Tech-Product Standup, M0 watcher, Dormants Watch, Darshan x STAGE, CAC Deep Funnel Solver, etc.) | 2026-03-24 |
+| 7 | Cron/Reminders | ✅ | 26 active jobs — this job execution proves it works; 0 errors on most jobs | 2026-03-24 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present in config | 2026-03-24 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C**** present in skill config (openai-image-gen) | 2026-03-23 |
-| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed present in config | 2026-03-23 |
-| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — provider: openai/text-embedding-3-small, hybrid mode operational | 2026-03-23 |
-| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token, both returned data) | 2026-03-23 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-23 |
+| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C**** present in skill config (openai-image-gen) | 2026-03-24 |
+| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed present in config | 2026-03-24 |
+| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — provider: openai/text-embedding-3-small, hybrid mode operational | 2026-03-24 |
+| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token, both returned data) | 2026-03-24 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-24 |
 
-## ⚠️ Cron Job Warnings (2026-03-23)
+## ⚠️ Cron Job Warnings (2026-03-24)
 
 | Job | Consecutive Errors | Last Error | Note |
 |-----|--------------------|------------|------|
-| `slack:commitment-tracker` | 2 ⬆️ | Timed out at 300s (max) | Full Slack scan taking too long. Needs timeout tuning or scope reduction. |
-| `persona:monthly-evolution-review` | 1 | Message send failed (⚠️ ✉️ Message failed) | Send script issue — monitor; delivery showed as delivered despite error |
+| `slack:commitment-tracker` | 3 ⬆️ | Timed out at 300s (max) | Full Slack scan taking too long. Needs timeout tuning or scope reduction. ⚠️ Escalating — 3 consecutive timeouts. |
+| `divya-bedtime-diet-checkin` | 1 | ⚠️ ✉️ Message failed | Send to family group failed — monitor on next run |
+| `persona:monthly-evolution-review` | 1 | Message send failed | Delivery showed as delivered despite error — may be resolved |
 
 Previous warnings (resolved):
 - `slack:evening-debrief` — 0 errors ✅ (was 2 consecutive errors 2026-03-22)
