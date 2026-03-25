@@ -5,26 +5,26 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-24 00:00 UTC (automated cron)
+## Last Verified: 2026-03-25 00:00 UTC (automated cron)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files + memory_search responded (provider: openai/text-embedding-3-small, hybrid mode) | 2026-03-24 |
-| 2 | Files | ✅ | workspace ls OK, 110+ memory files present, capability-status.md read/write confirmed | 2026-03-24 |
-| 3 | Terminal | ✅ | exec tool — `date` returned Tue Mar 24 00:00:28 UTC 2026 | 2026-03-24 |
-| 4 | Web Search | ✅ | Brave API returned result for date query (utctime.net, confirmed March 2026) | 2026-03-24 |
-| 5 | Gmail | ✅ | gog gmail search returned 10 messages incl. board meeting invite, town hall, Nisha invite (latest Mar 23 17:07) | 2026-03-24 |
-| 6 | Calendar | ✅ | gog calendar list returned 10 events for Mar 24 (Tech-Product Standup, M0 watcher, Dormants Watch, Darshan x STAGE, CAC Deep Funnel Solver, etc.) | 2026-03-24 |
-| 7 | Cron/Reminders | ✅ | 26 active jobs — this job execution proves it works; 0 errors on most jobs | 2026-03-24 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present in config | 2026-03-24 |
+| 1 | Memory | ✅ | Read/write workspace files + memory_search responded (provider: openai/text-embedding-3-small, hybrid mode) | 2026-03-25 |
+| 2 | Files | ✅ | workspace ls OK, 110+ memory files present, capability-status.md read/write confirmed | 2026-03-25 |
+| 3 | Terminal | ✅ | exec tool — `date` returned Wed Mar 25 00:00:06 UTC 2026 | 2026-03-25 |
+| 4 | Web Search | ✅ | Brave API returned result for date query (utctime.net, confirmed March 2026) | 2026-03-25 |
+| 5 | Gmail | ✅ | gog gmail search returned 3 messages incl. STAGE<>Goodwater invite, Vinay/Harsh weekly, Tailscale (latest Mar 24 16:58) | 2026-03-25 |
+| 6 | Calendar | ✅ | gog calendar list returned 10 events for Mar 25 (Tech-Product Standup, Mid-Sprint Review, M0 watcher, Dormants Watch, Meeting with Mr. Josy Joseph, Sarvam x Stage OTT, etc.) | 2026-03-25 |
+| 7 | Cron/Reminders | ✅ | 29 active jobs — this job execution proves it works; 0 errors on most jobs | 2026-03-25 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present in config | 2026-03-25 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C**** present in skill config (openai-image-gen) | 2026-03-24 |
-| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed present in config | 2026-03-24 |
-| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — provider: openai/text-embedding-3-small, hybrid mode operational | 2026-03-24 |
-| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token, both returned data) | 2026-03-24 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-24 |
+| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C**** present in skill config (openai-image-gen) | 2026-03-25 |
+| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed present in config | 2026-03-25 |
+| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — provider: openai/text-embedding-3-small, hybrid mode operational | 2026-03-25 |
+| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token, both returned data) | 2026-03-25 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-25 |
 
-## ⚠️ Cron Job Warnings (2026-03-24)
+## ⚠️ Cron Job Warnings (2026-03-25)
 
 | Job | Consecutive Errors | Last Error | Note |
 |-----|--------------------|------------|------|

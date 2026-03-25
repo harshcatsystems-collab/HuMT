@@ -97,6 +97,13 @@
 
 *Last updated: 2026-03-20 12:14 UTC (commitment tracker cron — Friday scan)*
 
+| D82 | Approve $500 each for OpenAI + Anthropic API (Neorouter) | Shashank Vaishnav | 2026-03-25 | #credit_card_invoices | Rohit Deshmukh request. Pending Shashank response. | 0 |
+| D83 | Approve Claude Max invoice (engineering@stage.in, Mar 11) | Shashank Vaishnav | 2026-03-25 | #credit_card_invoices | Vipul Sharma request. Pending. | 0 |
+| D84 | Try UNI-1 model + post results | Sushant Kaushik + Kamal Singh Chauhan | 2026-03-24 | #ai-native-agentic-framework-content | Vinay delegated. Sushant asked for update call. | 1 |
+| D85 | Fix Vaada social posts — remove credits/smoking warning text | Deepak Prajapati + Suhani | 2026-03-25 | #socials-team | Kunal flagged — posts live with unnecessary text cutoff. ASAP fix. | 0 |
+| D86 | Roots of Rajasthan GTM + execution plan | Deepak Prajapati | 2026-03-24 | #socials-team | Kunal delegated directly. | 0 |
+| D87 | Reset + restore MongoDB→ClickHouse userwatchhistories connection | Data/Devops team | 2026-03-25 | #data-alerts | CRITICAL — auto-disable warning issued 07:31 UTC. 10 consecutive failures. "Reset the connection, increase oplog window." No human response yet. | 0 |
+
 | D26 | Chatbot data updates in standard format | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Nikhil requested | 3 |
 | D27 | Infrastructure upgrade activity (4 components) | Rohit Singh | 2026-03-04 | #team-devops | Self-announced plan (non-prod ✅, prod+DB pending) | 2 |
 | D28 | Send PDN for all plan types (24hr + 5min intervals) | Yash Verma | 2026-03-04 | #acquisition-pod | Shubham delegated, **CRITICAL OVERDUE** (was due March 5 13:15 UTC) | 2 ⚠️⚠️ |

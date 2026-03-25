@@ -176,3 +176,30 @@ Items older than 7 days with no resolution update:
 | Akshay leave Mar 23–27 | 📋 FYI | #leave-intimation | Akshay OOO full week next week. Flagged to Nishita. HMT awareness item. |
 
 *Last updated: 2026-03-21 12:00 UTC (commitment tracker cron — Saturday scan)*
+
+---
+
+## 🆕 New Commitments — Mar 25, 2026 (Last 24h Scan — 12:01 UTC)
+
+| Item | Who | Deadline | Channel | Notes |
+|------|-----|----------|---------|-------|
+| Approve $500 each for OpenAI + Anthropic API keys (Neorouter, total $1000) | Shashank Vaishnav | ASAP | #credit_card_invoices | Rohit Deshmukh requested at 06:09 UTC. Pending Shashank approval. |
+| Approve Claude Max invoice for engineering@stage.in (March 11 invoice) | Shashank Vaishnav | ASAP | #credit_card_invoices | Vipul Sharma requested at 07:58 UTC. |
+| Try UNI-1 model + post results | Sushant Kaushik | Today | #ai-native-agentic-framework-content | Vinay tagged Sushant + Kamal at 16:28 UTC (yesterday). Sushant asked for update call at 09:32 UTC today. |
+| Fix unnecessary credits/smoking warning text on Vaada social posts | Deepak Prajapati + Suhani | ASAP | #socials-team | Kunal flagged at 04:48 UTC — text visible in posts, needs immediate correction. |
+| Roots of Rajasthan GTM + execution plan | Deepak Prajapati | — | #socials-team | Kunal assigned at 12:18 UTC (yesterday). Tagged Deepak directly. |
+| Investigate + resolve MongoDB→ClickHouse userwatchhistories "saved offset invalid" (auto-disable imminent) | Data/Devops team | URGENT | #data-alerts | 07:31 UTC warning: connection scheduled for AUTO-DISABLE (10 consecutive failures). This is now critical — reset needed immediately or data pipeline stops. |
+
+## ⚠️ Critical Escalation — Mar 25, 2026
+
+| Issue | Status | Channel | Urgency |
+|-------|--------|---------|---------|
+| MongoDB→ClickHouse userwatchhistories auto-disable imminent | 🔴 CRITICAL | #data-alerts | Airbyte issued auto-disable warning at 07:31 UTC. 18 failures in 24h. "Saved offset is not valid" — needs oplog reset + connection restart. No human response yet. |
+
+## ✅ Resolved — Mar 25, 2026 (From Scan)
+
+| Item | Resolved | Outcome |
+|------|----------|---------|
+| Monitor autoresearch for live voice campaigns (D-standing) | 2026-03-25 12:44 UTC | Kawaljeet confirmed: "auto research is being implemented on all the active campaigns and have automated that all future campaigns will have this enabled without explicitly saying it." ✅ Fully automated — no more manual activation needed. |
+| Rohit Singh AWS IAM cleanup (unnecessary permissions on new AI account) | 2026-03-25 07:04 UTC | Rohit Singh announced: removing unnecessary permissions. Self-initiated cleanup. |
+| Vipul Sharma billing full access (AWS IAM) | 2026-03-25 09:17 UTC | Rohit Singh: "billing full access has been added to your iam-user." ✅ Done. |

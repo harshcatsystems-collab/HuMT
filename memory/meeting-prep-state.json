@@ -1,62 +1,76 @@
 {
   "preppedToday": [
     {
-      "id": "3f0cckdcqf5oo499a61ib2n229_20260324T042000Z",
+      "id": "3f0cckdcqf5oo499a61ib2n229_20260325T042000Z",
       "summary": "Tech - Product Standup (Growth POD)",
-      "start": "2026-03-24T09:50:00+05:30",
-      "preppedAt": "2026-03-24T03:30:00Z",
+      "start": "2026-03-25T09:50:00+05:30",
+      "preppedAt": "2026-03-25T03:30:00Z",
       "topic": "growth"
     },
     {
-      "id": "73rhfktpi5os655o54oocbaphs_20260324T060000Z",
+      "id": "57j054riais1pi966mi3uer4be_20260325T050000Z",
+      "summary": "Mid-Sprint Review Meeting",
+      "start": "2026-03-25T10:30:00+05:30",
+      "preppedAt": "2026-03-25T04:30:00Z",
+      "topic": "product_design"
+    },
+    {
+      "id": "73rhfktpi5os655o54oocbaphs_20260325T060000Z",
       "summary": "M0 watcher % - 2 Week Plan - discussion",
-      "start": "2026-03-24T11:30:00+05:30",
-      "preppedAt": "2026-03-24T05:30:00Z",
+      "start": "2026-03-25T11:30:00+05:30",
+      "preppedAt": "2026-03-25T05:30:00Z",
       "topic": "retention"
     },
     {
-      "id": "3saeb94ahos7o3if0vre6re30v_20260324T063000Z",
+      "id": "3saeb94ahos7o3if0vre6re30v_20260325T063000Z",
       "summary": "DORMANTS WATCH - Previously watched - 2 Week plan",
-      "start": "2026-03-24T12:00:00+05:30",
-      "preppedAt": "2026-03-24T06:00:00Z",
+      "start": "2026-03-25T12:00:00+05:30",
+      "preppedAt": "2026-03-25T06:00:00Z",
       "topic": "retention"
     },
     {
-      "id": "5g1me5tdae94nb3q438bsprtvm",
-      "summary": "Darshan x STAGE",
-      "start": "2026-03-24T12:00:00+05:30",
-      "preppedAt": "2026-03-24T06:00:00Z",
+      "id": "0c7aahhdvv20srt8o3tfrsfd3n_20260325T070000Z",
+      "summary": "Reactivation daily catchup",
+      "start": "2026-03-25T12:30:00+05:30",
+      "preppedAt": "2026-03-25T06:30:00Z",
+      "topic": "retention"
+    },
+    {
+      "id": "62elh1hmvcnna83d7frv33pskv_20260325T073000Z",
+      "summary": "Activation daily catchup",
+      "start": "2026-03-25T13:00:00+05:30",
+      "preppedAt": "2026-03-25T06:30:00Z",
+      "topic": "growth"
+    },
+    {
+      "id": "1k8mci91m1k2tr0aql0el3bea4",
+      "summary": "Meeting with Mr. Josy Joseph",
+      "start": "2026-03-25T14:00:00+05:30",
+      "preppedAt": "2026-03-25T08:00:00Z",
       "topic": "daily_ops"
     },
     {
-      "id": "0c7aahhdvv20srt8o3tfrsfd3n_20260324T070000Z",
-      "summary": "Reactivation daily catchup",
-      "start": "2026-03-24T12:30:00+05:30",
-      "preppedAt": "2026-03-24T06:30:00Z",
-      "topic": "retention"
+      "id": "1ic8tvtqta1049i5lrlimk48hp_20260325T093000Z",
+      "summary": "Bi-Monthly Research Update",
+      "start": "2026-03-25T15:00:00+05:30",
+      "preppedAt": "2026-03-25T09:00:00Z",
+      "topic": "consumer_insights"
     },
     {
-      "id": "62elh1hmvcnna83d7frv33pskv_20260324T073000Z",
-      "summary": "Activation daily catchup",
-      "start": "2026-03-24T13:00:00+05:30",
-      "preppedAt": "2026-03-24T06:30:00Z",
-      "topic": "retention"
+      "id": "7jrpcp85vijfn7s2j46r3qk7b2",
+      "summary": "Sarvam x Stage OTT - Intro",
+      "start": "2026-03-25T15:00:00+05:30",
+      "preppedAt": "2026-03-25T09:00:00Z",
+      "topic": "strategy"
     },
     {
-      "id": "b87dfe2pmj15tgm26lh67m7o0m_20260324T083000Z",
-      "summary": "CAC & Deep Funnel Solver for Promo & Performance",
-      "start": "2026-03-24T14:00:00+05:30",
-      "preppedAt": "2026-03-24T08:01:00Z",
-      "topic": "growth"
-    },
-    {
-      "id": "0prghe1ksdsl88osukv957rfv1_20260324T110000Z",
-      "summary": "Fortnightly catchup w Nikhil",
-      "start": "2026-03-24T16:30:00+05:30",
-      "preppedAt": "2026-03-24T10:30:00Z",
-      "topic": "growth"
+      "id": "7g889m0s8sbo3h7kluq44kgkm4",
+      "summary": "Cyril AM / STAGE",
+      "start": "2026-03-25T16:30:00+05:30",
+      "preppedAt": "2026-03-25T10:30:00Z",
+      "topic": "strategy"
     }
   ],
-  "date": "2026-03-24",
-  "_lastUpdated": "2026-03-24T10:30:00Z"
+  "date": "2026-03-25",
+  "_lastUpdated": "2026-03-25T10:30:00Z"
 }

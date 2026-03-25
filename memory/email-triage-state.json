@@ -1,24 +1,7 @@
 {
-  "lastTriageUTC": "2026-03-24T03:00:00Z",
+  "lastTriageUTC": "2026-03-25T03:00:00Z",
   "urgent": 3,
-  "important": 8,
-  "fyi": 9,
-  "skip": 8,
-  "responseDebt": 2,
-  "debtItems": [
-    {
-      "from": "Anish Patel (via Google Drive)",
-      "subject": "Share request for Ormax Micro Drama Analysis",
-      "date": "2026-03-20",
-      "daysOld": 4,
-      "note": "2 share requests from Anish Patel — 4 days pending"
-    },
-    {
-      "from": "Pravesh Rajput (via Google Drive)",
-      "subject": "Share request for Ormax Micro Drama Analysis",
-      "date": "2026-03-22",
-      "daysOld": 2,
-      "note": "3rd share request for same doc — pending access decision"
-    }
-  ]
+  "important": 2,
+  "fyi": 2,
+  "responseDebt": 0
 }

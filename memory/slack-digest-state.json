@@ -1,27 +1,30 @@
 {
-  "morningBrief": "2026-03-24T03:47:08.922558Z",
-  "lastScan": "2026-03-22T13:00:00.000000Z",
-  "eveningDebrief": "2026-03-22T13:01:00.000000Z",
+  "morningBrief": "2026-03-25T03:47:45.451641Z",
+  "lastScan": "2026-03-25T13:03:10.200674+00:00",
+  "eveningDebrief": "2026-03-25T13:03:10.200537+00:00",
   "intensity": "light",
   "processedMentions": [
     "1774267053.991069",
     "1774264711.261109"
   ],
   "lastEveningDebrief": {
-    "sentAt": "2026-03-23T13:07:38.588794Z",
-    "sentAtIST": "2026-03-23T18:30:00+05:30",
-    "messageId": 1004,
+    "sentAt": "2026-03-25T13:03:10.200678+00:00",
+    "sentAtIST": "2026-03-25T18:30:00+05:30",
+    "messageId": 1092,
     "topic": "daily_ops",
     "scanHours": 12,
-    "channelsActive": 18,
-    "messagesAnalyzed": 82,
+    "channelsActive": 17,
+    "messagesAnalyzed": 75,
     "keyItems": [
-      "Illness wave (10+ people)",
-      "GROK $1K approved by Vinay",
-      "Web UI overhaul shipped",
-      "SEO automation live",
-      "D64 Airbyte pipeline unresolved",
-      "Claude seats pending Shashank"
+      "Data pipeline auto-disable triggered (D64)",
+      "Backend 20x Datadog alerts, no owner",
+      "Friday critical: Goodwater + Board Meeting + Sprint Review",
+      "M0 Watcher 28% vs 36% target \u2014 Week 1 miss",
+      "Nishita: Culture Architecture Framework MoM",
+      "Parveen: Safar content concept",
+      "AI spend approvals pending (Shashank)",
+      "Illness wave: 7+ people OOO/late",
+      "Vinay: 2026 Startup Salary Pack live"
     ]
   }
 }

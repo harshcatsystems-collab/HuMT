@@ -23,27 +23,29 @@
 
 | Date | Time | SYS | DIA | Pulse | Week | Notes |
 |------|------|-----|-----|-------|------|-------|
+| Mar 25, 2026 | Morning | 116 | 77 | 105 | 17 | Normal BP. Pulse improved from yesterday. |
 | Mar 24, 2026 | Morning | 117 | 81 | 114 | 17 | Normal BP. Pulse slightly elevated but within pregnancy range. |
 
 ---
 
 ## Analysis
 
-### Latest Reading (Mar 24, 2026)
-- **BP: 117/81 mmHg** ✅ Normal
-- **Pulse: 114 bpm** ⚠️ Slightly elevated
+### Latest Reading (Mar 25, 2026)
+- **BP: 116/77 mmHg** ✅ Normal (optimal)
+- **Pulse: 105 bpm** ✅ Normal
 
 **Assessment:**
-- Blood pressure is excellent — well within normal range
-- Pulse at 114 is at the upper end but can be normal in 2nd trimester due to:
-  - Increased blood volume (30-50% more during pregnancy)
-  - Higher metabolic demand
-  - Morning reading (possibly after activity?)
+- Blood pressure is excellent — optimal range
+- Pulse improved from yesterday (114 → 105)
+- Both readings well within healthy pregnancy ranges
 
-**Recommendation:**
-- Continue monitoring
-- If pulse stays consistently >115 at rest, mention to Dr. Madhulika
-- Stay hydrated — dehydration can elevate heart rate
+### Previous Reading (Mar 24, 2026)
+- **BP: 117/81 mmHg** ✅ Normal
+- **Pulse: 114 bpm** ⚠️ Upper end
+
+**2-Day Trend:**
+- BP stable and healthy
+- Pulse coming down — good sign
 
 ---
 
@@ -53,4 +55,4 @@
 
 ---
 
-*Last updated: Mar 24, 2026*
+*Last updated: Mar 25, 2026*

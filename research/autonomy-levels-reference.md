@@ -106,4 +106,69 @@ We're at L6 infrastructure. Adding L5 eval loops is the next unlock.
 
 ---
 
+---
+
+## Karpathy's Org Chart for 2030 (Added 2026-03-25)
+
+> **Source:** Aakash Gupta, LinkedIn, March 25, 2026
+> **Core insight:** "Whoever controls the eval controls the outcome. Lock it down or the agent will find the shortest path to a number that means nothing."
+
+### The 3-File Architecture
+
+| File | Role | Who Controls |
+|------|------|--------------|
+| `program.md` | **Strategy** — what to optimize, why | Human |
+| `train.py` | **Execution** — iterating, shipping | Agent |
+| `prepare.py` | **Evaluation** — locked metric, immutable | Neither (locked) |
+
+### Why This Matters
+
+**The problem in most companies:**
+> "The person who sets the goal also controls how success is measured."
+
+PM defines metric → ships feature → presents dashboard → incentive to shift goalposts.
+
+**Karpathy's fix — make `prepare.py` immutable:**
+- Agent optimizes `val_bpb`
+- Agent **cannot** redefine `val_bpb`
+- Agent **cannot** swap in a friendlier dataset
+- Agent **cannot** adjust the tokenizer to game the metric
+- Result: Either improved on locked metric → keep. Or didn't → revert.
+
+**Why the results held:**
+- 700 experiments, 20 kept
+- Applied to 2x larger model → **all 20 transferred**
+- Gains were real because agent had zero ability to fake them
+
+**Shopify validation:** 37 experiments → 19% quality improvement → smaller model beat larger one
+
+### The Org Chart Pattern
+
+| Function | Agent Executes | Locked Eval | Human Defines |
+|----------|---------------|-------------|---------------|
+| **Sales** | Writes outbound sequences | Reply quality score | Targeting criteria |
+| **Product** | Ships variants | Retention metrics | Experiment brief |
+| **Recruiting** | Screens candidates | Calibrated rubric | Role definition |
+| **Marketing** | Creates campaigns | Conversion pipeline | Strategy |
+
+### Application to STAGE
+
+| Surface | Agent Executes | Locked Eval | Human Defines |
+|---------|---------------|-------------|---------------|
+| **Chatbot** | Prompt variations | Return rate (locked Amplitude query) | What "good conversation" means |
+| **Push** | Copy/timing variants | Open rate pipeline | Targeting strategy |
+| **Recommendations** | Ranking logic | CTR + session depth | Content philosophy |
+| **UA Creative** | Ad variants | CAC from locked attribution | Audience definition |
+
+### The Principle
+
+**Separation of concerns:**
+1. **Human** sets strategy (program.md)
+2. **Agent** executes iterations (train.py)
+3. **Locked eval** judges results (prepare.py) — neither human nor agent can touch mid-run
+
+This is why autoresearch works. This is the org structure for AI-augmented companies.
+
+---
+
 *Reference document — do not delete*
