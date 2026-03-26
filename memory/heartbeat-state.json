@@ -1,16 +1,9 @@
 {
   "lastChecks": {
-    "email": 1774335880,
-    "calendar": 1774332241,
-    "slack_dm": 1774458540,
-    "slack_tier1": 1774418680,
-    "netlify_health": 1774418680,
-    "weather": null,
-    "slack_scan": 1774458540,
-    "netlify": 1774418680
+    "slack_scan": 1774713180,
+    "dm_check": 1774713180,
+    "netlify_health": 1774713180
   },
-  "lastHeartbeat": "2026-03-25T17:09:00Z",
-  "lastSlackUserRefresh": "1774155645",
-  "lastDmCheck": 1774418680,
-  "lastChannelDiff": 1774453020
+  "lastHeartbeat": "2026-03-26T14:13:00Z",
+  "notes": "HMT running townhall - context enrichment session completed earlier"
 }

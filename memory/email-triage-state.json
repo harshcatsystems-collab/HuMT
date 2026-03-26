@@ -1,7 +1,9 @@
 {
-  "lastTriageUTC": "2026-03-25T03:00:00Z",
-  "urgent": 3,
-  "important": 2,
+  "lastTriageUTC": "2026-03-26T03:00:00Z",
+  "urgent": 0,
+  "important": 1,
   "fyi": 2,
-  "responseDebt": 0
+  "skip": 2,
+  "responseDebt": 0,
+  "notes": "Inbox light — 5 unread total. No emails older than 24h from key senders. Vismit shared M0 deck (FYI). GCP verification action required by Jun 12."
 }

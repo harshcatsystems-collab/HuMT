@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoresearch Executive Brief — STAGE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Google+Sans+Text:wght@400;500&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Google Sans Text', 'Segoe UI', sans-serif;
+            line-height: 1.8;
+            color: #1a1a1a;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 48px 32px;
+            background: #fff;
+        }
+        
+        h1, h2, h3 { font-family: 'Google Sans', sans-serif; font-weight: 500; }
+        
+        h1 {
+            font-size: 2rem;
+            color: #1a73e8;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            font-size: 1rem;
+            color: #5f6368;
+            margin-bottom: 16px;
+        }
+        
+        .attribution {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 32px;
+            font-size: 0.9rem;
+            color: #5f6368;
+            border-bottom: 2px solid #e8eaed;
+        }
+        
+        .attribution a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        
+        .attribution a:hover {
+            text-decoration: underline;
+        }
+        
+        h2 {
+            font-size: 1.3rem;
+            color: #202124;
+            margin: 32px 0 16px 0;
+        }
+        
+        p { margin-bottom: 16px; }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f0fe 0%, #d2e3fc 100%);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        
+        .highlight-box h3 {
+            color: #1967d2;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 24px 0;
+            gap: 16px;
+        }
+        
+        .stat-box {
+            flex: 1;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-family: 'Google Sans', sans-serif;
+            font-size: 2rem;
+            font-weight: 500;
+            color: #1a73e8;
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: #5f6368;
+            margin-top: 4px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #e8eaed;
+        }
+        
+        th {
+            background: #f8f9fa;
+            font-family: 'Google Sans', sans-serif;
+            font-weight: 500;
+            color: #5f6368;
+        }
+        
+        .priority-high {
+            color: #1e8e3e;
+            font-weight: 500;
+        }
+        
+        .key-insight {
+            background: #fef7e0;
+            border-left: 4px solid #f9ab00;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .key-insight strong {
+            color: #e37400;
+        }
+        
+        .quote {
+            font-style: italic;
+            color: #5f6368;
+            border-left: 3px solid #dadce0;
+            padding-left: 16px;
+            margin: 20px 0;
+        }
+        
+        .action-item {
+            background: #e6f4ea;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 12px 0;
+        }
+        
+        .action-item strong {
+            color: #1e8e3e;
+        }
+        
+        ul, ol {
+            margin: 16px 0 16px 24px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .references {
+            background: #f8f9fa;
+            border-top: 2px solid #e8eaed;
+            padding: 24px;
+            margin-top: 48px;
+        }
+        
+        .references h3 {
+            color: #5f6368;
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        
+        .references ul {
+            list-style: none;
+            margin: 0;
+        }
+        
+        .references li {
+            margin-bottom: 8px;
+        }
+        
+        .references a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        
+        .references a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid #e8eaed;
+            color: #5f6368;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Autoresearch at STAGE</h1>
+    <p class="subtitle">Executive Brief — March 2026</p>
+    
+    <div class="attribution">
+        <strong>Pattern originated by</strong> <a href="https://github.com/karpathy/autoresearch" target="_blank">Andrej Karpathy</a> (March 2026), 
+        adapted for STAGE via the Autoresearch for Character Bots initiative.
+    </div>
+
+    <h2>What Is Autoresearch?</h2>
+    
+    <p>Autoresearch is a workflow pattern for <strong>autonomous experimentation</strong>. An AI agent reads a goal, proposes changes, runs experiments, keeps what works, discards what doesn't — and repeats overnight without human involvement.</p>
+    
+    <p>Andrej Karpathy (former Tesla AI lead, OpenAI co-founder) open-sourced the pattern in March 2026. His <a href="https://github.com/karpathy/autoresearch" target="_blank">repo</a> hit 47,000 GitHub stars in one week.</p>
+    
+    <div class="stat-row">
+        <div class="stat-box">
+            <div class="stat-number">700</div>
+            <div class="stat-label">Experiments in 2 days<br>(Karpathy)</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">53%</div>
+            <div class="stat-label">Faster parsing<br>(Shopify Liquid)</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">~$100</div>
+            <div class="stat-label">Cost per overnight<br>run</div>
+        </div>
+    </div>
+    
+    <p class="quote">"Any metric you care about that is reasonably efficient to evaluate can be autoresearched by an agent swarm." — Andrej Karpathy</p>
+
+    <h2>The Paradigm Shift</h2>
+    
+    <div class="key-insight">
+        <strong>Old model:</strong> Write PRD → Build → Test → Iterate (30 experiments/year)<br>
+        <strong>New model:</strong> Define metric → Agent experiments overnight → Curate winners (36,500/year)
+    </div>
+    
+    <p>The spec didn't die — it moved. Instead of writing detailed PRDs upfront, PMs now define <strong>what "good" looks like</strong> (the evaluation function), and agents explore the solution space.</p>
+    
+    <p>The new constraint isn't "can we build this?" — it's <strong>"can we measure success?"</strong></p>
+    
+    <p>For more on how this shifts the PM role, see <a href="https://www.news.aakashg.com/p/autoresearch-guide-for-pms" target="_blank">Aakash Gupta's PM guide</a>.</p>
+
+    <h2>Why This Matters for STAGE</h2>
+    
+    <p>STAGE already has the ingredients:</p>
+    <ul>
+        <li><strong>Clear metrics</strong> — TCR, LTV, chat depth, watch time</li>
+        <li><strong>High volume</strong> — Millions of users, thousands of content pieces</li>
+        <li><strong>Experiment culture</strong> — Full Funnel Sprint is already prototype-first</li>
+    </ul>
+    
+    <p>What's missing is the <strong>autonomous loop</strong>: automated eval → agent iteration → overnight experiments → morning curation.</p>
+    
+    <div class="highlight-box">
+        <h3>The Opportunity</h3>
+        <p>Character boards alone: ~150 experiments/night at ~$80/night. Within 4 weeks, the system generates a <strong>research journal</strong> of encoded knowledge:</p>
+        <p><em>"Bhojpuri audiences respond 22% better to characters that initiate storytelling vs. wait for questions."</em></p>
+        <p>No competitor can buy this. It comes from running the loop on your users, with your content, at your scale.</p>
+    </div>
+
+    <h2>Application Surfaces at STAGE</h2>
+    
+    <table>
+        <tr>
+            <th>Surface</th>
+            <th>Metric</th>
+            <th>Priority</th>
+        </tr>
+        <tr>
+            <td>Character Boards</td>
+            <td>Weighted chat depth</td>
+            <td class="priority-high">🥇 Highest</td>
+        </tr>
+        <tr>
+            <td>Push Notifications</td>
+            <td>Open rate × D1 return</td>
+            <td class="priority-high">🥇 Highest</td>
+        </tr>
+        <tr>
+            <td>Homepage / Discovery</td>
+            <td>CTR × session conversion</td>
+            <td>🥈 High</td>
+        </tr>
+        <tr>
+            <td>Promos</td>
+            <td>IR × TCR × D7 retention</td>
+            <td>🥉 Medium</td>
+        </tr>
+        <tr>
+            <td>UA Creative</td>
+            <td>Install cost × TCR × LTV</td>
+            <td>🥉 Medium</td>
+        </tr>
+    </table>
+    
+    <p>STAGE's Autoresearch for Character Bots provides the complete architecture for character boards — the highest-confidence starting point.</p>
+
+    <h2>Investment Required</h2>
+    
+    <table>
+        <tr>
+            <th>Resource</th>
+            <th>Estimate</th>
+        </tr>
+        <tr>
+            <td>Engineering time</td>
+            <td>5 weeks (2-3 engineers with AI coding agents)</td>
+        </tr>
+        <tr>
+            <td>API costs (ongoing)</td>
+            <td>~$80-100/night per surface</td>
+        </tr>
+        <tr>
+            <td>Infrastructure</td>
+            <td>GrowthBook (self-hosted), DVC, Langfuse</td>
+        </tr>
+        <tr>
+            <td>PM time</td>
+            <td>~4 hours to write first eval spec</td>
+        </tr>
+    </table>
+
+    <h2>Expected ROI</h2>
+    
+    <div class="stat-row">
+        <div class="stat-box">
+            <div class="stat-number">15%</div>
+            <div class="stat-label">Chat depth improvement<br>Week 1</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Character archetypes<br>Week 4</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Compounding<br>knowledge</div>
+        </div>
+    </div>
+    
+    <p>By Month 3, the research journal becomes the most valuable product intelligence artifact at STAGE — encoded knowledge about what makes regional audiences engage, discovered at a velocity no human team could match.</p>
+
+    <h2>Risks & Guardrails</h2>
+    
+    <p><strong>Primary risk:</strong> Optimizing the wrong metric (Goodhart's Law). The agent will find ways to game any proxy metric.</p>
+    
+    <p><strong>Mitigation:</strong> Seven guardrails built into the architecture:</p>
+    <ol>
+        <li>Composite metrics with quality gates</li>
+        <li>Bounded mutations (prevent wild swings)</li>
+        <li>Cross-character diversity constraints</li>
+        <li><strong>Proxy-true correlation monitoring</strong> (pause if chat depth stops predicting retention)</li>
+        <li>Constitutional checks (LLM screens for manipulation)</li>
+        <li>Red-team adversarial testing</li>
+        <li>Human-in-the-loop checkpoints</li>
+    </ol>
+
+    <h2>The One-Line Summary</h2>
+    
+    <div class="key-insight">
+        <strong>Autoresearch compresses the cost of iteration to near-zero. The new constraint is: can you write an evaluator that captures what actually matters?</strong>
+    </div>
+
+    <h2>Recommended Next Steps</h2>
+    
+    <div class="action-item">
+        <strong>Week 1:</strong> Pilot with one character, one variable class (reply length). Prove the loop works.
+    </div>
+    
+    <div class="action-item">
+        <strong>Week 2-3:</strong> Expand to 3 character archetypes. Document learnings.
+    </div>
+    
+    <div class="action-item">
+        <strong>Week 4:</strong> Cross-pod sharing session. First pod lead teaches second.
+    </div>
+    
+    <div class="action-item">
+        <strong>Month 2:</strong> Extend to push notifications (simpler loop, high impact).
+    </div>
+
+    <div class="references">
+        <h3>Source References</h3>
+        <ul>
+            <li><strong>Karpathy's Autoresearch Repo:</strong> <a href="https://github.com/karpathy/autoresearch" target="_blank">github.com/karpathy/autoresearch</a></li>
+            <li><strong>Aakash Gupta's PM Guide:</strong> <a href="https://www.news.aakashg.com/p/autoresearch-guide-for-pms" target="_blank">news.aakashg.com/p/autoresearch-guide-for-pms</a></li>
+            <li><strong>STAGE's Autoresearch for Character Bots:</strong> Internal architecture document</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>STAGE Autoresearch Executive Brief — v1.0 — March 2026</p>
+        <p>Full PM Playbook and Implementation Guide available separately.</p>
+    </footer>
+</body>
+</html>

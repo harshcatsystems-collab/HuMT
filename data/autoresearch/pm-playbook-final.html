@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoresearch PM Playbook — STAGE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Google+Sans+Text:wght@400;500&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Google Sans Text', 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 24px;
+            background: #fafafa;
+        }
+        
+        h1, h2, h3, h4 { font-family: 'Google Sans', sans-serif; font-weight: 500; }
+        
+        h1 {
+            font-size: 2.2rem;
+            color: #1a73e8;
+            margin-bottom: 8px;
+            border-bottom: 3px solid #1a73e8;
+            padding-bottom: 16px;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            color: #5f6368;
+            margin-bottom: 16px;
+        }
+        
+        .attribution {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 32px;
+            font-size: 0.95rem;
+            color: #5f6368;
+        }
+        
+        .attribution a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        
+        .attribution a:hover {
+            text-decoration: underline;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            color: #202124;
+            margin: 40px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e8eaed;
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+            color: #1a73e8;
+            margin: 24px 0 12px 0;
+        }
+        
+        h4 {
+            font-size: 1rem;
+            color: #5f6368;
+            margin: 16px 0 8px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        p { margin-bottom: 16px; }
+        
+        .callout {
+            background: linear-gradient(135deg, #e8f0fe 0%, #d2e3fc 100%);
+            border-left: 4px solid #1a73e8;
+            padding: 20px 24px;
+            margin: 24px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .callout-warning {
+            background: linear-gradient(135deg, #fef7e0 0%, #feefc3 100%);
+            border-left-color: #f9ab00;
+        }
+        
+        .callout-success {
+            background: linear-gradient(135deg, #e6f4ea 0%, #ceead6 100%);
+            border-left-color: #34a853;
+        }
+        
+        .callout-title {
+            font-family: 'Google Sans', sans-serif;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #1a73e8;
+        }
+        
+        .callout-warning .callout-title { color: #e37400; }
+        .callout-success .callout-title { color: #1e8e3e; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+        
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #e8eaed;
+        }
+        
+        th {
+            background: #f8f9fa;
+            font-family: 'Google Sans', sans-serif;
+            font-weight: 500;
+            color: #5f6368;
+        }
+        
+        tr:hover { background: #f8f9fa; }
+        
+        code {
+            background: #f1f3f4;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background: #202124;
+            color: #e8eaed;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 16px 0;
+            font-size: 0.9rem;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        
+        ul, ol {
+            margin: 16px 0 16px 24px;
+        }
+        
+        li { margin-bottom: 8px; }
+        
+        .decision-tree {
+            background: #fff;
+            border: 2px solid #e8eaed;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        
+        .decision-node {
+            background: #f8f9fa;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 12px 0;
+        }
+        
+        .decision-yes {
+            border-left: 4px solid #34a853;
+        }
+        
+        .decision-no {
+            border-left: 4px solid #ea4335;
+        }
+        
+        .template-box {
+            background: #fff;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+        
+        .template-title {
+            font-family: 'Google Sans', sans-serif;
+            font-weight: 500;
+            color: #1a73e8;
+            margin-bottom: 16px;
+            font-size: 1.1rem;
+        }
+        
+        .example-box {
+            background: #e8f0fe;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+        
+        .example-title {
+            font-family: 'Google Sans', sans-serif;
+            font-weight: 500;
+            color: #1967d2;
+            margin-bottom: 12px;
+        }
+        
+        .toc {
+            background: #fff;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        
+        .toc-title {
+            font-family: 'Google Sans', sans-serif;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+        
+        .toc ul {
+            list-style: none;
+            margin: 0;
+        }
+        
+        .toc li {
+            padding: 4px 0;
+        }
+        
+        .toc a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        .metric-card {
+            display: inline-block;
+            background: #1a73e8;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-family: 'Google Sans', sans-serif;
+            font-weight: 500;
+            margin: 4px;
+        }
+        
+        .quick-ref {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .references {
+            background: #f8f9fa;
+            border-top: 2px solid #e8eaed;
+            padding: 24px;
+            margin-top: 48px;
+        }
+        
+        .references h3 {
+            color: #5f6368;
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        
+        .references ul {
+            list-style: none;
+            margin: 0;
+        }
+        
+        .references li {
+            margin-bottom: 8px;
+        }
+        
+        .references a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        
+        .references a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid #e8eaed;
+            color: #5f6368;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Autoresearch PM Playbook</h1>
+    <p class="subtitle">A practical guide for STAGE Pod Leads and PMs to run autonomous experiments</p>
+    
+    <div class="attribution">
+        <strong>Lineage:</strong> Adapted from <a href="https://github.com/karpathy/autoresearch" target="_blank">Karpathy's autoresearch pattern</a>, 
+        <a href="https://www.news.aakashg.com/p/autoresearch-guide-for-pms" target="_blank">Aakash Gupta's PM guide</a>, 
+        and STAGE's Autoresearch for Character Bots architecture.
+    </div>
+    
+    <div class="toc">
+        <div class="toc-title">Contents</div>
+        <ul>
+            <li><a href="#pitch">1. The 60-Second Pitch</a></li>
+            <li><a href="#fit">2. Is My Problem a Good Fit?</a></li>
+            <li><a href="#eval">3. Writing Your Eval (The Hard Part)</a></li>
+            <li><a href="#goal">4. Writing Your Goal Spec</a></li>
+            <li><a href="#loops">5. The Loop Options</a></li>
+            <li><a href="#surfaces">6. Quick Start by Surface</a></li>
+            <li><a href="#faq">7. FAQ & Troubleshooting</a></li>
+        </ul>
+    </div>
+
+    <h2 id="pitch">1. The 60-Second Pitch</h2>
+    
+    <div class="callout callout-success">
+        <div class="callout-title">The Shopify Story</div>
+        <p>Tobias Lütke (Shopify CEO) ran autoresearch on their Liquid templating engine overnight. <strong>93 automated commits. 53% faster parsing. 61% fewer allocations.</strong></p>
+        <p>Cost: ~$100 in API calls. Time: While he slept.</p>
+    </div>
+    
+    <p>Autoresearch is a workflow pattern — not a product — for <strong>closed-loop autonomous experimentation</strong>. An AI agent reads a goal, proposes changes, runs experiments, keeps what works, discards what doesn't. Repeat overnight.</p>
+    
+    <p><strong>The math:</strong></p>
+    <ul>
+        <li>Manual A/B testing: ~30 experiments/year</li>
+        <li>Autoresearch: ~150 experiments/night → <strong>36,500/year</strong></li>
+    </ul>
+    
+    <div class="callout">
+        <div class="callout-title">The Punchline</div>
+        <p><strong>If you can define "good" as a number, you can autoresearch it.</strong></p>
+    </div>
+
+    <h2 id="fit">2. Is My Problem a Good Fit?</h2>
+    
+    <p>Answer three questions. Takes 5 minutes.</p>
+    
+    <div class="decision-tree">
+        <h4>Question 1: Do I have a metric that's automatically computable?</h4>
+        <p>No human judgment needed to score. A script can calculate it.</p>
+        
+        <div class="decision-node decision-yes">
+            <strong>✅ YES examples:</strong>
+            <ul>
+                <li>Chat depth per session (count messages)</li>
+                <li>Push notification open rate (events / sends)</li>
+                <li>CTR on homepage rail (clicks / impressions)</li>
+                <li>IR × TCR composite (math on existing metrics)</li>
+            </ul>
+        </div>
+        
+        <div class="decision-node decision-no">
+            <strong>❌ NO examples:</strong>
+            <ul>
+                <li>"Content quality" (requires human review)</li>
+                <li>"User satisfaction" (unless you have a proxy)</li>
+                <li>"Brand alignment" (subjective)</li>
+            </ul>
+            <p><em>Fix: Define a proxy metric. "Content quality" → first-episode completion rate.</em></p>
+        </div>
+        
+        <h4>Question 2: Do I have ONE thing I can change?</h4>
+        <p>A prompt, a config file, a ranking weight, a copy variant. Single, bounded scope.</p>
+        
+        <div class="decision-node decision-yes">
+            <strong>✅ YES examples:</strong>
+            <ul>
+                <li>Character persona config YAML</li>
+                <li>Push notification copy template</li>
+                <li>Homepage rail ordering weights</li>
+                <li>Promo title/thumbnail selection</li>
+            </ul>
+        </div>
+        
+        <div class="decision-node decision-no">
+            <strong>❌ NO examples:</strong>
+            <ul>
+                <li>"The entire recommendation system"</li>
+                <li>"Our content strategy"</li>
+                <li>"The user experience"</li>
+            </ul>
+            <p><em>Fix: Narrow scope. "Recommendation system" → "rail 3 ranking weights."</em></p>
+        </div>
+        
+        <h4>Question 3: Do I have enough volume?</h4>
+        <p>>100 events/day for the metric. Enough to detect signal.</p>
+        
+        <div class="decision-node decision-yes">
+            <strong>✅ YES examples:</strong>
+            <ul>
+                <li>1000+ chat sessions/day</li>
+                <li>10K+ push notifications/day</li>
+                <li>100K+ homepage impressions/day</li>
+            </ul>
+        </div>
+        
+        <div class="decision-node decision-no">
+            <strong>❌ NO examples:</strong>
+            <ul>
+                <li>New feature with 50 users/week</li>
+                <li>B2B sales (10 deals/month)</li>
+            </ul>
+            <p><em>Fix: Use synthetic testing first, or wait for volume.</em></p>
+        </div>
+    </div>
+    
+    <div class="callout callout-success">
+        <div class="callout-title">All Three YES?</div>
+        <p>You're ready. Proceed to Section 3.</p>
+    </div>
+    
+    <div class="callout callout-warning">
+        <div class="callout-title">Any NO?</div>
+        <p>Fix that constraint first. The playbook tells you how above.</p>
+    </div>
+
+    <h2 id="eval">3. Writing Your Eval (The Hard Part)</h2>
+    
+    <p>This is where most people fail. The eval is not a test suite — <strong>the eval IS the product spec.</strong></p>
+    
+    <p>For deeper guidance on eval design, see <a href="https://www.news.aakashg.com/p/autoresearch-guide-for-pms" target="_blank">Aakash Gupta's PM guide</a>.</p>
+    
+    <div class="template-box">
+        <div class="template-title">📋 Template: The Eval Spec</div>
+        <pre><code>name: [your_eval_name]
+surface: [what you're optimizing]
+
+primary_metric: [the number]
+calculation: [exact formula]
+
+guardrails:
+  - hard_reject_if: [condition 1]
+  - hard_reject_if: [condition 2]
+  - hard_reject_if: [condition 3]
+
+success_threshold: [% improvement to count as winner]
+volume_needed: [events for statistical significance]
+proxy_correlation: [what true metric this should predict]</code></pre>
+    </div>
+    
+    <div class="example-box">
+        <div class="example-title">Example: Character Board Chat Depth</div>
+        <pre><code>name: character_chat_depth_v1
+surface: Character board conversations
+
+primary_metric: weighted_chat_depth
+calculation: messages_per_session × quality_multiplier
+
+guardrails:
+  - hard_reject_if: avg_user_message_length < 8 chars
+  - hard_reject_if: bot_message_length > 3× user_message_length
+  - hard_reject_if: user_sentiment_score < 0.3
+  - hard_reject_if: repetition_ratio > 40%
+
+success_threshold: 5% improvement
+volume_needed: 200 conversations per variant
+proxy_correlation: 7-day return rate (target r > 0.3)</code></pre>
+    </div>
+    
+    <div class="example-box">
+        <div class="example-title">Example: Push Notification Effectiveness</div>
+        <pre><code>name: push_notification_v1
+surface: Push notification copy + timing
+
+primary_metric: open_rate × D1_return_rate
+calculation: (opens / sends) × (D1_actives / openers)
+
+guardrails:
+  - hard_reject_if: unsubscribe_rate > 2× baseline
+  - hard_reject_if: open_rate < 50% of baseline
+  - hard_reject_if: D1_return < baseline
+
+success_threshold: 10% improvement
+volume_needed: 5000 sends per variant
+proxy_correlation: D7 retention (target r > 0.4)</code></pre>
+    </div>
+    
+    <h3>Common Eval Mistakes</h3>
+    
+    <table>
+        <tr>
+            <th>Mistake</th>
+            <th>Problem</th>
+            <th>Fix</th>
+        </tr>
+        <tr>
+            <td>"Improve engagement"</td>
+            <td>Not a number</td>
+            <td>Define: sessions × avg_duration × return_rate</td>
+        </tr>
+        <tr>
+            <td>Raw message count</td>
+            <td>Can be gamed (short messages)</td>
+            <td>Add quality multiplier + length guardrail</td>
+        </tr>
+        <tr>
+            <td>5% threshold</td>
+            <td>Too tight — noise looks like signal</td>
+            <td>Use 10-15% for early experiments</td>
+        </tr>
+        <tr>
+            <td>No guardrails</td>
+            <td>Agent will game the metric</td>
+            <td>Always add 3+ hard reject conditions</td>
+        </tr>
+        <tr>
+            <td>No proxy check</td>
+            <td>Optimizing wrong thing</td>
+            <td>Track correlation with true business metric</td>
+        </tr>
+    </table>
+
+    <h2 id="goal">4. Writing Your Goal Spec (program.md)</h2>
+    
+    <p>The goal spec tells the agent what to optimize and how. This is adapted from <a href="https://github.com/karpathy/autoresearch" target="_blank">Karpathy's original format</a>.</p>
+    
+    <div class="template-box">
+        <div class="template-title">📋 Template: Goal Spec</div>
+        <pre><code># Goal
+[One sentence: what you're optimizing for]
+
+# The Asset
+File: [path to the config/prompt/template]
+Format: [YAML/JSON/text]
+
+# What You Can Change (Mutable)
+- [field 1]: bounds [min-max] or options [a, b, c]
+- [field 2]: bounds [min-max]
+- [field 3]: free text, max [N] chars
+
+# What You Cannot Change (Frozen)
+- [field A]: [reason]
+- [field B]: [reason]
+- Safety guardrails: NEVER modify
+
+# The Loop
+1. Read current config and last 5 experiment results
+2. Propose ONE change with hypothesis (why you think this helps)
+3. Run eval (calls eval harness, waits for score)
+4. If score > baseline + [threshold]%, commit change
+5. If score <= baseline, revert and try different approach
+6. Log result with hypothesis + outcome
+7. NEVER STOP until [stopping condition]
+
+# Stopping Conditions
+- Stop after [N] experiments
+- Stop if [M] consecutive failures
+- Stop at [time]
+
+# Constraints
+- Max [X] changes per experiment (usually 1)
+- Mutation bounds: max ±[Y]% per field per experiment
+- Must maintain [invariant]</code></pre>
+    </div>
+    
+    <div class="example-box">
+        <div class="example-title">Example: Character Board Goal Spec</div>
+        <pre><code># Goal
+Maximize weighted chat depth for Haryanvi action characters
+
+# The Asset
+File: configs/characters/haryanvi_action_hero.yaml
+Format: YAML with immutable/semi-mutable/mutable sections
+
+# What You Can Change (Mutable)
+- dialect_density: bounds [0.3, 0.9]
+- question_frequency: bounds [0.1, 0.5]
+- emoji_usage: bounds [0, 0.3]
+- message_length_target: bounds [20, 150] chars
+- cliffhanger_frequency: bounds [0, 0.4]
+- memory_callback_rate: bounds [0.1, 0.5]
+
+# What You Cannot Change (Frozen)
+- character_name: Core identity
+- backstory: Canonical lore
+- safety_guardrails: Content compliance
+- content_rating: Legal requirement
+
+# The Loop
+1. Read current config and last 10 experiment results
+2. Propose ONE field change with hypothesis
+3. Run 50 synthetic conversations via eval harness
+4. If weighted_chat_depth > baseline + 5%, commit
+5. If not, revert and try different field
+6. Log: field, old_value, new_value, hypothesis, score, outcome
+7. NEVER STOP until 150 experiments or 8 hours
+
+# Stopping Conditions
+- Stop after 150 experiments
+- Stop if 20 consecutive failures
+- Stop at 7:00 AM IST
+
+# Constraints
+- Max 1 field change per experiment
+- Mutation bounds: max ±0.15 per field
+- Must pass all 4 guardrails in eval spec</code></pre>
+    </div>
+
+    <h2 id="loops">5. The Loop Options (Pick Your Speed)</h2>
+    
+    <table>
+        <tr>
+            <th>Option</th>
+            <th>Speed</th>
+            <th>User Risk</th>
+            <th>When to Use</th>
+        </tr>
+        <tr>
+            <td><strong>Pure Synthetic</strong></td>
+            <td>~150/night</td>
+            <td>Zero</td>
+            <td>Early exploration, high uncertainty, character boards</td>
+        </tr>
+        <tr>
+            <td><strong>Shadow Testing</strong></td>
+            <td>~10/day</td>
+            <td>Near-zero</td>
+            <td>Validating synthetic winners before live</td>
+        </tr>
+        <tr>
+            <td><strong>Live Bandit</strong></td>
+            <td>~6/day</td>
+            <td>Low (with guardrails)</td>
+            <td>High-traffic surfaces, push notifications</td>
+        </tr>
+        <tr>
+            <td><strong>Hybrid</strong></td>
+            <td>150 + 6</td>
+            <td>Optimal</td>
+            <td>Best of both — recommended for most surfaces</td>
+        </tr>
+    </table>
+    
+    <h3>The Hybrid Loop (Recommended)</h3>
+    
+    <div class="quick-ref">
+        <h4>The 24-Hour Clock</h4>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Phase</th>
+                <th>What Happens</th>
+            </tr>
+            <tr>
+                <td>11pm-7am</td>
+                <td>Synthetic Screening</td>
+                <td>Agent runs ~150 mutations. Keeps anything >5% better. Cost: ~$80.</td>
+            </tr>
+            <tr>
+                <td>7am-9am</td>
+                <td>Agent Curates</td>
+                <td>Reviews ~15 winners. Groups by variable. Max 2 per type.</td>
+            </tr>
+            <tr>
+                <td>9am-9pm</td>
+                <td>Live Bandit</td>
+                <td>Thompson Sampling. 5-10% per variant. Auto-kills losers.</td>
+            </tr>
+            <tr>
+                <td>9pm-11pm</td>
+                <td>Promotion</td>
+                <td>Winners → new baseline. Agent logs learnings.</td>
+            </tr>
+        </table>
+    </div>
+    
+    <p><strong>The Narrowing Funnel:</strong></p>
+    <p>~150 mutations → ~15 pass synthetic → 6-8 go live → 1-2 winners → new baseline → repeat</p>
+
+    <h2 id="surfaces">6. Quick Start by Surface</h2>
+    
+    <h3>6.1 Character Boards</h3>
+    <div class="quick-ref">
+        <p><strong>Eval:</strong> Weighted chat depth (messages × quality multiplier)</p>
+        <p><strong>Asset:</strong> Character config YAML</p>
+        <p><strong>Loop:</strong> Hybrid (synthetic night + live bandit day)</p>
+        <p><strong>Week 1 Goal:</strong> 15% improvement on pilot character</p>
+        <p><strong>Reference:</strong> STAGE's Autoresearch for Character Bots architecture</p>
+    </div>
+    
+    <h3>6.2 Push Notifications</h3>
+    <div class="quick-ref">
+        <p><strong>Eval:</strong> open_rate × D1_return</p>
+        <p><strong>Asset:</strong> Copy template + timing rules</p>
+        <p><strong>Loop:</strong> Live bandit (no synthetic needed — real users are the test)</p>
+        <p><strong>Week 1 Goal:</strong> 10% improvement in composite metric</p>
+        <p><strong>Setup:</strong> GrowthBook + existing push infrastructure</p>
+    </div>
+    
+    <h3>6.3 Homepage / Content Discovery</h3>
+    <div class="quick-ref">
+        <p><strong>Eval:</strong> CTR × session_conversion × watch_time</p>
+        <p><strong>Asset:</strong> Rail ranking weights, ordering logic</p>
+        <p><strong>Loop:</strong> Live bandit (high volume)</p>
+        <p><strong>Week 1 Goal:</strong> 5% improvement in discovery breadth</p>
+        <p><strong>Integration:</strong> Connect to existing ML pipeline</p>
+    </div>
+    
+    <h3>6.4 Promos</h3>
+    <div class="quick-ref">
+        <p><strong>Eval:</strong> IR × TCR × D7_retention</p>
+        <p><strong>Asset:</strong> CSL, format selection, title/thumbnail</p>
+        <p><strong>Loop:</strong> Live bandit (already doing this manually — automate)</p>
+        <p><strong>Week 1 Goal:</strong> Automate what promo team does manually</p>
+        <p><strong>Note:</strong> You're already running 69 assets — this is formalization</p>
+    </div>
+    
+    <h3>6.5 UA Creative</h3>
+    <div class="quick-ref">
+        <p><strong>Eval:</strong> install_cost × TCR × LTV_proxy</p>
+        <p><strong>Asset:</strong> Ad copy, thumbnail, targeting params</p>
+        <p><strong>Loop:</strong> Platform bandit (Meta/Google have built-in optimization)</p>
+        <p><strong>Week 1 Goal:</strong> Feed more variants to platform algorithms</p>
+        <p><strong>Note:</strong> Agent generates variants, platforms test them</p>
+    </div>
+
+    <h2 id="faq">7. FAQ & Troubleshooting</h2>
+    
+    <h3>"My synthetic winners don't transfer to real users"</h3>
+    <p><strong>Problem:</strong> Your synthetic personas don't match real users.</p>
+    <p><strong>Fix:</strong> Build personas from real chat logs. Update them weekly based on live data. Track synthetic-to-real correlation and tune until >70%.</p>
+    
+    <h3>"The agent keeps trying the same thing"</h3>
+    <p><strong>Problem:</strong> Goal spec is too narrow, or agent isn't learning from failures.</p>
+    <p><strong>Fix:</strong> Expand the mutable field list. Add explicit instruction: "If last 3 experiments on [field] failed, try a different field."</p>
+    
+    <h3>"Metrics improved but business outcomes didn't"</h3>
+    <p><strong>Problem:</strong> Your eval is optimizing a bad proxy.</p>
+    <p><strong>Fix:</strong> Check proxy-true correlation. If chat depth doesn't correlate with 7-day return (r < 0.3), your eval is wrong. Redesign it.</p>
+    
+    <h3>"I don't have engineering resources"</h3>
+    <p><strong>Fix:</strong> Start manual. Run the loop by hand for 1 week:</p>
+    <ol>
+        <li>Morning: Write 3 variants of your asset</li>
+        <li>Day: Split traffic manually (GrowthBook)</li>
+        <li>Evening: Check metrics, pick winner</li>
+        <li>Next day: Repeat with winner as baseline</li>
+    </ol>
+    <p>This proves the pattern works. Then automate.</p>
+    
+    <h3>"How do I know if I'm reward-hacking?"</h3>
+    <p><strong>Warning signs:</strong></p>
+    <ul>
+        <li>Metric improves but user complaints increase</li>
+        <li>Metric improves but downstream conversion drops</li>
+        <li>Variants look "weird" to humans</li>
+        <li>Agent finds one trick and keeps exploiting it</li>
+    </ul>
+    <p><strong>Fix:</strong> Add guardrails. Run constitutional checks. Do blind human review every 5th generation.</p>
+    
+    <h3>Further Reading</h3>
+    <p>For deeper dives on specific topics, see <a href="https://www.news.aakashg.com/p/autoresearch-guide-for-pms" target="_blank">Aakash Gupta's comprehensive PM guide</a>.</p>
+
+    <div class="callout">
+        <div class="callout-title">Start Monday</div>
+        <p>Pick ONE surface. Write the eval spec. Write the goal spec. Run 10 experiments manually. Prove it works. Then automate.</p>
+        <p><strong>The first experiment should take <4 hours to set up.</strong></p>
+    </div>
+
+    <div class="references">
+        <h3>Source References</h3>
+        <ul>
+            <li><strong>Karpathy's Autoresearch Repo:</strong> <a href="https://github.com/karpathy/autoresearch" target="_blank">github.com/karpathy/autoresearch</a></li>
+            <li><strong>Aakash Gupta's PM Guide:</strong> <a href="https://www.news.aakashg.com/p/autoresearch-guide-for-pms" target="_blank">news.aakashg.com/p/autoresearch-guide-for-pms</a></li>
+            <li><strong>STAGE's Autoresearch for Character Bots:</strong> Internal architecture document</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>STAGE Autoresearch PM Playbook — v1.0 — March 2026</p>
+        <p>Questions? Reach out to the Growth Pod or Product team.</p>
+    </footer>
+</body>
+</html>

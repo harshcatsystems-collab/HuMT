@@ -5,30 +5,30 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-25 00:00 UTC (automated cron)
+## Last Verified: 2026-03-26 00:00 UTC (automated cron)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files + memory_search responded (provider: openai/text-embedding-3-small, hybrid mode) | 2026-03-25 |
-| 2 | Files | ✅ | workspace ls OK, 110+ memory files present, capability-status.md read/write confirmed | 2026-03-25 |
-| 3 | Terminal | ✅ | exec tool — `date` returned Wed Mar 25 00:00:06 UTC 2026 | 2026-03-25 |
-| 4 | Web Search | ✅ | Brave API returned result for date query (utctime.net, confirmed March 2026) | 2026-03-25 |
-| 5 | Gmail | ✅ | gog gmail search returned 3 messages incl. STAGE<>Goodwater invite, Vinay/Harsh weekly, Tailscale (latest Mar 24 16:58) | 2026-03-25 |
-| 6 | Calendar | ✅ | gog calendar list returned 10 events for Mar 25 (Tech-Product Standup, Mid-Sprint Review, M0 watcher, Dormants Watch, Meeting with Mr. Josy Joseph, Sarvam x Stage OTT, etc.) | 2026-03-25 |
-| 7 | Cron/Reminders | ✅ | 29 active jobs — this job execution proves it works; 0 errors on most jobs | 2026-03-25 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present in config | 2026-03-25 |
+| 1 | Memory | ✅ | Read/write workspace files + memory_search responded (provider: openai/text-embedding-3-small, hybrid mode) | 2026-03-26 |
+| 2 | Files | ✅ | workspace ls OK, capability-status.md read/write confirmed | 2026-03-26 |
+| 3 | Terminal | ✅ | exec tool — ls/echo/python3 all operational | 2026-03-26 |
+| 4 | Web Search | ✅ | Brave API returned result for date query (confirmed March 2026) | 2026-03-26 |
+| 5 | Gmail | ✅ | gog gmail search returned 2 messages (latest: Mar 25 20:03 Shane Lawson, Google Cloud action required) | 2026-03-26 |
+| 6 | Calendar | ✅ | gog calendar events returned 9 events for Mar 26 (Tech-Product Standup, M0 watcher, Town Hall, Reflect.Discuss.Recharge, Week 17 pregnancy, etc.) | 2026-03-26 |
+| 7 | Cron/Reminders | ✅ | Jobs active — this job execution proves it works | 2026-03-26 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present in config | 2026-03-26 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C**** present in skill config (openai-image-gen) | 2026-03-25 |
-| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — confirmed present in config | 2026-03-25 |
-| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — provider: openai/text-embedding-3-small, hybrid mode operational | 2026-03-25 |
-| 12 | Google Drive | ✅ | gog drive confirmed working (Gmail/Calendar auth = same token, both returned data) | 2026-03-25 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-25 |
+| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1CTP*** confirmed present in skill config | 2026-03-26 |
+| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — sk-proj-HC1CTP*** confirmed | 2026-03-26 |
+| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — provider: openai/text-embedding-3-small, hybrid mode operational | 2026-03-26 |
+| 12 | Google Drive | ✅ | gog drive working (Gmail/Calendar auth = same token, both returned live data) | 2026-03-26 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-26 |
 
-## ⚠️ Cron Job Warnings (2026-03-25)
+## ⚠️ Cron Job Warnings (2026-03-26)
 
 | Job | Consecutive Errors | Last Error | Note |
 |-----|--------------------|------------|------|
-| `slack:commitment-tracker` | 3 ⬆️ | Timed out at 300s (max) | Full Slack scan taking too long. Needs timeout tuning or scope reduction. ⚠️ Escalating — 3 consecutive timeouts. |
+| `slack:commitment-tracker` | 3 ⬆️ | Timed out at 300s (max) | Full Slack scan taking too long. Needs timeout tuning or scope reduction. ⚠️ Persisting — monitor. |
 | `divya-bedtime-diet-checkin` | 1 | ⚠️ ✉️ Message failed | Send to family group failed — monitor on next run |
 | `persona:monthly-evolution-review` | 1 | Message send failed | Delivery showed as delivered despite error — may be resolved |
 

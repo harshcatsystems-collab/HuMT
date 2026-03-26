@@ -29,6 +29,13 @@
       }
     }
   },
+  "checkins": {
+    "2026-03-26": {
+      "sent_at": "2026-03-26T21:00:00+05:30",
+      "message_id": "2719",
+      "status": "awaiting_response"
+    }
+  },
   "log": {
     "2026-03-24": {
       "sleep": {

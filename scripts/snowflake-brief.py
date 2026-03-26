@@ -31,8 +31,12 @@ def query(sql):
 def fmt_num(n):
     """Format number with commas."""
     if n is None: return "N/A"
+    if isinstance(n, str): return n
     if isinstance(n, float): n = int(n)
-    return f"{n:,}"
+    try:
+        return f"{n:,}"
+    except (TypeError, ValueError):
+        return str(n)
 
 def main():
     results = {}

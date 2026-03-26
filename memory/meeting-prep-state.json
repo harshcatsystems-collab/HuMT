@@ -1,76 +1,62 @@
 {
   "preppedToday": [
     {
-      "id": "3f0cckdcqf5oo499a61ib2n229_20260325T042000Z",
+      "id": "3f0cckdcqf5oo499a61ib2n229_20260326T042000Z",
       "summary": "Tech - Product Standup (Growth POD)",
-      "start": "2026-03-25T09:50:00+05:30",
-      "preppedAt": "2026-03-25T03:30:00Z",
+      "start": "2026-03-26T09:50:00+05:30",
+      "preppedAt": "2026-03-26T03:30:00Z",
       "topic": "growth"
     },
     {
-      "id": "57j054riais1pi966mi3uer4be_20260325T050000Z",
-      "summary": "Mid-Sprint Review Meeting",
-      "start": "2026-03-25T10:30:00+05:30",
-      "preppedAt": "2026-03-25T04:30:00Z",
-      "topic": "product_design"
-    },
-    {
-      "id": "73rhfktpi5os655o54oocbaphs_20260325T060000Z",
+      "id": "73rhfktpi5os655o54oocbaphs_20260326T060000Z",
       "summary": "M0 watcher % - 2 Week Plan - discussion",
-      "start": "2026-03-25T11:30:00+05:30",
-      "preppedAt": "2026-03-25T05:30:00Z",
+      "start": "2026-03-26T11:30:00+05:30",
+      "preppedAt": "2026-03-26T05:30:00Z",
       "topic": "retention"
     },
     {
-      "id": "3saeb94ahos7o3if0vre6re30v_20260325T063000Z",
+      "id": "3saeb94ahos7o3if0vre6re30v_20260326T063000Z",
       "summary": "DORMANTS WATCH - Previously watched - 2 Week plan",
-      "start": "2026-03-25T12:00:00+05:30",
-      "preppedAt": "2026-03-25T06:00:00Z",
+      "start": "2026-03-26T12:00:00+05:30",
+      "preppedAt": "2026-03-26T06:00:00Z",
       "topic": "retention"
     },
     {
-      "id": "0c7aahhdvv20srt8o3tfrsfd3n_20260325T070000Z",
+      "id": "0c7aahhdvv20srt8o3tfrsfd3n_20260326T070000Z",
       "summary": "Reactivation daily catchup",
-      "start": "2026-03-25T12:30:00+05:30",
-      "preppedAt": "2026-03-25T06:30:00Z",
+      "start": "2026-03-26T12:30:00+05:30",
+      "preppedAt": "2026-03-26T06:30:00Z",
       "topic": "retention"
     },
     {
-      "id": "62elh1hmvcnna83d7frv33pskv_20260325T073000Z",
+      "id": "62elh1hmvcnna83d7frv33pskv_20260326T073000Z",
       "summary": "Activation daily catchup",
-      "start": "2026-03-25T13:00:00+05:30",
-      "preppedAt": "2026-03-25T06:30:00Z",
+      "start": "2026-03-26T13:00:00+05:30",
+      "preppedAt": "2026-03-26T07:00:00Z",
       "topic": "growth"
     },
     {
-      "id": "1k8mci91m1k2tr0aql0el3bea4",
-      "summary": "Meeting with Mr. Josy Joseph",
-      "start": "2026-03-25T14:00:00+05:30",
-      "preppedAt": "2026-03-25T08:00:00Z",
+      "id": "6tovt4ko29p2ks93j8c89s33g1",
+      "summary": "Nisha X Harsh",
+      "start": "2026-03-26T14:30:00+05:30",
+      "preppedAt": "2026-03-26T08:30:00Z",
+      "topic": "people_culture"
+    },
+    {
+      "id": "i0r2ma4ftbcvoo86lh0b7efvh4_20260326T103000Z",
+      "summary": "Town Hall",
+      "start": "2026-03-26T16:00:00+05:30",
+      "preppedAt": "2026-03-26T10:00:00Z",
       "topic": "daily_ops"
     },
     {
-      "id": "1ic8tvtqta1049i5lrlimk48hp_20260325T093000Z",
-      "summary": "Bi-Monthly Research Update",
-      "start": "2026-03-25T15:00:00+05:30",
-      "preppedAt": "2026-03-25T09:00:00Z",
-      "topic": "consumer_insights"
-    },
-    {
-      "id": "7jrpcp85vijfn7s2j46r3qk7b2",
-      "summary": "Sarvam x Stage OTT - Intro",
-      "start": "2026-03-25T15:00:00+05:30",
-      "preppedAt": "2026-03-25T09:00:00Z",
-      "topic": "strategy"
-    },
-    {
-      "id": "7g889m0s8sbo3h7kluq44kgkm4",
-      "summary": "Cyril AM / STAGE",
-      "start": "2026-03-25T16:30:00+05:30",
-      "preppedAt": "2026-03-25T10:30:00Z",
-      "topic": "strategy"
+      "id": "735qsbbhbknjr1l0qtolqph7h3",
+      "summary": "Reflect. Discuss. Recharge.",
+      "start": "2026-03-26T18:00:00+05:30",
+      "preppedAt": "2026-03-26T12:00:00Z",
+      "topic": "daily_ops"
     }
   ],
-  "date": "2026-03-25",
-  "_lastUpdated": "2026-03-25T10:30:00Z"
+  "date": "2026-03-26",
+  "_lastUpdated": "2026-03-26T12:00:00Z"
 }

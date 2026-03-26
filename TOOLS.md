@@ -14,6 +14,19 @@ Environment-specific details for HMT's setup.
 
 ---
 
+## Snowflake (Data Warehouse)
+
+- **Account URL:** `KOCWHRB-LQ59958.snowflakecomputing.com`
+- **User:** `HARSH_MANI_TRIPATHI`
+- **Password:** `StageRedBlack!26`
+- **Warehouse:** `WH_ANALYSIS`
+- **Databases:**
+  - `analytics_prod.dbt_core` — Ready-made facts and dimensions (use this for metrics)
+  - `raw_prod` — Raw data
+- **Source:** Hemabh Kamboj (Mar 26, 2026)
+
+---
+
 ## Ports & Services
 
 | Service | Port | Notes |
