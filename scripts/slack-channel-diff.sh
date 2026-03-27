@@ -16,13 +16,24 @@ config = json.load(open('/home/harsh/.openclaw/openclaw.json'))
 bot_token = config['channels']['slack']['botToken']
 
 def fetch_all_member_channels(token):
-    """Paginate through ALL channels where bot is a member."""
+    """Paginate through ALL channels where bot is a member.
+    
+    CRITICAL: Uses users.conversations (not conversations.list) because:
+    - users.conversations returns ONLY channels the bot is in
+    - conversations.list with is_member filter has pagination bugs
+    - This was causing us to see only ~100 channels instead of 361+
+    
+    Fixed: 2026-03-27 after HMT caught the bug
+    """
     all_channels = {}
     cursor = ""
     page = 0
     
     for _ in range(50):  # safety limit
-        url = f"https://slack.com/api/conversations.list?types=public_channel,private_channel,mpim&exclude_archived=true&limit=200&cursor={cursor}"
+        # USE users.conversations - the CORRECT endpoint for "channels I'm in"
+        url = f"https://slack.com/api/users.conversations?types=public_channel,private_channel&exclude_archived=true&limit=200"
+        if cursor:
+            url += f"&cursor={cursor}"
         req = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}"})
         try:
             resp = json.loads(urllib.request.urlopen(req, timeout=15).read())
@@ -36,8 +47,8 @@ def fetch_all_member_channels(token):
         
         batch = resp.get("channels", [])
         for ch in batch:
-            if ch.get("is_member"):
-                all_channels[ch["id"]] = ch.get("name", "unknown")
+            # users.conversations only returns channels we're in, no need to check is_member
+            all_channels[ch["id"]] = ch.get("name", "unknown")
         
         page += 1
         cursor = resp.get("response_metadata", {}).get("next_cursor", "")
@@ -48,6 +59,7 @@ def fetch_all_member_channels(token):
     if cursor:
         print(f"WARNING: Pagination incomplete - stopped at page {page} with cursor still active", file=sys.stderr)
     
+    print(f"Fetched {len(all_channels)} channels across {page} pages", file=sys.stderr)
     return all_channels
 
 # Fetch current state

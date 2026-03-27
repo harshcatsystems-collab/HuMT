@@ -98,6 +98,10 @@
 - **Slack:** UEHET2Q2G | **Email:** vinay@stage.in
 - From Nunsar, Haryana (first engineer in family). SRM CS 2009-13. Started Badlega Bharat (2010) → WittyFeed → STAGE. LinkedIn: vinaykrsinghal. AI EA "Bittu"
 - **Observations:**
+  - **Mar 24 (Week of Mar 23):** Built a complete autoresearch architecture document for character board chat depth optimization — three-layer config, synthetic conversation engine, Goodhart's Law guardrails, lifecycle awareness (Session 1 vs Session 6+), 5-week implementation timeline. This wasn't strategic commentary — it was an engineering-grade system design. Shows Vinay operates at the intersection of strategy and technical execution, not just one or the other.
+  - **Mar 24:** Shared the autoresearch doc to a small group including HMT — co-founder-level strategic document shared for input, not approval. Peer-to-peer, not top-down.
+  - **Mar 26 (Townhall):** Posted LTV-first philosophy to #full-funnel-solver after the townhall: "There are two types of companies — how many can we buy vs keep?" Narrative alignment between his channel messaging and HMT's townhall framing. Vinay reinforcing the company message through informal channels.
+  - **Weekend pattern (confirmed):** Active 3-4 AM UTC on Sundays sharing AI tool links ("Insanity." was his reaction to one). Same founder weekend deep-research mode seen in previous weeks.
   - Recording-sensitive: immediately said "remove remove" when grey-area competitor revenue info was discussed on a recorded Blume call (Feb 18). Protective of what gets captured.
   - Asked about investment deck & projections in #founders_sync (Feb 20) — active on fundraising/investor materials.
 
@@ -109,6 +113,9 @@
   - Launched Content Strategy 2.0 in #content_strategy after 30+ day dormancy — drives format-first restructuring of content org. (Feb 23-24) [UPDATED 2026-03-01]
   - **Mar 15 (Sunday):** Active in #ai-native-performance-marketing on a Sunday — YouTube TOFU strategy + building a performance marketing agent. Founder-level weekend engagement: not ops catch-up, but strategic transformation thinking. Mirrors HMT's pattern of working deep on weekends when building something new. (Mar 15)
   - **Mar 19:** Reacted to Rohit's autoresearch POC with "wow - this is a major leap forward — once this POC goes through there are immense usecases where we can deploy this" + gave Amazon vouchers to Rohit and Komal on the spot. Recognition style: instant public praise + tangible material reward for breakthrough technical work. No delay, no "good job" — specific praise + immediate action.
+  - **Mar 25-26 (Week of Mar 23):** Posted new content concept "Safar" (long series, family drama-comedy, cultural road trip format) while simultaneously running the company townhall. Continues to generate content IP ideas alongside operations. Sent post-townhall LTV-first philosophy message to #full-funnel-solver — culture reinforcement through informal channels, not just formal presentations.
+  - **Mar 26 (Townhall framing):** Parveen's #full-funnel-solver post was philosophical framing to prime the team before the townhall: "Acquisition is a cost. Retention is revenue." — setting narrative before the event, not after. Thinks about internal communication as layered (informal Slack → formal presentation → informal follow-up).
+  - **Confirmed pattern:** Reinforces major company decisions through informal Slack posts before AND after formal events. Narrative management is ongoing, not episodic.
 
 **Shashank Vaishnav** — Co-Founder & CTO
 - **Slack:** UE0KTBS8P | **Email:** shashank@stage.in
@@ -171,6 +178,7 @@
   - **Mar 17:** Comprehensive response to co-founder pushback on Cricket Saathi direction — reframed with data, accepted feedback, shared concrete docs (product brief + execution roadmap). Didn't get defensive. 5-pillar IPL plan with World Cup validation data (avg listening 2→6.5 min). Frame: "I've tried to address each point" with specifics per item.
   - **Mar 20:** Responded to 10 co-founder feedback points point-by-point in #cricket-saathi — unprompted. Frame: "sharing as an update, not asking for approvals — the plan is moving." ESPNcricinfo internal API breakthrough ($0 vs Sportradar $15k/yr). 8 parallel workstreams sequenced for Match 1 (Mar 28). Confident, not defensive.
   - **Emerging pattern (2nd confirmed):** Stakeholder management under pressure = respond comprehensively, frame as update not request, show data. Strong execution trajectory into March.
+  - **Mar 27 (Week of Mar 23):** IPL Match 1 tomorrow (Mar 28) — Pranay has been executing 8 parallel streams: ESPNcricinfo API (stealth browser, $0 vs Sportradar $15k/yr), character-in-chat social layer (NOT commentator — strategic nuance), CLM notification strategy, autoresearch scoped for cricket, UI cultural refresh. Attended Autoresearch PM kickoff (calendar accepted Mar 27). **Trajectory:** Consistently delivering under high-stakes conditions with clear strategic thinking. Match 1 is the real test.
 
 **Ashish Pandey** (Associate PM)
 - **Observations:** (none yet — watch for: analytics rigor, communication style, initiative level)
@@ -184,6 +192,8 @@
   - **Mar 13:** Added by HMT to lead HP Personalisation project. Taking over from Manasvi/Shwetabh metapod structure. Scope expansion: Retention Marketing → Product Personalisation. This is a career-defining delegation — crossing from marketing into product ownership. Signals HMT's high trust in Vismit's analytical + execution capabilities.
   - **Mar 15:** Shared M0 retention deck with HMT's email inbox (surfaced in email triage). Proactive deliverable sharing rather than waiting for a pull request. Data-first, structured reporting format even for an upstream pitch.
   - **Mar 20:** Rebounded strongly after a quiet week — 3 after-hours messages during sprint. Operating at intensity. Owns M0 Watcher % POD (target 30%→36% by Mar 27). **Watch:** Is sprint intensity a phase or a new pattern? Low Slack visibility remains a concern (no public updates since plan submission).
+  - **Mar 25 (Week of Mar 23):** M0 Watcher % Week 1 result: 28% actual vs 36% target (miss). Root cause analysis sharp — identified direct subscription volume drop (1,200→600/day) as primary driver, not engagement quality. Proposed concrete pivot: switching ₹99 plan to ₹51 (50% higher conversion tested). Self-corrected and communicated the miss proactively. Shared full sprint deck in #founders_sync.
+  - **Emerging pattern:** Owns misses without deflecting — reports bad news with root cause and pivot. Data-first, no spin.
 
 **Nisha Ali** (Sr. Manager - People & Culture)
 - **Observations:** Shared HR roster when HMT asked — responsive. (Watch for: how she handles sensitive people issues, communication with HMT, proactiveness on HR matters)
@@ -406,7 +416,7 @@
   - **Mar 19:** Reached out to HuMT directly to confirm relay mechanism — adapting to the new comms channel proactively.
   - **Pattern (confirmed day 1, 2 occurrences same day):** Proactive communicator — explains decisions with context, sends status updates without being asked. Watch for whether this holds across weeks.
 
-### Gopal
+### Gopal (EXITED Mar 27, 2026)
 - **Role:** STAGE (Activation + All Hands)
 - **Email:** gopal@stage.in
 - **Relationship to HMT:** 6 meetings/14d — activation catchup, All Hands.
@@ -486,7 +496,7 @@
 
 *Last updated: 2026-02-16 10:33 UTC*
 
-### Shantanu Chatterjee
+### Shantanu Chatterjee (EXITED Mar 27, 2026)
 - **Role:** Monetisation Pod Lead, STAGE
 - **Focus:** TVOD (transactional video on demand), breadth-first monetisation experiments
 - **Context:** Leading new revenue stream beyond subscriptions. PRD shared Feb 12, 2026.

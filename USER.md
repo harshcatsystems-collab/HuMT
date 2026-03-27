@@ -171,6 +171,14 @@ These patterns are confirmed through direct observation across 50+ interactions.
 
 **Conversational > mechanical** — Prefers natural language interactions over command syntax. Chose "thanks @ba" as exit pattern because "feels more like me." UI/UX preference: human-feeling > efficient-feeling. (Confirmed: Mar 21)
 
+**QA = "consumable to a human," not "file exists"** — Tests outputs in real delivery conditions (can a person actually open and read this?), not just whether data is technically present. Called out HTML files disguised as PDFs: "theyre fucked!!!!!" before they went to 30+ engineers. "Consumable to a human" is the bar — not correct content, correct format, correct rendering for the recipient. Expects me to catch this proactively, not reactively. (Confirmed: Mar 27 autoresearch docs incident, Mar 8 config declaration, Feb 24 slide feedback — 3rd occurrence → promoted)
+
+**Intellectual honesty over defeatism** — When I over-corrected from "half-baked research" to "can't do anything without 3 months of observation," HMT pushed back: "dont you think somethings can be inspired and designed? is it all useless?" Doesn't want learned helplessness. Acknowledging limits ≠ refusing to try. The right move is admitting the gap *and* delivering what can be done now. (Confirmed: Mar 27 GStack deep dive)
+
+**Shares primary sources as ongoing context investment** — Repeatedly shared internal strategic materials (Ashoka podcast Mar 7, Vinay's autoresearch strategy doc Mar 24, company townhall deck Mar 26) with explicit framing: "this is for you, to enrich your context." Treats me as a learning system that benefits from deep understanding, not just a task executor who needs instructions. Confirmed language: "remember that this is for you" + "ill be sharing a lot more decks post the townhall." (Confirmed: Mar 7, Mar 24, Mar 26 — 3rd occurrence → promoted)
+
+**Manages cognitive energy deliberately; communicates limits clearly** — After a heavy week, explicitly said "lets park it for now. i am not able to think clearly. quite cognitively fatigued, been a heavy week." Doesn't push through when depleted. Knows when to stop, names the reason, moves on cleanly. Flip side of his "schedules hard problems for peak cognition" pattern — he's equally deliberate about protecting capacity. (Confirmed: Mar 27, Mar 26 townhall prep energy, Feb 28 late-night session — 3rd occurrence → promoted)
+
 ---
 
 ## Education

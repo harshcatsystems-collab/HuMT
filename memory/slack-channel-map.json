@@ -1,1240 +1,5795 @@
 {
   "channels": {
-    "CDZFAJLBV": {
-      "name": "announcements",
-      "purpose": "This channel is for workspace-wide communication and announcements. All members are in this channel."
-    },
-    "CE277N1PH": {
-      "name": "onefeed-sdk",
-      "purpose": "for communicating about onefeed"
-    },
-    "CE2HG4LA2": {
-      "name": "mobiletech",
-      "purpose": ""
-    },
-    "CE8TGJHC4": {
-      "name": "team1",
-      "purpose": "Hackathon"
-    },
-    "CEAB2BUSF": {
-      "name": "vatsanaemail",
-      "purpose": ""
-    },
-    "CEAF06RGE": {
-      "name": "v9-onefeed-dashboard",
-      "purpose": ""
-    },
-    "CEC2ED2RX": {
-      "name": "onefeed_media",
-      "purpose": "For tech communication"
-    },
-    "CEGS1SLFJ": {
-      "name": "theofficialwittyfeed",
-      "purpose": "Internal team communication"
-    },
-    "CEHDDUBQU": {
-      "name": "wittyfeed",
-      "purpose": ""
-    },
-    "CEHDVRC83": {
-      "name": "thecxos",
-      "purpose": "CXOs"
-    },
-    "CEHLABRL2": {
-      "name": "programmaticsmediadek",
-      "purpose": "Media deck for programmatics "
-    },
-    "CEHPPGSN9": {
-      "name": "tech-mates",
-      "purpose": "Only For Tech Team Conversation"
-    },
-    "CEHPZTVD3": {
-      "name": "stage-ke-krantikaari",
-      "purpose": "Stay updated with company-wide announcements, events, and important updates. Everything you need to know about STAGE, all in one place!"
-    },
-    "CEHUDR108": {
-      "name": "geeksmate_bd",
-      "purpose": "GeeksMate &lt;&gt; Brand Solutions"
-    },
-    "CEJ2VN8CR": {
-      "name": "innervoice_bd",
-      "purpose": "InnerVoice &lt;&gt; Brand Solutions"
-    },
-    "CEJF806R2": {
-      "name": "onefeedtech",
-      "purpose": "OneFeed"
-    },
-    "CEJG8B70T": {
-      "name": "leadseod",
-      "purpose": "staying connected on everyday action"
-    },
-    "CEJJXA5AN": {
-      "name": "hrandadmin",
-      "purpose": ""
-    },
-    "CEJK31TFD": {
-      "name": "thedesignmafia",
-      "purpose": "Design Team"
-    },
-    "CEJK4RB4K": {
-      "name": "mumbai-team",
-      "purpose": "Internal communication"
-    },
-    "CEK1C296W": {
-      "name": "v9-affiliate-data",
-      "purpose": ""
-    },
-    "CEK4HN9GD": {
-      "name": "thepopple_socialmedia",
-      "purpose": "Extraordinary ideas we can must share on our social media platforms."
-    },
-    "CEKQZFR8A": {
-      "name": "conferenceroom",
-      "purpose": "Conference Room booking"
-    },
-    "CELKMUL9F": {
-      "name": "ard-programmatics",
-      "purpose": ""
-    },
-    "CELRJQ682": {
-      "name": "thepopple--marcomm",
-      "purpose": ""
-    },
-    "CEN2W1DGA": {
-      "name": "onefeed",
-      "purpose": "OneFeed"
-    },
-    "CENTYFW6M": {
-      "name": "onefeed_distribution",
-      "purpose": ""
-    },
-    "CEPAML3B6": {
-      "name": "daily_traffic_report",
-      "purpose": ""
-    },
-    "CESRF1WR1": {
-      "name": "jaiho",
-      "purpose": ""
-    },
-    "CEV13S971": {
-      "name": "bread_foodmate",
-      "purpose": "bread foodmate"
-    },
-    "CEVCU66G2": {
-      "name": "thepopple",
-      "purpose": "To discuss almost everything."
-    },
-    "CEVLA7BFX": {
-      "name": "mostlyhealth",
-      "purpose": ""
-    },
-    "CEW94N20L": {
-      "name": "mostlymoney",
-      "purpose": ""
-    },
-    "CEWV0GMMG": {
-      "name": "product",
-      "purpose": "Create something big"
-    },
-    "CEX4WFYAJ": {
-      "name": "thepoppleeod",
-      "purpose": "Team EoDs"
-    },
-    "CEX7B2TAA": {
-      "name": "programmaticfinance",
-      "purpose": "Invoices"
-    },
-    "CEZRCN61K": {
-      "name": "adidas_article",
-      "purpose": "adidas article"
-    },
-    "CF0QU7CH2": {
-      "name": "hp_laptops",
-      "purpose": "HP"
-    },
-    "CF59ANPT6": {
-      "name": "accounts_finance",
-      "purpose": ""
-    },
-    "CF5AU9H6H": {
-      "name": "content-programmatics",
-      "purpose": ""
-    },
-    "CF71LHK9C": {
-      "name": "mirzapur",
-      "purpose": "Numbers of Mirzapur campaign"
-    },
-    "CF84JQWAC": {
-      "name": "indialeads",
-      "purpose": ""
-    },
-    "CF8B4RS6M": {
-      "name": "innervoice",
-      "purpose": ""
-    },
-    "CFH3M3F26": {
-      "name": "wittyhacks",
-      "purpose": ""
-    },
-    "CFWAZ8Q2C": {
-      "name": "product_design",
-      "purpose": ""
-    },
-    "CG4LEN5HV": {
-      "name": "reddit-content-team",
-      "purpose": ""
-    },
-    "CG50W2JTY": {
-      "name": "contech",
-      "purpose": "content and tech discussions"
-    },
-    "CG91NNEHE": {
-      "name": "videos_internal",
-      "purpose": "Internal team Videos"
-    },
-    "CG9L0M3PV": {
-      "name": "videos-and-us_leads",
-      "purpose": "Leads can suggest videos that can go on any property."
-    },
-    "CGQ80KBRV": {
-      "name": "wittyfeedcontent",
-      "purpose": ""
-    },
-    "CJPKMFV54": {
-      "name": "deployment",
-      "purpose": "Jenkins builds"
-    },
-    "CJPL664JJ": {
-      "name": "build",
-      "purpose": ""
-    },
-    "CK16CHKLN": {
-      "name": "omji-chetan",
-      "purpose": ""
-    },
-    "CL13DF93K": {
-      "name": "thinktank",
-      "purpose": ""
-    },
-    "CL7DS8ZLY": {
-      "name": "stage",
-      "purpose": ""
-    },
-    "CL8CN59B2": {
-      "name": "catchuphr",
-      "purpose": ""
-    },
-    "CL9HWGAR4": {
-      "name": "traffic_usasites",
-      "purpose": ""
-    },
-    "CM61EHG6L": {
-      "name": "wittyfeedupdates",
-      "purpose": ""
-    },
-    "CMQFSQA0J": {
-      "name": "product-stagecontent",
-      "purpose": "For collaboration between the Stage content team and the product team"
-    },
-    "CNPPHBDT8": {
-      "name": "innervoicesocial",
-      "purpose": "InnerVoice Social Media"
-    },
-    "CNYPWRY83": {
-      "name": "team-nukkad",
-      "purpose": "Nukkad Social Media"
-    },
-    "CRGL272DP": {
-      "name": "zeplin",
-      "purpose": ""
-    },
-    "CS75DM3KQ": {
-      "name": "stage-product-feedback-and-requests",
-      "purpose": "To report bugs on the STAGE app that we encounter"
-    },
     "C0101V0KR1N": {
+      "created": 1584342026,
+      "is_private": false,
       "name": "wfcontentstandup",
-      "purpose": ""
-    },
-    "C0107GZBRAQ": {
-      "name": "wfh-worklog",
-      "purpose": ""
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
     "C0115DZPDMG": {
+      "created": 1586154350,
+      "is_private": false,
       "name": "hrworklogs",
-      "purpose": ""
-    },
-    "C0121EQ4SCT": {
-      "name": "stagegrowthandmarketing",
-      "purpose": ""
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
     "C013GQHKNM8": {
+      "created": 1589294075,
+      "is_private": false,
       "name": "build_1",
-      "purpose": "jenkins notifications"
-    },
-    "C013H9CP7AR": {
-      "name": "retention-old",
-      "purpose": ""
-    },
-    "C015XEMKN3G": {
-      "name": "we_work_for_our_customer",
-      "purpose": ""
-    },
-    "C016TU33PU1": {
-      "name": "funatwork",
-      "purpose": ""
+      "num_members": 0,
+      "purpose": "jenkins notifications",
+      "topic": ""
     },
     "C017KEVC3V2": {
+      "created": 1595251293,
+      "is_private": false,
       "name": "all_character_video",
-      "purpose": ""
-    },
-    "C018L6S1G6R": {
-      "name": "घर-का-quora",
-      "purpose": "बोल कि लब आज़ाद हैं तेरे ...। (स्टेज से जुड़े सवालों का जवाब गूगल पर नहीं, यहां मिलेगा)"
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
     "C01B905KNJZ": {
+      "created": 1600973266,
+      "is_private": false,
       "name": "stagecms",
-      "purpose": ""
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
     "C01PPHA8F34": {
+      "created": 1614599527,
+      "is_private": false,
       "name": "testforamplitude",
-      "purpose": ""
-    },
-    "C01QY8UAQP6": {
-      "name": "monetization",
-      "purpose": "All about subscription"
-    },
-    "C020VPVFZUL": {
-      "name": "alert_gcp",
-      "purpose": "For gcp alerts"
-    },
-    "C021635LEQN": {
-      "name": "payment-success",
-      "purpose": ""
-    },
-    "C02178ASC4X": {
-      "name": "haryanvi_stage",
-      "purpose": ""
-    },
-    "C021SC8GYJD": {
-      "name": "payment-failure",
-      "purpose": ""
-    },
-    "C025J6WKVFE": {
-      "name": "reengagement",
-      "purpose": "Everything about push notifications."
-    },
-    "C02F43TJEG7": {
-      "name": "crash-reports",
-      "purpose": ""
-    },
-    "C02G45C345U": {
-      "name": "cos-projects",
-      "purpose": ""
-    },
-    "C02HBN8F0SK": {
-      "name": "ios-internal-testing",
-      "purpose": ""
-    },
-    "C02K0BBP75J": {
-      "name": "live-streamings",
-      "purpose": "All information about live streaming"
-    },
-    "C02MQC6MSN5": {
-      "name": "my-note",
-      "purpose": ""
-    },
-    "C02QWQ7FXRA": {
-      "name": "discussion",
-      "purpose": ""
-    },
-    "C02SS03EZM3": {
-      "name": "good-reads",
-      "purpose": "Share anything you find interesting"
-    },
-    "C033GF3BVMZ": {
-      "name": "tv-android-platter",
-      "purpose": ""
-    },
-    "C0346C5LWPN": {
-      "name": "prd-changes",
-      "purpose": ""
-    },
-    "C035F6W8DK9": {
-      "name": "product-design",
-      "purpose": "Discussions related the UI/UX design development"
-    },
-    "C035QJ5A8G6": {
-      "name": "product_prd",
-      "purpose": "Discussions regarding the PRD for all product and features."
-    },
-    "C035XUG0D24": {
-      "name": "weekly-initiatives",
-      "purpose": ""
-    },
-    "C035Y3QTD7Y": {
-      "name": "jira-learnings",
-      "purpose": ""
-    },
-    "C0368KVCL2D": {
-      "name": "product-analytics",
-      "purpose": "Discussion related to all the analytics, metabase, amplitude, events and everything around data"
-    },
-    "C037H0GLYP4": {
-      "name": "marketing",
-      "purpose": "Brainstorming ideas on marketing, social media, organic etc"
-    },
-    "C037U7RUS2F": {
-      "name": "subscription_ads_haryanvi",
-      "purpose": "This group is to discuss new subscription ads. Deliver ready subscription ads. and discuss their captions."
-    },
-    "C0382PLRWRL": {
-      "name": "copies-conversion",
-      "purpose": ""
-    },
-    "C0ALA37HGE5": {
-      "name": "admin-workflow",
-      "tier": "unknown"
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
     "C01R4A0H1UP": {
+      "created": 1615990440,
+      "is_private": false,
       "name": "external-catchup-searce",
-      "tier": "unknown"
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
-    "GEJUR0WA2": {
-      "name": "founders_sync",
-      "tier": "tier1"
+    "C020VPVFZUL": {
+      "created": 1620027702,
+      "is_private": false,
+      "name": "alert_gcp",
+      "num_members": 0,
+      "purpose": "For gcp alerts",
+      "topic": ""
     },
-    "C081FH29W7P": {
-      "name": "morphic-stage",
-      "tier": "unknown"
+    "C02178ASC4X": {
+      "created": 1620801600,
+      "is_private": false,
+      "name": "haryanvi_stage",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
-    "C07KWTTB98W": {
-      "name": "stage_maino",
-      "tier": "tier1",
-      "purpose": "Performance marketing, CAC/LTV"
+    "C02F43TJEG7": {
+      "created": 1632486498,
+      "is_private": false,
+      "name": "crash-reports",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
-    "C0A99V9BHEV": {
-      "name": "stage_maino_manthan",
-      "tier": "unknown"
+    "C02HBN8F0SK": {
+      "created": 1634211935,
+      "is_private": false,
+      "name": "ios-internal-testing",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
-    "C0AL2NUKAP7": {
-      "name": "cricket-saathi",
-      "tier": "tier1",
-      "purpose": "Cricket Saathi project (Pranay PIP)"
+    "C02MQC6MSN5": {
+      "created": 1636978990,
+      "is_private": false,
+      "name": "my-note",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
-    "C092XDNSDB9": {
-      "name": "full-funnel-solver",
-      "purpose": "Main coordination - ALL Full Funnel PODs",
-      "tier": "tier1"
+    "C033GF3BVMZ": {
+      "created": 1645076766,
+      "is_private": false,
+      "name": "tv-android-platter",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
-    "C0AK6NSDHFH": {
-      "name": "watch-retention-solver",
-      "purpose": "Retention-specific, Vismit's announcements",
-      "tier": "tier1"
+    "C0346C5LWPN": {
+      "created": 1645527321,
+      "is_private": false,
+      "name": "prd-changes",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
-    "C080EJU9873": {
-      "name": "growth-pod",
-      "purpose": "Activation/acquisition updates",
-      "tier": "tier1"
+    "C035F6W8DK9": {
+      "created": 1646632248,
+      "is_private": false,
+      "name": "product-design",
+      "num_members": 0,
+      "purpose": "Discussions related the UI/UX design development",
+      "topic": ""
     },
-    "C0904NE9Y2K": {
-      "name": "engagement-solver-team",
-      "purpose": "Engagement metrics, WoW retention",
-      "tier": "tier1"
+    "C035QJ5A8G6": {
+      "created": 1646654382,
+      "is_private": false,
+      "name": "product_prd",
+      "num_members": 0,
+      "purpose": "Discussions regarding the PRD for all product and features.",
+      "topic": ""
     },
-    "C0A6ZPA3XT8": {
-      "name": "m0-strategy",
-      "purpose": "M0 Watcher analysis",
-      "tier": "tier1"
+    "C035Y3QTD7Y": {
+      "created": 1646754124,
+      "is_private": false,
+      "name": "jira-learnings",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
-    "C0AFKKM6Y5C": {
-      "name": "ai-character-bots",
-      "purpose": "Character bots for M0 re-engagement (Pranay PIP)",
-      "tier": "tier1"
+    "C0368KVCL2D": {
+      "created": 1646637197,
+      "is_private": false,
+      "name": "product-analytics",
+      "num_members": 0,
+      "purpose": "Discussion related to all the analytics, metabase, amplitude, events and everything around data",
+      "topic": ""
     },
-    "C07T7047TEZ": {
-      "name": "product-growth",
-      "purpose": "Product × Growth sync",
-      "tier": "tier1"
+    "C037H0GLYP4": {
+      "created": 1647520151,
+      "is_private": false,
+      "name": "marketing",
+      "num_members": 0,
+      "purpose": "Brainstorming ideas on marketing, social media, organic etc",
+      "topic": ""
     },
-    "C0A75FY5RMJ": {
-      "name": "stage-vip-club",
-      "purpose": "Tambola updates, gamification",
-      "tier": "tier1"
+    "C037U7RUS2F": {
+      "created": 1647765258,
+      "is_private": false,
+      "name": "subscription_ads_haryanvi",
+      "num_members": 0,
+      "purpose": "This group is to discuss new subscription ads. Deliver ready subscription ads. and discuss their captions.",
+      "topic": ""
+    },
+    "C0382PLRWRL": {
+      "created": 1648027614,
+      "is_private": false,
+      "name": "copies-conversion",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C039S74GNP2": {
+      "created": 1648532584,
+      "is_private": false,
+      "name": "rajasthani_stage",
+      "num_members": 0,
+      "purpose": "Rajasthani Culture - We will only focus MUKHAN VAHINI",
+      "topic": ""
+    },
+    "C03BWBS957X": {
+      "created": 1650354532,
+      "is_private": false,
+      "name": "cms-issues",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C03C4QAPABU": {
+      "created": 1650430248,
+      "is_private": false,
+      "name": "leave-intimation",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C03CH44KLUT": {
+      "created": 1650605005,
+      "is_private": false,
+      "name": "stage-backend",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C03H1HU1FRD": {
+      "created": 1653895649,
+      "is_private": false,
+      "name": "backend",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C03S73A1R7C": {
+      "created": 1659544014,
+      "is_private": false,
+      "name": "nukkad-wali-chai",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04612FQ3RS": {
+      "created": 1665472637,
+      "is_private": false,
+      "name": "tv_discussion_crash",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0479T52GMT": {
+      "created": 1666268922,
+      "is_private": false,
+      "name": "social-media-hr",
+      "num_members": 0,
+      "purpose": "All things social media in Haryana",
+      "topic": ""
+    },
+    "C047BKTJ01G": {
+      "created": 1666253691,
+      "is_private": false,
+      "name": "laptop_request",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C047CS5H9PC": {
+      "created": 1666269060,
+      "is_private": false,
+      "name": "social-media-raj",
+      "num_members": 0,
+      "purpose": "All things social media in Rajasthan",
+      "topic": ""
+    },
+    "C047E57Q2VA": {
+      "created": 1666254231,
+      "is_private": false,
+      "name": "procurement-and-vendor-payment-group-",
+      "num_members": 0,
+      "purpose": "This Group is for smooth order placements and vendor payment",
+      "topic": ""
+    },
+    "C047F65FQRK": {
+      "created": 1666340910,
+      "is_private": false,
+      "name": "subscription-ads-rajasthani",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C047H8326TX": {
+      "created": 1666365642,
+      "is_private": false,
+      "name": "content-lead-hr",
+      "num_members": 0,
+      "purpose": "All important discussion regarding haryanvi Content",
+      "topic": ""
     },
     "C047HLH7T26": {
+      "created": 1666334298,
+      "is_private": false,
       "name": "promo-team",
-      "purpose": "Promo content, creative strategy",
-      "tier": "tier1"
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C047Q5M6SCR": {
+      "created": 1666252283,
+      "is_private": false,
+      "name": "copywriting-hr",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C048HV2P8SX": {
+      "created": 1666951526,
+      "is_private": false,
+      "name": "payments_legal_hr_agreement",
+      "num_members": 0,
+      "purpose": "Discussion related to Payment, contracts and legals",
+      "topic": ""
+    },
+    "C048P8ECGBZ": {
+      "created": 1667372794,
+      "is_private": false,
+      "name": "tech-erd",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04BF3XCH6H": {
+      "created": 1668750210,
+      "is_private": false,
+      "name": "clevertap-notification-",
+      "num_members": 0,
+      "purpose": "Channel to discuss all things related to Clevertap and help resolve any issues",
+      "topic": ""
+    },
+    "C04D2NNQENA": {
+      "created": 1669887802,
+      "is_private": false,
+      "name": "stage-user-experience-design-nirav",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04DKHJKV5W": {
+      "created": 1669716471,
+      "is_private": false,
+      "name": "tech-hiring",
+      "num_members": 0,
+      "purpose": "Candidate tracking: <https://docs.google.com/spreadsheets/d/143UrgcAhpdsi8J3uvsV2SCwnZiYxDz8LtE-0B-9r-NY/edit?gid=0#gid=0>",
+      "topic": ""
+    },
+    "C04FVE61LHK": {
+      "created": 1671514395,
+      "is_private": false,
+      "name": "qa-hiring",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04H5RF55RQ": {
+      "created": 1672651255,
+      "is_private": false,
+      "name": "content-notification",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04H786U80H": {
+      "created": 1672230062,
+      "is_private": false,
+      "name": "short-film-competition",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04H8URE5V1": {
+      "created": 1672740313,
+      "is_private": false,
+      "name": "shark-tank-support",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04JWCPM17W": {
+      "created": 1673616871,
+      "is_private": false,
+      "name": "alert_from_servers",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04K6JUC8LX": {
+      "created": 1674126253,
+      "is_private": false,
+      "name": "test_channel_2",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04L07HSQF3": {
+      "created": 1674132274,
+      "is_private": false,
+      "name": "stage--backend",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04LZFNDCAE": {
+      "created": 1674917667,
+      "is_private": false,
+      "name": "stage-sugarbox",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04M2CENJEB": {
+      "created": 1675241093,
+      "is_private": false,
+      "name": "brand_partnerships",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04MG5W7ZTM": {
+      "created": 1675231248,
+      "is_private": false,
+      "name": "given-subscription-by-cms",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04MZHQFYGG": {
+      "created": 1675156391,
+      "is_private": false,
+      "name": "payment-request-",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04N6A2PG4Q": {
+      "created": 1675237003,
+      "is_private": false,
+      "name": "referral_payments",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04N9E37QH3": {
+      "created": 1675744411,
+      "is_private": false,
+      "name": "office-table-bill",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04Q2N9TVGR": {
+      "created": 1676457429,
+      "is_private": false,
+      "name": "sabot",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04R5010E5D": {
+      "created": 1677565325,
+      "is_private": false,
+      "name": "stage-content-research-hr",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04RMDY4B6C": {
+      "created": 1677149983,
+      "is_private": false,
+      "name": "hr-creatives-for-social-media-handles",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04RR27AS21": {
+      "created": 1677668828,
+      "is_private": false,
+      "name": "expense-reimbursement",
+      "num_members": 0,
+      "purpose": "Travel Expenses",
+      "topic": ""
+    },
+    "C04RWQQQG4D": {
+      "created": 1677735697,
+      "is_private": false,
+      "name": "deep-links",
+      "num_members": 0,
+      "purpose": "Recording for  Deeplink Generation\n<https://media-files.tldv.io/9e049c7f53c2907064a8598720b4889beb00487b8b5ef0a718f713b319b60f29/kkJkoH6sfyC6sQsGqAg_master.m3u8>",
+      "topic": ""
+    },
+    "C04TDHELB4G": {
+      "created": 1678176626,
+      "is_private": false,
+      "name": "recomendation-engine",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04TLPLHQ4U": {
+      "created": 1678614464,
+      "is_private": false,
+      "name": "product_marketing_hiring",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04UALJSZ7Z": {
+      "created": 1679312960,
+      "is_private": false,
+      "name": "subtitle-qc-hr",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C04V3MZ7XA4": {
+      "created": 1679022113,
+      "is_private": false,
+      "name": "api-endpoints",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C050JBJCEKH": {
+      "created": 1680150267,
+      "is_private": false,
+      "name": "content-for-marketing-product",
+      "num_members": 0,
+      "purpose": "Here we will watch our final content for marketing ideas, ads and product",
+      "topic": ""
+    },
+    "C051M0HEE85": {
+      "created": 1680605998,
+      "is_private": false,
+      "name": "iconwave",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C051S6J4QUU": {
+      "created": 1680603198,
+      "is_private": false,
+      "name": "shriram-group",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C051ZFBPXSR": {
+      "created": 1680762942,
+      "is_private": false,
+      "name": "cloudtv",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C052YCJPVH6": {
+      "created": 1680850528,
+      "is_private": false,
+      "name": "notification-banner",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C053HVAF8D8": {
+      "created": 1681726013,
+      "is_private": false,
+      "name": "red-tv",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C053XNFAD27": {
+      "created": 1681898060,
+      "is_private": false,
+      "name": "playbox-tv",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C05412V49TP": {
+      "created": 1681973530,
+      "is_private": false,
+      "name": "aditya-channel",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C054PNFKZNG": {
+      "created": 1682339990,
+      "is_private": false,
+      "name": "appsflyer",
+      "num_members": 0,
+      "purpose": "New App Events\nS2S events\ndeeplink generation\ndeffered deeplink",
+      "topic": ""
+    },
+    "C055KUNLE0P": {
+      "created": 1683106238,
+      "is_private": false,
+      "name": "xonware",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C05603QSE74": {
+      "created": 1683101305,
+      "is_private": false,
+      "name": "yupp-tv",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C056GKRGSPJ": {
+      "created": 1683006863,
+      "is_private": false,
+      "name": "ott-play",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C057959JJ74": {
+      "created": 1683793406,
+      "is_private": false,
+      "name": "mobyads",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C058T5J1FN3": {
+      "created": 1684914135,
+      "is_private": false,
+      "name": "new-posters",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C05A7QB2UHH": {
+      "created": 1685516617,
+      "is_private": false,
+      "name": "splash-animation",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C05BQLDB1SM": {
+      "created": 1686125763,
+      "is_private": true,
+      "name": "content-categorization",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C05F84C3MEK": {
+      "created": 1688576778,
+      "is_private": false,
+      "name": "1-1shubham",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C05FEER0QB0": {
+      "created": 1688563671,
+      "is_private": false,
+      "name": "1-0-1-uttam",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C05HH2PGLRM": {
+      "created": 1689841196,
+      "is_private": false,
+      "name": "cac-ads-solver",
+      "num_members": 0,
+      "purpose": "Haryana Report - <https://docs.google.com/spreadsheets/d/1YWahXB1marG8ooOIboLRo23bFKw2ZJC1jVFO385Kt_o/edit?usp=sharing>\n\n\nRajasthan Report - <https://docs.google.com/spreadsheets/d/1cAm-ixxwkfBgYS4IFyMwx_UzRyKWXAlDb88LSAyU4a8/edit?usp=sharing>",
+      "topic": ""
+    },
+    "C05HTBEHT52": {
+      "created": 1689759038,
+      "is_private": false,
+      "name": "cac-playstore-to-paid-solver",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C05J6S6PWNL": {
+      "created": 1689664718,
+      "is_private": false,
+      "name": "content-subtitles",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C05JCFTR2J3": {
+      "created": 1690354011,
+      "is_private": false,
+      "name": "airtel-xstream-",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C05LT4FT4A3": {
+      "created": 1691667204,
+      "is_private": true,
+      "name": "product-invoices",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C05S2L634EB": {
+      "created": 1694766522,
+      "is_private": false,
+      "name": "user-feedbacks",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0602HW0Z5M": {
+      "created": 1696947195,
+      "is_private": true,
+      "name": "stageisset",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0637KE40CB": {
+      "created": 1698460177,
+      "is_private": false,
+      "name": "dada-lakhmi-success",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C064K7EGWUT": {
+      "created": 1699338918,
+      "is_private": true,
+      "name": "hr-invoice",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C064TDSRJKS": {
+      "created": 1699005290,
+      "is_private": false,
+      "name": "1-1-creative-team",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C06C2ALHM4H": {
+      "created": 1703670980,
+      "is_private": false,
+      "name": "project-test-automation",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C06C97L05JP": {
+      "created": 1704282578,
+      "is_private": true,
+      "name": "quarterly_investor_updates",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C06GK2M36P9": {
+      "created": 1706899993,
+      "is_private": true,
+      "name": "company-imp-docs",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C06L5FQL3GU": {
+      "created": 1708589998,
+      "is_private": true,
+      "name": "credit_card_invoices",
+      "num_members": 0,
+      "purpose": "",
+      "topic": "Add Invoices and Ask for OTP"
+    },
+    "C06LHQKUS3X": {
+      "created": 1708947082,
+      "is_private": false,
+      "name": "rajasthan-fgd",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C06LLFTK7NK": {
+      "created": 1709117915,
+      "is_private": true,
+      "name": "product-internal",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
     "C06NYMGLNGH": {
+      "created": 1709893712,
+      "is_private": false,
       "name": "tech-frontend",
-      "purpose": "Dev updates for activation features",
-      "tier": "tier1"
+      "num_members": 0,
+      "purpose": "Frontend related stuff",
+      "topic": ""
+    },
+    "C06P3SQMZEY": {
+      "created": 1710218710,
+      "is_private": false,
+      "name": "project-react-website-vercel-events",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C06PD3K9TN2": {
+      "created": 1710430967,
+      "is_private": false,
+      "name": "project-mobile-continuous-delivery",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C06QTJMKLUA": {
+      "created": 1711077521,
+      "is_private": false,
+      "name": "retention",
+      "num_members": 0,
+      "purpose": "<https://docs.google.com/document/d/1ZWKRJ9uNEOMqKoEgMP88bO0IkPIybp2QaaiBVsKP7jQ/edit?usp=sharing>",
+      "topic": ""
+    },
+    "C06S248NR34": {
+      "created": 1711783327,
+      "is_private": false,
+      "name": "socialmedia-stage-hr-team",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C06SAHCEBHV": {
+      "created": 1712210586,
+      "is_private": false,
+      "name": "haryana-casting",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C06UT8KB9DH": {
+      "created": 1713376765,
+      "is_private": false,
+      "name": "tech-craft",
+      "num_members": 0,
+      "purpose": "This channel is about learning and improving your craft! Feel free to share interesting tech articles here",
+      "topic": ""
+    },
+    "C06UW1S5CGJ": {
+      "created": 1713418480,
+      "is_private": false,
+      "name": "truecaller-stage",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C073A1Q7U01": {
+      "created": 1715354266,
+      "is_private": false,
+      "name": "hr-sm-caption",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C073D2D5FRP": {
+      "created": 1715422460,
+      "is_private": true,
+      "name": "pm-only-top-secret",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C073VRBFTUH": {
+      "created": 1715755569,
+      "is_private": false,
+      "name": "retention-creative-requirements",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0765HXVBFB": {
+      "created": 1717066629,
+      "is_private": true,
+      "name": "project-streamline-new-employee-onboarding",
+      "num_members": 0,
+      "purpose": "An ongoing project to streamline employee onboarding for new employees joining in tech.",
+      "topic": ""
+    },
+    "C076AUFK74Z": {
+      "created": 1717138187,
+      "is_private": false,
+      "name": "content-product-jugalbandi",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C078Y0EKLN7": {
+      "created": 1718865337,
+      "is_private": false,
+      "name": "making-frontend-better",
+      "num_members": 0,
+      "purpose": "This channel is a log of Kushagra\u2019s observations, discoveries about potential improvements to frontend (&amp; engineering) at Stage. Will also contain the actionables being taken regarding the same",
+      "topic": ""
+    },
+    "C079LSSQA0Y": {
+      "created": 1718865200,
+      "is_private": true,
+      "name": "product-and-analytics-hiring",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C079N49UVUK": {
+      "created": 1719317747,
+      "is_private": false,
+      "name": "jashan_eod",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07AV7HKT7S": {
+      "created": 1719554860,
+      "is_private": false,
+      "name": "production-creative-sync",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07CU8W8R5H": {
+      "created": 1721220119,
+      "is_private": false,
+      "name": "tech-growth",
+      "num_members": 0,
+      "purpose": "All discussions and team communication for tech team and growth team",
+      "topic": ""
+    },
+    "C07DC1S9JQ1": {
+      "created": 1721286999,
+      "is_private": true,
+      "name": "proj-analytics-infra",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07EGVDQ3SL": {
+      "created": 1721815458,
+      "is_private": false,
+      "name": "rajasthani-marketing",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07F4660QF7": {
+      "created": 1722575274,
+      "is_private": false,
+      "name": "github_alerts",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07F86R0CET": {
+      "created": 1722929582,
+      "is_private": false,
+      "name": "sentry-web",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07FPLKR2N7": {
+      "created": 1722942640,
+      "is_private": false,
+      "name": "pg-alert",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07JLD7JL0P": {
+      "created": 1724908507,
+      "is_private": false,
+      "name": "playstore-ratings",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07KPJ37SGL": {
+      "created": 1725335742,
+      "is_private": true,
+      "name": "due-deligence-requirement",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07KWTTB98W": {
+      "created": 1725547578,
+      "is_private": true,
+      "name": "stage_maino",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07LD4HL3PT": {
+      "created": 1725509363,
+      "is_private": false,
+      "name": "cms-content",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07M9APSM5Y": {
+      "created": 1726203043,
+      "is_private": false,
+      "name": "content-tagging",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07MZ6YVDPS": {
+      "created": 1726218981,
+      "is_private": false,
+      "name": "cre-engagement-campaign-rcs-wa",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07N3RN9FH7": {
+      "created": 1726564550,
+      "is_private": true,
+      "name": "recommendation-engine",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07N9G9LH0B": {
+      "created": 1726814090,
+      "is_private": false,
+      "name": "reengagement-pf-ads-creatives",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07P7C0T267": {
+      "created": 1727364420,
+      "is_private": false,
+      "name": "memes",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07PL69UAFL": {
+      "created": 1727666633,
+      "is_private": false,
+      "name": "promo_ideas_discussion",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07PZS5MWR4": {
+      "created": 1727940302,
+      "is_private": false,
+      "name": "bhairavi-tshirts",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07QSGLSK97": {
+      "created": 1728038362,
+      "is_private": false,
+      "name": "copy--retention",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07QVKNB16C": {
+      "created": 1727944971,
+      "is_private": false,
+      "name": "retention-creative",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07RVS92YT0": {
+      "created": 1729060002,
+      "is_private": false,
+      "name": "research_updates",
+      "num_members": 0,
+      "purpose": "This channel serves as a dedicated platform for sharing consumer, audience, and research insights across various divisions at STAGE.  Utilize this public channel to access reports, case studies, and audience insight findings.",
+      "topic": "Consumer Insights\nResearch Reports\nAudience Findings"
+    },
+    "C07SHGWPZGF": {
+      "created": 1729585070,
+      "is_private": false,
+      "name": "backend-alerts",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07SXBJTZJ7": {
+      "created": 1729575620,
+      "is_private": false,
+      "name": "team-data",
+      "num_members": 0,
+      "purpose": "The public channel for all your data requests, queries etc.",
+      "topic": ""
+    },
+    "C07T7047TEZ": {
+      "created": 1729746698,
+      "is_private": false,
+      "name": "product-growth",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C07TNBUAWPP": {
+      "created": 1730099984,
+      "is_private": false,
+      "name": "tech-mobile",
+      "num_members": 0,
+      "purpose": "Channel for mobile team discussion",
+      "topic": ""
+    },
+    "C07TTQQL8JU": {
+      "created": 1729680671,
+      "is_private": false,
+      "name": "user-activation-strategy",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0800A3GERY": {
+      "created": 1731042373,
+      "is_private": true,
+      "name": "stage-content-growth",
+      "num_members": 0,
+      "purpose": "Leadership Conversations.",
+      "topic": ""
+    },
+    "C080EJU9873": {
+      "created": 1731067670,
+      "is_private": true,
+      "name": "growth-pod",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0810CKG1C1": {
+      "created": 1731481159,
+      "is_private": false,
+      "name": "bhojpuri_stage",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0811TJDPLH": {
+      "created": 1731501795,
+      "is_private": false,
+      "name": "title-marketing-all",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C081AG7J7EC": {
+      "created": 1731481288,
+      "is_private": false,
+      "name": "retention_nikhil",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C081FH29W7P": {
+      "created": 1732033164,
+      "is_private": false,
+      "name": "morphic-stage",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C081G4RPDC2": {
+      "created": 1732007340,
+      "is_private": false,
+      "name": "cms-deliveries",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C081K05ULR2": {
+      "created": 1732011423,
+      "is_private": false,
+      "name": "new-office",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C082STFKC5V": {
+      "created": 1733130912,
+      "is_private": true,
+      "name": "team-brand",
+      "num_members": 0,
+      "purpose": "all things BRAND STAGE.",
+      "topic": ""
+    },
+    "C082Z8FUBRV": {
+      "created": 1733217695,
+      "is_private": true,
+      "name": "all-things-people-and-culture",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C082ZCU8VQA": {
+      "created": 1732870918,
+      "is_private": false,
+      "name": "rj-content-planning",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C083G6MMJ0K": {
+      "created": 1733245238,
+      "is_private": false,
+      "name": "small-wins",
+      "num_members": 0,
+      "purpose": "Share all the small victories that we accomplish as a team on a day to day basis and use this space to share our achievements.\n\nAll of our new milestones can be posted here too.",
+      "topic": ""
+    },
+    "C083NFDTJ4Q": {
+      "created": 1732874771,
+      "is_private": false,
+      "name": "rj-script",
+      "num_members": 0,
+      "purpose": "<https://forms.gle/VnMtGRqsQv5QVnZA7>",
+      "topic": ""
+    },
+    "C083STSVDEX": {
+      "created": 1733394553,
+      "is_private": false,
+      "name": "casting",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C084EE30XPD": {
+      "created": 1733823564,
+      "is_private": false,
+      "name": "random-ideas",
+      "num_members": 0,
+      "purpose": "all of us get random ideas, about random things at STAGE, related to random teams and there is no outlet for them - good / bad / big / small - doesn't matter - a thought strikes, just put it here and let the other discover it from here.",
+      "topic": "Have a creative idea that could benefit STAGE? Drop it here!"
+    },
+    "C084HQGH9T6": {
+      "created": 1733833663,
+      "is_private": true,
+      "name": "managers-aspiring-to-be-leaders",
+      "num_members": 0,
+      "purpose": "Leadership Development: Thoughts, discussions &amp; reflections on growing as a leader.",
+      "topic": "Growth &amp; Leadership Development"
+    },
+    "C084JVD7Q68": {
+      "created": 1733845885,
+      "is_private": false,
+      "name": "referrals",
+      "num_members": 0,
+      "purpose": "This channel is created for sharing referrals. If you have friend that you want to refer for a role at STAGE, fill out the link in shared and tagged in the channel.",
+      "topic": ""
+    },
+    "C084KMZ00HG": {
+      "created": 1733889421,
+      "is_private": false,
+      "name": "product-alerts",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C084TNRH7QE": {
+      "created": 1734092895,
+      "is_private": false,
+      "name": "daily-cac",
+      "num_members": 0,
+      "purpose": "Tracking daily performance numbers across HR &amp; RJ.",
+      "topic": ""
+    },
+    "C084XJUCSKS": {
+      "created": 1733744859,
+      "is_private": false,
+      "name": "ml-work",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C084ZAGHT7B": {
+      "created": 1733905884,
+      "is_private": false,
+      "name": "better-productivity",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C084ZC2RNUA": {
+      "created": 1734078734,
+      "is_private": true,
+      "name": "product-discussions",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0858PR0V50": {
+      "created": 1734340083,
+      "is_private": false,
+      "name": "slack-profile-update",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C085BSBRPJ8": {
+      "created": 1734347696,
+      "is_private": false,
+      "name": "social-media-bh",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C085HDR1BS4": {
+      "created": 1734012124,
+      "is_private": false,
+      "name": "tech-product-updates",
+      "num_members": 0,
+      "purpose": "",
+      "topic": "Important updates from the product+tech teams. You can expect:\n1. 1 update each sprint on what we worked on\n2. Other launches and impact analyses on things launched\n3. Sneak peeks of what's coming next"
+    },
+    "C085P594G7N": {
+      "created": 1734502649,
+      "is_private": true,
+      "name": "founders-plus",
+      "num_members": 0,
+      "purpose": "Org Structure, Content Strategy  &amp; More.",
+      "topic": ""
+    },
+    "C086984K7LY": {
+      "created": 1734498740,
+      "is_private": false,
+      "name": "dd-alerts",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C086EJ905FB": {
+      "created": 1734714841,
+      "is_private": true,
+      "name": "team-hr",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0875TQ8SNB": {
+      "created": 1736257851,
+      "is_private": false,
+      "name": "crew-workshop",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08798ABU65": {
+      "created": 1735627147,
+      "is_private": false,
+      "name": "actors-relationship",
+      "num_members": 0,
+      "purpose": "This channel is to understand actors problem and solving them",
+      "topic": "To understand actors problem"
+    },
+    "C087DEHCF8T": {
+      "created": 1736155069,
+      "is_private": false,
+      "name": "skill-framework",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C087XA4J7LZ": {
+      "created": 1736231229,
+      "is_private": false,
+      "name": "legal-requirements",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0889P3V6MV": {
+      "created": 1736923559,
+      "is_private": false,
+      "name": "stage-atlabs-ai",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08A30P413J": {
+      "created": 1737373963,
+      "is_private": false,
+      "name": "performance-events",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08AD0XFDU0": {
+      "created": 1737523092,
+      "is_private": false,
+      "name": "subscription-ads-bhojpuri",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08AGEVAZ37": {
+      "created": 1738041656,
+      "is_private": false,
+      "name": "data-alerts",
+      "num_members": 0,
+      "purpose": "webhook url: <[WEBHOOK_REDACTED]>",
+      "topic": ""
+    },
+    "C08AM06AMRC": {
+      "created": 1738156404,
+      "is_private": false,
+      "name": "mini-to-main-migration",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08ANGS3SJG": {
+      "created": 1738054143,
+      "is_private": false,
+      "name": "policevspolice-hr",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08AY77063V": {
+      "created": 1738217405,
+      "is_private": false,
+      "name": "weekly-mis",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08B33D2TCG": {
+      "created": 1737976731,
+      "is_private": false,
+      "name": "bhangarh-series-stage",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08B9N85WHW": {
+      "created": 1738066001,
+      "is_private": false,
+      "name": "xyz",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08BMDB9BPZ": {
+      "created": 1738834932,
+      "is_private": false,
+      "name": "creative-directors-stage",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08BPD4FJHH": {
+      "created": 1738676431,
+      "is_private": false,
+      "name": "stage-ai",
+      "num_members": 0,
+      "purpose": "Make everyone 10X more productive :rocket:",
+      "topic": ""
+    },
+    "C08C4RLD89K": {
+      "created": 1738905337,
+      "is_private": false,
+      "name": "welcome-harshit",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08CBP3K1ME": {
+      "created": 1738669304,
+      "is_private": false,
+      "name": "mukundpura-film",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08CC98AM7G": {
+      "created": 1739182820,
+      "is_private": false,
+      "name": "jholachaap--film",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08CM57S4CC": {
+      "created": 1739179339,
+      "is_private": false,
+      "name": "cinema-discussion-and-appreciation",
+      "num_members": 0,
+      "purpose": "This group is to pick one content piece every week, watch it at our convenience and then get together to discuss and analyse it.",
+      "topic": "Monster by Koreeda"
+    },
+    "C08CXKGUV5Z": {
+      "created": 1739353341,
+      "is_private": true,
+      "name": "harsh-reimbursement",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08DAD291BL": {
+      "created": 1739512384,
+      "is_private": false,
+      "name": "bhakk-",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08E30BUTQD": {
+      "created": 1740033006,
+      "is_private": false,
+      "name": "casting-saangi-",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08E6782AKT": {
+      "created": 1739879714,
+      "is_private": false,
+      "name": "proj-onboarding",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08EA844NP7": {
+      "created": 1740122995,
+      "is_private": false,
+      "name": "ghak-ki-baat-",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08FKN7P516": {
+      "created": 1740471033,
+      "is_private": false,
+      "name": "stage-celetel",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08G27WDN4S": {
+      "created": 1741083530,
+      "is_private": true,
+      "name": "conversion-survey",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08GCK3BTFF": {
+      "created": 1741256021,
+      "is_private": false,
+      "name": "ai4stage-user-interviews",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08GL5NN7MK": {
+      "created": 1741347145,
+      "is_private": true,
+      "name": "stage_legal-and-finance",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08HKLHM7AN": {
+      "created": 1741864297,
+      "is_private": true,
+      "name": "founder-travel",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08HQ89S797": {
+      "created": 1741787806,
+      "is_private": false,
+      "name": "content_strategy",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08K5MP861W": {
+      "created": 1742455008,
+      "is_private": true,
+      "name": "cms-stage",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08K7RS42RM": {
+      "created": 1743095821,
+      "is_private": false,
+      "name": "media-mentions",
+      "num_members": 0,
+      "purpose": "We share and track all external press coverage, brand mentions, articles, and media wins here. To keep all the teams updated and celebrate our visibility!  :newspaper::sparkles:",
+      "topic": "All media coverage, articles, and mentions of STAGE in the news"
+    },
+    "C08K9NUT5TN": {
+      "created": 1742884882,
+      "is_private": false,
+      "name": "eod-work",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08KGJ3GG4B": {
+      "created": 1742992664,
+      "is_private": false,
+      "name": "stage-xrmedia",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08KHSS8HM5": {
+      "created": 1743337636,
+      "is_private": false,
+      "name": "welcome-harsh",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08KMK43JN6": {
+      "created": 1743061178,
+      "is_private": true,
+      "name": "release-cycle",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08KU4RJAFN": {
+      "created": 1743142050,
+      "is_private": false,
+      "name": "muhurat-scenes",
+      "num_members": 0,
+      "purpose": "Hi team, let's use this space to share all the Muhurta Shots here across all cultures. It would be easy for social teams to publish them online as well.",
+      "topic": ""
+    },
+    "C08L4EMHR0X": {
+      "created": 1743657711,
+      "is_private": false,
+      "name": "team-devops",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08LG2JJDPE": {
+      "created": 1743586008,
+      "is_private": false,
+      "name": "intern-requirement-marketing",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08LH3HCDPZ": {
+      "created": 1743861116,
+      "is_private": false,
+      "name": "cd-kaand-",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08MGJRDTEW": {
+      "created": 1744181567,
+      "is_private": false,
+      "name": "tv-adoption",
+      "num_members": 0,
+      "purpose": "<https://stage.metabaseapp.com/dashboard/1291-tv-app-adoption>",
+      "topic": ""
+    },
+    "C08MNMEBGHE": {
+      "created": 1743999355,
+      "is_private": false,
+      "name": "welcome-siddhant",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08MNPX5L58": {
+      "created": 1744262976,
+      "is_private": false,
+      "name": "welcome-prakash",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08N82UFN3F": {
+      "created": 1744742221,
+      "is_private": false,
+      "name": "productdesign",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08N8KK4CG1": {
+      "created": 1744471836,
+      "is_private": false,
+      "name": "video_comments",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08NBL74AMQ": {
+      "created": 1744707137,
+      "is_private": false,
+      "name": "mobile-gradle-upgrade",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08NEKQT69E": {
+      "created": 1744363105,
+      "is_private": false,
+      "name": "awareness-consideratin-promo-scripts",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08NV50KE7Q": {
+      "created": 1745301985,
+      "is_private": false,
+      "name": "content_writing_retention",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08P1NEVCDN": {
+      "created": 1744785705,
+      "is_private": false,
+      "name": "ask-data-ai",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08PGK8CM32": {
+      "created": 1745004921,
+      "is_private": true,
+      "name": "finance-department",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08PWSQ02EB": {
+      "created": 1746008404,
+      "is_private": false,
+      "name": "prod_feedback",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08PY53QYSU": {
+      "created": 1745382319,
+      "is_private": false,
+      "name": "ai-at-stage",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08Q1HT10N5": {
+      "created": 1745576631,
+      "is_private": false,
+      "name": "short_scripts_and_cta",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08QC5UHQUS": {
+      "created": 1745989054,
+      "is_private": true,
+      "name": "productgrowth-hiring",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08QPLQ4MJN": {
+      "created": 1746168247,
+      "is_private": false,
+      "name": "cricket",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08QQQ8T7C2": {
+      "created": 1746186298,
+      "is_private": false,
+      "name": "competency-framework",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08SAF7RBUZ": {
+      "created": 1747048980,
+      "is_private": false,
+      "name": "project_data-active-subscriber-watch-retention",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08SXM7NB6Z": {
+      "created": 1747651248,
+      "is_private": false,
+      "name": "title-design",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08U68MAEHM": {
+      "created": 1748539762,
+      "is_private": false,
+      "name": "brand-health-on-ground-resarch",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08UKLM22JZ": {
+      "created": 1748578847,
+      "is_private": false,
+      "name": "asset-requisition",
+      "num_members": 0,
+      "purpose": "For any asset requirement, Raise request on this channel",
+      "topic": ""
+    },
+    "C08ULSU2DEH": {
+      "created": 1748598512,
+      "is_private": false,
+      "name": "welcome-samir",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C08UWJFTZN3": {
+      "created": 1749018968,
+      "is_private": false,
+      "name": "welcome-muskan",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0903MMQFU6": {
+      "created": 1749200061,
+      "is_private": false,
+      "name": "rc-submission",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0904NE9Y2K": {
+      "created": 1749469725,
+      "is_private": false,
+      "name": "engagement-solver-team",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0905UNGLJK": {
+      "created": 1749483250,
+      "is_private": false,
+      "name": "brand-health-funnel-metrics",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C090D5UJFM4": {
+      "created": 1749464986,
+      "is_private": false,
+      "name": "team-bhojpuri",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C090DSB90DT": {
+      "created": 1749318945,
+      "is_private": false,
+      "name": "demo-agent",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C090SNCDT8T": {
+      "created": 1749648858,
+      "is_private": true,
+      "name": "project-reels-and-microdramas",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C090Y99T9LZ": {
+      "created": 1749463220,
+      "is_private": false,
+      "name": "copy-and-promo-rock",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0914FW9WE9": {
+      "created": 1749738263,
+      "is_private": false,
+      "name": "user_activation",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C092ENBK63A": {
+      "created": 1750138811,
+      "is_private": false,
+      "name": "stage-microdrama-idea-suggestion",
+      "num_members": 0,
+      "purpose": "This Channel is to Track progress of STGE Original Micro-Dramas for all cultures",
+      "topic": ""
+    },
+    "C092JE3KZ37": {
+      "created": 1750662160,
+      "is_private": false,
+      "name": "content-production-update",
+      "num_members": 0,
+      "purpose": "For sharing important updates and progress related to content and production team- creation, shoots, post-production, and other production workflows",
+      "topic": ""
+    },
+    "C092LSKTU1E": {
+      "created": 1750220025,
+      "is_private": false,
+      "name": "whatsapp-bot",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C092SDD9UAX": {
+      "created": 1750845031,
+      "is_private": false,
+      "name": "xroad-media-alerts",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C092XDNSDB9": {
+      "created": 1751007877,
+      "is_private": false,
+      "name": "full-funnel-solver",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C092YVANF9P": {
+      "created": 1750662289,
+      "is_private": false,
+      "name": "marketing-updates",
+      "num_members": 0,
+      "purpose": "Central hub for all key updates, initiatives, and announcements from the Retention, Title, and Performance Marketing teams",
+      "topic": ""
+    },
+    "C0937NF6R4Y": {
+      "created": 1750661871,
+      "is_private": false,
+      "name": "all-hands-meeting",
+      "num_members": 0,
+      "purpose": "Repository for all Monday Huddle materials- including shared files, meeting recaps, key decisions, and important updates discussed during the All Hands Meet",
+      "topic": ""
+    },
+    "C093EC443K5": {
+      "created": 1751266077,
+      "is_private": true,
+      "name": "socials-team",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C093UMPANS0": {
+      "created": 1751349120,
+      "is_private": false,
+      "name": "ask-data-ai-dev",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C094EJU35L7": {
+      "created": 1751970885,
+      "is_private": true,
+      "name": "biggest-delta",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C095BT8LUFK": {
+      "created": 1752037212,
+      "is_private": false,
+      "name": "mongo_changes",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C095EKEC0LX": {
+      "created": 1752573231,
+      "is_private": true,
+      "name": "hiring-approval",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C097XAP8493": {
+      "created": 1753792146,
+      "is_private": false,
+      "name": "user-research-lab",
+      "num_members": 0,
+      "purpose": "A collective effort to work on user research problem statements by creating dedicated time and space to carry out research projects and build toward better product experiences.",
+      "topic": ""
+    },
+    "C09A26FH8S0": {
+      "created": 1754973870,
+      "is_private": false,
+      "name": "welcome-shubham-singla",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09AF5ECYHM": {
+      "created": 1755500585,
+      "is_private": false,
+      "name": "hr-legal",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09ARKERDT7": {
+      "created": 1755504498,
+      "is_private": false,
+      "name": "rajasthan-pride-videos",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09BMSJE3N3": {
+      "created": 1756187467,
+      "is_private": false,
+      "name": "welcome-chetan",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09CV63KRHT": {
+      "created": 1756709625,
+      "is_private": false,
+      "name": "sanwari-artist-promo",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09DKG689HR": {
+      "created": 1757057043,
+      "is_private": false,
+      "name": "paywall-creation",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09EAC10ETC": {
+      "created": 1757422083,
+      "is_private": false,
+      "name": "daily-work-report-hr",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09F49E7C4T": {
+      "created": 1757929394,
+      "is_private": false,
+      "name": "office-shifting-and-day-1-experience",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09FE42TRC7": {
+      "created": 1758173394,
+      "is_private": false,
+      "name": "hr-cac-daily-updates",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09FVFY0P5F": {
+      "created": 1758019402,
+      "is_private": false,
+      "name": "performance-management-framework",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09FW03KB2S": {
+      "created": 1758187993,
+      "is_private": true,
+      "name": "maha-punarjanam",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09GHS9PNPM": {
+      "created": 1758629744,
+      "is_private": true,
+      "name": "mo-conversion-drop",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09H147TXU6": {
+      "created": 1758776745,
+      "is_private": false,
+      "name": "behind-the-scenes",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09HUCE9PQB": {
+      "created": 1759265160,
+      "is_private": false,
+      "name": "jholachhap-promotion-pwc-event",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09PCDH8FPU": {
+      "created": 1761723433,
+      "is_private": false,
+      "name": "cms-alerts",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09PDC19QJE": {
+      "created": 1761732320,
+      "is_private": false,
+      "name": "randeep-hooda",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09PM1DNK34": {
+      "created": 1761803981,
+      "is_private": false,
+      "name": "growth-clm",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09PWTHF44A": {
+      "created": 1761898859,
+      "is_private": true,
+      "name": "building-consumer-insights-team",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09SWV3MVL2": {
+      "created": 1763106394,
+      "is_private": false,
+      "name": "metrics-alert",
+      "num_members": 0,
+      "purpose": "",
+      "topic": "Alert Tracker <https://docs.google.com/spreadsheets/d/1nbKvL0obmMeIuo0YYDeYUGdHXkE7K4Rn7Wt2dVn17Y4/edit?usp=sharing>"
+    },
+    "C09TLDLA7GE": {
+      "created": 1763463214,
+      "is_private": true,
+      "name": "retention-hiring",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C09USBH29UY": {
+      "created": 1763553172,
+      "is_private": false,
+      "name": "snapchat-ads",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A07SN8C6N": {
+      "created": 1764255365,
+      "is_private": true,
+      "name": "content-title-stack",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A0XS4L0GJ": {
+      "created": 1764645005,
+      "is_private": false,
+      "name": "stage-saathi",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A1M91Q6P7": {
+      "created": 1764911896,
+      "is_private": false,
+      "name": "haryanvi-promo-team",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A2KK6KP5W": {
+      "created": 1764919860,
+      "is_private": false,
+      "name": "rudderstack-migration",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A2QNQSA0P": {
+      "created": 1765528183,
+      "is_private": false,
+      "name": "dormant-resurrection",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A3CJTNMST": {
+      "created": 1765861546,
+      "is_private": false,
+      "name": "content-compliance-hiren",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A3N67V0G2": {
+      "created": 1765803370,
+      "is_private": false,
+      "name": "retention-pod",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A40S430F8": {
+      "created": 1765951528,
+      "is_private": false,
+      "name": "production-tech",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A4BF8HTN3": {
+      "created": 1766215355,
+      "is_private": true,
+      "name": "monetisation-core-devs",
+      "num_members": 0,
+      "purpose": "internal/working group - focussed comms on execution",
+      "topic": ""
+    },
+    "C0A4LRBCLQ2": {
+      "created": 1766136936,
+      "is_private": false,
+      "name": "watch-along",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A4S84UA4R": {
+      "created": 1766058478,
+      "is_private": false,
+      "name": "realfiction_md_agency",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A5GJRCQTZ": {
+      "created": 1767002615,
+      "is_private": true,
+      "name": "m1-watchers-retention",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A5LU7UD5X": {
+      "created": 1766489522,
+      "is_private": false,
+      "name": "saathi-support",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A6ZPA3XT8": {
+      "created": 1767701242,
+      "is_private": true,
+      "name": "m0-strategy",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A75FY5RMJ": {
+      "created": 1767702665,
+      "is_private": false,
+      "name": "stage-vip-club",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A79N9NDR6": {
+      "created": 1767342213,
+      "is_private": false,
+      "name": "test-dd-alerts",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A7QKTFCDN": {
+      "created": 1767634431,
+      "is_private": false,
+      "name": "gujarati_stage",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A7YPZMZ8T": {
+      "created": 1768213918,
+      "is_private": false,
+      "name": "code-review-mobile-dev",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A810BTASG": {
+      "created": 1768023456,
+      "is_private": false,
+      "name": "collab-feedback",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A87E17UMS": {
+      "created": 1768197925,
+      "is_private": true,
+      "name": "monetisation",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A8EJR4J7L": {
+      "created": 1768310675,
+      "is_private": false,
+      "name": "trendingstories",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A8HDGU669": {
+      "created": 1768373945,
+      "is_private": false,
+      "name": "social-media-gujarati",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A8J8HTS5N": {
+      "created": 1767933846,
+      "is_private": false,
+      "name": "randeep-hooda-performance-campaigns",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A8JDHNKHC": {
+      "created": 1768368419,
+      "is_private": true,
+      "name": "baahubali-squad",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A8QB9UGJY": {
+      "created": 1768372511,
+      "is_private": false,
+      "name": "subscription-ads-gujarati",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A99NA9S3T": {
+      "created": 1768475372,
+      "is_private": false,
+      "name": "web-alerts",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0A99V9BHEV": {
+      "created": 1768478101,
+      "is_private": false,
+      "name": "stage_maino_manthan",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0AAKDTMY82": {
+      "created": 1769176023,
+      "is_private": true,
+      "name": "retention_cost_optimization",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0AALBN04KW": {
+      "created": 1769146256,
+      "is_private": false,
+      "name": "test-leave-bot",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
     "C0ABCG0RV1N": {
+      "created": 1769162953,
+      "is_private": true,
       "name": "homepage-personalisation",
-      "purpose": "AI-native homepage personalisation initiative - ML reco + limited HP experiments",
-      "tier": 2,
-      "added": "2026-03-17"
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0AC851HPAN": {
+      "created": 1769925853,
+      "is_private": false,
+      "name": "my-data",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0AD10E31CH": {
+      "created": 1770115139,
+      "is_private": true,
+      "name": "micro-drama-central-pod-stage",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0ADBCH4Y30": {
+      "created": 1770361614,
+      "is_private": false,
+      "name": "ai-videos",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0ADHK6L2P3": {
+      "created": 1770276048,
+      "is_private": false,
+      "name": "ai-trailer-generator",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0ADY14SRFX": {
+      "created": 1770699560,
+      "is_private": false,
+      "name": "testing-vouchers",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0AEG5645RT": {
+      "created": 1770885380,
+      "is_private": false,
+      "name": "culture-productising",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0AELUDV1QT": {
+      "created": 1770960303,
+      "is_private": false,
+      "name": "ai-native-performance-marketing",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0AETCSJSCA": {
+      "created": 1770961364,
+      "is_private": false,
+      "name": "ai-native-title-marketing",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0AETMC52DQ": {
+      "created": 1770965243,
+      "is_private": false,
+      "name": "life-at-stage-bot",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0AFDSFD3PA": {
+      "created": 1770885561,
+      "is_private": false,
+      "name": "ai-native-agentic-framework-content",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
     "C0AFJCPPG8P": {
-      "name": "#long-binge-series-pod",
-      "tier": 3,
-      "added": "2026-03-19"
+      "created": 1771522578,
+      "is_private": false,
+      "name": "long-binge-series-pod",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0AFKKM6Y5C": {
+      "created": 1771402077,
+      "is_private": false,
+      "name": "ai-character-bots",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
     "C0AFZSHT7D0": {
-      "name": "#microdrama-promo-pod",
-      "tier": 3,
-      "added": "2026-03-19"
+      "created": 1771522748,
+      "is_private": false,
+      "name": "microdrama-promo-pod",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
-    "C0AL9G2CH7S": {
-      "name": "tam-expansion-dubbing",
-      "purpose": "TAM expansion via dubbing",
-      "tier": 3,
-      "added": "2026-03-24"
+    "C0AH5AVJ5PV": {
+      "created": 1772116813,
+      "is_private": true,
+      "name": "growtht-tracker",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0AK6NSDHFH": {
+      "created": 1773144076,
+      "is_private": false,
+      "name": "watch-retention-solver",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
     "C0AKJCKC45D": {
+      "created": 1773249964,
+      "is_private": false,
       "name": "film-pod-stage",
-      "purpose": "Production × Feature Film POD Sync channel - meeting notes and coordination"
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
-    "micro-drama-central-pod-stage": {
-      "id": "C0AD10E31CH",
-      "tier": 3,
-      "added": "2026-03-24",
-      "purpose": "Micro-drama content pod coordination"
+    "C0AL2NUKAP7": {
+      "created": 1773318722,
+      "is_private": true,
+      "name": "cricket-saathi",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
     },
-    "agentic-perf-marketing": "C0ANVN4DXHS",
+    "C0AL9G2CH7S": {
+      "created": 1773070817,
+      "is_private": false,
+      "name": "tam-expansion-dubbing",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0ALA37HGE5": {
+      "created": 1773231462,
+      "is_private": true,
+      "name": "admin-workflow",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
     "C0ALBB1G7RD": {
+      "created": 1773645115,
+      "is_private": false,
       "name": "subscription-ads-feature-film",
-      "purpose": "Feature film ad creatives",
-      "tier": 3,
-      "added": "2026-03-26"
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "C0ANVN4DXHS": {
+      "created": 1774440378,
+      "is_private": true,
+      "name": "agentic-perf-marketing",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CDZFAJLBV": {
+      "created": 1541748961,
+      "is_private": false,
+      "name": "announcements",
+      "num_members": 0,
+      "purpose": "This channel is for workspace-wide communication and announcements. All members are in this channel.",
+      "topic": "Company-wide announcements and work-based matters"
+    },
+    "CE277N1PH": {
+      "created": 1542009927,
+      "is_private": false,
+      "name": "onefeed-sdk",
+      "num_members": 0,
+      "purpose": "for communicating about onefeed",
+      "topic": ""
+    },
+    "CE8TGJHC4": {
+      "created": 1542802110,
+      "is_private": false,
+      "name": "team1",
+      "num_members": 0,
+      "purpose": "Hackathon",
+      "topic": ""
+    },
+    "CEAF06RGE": {
+      "created": 1542802600,
+      "is_private": false,
+      "name": "v9-onefeed-dashboard",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CEC2ED2RX": {
+      "created": 1543289986,
+      "is_private": false,
+      "name": "onefeed_media",
+      "num_members": 0,
+      "purpose": "For tech communication",
+      "topic": ""
+    },
+    "CEHLABRL2": {
+      "created": 1543828859,
+      "is_private": false,
+      "name": "programmaticsmediadek",
+      "num_members": 0,
+      "purpose": "Media deck for programmatics ",
+      "topic": ""
+    },
+    "CEHPPGSN9": {
+      "created": 1543820072,
+      "is_private": false,
+      "name": "tech-mates",
+      "num_members": 0,
+      "purpose": "Only For Tech Team Conversation",
+      "topic": ""
+    },
+    "CEHPZTVD3": {
+      "created": 1543821499,
+      "is_private": false,
+      "name": "stage-ke-krantikaari",
+      "num_members": 0,
+      "purpose": "Stay updated with company-wide announcements, events, and important updates. Everything you need to know about STAGE, all in one place!",
+      "topic": "Company-wide announcements, events, and important updates"
+    },
+    "CEJK31TFD": {
+      "created": 1543913541,
+      "is_private": false,
+      "name": "thedesignmafia",
+      "num_members": 0,
+      "purpose": "Design Team",
+      "topic": ""
+    },
+    "CEK1C296W": {
+      "created": 1543935436,
+      "is_private": false,
+      "name": "v9-affiliate-data",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CEKQZFR8A": {
+      "created": 1543999910,
+      "is_private": false,
+      "name": "conferenceroom",
+      "num_members": 0,
+      "purpose": "Conference Room booking",
+      "topic": ""
+    },
+    "CELRJQ682": {
+      "created": 1544077702,
+      "is_private": false,
+      "name": "thepopple--marcomm",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CEN2W1DGA": {
+      "created": 1544179434,
+      "is_private": false,
+      "name": "onefeed",
+      "num_members": 0,
+      "purpose": "OneFeed",
+      "topic": ""
+    },
+    "CENTYFW6M": {
+      "created": 1544426732,
+      "is_private": false,
+      "name": "onefeed_distribution",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CESRF1WR1": {
+      "created": 1544699231,
+      "is_private": false,
+      "name": "jaiho",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CEV13S971": {
+      "created": 1544782105,
+      "is_private": false,
+      "name": "bread_foodmate",
+      "num_members": 0,
+      "purpose": "bread foodmate",
+      "topic": ""
+    },
+    "CEVLA7BFX": {
+      "created": 1545034517,
+      "is_private": false,
+      "name": "mostlyhealth",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CEW94N20L": {
+      "created": 1545111524,
+      "is_private": false,
+      "name": "mostlymoney",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CEWV0GMMG": {
+      "created": 1545151147,
+      "is_private": false,
+      "name": "product",
+      "num_members": 0,
+      "purpose": "Create something big",
+      "topic": ""
+    },
+    "CEX7B2TAA": {
+      "created": 1545061043,
+      "is_private": false,
+      "name": "programmaticfinance",
+      "num_members": 0,
+      "purpose": "Invoices",
+      "topic": ""
+    },
+    "CF5AU9H6H": {
+      "created": 1546457332,
+      "is_private": false,
+      "name": "content-programmatics",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CF84JQWAC": {
+      "created": 1546941967,
+      "is_private": false,
+      "name": "indialeads",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CF8B4RS6M": {
+      "created": 1546952122,
+      "is_private": false,
+      "name": "innervoice",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CFH3M3F26": {
+      "created": 1547807022,
+      "is_private": false,
+      "name": "wittyhacks",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CG4LEN5HV": {
+      "created": 1549895244,
+      "is_private": false,
+      "name": "reddit-content-team",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CG50W2JTY": {
+      "created": 1549893829,
+      "is_private": false,
+      "name": "contech",
+      "num_members": 0,
+      "purpose": "content and tech discussions",
+      "topic": ""
+    },
+    "CG91NNEHE": {
+      "created": 1550493920,
+      "is_private": false,
+      "name": "videos_internal",
+      "num_members": 0,
+      "purpose": "Internal team Videos",
+      "topic": ""
+    },
+    "CG9L0M3PV": {
+      "created": 1550493858,
+      "is_private": false,
+      "name": "videos-and-us_leads",
+      "num_members": 0,
+      "purpose": "Leads can suggest videos that can go on any property.",
+      "topic": ""
+    },
+    "CGQ80KBRV": {
+      "created": 1551765581,
+      "is_private": false,
+      "name": "wittyfeedcontent",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CJPKMFV54": {
+      "created": 1557732189,
+      "is_private": false,
+      "name": "deployment",
+      "num_members": 0,
+      "purpose": "Jenkins builds",
+      "topic": ""
+    },
+    "CJPL664JJ": {
+      "created": 1557733668,
+      "is_private": false,
+      "name": "build",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CK16CHKLN": {
+      "created": 1558676702,
+      "is_private": false,
+      "name": "omji-chetan",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CL7DS8ZLY": {
+      "created": 1562587713,
+      "is_private": false,
+      "name": "stage",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CL8CN59B2": {
+      "created": 1562649033,
+      "is_private": false,
+      "name": "catchuphr",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CL9HWGAR4": {
+      "created": 1562587369,
+      "is_private": false,
+      "name": "traffic_usasites",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CM61EHG6L": {
+      "created": 1565250249,
+      "is_private": false,
+      "name": "wittyfeedupdates",
+      "num_members": 0,
+      "purpose": "",
+      "topic": ""
+    },
+    "CNYPWRY83": {
+      "created": 1570800997,
+      "is_private": false,
+      "name": "team-nukkad",
+      "num_members": 0,
+      "purpose": "Nukkad Social Media",
+      "topic": ""
+    },
+    "CS75DM3KQ": {
+      "created": 1577704326,
+      "is_private": false,
+      "name": "stage-product-feedback-and-requests",
+      "num_members": 0,
+      "purpose": "To report bugs on the STAGE app that we encounter",
+      "topic": "Discuss any features or bugs related to Stage tech here:point_down:\n\nThis includes:\n1. STAGE User App\n2. CMS\n3. Any other technology related topics"
+    },
+    "GEJUR0WA2": {
+      "created": 1543815167,
+      "is_private": true,
+      "name": "founders_sync",
+      "num_members": 0,
+      "purpose": "CXOs",
+      "topic": ""
     }
   },
-  "last_updated": "2026-03-12 02:21:58",
-  "total_count": 117,
-  "lastRefresh": "2026-03-12T03:50:00Z",
-  "people_directory": {
-    "USLACKBOT": {
-      "name": "slackbot",
-      "real_name": "Slackbot",
-      "email": ""
-    },
-    "UDYTZ0NBS": {
-      "name": "junaid",
-      "real_name": "Junaid Qureshi",
-      "email": "junaid@vatsana.com"
-    },
-    "UE0KTBS8P": {
-      "name": "shashank",
-      "real_name": "Shashank Vaishnav",
-      "email": "shashank@stage.in"
-    },
-    "UEHET2Q2G": {
-      "name": "vinay",
-      "real_name": "Vinay Singhal",
-      "email": "vinay@stage.in"
-    },
-    "UEJV57HQW": {
-      "name": "parveen",
-      "real_name": "Parveen Singhal",
-      "email": "parveen@stage.in"
-    },
-    "UEK09GX7G": {
-      "name": "kunal",
-      "real_name": "Kunal Kumrawat",
-      "email": "kunal@stage.in"
-    },
-    "U013U47GNM6": {
-      "name": "rohit.deshmukh",
-      "real_name": "Rohit Deshmukh",
-      "email": "rohit.deshmukh@stage.in"
-    },
-    "U02NX6HD7AS": {
-      "name": "neeraj",
-      "real_name": "Neeraj Kumar",
-      "email": "neeraj@stage.in"
-    },
-    "U02QS5RU0CE": {
-      "name": "stark",
-      "real_name": "Stark",
-      "email": "stark@stage.in"
-    },
-    "U030DT75RPB": {
-      "name": "sunil",
-      "real_name": "Sunil Mittal",
-      "email": "sunil@stage.in"
-    },
-    "U039SEJGKNZ": {
-      "name": "yash518",
-      "real_name": "Yash Verma",
-      "email": "yash@stage.in"
-    },
-    "U039VC42JAF": {
-      "name": "mofidul",
-      "real_name": "Mofidul Islam",
-      "email": "mofidul@stage.in"
-    },
-    "U03CN38BV7U": {
-      "name": "pravesh",
-      "real_name": "Pravesh Rajput",
-      "email": "pravesh@stage.in"
-    },
-    "U04643C2RK3": {
-      "name": "kishan",
-      "real_name": "Kishan Kumar",
-      "email": "kishan@stage.in"
-    },
-    "U047B3FRW0N": {
-      "name": "manish080",
-      "real_name": "Manish Joshi",
-      "email": "manish@stage.in"
-    },
-    "U04A980D1N3": {
-      "name": "ashishpandey",
-      "real_name": "Ashish Pandey",
-      "email": "ashishpandey@stage.in"
-    },
-    "U04B4KB3PNF": {
-      "name": "pavan",
-      "real_name": "Pavan Shukla",
-      "email": "pavan@stage.in"
-    },
-    "U04DAKA92BA": {
-      "name": "abhisheksaini",
-      "real_name": "Abhishek Saini",
-      "email": "abhisheksaini@stage.in"
-    },
-    "U04K05C125C": {
-      "name": "saurabhassija",
-      "real_name": "Saurabh Assija",
-      "email": "saurabhassija@stage.in"
-    },
-    "U04MD7BT04D": {
-      "name": "manpreet",
-      "real_name": "Manpreet Singh",
-      "email": "manpreet@stage.in"
-    },
-    "U04Q3HCSV4N": {
-      "name": "mahendrasaini",
-      "real_name": "MAHENDRA",
-      "email": "mahendra@stage.in"
-    },
-    "U05HAE85RL2": {
-      "name": "rahul.chauhan",
-      "real_name": "Rahul Chauhan",
-      "email": "rahul.chauhan@stage.in"
-    },
-    "U05MX9ALLVB": {
-      "name": "anushka",
-      "real_name": "Anushka Shrivastava",
-      "email": "anushka@stage.in"
-    },
-    "U05QMQHCVNY": {
-      "name": "harsh500",
-      "real_name": "Harsh Mani Tripathi",
-      "email": "harsh@stage.in"
-    },
-    "U05UY430AEQ": {
-      "name": "himanshi",
-      "real_name": "Himanshi Pruthi",
-      "email": "himanshi@stage.in"
-    },
-    "U0632CEKM0B": {
-      "name": "vipan",
-      "real_name": "Vipan Malawat",
-      "email": "vipan@stage.in"
-    },
-    "U068F2RS5PV": {
-      "name": "nisha",
-      "real_name": "Nisha",
-      "email": "nisha@stage.in"
-    },
-    "U06BGE5FME2": {
-      "name": "vaidik",
-      "real_name": "Vaidik Kapoor",
-      "email": "vaidik@stage.in"
-    },
-    "U06FGK8P2GZ": {
-      "name": "ankit.parashar",
-      "real_name": "Ankit Parashar",
-      "email": "ankit.parashar@stage.in"
-    },
-    "U06H0VARP97": {
-      "name": "renu",
-      "real_name": "Renu Rana",
-      "email": "renu@stage.in"
-    },
-    "U06K1FFPT71": {
-      "name": "manoj",
-      "real_name": "Manoj Mehra",
-      "email": "manoj@stage.in"
-    },
-    "U06LCQRJ35L": {
-      "name": "charu",
-      "real_name": "Charu Sharma",
-      "email": "charu@stage.in"
-    },
-    "U06M9123QJC": {
-      "name": "ajay935",
-      "real_name": "Ajay Sarewa",
-      "email": "ajay@stage.in"
-    },
-    "U0719V1GX3Q": {
-      "name": "pranay",
-      "real_name": "Pranay Merchant",
-      "email": "pranay@stage.in"
-    },
-    "U0779EHEUK1": {
-      "name": "anisha",
-      "real_name": "Anisha",
-      "email": "anisha@stage.in"
-    },
-    "U078AEUH7SR": {
-      "name": "jogender",
-      "real_name": "Jogender Singh",
-      "email": "jogender@stage.in"
-    },
-    "U078P1T1ULW": {
-      "name": "kushagra675",
-      "real_name": "Kushagra Gour",
-      "email": "Kushagra@stage.in"
-    },
-    "U07A91AB7GW": {
-      "name": "tarun",
-      "real_name": "Tarun Sahnan",
-      "email": "tarun@stage.in"
-    },
-    "U07BGHYQKE1": {
-      "name": "nikhil.soni",
-      "real_name": "Nikhil Soni",
-      "email": "nikhil.soni@stage.in"
-    },
-    "U07BHN4SDHV": {
-      "name": "shwetabh",
-      "real_name": "Shwetabh Gupta",
-      "email": "shwetabh@stage.in"
-    },
-    "U07CRBXGTEK": {
-      "name": "akshay.kumar",
-      "real_name": "Akshay",
-      "email": "akshay.kumar@stage.in"
-    },
-    "U07EJ9P4CTV": {
-      "name": "pragun",
-      "real_name": "Pragun Bhutani",
-      "email": "pragun@stage.in"
-    },
-    "U07EV6ZBPNE": {
-      "name": "sushant",
-      "real_name": "Sushant Kaushik",
-      "email": "sushant@stage.in"
-    },
-    "U07FXP4MKDY": {
-      "name": "saloni.goyal",
-      "real_name": "Saloni Goyal",
-      "email": "saloni.goyal@stage.in"
-    },
-    "U07GDMPCU3X": {
-      "name": "cs",
-      "real_name": "Lalit Sangwan",
-      "email": "cs@stage.in"
-    },
-    "U07LFSB0PM5": {
-      "name": "vismit",
-      "real_name": "Vismit Bansal",
-      "email": "vismit@stage.in"
-    },
-    "U07PE084LNQ": {
-      "name": "jyoti",
-      "real_name": "Jyoti Jakhar",
-      "email": "jyoti@stage.in"
-    },
-    "U07Q1LJMR7B": {
-      "name": "yatika",
-      "real_name": "Yatika kashyap",
-      "email": "yatika@stage.in"
-    },
-    "U07R906K9K5": {
-      "name": "nishita",
-      "real_name": "Nishita",
-      "email": "nishita@stage.in"
-    },
-    "U07S9DUU43U": {
-      "name": "abhay.p",
-      "real_name": "Abhay Pratap Singh",
-      "email": "abhay.p@stage.in"
-    },
-    "U07TQ7P64SK": {
-      "name": "naman",
-      "real_name": "Naman Girdhaar",
-      "email": "naman@stage.in"
-    },
-    "U0800Q5T1A6": {
-      "name": "amar.dubey",
-      "real_name": "Amar Dubey",
-      "email": "amar.dubey@stage.in"
-    },
-    "U081VG95FE3": {
-      "name": "sushant.sharma",
-      "real_name": "Sushant Sharma",
-      "email": "sushant.sharma@stage.in"
-    },
-    "U0826M8J8EM": {
-      "name": "vinodkumar",
-      "real_name": "Vinod Kumar",
-      "email": "vinod@stage.in"
-    },
-    "U082Q7F56F8": {
-      "name": "priyanka",
-      "real_name": "Priyanka Gupta",
-      "email": "priyanka@stage.in"
-    },
-    "U082Q7JQ9AS": {
-      "name": "ankur",
-      "real_name": "Ankur Hooda",
-      "email": "ankur@stage.in"
-    },
-    "U083JL19UMD": {
-      "name": "akriti",
-      "real_name": "Akriti Kaushik",
-      "email": "akriti@stage.in"
-    },
-    "U083W1PQXKP": {
-      "name": "anish",
-      "real_name": "anish",
-      "email": "anish@stage.in"
-    },
-    "U086LB19E0P": {
-      "name": "vedant.w",
-      "real_name": "Vedant Wagh",
-      "email": "vedant.w@stage.in"
-    },
-    "U088MJL8D4Z": {
-      "name": "mayur130",
-      "real_name": "Mayur Manchundia",
-      "email": "mayur@stage.in"
-    },
-    "U089APN985P": {
-      "name": "hemabh",
-      "real_name": "Hemabh Kamboj",
-      "email": "hemabh@stage.in"
-    },
-    "U089FV02X4M": {
-      "name": "rajesh.k",
-      "real_name": "Rajesh",
-      "email": "rajesh.k@stage.in"
-    },
-    "U089MA16V1S": {
-      "name": "mohit.k",
-      "real_name": "Mohit Kumar",
-      "email": "mohit.k@stage.in"
-    },
-    "U089YDN9GQP": {
-      "name": "ritu",
-      "real_name": "Ritu Seshma",
-      "email": "ritu@stage.in"
-    },
-    "U08AEKHKV1R": {
-      "name": "dineshpradhan70",
-      "real_name": "Dinesh Pradhan",
-      "email": "dineshpradhan70@gmail.com"
-    },
-    "U08AH85CEFN": {
-      "name": "parth.lekhak",
-      "real_name": "Anurag",
-      "email": "parth.lekhak@gmail.com"
-    },
-    "U08B0GNMR39": {
-      "name": "namneesh",
-      "real_name": "Namneesh Sharma",
-      "email": "namneesh@stage.in"
-    },
-    "U08B8QWDWR5": {
-      "name": "harshit.singh",
-      "real_name": "Harshit Singh",
-      "email": "Harshit.Singh@stage.in"
-    },
-    "U08DLCSK7QS": {
-      "name": "kashish",
-      "real_name": "Kashish Thakur",
-      "email": "Kashish@stage.in"
-    },
-    "U08E8NSJY8P": {
-      "name": "dharmendra",
-      "real_name": "Dharmendra Singh",
-      "email": "Dharmendra@stage.in"
-    },
-    "U08EGARFW5C": {
-      "name": "sumit.dhankar",
-      "real_name": "Sumit Dhankher",
-      "email": "sumit.dhankar@stage.in"
-    },
-    "U08HF39U1GC": {
-      "name": "mayank683",
-      "real_name": "Mayank Keserwani",
-      "email": "Mayank@stage.in"
-    },
-    "U08HTBH8MFA": {
-      "name": "vipul",
-      "real_name": "Vipul Sharma",
-      "email": "vipul@stage.in"
-    },
-    "U08HU6RSC7P": {
-      "name": "bikram.singh",
-      "real_name": "Bikram Singh",
-      "email": "bikram.singh@stage.in"
-    },
-    "U08HXUP5U3D": {
-      "name": "ankit.saxena",
-      "real_name": "Ankit Saxena",
-      "email": "ankit.saxena@stage.in"
-    },
-    "U08K1CXSHTJ": {
-      "name": "amit.kumar",
-      "real_name": "Amit Kumar",
-      "email": "amit.kumar@stage.in"
-    },
-    "U08KBHHV9J4": {
-      "name": "radhika.vijay",
-      "real_name": "Radhika Vijay",
-      "email": "radhika.vijay@stage.in"
-    },
-    "U08L99D58PK": {
-      "name": "nikhil.nair",
-      "real_name": "Nikhil Nair",
-      "email": "nikhil.nair@stage.in"
-    },
-    "U08M3FB9EN5": {
-      "name": "siddhant.chettri",
-      "real_name": "siddhant",
-      "email": "siddhant.chettri@stage.in"
-    },
-    "U08M4LD47BR": {
-      "name": "prakash.kumar",
-      "real_name": "Prakash Kumar",
-      "email": "prakash.kumar@stage.in"
-    },
-    "U08MRHK61BK": {
-      "name": "manasvi.dobhal",
-      "real_name": "Manasvi Dobhal",
-      "email": "manasvi.dobhal@stage.in"
-    },
-    "U08P2NXR8G0": {
-      "name": "aditya.rao",
-      "real_name": "Aditya Rao",
-      "email": "aditya.rao@stage.in"
-    },
-    "U08Q3B6A770": {
-      "name": "siddhartha.mondal",
-      "real_name": "Siddhartha",
-      "email": "siddhartha.mondal@stage.in"
-    },
-    "U08QBSH99EK": {
-      "name": "suhani",
-      "real_name": "Suhani",
-      "email": "suhani@stage.in"
-    },
-    "U08QCRJM1PA": {
-      "name": "sakshi.sharma",
-      "real_name": "Sakshi Sharma",
-      "email": "sakshi.sharma@stage.in"
-    },
-    "U08TGV2B8TY": {
-      "name": "aadhya.palwa",
-      "real_name": "Aadhya Palwa",
-      "email": "aadhya.palwa@stage.in"
-    },
-    "U08UCNVRKR7": {
-      "name": "lukesh.kolhe",
-      "real_name": "Lukesh Kolhe",
-      "email": "lukesh.kolhe@stage.in"
-    },
-    "U08UL9EHKKP": {
-      "name": "samir.kumar",
-      "real_name": "Samir Kumar",
-      "email": "samir.kumar@stage.in"
-    },
-    "U0959DWCSR4": {
-      "name": "engineering",
-      "real_name": "TECH",
-      "email": "engineering@stage.in"
-    },
-    "U096E4RCGHF": {
-      "name": "sahil.sharma",
-      "real_name": "Sahil Sharma",
-      "email": "sahil.sharma@stage.in"
-    },
-    "U099E81PQ7J": {
-      "name": "deepak.prajapati",
-      "real_name": "Deepak Prajapati",
-      "email": "deepak.prajapati@stage.in"
-    },
-    "U09AK8X90Q0": {
-      "name": "shubham.singla",
-      "real_name": "Shubham Singla",
-      "email": "shubham.singla@stage.in"
-    },
-    "U09APNQ00LU": {
-      "name": "sneha.singh",
-      "real_name": "Sneha Singh",
-      "email": "sneha.singh@stage.in"
-    },
-    "U09AZ6SV9TL": {
-      "name": "rohit.singh",
-      "real_name": "Rohit Singh",
-      "email": "rohit.singh@stage.in"
-    },
-    "U09CCHFJH28": {
-      "name": "nidhi.mishra",
-      "real_name": "Nidhi Mishra",
-      "email": "Nidhi.Mishra@stage.in"
-    },
-    "U09CCLQ3P0U": {
-      "name": "aditya.swaroop",
-      "real_name": "Aditya Swaroop",
-      "email": "Aditya.Swaroop@stage.in"
-    },
-    "U09CFGN5TRU": {
-      "name": "akash.kumar",
-      "real_name": "Akash Kumar",
-      "email": "akash.Kumar@stage.in"
-    },
-    "U09CMRNBKQA": {
-      "name": "himanshu.vadhera",
-      "real_name": "Himanshu Vadhera",
-      "email": "himanshu.vadhera@stage.in"
-    },
-    "U09CTERRYGK": {
-      "name": "nikita",
-      "real_name": "Nikita",
-      "email": "nikita@stage.in"
-    },
-    "U09FGKVMS81": {
-      "name": "nikhil.gupta",
-      "real_name": "Nikhil Gupta",
-      "email": "nikhil.gupta@stage.in"
-    },
-    "U09G0SABZ4P": {
-      "name": "akhilesh",
-      "real_name": "Akhilesh kumar",
-      "email": "akhilesh@stage.in"
-    },
-    "U09HZD8085S": {
-      "name": "naman.rao",
-      "real_name": "Naman Rao",
-      "email": "Naman.rao@stage.in"
-    },
-    "U09JSL09GKF": {
-      "name": "saurav",
-      "real_name": "Saurav Dutta",
-      "email": "saurav@stage.in"
-    },
-    "U09LHTE4LDT": {
-      "name": "vaibhav.verma",
-      "real_name": "Vaibhav Verma",
-      "email": "vaibhav.verma@stage.in"
-    },
-    "U09LM6696F2": {
-      "name": "kamal.kumar",
-      "real_name": "Kamal Singh Chauhan",
-      "email": "kamal.kumar@stage.in"
-    },
-    "U09NCC9M3AT": {
-      "name": "rajiv",
-      "real_name": "Rajiv S",
-      "email": "rajiv@stage.in"
-    },
-    "U09QGG6HLG0": {
-      "name": "ts.vishnu",
-      "real_name": "Vishnu TS",
-      "email": "ts.vishnu@stage.in"
-    },
-    "U09RA7GRW1M": {
-      "name": "himanshu.g",
-      "real_name": "Himanshu Gupta",
-      "email": "himanshu.g@stage.in"
-    },
-    "U09S4HRMG7K": {
-      "name": "sunil.y",
-      "real_name": "Sunil Yadav",
-      "email": "sunil.y@stage.in"
-    },
-    "U09TYHJFQLB": {
-      "name": "piyush.prabhakar",
-      "real_name": "Piyush Prabhakar",
-      "email": "piyush.prabhakar@stage.in"
-    },
-    "U0A0GPCUZ6G": {
-      "name": "gauri",
-      "real_name": "Gauri Prajapat",
-      "email": "Gauri@stage.in"
-    },
-    "U0A0S22RN4Q": {
-      "name": "ashish.meena",
-      "real_name": "Ashish Meena",
-      "email": "Ashish.meena@stage.in"
-    },
-    "U0A20D0M7FD": {
-      "name": "shivani.sharma",
-      "real_name": "Shivani Sharma",
-      "email": "shivani.sharma@stage.in"
-    },
-    "U0A232U4Z70": {
-      "name": "shantanu.chatterjee",
-      "real_name": "Shantanu Chatterjee",
-      "email": "shantanu.chatterjee@stage.in"
-    },
-    "U0A2LUCQCE9": {
-      "name": "kaustubh",
-      "real_name": "Kaustubh",
-      "email": "kaustubh@stage.in"
-    },
-    "U0A3C27NJGN": {
-      "name": "hiren94setiya",
-      "real_name": "Hiren Setiya",
-      "email": "hiren94setiya@gmail.com"
-    },
-    "U0A3QQQ3J21": {
-      "name": "shivansh",
-      "real_name": "Shivansh Rastogi",
-      "email": "shivansh@stage.in"
-    },
-    "U0A4BA697BL": {
-      "name": "jagriti",
-      "real_name": "Jagriti Raman",
-      "email": "jagriti@stage.in"
-    },
-    "U0A4V6M3BT5": {
-      "name": "kawaljeet",
-      "real_name": "Kawaljeet Kaur",
-      "email": "kawaljeet@stage.in"
-    },
-    "U0A51N5SYRH": {
-      "name": "aaliya",
-      "real_name": "Aaliya Mirza",
-      "email": "aaliya@stage.in"
-    },
-    "U0A54GY20FQ": {
-      "name": "lalit",
-      "real_name": "Lalit Sangwan",
-      "email": "lalit@stage.in"
-    },
-    "U0A54LTEXQV": {
-      "name": "shivangi",
-      "real_name": "shivangi",
-      "email": "shivangi@stage.in"
-    },
-    "U0A5BMGA7UL": {
-      "name": "ankur.kanaujia",
-      "real_name": "Ankur Kanaujia",
-      "email": "ankur.Kanaujia@stage.in"
-    },
-    "U0A688ATJN6": {
-      "name": "cos",
-      "real_name": "cos",
-      "email": "cos@stage.in"
-    },
-    "U0A6KADGZLM": {
-      "name": "surbhi.aggarwal",
-      "real_name": "Surbhi Aggarwal",
-      "email": "surbhi.Aggarwal@stage.in"
-    },
-    "U0A6NA4PH1T": {
-      "name": "haider",
-      "real_name": "Haider Ali",
-      "email": "haider@stage.in"
-    },
-    "U0A7YN8LH0W": {
-      "name": "ankit.sharma",
-      "real_name": "Ankit Sharma",
-      "email": "ankit.sharma@stage.in"
-    },
-    "U0A92L5NM1V": {
-      "name": "rishit.gupta",
-      "real_name": "Rishit Gupta",
-      "email": "rishit.gupta@stage.in"
-    },
-    "U0A9AUKQ1B5": {
-      "name": "saurabh.s",
-      "real_name": "SAURABH SUMAN",
-      "email": "saurabh.s@stage.in"
-    },
-    "U0A9FJ8SR2R": {
-      "name": "deepak.kumar",
-      "real_name": "Deepak Kumar Yadav",
-      "email": "deepak.kumar@stage.in"
-    },
-    "U0AA5FTLL2H": {
-      "name": "vikram.singh",
-      "real_name": "Vikram Singh",
-      "email": "vikram.singh@stage.in"
-    },
-    "U0AAX8NCSDC": {
-      "name": "vishwendra",
-      "real_name": "Vishwendra",
-      "email": "Vishwendra@stage.in"
-    },
-    "U0ABUUWNY78": {
-      "name": "kabir.dahiya",
-      "real_name": "Kabir Dahiya",
-      "email": "kabir.dahiya@stage.in"
-    },
-    "U0ACE1BGWLT": {
-      "name": "junaid940",
-      "real_name": "Junaid Qureshi",
-      "email": "junaid@stage.in"
-    },
-    "U0AEKLKTM98": {
-      "name": "vishal.sharma",
-      "real_name": "Vishal Sharma",
-      "email": "vishal.sharma@stage.in"
-    },
-    "U0AEP8PTH4L": {
-      "name": "aayush.chauhan",
-      "real_name": "Aayush Chauhan",
-      "email": "aayush.chauhan@stage.in"
-    },
-    "U0AF4KAJHDL": {
-      "name": "yash.khare",
-      "real_name": "Yash Khare",
-      "email": "yash.khare@stage.in"
-    },
-    "U0AGH4X92UA": {
-      "name": "daksh.jigyasi",
-      "real_name": "Daksh Jigyasi",
-      "email": "daksh.jigyasi@stage.in"
-    },
-    "U0AGZE7FXJN": {
-      "name": "akshay.b",
-      "real_name": "Akshay Badhara",
-      "email": "akshay.b@stage.in"
-    },
-    "U0AH3NSHCBB": {
-      "name": "simran.pathak",
-      "real_name": "Simran Pathak",
-      "email": "simran.pathak@stage.in"
-    },
-    "U0AHB9L9J3S": {
-      "name": "komal.mathur",
-      "real_name": "Komal Mathur",
-      "email": "komal.mathur@stage.in"
-    },
-    "U0AMC8G3Q1H": {
-      "name": "rajesh.pathak",
-      "real_name": "Raajesh Pathak",
-      "email": "rajesh.pathak@stage.in"
-    },
-    "U0AN75C0GGZ": {
-      "name": "himanshu.singh",
-      "real_name": "Himanshu Singh",
-      "email": "himanshu.singh@stage.in"
-    },
-    "U0ANDL16NU8": {
-      "name": "support",
-      "real_name": "support",
-      "email": "support@stage.in"
+  "metadata": {
+    "last_updated": "2026-03-27T12:40:00Z",
+    "tier1_count": 82,
+    "tier2_count": 43,
+    "tier3_count": 236,
+    "total_channels": 361
+  },
+  "tiers": {
+    "tier1": {
+      "C035F6W8DK9": {
+        "created": 1646632248,
+        "is_private": false,
+        "name": "product-design",
+        "num_members": 0,
+        "purpose": "Discussions related the UI/UX design development",
+        "topic": ""
+      },
+      "C035QJ5A8G6": {
+        "created": 1646654382,
+        "is_private": false,
+        "name": "product_prd",
+        "num_members": 0,
+        "purpose": "Discussions regarding the PRD for all product and features.",
+        "topic": ""
+      },
+      "C0368KVCL2D": {
+        "created": 1646637197,
+        "is_private": false,
+        "name": "product-analytics",
+        "num_members": 0,
+        "purpose": "Discussion related to all the analytics, metabase, amplitude, events and everything around data",
+        "topic": ""
+      },
+      "C0382PLRWRL": {
+        "created": 1648027614,
+        "is_private": false,
+        "name": "copies-conversion",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C039S74GNP2": {
+        "created": 1648532584,
+        "is_private": false,
+        "name": "rajasthani_stage",
+        "num_members": 0,
+        "purpose": "Rajasthani Culture - We will only focus MUKHAN VAHINI",
+        "topic": ""
+      },
+      "C04TLPLHQ4U": {
+        "created": 1678614464,
+        "is_private": false,
+        "name": "product_marketing_hiring",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C050JBJCEKH": {
+        "created": 1680150267,
+        "is_private": false,
+        "name": "content-for-marketing-product",
+        "num_members": 0,
+        "purpose": "Here we will watch our final content for marketing ideas, ads and product",
+        "topic": ""
+      },
+      "C05LT4FT4A3": {
+        "created": 1691667204,
+        "is_private": true,
+        "name": "product-invoices",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C06C97L05JP": {
+        "created": 1704282578,
+        "is_private": true,
+        "name": "quarterly_investor_updates",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C06LLFTK7NK": {
+        "created": 1709117915,
+        "is_private": true,
+        "name": "product-internal",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C06QTJMKLUA": {
+        "created": 1711077521,
+        "is_private": false,
+        "name": "retention",
+        "num_members": 0,
+        "purpose": "<https://docs.google.com/document/d/1ZWKRJ9uNEOMqKoEgMP88bO0IkPIybp2QaaiBVsKP7jQ/edit?usp=sharing>",
+        "topic": ""
+      },
+      "C073VRBFTUH": {
+        "created": 1715755569,
+        "is_private": false,
+        "name": "retention-creative-requirements",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0765HXVBFB": {
+        "created": 1717066629,
+        "is_private": true,
+        "name": "project-streamline-new-employee-onboarding",
+        "num_members": 0,
+        "purpose": "An ongoing project to streamline employee onboarding for new employees joining in tech.",
+        "topic": ""
+      },
+      "C076AUFK74Z": {
+        "created": 1717138187,
+        "is_private": false,
+        "name": "content-product-jugalbandi",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C078Y0EKLN7": {
+        "created": 1718865337,
+        "is_private": false,
+        "name": "making-frontend-better",
+        "num_members": 0,
+        "purpose": "This channel is a log of Kushagra\u2019s observations, discoveries about potential improvements to frontend (&amp; engineering) at Stage. Will also contain the actionables being taken regarding the same",
+        "topic": ""
+      },
+      "C079LSSQA0Y": {
+        "created": 1718865200,
+        "is_private": true,
+        "name": "product-and-analytics-hiring",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07CU8W8R5H": {
+        "created": 1721220119,
+        "is_private": false,
+        "name": "tech-growth",
+        "num_members": 0,
+        "purpose": "All discussions and team communication for tech team and growth team",
+        "topic": ""
+      },
+      "C07KWTTB98W": {
+        "created": 1725547578,
+        "is_private": true,
+        "name": "stage_maino",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07MZ6YVDPS": {
+        "created": 1726218981,
+        "is_private": false,
+        "name": "cre-engagement-campaign-rcs-wa",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07N3RN9FH7": {
+        "created": 1726564550,
+        "is_private": true,
+        "name": "recommendation-engine",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07N9G9LH0B": {
+        "created": 1726814090,
+        "is_private": false,
+        "name": "reengagement-pf-ads-creatives",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07QSGLSK97": {
+        "created": 1728038362,
+        "is_private": false,
+        "name": "copy--retention",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07QVKNB16C": {
+        "created": 1727944971,
+        "is_private": false,
+        "name": "retention-creative",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07RVS92YT0": {
+        "created": 1729060002,
+        "is_private": false,
+        "name": "research_updates",
+        "num_members": 0,
+        "purpose": "This channel serves as a dedicated platform for sharing consumer, audience, and research insights across various divisions at STAGE.  Utilize this public channel to access reports, case studies, and audience insight findings.",
+        "topic": "Consumer Insights\nResearch Reports\nAudience Findings"
+      },
+      "C07T7047TEZ": {
+        "created": 1729746698,
+        "is_private": false,
+        "name": "product-growth",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07TTQQL8JU": {
+        "created": 1729680671,
+        "is_private": false,
+        "name": "user-activation-strategy",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0800A3GERY": {
+        "created": 1731042373,
+        "is_private": true,
+        "name": "stage-content-growth",
+        "num_members": 0,
+        "purpose": "Leadership Conversations.",
+        "topic": ""
+      },
+      "C080EJU9873": {
+        "created": 1731067670,
+        "is_private": true,
+        "name": "growth-pod",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C081AG7J7EC": {
+        "created": 1731481288,
+        "is_private": false,
+        "name": "retention_nikhil",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C082Z8FUBRV": {
+        "created": 1733217695,
+        "is_private": true,
+        "name": "all-things-people-and-culture",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C084HQGH9T6": {
+        "created": 1733833663,
+        "is_private": true,
+        "name": "managers-aspiring-to-be-leaders",
+        "num_members": 0,
+        "purpose": "Leadership Development: Thoughts, discussions &amp; reflections on growing as a leader.",
+        "topic": "Growth &amp; Leadership Development"
+      },
+      "C084KMZ00HG": {
+        "created": 1733889421,
+        "is_private": false,
+        "name": "product-alerts",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C084ZAGHT7B": {
+        "created": 1733905884,
+        "is_private": false,
+        "name": "better-productivity",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C084ZC2RNUA": {
+        "created": 1734078734,
+        "is_private": true,
+        "name": "product-discussions",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C085HDR1BS4": {
+        "created": 1734012124,
+        "is_private": false,
+        "name": "tech-product-updates",
+        "num_members": 0,
+        "purpose": "",
+        "topic": "Important updates from the product+tech teams. You can expect:\n1. 1 update each sprint on what we worked on\n2. Other launches and impact analyses on things launched\n3. Sneak peeks of what's coming next"
+      },
+      "C085P594G7N": {
+        "created": 1734502649,
+        "is_private": true,
+        "name": "founders-plus",
+        "num_members": 0,
+        "purpose": "Org Structure, Content Strategy  &amp; More.",
+        "topic": ""
+      },
+      "C0889P3V6MV": {
+        "created": 1736923559,
+        "is_private": false,
+        "name": "stage-atlabs-ai",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08BPD4FJHH": {
+        "created": 1738676431,
+        "is_private": false,
+        "name": "stage-ai",
+        "num_members": 0,
+        "purpose": "Make everyone 10X more productive :rocket:",
+        "topic": ""
+      },
+      "C08E6782AKT": {
+        "created": 1739879714,
+        "is_private": false,
+        "name": "proj-onboarding",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08G27WDN4S": {
+        "created": 1741083530,
+        "is_private": true,
+        "name": "conversion-survey",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08GL5NN7MK": {
+        "created": 1741347145,
+        "is_private": true,
+        "name": "stage_legal-and-finance",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08HKLHM7AN": {
+        "created": 1741864297,
+        "is_private": true,
+        "name": "founder-travel",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08HQ89S797": {
+        "created": 1741787806,
+        "is_private": false,
+        "name": "content_strategy",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08KU4RJAFN": {
+        "created": 1743142050,
+        "is_private": false,
+        "name": "muhurat-scenes",
+        "num_members": 0,
+        "purpose": "Hi team, let's use this space to share all the Muhurta Shots here across all cultures. It would be easy for social teams to publish them online as well.",
+        "topic": ""
+      },
+      "C08MGJRDTEW": {
+        "created": 1744181567,
+        "is_private": false,
+        "name": "tv-adoption",
+        "num_members": 0,
+        "purpose": "<https://stage.metabaseapp.com/dashboard/1291-tv-app-adoption>",
+        "topic": ""
+      },
+      "C08N82UFN3F": {
+        "created": 1744742221,
+        "is_private": false,
+        "name": "productdesign",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08NV50KE7Q": {
+        "created": 1745301985,
+        "is_private": false,
+        "name": "content_writing_retention",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08PGK8CM32": {
+        "created": 1745004921,
+        "is_private": true,
+        "name": "finance-department",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08PY53QYSU": {
+        "created": 1745382319,
+        "is_private": false,
+        "name": "ai-at-stage",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08QC5UHQUS": {
+        "created": 1745989054,
+        "is_private": true,
+        "name": "productgrowth-hiring",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08SAF7RBUZ": {
+        "created": 1747048980,
+        "is_private": false,
+        "name": "project_data-active-subscriber-watch-retention",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0904NE9Y2K": {
+        "created": 1749469725,
+        "is_private": false,
+        "name": "engagement-solver-team",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0905UNGLJK": {
+        "created": 1749483250,
+        "is_private": false,
+        "name": "brand-health-funnel-metrics",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0914FW9WE9": {
+        "created": 1749738263,
+        "is_private": false,
+        "name": "user_activation",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C092ENBK63A": {
+        "created": 1750138811,
+        "is_private": false,
+        "name": "stage-microdrama-idea-suggestion",
+        "num_members": 0,
+        "purpose": "This Channel is to Track progress of STGE Original Micro-Dramas for all cultures",
+        "topic": ""
+      },
+      "C092JE3KZ37": {
+        "created": 1750662160,
+        "is_private": false,
+        "name": "content-production-update",
+        "num_members": 0,
+        "purpose": "For sharing important updates and progress related to content and production team- creation, shoots, post-production, and other production workflows",
+        "topic": ""
+      },
+      "C092XDNSDB9": {
+        "created": 1751007877,
+        "is_private": false,
+        "name": "full-funnel-solver",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C092YVANF9P": {
+        "created": 1750662289,
+        "is_private": false,
+        "name": "marketing-updates",
+        "num_members": 0,
+        "purpose": "Central hub for all key updates, initiatives, and announcements from the Retention, Title, and Performance Marketing teams",
+        "topic": ""
+      },
+      "C094EJU35L7": {
+        "created": 1751970885,
+        "is_private": true,
+        "name": "biggest-delta",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C097XAP8493": {
+        "created": 1753792146,
+        "is_private": false,
+        "name": "user-research-lab",
+        "num_members": 0,
+        "purpose": "A collective effort to work on user research problem statements by creating dedicated time and space to carry out research projects and build toward better product experiences.",
+        "topic": ""
+      },
+      "C09GHS9PNPM": {
+        "created": 1758629744,
+        "is_private": true,
+        "name": "mo-conversion-drop",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09PM1DNK34": {
+        "created": 1761803981,
+        "is_private": false,
+        "name": "growth-clm",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09PWTHF44A": {
+        "created": 1761898859,
+        "is_private": true,
+        "name": "building-consumer-insights-team",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09TLDLA7GE": {
+        "created": 1763463214,
+        "is_private": true,
+        "name": "retention-hiring",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A2QNQSA0P": {
+        "created": 1765528183,
+        "is_private": false,
+        "name": "dormant-resurrection",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A3N67V0G2": {
+        "created": 1765803370,
+        "is_private": false,
+        "name": "retention-pod",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A4BF8HTN3": {
+        "created": 1766215355,
+        "is_private": true,
+        "name": "monetisation-core-devs",
+        "num_members": 0,
+        "purpose": "internal/working group - focussed comms on execution",
+        "topic": ""
+      },
+      "C0A5GJRCQTZ": {
+        "created": 1767002615,
+        "is_private": true,
+        "name": "m1-watchers-retention",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A6ZPA3XT8": {
+        "created": 1767701242,
+        "is_private": true,
+        "name": "m0-strategy",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A87E17UMS": {
+        "created": 1768197925,
+        "is_private": true,
+        "name": "monetisation",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A99V9BHEV": {
+        "created": 1768478101,
+        "is_private": false,
+        "name": "stage_maino_manthan",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AAKDTMY82": {
+        "created": 1769176023,
+        "is_private": true,
+        "name": "retention_cost_optimization",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0ABCG0RV1N": {
+        "created": 1769162953,
+        "is_private": true,
+        "name": "homepage-personalisation",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AEG5645RT": {
+        "created": 1770885380,
+        "is_private": false,
+        "name": "culture-productising",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AFKKM6Y5C": {
+        "created": 1771402077,
+        "is_private": false,
+        "name": "ai-character-bots",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AH5AVJ5PV": {
+        "created": 1772116813,
+        "is_private": true,
+        "name": "growtht-tracker",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AK6NSDHFH": {
+        "created": 1773144076,
+        "is_private": false,
+        "name": "watch-retention-solver",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CE8TGJHC4": {
+        "created": 1542802110,
+        "is_private": false,
+        "name": "team1",
+        "num_members": 0,
+        "purpose": "Hackathon",
+        "topic": ""
+      },
+      "CEAF06RGE": {
+        "created": 1542802600,
+        "is_private": false,
+        "name": "v9-onefeed-dashboard",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CEWV0GMMG": {
+        "created": 1545151147,
+        "is_private": false,
+        "name": "product",
+        "num_members": 0,
+        "purpose": "Create something big",
+        "topic": ""
+      },
+      "CS75DM3KQ": {
+        "created": 1577704326,
+        "is_private": false,
+        "name": "stage-product-feedback-and-requests",
+        "num_members": 0,
+        "purpose": "To report bugs on the STAGE app that we encounter",
+        "topic": "Discuss any features or bugs related to Stage tech here:point_down:\n\nThis includes:\n1. STAGE User App\n2. CMS\n3. Any other technology related topics"
+      },
+      "GEJUR0WA2": {
+        "created": 1543815167,
+        "is_private": true,
+        "name": "founders_sync",
+        "num_members": 0,
+        "purpose": "CXOs",
+        "topic": ""
+      }
+    },
+    "tier2": {
+      "C02178ASC4X": {
+        "created": 1620801600,
+        "is_private": false,
+        "name": "haryanvi_stage",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C037H0GLYP4": {
+        "created": 1647520151,
+        "is_private": false,
+        "name": "marketing",
+        "num_members": 0,
+        "purpose": "Brainstorming ideas on marketing, social media, organic etc",
+        "topic": ""
+      },
+      "C037U7RUS2F": {
+        "created": 1647765258,
+        "is_private": false,
+        "name": "subscription_ads_haryanvi",
+        "num_members": 0,
+        "purpose": "This group is to discuss new subscription ads. Deliver ready subscription ads. and discuss their captions.",
+        "topic": ""
+      },
+      "C047F65FQRK": {
+        "created": 1666340910,
+        "is_private": false,
+        "name": "subscription-ads-rajasthani",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C047H8326TX": {
+        "created": 1666365642,
+        "is_private": false,
+        "name": "content-lead-hr",
+        "num_members": 0,
+        "purpose": "All important discussion regarding haryanvi Content",
+        "topic": ""
+      },
+      "C047HLH7T26": {
+        "created": 1666334298,
+        "is_private": false,
+        "name": "promo-team",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04DKHJKV5W": {
+        "created": 1669716471,
+        "is_private": false,
+        "name": "tech-hiring",
+        "num_members": 0,
+        "purpose": "Candidate tracking: <https://docs.google.com/spreadsheets/d/143UrgcAhpdsi8J3uvsV2SCwnZiYxDz8LtE-0B-9r-NY/edit?gid=0#gid=0>",
+        "topic": ""
+      },
+      "C04FVE61LHK": {
+        "created": 1671514395,
+        "is_private": false,
+        "name": "qa-hiring",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04M2CENJEB": {
+        "created": 1675241093,
+        "is_private": false,
+        "name": "brand_partnerships",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C06C2ALHM4H": {
+        "created": 1703670980,
+        "is_private": false,
+        "name": "project-test-automation",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C06NYMGLNGH": {
+        "created": 1709893712,
+        "is_private": false,
+        "name": "tech-frontend",
+        "num_members": 0,
+        "purpose": "Frontend related stuff",
+        "topic": ""
+      },
+      "C06P3SQMZEY": {
+        "created": 1710218710,
+        "is_private": false,
+        "name": "project-react-website-vercel-events",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C06PD3K9TN2": {
+        "created": 1710430967,
+        "is_private": false,
+        "name": "project-mobile-continuous-delivery",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07DC1S9JQ1": {
+        "created": 1721286999,
+        "is_private": true,
+        "name": "proj-analytics-infra",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07EGVDQ3SL": {
+        "created": 1721815458,
+        "is_private": false,
+        "name": "rajasthani-marketing",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07PL69UAFL": {
+        "created": 1727666633,
+        "is_private": false,
+        "name": "promo_ideas_discussion",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07SXBJTZJ7": {
+        "created": 1729575620,
+        "is_private": false,
+        "name": "team-data",
+        "num_members": 0,
+        "purpose": "The public channel for all your data requests, queries etc.",
+        "topic": ""
+      },
+      "C07TNBUAWPP": {
+        "created": 1730099984,
+        "is_private": false,
+        "name": "tech-mobile",
+        "num_members": 0,
+        "purpose": "Channel for mobile team discussion",
+        "topic": ""
+      },
+      "C0810CKG1C1": {
+        "created": 1731481159,
+        "is_private": false,
+        "name": "bhojpuri_stage",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0811TJDPLH": {
+        "created": 1731501795,
+        "is_private": false,
+        "name": "title-marketing-all",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C082STFKC5V": {
+        "created": 1733130912,
+        "is_private": true,
+        "name": "team-brand",
+        "num_members": 0,
+        "purpose": "all things BRAND STAGE.",
+        "topic": ""
+      },
+      "C08AD0XFDU0": {
+        "created": 1737523092,
+        "is_private": false,
+        "name": "subscription-ads-bhojpuri",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08K7RS42RM": {
+        "created": 1743095821,
+        "is_private": false,
+        "name": "media-mentions",
+        "num_members": 0,
+        "purpose": "We share and track all external press coverage, brand mentions, articles, and media wins here. To keep all the teams updated and celebrate our visibility!  :newspaper::sparkles:",
+        "topic": "All media coverage, articles, and mentions of STAGE in the news"
+      },
+      "C08KMK43JN6": {
+        "created": 1743061178,
+        "is_private": true,
+        "name": "release-cycle",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08L4EMHR0X": {
+        "created": 1743657711,
+        "is_private": false,
+        "name": "team-devops",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08LG2JJDPE": {
+        "created": 1743586008,
+        "is_private": false,
+        "name": "intern-requirement-marketing",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08NEKQT69E": {
+        "created": 1744363105,
+        "is_private": false,
+        "name": "awareness-consideratin-promo-scripts",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08U68MAEHM": {
+        "created": 1748539762,
+        "is_private": false,
+        "name": "brand-health-on-ground-resarch",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C090D5UJFM4": {
+        "created": 1749464986,
+        "is_private": false,
+        "name": "team-bhojpuri",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C090SNCDT8T": {
+        "created": 1749648858,
+        "is_private": true,
+        "name": "project-reels-and-microdramas",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C090Y99T9LZ": {
+        "created": 1749463220,
+        "is_private": false,
+        "name": "copy-and-promo-rock",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C095EKEC0LX": {
+        "created": 1752573231,
+        "is_private": true,
+        "name": "hiring-approval",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09CV63KRHT": {
+        "created": 1756709625,
+        "is_private": false,
+        "name": "sanwari-artist-promo",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09HUCE9PQB": {
+        "created": 1759265160,
+        "is_private": false,
+        "name": "jholachhap-promotion-pwc-event",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A1M91Q6P7": {
+        "created": 1764911896,
+        "is_private": false,
+        "name": "haryanvi-promo-team",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A7QKTFCDN": {
+        "created": 1767634431,
+        "is_private": false,
+        "name": "gujarati_stage",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A8HDGU669": {
+        "created": 1768373945,
+        "is_private": false,
+        "name": "social-media-gujarati",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A8QB9UGJY": {
+        "created": 1768372511,
+        "is_private": false,
+        "name": "subscription-ads-gujarati",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AELUDV1QT": {
+        "created": 1770960303,
+        "is_private": false,
+        "name": "ai-native-performance-marketing",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AETCSJSCA": {
+        "created": 1770961364,
+        "is_private": false,
+        "name": "ai-native-title-marketing",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AFZSHT7D0": {
+        "created": 1771522748,
+        "is_private": false,
+        "name": "microdrama-promo-pod",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0ANVN4DXHS": {
+        "created": 1774440378,
+        "is_private": true,
+        "name": "agentic-perf-marketing",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CEHPPGSN9": {
+        "created": 1543820072,
+        "is_private": false,
+        "name": "tech-mates",
+        "num_members": 0,
+        "purpose": "Only For Tech Team Conversation",
+        "topic": ""
+      }
+    },
+    "tier3": {
+      "C0101V0KR1N": {
+        "created": 1584342026,
+        "is_private": false,
+        "name": "wfcontentstandup",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0115DZPDMG": {
+        "created": 1586154350,
+        "is_private": false,
+        "name": "hrworklogs",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C013GQHKNM8": {
+        "created": 1589294075,
+        "is_private": false,
+        "name": "build_1",
+        "num_members": 0,
+        "purpose": "jenkins notifications",
+        "topic": ""
+      },
+      "C017KEVC3V2": {
+        "created": 1595251293,
+        "is_private": false,
+        "name": "all_character_video",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C01B905KNJZ": {
+        "created": 1600973266,
+        "is_private": false,
+        "name": "stagecms",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C01PPHA8F34": {
+        "created": 1614599527,
+        "is_private": false,
+        "name": "testforamplitude",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C01R4A0H1UP": {
+        "created": 1615990440,
+        "is_private": false,
+        "name": "external-catchup-searce",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C020VPVFZUL": {
+        "created": 1620027702,
+        "is_private": false,
+        "name": "alert_gcp",
+        "num_members": 0,
+        "purpose": "For gcp alerts",
+        "topic": ""
+      },
+      "C02F43TJEG7": {
+        "created": 1632486498,
+        "is_private": false,
+        "name": "crash-reports",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C02HBN8F0SK": {
+        "created": 1634211935,
+        "is_private": false,
+        "name": "ios-internal-testing",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C02MQC6MSN5": {
+        "created": 1636978990,
+        "is_private": false,
+        "name": "my-note",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C033GF3BVMZ": {
+        "created": 1645076766,
+        "is_private": false,
+        "name": "tv-android-platter",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0346C5LWPN": {
+        "created": 1645527321,
+        "is_private": false,
+        "name": "prd-changes",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C035Y3QTD7Y": {
+        "created": 1646754124,
+        "is_private": false,
+        "name": "jira-learnings",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C03BWBS957X": {
+        "created": 1650354532,
+        "is_private": false,
+        "name": "cms-issues",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C03C4QAPABU": {
+        "created": 1650430248,
+        "is_private": false,
+        "name": "leave-intimation",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C03CH44KLUT": {
+        "created": 1650605005,
+        "is_private": false,
+        "name": "stage-backend",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C03H1HU1FRD": {
+        "created": 1653895649,
+        "is_private": false,
+        "name": "backend",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C03S73A1R7C": {
+        "created": 1659544014,
+        "is_private": false,
+        "name": "nukkad-wali-chai",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04612FQ3RS": {
+        "created": 1665472637,
+        "is_private": false,
+        "name": "tv_discussion_crash",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0479T52GMT": {
+        "created": 1666268922,
+        "is_private": false,
+        "name": "social-media-hr",
+        "num_members": 0,
+        "purpose": "All things social media in Haryana",
+        "topic": ""
+      },
+      "C047BKTJ01G": {
+        "created": 1666253691,
+        "is_private": false,
+        "name": "laptop_request",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C047CS5H9PC": {
+        "created": 1666269060,
+        "is_private": false,
+        "name": "social-media-raj",
+        "num_members": 0,
+        "purpose": "All things social media in Rajasthan",
+        "topic": ""
+      },
+      "C047E57Q2VA": {
+        "created": 1666254231,
+        "is_private": false,
+        "name": "procurement-and-vendor-payment-group-",
+        "num_members": 0,
+        "purpose": "This Group is for smooth order placements and vendor payment",
+        "topic": ""
+      },
+      "C047Q5M6SCR": {
+        "created": 1666252283,
+        "is_private": false,
+        "name": "copywriting-hr",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C048HV2P8SX": {
+        "created": 1666951526,
+        "is_private": false,
+        "name": "payments_legal_hr_agreement",
+        "num_members": 0,
+        "purpose": "Discussion related to Payment, contracts and legals",
+        "topic": ""
+      },
+      "C048P8ECGBZ": {
+        "created": 1667372794,
+        "is_private": false,
+        "name": "tech-erd",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04BF3XCH6H": {
+        "created": 1668750210,
+        "is_private": false,
+        "name": "clevertap-notification-",
+        "num_members": 0,
+        "purpose": "Channel to discuss all things related to Clevertap and help resolve any issues",
+        "topic": ""
+      },
+      "C04D2NNQENA": {
+        "created": 1669887802,
+        "is_private": false,
+        "name": "stage-user-experience-design-nirav",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04H5RF55RQ": {
+        "created": 1672651255,
+        "is_private": false,
+        "name": "content-notification",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04H786U80H": {
+        "created": 1672230062,
+        "is_private": false,
+        "name": "short-film-competition",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04H8URE5V1": {
+        "created": 1672740313,
+        "is_private": false,
+        "name": "shark-tank-support",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04JWCPM17W": {
+        "created": 1673616871,
+        "is_private": false,
+        "name": "alert_from_servers",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04K6JUC8LX": {
+        "created": 1674126253,
+        "is_private": false,
+        "name": "test_channel_2",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04L07HSQF3": {
+        "created": 1674132274,
+        "is_private": false,
+        "name": "stage--backend",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04LZFNDCAE": {
+        "created": 1674917667,
+        "is_private": false,
+        "name": "stage-sugarbox",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04MG5W7ZTM": {
+        "created": 1675231248,
+        "is_private": false,
+        "name": "given-subscription-by-cms",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04MZHQFYGG": {
+        "created": 1675156391,
+        "is_private": false,
+        "name": "payment-request-",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04N6A2PG4Q": {
+        "created": 1675237003,
+        "is_private": false,
+        "name": "referral_payments",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04N9E37QH3": {
+        "created": 1675744411,
+        "is_private": false,
+        "name": "office-table-bill",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04Q2N9TVGR": {
+        "created": 1676457429,
+        "is_private": false,
+        "name": "sabot",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04R5010E5D": {
+        "created": 1677565325,
+        "is_private": false,
+        "name": "stage-content-research-hr",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04RMDY4B6C": {
+        "created": 1677149983,
+        "is_private": false,
+        "name": "hr-creatives-for-social-media-handles",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04RR27AS21": {
+        "created": 1677668828,
+        "is_private": false,
+        "name": "expense-reimbursement",
+        "num_members": 0,
+        "purpose": "Travel Expenses",
+        "topic": ""
+      },
+      "C04RWQQQG4D": {
+        "created": 1677735697,
+        "is_private": false,
+        "name": "deep-links",
+        "num_members": 0,
+        "purpose": "Recording for  Deeplink Generation\n<https://media-files.tldv.io/9e049c7f53c2907064a8598720b4889beb00487b8b5ef0a718f713b319b60f29/kkJkoH6sfyC6sQsGqAg_master.m3u8>",
+        "topic": ""
+      },
+      "C04TDHELB4G": {
+        "created": 1678176626,
+        "is_private": false,
+        "name": "recomendation-engine",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04UALJSZ7Z": {
+        "created": 1679312960,
+        "is_private": false,
+        "name": "subtitle-qc-hr",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C04V3MZ7XA4": {
+        "created": 1679022113,
+        "is_private": false,
+        "name": "api-endpoints",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C051M0HEE85": {
+        "created": 1680605998,
+        "is_private": false,
+        "name": "iconwave",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C051S6J4QUU": {
+        "created": 1680603198,
+        "is_private": false,
+        "name": "shriram-group",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C051ZFBPXSR": {
+        "created": 1680762942,
+        "is_private": false,
+        "name": "cloudtv",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C052YCJPVH6": {
+        "created": 1680850528,
+        "is_private": false,
+        "name": "notification-banner",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C053HVAF8D8": {
+        "created": 1681726013,
+        "is_private": false,
+        "name": "red-tv",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C053XNFAD27": {
+        "created": 1681898060,
+        "is_private": false,
+        "name": "playbox-tv",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C05412V49TP": {
+        "created": 1681973530,
+        "is_private": false,
+        "name": "aditya-channel",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C054PNFKZNG": {
+        "created": 1682339990,
+        "is_private": false,
+        "name": "appsflyer",
+        "num_members": 0,
+        "purpose": "New App Events\nS2S events\ndeeplink generation\ndeffered deeplink",
+        "topic": ""
+      },
+      "C055KUNLE0P": {
+        "created": 1683106238,
+        "is_private": false,
+        "name": "xonware",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C05603QSE74": {
+        "created": 1683101305,
+        "is_private": false,
+        "name": "yupp-tv",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C056GKRGSPJ": {
+        "created": 1683006863,
+        "is_private": false,
+        "name": "ott-play",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C057959JJ74": {
+        "created": 1683793406,
+        "is_private": false,
+        "name": "mobyads",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C058T5J1FN3": {
+        "created": 1684914135,
+        "is_private": false,
+        "name": "new-posters",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C05A7QB2UHH": {
+        "created": 1685516617,
+        "is_private": false,
+        "name": "splash-animation",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C05BQLDB1SM": {
+        "created": 1686125763,
+        "is_private": true,
+        "name": "content-categorization",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C05F84C3MEK": {
+        "created": 1688576778,
+        "is_private": false,
+        "name": "1-1shubham",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C05FEER0QB0": {
+        "created": 1688563671,
+        "is_private": false,
+        "name": "1-0-1-uttam",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C05HH2PGLRM": {
+        "created": 1689841196,
+        "is_private": false,
+        "name": "cac-ads-solver",
+        "num_members": 0,
+        "purpose": "Haryana Report - <https://docs.google.com/spreadsheets/d/1YWahXB1marG8ooOIboLRo23bFKw2ZJC1jVFO385Kt_o/edit?usp=sharing>\n\n\nRajasthan Report - <https://docs.google.com/spreadsheets/d/1cAm-ixxwkfBgYS4IFyMwx_UzRyKWXAlDb88LSAyU4a8/edit?usp=sharing>",
+        "topic": ""
+      },
+      "C05HTBEHT52": {
+        "created": 1689759038,
+        "is_private": false,
+        "name": "cac-playstore-to-paid-solver",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C05J6S6PWNL": {
+        "created": 1689664718,
+        "is_private": false,
+        "name": "content-subtitles",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C05JCFTR2J3": {
+        "created": 1690354011,
+        "is_private": false,
+        "name": "airtel-xstream-",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C05S2L634EB": {
+        "created": 1694766522,
+        "is_private": false,
+        "name": "user-feedbacks",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0602HW0Z5M": {
+        "created": 1696947195,
+        "is_private": true,
+        "name": "stageisset",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0637KE40CB": {
+        "created": 1698460177,
+        "is_private": false,
+        "name": "dada-lakhmi-success",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C064K7EGWUT": {
+        "created": 1699338918,
+        "is_private": true,
+        "name": "hr-invoice",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C064TDSRJKS": {
+        "created": 1699005290,
+        "is_private": false,
+        "name": "1-1-creative-team",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C06GK2M36P9": {
+        "created": 1706899993,
+        "is_private": true,
+        "name": "company-imp-docs",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C06L5FQL3GU": {
+        "created": 1708589998,
+        "is_private": true,
+        "name": "credit_card_invoices",
+        "num_members": 0,
+        "purpose": "",
+        "topic": "Add Invoices and Ask for OTP"
+      },
+      "C06LHQKUS3X": {
+        "created": 1708947082,
+        "is_private": false,
+        "name": "rajasthan-fgd",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C06S248NR34": {
+        "created": 1711783327,
+        "is_private": false,
+        "name": "socialmedia-stage-hr-team",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C06SAHCEBHV": {
+        "created": 1712210586,
+        "is_private": false,
+        "name": "haryana-casting",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C06UT8KB9DH": {
+        "created": 1713376765,
+        "is_private": false,
+        "name": "tech-craft",
+        "num_members": 0,
+        "purpose": "This channel is about learning and improving your craft! Feel free to share interesting tech articles here",
+        "topic": ""
+      },
+      "C06UW1S5CGJ": {
+        "created": 1713418480,
+        "is_private": false,
+        "name": "truecaller-stage",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C073A1Q7U01": {
+        "created": 1715354266,
+        "is_private": false,
+        "name": "hr-sm-caption",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C073D2D5FRP": {
+        "created": 1715422460,
+        "is_private": true,
+        "name": "pm-only-top-secret",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C079N49UVUK": {
+        "created": 1719317747,
+        "is_private": false,
+        "name": "jashan_eod",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07AV7HKT7S": {
+        "created": 1719554860,
+        "is_private": false,
+        "name": "production-creative-sync",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07F4660QF7": {
+        "created": 1722575274,
+        "is_private": false,
+        "name": "github_alerts",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07F86R0CET": {
+        "created": 1722929582,
+        "is_private": false,
+        "name": "sentry-web",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07FPLKR2N7": {
+        "created": 1722942640,
+        "is_private": false,
+        "name": "pg-alert",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07JLD7JL0P": {
+        "created": 1724908507,
+        "is_private": false,
+        "name": "playstore-ratings",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07KPJ37SGL": {
+        "created": 1725335742,
+        "is_private": true,
+        "name": "due-deligence-requirement",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07LD4HL3PT": {
+        "created": 1725509363,
+        "is_private": false,
+        "name": "cms-content",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07M9APSM5Y": {
+        "created": 1726203043,
+        "is_private": false,
+        "name": "content-tagging",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07P7C0T267": {
+        "created": 1727364420,
+        "is_private": false,
+        "name": "memes",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07PZS5MWR4": {
+        "created": 1727940302,
+        "is_private": false,
+        "name": "bhairavi-tshirts",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C07SHGWPZGF": {
+        "created": 1729585070,
+        "is_private": false,
+        "name": "backend-alerts",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C081FH29W7P": {
+        "created": 1732033164,
+        "is_private": false,
+        "name": "morphic-stage",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C081G4RPDC2": {
+        "created": 1732007340,
+        "is_private": false,
+        "name": "cms-deliveries",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C081K05ULR2": {
+        "created": 1732011423,
+        "is_private": false,
+        "name": "new-office",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C082ZCU8VQA": {
+        "created": 1732870918,
+        "is_private": false,
+        "name": "rj-content-planning",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C083G6MMJ0K": {
+        "created": 1733245238,
+        "is_private": false,
+        "name": "small-wins",
+        "num_members": 0,
+        "purpose": "Share all the small victories that we accomplish as a team on a day to day basis and use this space to share our achievements.\n\nAll of our new milestones can be posted here too.",
+        "topic": ""
+      },
+      "C083NFDTJ4Q": {
+        "created": 1732874771,
+        "is_private": false,
+        "name": "rj-script",
+        "num_members": 0,
+        "purpose": "<https://forms.gle/VnMtGRqsQv5QVnZA7>",
+        "topic": ""
+      },
+      "C083STSVDEX": {
+        "created": 1733394553,
+        "is_private": false,
+        "name": "casting",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C084EE30XPD": {
+        "created": 1733823564,
+        "is_private": false,
+        "name": "random-ideas",
+        "num_members": 0,
+        "purpose": "all of us get random ideas, about random things at STAGE, related to random teams and there is no outlet for them - good / bad / big / small - doesn't matter - a thought strikes, just put it here and let the other discover it from here.",
+        "topic": "Have a creative idea that could benefit STAGE? Drop it here!"
+      },
+      "C084JVD7Q68": {
+        "created": 1733845885,
+        "is_private": false,
+        "name": "referrals",
+        "num_members": 0,
+        "purpose": "This channel is created for sharing referrals. If you have friend that you want to refer for a role at STAGE, fill out the link in shared and tagged in the channel.",
+        "topic": ""
+      },
+      "C084TNRH7QE": {
+        "created": 1734092895,
+        "is_private": false,
+        "name": "daily-cac",
+        "num_members": 0,
+        "purpose": "Tracking daily performance numbers across HR &amp; RJ.",
+        "topic": ""
+      },
+      "C084XJUCSKS": {
+        "created": 1733744859,
+        "is_private": false,
+        "name": "ml-work",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0858PR0V50": {
+        "created": 1734340083,
+        "is_private": false,
+        "name": "slack-profile-update",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C085BSBRPJ8": {
+        "created": 1734347696,
+        "is_private": false,
+        "name": "social-media-bh",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C086984K7LY": {
+        "created": 1734498740,
+        "is_private": false,
+        "name": "dd-alerts",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C086EJ905FB": {
+        "created": 1734714841,
+        "is_private": true,
+        "name": "team-hr",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0875TQ8SNB": {
+        "created": 1736257851,
+        "is_private": false,
+        "name": "crew-workshop",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08798ABU65": {
+        "created": 1735627147,
+        "is_private": false,
+        "name": "actors-relationship",
+        "num_members": 0,
+        "purpose": "This channel is to understand actors problem and solving them",
+        "topic": "To understand actors problem"
+      },
+      "C087DEHCF8T": {
+        "created": 1736155069,
+        "is_private": false,
+        "name": "skill-framework",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C087XA4J7LZ": {
+        "created": 1736231229,
+        "is_private": false,
+        "name": "legal-requirements",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08A30P413J": {
+        "created": 1737373963,
+        "is_private": false,
+        "name": "performance-events",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08AGEVAZ37": {
+        "created": 1738041656,
+        "is_private": false,
+        "name": "data-alerts",
+        "num_members": 0,
+        "purpose": "webhook url: <[WEBHOOK_REDACTED]>",
+        "topic": ""
+      },
+      "C08AM06AMRC": {
+        "created": 1738156404,
+        "is_private": false,
+        "name": "mini-to-main-migration",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08ANGS3SJG": {
+        "created": 1738054143,
+        "is_private": false,
+        "name": "policevspolice-hr",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08AY77063V": {
+        "created": 1738217405,
+        "is_private": false,
+        "name": "weekly-mis",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08B33D2TCG": {
+        "created": 1737976731,
+        "is_private": false,
+        "name": "bhangarh-series-stage",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08B9N85WHW": {
+        "created": 1738066001,
+        "is_private": false,
+        "name": "xyz",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08BMDB9BPZ": {
+        "created": 1738834932,
+        "is_private": false,
+        "name": "creative-directors-stage",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08C4RLD89K": {
+        "created": 1738905337,
+        "is_private": false,
+        "name": "welcome-harshit",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08CBP3K1ME": {
+        "created": 1738669304,
+        "is_private": false,
+        "name": "mukundpura-film",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08CC98AM7G": {
+        "created": 1739182820,
+        "is_private": false,
+        "name": "jholachaap--film",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08CM57S4CC": {
+        "created": 1739179339,
+        "is_private": false,
+        "name": "cinema-discussion-and-appreciation",
+        "num_members": 0,
+        "purpose": "This group is to pick one content piece every week, watch it at our convenience and then get together to discuss and analyse it.",
+        "topic": "Monster by Koreeda"
+      },
+      "C08CXKGUV5Z": {
+        "created": 1739353341,
+        "is_private": true,
+        "name": "harsh-reimbursement",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08DAD291BL": {
+        "created": 1739512384,
+        "is_private": false,
+        "name": "bhakk-",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08E30BUTQD": {
+        "created": 1740033006,
+        "is_private": false,
+        "name": "casting-saangi-",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08EA844NP7": {
+        "created": 1740122995,
+        "is_private": false,
+        "name": "ghak-ki-baat-",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08FKN7P516": {
+        "created": 1740471033,
+        "is_private": false,
+        "name": "stage-celetel",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08GCK3BTFF": {
+        "created": 1741256021,
+        "is_private": false,
+        "name": "ai4stage-user-interviews",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08K5MP861W": {
+        "created": 1742455008,
+        "is_private": true,
+        "name": "cms-stage",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08K9NUT5TN": {
+        "created": 1742884882,
+        "is_private": false,
+        "name": "eod-work",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08KGJ3GG4B": {
+        "created": 1742992664,
+        "is_private": false,
+        "name": "stage-xrmedia",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08KHSS8HM5": {
+        "created": 1743337636,
+        "is_private": false,
+        "name": "welcome-harsh",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08LH3HCDPZ": {
+        "created": 1743861116,
+        "is_private": false,
+        "name": "cd-kaand-",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08MNMEBGHE": {
+        "created": 1743999355,
+        "is_private": false,
+        "name": "welcome-siddhant",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08MNPX5L58": {
+        "created": 1744262976,
+        "is_private": false,
+        "name": "welcome-prakash",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08N8KK4CG1": {
+        "created": 1744471836,
+        "is_private": false,
+        "name": "video_comments",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08NBL74AMQ": {
+        "created": 1744707137,
+        "is_private": false,
+        "name": "mobile-gradle-upgrade",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08P1NEVCDN": {
+        "created": 1744785705,
+        "is_private": false,
+        "name": "ask-data-ai",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08PWSQ02EB": {
+        "created": 1746008404,
+        "is_private": false,
+        "name": "prod_feedback",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08Q1HT10N5": {
+        "created": 1745576631,
+        "is_private": false,
+        "name": "short_scripts_and_cta",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08QPLQ4MJN": {
+        "created": 1746168247,
+        "is_private": false,
+        "name": "cricket",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08QQQ8T7C2": {
+        "created": 1746186298,
+        "is_private": false,
+        "name": "competency-framework",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08SXM7NB6Z": {
+        "created": 1747651248,
+        "is_private": false,
+        "name": "title-design",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08UKLM22JZ": {
+        "created": 1748578847,
+        "is_private": false,
+        "name": "asset-requisition",
+        "num_members": 0,
+        "purpose": "For any asset requirement, Raise request on this channel",
+        "topic": ""
+      },
+      "C08ULSU2DEH": {
+        "created": 1748598512,
+        "is_private": false,
+        "name": "welcome-samir",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C08UWJFTZN3": {
+        "created": 1749018968,
+        "is_private": false,
+        "name": "welcome-muskan",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0903MMQFU6": {
+        "created": 1749200061,
+        "is_private": false,
+        "name": "rc-submission",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C090DSB90DT": {
+        "created": 1749318945,
+        "is_private": false,
+        "name": "demo-agent",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C092LSKTU1E": {
+        "created": 1750220025,
+        "is_private": false,
+        "name": "whatsapp-bot",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C092SDD9UAX": {
+        "created": 1750845031,
+        "is_private": false,
+        "name": "xroad-media-alerts",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0937NF6R4Y": {
+        "created": 1750661871,
+        "is_private": false,
+        "name": "all-hands-meeting",
+        "num_members": 0,
+        "purpose": "Repository for all Monday Huddle materials- including shared files, meeting recaps, key decisions, and important updates discussed during the All Hands Meet",
+        "topic": ""
+      },
+      "C093EC443K5": {
+        "created": 1751266077,
+        "is_private": true,
+        "name": "socials-team",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C093UMPANS0": {
+        "created": 1751349120,
+        "is_private": false,
+        "name": "ask-data-ai-dev",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C095BT8LUFK": {
+        "created": 1752037212,
+        "is_private": false,
+        "name": "mongo_changes",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09A26FH8S0": {
+        "created": 1754973870,
+        "is_private": false,
+        "name": "welcome-shubham-singla",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09AF5ECYHM": {
+        "created": 1755500585,
+        "is_private": false,
+        "name": "hr-legal",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09ARKERDT7": {
+        "created": 1755504498,
+        "is_private": false,
+        "name": "rajasthan-pride-videos",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09BMSJE3N3": {
+        "created": 1756187467,
+        "is_private": false,
+        "name": "welcome-chetan",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09DKG689HR": {
+        "created": 1757057043,
+        "is_private": false,
+        "name": "paywall-creation",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09EAC10ETC": {
+        "created": 1757422083,
+        "is_private": false,
+        "name": "daily-work-report-hr",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09F49E7C4T": {
+        "created": 1757929394,
+        "is_private": false,
+        "name": "office-shifting-and-day-1-experience",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09FE42TRC7": {
+        "created": 1758173394,
+        "is_private": false,
+        "name": "hr-cac-daily-updates",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09FVFY0P5F": {
+        "created": 1758019402,
+        "is_private": false,
+        "name": "performance-management-framework",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09FW03KB2S": {
+        "created": 1758187993,
+        "is_private": true,
+        "name": "maha-punarjanam",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09H147TXU6": {
+        "created": 1758776745,
+        "is_private": false,
+        "name": "behind-the-scenes",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09PCDH8FPU": {
+        "created": 1761723433,
+        "is_private": false,
+        "name": "cms-alerts",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09PDC19QJE": {
+        "created": 1761732320,
+        "is_private": false,
+        "name": "randeep-hooda",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C09SWV3MVL2": {
+        "created": 1763106394,
+        "is_private": false,
+        "name": "metrics-alert",
+        "num_members": 0,
+        "purpose": "",
+        "topic": "Alert Tracker <https://docs.google.com/spreadsheets/d/1nbKvL0obmMeIuo0YYDeYUGdHXkE7K4Rn7Wt2dVn17Y4/edit?usp=sharing>"
+      },
+      "C09USBH29UY": {
+        "created": 1763553172,
+        "is_private": false,
+        "name": "snapchat-ads",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A07SN8C6N": {
+        "created": 1764255365,
+        "is_private": true,
+        "name": "content-title-stack",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A0XS4L0GJ": {
+        "created": 1764645005,
+        "is_private": false,
+        "name": "stage-saathi",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A2KK6KP5W": {
+        "created": 1764919860,
+        "is_private": false,
+        "name": "rudderstack-migration",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A3CJTNMST": {
+        "created": 1765861546,
+        "is_private": false,
+        "name": "content-compliance-hiren",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A40S430F8": {
+        "created": 1765951528,
+        "is_private": false,
+        "name": "production-tech",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A4LRBCLQ2": {
+        "created": 1766136936,
+        "is_private": false,
+        "name": "watch-along",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A4S84UA4R": {
+        "created": 1766058478,
+        "is_private": false,
+        "name": "realfiction_md_agency",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A5LU7UD5X": {
+        "created": 1766489522,
+        "is_private": false,
+        "name": "saathi-support",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A75FY5RMJ": {
+        "created": 1767702665,
+        "is_private": false,
+        "name": "stage-vip-club",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A79N9NDR6": {
+        "created": 1767342213,
+        "is_private": false,
+        "name": "test-dd-alerts",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A7YPZMZ8T": {
+        "created": 1768213918,
+        "is_private": false,
+        "name": "code-review-mobile-dev",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A810BTASG": {
+        "created": 1768023456,
+        "is_private": false,
+        "name": "collab-feedback",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A8EJR4J7L": {
+        "created": 1768310675,
+        "is_private": false,
+        "name": "trendingstories",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A8J8HTS5N": {
+        "created": 1767933846,
+        "is_private": false,
+        "name": "randeep-hooda-performance-campaigns",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A8JDHNKHC": {
+        "created": 1768368419,
+        "is_private": true,
+        "name": "baahubali-squad",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0A99NA9S3T": {
+        "created": 1768475372,
+        "is_private": false,
+        "name": "web-alerts",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AALBN04KW": {
+        "created": 1769146256,
+        "is_private": false,
+        "name": "test-leave-bot",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AC851HPAN": {
+        "created": 1769925853,
+        "is_private": false,
+        "name": "my-data",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AD10E31CH": {
+        "created": 1770115139,
+        "is_private": true,
+        "name": "micro-drama-central-pod-stage",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0ADBCH4Y30": {
+        "created": 1770361614,
+        "is_private": false,
+        "name": "ai-videos",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0ADHK6L2P3": {
+        "created": 1770276048,
+        "is_private": false,
+        "name": "ai-trailer-generator",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0ADY14SRFX": {
+        "created": 1770699560,
+        "is_private": false,
+        "name": "testing-vouchers",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AETMC52DQ": {
+        "created": 1770965243,
+        "is_private": false,
+        "name": "life-at-stage-bot",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AFDSFD3PA": {
+        "created": 1770885561,
+        "is_private": false,
+        "name": "ai-native-agentic-framework-content",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AFJCPPG8P": {
+        "created": 1771522578,
+        "is_private": false,
+        "name": "long-binge-series-pod",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AKJCKC45D": {
+        "created": 1773249964,
+        "is_private": false,
+        "name": "film-pod-stage",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AL2NUKAP7": {
+        "created": 1773318722,
+        "is_private": true,
+        "name": "cricket-saathi",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0AL9G2CH7S": {
+        "created": 1773070817,
+        "is_private": false,
+        "name": "tam-expansion-dubbing",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0ALA37HGE5": {
+        "created": 1773231462,
+        "is_private": true,
+        "name": "admin-workflow",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "C0ALBB1G7RD": {
+        "created": 1773645115,
+        "is_private": false,
+        "name": "subscription-ads-feature-film",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CDZFAJLBV": {
+        "created": 1541748961,
+        "is_private": false,
+        "name": "announcements",
+        "num_members": 0,
+        "purpose": "This channel is for workspace-wide communication and announcements. All members are in this channel.",
+        "topic": "Company-wide announcements and work-based matters"
+      },
+      "CE277N1PH": {
+        "created": 1542009927,
+        "is_private": false,
+        "name": "onefeed-sdk",
+        "num_members": 0,
+        "purpose": "for communicating about onefeed",
+        "topic": ""
+      },
+      "CEC2ED2RX": {
+        "created": 1543289986,
+        "is_private": false,
+        "name": "onefeed_media",
+        "num_members": 0,
+        "purpose": "For tech communication",
+        "topic": ""
+      },
+      "CEHLABRL2": {
+        "created": 1543828859,
+        "is_private": false,
+        "name": "programmaticsmediadek",
+        "num_members": 0,
+        "purpose": "Media deck for programmatics ",
+        "topic": ""
+      },
+      "CEHPZTVD3": {
+        "created": 1543821499,
+        "is_private": false,
+        "name": "stage-ke-krantikaari",
+        "num_members": 0,
+        "purpose": "Stay updated with company-wide announcements, events, and important updates. Everything you need to know about STAGE, all in one place!",
+        "topic": "Company-wide announcements, events, and important updates"
+      },
+      "CEJK31TFD": {
+        "created": 1543913541,
+        "is_private": false,
+        "name": "thedesignmafia",
+        "num_members": 0,
+        "purpose": "Design Team",
+        "topic": ""
+      },
+      "CEK1C296W": {
+        "created": 1543935436,
+        "is_private": false,
+        "name": "v9-affiliate-data",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CEKQZFR8A": {
+        "created": 1543999910,
+        "is_private": false,
+        "name": "conferenceroom",
+        "num_members": 0,
+        "purpose": "Conference Room booking",
+        "topic": ""
+      },
+      "CELRJQ682": {
+        "created": 1544077702,
+        "is_private": false,
+        "name": "thepopple--marcomm",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CEN2W1DGA": {
+        "created": 1544179434,
+        "is_private": false,
+        "name": "onefeed",
+        "num_members": 0,
+        "purpose": "OneFeed",
+        "topic": ""
+      },
+      "CENTYFW6M": {
+        "created": 1544426732,
+        "is_private": false,
+        "name": "onefeed_distribution",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CESRF1WR1": {
+        "created": 1544699231,
+        "is_private": false,
+        "name": "jaiho",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CEV13S971": {
+        "created": 1544782105,
+        "is_private": false,
+        "name": "bread_foodmate",
+        "num_members": 0,
+        "purpose": "bread foodmate",
+        "topic": ""
+      },
+      "CEVLA7BFX": {
+        "created": 1545034517,
+        "is_private": false,
+        "name": "mostlyhealth",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CEW94N20L": {
+        "created": 1545111524,
+        "is_private": false,
+        "name": "mostlymoney",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CEX7B2TAA": {
+        "created": 1545061043,
+        "is_private": false,
+        "name": "programmaticfinance",
+        "num_members": 0,
+        "purpose": "Invoices",
+        "topic": ""
+      },
+      "CF5AU9H6H": {
+        "created": 1546457332,
+        "is_private": false,
+        "name": "content-programmatics",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CF84JQWAC": {
+        "created": 1546941967,
+        "is_private": false,
+        "name": "indialeads",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CF8B4RS6M": {
+        "created": 1546952122,
+        "is_private": false,
+        "name": "innervoice",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CFH3M3F26": {
+        "created": 1547807022,
+        "is_private": false,
+        "name": "wittyhacks",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CG4LEN5HV": {
+        "created": 1549895244,
+        "is_private": false,
+        "name": "reddit-content-team",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CG50W2JTY": {
+        "created": 1549893829,
+        "is_private": false,
+        "name": "contech",
+        "num_members": 0,
+        "purpose": "content and tech discussions",
+        "topic": ""
+      },
+      "CG91NNEHE": {
+        "created": 1550493920,
+        "is_private": false,
+        "name": "videos_internal",
+        "num_members": 0,
+        "purpose": "Internal team Videos",
+        "topic": ""
+      },
+      "CG9L0M3PV": {
+        "created": 1550493858,
+        "is_private": false,
+        "name": "videos-and-us_leads",
+        "num_members": 0,
+        "purpose": "Leads can suggest videos that can go on any property.",
+        "topic": ""
+      },
+      "CGQ80KBRV": {
+        "created": 1551765581,
+        "is_private": false,
+        "name": "wittyfeedcontent",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CJPKMFV54": {
+        "created": 1557732189,
+        "is_private": false,
+        "name": "deployment",
+        "num_members": 0,
+        "purpose": "Jenkins builds",
+        "topic": ""
+      },
+      "CJPL664JJ": {
+        "created": 1557733668,
+        "is_private": false,
+        "name": "build",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CK16CHKLN": {
+        "created": 1558676702,
+        "is_private": false,
+        "name": "omji-chetan",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CL7DS8ZLY": {
+        "created": 1562587713,
+        "is_private": false,
+        "name": "stage",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CL8CN59B2": {
+        "created": 1562649033,
+        "is_private": false,
+        "name": "catchuphr",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CL9HWGAR4": {
+        "created": 1562587369,
+        "is_private": false,
+        "name": "traffic_usasites",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CM61EHG6L": {
+        "created": 1565250249,
+        "is_private": false,
+        "name": "wittyfeedupdates",
+        "num_members": 0,
+        "purpose": "",
+        "topic": ""
+      },
+      "CNYPWRY83": {
+        "created": 1570800997,
+        "is_private": false,
+        "name": "team-nukkad",
+        "num_members": 0,
+        "purpose": "Nukkad Social Media",
+        "topic": ""
+      }
     }
   }
 }

@@ -319,6 +319,18 @@ bash scripts/scan-tracked-threads.sh
 - If any config change or restart happened since last check, re-test affected capabilities
 - Update the "Last Tested" dates
 
+### Slack Scan Gap Review (weekly, Sundays)
+- Run `bash scripts/slack-scan-gap-review.sh`
+- Compares tier-1 channels vs channels in `slack-scan-all.sh`
+- If `GAPS_FOUND` → review list with HMT, decide which to add to scan script
+- Purpose: Catch important new channels that should be scanned but aren't
+- Added: 2026-03-27 after channel count bug fix
+
+### Slack Channel Map Refresh (weekly, Sundays)
+- Run `bash scripts/slack-channel-diff.sh` to update baseline
+- Verifies all 361 channels are tracked with correct tiers
+- Uses `users.conversations` API (not `conversations.list` — that has pagination bugs)
+
 ### Slack User Directory Refresh (weekly, Sundays)
 - Run full `users.list` API call and regenerate `people_directory` in `memory/slack-channel-map.json`
 - This keeps user IDs current as people join/leave

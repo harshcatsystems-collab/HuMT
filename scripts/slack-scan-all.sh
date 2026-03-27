@@ -78,7 +78,7 @@ read_channel "C07QVKNB16C" "#retention-_-creative" 30
 read_channel "C07QSGLSK97" "#copy--retention" 30
 
 echo "━━━ TIER 1: ACQUISITION & GROWTH ━━━"
-read_channel "C092XDNSDB9" "#acquisition-pod" 50
+read_channel "C092XDNSDB9" "#full-funnel-solver" 50
 read_channel "C0904NE9Y2K" "#engagement-solver-team" 50
 read_channel "C09PM1DNK34" "#growth-clm" 50
 read_channel "C07N9G9LH0B" "#reengagement-pf-ads-creatives" 30

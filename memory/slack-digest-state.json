@@ -1,30 +1,30 @@
 {
-  "morningBrief": "2026-03-26T03:48:52.357421Z",
-  "lastScan": "2026-03-26T13:00:05.000000+00:00",
-  "eveningDebrief": "2026-03-26T13:00:05.000000+00:00",
+  "morningBrief": "2026-03-27T03:48:41.519241Z",
+  "lastScan": "2026-03-27T13:03:45.504428+00:00",
+  "eveningDebrief": "2026-03-27T13:03:45.504428+00:00",
   "intensity": "light",
   "processedMentions": [
     "1774267053.991069",
     "1774264711.261109"
   ],
   "lastEveningDebrief": {
-    "sentAt": "2026-03-26T13:00:05.000000+00:00",
-    "sentAtIST": "2026-03-26T18:30:05+05:30",
-    "messageId": 1146,
+    "sentAt": "2026-03-27T13:03:45.504428+00:00",
+    "sentAtIST": "2026-03-27T18:30:00+05:30",
+    "messageId": 1227,
     "topic": "daily_ops",
     "scanHours": 12,
-    "channelsActive": 16,
-    "messagesAnalyzed": 58,
+    "channelsActive": 0,
+    "messagesAnalyzed": 0,
+    "note": "Friday post-townhall quiet \u2014 0 Slack messages in 12h window. Debrief compiled from memory/commitments/daily log context.",
     "keyItems": [
-      "v4.67.4 OTA patch deployed — trial retention popup Phase 1 live",
-      "D77 CRITICAL: Rs5.30cr shortfall due Mar 27 tomorrow — no direction yet",
-      "D87: MongoDB→ClickHouse auto-disable — 3 more failures today",
-      "Navratri leave wave: 14 late/OOO",
-      "Shashank approvals queuing: Claude seats + fal.ai + AI APIs",
-      "Parveen Social IP MoM — AI tools + Stitch adoption",
-      "Nishita: Figma UX revisions from writers sessions",
-      "Backend 20x Datadog alerts, no human response",
-      "Full Funnel Review 2 tomorrow (all POD leads)"
+      "Goodwater Series C dry run \u2014 81/100, Chi-Hua skeptical on commercial proof",
+      "Autoresearch rollout \u2014 37 engineers/product, docs crisis resolved before meeting",
+      "D77 \u20b95.30cr shortfall due TODAY \u2014 no direction from founders",
+      "Cricket Saathi IPL Match 1 TOMORROW \u2014 Pranay's PIP delivery milestone",
+      "#watch-retention-solver sprint concludes \u2014 Review 2 done, M0 at 32% vs 36% target",
+      "Slack channel map rebuilt \u2014 361 channels, tiered scanning system",
+      "GStack deep dive completed \u2014 research/gstack-deep-dive.md created",
+      "Samir (4th low week) + Radhika (burnout signal) flagged in People Pulse"
     ]
   }
 }

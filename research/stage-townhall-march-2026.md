@@ -401,6 +401,251 @@ DISCOVERY          CONVERSION              ENGAGEMENT         RETENTION
 
 ---
 
+## V5 Updates (Full Re-Ingestion 2026-03-27)
+
+### Opening Philosophy (Hindi Taglines)
+
+Three truths emphasized throughout deck (appearing on multiple slides as background watermarks):
+- **"स्टेज के जीवन में दो ही सत्य हैं"** — There are only two truths in STAGE's life
+- **"पहला सत्य: सब कुछ कंटेंट से होगा"** — First truth: Everything will happen through content
+- **"दूसरा सत्य: LTV से बड़ा कोई सत्य नहीं है"** — Second truth: There is no truth greater than LTV
+- **"जीवन के दो ही सत्य हैं।"** — There are only two truths in life. (recurring watermark)
+
+---
+
+### Agentic Performance Marketing — Full Details
+
+**The Problem (Before AI):**
+| Issue | Detail |
+|-------|--------|
+| ⚠️ Slow reaction | A bad campaign bled budget for 7 days before anyone acted |
+| ⚠️ Attribution chaos | Meta & Google both claiming the same user |
+| ⚠️ Manual bottleneck | The rules were simple but scale made it impossible to act fast enough |
+| ⚠️ Duration | For weeks |
+
+**What Was Built in 10 Days:**
+| Component | Detail |
+|-----------|--------|
+| AI Agents | Core autonomous system |
+| Custom Tool Integrations | Meta · Google · AppsFlyer · Snowflake · LTV |
+| Live | API Execution with hard guardrails |
+| /mo self-hosted on GCP | ₹40K managing ₹10–15 Cr/month in spend |
+| Full autonomous run | Complete automation |
+| Budget decisions executed via live API | Real-time execution |
+
+**Mar 23 · First Live Run:**
+- 15 minutes, 7 budget decisions, fully autonomous
+- Live in production on ₹1.88 Cr/week
+
+**Decisions Made:**
+| Action | Count | Detail |
+|--------|-------|--------|
+| Scale | - | Winning campaigns scaled up |
+| Cut | - | Losing campaigns cut |
+| Hold | - | Borderline campaigns monitored |
+
+**7-Day Results:** "It held. It worked."
+- 4 out of 5 scaled campaigns holding in healthy Sub CAC territory
+- Gujarat confirmed as most efficient market
+- Full audit trail on every decision
+
+**The Roadmap (Three Waves):**
+| Wave | Status | Headline |
+|------|--------|----------|
+| Wave 1 | ✅ Complete | Budget automation live |
+| Wave 2 | In Progress | Coverage expansion |
+| Wave 3 | Planned | Full autonomy |
+
+**End State:** "The agency. Replaced."
+- ₹40K/month self-hosted
+- Managing ₹10–15 Cr/month in spend — fully in-house
+- "Then we own it completely."
+
+---
+
+### Annual Content Budget
+
+**₹54 Crores** — Annual content budget with breakdown:
+- Long Series
+- Feature Films  
+- Binge Series
+- Micro-Dramas
+
+Output: **14–16 titles**
+
+---
+
+### TAM Expansion: 4 → 14 Markets
+
+**Current (Limited TAM - 4 Markets):**
+- HR (Haryana)
+- RJ (Rajasthan)
+- BJ (Bhojpuri)
+- GJ (Gujarat)
+
+**Expanding To (+10 Markets):** Dedicated Dubbing Pod within Content Team
+- Pipeline: Ideation (market-native story concepts) → Dubbing (in-house dubbed production) → Delivery (market-optimised distribution)
+- **Local Content Acquisition:** "Beyond dubbing our existing library, we will also acquire original content from each new market to kickstart their launch with locally-rooted stories."
+
+---
+
+### Performance Marketing — 5 Strategic Moves
+
+| # | Title | Status | Headline | Description |
+|---|-------|--------|----------|-------------|
+| 1 | Format-First Account Structure | Restructuring | Rebuilt ad accounts by format | Film, Series, Micro-drama — each now has its own data, its own budget, its own optimisation loop |
+| 2 | Long-form & Web Series | In Progress | Pushing more budget behind content that converts | Execution underway |
+| 3 | GJ First | Scaling | Stronger TCR, better Sub CAC | Budget shifted. Scaling in progress |
+| 4 | LTV over CAC | Actioned | Turned off what looked cheap but didn't pay back | Keeping only what's sustainable in terms of LTV |
+| 5 | Reviving What Worked | Ongoing | Reviewed 1 year of paused ads | Reactivating LTV-positive campaigns that were paused because of high CAC |
+
+---
+
+### Promo Team — The 5 Shifts (Detailed)
+
+| Theme | Before | After |
+|-------|--------|-------|
+| **Structure** | Market-wise silos — HR · RJ · BJ · GJ | Format-wise pods — Long Series · Binge · Film · Micro-Drama |
+| **Focus** | Quantity — more promos, more titles, more scale | Quality — fewer, sharper promos that convert |
+| **Scaling Logic** | Scale every show on CAC, regardless of performance | Pick top performers → scale hard. Replace the rest |
+| **Platform** | Same creative on Meta & Google | Right creative · right platform · right audience |
+| **Launch Kit** | Ad hoc — built from scratch every show | **76 formats identified.** Every show ships ready |
+
+---
+
+### Promo Team — 6 Big Goals
+
+| # | Title | Tag | Description | Urgent? |
+|---|-------|-----|-------------|---------|
+| 01 | Platform-Selling, Not Title-Selling | Positioning | Make users feel the platform has infinite depth — not just one show worth watching | No |
+| 02 | Make Long-Form the Default | Format | 7–15 min promos across all cultures. Short-form becomes the exception | No |
+| 03 | Own the Gujarati Scale-Up | Market | Budget is 2×-ing. Creative output must match — or the spend advantage is wasted | **Yes** |
+| 04 | Crack MD Acquisition | Format | Find the promo that brings users who stay — not just users who are curious | **Yes** |
+| 05 | Never Be the Bottleneck | Operations | Build a pipeline deep enough so no other pod ever waits on a promo | No |
+| 06 | Document Every Decision | Future | Format · length · angle · platform · result. This manual phase is the dataset for the future agentic system | No |
+
+---
+
+### Promo — 5 Strategy Shifts (Market-Level)
+
+| Category | Before | After | Why |
+|----------|--------|-------|-----|
+| **Format Mix** | 90% budget on Feature Films | Long Series + Binge Series | Series = lower TCR |
+| **Haryana** | Acquisition campaigns in HR | Re-Acquisition only | ~15% penetration. Win-back > new installs |
+| **Gujarat · Scale** | Underinvested in GJ | Scaling hard | New TAM + lowest TCR |
+| **Micro-Drama** | Broad micro-drama push | 2 titles. Only the winners | Strong CAC:LTV on 2 specific titles |
+| **Promo Type** | Single title promos | Bouquet + Platform value | Platform promos consistently outperform |
+
+---
+
+### IR · CSL Unlock — Full Data
+
+**Overall Results:**
+- ✓ With CSL: **9.8% IR**
+- ✕ Without CSL: **7.2% IR**
+
+**Problem Analogy:**
+> "Our Play Store is like a clothing shop. A user sees an ad of the variety we offer — suits, sarees, shirts. They visit the shop (Play Store). If they don't find a mannequin wearing what was promised, they don't enter (install)."
+
+**Solution:** CSLs — Custom Store Listings. "We change the Play Store landing per audience. Culture-matched creative = higher installs."
+
+**Overall · 13–19 March · Meta:**
+| Metric | With CSL | Without CSL |
+|--------|----------|-------------|
+| Spend | ₹42.1L | ₹90L |
+| CAC | ₹246 | ₹290 |
+| IR | 9.8% | 7.2% |
+| TR | 29% | 28% |
+| TCR | 43% | 41% |
+
+**Key:** CSL improved IR → better overall efficiency. CAC ↓ ₹44. TCR +2%.
+
+---
+
+### Acquisition Pod — Jagriti (Product Lead)
+
+**3 Workstreams:**
+
+| # | Focus | Focus Metric | Status |
+|---|-------|--------------|--------|
+| 01 | Special Access Universe | TR | Concept 3 Live |
+| 02 | D0 Trial Cancellation Reduction | D0-TCR | In Progress |
+| 03 | High IR / Low TR Titles | TR | Development |
+
+---
+
+### Special Access — Concept Testing
+
+| Concept | Description | Result | Pass? |
+|---------|-------------|--------|-------|
+| Concept 1 | SA before paywall | Discarded — SA-with-direct < SA-with-paywall | ✕ |
+| Concept 2 | SA at 1st paywall view | 2nd view is winner; tested | ✕ |
+| Concept 3 | SA at 2nd paywall view | Currently running | ✓ |
+
+**Conversion Impact:**
+- ✕ Without SA: 2.45% conversion
+- ✓ With SA: 2.78% conversion
+
+**Strategy:** "Instead of showing the paywall cold at login, run Special Access first — let the user watch before being asked to pay. The nudge then arrives when they're emotionally invested."
+
+---
+
+### Lever Stack — D0-TCR Reduction (Detailed)
+
+**Core Insight:** "50% of trial takers cancel within 20 mins, heavily skewed towards the first 10 mins."
+
+| Lever | Label | Status | Description |
+|-------|-------|--------|-------------|
+| **A** | Value Show | ✅ Done | So much @ ₹1 — surface catalogue value at trial entry to reduce cold-feet cancellations |
+| **B** | Exploration UI | In Progress | Build a second content hook before the window closes |
+| **C** | Forward Pull | In Progress | Cliffhanger re-engage on player back (10–20 min). Curated fast-hook titles, editorial not algorithmic |
+
+**Time-Based Engagement Strategy:**
+
+| Time Window | Action | Goal |
+|-------------|--------|------|
+| 0–10 mins | Surface value, reduce cold feet | Prevent immediate cancellation |
+| 10–20 mins | Shift to similar titles + chatbot | Build a second content hook before the window closes |
+
+**Non-content Engagement Ideas:**
+- Trial tambola card on consumption page (D7 deferred reward)
+- Watch streak — Day 1 declared
+- Exit intercept <10 min with genre discovery row + chatbot on home
+
+---
+
+### High IR / Low TR Titles — Priority Activation
+
+**Problem:** Titles with IR ≥ 10% but TR < 20% — users come for content but don't convert. Root cause: low paying propensity at install.
+
+**Plan:** Special Access at First Paywall
+- First 10–15 min free, no paywall → "You're into the story — watch the rest for ₹1"
+- Episode 1 plays in full (verify Ep 1 ends on cliffhanger)
+- First 3–4 episodes free. Gate = soft overlay while next ep buffers
+- "[Character] just made a choice that changes everything" (narrative hook)
+
+**Why these titles?** High installs confirm the content pulls users in. Low TR confirms the paywall — not the content — is blocking conversion. SA removes that blocker before the ask.
+
+---
+
+### User Lifecycle (Appendix Details)
+
+**Stage-by-Stage with Metrics:**
+
+| Stage | Phase | Label | Sub | Metric |
+|-------|-------|-------|-----|--------|
+| Discovery | 0 | TAM | STAGE's addressable audience HR · RJ · BJ · GJ | - |
+| Discovery | 0 | Promo | Thumb stops → Hold → CTA → Click | - |
+| Conversion | 1 | Install | Lands on Play Store or Web | IR 7–8% |
+| Conversion | 1 | Trial | 7-day free trial begins | TR 28.4% |
+| Conversion | 1 | Day Zero | First 24 hrs — biggest drop | **D0TCR 43.1%** ⚠️ |
+| Conversion | 1 | Subscribe | Pays ₹199/month | SR 35% |
+| Engagement | 2 | M0 | First 30 days, Active watcher or Dormant | Active 42% |
+| Retention | 3 | Renewal | Monthly at ₹199, SCR 20%/month | Retention 80% |
+| Retention | 3 | LTV | 6m ₹532 · 12m ₹601 | Max ₹626 |
+
+---
+
 ## What This Means for My Work
 
 This deck is the **source document** for:
@@ -417,3 +662,4 @@ This deck is the **source document** for:
 ---
 
 *Ingested: 2026-03-26*
+*V5 diff updated: 2026-03-27*
