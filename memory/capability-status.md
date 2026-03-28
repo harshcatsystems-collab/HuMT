@@ -5,33 +5,35 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-27 00:00 UTC (automated cron)
+## Last Verified: 2026-03-28 00:00 UTC (automated cron)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | Read/write workspace files + memory_search responded (provider: openai/text-embedding-3-small, hybrid mode) | 2026-03-27 |
-| 2 | Files | ✅ | workspace ls OK, capability-status.md read/write confirmed | 2026-03-27 |
-| 3 | Terminal | ✅ | exec tool — ls/echo/python3 all operational | 2026-03-27 |
-| 4 | Web Search | ✅ | Brave API returned live UTC date results (March 27, 2026 confirmed) | 2026-03-27 |
-| 5 | Gmail | ✅ | gog gmail search returned 2 messages (latest: Mar 26 18:51 Pranay Merchant, Autoresearch Kickoff invite accepted) | 2026-03-27 |
-| 6 | Calendar | ✅ | gog calendar events returned 9 events for Mar 27 (STAGE×Goodwater, Review 2, Autoresearch Kickoff, etc.) | 2026-03-27 |
-| 7 | Cron/Reminders | ✅ | 27 active jobs — this job execution proves cron operational | 2026-03-27 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present in config | 2026-03-27 |
+| 1 | Memory | ✅ | memory_search responded (provider: openai/text-embedding-3-small, hybrid mode) | 2026-03-28 |
+| 2 | Files | ✅ | workspace ls OK, capability-status.md read/write confirmed | 2026-03-28 |
+| 3 | Terminal | ✅ | exec tool — uname/echo/date all operational | 2026-03-28 |
+| 4 | Web Search | ✅ | Brave API returned live results (March 27/28 2026 confirmed) | 2026-03-28 |
+| 5 | Gmail | ✅ | gog gmail search returned 2 messages (latest: Mar 27 12:31 Axis Direct) | 2026-03-28 |
+| 6 | Calendar | ✅ | gog calendar events returned 3 events for Mar 28 ('The Talk' with HMT + Divya) | 2026-03-28 |
+| 7 | Cron/Reminders | ✅ | 27 active jobs — this job execution proves cron operational | 2026-03-28 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present in config | 2026-03-28 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1CTP*** confirmed present in env + skill config | 2026-03-27 |
-| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — sk-proj-HC1CTP*** confirmed | 2026-03-27 |
-| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — provider: openai/text-embedding-3-small, hybrid mode operational | 2026-03-27 |
-| 12 | Google Drive | ✅ | gog drive working (Gmail/Calendar auth = same token, both returned live data) | 2026-03-27 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-27 |
+| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1CTP*** confirmed present in env + skill config | 2026-03-28 |
+| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — sk-proj-HC1CTP*** confirmed | 2026-03-28 |
+| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — provider: openai/text-embedding-3-small, hybrid mode operational | 2026-03-28 |
+| 12 | Google Drive | ✅ | gog drive working (Gmail/Calendar auth = same token, both returned live data) | 2026-03-28 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-28 |
 
-## ⚠️ Cron Job Warnings (2026-03-27)
+## ⚠️ Cron Job Warnings (2026-03-28)
 
 | Job | Consecutive Errors | Last Error | Note |
 |-----|--------------------|------------|------|
-| `slack:commitment-tracker` | 1 | Timed out at 300s (max) | Full Slack scan taking too long. Needs timeout tuning or scope reduction. ⚠️ Persisting — monitor. |
-| `divya-bedtime-diet-reminder` | 2 ⬆️ | ⚠️ ✉️ Message failed | Send to family group (-5123342435) failing — needs investigation. |
-| `pregnancy-weekly-milestone` | 1 | ⚠️ ✉️ Message: `13` failed | Delivery showed as delivered despite error — may be resolved |
-| `divya-symptom-checkin` | 1 | ⚠️ ✉️ Message failed | Delivery showed as delivered despite error — may be resolved |
+| `slack:commitment-tracker` | 2 | Timed out at 300s (max) | Full Slack scan still taking too long. ⚠️ Persistent — needs scope reduction or timeout increase. |
+| `divya-bedtime-diet-reminder` | 3 ⬆️ | ⚠️ ✉️ Message failed | Delivery to family group (-5123342435) still failing. Needs investigation. |
+| `slack:morning-brief` | 1 | ⚠️ ✉️ Message: `4` failed | Daily Ops topic (thread id 4) delivery failed. Needs investigation. |
+| `pregnancy-weekly-milestone` | 1 | ⚠️ ✉️ Message: `13` failed | Personal topic delivery error (but shows delivered). May be transient. |
+| `divya-symptom-checkin` | 1 | ⚠️ ✉️ Message failed | Shows delivered despite error — may be transient. |
+| `persona:monthly-evolution-review` | 1 | ⚠️ ✉️ Message failed | Shows delivered despite error — may be transient. |
 
 Previous warnings (resolved):
 - `slack:evening-debrief` — 0 errors ✅ (was 2 consecutive errors 2026-03-22)
@@ -39,6 +41,10 @@ Previous warnings (resolved):
 - `slack:end-of-day-summary` — 0 errors ✅
 - `healthcheck:security-audit` — 0 errors ✅
 - `email:morning-triage` — 0 errors ✅
+
+## ⚠️ New Warning vs Yesterday (2026-03-28)
+- `slack:morning-brief` — NEW failure (was 0 errors yesterday): Message: `4` (Daily Ops topic) failed. This is the primary morning brief — HMT may have missed today's brief. **Priority: investigate topic ID 4 delivery.**
+- `divya-bedtime-diet-reminder` — escalated from 2 → 3 consecutive errors. Persistent delivery failure to -5123342435.
 
 ## Critical Findings (2026-03-06)
 
@@ -64,9 +70,11 @@ Previous warnings (resolved):
 - Telegram: ✅
 - OpenAI: ✅
 
-### ❌ Known Issues (unchanged)
+### ❌ Known Issues (persistent)
 - WhatsApp: Logged out (401) — parked for business API
-- `slack:commitment-tracker`: 2 consecutive timeouts — scan scope may need reduction
+- `slack:commitment-tracker`: 2+ consecutive timeouts — scan scope needs reduction
+- `divya-bedtime-diet-reminder`: 3+ consecutive failures to -5123342435
+- `slack:morning-brief`: New failure — Daily Ops topic (id:4) delivery failing
 
 ## Config Dependencies
 

@@ -1,7 +1,9 @@
 {
-  "lastTriageUTC": "2026-03-27T03:00:00Z",
-  "urgent": 0,
-  "important": 2,
+  "lastTriageUTC": "2026-03-28T03:00:00Z",
+  "urgent": 1,
+  "important": 0,
   "fyi": 2,
-  "responseDebt": 0
+  "skip": 1,
+  "responseDebt": 0,
+  "summary": "4 unread emails in last 24h. 1 URGENT: secondary share transfer ROFO thread with Blume — Blume Secretarial requesting buyer details + pre/post cap table from Lalit. Vinay already consented. HMT CC'd throughout. No response debt from key senders older than 3 days."
 }

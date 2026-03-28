@@ -2,8 +2,10 @@
   "lastChecks": {
     "slack_scan": 1774868597,
     "dm_check": 1774868597,
-    "netlify_health": 1774868597
+    "netlify_health": 1774671866,
+    "full_funnel_solver": 1774671866,
+    "homepage_personalisation": 1774671866
   },
   "lastHeartbeat": "2026-03-27T07:03:00Z",
-  "notes": "07:03 UTC scan complete — no @HuMT mentions, no new DMs, Netlify healthy (200), #full-funnel-solver quiet since Mar 26"
+  "notes": "07:03 UTC scan complete \u2014 no @HuMT mentions, no new DMs, Netlify healthy (200), #full-funnel-solver quiet since Mar 26"
 }

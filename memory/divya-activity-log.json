@@ -30,6 +30,11 @@
     }
   },
   "checkins": {
+    "2026-03-28": {
+      "sent_at": "2026-03-28T21:00:00+05:30",
+      "message_id": "2801",
+      "status": "awaiting_response"
+    },
     "2026-03-26": {
       "sent_at": "2026-03-26T21:00:00+05:30",
       "message_id": "2719",
@@ -38,10 +43,46 @@
     "2026-03-27": {
       "sent_at": "2026-03-27T21:00:00+05:30",
       "message_id": "2784",
-      "status": "awaiting_response"
+      "status": "completed",
+      "response_via": "voice_note"
     }
   },
   "log": {
+    "2026-03-27": {
+      "sleep": {
+        "value": 7.25,
+        "target": 8,
+        "met": true,
+        "notes": "7-7.5 hours"
+      },
+      "hydration": {
+        "value": 3,
+        "target": 3,
+        "met": true
+      },
+      "yoga": {
+        "value": 1,
+        "target": 1,
+        "met": true
+      },
+      "steps": {
+        "value": 3750,
+        "target": 5500,
+        "met": false,
+        "notes": "Bad backache + very tired"
+      },
+      "bp": {
+        "systolic": 121,
+        "diastolic": 71,
+        "pulse": 100,
+        "time": "5:00 PM",
+        "notes": "Evening reading, not morning"
+      },
+      "symptoms": ["backache", "fatigue"],
+      "score": "3/4",
+      "logged_at": "2026-03-28T07:40:00+00:00",
+      "logged_via": "voice_note"
+    },
     "2026-03-24": {
       "sleep": {
         "value": 8.5,

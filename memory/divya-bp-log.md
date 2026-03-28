@@ -23,6 +23,7 @@
 
 | Date | Time | SYS | DIA | Pulse | Week | Notes |
 |------|------|-----|-----|-------|------|-------|
+| Mar 27, 2026 | 5 PM | 121 | 71 | 100 | 17 | Evening reading. Had bad backache + fatigue that day. |
 | Mar 25, 2026 | Morning | 116 | 77 | 105 | 17 | Normal BP. Pulse improved from yesterday. |
 | Mar 24, 2026 | Morning | 117 | 81 | 114 | 17 | Normal BP. Pulse slightly elevated but within pregnancy range. |
 
@@ -30,22 +31,27 @@
 
 ## Analysis
 
-### Latest Reading (Mar 25, 2026)
-- **BP: 116/77 mmHg** ✅ Normal (optimal)
-- **Pulse: 105 bpm** ✅ Normal
+### Latest Reading (Mar 27, 2026)
+- **BP: 121/71 mmHg** ✅ Normal (slightly elevated systolic, excellent diastolic)
+- **Pulse: 100 bpm** ✅ Normal
 
 **Assessment:**
-- Blood pressure is excellent — optimal range
-- Pulse improved from yesterday (114 → 105)
-- Both readings well within healthy pregnancy ranges
+- Blood pressure is healthy — within normal range
+- Diastolic excellent at 71
+- Pulse improved significantly (105 → 100)
+- Evening reading (5 PM) — typically higher than morning
+- Context: Bad backache + fatigue that day may have contributed to slightly higher systolic
 
-### Previous Reading (Mar 24, 2026)
-- **BP: 117/81 mmHg** ✅ Normal
-- **Pulse: 114 bpm** ⚠️ Upper end
+### Previous Readings
+| Date | BP | Pulse | Status |
+|------|-----|-------|--------|
+| Mar 25 | 116/77 | 105 | ✅ Optimal |
+| Mar 24 | 117/81 | 114 | ✅ Normal |
 
-**2-Day Trend:**
-- BP stable and healthy
-- Pulse coming down — good sign
+### Trend (Last 4 Days):
+- **Systolic:** Stable (117 → 116 → 121) — all within normal
+- **Diastolic:** Improving (81 → 77 → 71) — trending down, good!
+- **Pulse:** Improving (114 → 105 → 100) — steady decrease 👍
 
 ---
 
@@ -55,4 +61,4 @@
 
 ---
 
-*Last updated: Mar 25, 2026*
+*Last updated: Mar 28, 2026*
