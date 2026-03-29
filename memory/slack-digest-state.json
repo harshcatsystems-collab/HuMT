@@ -1,29 +1,29 @@
 {
-  "morningBrief": "2026-03-28T03:45:40Z",
-  "lastScan": "2026-03-28T03:45:40Z",
-  "eveningDebrief": "2026-03-28T13:01:23.553986+00:00",
+  "morningBrief": "2026-03-29T03:46:28.907316Z",
+  "lastScan": "2026-03-29T13:00:05Z",
+  "eveningDebrief": "2026-03-29T13:02:00.000000+00:00",
   "intensity": "light",
   "processedMentions": [
     "1774267053.991069",
     "1774264711.261109"
   ],
   "lastEveningDebrief": {
-    "sentAt": "2026-03-28T13:01:23.554204+00:00",
-    "sentAtIST": "2026-03-28T18:30:00+05:30",
-    "messageId": 1237,
+    "sentAt": "2026-03-29T13:02:00.000000+00:00",
+    "sentAtIST": "2026-03-29T18:32:00+05:30",
+    "messageId": 1244,
     "topic": "daily_ops",
     "scanHours": 12,
     "channelsActive": 0,
     "messagesAnalyzed": 0,
-    "note": "Saturday evening \u2014 0 Slack messages. Debrief from commitments/daily log context. IPL Match 1 today (Cricket Saathi PIP). Finance items D77/D78/D29 still unresolved.",
+    "note": "Sunday evening — 0 Slack messages. Debrief from commitments/daily log context. IPL Match 1 was yesterday (Cricket Saathi PIP). Finance items D77/D78/D29 still unresolved. Stacked Monday calendar previewed.",
     "keyItems": [
-      "Cricket Saathi IPL Match 1 today \u2014 Pranay PIP milestone, no Slack updates visible",
-      "D77 \u20b95.30cr shortfall \u2014 due yesterday, no resolution logged (8 days open)",
-      "D78 Google India \u20b967L \u2014 7 days pending, Saloni awaiting",
-      "D29 Randeep Hooda \u20b920L/week \u2014 25 days, status unknown",
-      "Watch Retention Sprint concluded \u2014 M0 at 32% vs 36% target, transitioning to ongoing",
-      "Manasvi HP Personalisation \u2014 ML model selection signal (Gemini 2.5 Pro + Sarvam eval)",
-      "Personal: The Talk with Divya today"
+      "Cricket Saathi IPL Match 1 was Mar 28 — data expected Monday. Pranay PIP decision point.",
+      "D77 ₹5.30cr shortfall — 2 days post-deadline, Saloni waiting on Vinay/Shashank",
+      "D78 Google India ₹67L — 8 days pending approval",
+      "D29 Randeep Hooda — 26 days, ~₹3.7cr spent, no shutdown confirmation",
+      "D64 Airbyte→ClickHouse — 12 days broken, no owner",
+      "Monday: All Hands + M0 Watcher % + Dormants Watch + Pranay 1:1 + Nisha 1:1",
+      "Series C: Goodwater 81/100, Chi-Hua pushback on commercial proof"
     ]
   }
 }

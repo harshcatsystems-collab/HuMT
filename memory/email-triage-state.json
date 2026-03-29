@@ -1,9 +1,19 @@
 {
-  "lastTriageUTC": "2026-03-28T03:00:00Z",
+  "lastTriageUTC": "2026-03-29T03:00:00Z",
   "urgent": 1,
   "important": 0,
-  "fyi": 2,
-  "skip": 1,
-  "responseDebt": 0,
-  "summary": "4 unread emails in last 24h. 1 URGENT: secondary share transfer ROFO thread with Blume — Blume Secretarial requesting buyer details + pre/post cap table from Lalit. Vinay already consented. HMT CC'd throughout. No response debt from key senders older than 3 days."
+  "fyi": 3,
+  "skip": 2,
+  "responseDebt": 1,
+  "debtItems": [
+    {
+      "threadId": "19d2e8df78d188fc",
+      "from": "Lalit Sangwan / Blume Secretarial",
+      "subject": "Right of First Offer – Proposed Secondary Share Transfer in STAGE Technologies",
+      "date": "2026-03-27",
+      "daysOld": 2,
+      "status": "active_thread_needs_monitoring",
+      "note": "ROFO notice for WFC/AL Trust internal restructuring (182 shares). Blume asked for cap table — Lalit responded. HMT on thread but no direct reply yet."
+    }
+  ]
 }
