@@ -1,29 +1,32 @@
 {
-  "morningBrief": "2026-03-29T03:46:28.907316Z",
+  "morningBrief": "2026-03-30T03:47:19.309962Z",
   "lastScan": "2026-03-29T13:00:05Z",
-  "eveningDebrief": "2026-03-29T13:02:00.000000+00:00",
+  "eveningDebrief": "2026-03-30T13:00:00.000000+00:00",
   "intensity": "light",
   "processedMentions": [
+    "1774264711.261109",
     "1774267053.991069",
-    "1774264711.261109"
+    "1774872528.926659"
   ],
   "lastEveningDebrief": {
-    "sentAt": "2026-03-29T13:02:00.000000+00:00",
-    "sentAtIST": "2026-03-29T18:32:00+05:30",
-    "messageId": 1244,
+    "sentAt": "2026-03-30T13:00:00.000000+00:00",
+    "sentAtIST": "2026-03-30T18:30:00+05:30",
+    "messageId": 1263,
     "topic": "daily_ops",
     "scanHours": 12,
     "channelsActive": 0,
     "messagesAnalyzed": 0,
-    "note": "Sunday evening — 0 Slack messages. Debrief from commitments/daily log context. IPL Match 1 was yesterday (Cricket Saathi PIP). Finance items D77/D78/D29 still unresolved. Stacked Monday calendar previewed.",
+    "note": "Monday evening \u2014 0 Slack messages all day. 5 meetings all sync (All Hands, M0 Watcher, Dormants, Pranay 1:1, Nisha 1:1). Key open items: D77/D78/Rahul batch finance, Pranay PIP verdict unknown, D64 Airbyte still broken, D29 Randeep Hooda unconfirmed.",
     "keyItems": [
-      "Cricket Saathi IPL Match 1 was Mar 28 — data expected Monday. Pranay PIP decision point.",
-      "D77 ₹5.30cr shortfall — 2 days post-deadline, Saloni waiting on Vinay/Shashank",
-      "D78 Google India ₹67L — 8 days pending approval",
-      "D29 Randeep Hooda — 26 days, ~₹3.7cr spent, no shutdown confirmation",
-      "D64 Airbyte→ClickHouse — 12 days broken, no owner",
-      "Monday: All Hands + M0 Watcher % + Dormants Watch + Pranay 1:1 + Nisha 1:1",
-      "Series C: Goodwater 81/100, Chi-Hua pushback on commercial proof"
+      "D77 \u20b95.30cr shortfall \u2014 10 days, Saloni blocked, Vinay/Shashank silent",
+      "D78 Google India \u20b967L \u2014 9 days pending approval",
+      "Rahul Chauhan Mar 30 payment batch \u2014 needs EOD approval",
+      "Pranay 1:1 at 2PM \u2014 Cricket Saathi Match 1 data read + PIP verdict. No Slack signal post-meeting.",
+      "D64 Airbyte\u2192ClickHouse \u2014 15 days broken, no owner",
+      "D29 Randeep Hooda \u2014 27 days, ~\u20b93.7cr spent, no shutdown confirmation",
+      "M0 Watcher Week 2 update: standup today but no async in channel",
+      "Watch Next carousel reverted (deeplink debugging)",
+      "VPS disk 80%, OpenClaw update 2026.3.28 available"
     ]
   }
 }

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya Mehrotra — Blood Pressure Log</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f8f9fa;
+            color: #202124;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 32px;
+        }
+        .header {
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 16px;
+            margin-bottom: 24px;
+        }
+        h1 {
+            color: #1a73e8;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .patient-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            font-size: 14px;
+            color: #5f6368;
+        }
+        .patient-info span {
+            display: block;
+        }
+        .patient-info strong {
+            color: #202124;
+        }
+        h2 {
+            color: #202124;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 24px 0 12px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e8eaed;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+        th {
+            background: #1a73e8;
+            color: white;
+            padding: 12px 8px;
+            text-align: left;
+            font-weight: 500;
+        }
+        td {
+            padding: 12px 8px;
+            border-bottom: 1px solid #e8eaed;
+        }
+        tr:hover {
+            background: #f8f9fa;
+        }
+        .status-normal {
+            color: #1e8e3e;
+            font-weight: 500;
+        }
+        .status-elevated {
+            color: #f9ab00;
+            font-weight: 500;
+        }
+        .callout {
+            background: #e8f0fe;
+            border-left: 4px solid #1a73e8;
+            padding: 16px;
+            margin: 16px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .callout-title {
+            font-weight: 500;
+            color: #1a73e8;
+            margin-bottom: 8px;
+        }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin: 16px 0;
+        }
+        .summary-card {
+            background: #f8f9fa;
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .summary-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a73e8;
+        }
+        .summary-label {
+            font-size: 12px;
+            color: #5f6368;
+            margin-top: 4px;
+        }
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e8eaed;
+            font-size: 12px;
+            color: #5f6368;
+            text-align: center;
+        }
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Blood Pressure Log</h1>
+            <div class="patient-info">
+                <span><strong>Patient:</strong> Divya Mehrotra</span>
+                <span><strong>Age:</strong> 33 years</span>
+                <span><strong>EDD:</strong> September 4, 2026</span>
+                <span><strong>Current Week:</strong> 17+3 (2nd Trimester)</span>
+                <span><strong>Report Date:</strong> March 30, 2026</span>
+                <span><strong>Primary OB-GYN:</strong> Dr. Madhulika</span>
+            </div>
+        </div>
+
+        <h2>📋 BP Readings (March 2026)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Systolic</th>
+                    <th>Diastolic</th>
+                    <th>Pulse</th>
+                    <th>Week</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mar 27, 2026</td>
+                    <td>5:00 PM</td>
+                    <td class="status-normal">121</td>
+                    <td class="status-normal">71</td>
+                    <td>100</td>
+                    <td>17</td>
+                    <td>Evening. Had backache + fatigue</td>
+                </tr>
+                <tr>
+                    <td>Mar 25, 2026</td>
+                    <td>Morning</td>
+                    <td class="status-normal">116</td>
+                    <td class="status-normal">77</td>
+                    <td>105</td>
+                    <td>17</td>
+                    <td>Morning reading</td>
+                </tr>
+                <tr>
+                    <td>Mar 24, 2026</td>
+                    <td>Morning</td>
+                    <td class="status-normal">117</td>
+                    <td class="status-normal">81</td>
+                    <td>114</td>
+                    <td>17</td>
+                    <td>Morning reading</td>
+                </tr>
+                <tr>
+                    <td>Mar 23, 2026</td>
+                    <td>Morning</td>
+                    <td class="status-normal">120</td>
+                    <td class="status-normal">81</td>
+                    <td>111</td>
+                    <td>16+3</td>
+                    <td>Fasting, ~45 min after waking</td>
+                </tr>
+                <tr>
+                    <td>Mar 22, 2026</td>
+                    <td>Afternoon</td>
+                    <td class="status-elevated">128</td>
+                    <td class="status-normal">84</td>
+                    <td>—</td>
+                    <td>16+2</td>
+                    <td>30-45 min post-lunch</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>📈 Summary</h2>
+        <div class="summary-grid">
+            <div class="summary-card">
+                <div class="summary-value">118</div>
+                <div class="summary-label">Avg Systolic (mmHg)</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-value">79</div>
+                <div class="summary-label">Avg Diastolic (mmHg)</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-value">108</div>
+                <div class="summary-label">Avg Pulse (bpm)</div>
+            </div>
+        </div>
+
+        <div class="callout">
+            <div class="callout-title">✅ Assessment</div>
+            <p><strong>Blood Pressure:</strong> All readings within normal range for pregnancy. One slightly elevated systolic (128) on Mar 22, but post-lunch timing explains this.</p>
+            <p style="margin-top: 8px;"><strong>Diastolic Trend:</strong> Improving (84 → 81 → 77 → 71) — very healthy pattern.</p>
+            <p style="margin-top: 8px;"><strong>Pulse:</strong> 100-114 bpm — within normal pregnancy range (baseline increases 10-20 bpm during 2nd trimester).</p>
+        </div>
+
+        <h2>📊 Reference Ranges (Pregnancy)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Systolic (mmHg)</th>
+                    <th>Diastolic (mmHg)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Normal</td>
+                    <td>&lt;120</td>
+                    <td>&lt;80</td>
+                </tr>
+                <tr>
+                    <td>Elevated</td>
+                    <td>120-129</td>
+                    <td>&lt;80</td>
+                </tr>
+                <tr>
+                    <td>Stage 1 Hypertension</td>
+                    <td>130-139</td>
+                    <td>80-89</td>
+                </tr>
+                <tr>
+                    <td>Stage 2 Hypertension</td>
+                    <td>≥140</td>
+                    <td>≥90</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <p>Generated by HuMT for Dr. Madhulika's review • March 30, 2026</p>
+        </div>
+    </div>
+</body>
+</html>

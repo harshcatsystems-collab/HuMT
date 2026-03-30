@@ -822,3 +822,53 @@
 {"ts": "2026-03-29T16:22:00+00:00", "_type": "logger_run", "people_tracked": 11}
 {"ts":"2026-03-29T16:52:00Z","_type":"logger_run","people_tracked":11}
 {"ts":"2026-03-29T17:23:12Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-29T17:53:09.982756+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-29T18:23:11Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-29T18:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-29T19:23:21Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-29T19:52:52Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-29T20:23:09Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-29T20:52:55Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-29T21:23:20Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-29T21:53:10Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-29T22:22:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-29T22:53:19.893686+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-29T23:23:12Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-29T23:53:12Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-30T00:23:08.851890+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-30T00:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-30T01:23:26.069051+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-30T01:53:16.418153+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-30T02:22:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T02:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T03:22:58Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T03:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-30T04:23:19Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-30T04:53:37.775320+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-30T05:22:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-30T05:53:39Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-30T06:23:26Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T06:53:48Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-30T07:24:51+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-30T07:52:59Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-30T08:23:33.637651+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-30T08:53:25Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T09:23:34Z","user":"UE0KTBS8P","name":"Shashank Vaishnav","messages":1,"thread_replies":0,"channels_active":1,"channel_ids":["CEHPPGSN9"],"after_hours":0,"avg_response_latency_sec":null}
+{"ts":"2026-03-30T09:23:34Z","user":"U08L99D58PK","name":"Nikhil Nair","messages":0,"thread_replies":1,"channels_active":1,"channel_ids":["CEHPPGSN9"],"after_hours":0,"avg_response_latency_sec":381}
+{"ts":"2026-03-30T09:23:34Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T09:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T10:22:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T10:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T11:22:57Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-30T11:54:26.568377+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-03-30T12:23:41Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-30T12:53:20Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T13:23:13Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T13:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T14:23:20Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T14:53:40Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T15:23:21Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-03-30T15:53:35Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-03-30T16:23:34Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T16:52:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-03-30T17:23:38Z","_type":"logger_run","people_tracked":11}

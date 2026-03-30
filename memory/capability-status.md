@@ -5,31 +5,33 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-03-29 00:00 UTC (automated cron)
+## Last Verified: 2026-03-30 00:00 UTC (automated cron)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | memory_search responded (provider: openai/text-embedding-3-small, hybrid mode) | 2026-03-29 |
-| 2 | Files | ✅ | workspace ls OK, capability-status.md read/write confirmed | 2026-03-29 |
-| 3 | Terminal | ✅ | exec tool — date/ls confirmed Sun Mar 29 00:00:08 UTC 2026 | 2026-03-29 |
-| 4 | Web Search | ✅ | Brave API returned live results (Mar 28 2026 confirmed) | 2026-03-29 |
-| 5 | Gmail | ✅ | gog gmail search returned 2 unread messages (latest: Mar 28 13:13) | 2026-03-29 |
-| 6 | Calendar | ✅ | gog calendar returned 6 events for Mar 30 (All Hands, M0 watcher, etc.) | 2026-03-29 |
-| 7 | Cron/Reminders | ✅ | 27 active jobs — this job execution proves cron operational | 2026-03-29 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present in config | 2026-03-29 |
+| 1 | Memory | ✅ | memory_search responded (provider: openai/text-embedding-3-small, hybrid mode) | 2026-03-30 |
+| 2 | Files | ✅ | workspace ls OK, capability-status.md read/write confirmed | 2026-03-30 |
+| 3 | Terminal | ✅ | exec tool — date/ls confirmed Mon Mar 30 00:00 UTC 2026 | 2026-03-30 |
+| 4 | Web Search | ✅ | Brave API returned live results (Mar 29 2026 confirmed) | 2026-03-30 |
+| 5 | Gmail | ✅ | gog gmail search returned 3 unread messages (latest: Feb 25 13:13) | 2026-03-30 |
+| 6 | Calendar | ✅ | gog calendar returned 6+ events for Mar 30 (All Hands, M0 watcher, etc.) | 2026-03-30 |
+| 7 | Cron/Reminders | ✅ | 27 active jobs — this job execution proves cron operational | 2026-03-30 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present in config | 2026-03-30 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1CTP*** confirmed present in env + skill config | 2026-03-29 |
-| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — sk-proj-HC1CTP*** confirmed | 2026-03-29 |
-| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — provider: openai/text-embedding-3-small, hybrid mode operational | 2026-03-29 |
-| 12 | Google Drive | ✅ | gog drive working (Gmail/Calendar auth = same token, both returned live data) | 2026-03-29 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-29 |
+| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1CTP*** confirmed present in env + skill config | 2026-03-30 |
+| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — sk-proj-HC1CTP*** confirmed | 2026-03-30 |
+| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — provider: openai/text-embedding-3-small, hybrid mode operational | 2026-03-30 |
+| 12 | Google Drive | ✅ | gog drive working (Gmail/Calendar auth = same token, both returned live data) | 2026-03-30 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-03-30 |
 
-## ⚠️ Cron Job Warnings (2026-03-29)
+## ⚠️ Cron Job Warnings (2026-03-30)
 
 | Job | Consecutive Errors | Last Error | Note |
 |-----|--------------------|------------|------|
-| `slack:commitment-tracker` | 3 ⬆️ | Timed out at 300s (max) | Full Slack scan still taking too long. ⚠️ Persistent — needs scope reduction or timeout increase. |
-| `divya-bedtime-diet-reminder` | 4 ⬆️ | Timed out at 60s (max) | Delivery to family group (-5123342435) still failing. **Priority escalated — 4 consecutive failures.** |
+| `slack:commitment-tracker` | 4 ⬆️ | Timed out at 300s (max) | Full Slack scan still taking too long. ⚠️ **Critical — 4 consecutive failures. Needs scope reduction or timeout increase.** |
+| `divya-bedtime-diet-reminder` | 5 ⬆️ | ⚠️ ✉️ Message failed | Delivery to family group (-5123342435) still failing. **Priority escalated — 5 consecutive failures.** |
+| `divya-weekly-meal-planning` | 1 🆕 | ⚠️ ✉️ Message failed | New failure today (Sunday delivery to -5123342435). May be group delivery issue. |
+| `divya-weekly-wellness` | 1 | ⚠️ ✉️ Message failed | Shows delivered despite error — may be transient. |
 | `pregnancy-weekly-milestone` | 1 | ⚠️ ✉️ Message: `13` failed | Personal topic delivery error (but shows delivered). May be transient. |
 | `divya-symptom-checkin` | 1 | ⚠️ ✉️ Message failed | Shows delivered despite error — may be transient. |
 | `persona:monthly-evolution-review` | 1 | ⚠️ ✉️ Message failed | Shows delivered despite error — may be transient. |
@@ -42,10 +44,18 @@ Previous warnings (resolved):
 - `healthcheck:security-audit` — 0 errors ✅
 - `email:morning-triage` — 0 errors ✅
 
-## ⚠️ New vs Yesterday (2026-03-29)
-- `slack:morning-brief` — RESOLVED ✅ (was failing yesterday, now 0 consecutive errors)
-- `slack:commitment-tracker` — escalated from 2 → 3 consecutive errors. Persistent timeout.
-- `divya-bedtime-diet-reminder` — escalated from 3 → 4 consecutive errors. Needs investigation.
+## ⚠️ New vs Yesterday (2026-03-30)
+- `slack:commitment-tracker` — escalated from 3 → 4 consecutive errors. **Critical threshold reached.**
+- `divya-bedtime-diet-reminder` — escalated from 4 → 5 consecutive errors. Persistent delivery failure.
+- `divya-weekly-meal-planning` — NEW failure today (1st occurrence). Group delivery to -5123342435 may have a systematic issue.
+- `divya-weekly-wellness` — 1 consecutive error (but shows delivered — transient).
+
+## ⚠️ Pattern Alert
+Multiple Divya family group jobs (-5123342435) showing delivery failures. May indicate a group-level delivery issue:
+- `divya-bedtime-diet-reminder` — 5 consecutive failures
+- `divya-weekly-meal-planning` — 1 failure today
+- `divya-weekly-wellness` — 1 failure (shows delivered though)
+**Recommend:** Verify bot membership in -5123342435 group.
 
 ## Critical Findings (2026-03-06)
 
@@ -73,9 +83,9 @@ Previous warnings (resolved):
 
 ### ❌ Known Issues (persistent)
 - WhatsApp: Logged out (401) — parked for business API
-- `slack:commitment-tracker`: 2+ consecutive timeouts — scan scope needs reduction
-- `divya-bedtime-diet-reminder`: 3+ consecutive failures to -5123342435
-- `slack:morning-brief`: New failure — Daily Ops topic (id:4) delivery failing
+- `slack:commitment-tracker`: 4 consecutive timeouts — scan scope needs reduction
+- `divya-bedtime-diet-reminder`: 5 consecutive failures to -5123342435
+- Family group delivery (-5123342435): Multiple jobs failing — may be systematic
 
 ## Config Dependencies
 

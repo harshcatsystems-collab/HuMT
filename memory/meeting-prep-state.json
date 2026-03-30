@@ -1,76 +1,42 @@
 {
   "preppedToday": [
     {
-      "id": "61rbj9r0tk5nqvjirfv17q0ne9",
-      "summary": "STAGE <> Goodwater Presentation",
-      "start": "2026-03-27T10:00:00+05:30",
-      "preppedAt": "2026-03-27T04:00:00Z",
-      "topic": "strategy"
-    },
-    {
-      "id": "6mrolhtq4jd2h5edsmks8jhvfh",
-      "summary": "Review 2 - POD wise Full Funnel Execution",
-      "start": "2026-03-27T11:30:00+05:30",
-      "preppedAt": "2026-03-27T05:00:00Z",
-      "topic": "growth"
-    },
-    {
-      "id": "73rhfktpi5os655o54oocbaphs_20260327T060000Z",
-      "summary": "M0 watcher % - 2 Week Plan - discussion",
-      "start": "2026-03-27T11:30:00+05:30",
-      "preppedAt": "2026-03-27T05:00:00Z",
-      "topic": "retention"
-    },
-    {
-      "id": "3saeb94ahos7o3if0vre6re30v_20260327T063000Z",
-      "summary": "DORMANTS WATCH - Previously watched - 2 Week plan",
-      "start": "2026-03-27T12:00:00+05:30",
-      "preppedAt": "2026-03-27T06:00:00Z",
-      "topic": "retention"
-    },
-    {
-      "id": "0c7aahhdvv20srt8o3tfrsfd3n_20260327T070000Z",
-      "summary": "Reactivation daily catchup",
-      "start": "2026-03-27T12:30:00+05:30",
-      "preppedAt": "2026-03-27T06:00:00Z",
-      "topic": "retention"
-    },
-    {
-      "id": "62elh1hmvcnna83d7frv33pskv_20260327T073000Z",
-      "summary": "Activation daily catchup",
-      "start": "2026-03-27T13:00:00+05:30",
-      "preppedAt": "2026-03-27T07:00:00Z",
-      "topic": "growth"
-    },
-    {
-      "id": "1qm390gv9akuvrnvnir2sdt380",
-      "summary": "Autoresearch Implementation Kickoff",
-      "start": "2026-03-27T14:00:00+05:30",
-      "preppedAt": "2026-03-27T08:00:00Z",
-      "topic": "product_design"
-    },
-    {
-      "id": "s77l9829je021ccprk8rfrvpoc",
-      "summary": "Autoresearch Implementation Guide - Engineering Briefing",
-      "start": "2026-03-27T14:00:00+05:30",
-      "preppedAt": "2026-03-27T08:00:00Z",
-      "topic": "product_design"
-    },
-    {
-      "id": "45d9pqaqhf6patgb74i2d2u2gb",
-      "summary": "Notice of 9th Board Meeting of STAGE Technologies Pvt. Ltd",
-      "start": "2026-03-27T15:30:00+05:30",
-      "preppedAt": "2026-03-27T10:00:00Z",
-      "topic": "strategy"
-    },
-    {
-      "id": "i4lcdu802akilptqtklhqigvh0_20260327T113000Z",
-      "summary": "Vinay/Harsh",
-      "start": "2026-03-27T17:00:00+05:30",
-      "preppedAt": "2026-03-27T10:30:00Z",
+      "id": "7ijhbljetsd75f3sa5egfmmben_20260330T043000Z",
+      "title": "All Hands Meeting | STAGE",
+      "start": "2026-03-30T10:00:00+05:30",
+      "preppedAt": "2026-03-30T04:00:00Z",
       "topic": "daily_ops"
+    },
+    {
+      "id": "73rhfktpi5os655o54oocbaphs_20260330T060000Z",
+      "title": "M0 watcher % - 2 Week Plan - discussion",
+      "start": "2026-03-30T11:30:00+05:30",
+      "preppedAt": "2026-03-30T05:30:00Z",
+      "topic": "retention"
+    },
+    {
+      "id": "3saeb94ahos7o3if0vre6re30v_20260330T063000Z",
+      "title": "DORMANTS WATCH - Previously watched - 2 Week plan",
+      "start": "2026-03-30T12:00:00+05:30",
+      "preppedAt": "2026-03-30T06:00:00Z",
+      "topic": "retention"
+    },
+    {
+      "id": "7veqm2r4k9neto9ajmdfkbag5g_20260330T083000Z",
+      "title": "Harsh/Pranay Weekly",
+      "start": "2026-03-30T14:00:00+05:30",
+      "preppedAt": "2026-03-30T08:00:00Z",
+      "topic": "product_design"
     }
   ],
-  "date": "2026-03-27",
-  "_lastUpdated": "2026-03-27T10:30:00Z"
+    {
+      "id": "4c5ptjpp4anvg44igfnvmuje6s_20260330T103000Z",
+      "title": "Harsh X Nisha",
+      "start": "2026-03-30T16:00:00+05:30",
+      "preppedAt": "2026-03-30T10:00:00Z",
+      "topic": "people_culture"
+    }
+  ],
+  "date": "2026-03-30",
+  "_lastUpdated": "2026-03-30T10:00:00Z"
 }
