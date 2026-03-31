@@ -1,42 +1,34 @@
 {
   "preppedToday": [
     {
-      "id": "7ijhbljetsd75f3sa5egfmmben_20260330T043000Z",
-      "title": "All Hands Meeting | STAGE",
-      "start": "2026-03-30T10:00:00+05:30",
-      "preppedAt": "2026-03-30T04:00:00Z",
-      "topic": "daily_ops"
+      "id": "3f0cckdcqf5oo499a61ib2n229_20260331T042000Z",
+      "title": "Tech - Product Standup (Growth POD)",
+      "start": "2026-03-31T09:50:00+05:30",
+      "preppedAt": "2026-03-31T04:00:00Z",
+      "topic": "growth"
     },
     {
-      "id": "73rhfktpi5os655o54oocbaphs_20260330T060000Z",
+      "id": "73rhfktpi5os655o54oocbaphs_20260331T060000Z",
       "title": "M0 watcher % - 2 Week Plan - discussion",
-      "start": "2026-03-30T11:30:00+05:30",
-      "preppedAt": "2026-03-30T05:30:00Z",
+      "start": "2026-03-31T11:30:00+05:30",
+      "preppedAt": "2026-03-31T05:30:00Z",
       "topic": "retention"
     },
     {
-      "id": "3saeb94ahos7o3if0vre6re30v_20260330T063000Z",
+      "id": "3saeb94ahos7o3if0vre6re30v_20260331T063000Z",
       "title": "DORMANTS WATCH - Previously watched - 2 Week plan",
-      "start": "2026-03-30T12:00:00+05:30",
-      "preppedAt": "2026-03-30T06:00:00Z",
+      "start": "2026-03-31T12:00:00+05:30",
+      "preppedAt": "2026-03-31T06:00:00Z",
       "topic": "retention"
     },
     {
-      "id": "7veqm2r4k9neto9ajmdfkbag5g_20260330T083000Z",
-      "title": "Harsh/Pranay Weekly",
-      "start": "2026-03-30T14:00:00+05:30",
-      "preppedAt": "2026-03-30T08:00:00Z",
-      "topic": "product_design"
+      "id": "6com6or26gq34b9m6cqj0b9k6ss64b9ockojeb9mclh3ae9j64rj2p1h68",
+      "title": "Sarvam <> Stage",
+      "start": "2026-03-31T15:00:00+05:30",
+      "preppedAt": "2026-03-31T09:00:00Z",
+      "topic": "strategy"
     }
   ],
-    {
-      "id": "4c5ptjpp4anvg44igfnvmuje6s_20260330T103000Z",
-      "title": "Harsh X Nisha",
-      "start": "2026-03-30T16:00:00+05:30",
-      "preppedAt": "2026-03-30T10:00:00Z",
-      "topic": "people_culture"
-    }
-  ],
-  "date": "2026-03-30",
-  "_lastUpdated": "2026-03-30T10:00:00Z"
+  "date": "2026-03-31",
+  "_lastUpdated": "2026-03-31T09:00:00Z"
 }

@@ -1,9 +1,18 @@
 {
-  "lastTriageUTC": "2026-03-30T03:00:00Z",
-  "urgent": 0,
-  "important": 0,
-  "fyi": 1,
+  "lastTriageUTC": "2026-03-31T03:00:00Z",
+  "urgent": 1,
+  "important": 2,
+  "fyi": 3,
   "skip": 1,
-  "responseDebt": 0,
-  "notes": "Inbox very clean. 2 unread: KIET judge invitation (FYI/low-priority external), Kotak daily balance alert (auto-notification). No key contacts, no response debt."
+  "responseDebt": 1,
+  "debtDetails": [
+    {
+      "from": "Tom Dvorak <tom@xroadmedia.com>",
+      "subject": "Open payment & WHT certificates",
+      "originalDate": "2026-03-06",
+      "lastFollowUp": "2026-03-30",
+      "daysOld": 25,
+      "status": "Accounts replied Mar 9 but no resolution — Tom followed up again Mar 30"
+    }
+  ]
 }

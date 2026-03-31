@@ -1,11 +1,12 @@
 {
   "lastChecks": {
-    "slack_scan": 1775001000,
-    "dm_check": 1775001000,
-    "netlify_health": 1775001000,
-    "full_funnel_solver": 1775001000,
-    "homepage_personalisation": 1775001000
+    "slack_scan": 1775116800,
+    "dm_check": 1775116800,
+    "netlify_health": 1775116800,
+    "full_funnel_solver": 1775116800,
+    "homepage_personalisation": 1775116800,
+    "finance_department": 1775116800
   },
-  "lastHeartbeat": "2026-03-30T17:10:00Z",
-  "notes": "17:10 UTC - Quiet hours (10:40 PM IST). Monday over. Extended Slack silence all day. Rahul Mar 30 payment batch awaiting HMT. Pranay PIP outcome unknown."
+  "lastHeartbeat": "2026-03-31T04:00:00Z",
+  "notes": "04:00 UTC (9:30 AM IST Mar 31) - Post-morning brief. Netlify 200, Slack NO_CHANGES, no new DMs, no tier-1 activity. Tuesday - last business day of March."
 }
