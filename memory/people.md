@@ -179,6 +179,9 @@
   - **Mar 20:** Responded to 10 co-founder feedback points point-by-point in #cricket-saathi — unprompted. Frame: "sharing as an update, not asking for approvals — the plan is moving." ESPNcricinfo internal API breakthrough ($0 vs Sportradar $15k/yr). 8 parallel workstreams sequenced for Match 1 (Mar 28). Confident, not defensive.
   - **Emerging pattern (2nd confirmed):** Stakeholder management under pressure = respond comprehensively, frame as update not request, show data. Strong execution trajectory into March.
   - **Mar 27 (Week of Mar 23):** IPL Match 1 tomorrow (Mar 28) — Pranay has been executing 8 parallel streams: ESPNcricinfo API (stealth browser, $0 vs Sportradar $15k/yr), character-in-chat social layer (NOT commentator — strategic nuance), CLM notification strategy, autoresearch scoped for cricket, UI cultural refresh. Attended Autoresearch PM kickoff (calendar accepted Mar 27). **Trajectory:** Consistently delivering under high-stakes conditions with clear strategic thinking. Match 1 is the real test.
+  - **Mar 28 (Match Day):** Cricket Saathi IPL Match 1 went live — no Slack updates (weekend, operating mode). This was Pranay's PIP milestone event. Full Slack silence on game day is consistent with all hands on prod, not Slack.
+  - **Mar 30 (1:1 day):** HMT held Pranay 1:1 at 2 PM IST post-match. No Slack signal of outcome — decision handled synchronously. PIP verdict unknown from Slack alone.
+  - **Pattern promoted:** Under high-stakes conditions, Pranay goes heads-down (no async Slack updates) rather than over-communicating. Consistent across Match 1 build (Mar 20-28) and match day itself.
 
 **Ashish Pandey** (Associate PM)
 - **Observations:** (none yet — watch for: analytics rigor, communication style, initiative level)
@@ -193,7 +196,8 @@
   - **Mar 15:** Shared M0 retention deck with HMT's email inbox (surfaced in email triage). Proactive deliverable sharing rather than waiting for a pull request. Data-first, structured reporting format even for an upstream pitch.
   - **Mar 20:** Rebounded strongly after a quiet week — 3 after-hours messages during sprint. Operating at intensity. Owns M0 Watcher % POD (target 30%→36% by Mar 27). **Watch:** Is sprint intensity a phase or a new pattern? Low Slack visibility remains a concern (no public updates since plan submission).
   - **Mar 25 (Week of Mar 23):** M0 Watcher % Week 1 result: 28% actual vs 36% target (miss). Root cause analysis sharp — identified direct subscription volume drop (1,200→600/day) as primary driver, not engagement quality. Proposed concrete pivot: switching ₹99 plan to ₹51 (50% higher conversion tested). Self-corrected and communicated the miss proactively. Shared full sprint deck in #founders_sync.
-  - **Emerging pattern:** Owns misses without deflecting — reports bad news with root cause and pivot. Data-first, no spin.
+  - **Sprint end (Mar 31):** Full Funnel Sprint concluded. M0 Watcher % final result not captured via async Slack — sprint outcome was discussed in Monday Mar 30 standup (synchronous). Low async visibility pattern continues.
+  - **Confirmed pattern (3rd instance):** Owns misses without deflecting — reports bad news with root cause and pivot. Data-first, no spin. (Feb 20 trial analysis, Mar 25 sprint miss, pattern now promoted.)
 
 **Nisha Ali** (Sr. Manager - People & Culture)
 - **Observations:** Shared HR roster when HMT asked — responsive. (Watch for: how she handles sensitive people issues, communication with HMT, proactiveness on HR matters)
@@ -342,8 +346,9 @@
 - **Observations:**
   - **Mar 9-13:** Confirmed sick with fever — absent/quiet.
   - **Mar 16-20:** Returned but 3rd consecutive low-activity week — still very quiet on Slack. Extended recovery pattern (illness → slow bounce, not sharp return).
-  - **Watch:** If still quiet Mar 23-27, worth surfacing to HMT. Could be recovery lag, could be something else.
-- **Added:** 2026-02-16
+  - **Mar 23-31:** Continued low Slack visibility throughout. Townhall week (Mar 26), Full Funnel Sprint end (Mar 31) — no notable Samir signals in any channel scans across entire month end.
+  - **⚠️ ESCALATE WATCH:** 4+ consecutive weeks of near-silence. This is beyond illness recovery. Could be: role ambiguity, personal situation, disengagement, or working silently in different channels. No explicit red flags but sustained absence from all scanned channels is anomalous for a design lead. Worth flagging to HMT if pattern continues into April.
+- **Added:** 2026-02-16 | **Updated:** 2026-04-01
 
 ### Tarang Doshi
 - **Role:** Investor/Advisor (NOT product team)

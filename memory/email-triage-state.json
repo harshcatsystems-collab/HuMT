@@ -1,18 +1,16 @@
 {
-  "lastTriageUTC": "2026-03-31T03:00:00Z",
-  "urgent": 1,
-  "important": 2,
-  "fyi": 3,
-  "skip": 1,
+  "lastTriageUTC": "2026-04-01T03:00:00Z",
+  "urgent": 3,
+  "important": 8,
+  "fyi": 8,
+  "skip": 6,
   "responseDebt": 1,
   "debtDetails": [
     {
-      "from": "Tom Dvorak <tom@xroadmedia.com>",
+      "sender": "Tom Dvorak (XRoad Media)",
       "subject": "Open payment & WHT certificates",
-      "originalDate": "2026-03-06",
-      "lastFollowUp": "2026-03-30",
-      "daysOld": 25,
-      "status": "Accounts replied Mar 9 but no resolution — Tom followed up again Mar 30"
+      "ageDays": 26,
+      "note": "Payment + WHT cert outstanding since Mar 6 — Saloni has replied but WHT cert still pending"
     }
   ]
 }

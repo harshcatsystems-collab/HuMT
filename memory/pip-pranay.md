@@ -153,3 +153,14 @@ _(Behavioral signals from Slack, meetings, deliverables — captured between rev
 | Competency | Systems thinking — evolved point bet into multi-pillar strategy | ✓ Positive |
 
 **Note for next biweekly:** This is strong evidence of improvement on stakeholder management. Compare to earlier pattern where feedback caused friction.
+
+### April 1, 2026 — Character Bot Analysis Published
+
+Ashish Pandey (not Pranay) published Character Bot Chat Analysis in #full-funnel-solver.
+
+**Relevance to PIP:** Character bots is one of Pranay's strategic bets. This analysis reveals:
+- Current state: Only 4-7% engage with show content (intended use case)
+- Problem areas: 28-30% explicit/soliciting, broken navigation, weak opening hooks
+- Working well: Emotional connection, Ludo integration
+
+**Note:** Analysis authored by Ashish, not Pranay. Monitor whether Pranay engages with findings/next steps. UX redesign was something Vinay was pushing on — this provides data backing.

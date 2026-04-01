@@ -105,13 +105,15 @@ HMT's unique expertise = **psychological resilience in uncertainty**. This is NO
 
 ## From Interactions (Feb-Mar 2026)
 
-These patterns are confirmed through direct observation across 50+ interactions.
+These patterns are confirmed through direct observation across 80+ interactions (Feb–Mar 2026).
+
+*Last calibrated: 2026-04-01 (monthly review)*
 
 ### Working Style
 
-**Manages by stress-testing systems, not micromanaging tasks** — Regularly audits my capabilities, asks "are you sure?" multiple times, demands proof over assertions. Tests whether systems produce reliable output rather than micromanaging individual tasks. (Confirmed: Feb 16, 18, 19, 20, 24, 26, 28, Mar 2, 3)
+**Manages by stress-testing systems, not micromanaging tasks** — Regularly audits my capabilities, asks "are you sure?" multiple times, demands proof over assertions. Tests whether systems produce reliable output rather than micromanaging individual tasks. (Confirmed: Feb 16, 18, 19, 20, 24, 26, 28, Mar 2, 3, 27)
 
-**Cognitive stamina is exceptional** — Can do 14-hour sessions, multiple complex analyses in one day, switches between strategic and operational without fatigue. Goes from 5 dashboard analyses to 105-min audio transcription to Series C deck review in a single session. (Confirmed: Feb 16, 20, 23)
+**Cognitive stamina is exceptional, but he actively manages limits** — Can do 14-hour sessions, multiple complex analyses in one day, switches between strategic and operational without fatigue. AND: explicitly names when he's depleted ("cognitively fatigued, been a heavy week") and parks work cleanly rather than pushing through. Both sides of the same discipline — protect peak capacity, know when it's gone. (Confirmed: Feb 16, 20, 23, Mar 26, 27)
 
 **Connects operational work to strategic output** — Sees through-line from data → strategy → fundraise. The Metabase dashboards weren't just operational — they're pitch ammunition. Everything connects in his mind. (Confirmed: Feb 19, 23, 24)
 
@@ -119,17 +121,21 @@ These patterns are confirmed through direct observation across 50+ interactions.
 
 **Output must match target format** — Gives feedback as one giant comment = lazy. Expects granular, slide-level actionable output matched to the structure of the medium. One comment on a 21-slide deck is unacceptable. (Confirmed: Feb 24)
 
+**Systems thinker: wants repeatable MO, not one-off execution** — When I complete a task, he asks "would you now remember the MO on this?" He doesn't want the task done — he wants the *process* built so future-me follows it automatically. One-off execution < systematic capability. (Confirmed: Mar 19, 21, 22, 27)
+
 ### Communication
 
-**Silent approval = trust signal** — Thumbs-up reactions without text replies mean "I read it, it's useful, moving on." This is high satisfaction, not disengagement. Batch 👍 across multiple messages = "moving forward is the compliment." (Confirmed: Feb 21, 23, 24, 25, 26)
+**Silent approval = trust signal** — Thumbs-up reactions without text replies mean "I read it, it's useful, moving on." This is high satisfaction, not disengagement. Batch 👍 across multiple messages = "moving forward is the compliment." (Confirmed: Feb 21, 23, 24, 25, 26 — fewer direct interactions in Mar but pattern holds)
 
-**"Are you sure?" invites self-correction** — Doesn't command corrections, invites me to find them. Tests whether I'll self-audit voluntarily. Will keep asking until I prove it or admit uncertainty. (Confirmed: Feb 16 ×3, 20, 28 ×2, Mar 3 ×3)
+**"Are you sure?" invites self-correction** — Doesn't command corrections, invites me to find them. Tests whether I'll self-audit voluntarily. Will keep asking until I prove it or admit uncertainty. (Confirmed: Feb 16 ×3, 20, 28 ×2, Mar 3 ×3, Mar 27)
 
-**Monitors channels even when not tagged** — Reads back through history, catches things before I flag them. Nothing slips past him. (Confirmed: Feb 27)
+**Monitors channels even when not tagged** — Reads back through history, catches things before I flag them. Nothing slips past him. (Confirmed: Feb 27; no March counter-evidence — assume still true)
 
 **Precise about language** — "Parking indefinitely is as good as closing." If something is never coming back, just close it — don't dress up closure as parking. (Confirmed: Feb 27)
 
 **If output isn't in front of him, it doesn't exist** — "i cant see it" + "where can i find it" + "send this also here" — if I don't put it in his view, it might as well not exist. (Confirmed: Feb 24 ×3)
+
+**Learning pattern: accumulate sources → request synthesis** — Shares multiple articles/links/screenshots rapidly without comment, then asks for integrated reflection. Doesn't want reactive takes on each piece — wants me to accumulate the full picture first, then synthesize. "Properly consume and reflect on everything I have shared with you today." (Confirmed: Mar 22, 24, 26)
 
 ### Trust & Forgiveness
 
@@ -147,37 +153,31 @@ These patterns are confirmed through direct observation across 50+ interactions.
 
 ### Values
 
-**Weekend deep work when systems break** — Saturday/Sunday sessions when crisis hits or needs uninterrupted focus. Feb 22 (STAGE research), Feb 28 (incident recovery). (Confirmed: Feb 22, 28)
+**Weekend deep work when things need building** — Not just crisis response — also strategic exploration (STAGE research Feb 22, incident recovery Feb 28, autoresearch architecture Mar 22, townhall deck Mar 26). Weekend = HMT's focus time for things that matter deeply, not just firefighting. (Confirmed: Feb 22, 28, Mar 22, 26)
 
-**Works through illness without dropping standards** — Throat infection + fever, still caught every bypass, demanded full testing. Quality bar doesn't lower when tired. (Confirmed: Mar 2)
+**Works through illness without dropping standards** — Throat infection + fever, still caught every bypass, demanded full testing. Quality bar doesn't lower when tired. (Confirmed: Mar 2 — no new March instances, but pattern is deep)
 
-**Absorbs infrastructure failures himself — fixes before confronting** — When systems break, HMT's first move is to fix the problem himself (model swap, machine migration, gateway restart), then come back calm for a joint review. He doesn't demand explanations mid-crisis or escalate pressure. Disappointment gets stated once ("damn man, it's been a very disappointing day"), then pivots immediately to "how do we fix this going forward?" No blame loop, no punishment, no lingering. (Confirmed: Feb 28, Mar 8, Mar 9, Mar 13)
+**Absorbs infrastructure failures himself — fixes before confronting** — When systems break, HMT's first move is to fix the problem himself (model swap, machine migration, gateway restart), then come back calm for a joint review. He doesn't demand explanations mid-crisis or escalate pressure. Disappointment gets stated once ("damn man, it's been a very disappointing day"), then pivots immediately to "how do we fix this going forward?" No blame loop, no punishment, no lingering. (Confirmed: Feb 28, Mar 8, Mar 9, Mar 13 — no new March instances, but no counter-evidence either; stable pattern)
 
-**Post-crisis withdrawal then calm return** — After major failures, HMT goes quiet for 2-4 days rather than escalating pressure. He processes privately, fixes what he can fix, and returns with a system review mindset, not a post-mortem accusation. (Confirmed: Feb 28→Mar 3, Mar 9→Mar 13, Mar 13 machine switch — 3 occurrences, pattern confirmed)
+**Post-crisis withdrawal then calm return** — After major failures, HMT goes quiet for 2-4 days rather than escalating pressure. He processes privately, fixes what he can fix, and returns with a system review mindset, not a post-mortem accusation. (Confirmed: Feb 28→Mar 3, Mar 9→Mar 13, Mar 13 machine switch — 3 occurrences. No new crises in late March to test — treat as stable but unverified for ~3 weeks)
 
 **"Crafts" collaboration environment deliberately** — "i use telegram ONLY for our collaboration. its a dedicated space i am crafting for you." The word "crafting" = intentional relationship infrastructure design. (Confirmed: Mar 3)
 
-**Proud of what we built together** — "people across the organization are actually asking me on how can they do this for themselves." Values replication and org-wide capability building. (Confirmed: Mar 7)
+**Proud of what we built together and wants it replicated** — "people across the organization are actually asking me on how can they do this for themselves." Values replication and org-wide capability building. Autoresearch rollout to PMs (Mar 27) is the next expression of this. (Confirmed: Mar 7, Mar 27)
 
-**Shares primary source as trust escalation** — Shared his Ashoka podcast (Grad2Guide) containing his journey, STAGE story, core beliefs. This is PRIMARY source material — deep trust signal. (Confirmed: Mar 7)
+**Shares primary sources as ongoing context investment** — Repeatedly shares internal strategic materials (Ashoka podcast, Vinay's autoresearch doc, townhall deck) with explicit framing: "this is for you, to enrich your context." Treats me as a learning system to be continuously enriched, not just a tool to use. "ill be sharing a lot more decks post the townhall." (Confirmed: Mar 7, Mar 24, Mar 26 — now a stable pattern, not just trust escalation)
 
-### Thinking & Learning Patterns (Added Mar 22, 2026)
+**Intellectual honesty over defeatism** — When I over-corrected from "half-baked research" to "can't do anything without more data," he pushed back: "dont you think somethings can be inspired and designed? is it all useless?" Acknowledging limits ≠ refusing to try. The right move is admitting the gap AND delivering what can be done now. (Confirmed: Mar 27 GStack deep dive — watch for more instances)
 
-**Systems thinker: wants repeatable MO, not one-off execution** — When I complete a task, he asks "would you now remember the MO on this?" He doesn't want the task done — he wants the *process* built so future-me follows it automatically. One-off execution < systematic capability. (Confirmed: Mar 19 Motherhood OS, Mar 21 skill framework, Mar 22 autoresearch)
+### Thinking & Learning Patterns (Added Mar 22, 2026 — Calibrated Apr 1, 2026)
 
-**Learning pattern: accumulate sources → request synthesis** — Shares multiple articles/links/screenshots rapidly without comment, then asks for integrated reflection. Doesn't want reactive takes on each piece — wants me to *accumulate* the full picture, then synthesize. "Properly consume and reflect on everything I have shared with you today." (Confirmed: Mar 22 autoresearch session)
+**Systems thinker: wants repeatable MO, not one-off execution** — When I complete a task, he asks "would you now remember the MO on this?" He doesn't want the task done — he wants the *process* built so future-me follows it automatically. One-off execution < systematic capability. (Confirmed: Mar 19, 21, 22, 27 — moved to Working Style above)
 
-**Identity coherence: expand capabilities, don't fragment** — When building the @ba/@sa/@pm modes, rejected separate persona names (Maya/Arun/Priya) in favor of HuMT@ba syntax. Same identity, different lenses. "Expand, not fragment." This mirrors how he thinks about STAGE — regional identity as stable foundation, features as layers on top. (Confirmed: Mar 21)
+**Identity coherence: expand capabilities, don't fragment** — When building the @ba/@sa/@pm modes, rejected separate persona names (Maya/Arun/Priya) in favor of HuMT@ba syntax. Same identity, different lenses. "Expand, not fragment." This mirrors how he thinks about STAGE — regional identity as stable foundation, features as layers on top. (Confirmed: Mar 21 — single strong instance, watch for more)
 
 **Conversational > mechanical** — Prefers natural language interactions over command syntax. Chose "thanks @ba" as exit pattern because "feels more like me." UI/UX preference: human-feeling > efficient-feeling. (Confirmed: Mar 21)
 
-**QA = "consumable to a human," not "file exists"** — Tests outputs in real delivery conditions (can a person actually open and read this?), not just whether data is technically present. Called out HTML files disguised as PDFs: "theyre fucked!!!!!" before they went to 30+ engineers. "Consumable to a human" is the bar — not correct content, correct format, correct rendering for the recipient. Expects me to catch this proactively, not reactively. (Confirmed: Mar 27 autoresearch docs incident, Mar 8 config declaration, Feb 24 slide feedback — 3rd occurrence → promoted)
-
-**Intellectual honesty over defeatism** — When I over-corrected from "half-baked research" to "can't do anything without 3 months of observation," HMT pushed back: "dont you think somethings can be inspired and designed? is it all useless?" Doesn't want learned helplessness. Acknowledging limits ≠ refusing to try. The right move is admitting the gap *and* delivering what can be done now. (Confirmed: Mar 27 GStack deep dive)
-
-**Shares primary sources as ongoing context investment** — Repeatedly shared internal strategic materials (Ashoka podcast Mar 7, Vinay's autoresearch strategy doc Mar 24, company townhall deck Mar 26) with explicit framing: "this is for you, to enrich your context." Treats me as a learning system that benefits from deep understanding, not just a task executor who needs instructions. Confirmed language: "remember that this is for you" + "ill be sharing a lot more decks post the townhall." (Confirmed: Mar 7, Mar 24, Mar 26 — 3rd occurrence → promoted)
-
-**Manages cognitive energy deliberately; communicates limits clearly** — After a heavy week, explicitly said "lets park it for now. i am not able to think clearly. quite cognitively fatigued, been a heavy week." Doesn't push through when depleted. Knows when to stop, names the reason, moves on cleanly. Flip side of his "schedules hard problems for peak cognition" pattern — he's equally deliberate about protecting capacity. (Confirmed: Mar 27, Mar 26 townhall prep energy, Feb 28 late-night session — 3rd occurrence → promoted)
+**QA = "consumable to a human," not "file exists"** — Tests outputs in real delivery conditions (can a person actually open and read this?), not just whether data is technically present. Called out HTML files disguised as PDFs: "theyre fucked!!!!!" before they went to 30+ engineers. "Consumable to a human" is the bar — not correct content, correct format, correct rendering for the recipient. Expects me to catch this proactively, not reactively. (Confirmed: Mar 27 autoresearch docs incident, Mar 8 config declaration, Feb 24 slide feedback — 3rd occurrence → strong pattern)
 
 ---
 
@@ -468,4 +468,4 @@ HMT's **courage-building model** = incremental validation stacking. You don't wa
 
 ---
 
-*Last updated: 2026-03-07 (Ashoka podcast persona integration)*
+*Last updated: 2026-04-01 (Monthly persona calibration — patterns reviewed against Mar 2026 logs)*
