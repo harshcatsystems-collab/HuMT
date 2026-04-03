@@ -14,7 +14,18 @@
 | **EDD by USG (PRIMARY)** | September 4, 2026 |
 
 **For week calculation:** Use adjusted reference of **Nov 28, 2025** as Day 0 (aligns with USG EDD).
+**EDD:** September 4, 2026 (NOT May 16 — that's WRONG)
 **Formula:** `(Current Date - Nov 28, 2025) ÷ 7`
+
+**EXAMPLE for April 2, 2026:**
+- Nov 28 → Dec 28 = 30 days
+- Dec 28 → Jan 28 = 31 days (total: 61)
+- Jan 28 → Feb 28 = 31 days (total: 92)
+- Feb 28 → Mar 28 = 28 days (total: 120) ← 2026 is NOT a leap year
+- Mar 28 → Apr 2 = 5 days (total: 125)
+- 125 ÷ 7 = 17 weeks + 6 days = **WEEK 18**
+
+**SANITY CHECK:** In April 2026, Divya should be Week 17-20. If you calculate Week 33+, you're using the WRONG due date.
 **If confused:** Ask Divya. Never guess.
 
 ---

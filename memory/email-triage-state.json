@@ -1,16 +1,8 @@
 {
-  "lastTriageUTC": "2026-04-01T03:00:00Z",
-  "urgent": 3,
-  "important": 8,
-  "fyi": 8,
-  "skip": 6,
-  "responseDebt": 1,
-  "debtDetails": [
-    {
-      "sender": "Tom Dvorak (XRoad Media)",
-      "subject": "Open payment & WHT certificates",
-      "ageDays": 26,
-      "note": "Payment + WHT cert outstanding since Mar 6 — Saloni has replied but WHT cert still pending"
-    }
-  ]
+  "lastTriageUTC": "2026-04-03T03:01:00Z",
+  "urgent": 1,
+  "important": 0,
+  "fyi": 1,
+  "responseDebt": 0,
+  "notes": "1 high-priority email from Karthik Reddy (Blume) re: General Catalyst intro to Rahul. Inbox otherwise clean."
 }

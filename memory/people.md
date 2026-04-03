@@ -187,7 +187,11 @@
 - **Observations:** (none yet — watch for: analytics rigor, communication style, initiative level)
 
 **Nishita Banerjee** (Research Lead)
-- **Observations:** (none yet — watch for: research quality, how she surfaces insights, independence level)
+- **Observations:**
+  - **Apr 2:** Running 4 parallel workstreams — Consumer Insights Search Engine, AI Agentic Film Framework, Culture Productization Framework, Vertical Content Research. High cognitive load with strategic breadth. 
+  - **Apr 2:** Proactively paused low-priority work (format requirements + pod needs assessment) to focus capacity on higher-value items. Self-prioritization signal — not waiting for HMT to triage for her.
+  - **Apr 2:** Building cross-functional bridges — looped in Rohit to get Komal's time, identified synergy between Akshay + Komal efforts. Systems thinker, sees org-level opportunities.
+  - **Pattern watch:** High autonomy + strategic framing. Not just executing research briefs — shaping the research agenda. Appraisal presentation pending = her chance to demonstrate yearly impact. (Watch for: how she handles appraisal synthesis)
 
 **Vismit Bansal** (Head - Retention Marketing)
 - **Observations:**

@@ -1,55 +1,20 @@
 {
   "preppedToday": [
     {
-      "id": "3f0cckdcqf5oo499a61ib2n229_20260401T042000Z",
-      "title": "Tech - Product Standup (Growth POD)",
-      "start": "2026-04-01T09:50:00+05:30",
-      "preppedAt": "2026-04-01T04:00:00Z",
-      "topic": "growth"
+      "id": "21dqfl9182qh9r1jp1ahilbkr3",
+      "title": "STAGE AI Playbook",
+      "start": "2026-04-03T17:00:00+05:30",
+      "preppedAt": "2026-04-03T11:01:00Z",
+      "topic": "content"
     },
     {
-      "id": "6hpno1oidmiuganoouruhfonmu_20260401T050000Z",
-      "title": "Sprint Retrospect",
-      "start": "2026-04-01T10:30:00+05:30",
-      "preppedAt": "2026-04-01T04:36:00Z",
-      "topic": "product_design"
-    },
-    {
-      "id": "23e2e6ggo4dkufrrkh2nrj9d7d_20260401T053000Z",
-      "title": "Sprint Start",
-      "start": "2026-04-01T11:00:00+05:30",
-      "preppedAt": "2026-04-01T05:00:00Z",
-      "topic": "product_design"
-    },
-    {
-      "id": "73rhfktpi5os655o54oocbaphs_20260401T060000Z",
-      "title": "M0 watcher % - 2 Week Plan - discussion",
-      "start": "2026-04-01T11:30:00+05:30",
-      "preppedAt": "2026-04-01T05:30:00Z",
-      "topic": "retention"
-    },
-    {
-      "id": "3saeb94ahos7o3if0vre6re30v_20260401T063000Z",
-      "title": "DORMANTS WATCH - Previously watched - 2 Week plan",
-      "start": "2026-04-01T12:00:00+05:30",
-      "preppedAt": "2026-04-01T06:00:00Z",
-      "topic": "retention"
-    },
-    {
-      "id": "70afafkt4qj6m5krt4uftgbkf5",
-      "title": "Catchup - Alignment",
-      "start": "2026-04-01T12:00:00+05:30",
-      "preppedAt": "2026-04-01T06:00:00Z",
-      "topic": "daily_ops"
-    },
-    {
-      "id": "1852rvuhhkf30qklublatdcugk",
-      "title": "Full Funnel - April Plan",
-      "start": "2026-04-01T14:00:00+05:30",
-      "preppedAt": "2026-04-01T08:00:00Z",
-      "topic": "growth"
+      "id": "i4lcdu802akilptqtklhqigvh0_20260403T113000Z",
+      "title": "Vinay/Harsh",
+      "start": "2026-04-03T17:00:00+05:30",
+      "preppedAt": "2026-04-03T11:01:00Z",
+      "topic": "strategy"
     }
   ],
-  "date": "2026-04-01",
-  "_lastUpdated": "2026-04-01T08:00:00Z"
+  "date": "2026-04-03",
+  "_lastUpdated": "2026-04-03T11:01:00Z"
 }

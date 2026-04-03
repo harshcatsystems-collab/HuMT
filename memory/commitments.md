@@ -1,6 +1,6 @@
 # Commitments & Follow-ups
 
-> Last updated: 2026-03-27 12:30 UTC (weekly commitment review cron)
+> Last updated: 2026-04-02 12:05 UTC (commitment tracker cron)
 
 ---
 
@@ -21,6 +21,26 @@
 | Monitor #watch-retention-solver sprint | 🟡 Ongoing | 2026-03-10 | 2-week sprint: Mar 13–27. Review 2 was today (Mar 27). Sprint concludes. Transition to ongoing monitoring. Key Week 1 results: M0 Watcher % at 32% vs 36% target. ₹51 plan change in progress. |
 | Model setup monitoring — Opus vs Sonnet split | 🟡 Watch | 2026-03-13 | New setup: Opus (main/live convos) vs Sonnet (crons/subagents). Observe over time, flag if cost or quality issues emerge. |
 | Chatbot weekly report — Aaliya | 🟡 Watch | 2026-03-12 | Deferred to Monday Mar 16. New infra released Mar 13. Chatbot Flutter native conversion pushed to prod Mar 25. Standing monitor — Aaliya posting updates. |
+
+---
+
+## 🆕 New Commitments — Apr 1–2, 2026 (Thursday Scan)
+
+| Item | Who | Deadline | Channel | Notes |
+|------|-----|----------|---------|-------|
+| Marathi launch — chatbot data population | Aaliya/Rohit D team | ASAP (blocking release) | #ai-character-bots | Chatbot data for Marathi needed to fix broken chatbot flows. Rohit D: "We are adding data in chatbot for marathi, it should fix the issues." — also looking into it personally. |
+| Fix chatbot admin issues (primary mark, image upload) blocking Marathi | Unknown backend dev (<@U08QCRJM1PA>) | ASAP | #ai-character-bots | Pranay (U08L99D58PK) cc'd + Vinay. Critical blocker for Marathi release. |
+| LLM cost spike ($120→$480/day on chatbot) — investigate + fix | Rohit D + Rishit | 2–3 days | #ai-character-bots | Gemini Flash deployed as interim fix. Own LLM within 2-3 days as long-term fix. Vinay informed. |
+| Gemini Flash branch for chatbot — test + release approval | <@U0A51N5SYRH> (Aaliya's team) | ASAP | #ai-character-bots | Branch: gemini-flash-cb.dev.stage.in/nest. Pending test clearance. |
+| Stagesig integration — verify correct on Stage Web prod | <@U0A0GPCUZ6G> | ASAP | #tech-product-updates | <@U0A3QQQ3J21> delegated. CC'd Nikhil's devs. |
+| Marathi pre-prod — QA sign-off from all PMs | PM team + QA groups | ASAP (before live) | #tech-mates | 8 issues found. Chatbot blocking items identified. Parveen checked coming-soon ✅ + PFP visible ✅. Nisha confirmed content culture screen ✅. Several still open. |
+| Spends mapping logic fix (daily performance dashboard discrepancy) | <@U067QHCDQRE> (perf team) | Apr 2 EOD | #stage_maino | Shashank flagged 4-5% unmapped spends → CAC discrepancy. Fix: mapping at ad level. ETA today. |
+| Shashank: "rework April execution plan based on feedback, meet Friday to lock" | Growth/Full-funnel team | Friday Apr 4 | #full-funnel-solver | Shashank direction: "align actions with core value for user — content. First-principles thinking." Meeting Friday. |
+| Character Bot Chat Analysis next steps | Parveen | TBD | #full-funnel-solver | Analysis shared Apr 1 (Saanwari + Naate Bhuri bot theme classification). Next steps pending team alignment. |
+| Finance: 16 payments approval (₹1.03Cr incl Facebook ₹50L) | HMT + Shashank + Nikhil + Vinay | Apr 2 (TODAY) | #finance-department | Rahul Chauhan requested. Shashank approved all 16 ✅ (Apr 2 11:17 UTC). HMT/Nikhil/Vinay approval status TBC. |
+| Pranay: share D1 watch retention analysis for coins/leaderboard experiment | Pranay (U08L99D58PK) | TBD | #product-internal | Pranay asked Aaliya's team to review. <@U0A51N5SYRH>: "Sure let me share this analysis and chart!" — committed. |
+| Marathi web PR — test PR #1194 at amplify URL | <@U08M4LD47BR> | ASAP | #tech-mates thread | <@U09JSL09GKF> delegated. Backend issue resolved. CC'd <@U07A91AB7GW>. |
+| D0 engagement metrics analysis vs 90-day avg | <@U09AK8X90Q0> | ✅ Done Apr 1 | #full-funnel-solver | WoW dip explained (plan transition + Naate Bhuri context). Metrics above 90-day avg. COMPLETED. |
 
 ---
 
