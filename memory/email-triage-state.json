@@ -1,8 +1,24 @@
 {
-  "lastTriageUTC": "2026-04-03T03:01:00Z",
-  "urgent": 1,
-  "important": 0,
-  "fyi": 1,
-  "responseDebt": 0,
-  "notes": "1 high-priority email from Karthik Reddy (Blume) re: General Catalyst intro to Rahul. Inbox otherwise clean."
+  "lastTriageUTC": "2026-04-06T03:01:00Z",
+  "urgent": 2,
+  "important": 4,
+  "fyi": 7,
+  "skip": 6,
+  "responseDebt": 2,
+  "debtDetails": [
+    {
+      "sender": "Karthik Reddy (Blume)",
+      "subject": "Stage | General Catalyst",
+      "date": "2026-04-03",
+      "daysOld": 3,
+      "priority": "CRITICAL"
+    },
+    {
+      "sender": "Pravesh Rajput",
+      "subject": "Re: Media request - STAGE - French television",
+      "date": "2026-04-04",
+      "daysOld": 2,
+      "priority": "HIGH"
+    }
+  ]
 }

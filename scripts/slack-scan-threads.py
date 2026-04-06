@@ -182,12 +182,30 @@ def print_channel(data):
         print(f"{prefix}{msg['time']} | {msg['user']} | {msg['text'][:200]}{thread_marker}")
 
 
-def get_tier_channels(tier_keys):
-    """Get channels from specified tier keys in channel map."""
+def get_tier_channels(tier_name):
+    """Get channels from specified tier in channel map.
+    
+    Supports both old format (tier1_product, etc.) and new format (tiers.tier1 list).
+    """
     channels = {}
-    for key in tier_keys:
-        if key in channel_map and isinstance(channel_map[key], dict):
-            channels.update(channel_map[key])
+    
+    # New format: tiers.tier1/tier2/tier3 contains list of channel IDs
+    tiers = channel_map.get("tiers", {})
+    all_channels = channel_map.get("channels", {})
+    
+    if tier_name in tiers:
+        for ch_id in tiers[tier_name]:
+            ch_info = all_channels.get(ch_id, {})
+            ch_name = ch_info.get("name", ch_id)
+            channels[ch_id] = f"#{ch_name}"
+        return channels
+    
+    # Fallback: old format with tier1_product, etc.
+    if isinstance(tier_name, list):
+        for key in tier_name:
+            if key in channel_map and isinstance(channel_map[key], dict):
+                channels.update(channel_map[key])
+    
     return channels
 
 
@@ -226,41 +244,31 @@ def main():
     
     oldest = int(time.time()) - args.hours_back * 3600
     
-    # Define tier groups
-    tier1_keys = [
-        "tier1_product", "tier1_founders", "tier1_retention_lifecycle",
-        "tier1_acquisition_growth", "tier1_people_culture",
-        "tier1_consumer_insights", "tier1_content_strategy",
-        "tier1_strategy_cross_org"
-    ]
-    tier2_keys = [
-        "tier2_hiring", "tier2_tech", "tier2_regional", "tier2_other",
-        "tier2_growth", "tier2_people"
-    ]
-    tier3_keys = ["tier3_key"]
+    # Build jobs list using new tier format: (tier_name, ch_id, ch_name, expand, limit, max_threads)
+    jobs = []
     
-    # Build scan plan
-    scan_plan = []
-    
-    tier1_channels = get_tier_channels(tier1_keys)
+    # Tier 1 channels — full thread expansion
+    tier1_channels = get_tier_channels("tier1")
     for ch_id, ch_name in tier1_channels.items():
         expand = args.threads in ("on", "tier1")
-        scan_plan.append((ch_id, ch_name, expand, 50, 15))  # limit, max_threads
+        jobs.append(("tier1", ch_id, ch_name, expand, 50, 15))
     
     if not args.tier1_only:
-        tier2_channels = get_tier_channels(tier2_keys)
+        # Tier 2 channels — limited thread expansion
+        tier2_channels = get_tier_channels("tier2")
         for ch_id, ch_name in tier2_channels.items():
             expand = args.threads == "on"
-            scan_plan.append((ch_id, ch_name, expand, 30, 5))
+            jobs.append(("tier2", ch_id, ch_name, expand, 30, 5))
         
-        tier3_channels = get_tier_channels(tier3_keys)
+        # Tier 3 channels — no thread expansion
+        tier3_channels = get_tier_channels("tier3")
         for ch_id, ch_name in tier3_channels.items():
-            scan_plan.append((ch_id, ch_name, False, 20, 0))
+            jobs.append(("tier3", ch_id, ch_name, False, 20, 0))
     
     # Execute scan
     print(f"{'=' * 50}")
     print(f"SLACK SCAN — Last {args.hours_back}h (threads: {args.threads})")
-    print(f"Scanning {len(scan_plan)} channels...")
+    print(f"Scanning {len(jobs)} channels...")
     print(f"{'=' * 50}")
     
     all_results = []
@@ -268,45 +276,13 @@ def main():
     total_messages = 0
     total_threads = 0
     
-    current_tier = ""
     tier_labels = {
-        "tier1_product": "━━━ TIER 1: PRODUCT ━━━",
-        "tier1_founders": "━━━ TIER 1: FOUNDERS ━━━",
-        "tier1_retention_lifecycle": "━━━ TIER 1: RETENTION & LIFECYCLE ━━━",
-        "tier1_acquisition_growth": "━━━ TIER 1: ACQUISITION & GROWTH ━━━",
-        "tier1_people_culture": "━━━ TIER 1: PEOPLE & CULTURE ━━━",
-        "tier1_consumer_insights": "━━━ TIER 1: CONSUMER INSIGHTS & RESEARCH ━━━",
-        "tier1_content_strategy": "━━━ TIER 1: CONTENT STRATEGY ━━━",
-        "tier1_strategy_cross_org": "━━━ TIER 1: CROSS-ORG STRATEGY ━━━",
-        "tier2_hiring": "━━━ TIER 2: HIRING ━━━",
-        "tier2_tech": "━━━ TIER 2: TECH ━━━",
-        "tier2_regional": "━━━ TIER 2: REGIONAL & MARKETING ━━━",
-        "tier2_other": "━━━ TIER 2: OTHER ━━━",
-        "tier2_growth": "━━━ TIER 2: GROWTH ━━━",
-        "tier2_people": "━━━ TIER 2: PEOPLE ━━━",
-        "tier3_key": "━━━ TIER 3: COMPANY PULSE ━━━",
+        "tier1": "━━━ TIER 1: HIGH PRIORITY ━━━",
+        "tier2": "━━━ TIER 2: MEDIUM PRIORITY ━━━",
+        "tier3": "━━━ TIER 3: LOW PRIORITY ━━━",
     }
     
-    # Build jobs list: (tier_key, ch_id, ch_name, expand, limit, max_threads)
-    jobs = []
-    all_tier_keys = tier1_keys + ([] if args.tier1_only else tier2_keys + tier3_keys)
-    
-    for tier_key in all_tier_keys:
-        if tier_key in channel_map and isinstance(channel_map[tier_key], dict):
-            channels = channel_map[tier_key]
-            if not channels:
-                continue
-            for ch_id, ch_name in channels.items():
-                if tier_key.startswith("tier1"):
-                    expand = args.threads in ("on", "tier1")
-                    limit, max_t = 50, 15
-                elif tier_key.startswith("tier2"):
-                    expand = args.threads == "on"
-                    limit, max_t = 30, 5
-                else:
-                    expand = False
-                    limit, max_t = 20, 0
-                jobs.append((tier_key, ch_id, ch_name, expand, limit, max_t))
+    all_tier_names = ["tier1"] if args.tier1_only else ["tier1", "tier2", "tier3"]
     
     # Parallel scan
     results_by_tier = {}
@@ -326,11 +302,11 @@ def main():
                 print(f"  ERROR scanning {ch_name}: {e}", file=sys.stderr)
     
     # Print in tier order
-    for tier_key in all_tier_keys:
-        tier_results = results_by_tier.get(tier_key, [])
+    for tier_name in all_tier_names:
+        tier_results = results_by_tier.get(tier_name, [])
         if not tier_results:
             continue
-        print(f"\n{tier_labels.get(tier_key, tier_key)}")
+        print(f"\n{tier_labels.get(tier_name, tier_name)}")
         # Sort by channel name for consistent output
         for data in sorted(tier_results, key=lambda d: d["channel_name"]):
             print_channel(data)
@@ -341,11 +317,11 @@ def main():
     
     # Scan remaining unmapped channels if --all
     if args.all and not args.tier1_only:
-        # Get all mapped channel IDs
+        # Get all mapped channel IDs from tiers
+        tiers = channel_map.get("tiers", {})
         mapped_ids = set()
-        for tier_key, channels in channel_map.items():
-            if isinstance(channels, dict) and tier_key not in ("co_founders", "hmt", "direct_reports"):
-                mapped_ids.update(channels.keys())
+        for tier_name in ["tier1", "tier2", "tier3"]:
+            mapped_ids.update(tiers.get(tier_name, []))
         
         # Fetch all joined channels from API
         all_joined = get_all_joined_channels()
@@ -375,7 +351,7 @@ def main():
     
     # Summary
     print(f"\n{'=' * 50}")
-    scanned = "ALL 353" if args.all else f"{len(scan_plan)} mapped"
+    scanned = "ALL 353" if args.all else f"{len(jobs)} mapped"
     print(f"SCAN COMPLETE ({scanned} channels): {active_channels} active, {total_messages} top-level messages, {total_threads} thread replies")
     print(f"Total messages analyzed: {total_messages + total_threads}")
     print(f"API calls made: {api_calls}")

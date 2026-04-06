@@ -1,0 +1,11 @@
+{
+  "lastHeartbeat": null,
+  "lastChecks": {
+    "email": null,
+    "calendar": null,
+    "slack_full_scan": null,
+    "commitments_review": null
+  },
+  "lastDailyDigest": null,
+  "lastWeeklyReview": null
+}

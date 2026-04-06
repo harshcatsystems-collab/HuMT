@@ -1,12 +1,10 @@
 {
   "lastChecks": {
-    "slack_scan": 1775188500,
-    "dm_check": 1775188500,
-    "netlify_health": 1775188500,
-    "full_funnel_solver": 1775188500,
-    "homepage_personalisation": 1743609720,
-    "finance_department": 1775188500
+    "slack_scan": 1743871140,
+    "dm_check": 1743871140,
+    "netlify_health": 1743871140,
+    "channel_diff": 1743871140
   },
-  "lastHeartbeat": "2026-04-03T04:15:00Z",
-  "notes": "04:15 UTC (9:45 AM IST Apr 3) - First morning scan. Vinay posted SCR targets (45/40/35/25%) + M0-M1 focus directive. Not escalating - operational direction."
+  "lastHeartbeat": "2026-04-05T15:39:00Z",
+  "notes": "Sunday 15:39 UTC - Quick scan after pregnancy calc fix. No @HuMT mentions pending. Netlify healthy (200). Channel diff: no changes (361 channels)."
 }

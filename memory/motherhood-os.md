@@ -18,6 +18,18 @@
 
 ### ⚠️ WEEK CALCULATION — ALWAYS USE USG-ADJUSTED DATING
 
+## 🚨 MANDATORY: USE THE SCRIPT — NO MENTAL MATH
+
+**Before stating ANY pregnancy week number, RUN:**
+```bash
+bash scripts/pregnancy-week.sh
+```
+
+**DO NOT calculate in your head. DO NOT estimate. DO NOT hallucinate.**
+You have failed this calculation 3+ times. Use the script.
+
+---
+
 **The rule:** USG dating takes precedence over LMP because it reflects actual fetal development.
 
 **Adjusted reference point:** For calculation purposes, treat **November 28, 2025** as "Day 0" (this aligns LMP dating with the USG EDD of Sep 4).
