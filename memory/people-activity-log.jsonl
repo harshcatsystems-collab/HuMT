@@ -205,3 +205,23 @@
 {"ts": "2026-04-06T08:56:29Z", "user": "U07LFSB0PM5", "name": "Vismit Bansal", "messages": 1, "thread_replies": 0, "channels_active": 1, "channel_ids": ["C07T7047TEZ"], "after_hours": 0, "avg_response_latency_sec": null}
 {"ts": "2026-04-06T08:56:29Z", "user": "U08UL9EHKKP", "name": "Samir Kumar", "messages": 1, "thread_replies": 0, "channels_active": 1, "channel_ids": ["C035F6W8DK9"], "after_hours": 0, "avg_response_latency_sec": null}
 {"ts": "2026-04-06T08:56:29Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-04-06T09:26:46Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-04-06T09:56:29Z", "user": "U08KBHHV9J4", "name": "Radhika Vijay", "messages": 1, "thread_replies": 0, "channels_active": 1, "channel_ids": ["C035F6W8DK9"], "after_hours": 0, "avg_response_latency_sec": null}
+{"ts": "2026-04-06T09:56:29Z", "user": "U08UL9EHKKP", "name": "Samir Kumar", "messages": 1, "thread_replies": 0, "channels_active": 1, "channel_ids": ["C035F6W8DK9"], "after_hours": 0, "avg_response_latency_sec": null}
+{"ts": "2026-04-06T09:56:29Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-04-06T10:26:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-04-06T10:56:57Z", "user": "U08UL9EHKKP", "name": "Samir Kumar", "messages": 1, "thread_replies": 0, "channels_active": 1, "channel_ids": ["C035F6W8DK9"], "after_hours": 0, "avg_response_latency_sec": null}
+{"ts": "2026-04-06T10:56:57Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-04-06T11:26:55Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-04-06T11:57:26Z", "_type": "logger_run", "people_tracked": 11}
+{"ts": "2026-04-06T12:26:50Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-04-06T12:56:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-04-06T13:26:47Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-04-06T13:56:00Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-04-06T14:26:49.245854+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-04-06T14:56:00Z","_type":"logger_run","people_tracked":11}
+{"ts":"2026-04-06T15:26:50Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-04-06T15:56:46.544493+00:00", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-04-06T16:26:44Z","_type":"logger_run","people_tracked":11}
+{"ts": "2026-04-06T16:56:44Z", "_type": "logger_run", "people_tracked": 11}
+{"ts":"2026-04-06T17:26:30Z","_type":"logger_run","people_tracked":11}

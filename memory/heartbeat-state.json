@@ -1,10 +1,11 @@
 {
   "lastChecks": {
-    "slack_scan": 1743871140,
-    "dm_check": 1743871140,
-    "netlify_health": 1743871140,
-    "channel_diff": 1743871140
+    "slack_scan": 1774541040,
+    "dm_check": 1774541040,
+    "netlify_health": 1774541040,
+    "channel_diff": 1774541040,
+    "commitment_tracker": 1774541040
   },
-  "lastHeartbeat": "2026-04-05T15:39:00Z",
-  "notes": "Sunday 15:39 UTC - Quick scan after pregnancy calc fix. No @HuMT mentions pending. Netlify healthy (200). Channel diff: no changes (361 channels)."
+  "lastHeartbeat": "2026-04-06T12:04:00Z",
+  "notes": "Monday 12:04 UTC - Post commitment tracker heartbeat. Commitment tracker ran at 12:01 UTC (11 new, 3 completed). Netlify healthy (200). Channel diff: no changes. No new DMs to relay. Finance mention from 0.4h ago already handled (HMT approved ₹1.55Cr)."
 }

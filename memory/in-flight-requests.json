@@ -20,7 +20,7 @@
       "thread_ts": "1772432143.149199",
       "channel": "C0904NE9Y2K",
       "requestor": "Vismit Bansal",
-      "subject": "<@U0AE6043BB6> My feedback on M0 Engagement Analysis :\n• Though in this analysis",
+      "subject": "<@U0AE6043BB6> My feedback on M0 Engagement Analysis :\n\u2022 Though in this analysis",
       "relayed_at": "2026-03-02T13:50:54Z",
       "status": "awaiting_response"
     },
@@ -55,6 +55,18 @@
       "subject": "<@UE0KTBS8P|Shashank Vaishnav> <@U05QMQHCVNY|Harsh Mani Tripathi> <@U0AE6043BB6>",
       "relayed_at": "2026-03-02T13:51:00Z",
       "status": "awaiting_response"
+    },
+    {
+      "id": "payment-apr6-2026",
+      "type": "payment_approval",
+      "channel": "C08PGK8CM32",
+      "thread_ts": "1775475518.314839",
+      "requestor": "Rahul Chauhan",
+      "requestor_id": "U05HAE85RL2",
+      "summary": "6th April payments - \u20b91.55 Cr total",
+      "status": "awaiting_response",
+      "created_at": "2026-04-06T11:39:33.155959Z",
+      "telegram_alert_sent": true
     }
   ],
   "last_updated": "2026-03-02T13:51:00Z"

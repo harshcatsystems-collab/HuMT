@@ -1,6 +1,36 @@
 # Commitments & Follow-ups
 
-> Last updated: 2026-04-02 12:05 UTC (commitment tracker cron)
+> Last updated: 2026-04-06 12:02 UTC (commitment tracker cron)
+
+---
+
+## 🆕 New Commitments — Apr 6, 2026 (Monday Scan)
+
+| Item | Who | Deadline | Channel | Notes |
+|------|-----|----------|---------|-------|
+| Artist Going Live feature — development takeover | Aditya Swaroop (U09CCLQ3P0U) → Mofidul (U039VC42JAF) | ASAP | #full-funnel-solver | Rohit Deshmukh delegated to Priyanka + Mofidul's team 11:05 UTC. Mofidul confirmed: "get understanding from Priyanka, reach out to me for architectural decisions." |
+| Update plan docs to #full-funnel-solver thread | All team leads | ASAP | #full-funnel-solver | HMT (U05QMQHCVNY) posted <!channel> at 11:32 UTC: "Folks we had discussed putting up all the updates plan docs here. Shall we please do that?!" — Shivansh replied but thread still open. |
+| Stagesig paywall config — verify on production Stage Web | Gauri (U0A0GPCUZ6G) | ASAP | #tech-mates | Shivansh (U0A3QQQ3J21) delegated 11:30 UTC after migrating paywall config API from Nest → Stagesig. Confirmation pending. |
+| Maintain ad budgets between ₹20–25L | Parveen's team (U05GB6EGFJM) | Ongoing | #stage_maino | Vinay direction 06:31 UTC: "keep the budgets between 20-25 — let's not cross that limit until we have full confidence on funnel metrics." Parveen's report: "Sure." |
+| Integrate Koyal.ai models into STAGE AI system | Sushant (U07EV6ZBPNE) + Kamal (U09LM6696F2) + Lukesh (U08UCNVRKR7) | TBD | #ai-native-agentic-framework-content | Vinay delegated 06:57 UTC: "give this a try — also see the list of models — I want us to integrate them all in our system. Lukesh maybe you can pick up that task." |
+| Approve 2 premium + 5 standard Claude seats | Shashank (UE0KTBS8P) | ASAP | #credit_card_invoices | Rohit Deshmukh requested 06:29 UTC. Shashank not yet responded (visible in scan). |
+| Approve $500 for Grok API (machine migration gap) | Shashank (UE0KTBS8P) | ASAP | #credit_card_invoices | Rohit Deshmukh requested 07:13 UTC. Pending. |
+| VM with 24GB RAM, 16-core — provision for e2e on-prem migration | Rohit Singh (U09AZ6SV9TL) | ASAP | #team-devops | Ankur Kanaujia requested 10:50 UTC. No response in thread yet. |
+| Cost cap ₹500 on reacquisition ad-sets — verify implementation | Shubham.singla + Maino team | Done same day | #stage_maino | MOM from Mar 16 call. Team confirmed implementation in thread at 09:44 UTC. ✅ COMPLETED |
+| M1 Watcher dashboard fix | Data team (U089APN985P + U08B8QWDWR5) | Urgent | #retention | Yatika flagged at 07:19 UTC — dashboard not showing correct data. Urgent request. |
+| Microdrama conclusion doc + next steps | Anish (U083W1PQXKP) | TBD | #promo-team | Microdrama creative analysis done, posted 11:21 UTC. Next steps pending team alignment. |
+| Add Gujarati + Marathi platform mention | Kunal (UEK09GX7G) / content team | Done | #stage-product-feedback | Aditya Swaroop raised at 15:24 UTC (yesterday). Anisha confirmed: "Done" at 18:48 UTC. ✅ COMPLETED |
+| Finance batch approval — ₹1.55 Cr (8 payments) | HMT (U05QMQHCVNY) | Apr 6 | #finance-department | Rahul Chauhan tagged all founders 11:38 UTC. Harsh confirmed: "All 8 payments approved" at 11:44 UTC. ✅ COMPLETED — HMT approved |
+
+---
+
+## ✅ Completed — Apr 6, 2026 (This Scan)
+
+| Item | Completed | Outcome |
+|------|-----------|--------|
+| Finance batch ₹1.55 Cr (8 payments) | Apr 6 11:44 UTC | HMT approved all 8 payments. Total ₹15,554,761. ✅ |
+| Cost cap ₹500 on reacquisition ad-sets | Apr 6 09:44 UTC | Maino team confirmed implementation. ✅ |
+| Gujarati + Marathi platform mention (product feedback channel) | Apr 6 (yesterday eve) | Anisha: "Done" ✅ |
 
 ---
 

@@ -103,6 +103,14 @@
 | D85 | Fix Vaada social posts — remove credits/smoking warning text | Deepak Prajapati + Suhani | 2026-03-25 | #socials-team | Kunal flagged — posts live with unnecessary text cutoff. ASAP fix. | 0 |
 | D86 | Roots of Rajasthan GTM + execution plan | Deepak Prajapati | 2026-03-24 | #socials-team | Kunal delegated directly. | 0 |
 | D87 | Reset + restore MongoDB→ClickHouse userwatchhistories connection | Data/Devops team | 2026-03-25 | #data-alerts | CRITICAL — auto-disable warning issued 07:31 UTC. 10 consecutive failures. "Reset the connection, increase oplog window." No human response yet. | 0 |
+| D88 | Artist Going Live feature — development + architecture | Mofidul Islam (U039VC42JAF) + Priyanka (U082Q7F56F8) | 2026-04-06 | #full-funnel-solver | Rohit Deshmukh delegated to Priyanka + Mofidul. Mofidul confirmed ownership of architecture decisions. | 0 |
+| D89 | All team leads post update plan docs in #full-funnel-solver thread | All team leads | 2026-04-06 | #full-funnel-solver | HMT instruction 11:32 UTC. Team acknowledgment partial (Shivansh replied). | 0 |
+| D90 | Verify Stagesig paywall config on Stage Web production | Gauri (U0A0GPCUZ6G) | 2026-04-06 | #tech-mates | Shivansh delegated post Stagesig migration. Pending confirmation. | 0 |
+| D91 | Integrate Koyal.ai models into STAGE AI system | Lukesh (U08UCNVRKR7) + Sushant (U07EV6ZBPNE) + Kamal (U09LM6696F2) | 2026-04-06 | #ai-native-agentic-framework-content | Vinay delegated: "I want us to integrate them all in our system. Lukesh maybe you can pick up that task." | 0 |
+| D92 | Approve Claude seats (2 premium + 5 standard) + $500 Grok API | Shashank (UE0KTBS8P) | 2026-04-06 | #credit_card_invoices | Rohit Deshmukh requested. Two separate requests 06:29 + 07:13 UTC. No response yet. | 0 |
+| D93 | Provision VM: 24GB RAM, 16-core CPU (on-prem migration) | Rohit Singh (U09AZ6SV9TL) | 2026-04-06 | #team-devops | Ankur Kanaujia requested 10:50 UTC. No response yet. | 0 |
+| D94 | Fix M1 Watcher dashboard (incorrect data) | Data team (U089APN985P + U08B8QWDWR5) | 2026-04-06 | #retention | Yatika flagged 07:19 UTC — urgent. No response confirmed. | 0 |
+| D95 | recurringtransactions MongoDB→Snowflake pipeline failed (incremental) | Data/Devops | 2026-04-06 | #data-alerts | Auto-alert 18:31 UTC. Stream failure on recurringtransactions. Pattern of pipeline failures (cf. D87). | 0 |
 
 | D26 | Chatbot data updates in standard format | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Nikhil requested | 3 |
 | D27 | Infrastructure upgrade activity (4 components) | Rohit Singh | 2026-03-04 | #team-devops | Self-announced plan (non-prod ✅, prod+DB pending) | 2 |
