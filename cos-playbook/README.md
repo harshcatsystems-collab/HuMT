@@ -89,12 +89,39 @@ workspace/
 
 ## Getting Started
 
-1. **Copy the templates** from `templates/` to your OpenClaw workspace
+1. **Copy the templates** from `templates/` to your OpenClaw workspace (`~/.openclaw/workspace/`)
 2. **Fill in USER.md** — teach the AI who you are
 3. **Customize SOUL.md** — define the personality you want
 4. **Set up HEARTBEAT.md** — configure what to monitor
 5. **Add your channels** to TOOLS.md
-6. **Start a conversation** — the AI will read these files and begin operating
+6. **Configure heartbeats** in OpenClaw (see below)
+7. **Start a conversation** — the AI will read these files and begin operating
+
+---
+
+## OpenClaw Configuration
+
+Add this to your `~/.openclaw/openclaw.json` to enable heartbeat polling:
+
+```json
+{
+  "agents": {
+    "defaults": {
+      "heartbeat": {
+        "enabled": true,
+        "intervalMs": 1800000,
+        "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+      }
+    }
+  }
+}
+```
+
+**Key settings:**
+- `intervalMs`: 1800000 = 30 minutes (adjust as needed)
+- `prompt`: The exact text that triggers heartbeat behavior
+
+The AI will receive this prompt periodically and execute whatever checks you've defined in HEARTBEAT.md.
 
 ---
 
