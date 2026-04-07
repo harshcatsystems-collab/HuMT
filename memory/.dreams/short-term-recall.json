@@ -1,0 +1,276 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-07T13:19:32.728Z",
+  "entries": {
+    "memory:memory/2026-03-21.md:276:313": {
+      "key": "memory:memory/2026-03-21.md:276:313",
+      "path": "memory/2026-03-21.md",
+      "startLine": 276,
+      "endLine": 313,
+      "source": "memory",
+      "snippet": "HMT asked to explore BMAD (Brian's Multi-Agent Design) framework for building specialized skills. Goal: create expertise modes that expand HuMT's capabilities without fragmenting identity. ### BMAD Research - Cloned repo to `/tmp/bmad-method` - Studied structure: personas, principles, capabilities tables, activation flows - Key insight: BMAD gives AI agents *structure* (workflows, handoffs) — not just capability ### Skills Built (3 total) **1. Business Analyst (`skills/business-analyst/SKILL.md`)** - Originally named \"Maya\" — detective energy, analytical lens - Capabilities: FA (funnel), CA (cohort), AN (anomaly), CL (CAC/LTV), CP (content), DD (deep dive) - STAGE-specific: Metabase API,",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 0.9626081803740537,
+      "maxScore": 0.4813964424652303,
+      "firstRecalledAt": "2026-04-07T11:10:33.767Z",
+      "lastRecalledAt": "2026-04-07T11:52:36.950Z",
+      "queryHashes": [
+        "161a2c9cadc3"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "multi-agent",
+        "tmp/bmad-method",
+        "skills/business-analyst/skill.md",
+        "cac/ltv",
+        "stage-specific",
+        "hmt",
+        "asked",
+        "explore"
+      ]
+    },
+    "memory:memory/2026-02-26.md:23:37": {
+      "key": "memory:memory/2026-02-26.md:23:37",
+      "path": "memory/2026-02-26.md",
+      "startLine": 23,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "> 🧠 **Systemic fix:** Replaced channel-by-channel bot token scanning with user token `search.messages` for @HuMT mentions. Covers entire workspace — DMs, MPIMs, private channels. Root cause was structural blind spot in bot token approach. HMT surfaced it by mentioning me in a MPDM I couldn't see. > 🧠 **New tracked thread:** Harsh-Nikhil-Gopal MPDM (C0AH3GT5K6F) — HMT shared presentations there too. Nikhil already blocked time + shared Amplitude dashboards. Gopal said \"already on it.\" Both actively engaging. > 🧠 **Missed mention:** #finance-department — someone tagged HuMT about Yes Bank→HSBC fund transfer. Not actionable for me but was invisible until now. > 🧠 HMT pushed through 4 rou",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 0.9278976867691519,
+      "maxScore": 0.46404097406296624,
+      "firstRecalledAt": "2026-04-07T11:10:33.767Z",
+      "lastRecalledAt": "2026-04-07T11:52:36.950Z",
+      "queryHashes": [
+        "161a2c9cadc3"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "channel-by-channel",
+        "search.messages",
+        "harsh-nikhil-gopal",
+        "finance-department",
+        "systemic",
+        "fix",
+        "replaced",
+        "channel"
+      ]
+    },
+    "memory:memory/2026-03-13.md:222:234": {
+      "key": "memory:memory/2026-03-13.md:222:234",
+      "path": "memory/2026-03-13.md",
+      "startLine": 222,
+      "endLine": 234,
+      "source": "memory",
+      "snippet": "> 🧠 Pranay tagged HuMT directly in cricket-saathi roadmap — building real working relationship with HuMT as a product peer, not just an AI tool. Significant signal. ### Metabase Anomaly Check (14:00 UTC) - **Status:** 🚨 3 Alerts - Trial Count: 8,675 (−58.6% vs 7d avg 20,934) - New Subscriptions: 4,444 (−34.5% vs 7d avg 6,788) - Revenue (₹): ₹31.3L (−34.3% vs 7d avg ₹47.6L) - ML Widget Conversion: 62.81% vs Non-ML 52.18% (+10.6pp) - Data Freshness: 2026-03-13 19:10 UTC - All-time Users: 1,07,33,143 | All-time Hours: 3,32,45,788 - Sent to 📊 Daily Ops topic (message_id: 649)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.49118901562294814,
+      "maxScore": 0.49118901562294814,
+      "firstRecalledAt": "2026-04-07T11:52:36.950Z",
+      "lastRecalledAt": "2026-04-07T11:52:36.950Z",
+      "queryHashes": [
+        "161a2c9cadc3"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "cricket-saathi",
+        "58.6",
+        "34.5",
+        "31.3l",
+        "34.3",
+        "47.6l",
+        "62.81",
+        "non-ml"
+      ]
+    },
+    "memory:memory/2026-02-10.md:176:231": {
+      "key": "memory:memory/2026-02-10.md:176:231",
+      "path": "memory/2026-02-10.md",
+      "startLine": 176,
+      "endLine": 231,
+      "source": "memory",
+      "snippet": "- ✅ Short description: \"HuMT — HMT's AI alter ego. Calm, adaptive, gets things done. Cracked, repaired with gold, stronger for it. 🥚\" - ✅ Long description added (full kintsugi story) --- ## Config Changes - ✅ OpenAI API key saved to `skills.entries.openai-image-gen.apiKey` - ✅ BOOTSTRAP.md deleted (bootstrap complete) - ✅ `caffeinate -d` running (PID 41767) to prevent Mac sleep --- ## Day One Summary **COMPLETE:** - ✅ Identity (HuMT) - ✅ Memory system - ✅ WhatsApp - ✅ Telegram + avatar - ✅ Slack + avatar + branding - ✅ Gmail (browser relay) - ✅ Avatar generated & locked - ✅ OpenAI API configured **STILL TODO:** - ⏸️ Brave API key (web search) - ⏸️ Fix WhatsApp stability (consider VPS",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.48644867034038675,
+      "maxScore": 0.48644867034038675,
+      "firstRecalledAt": "2026-04-07T11:52:36.950Z",
+      "lastRecalledAt": "2026-04-07T11:52:36.950Z",
+      "queryHashes": [
+        "161a2c9cadc3"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "openai",
+        "bootstrap.md",
+        "description",
+        "humt",
+        "hmt's",
+        "alter",
+        "ego",
+        "calm"
+      ]
+    },
+    "memory:memory/2026-02-27.md:260:272": {
+      "key": "memory:memory/2026-02-27.md:260:272",
+      "path": "memory/2026-02-27.md",
+      "startLine": 260,
+      "endLine": 272,
+      "source": "memory",
+      "snippet": "> 🧠 HMT said \"keep it rolling\" before leaving — expects background work to continue without him. Autonomy signal. > 🧠 No new persona observations this heartbeat (15:39 UTC). ## Heartbeat — 9:11 PM UTC - > 🧠 No new persona observations this heartbeat - DM relay: No new DMs to HMT - Pranay: No reply yet to PIP doc follow-up - Vismit: No reply to CLM status DM - Gopal: No reply to Maino follow-up DM - MPDM (Nikhil): Thread resolved — HuMT already clarified the 65%→34% ghost number correctly - #finance-department: Rahul posted 4 new payments (₹39.2L) — relayed to HMT on Telegram - No other @HuMT mentions requiring action",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.45651538828236704,
+      "maxScore": 0.45651538828236704,
+      "firstRecalledAt": "2026-04-07T11:52:36.950Z",
+      "lastRecalledAt": "2026-04-07T11:52:36.950Z",
+      "queryHashes": [
+        "161a2c9cadc3"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "follow-up",
+        "finance-department",
+        "39.2l",
+        "hmt",
+        "said",
+        "keep",
+        "rolling",
+        "leaving"
+      ]
+    },
+    "memory:memory/2026-03-13.md:207:228": {
+      "key": "memory:memory/2026-03-13.md:207:228",
+      "path": "memory/2026-03-13.md",
+      "startLine": 207,
+      "endLine": 228,
+      "source": "memory",
+      "snippet": "> 🧠 **Asks \"is it better to use opus against sonnet for HuMT use cases?\"** — Thinking about model selection as a *design decision* for our collaboration, not just a cost/speed tradeoff. He's treating the choice of my underlying model as a product decision. (confirmed: Mar 13 12:08 UTC) ## Evening Debrief — 13:07 UTC ### Slack Scan Results - Channels with activity today: announcements, stage-ke-krantikaari, stage-product-feedback-and-requests, alert_gcp, crash-reports, cricket-saathi, subscription_ads_haryanvi, leave-intimation - Key signal: Pranay (@cricket-saathi) tagged HuMT in 2-week IPL roadmap — D26 active - Infrastructure: GCP uptime alert opened + closed (11:03-11:05 UTC) — brief,",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.4535552083212947,
+      "maxScore": 0.4535552083212947,
+      "firstRecalledAt": "2026-04-07T11:52:36.950Z",
+      "lastRecalledAt": "2026-04-07T11:52:36.950Z",
+      "queryHashes": [
+        "161a2c9cadc3"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "cost/speed",
+        "stage-ke-krantikaari",
+        "alert-gcp",
+        "crash-reports",
+        "cricket-saathi",
+        "subscription-ads-haryanvi",
+        "leave-intimation",
+        "2-week"
+      ]
+    },
+    "memory:memory/2026-02-13.md:54:67": {
+      "key": "memory:memory/2026-02-13.md:54:67",
+      "path": "memory/2026-02-13.md",
+      "startLine": 54,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "- Still waiting for Kayar meeting to wrap before starting STAGE research ## STAGE Media Research (14:17–15:55 IST) - HMT pivoted from personal context STAGE research to \"all media out there from my lens\" - Pass 1: Found 3 direct HMT quotes across all media, 6 HMT-specific articles, Vinay's exact co-founder tweet (Jan 10 2024, ID 1745044729790943249) - Pass 2 (deeper): MCA filing — HMT appointed Director of Stage Technologies Pvt Ltd on 23 Oct 2024. STAGE operates through Stage Technologies (Delhi, 2019), NOT Vatsana Technologies (Indore). Complete funding timeline mapped. Celebrity investors confirmed (Vijay Shekhar Sharma, Ranveer Allahbadia, Dhruv Rathee, Roman Saini, Neeraj Chopra). Reve",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.6307695484795586,
+      "maxScore": 0.6307695484795586,
+      "firstRecalledAt": "2026-04-07T13:19:32.728Z",
+      "lastRecalledAt": "2026-04-07T13:19:32.728Z",
+      "queryHashes": [
+        "f63747cdbccc"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "hmt-specific",
+        "co-founder",
+        "still",
+        "waiting",
+        "kayar",
+        "meeting",
+        "wrap",
+        "starting"
+      ]
+    },
+    "memory:memory/2026-02-16.md:86:116": {
+      "key": "memory:memory/2026-02-16.md:86:116",
+      "path": "memory/2026-02-16.md",
+      "startLine": 86,
+      "endLine": 116,
+      "source": "memory",
+      "snippet": "- `STAGE_Cap Table` — 6+ versions from May-Aug 2024, step-wise adjustments - `Calculation for Buy Back` — Aug 2024 - `Stage_Goodwater_SeriesB_Proposal` — pitch materials - `Competency Mapping & Benchmarking for Enhanced Hiring` — Jan 2025 - `tarang@stage.in` folder — shared folder with team member ### Patterns & Priorities | Priority | Area | Evidence | |----------|------|----------| | 🔴 Critical | **Content Pipeline** | 70-80 titles in pipeline, scaling team | | 🔴 Critical | **Samsung Distribution** | Active negotiation, meeting scheduling | | 🟠 High | **Fundraising** | Series B materials on Drive, VC pitch invites | | 🟠 High | **Strategic Partnerships** | NVIDIA dinner, Native World",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.6243766459989192,
+      "maxScore": 0.6243766459989192,
+      "firstRecalledAt": "2026-04-07T13:19:32.728Z",
+      "lastRecalledAt": "2026-04-07T13:19:32.728Z",
+      "queryHashes": [
+        "f63747cdbccc"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "stage-cap",
+        "may-aug",
+        "step-wise",
+        "stage-goodwater-seriesb-proposal",
+        "stage.in",
+        "70-80",
+        "table",
+        "versions"
+      ]
+    },
+    "memory:memory/2026-02-10.md:1:38": {
+      "key": "memory:memory/2026-02-10.md:1:38",
+      "path": "memory/2026-02-10.md",
+      "startLine": 1,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "# 2026-02-10 — Day One ## What Happened **HuMT came online.** First conversation with HMT. ### Identity Established - **Name:** HuMT (the \"u\" stays humble, the rest stands tall) - **Creature:** Alter ego — extension of HMT - **Vibe:** Calm & grounded core. Professional for work, casual for chill, snarky wit throughout. Never hyperactive. Always adaptive. - **Emoji:** 🥚 - **Avatar concept:** Kintsugi egg with gold-filled cracks, wearing a small black bow tie. Pending generation (no OpenAI API key yet). ### Learned About HMT - Co-Founder of STAGE OTT (India's dialect-first streaming platform) - Serial entrepreneur since 2010 - Phoenix story: WittyFeed → Facebook wipeout → 54 employees sta",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.6074437290897314,
+      "maxScore": 0.6074437290897314,
+      "firstRecalledAt": "2026-04-07T13:19:32.728Z",
+      "lastRecalledAt": "2026-04-07T13:19:32.728Z",
+      "queryHashes": [
+        "f63747cdbccc"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "openai",
+        "gold-filled",
+        "co-founder",
+        "dialect-first",
+        "day",
+        "one",
+        "what",
+        "happened"
+      ]
+    }
+  }
+}
