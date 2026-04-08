@@ -1,70 +1,100 @@
 # Capability Status — Source of Truth
-# Last full audit: 2026-03-06 00:00 UTC (automated cron verification)
+# Last full audit: 2026-04-08 00:00 UTC (automated cron verification)
 
 > **Rule:** After ANY environment change (migration, config change, restart), re-test and update this file.
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-04-02 00:00 UTC (automated cron)
+## Last Verified: 2026-04-08 00:00 UTC (automated cron)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | memory_search responded (provider: openai/text-embedding-3-small, hybrid mode) | 2026-04-02 |
-| 2 | Files | ✅ | workspace ls OK, capability-status.md read/write confirmed | 2026-04-02 |
-| 3 | Terminal | ✅ | exec tool — uname/ls confirmed Linux openclaw2 Debian 6.1 x86_64 | 2026-04-02 |
-| 4 | Web Search | ✅ | Brave API returned live results (Apr 2026 calendar page confirmed) | 2026-04-02 |
-| 5 | Gmail | ✅ | gog gmail search returned live inbox (latest: Apr 1 18:00 — Google Cloud action required) | 2026-04-02 |
-| 6 | Calendar | ✅ | gog calendar returned 10+ events for Apr 2-3 (Tech-Product Standup, M0 watcher, Goodwater sync, Full Funnel April Plan, etc.) | 2026-04-02 |
-| 7 | Cron/Reminders | ✅ | 27 active jobs — this job execution proves cron operational | 2026-04-02 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present in config | 2026-04-02 |
+| 1 | Memory | ✅ | memory_search responded (provider: openai/text-embedding-3-small, hybrid mode) | 2026-04-08 |
+| 2 | Files | ✅ | workspace ls OK, capability-status.md read/write confirmed | 2026-04-08 |
+| 3 | Terminal | ✅ | exec tool — uname/ls confirmed Linux openclaw2 Debian 6.1 x86_64 | 2026-04-08 |
+| 4 | Web Search | ✅ | Brave API returned live results (Apr 8 2026 UTC confirmed) | 2026-04-08 |
+| 5 | Gmail | ✅ | gog gmail search returned live inbox (latest: Apr 7 12:28 — Anthropic receipt) | 2026-04-08 |
+| 6 | Calendar | ✅ | gog calendar returned 10 events for Apr 8 (Standup, Mid-Sprint Review, Retention Catchup, Investor Updates, etc.) | 2026-04-08 |
+| 7 | Cron/Reminders | ✅ | 27 active jobs — this job execution proves cron operational | 2026-04-08 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present in config | 2026-04-08 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C*** confirmed present in skill config | 2026-04-02 |
-| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — sk-proj-HC1C*** confirmed | 2026-04-02 |
-| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — provider: openai/text-embedding-3-small, hybrid mode operational | 2026-04-02 |
-| 12 | Google Drive | ✅ | gog drive working (Gmail/Calendar auth = same token, both returned live data) | 2026-04-02 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-04-02 |
+| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C*** confirmed present in skill config | 2026-04-08 |
+| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — sk-proj-HC1C*** confirmed | 2026-04-08 |
+| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — provider: openai/text-embedding-3-small, hybrid mode operational | 2026-04-08 |
+| 12 | Google Drive | ✅ | gog drive working (Gmail/Calendar auth = same token, both returned live data) | 2026-04-08 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-04-08 |
 
-## ⚠️ Cron Job Warnings (2026-04-02)
+## ⚠️ Cron Job Warnings (2026-04-08)
 
 | Job | Consecutive Errors | Last Error | Note |
 |-----|--------------------|------------|------|
-| `slack:commitment-tracker` | 7 ⬆️ | Timed out at 300s (max) | 🚨 **CRITICAL — 7 consecutive failures. Structural timeout. Scope reduction overdue.** |
-| `divya-bedtime-diet-reminder` | 8 ⬆️ | Message failed to -5123342435 | 🚨 **8 consecutive failures — group delivery broken. Bot membership issue.** |
-| `slack:evening-debrief` | 2 ⬆️ | Timed out at 600s (max) | 🚨 **2 consecutive timeouts — structural issue, not transient.** |
-| `pregnancy-weekly-milestone` | 2 ⬆️ | Message topic `13` failed | Delivered despite error — topic routing quirk. Monitor. |
-| `fatherhood-biweekly-checkin` | 1 NEW | "Outbound not configured for channel: telegram" | NEW — config issue with isolated session + telegram outbound. |
-| `divya-weekly-meal-planning` | 1 (stale) | Message failed | Last Sunday only — next run Sunday Apr 5. Monitor then. |
-| `divya-weekly-wellness` | 1 (stale) | Message failed | Last Monday only — delivered despite error. |
-| `metabase:daily-anomaly-check` | 0 ✅ | — | Recovered from Mar 31 AI overload. |
-| `slack:end-of-day-summary` | 0 ✅ | — | Recovered from Mar 31 AI overload. |
-| `divya-bedtime-activity-tracker` | 0 ✅ | — | Recovered from Mar 31 AI overload. |
+| `slack:meeting-prep-jit` | 16 ⬆️ | Credit balance too low (Anthropic API) | 🚨 **CRITICAL — billing error. 16 consecutive. Needs credit top-up.** |
+| `slack:evening-debrief` | 8 ⬆️ | Credit balance too low (Anthropic API) | 🚨 **8 consecutive — billing error, structural issue.** |
+| `healthcheck:security-audit` | 6 ⬆️ | Extra usage exhausted (claude.ai) | 🚨 **6 consecutive — same billing root cause.** |
+| `memory:capability-verify` (this job) | 5 → 0 ✅ | Was: "out of extra usage" — now running | Recovered via main session (direct API). |
+| `divya-symptom-checkin` | 2 ⬆️ | Timed out at 120s | Structural timeout — may need timeoutSeconds increase. |
+| `pregnancy-weekly-milestone` | 2 | Error: topic `13` failed | Delivered despite error — topic routing quirk. Monitor. |
+| `divya-weekly-wellness` | 2 ⬆️ | Timed out at 120s | Similar to symptom-checkin — structure issue. |
+| `divya-weekly-meal-planning` | 2 | Billing error (now cleared) | Should recover on next Sunday run. |
+| `memory:commitment-review` | 1 | Timed out | 61s run, needs timeoutSeconds review. |
+| `persona:weekly-retrospective` | 1 | Timed out | 62s run, likely needs longer timeout. |
+| `slack:people-pulse-weekly` | 1 | Timed out | 61s run — same class. |
+| `email:morning-triage` | 1 | Extra usage exhausted | Billing error — will recover. |
+| `slack:morning-brief` | 1 | Extra usage exhausted | Billing error — will recover. |
+| `slack:commitment-tracker` | 1 | Extra usage exhausted | Billing error — will recover. |
+| `slack:cross-founder-daily` | 1 | Extra usage exhausted | Billing error — will recover. |
+| `slack:intensity-check` | 1 | Timed out | 60s timeout, needs review. |
+| `fatherhood-biweekly-checkin` | 1 | "Outbound not configured for channel: telegram" | Config issue — delivery vs session binding mismatch. |
 
-**Root cause for `slack:commitment-tracker` (7 consecutive):** Full 353-channel Slack scan within 300s is structurally too slow. Needs scope reduction to tier-1 channels only.
+## ✅ Healthy Jobs (0 consecutive errors)
 
-**Root cause for `divya-bedtime-diet-reminder` (8 consecutive):** Bot likely not in -5123342435 group, or group delivery broken. Needs manual verification.
+| Job | Last Status | Notes |
+|-----|-------------|-------|
+| `people:activity-logger` | ✅ ok | Running every 30 min |
+| `metabase:daily-anomaly-check` | ✅ ok | Recovered from AI overload |
+| `slack:end-of-day-summary` | ✅ ok | Recovered |
+| `divya-bedtime-activity-tracker` | ✅ ok | Running |
+| `divya-bedtime-diet-reminder` | ✅ ok | Recovered (was 8 errors last cycle) |
+| `memory:git-backup` | ✅ ok | Daily backup running |
+| `healthcheck:update-status` | ✅ ok | Running Mon+Thu |
+| `slack:weekly-roundup` | ✅ ok | Last Friday OK |
+| `persona:monthly-evolution-review` | ✅ ok | Apr 1 ran ok |
+| `slack:monthly-channel-health` | ✅ ok | Apr 1 ran ok |
 
-**Root cause for `slack:evening-debrief` (2 consecutive):** Full 600s timeout hit. Same structural issue as commitment-tracker. Needs scope reduction.
+## 🚨 Root Cause Summary (2026-04-08)
 
-**Root cause for `fatherhood-biweekly-checkin` (1 new):** "Outbound not configured" suggests session binding + telegram channel config mismatch. Check sessionKey + delivery config.
+**Primary issue:** Anthropic API billing — isolated cron sessions hit credit limit
+- Multiple jobs show `"LLM request rejected: Your credit balance is too low"` or `"out of extra usage"`
+- **This is a billing issue, not a capability issue.** Anthropic credits need top-up.
+- Main session (this run) is unaffected — uses direct Anthropic API via company key.
 
-## ⚠️ New vs Yesterday (2026-04-02)
-- `slack:commitment-tracker` — escalated from 6 → 7 consecutive errors. 🚨
-- `divya-bedtime-diet-reminder` — escalated from 7 → 8 consecutive errors. 🚨
-- `slack:evening-debrief` — escalated from 1 → 2 consecutive errors. 🚨 Now structural, not transient.
-- `fatherhood-biweekly-checkin` — NEW 1-error (config issue). 
-- `metabase:daily-anomaly-check`, `slack:end-of-day-summary`, `divya-bedtime-activity-tracker` — RECOVERED ✅ (AI overload was transient).
+**Secondary issue:** Timeout class
+- Several jobs (symptom-checkin, wellness, intensity-check, persona-review, commitment-review) hitting timeoutSeconds limits
+- Root cause: heavy workloads in constrained timeout windows
+- Fix: increase timeoutSeconds or reduce scope per job
 
-## ⚠️ Pattern Alert (Persistent)
-Three distinct failure classes:
-1. **`slack:commitment-tracker`** — structural timeout (7 consecutive). 300s not enough for full scan. NEEDS FIX.
-2. **`slack:evening-debrief`** — structural timeout (2 consecutive). 600s still not enough. NEEDS FIX.
-3. **Family group (-5123342435) delivery failures** — `divya-bedtime-diet-reminder` (8 consecutive). Bot membership broken. NEEDS FIX.
+**Tertiary issue:** `fatherhood-biweekly-checkin`
+- "Outbound not configured for channel: telegram" in isolated session
+- sessionKey + delivery config mismatch → HMT to decide fix or disable
 
-## Critical Findings (2026-03-06)
+## ⚠️ Delta Since 2026-04-02
+
+**Improved:**
+- `divya-bedtime-diet-reminder`: 8 consecutive → 0 ✅ RECOVERED
+- `slack:commitment-tracker`: 7+ → 1 (billing, not structural)
+- `slack:evening-debrief`: 2 structural → 8 billing errors (different root cause now)
+
+**Worsened:**
+- `slack:meeting-prep-jit`: 0 → 16 consecutive (billing)
+- `slack:evening-debrief`: 2 → 8 (billing escalation)
+- `healthcheck:security-audit`: 0 → 6 (billing)
+
+**Recommendation:** Top up Anthropic credits. Most job failures will self-recover once billing clears.
+
+## Critical Findings (carried from 2026-03-06)
 
 ### ⚠️ PATH Issue (gog not in exec PATH)
 - **Issue:** `~/go/bin/gog` is NOT in systemd service PATH
-- **Impact:** Need to use full path `~/go/bin/gog` in all exec commands OR fix PATH
 - **Workaround:** Always use `~/go/bin/gog` with full env vars:
   ```bash
   export GOG_KEYRING_BACKEND=file && \
@@ -72,23 +102,11 @@ Three distinct failure classes:
   export GOG_ACCOUNT=harsh@stage.in && \
   ~/go/bin/gog <command>
   ```
-- **Proper fix:** Add `Environment=PATH=...:/home/harsh/go/bin` to systemd service
 
-### ✅ All Core Capabilities Working
-- Web search: ✅
-- Gmail: ✅ (syntax: `gog gmail search "query"`)
-- Calendar: ✅ (syntax: `gog calendar events --days 1`)
-- Drive: ✅ (syntax: `gog drive ls`)
-- Terminal: ✅
-- Files: ✅
-- Telegram: ✅
-- OpenAI: ✅
-
-### ❌ Known Issues (persistent)
+### ❌ Known Persistent Issues
 - WhatsApp: Logged out (401) — parked for business API
-- `slack:commitment-tracker`: 6 consecutive timeouts — CRITICAL, needs scope reduction
-- `divya-bedtime-diet-reminder`: 7 consecutive failures — CRITICAL, likely bot membership issue in -5123342435
-- Family group delivery (-5123342435): Multiple jobs showing errors — verify bot membership
+- Anthropic billing: isolated cron sessions failing — top-up needed
+- Family group (-5123342435): `divya-bedtime-diet-reminder` recovered; monitor
 
 ## Config Dependencies
 
@@ -104,8 +122,6 @@ Three distinct failure classes:
 | gog env vars | systemd service Environment lines | Gmail, Calendar, Drive, etc. |
 
 ## Cost Monitoring
-
-Track token usage across cron jobs. Check weekly during Friday roundup prep.
 
 | Job | Avg Tokens/Run | Runs/Week | Est Weekly Cost |
 |-----|---------------|-----------|----------------|

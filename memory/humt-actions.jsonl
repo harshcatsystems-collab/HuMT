@@ -427,3 +427,15 @@
 {"ts":"1774872528.926659","type":"payment_approval_relay","channel":"C08PGK8CM32","requestor":"Rahul Chauhan","relayed_at":"2026-03-30T12:40:00Z","status":"awaiting_founders"}
 {"type":"mention_processed","channel":"C07KWTTB98W","channel_name":"stage_maino","thread_ts":"1775027315.206769","user":"U05GB6EGFJM","user_name":"pratyush","action":"relayed_to_telegram","status":"awaiting_hmt_response","timestamp":"2026-04-01T12:06:00Z"}
 {"type":"mention_received","channel":"C08PGK8CM32","thread_ts":"1775048591.142809","requestor":"Rahul Chauhan","action":"payment_approval","amount":"₹33,875","status":"awaiting_response","timestamp":"2026-04-01T13:03:15Z"}
+{"type": "approval_relay", "channel": "C08PGK8CM32", "thread_ts": "1775649929.832679", "action": "Relayed to HMT", "requestor": "Rahul Chauhan", "status": "pending_hmt_decision", "timestamp": "2026-04-08T12:05:33Z", "file": "8th April Payment sheet.xlsx", "total_amount": 2942421.22}
+{
+  "type": "approval_posted",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1775649929.832679",
+  "action": "Approved all 8 payments",
+  "requestor": "Rahul Chauhan",
+  "status": "closed",
+  "amount": "29.42L",
+  "ts": 1775652270,
+  "date": "2026-04-08T12:44:30Z"
+}

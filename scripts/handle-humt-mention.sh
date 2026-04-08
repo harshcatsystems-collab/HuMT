@@ -18,31 +18,16 @@ while [[ $# -gt 0 ]]; do
 done
 
 if [ -z "$THREAD_TS" ] || [ -z "$CHANNEL" ] || [ -z "$USER_ID" ]; then
-    echo "Usage: --thread-ts <ts> --channel <id> --user <id> --text <preview>"
     exit 1
 fi
 
 BOT_TOKEN=$(python3 -c "import json; print(json.load(open('/home/harsh/.openclaw/openclaw.json'))['channels']['slack']['botToken'])")
 
-echo "=== HANDLING @HuMT MENTION ==="
-echo "Channel: $CHANNEL"
-echo "Thread: $THREAD_TS"
-echo "User: $USER_ID"
-echo ""
-
-# STEP 1: React with 👀
-echo "Step 1: Reacting with 👀..."
+# STEP 1: React with 👀 (silent)
 curl -s -X POST "https://slack.com/api/reactions.add" \
   -H "Authorization: Bearer $BOT_TOKEN" \
   -H "Content-Type: application/json" \
-  -d "{\"channel\":\"$CHANNEL\",\"timestamp\":\"$THREAD_TS\",\"name\":\"eyes\"}" | python3 -c "
-import json, sys
-d = json.load(sys.stdin)
-if d.get('ok') or d.get('error') == 'already_reacted':
-    print('  ✅ Reacted')
-else:
-    print(f\"  ⚠️ {d.get('error')}\")
-"
+  -d "{\"channel\":\"$CHANNEL\",\"timestamp\":\"$THREAD_TS\",\"name\":\"eyes\"}" > /dev/null
 
 # STEP 2: Look up user's real name
 USER_NAME=$(curl -s -H "Authorization: Bearer $BOT_TOKEN" \
@@ -55,94 +40,87 @@ else:
     print('Unknown User')
 ")
 
-# STEP 2: Post written acknowledgment
-echo "Step 2: Posting acknowledgment..."
+# STEP 3: Post written acknowledgment in thread (silent)
 curl -s -X POST "https://slack.com/api/chat.postMessage" \
   -H "Authorization: Bearer $BOT_TOKEN" \
   -H "Content-Type: application/json; charset=utf-8" \
-  --data-raw "{\"channel\":\"$CHANNEL\",\"thread_ts\":\"$THREAD_TS\",\"text\":\"<@$USER_ID> Noted — checking with HMT.\"}" | python3 -c "
-import json, sys
-d = json.load(sys.stdin)
-if d.get('ok'):
-    print(f\"  ✅ Posted: {d.get('ts')}\")
-else:
-    print(f\"  ❌ {d.get('error')}\")
-"
+  --data-raw "{\"channel\":\"$CHANNEL\",\"thread_ts\":\"$THREAD_TS\",\"text\":\"<@$USER_ID> Noted — checking with HMT.\"}" > /dev/null
 
-# STEP 3: Relay to HMT on Telegram
-echo "Step 3: Relaying to HMT..."
+# STEP 4: Relay to HMT on Telegram
 CHANNEL_NAME=$(python3 -c "
-import json
-baseline = json.load(open('memory/slack-bot-channels.json'))
-print(baseline.get('$CHANNEL', '?'))
+import json, os
+try:
+    data = json.load(open('memory/slack-bot-channels.json'))
+    print(data.get('$CHANNEL', '$CHANNEL'))
+except:
+    print('$CHANNEL')
 ")
 
-bash scripts/send-telegram-topic.sh --topic general --message "🏷️ @HuMT mentioned in #$CHANNEL_NAME by $USER_NAME
+# Route to correct Telegram topic based on channel
+case "$CHANNEL" in
+  C08PGK8CM32) TOPIC="finance" ;;         # #finance-department
+  C06L5FQL3GU) TOPIC="finance" ;;         # #credit_card_invoices
+  C080EJU9873) TOPIC="growth" ;;          # #growth-pod
+  C0A3N67V0G2) TOPIC="retention" ;;       # #retention-pod
+  C092XDNSDB9) TOPIC="retention" ;;       # #full-funnel-solver
+  CEHPPGSN9)   TOPIC="daily_ops" ;;       # #tech-mates
+  C082Z8FUBRV) TOPIC="people_culture" ;;  # #all-things-people-and-culture
+  C086EJ905FB) TOPIC="people_culture" ;;  # #team-hr
+  C035F6W8DK9) TOPIC="product_design" ;;  # #product-design
+  CEWV0GMMG)   TOPIC="product_design" ;;  # #product
+  C08HQ89S797) TOPIC="content" ;;         # #content_strategy
+  C08PY53QYSU) TOPIC="content" ;;         # #ai-at-stage
+  GEJUR0WA2)   TOPIC="strategy" ;;        # #founders_sync
+  *)            TOPIC="daily_ops" ;;      # default
+esac
 
-Preview: ${TEXT:0:150}
+bash scripts/send-telegram-topic.sh --topic "$TOPIC" --message "🏷️ @HuMT tagged in #$CHANNEL_NAME by $USER_NAME
 
-Thread: https://stagedotin.slack.com/archives/$CHANNEL/p${THREAD_TS//.}" | python3 -c "
-import json, sys
-d = json.load(sys.stdin)
-if d.get('ok'):
-    print('  ✅ Relayed to Telegram')
-else:
-    print(f\"  ❌ {d.get('error')}\")
-"
+${TEXT:0:200}
 
-# STEP 4: Add to presentation tracking
-echo "Step 4: Adding to tracking..."
-python3 << PYEOF
-import json, os
+Thread: https://stagedotin.slack.com/archives/$CHANNEL/p${THREAD_TS//.}" > /dev/null 2>&1
 
+# STEP 5: Add to tracking + mark processed
+export _HUMT_CHANNEL="$CHANNEL"
+export _HUMT_THREAD_TS="$THREAD_TS"
+python3 - << 'PYEOF'
+import json, os, sys
+
+channel = os.environ.get('_HUMT_CHANNEL', '')
+thread_ts = os.environ.get('_HUMT_THREAD_TS', '')
+
+# Tracking
 tracking_file = 'memory/presentation-tracking.json'
-if os.path.exists(tracking_file):
+try:
     with open(tracking_file) as f:
         tracking = json.load(f)
-else:
+except:
     tracking = {'threads': []}
 
-# Add this thread if not already tracked
-thread_key = f"$CHANNEL:{$THREAD_TS}"
+thread_key = f"{channel}:{thread_ts}"
 if thread_key not in [t.get('key') for t in tracking.get('threads', [])]:
-    tracking['threads'].append({
+    tracking.setdefault('threads', []).append({
         'key': thread_key,
-        'channel': '$CHANNEL',
-        'thread_ts': '$THREAD_TS',
-        'added_at': '$(date -u +%Y-%m-%dT%H:%M:%SZ)',
+        'channel': channel,
+        'thread_ts': thread_ts,
+        'added_at': __import__('datetime').datetime.utcnow().isoformat() + 'Z',
         'context': 'HuMT mentioned'
     })
-    
     with open(tracking_file, 'w') as f:
         json.dump(tracking, f, indent=2)
-    print('  ✅ Added to tracking')
-else:
-    print('  ℹ️ Already tracked')
-PYEOF
 
-# STEP 5: Mark as processed (prevent re-alerting)
-echo "Step 5: Marking processed..."
-python3 << PYEOF
-import json, os
-
+# Mark processed
 state_file = 'memory/slack-digest-state.json'
-if os.path.exists(state_file):
+try:
     with open(state_file) as f:
         state = json.load(f)
-else:
+except:
     state = {}
 
 processed = set(state.get('processedMentions', []))
-processed.add('$THREAD_TS')
-state['processedMentions'] = list(processed)[-100:]  # Keep last 100
+processed.add(thread_ts)
+state['processedMentions'] = list(processed)[-100:]
 
 with open(state_file, 'w') as f:
     json.dump(state, f, indent=2)
-print('  ✅ Marked processed')
 PYEOF
-
-echo ""
-echo "✅ All 5 steps complete"
-echo ""
-echo "Next: Wait for HMT's decision, then call this script again with:"
-echo "  bash scripts/slack-approval-relay.sh --thread-ts $THREAD_TS --channel $CHANNEL --user $USER_ID --message '<approval>'"

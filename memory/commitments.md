@@ -1,6 +1,59 @@
 # Commitments & Follow-ups
 
-> Last updated: 2026-04-06 12:02 UTC (commitment tracker cron)
+> Last updated: 2026-04-08 12:00 UTC (commitment tracker cron)
+
+---
+
+## 🆕 New Commitments — Apr 8, 2026 (Wednesday Scan)
+
+| Item | Who | Deadline | Channel | Notes |
+|------|-----|----------|---------|-------|
+| Stop all Naate acquisition ads + shift budget to web series | Parveen's team (U05GB6EGFJM) | Done same day ✅ | #stage_maino | Vinay (UEJV57HQW) directed 04:15 UTC — "stopping all Naate ads from acquisition, effective immediately." Parveen confirmed 06:10 UTC: "We have paused all acquisition ads across Meta and Google of Naate across the board." COMPLETED |
+| Shift Naate re-acq/re-act campaigns — Shubham Singla | Shubham Singla (U09AK8X90Q0) | ASAP | #stage_maino | Nikhil (UEHET2Q2G) delegated at 04:33 UTC: "we must shift all re-acq / re-act campaigns on Naate". Shubham confirmed 05:17 UTC. |
+| D6–7 TCR drop RCA — Nikhil Nair leading P0 | Nikhil Nair (U08L99D58PK) + Yash Verma (U039SEJGKNZ) + Vismit (U07LFSB0PM5) | URGENT / today | #full-funnel-solver | Vinay (UEJV57HQW) RED ALERT 08:22 UTC. Nikhil: "I am on this." Vismit found the issue, Yash working on validation. Nikhil: "Almost done" 11:41 UTC. Root cause: D6–D7 bloating on GPay + PhonePe PSPs, not Paytm. |
+| Speak to NPCI contact re: PhonePe/GPay TCR pattern | HMT (U05QMQHCVNY) | ASAP | #full-funnel-solver | Vinay tagged HMT 08:34 UTC: "can you speak to someone at NPCI?" HMT response not visible. **HIGH PRIORITY — HMT action item.** |
+| Call PhonePe PoC — check if changes made | Vinay (UEHET2Q2G) | Today | #full-funnel-solver | Vinay self-committed 08:33 UTC: "I will try calling couple of other founders to check for this pattern." Yash confirmed PhonePe said no changes from their end. |
+| PDN correlation data pull for TCR RCA | Ankur Kanaujia (U0A5BMGA7UL) | Urgent — today | #full-funnel-solver | Nikhil requested 08:27 UTC. Ankur: "Looking into it." Data sync in progress 09:26 UTC. |
+| Share weekly performance plan (metrics breakdown + title/format/channel + 7-day action plan) | Parveen's growth team | ASAP | #stage_maino | Vinay (UEJV57HQW) directed 14:38 UTC: "Please share the weekly plan with a clear breakdown..." |
+| Approve Quarterly Investor Update from all teams | All dept leads | Apr 8 by 12 PM | #quarterly_investor_updates | Rohit Deshmukh posted deadline 04:31 UTC. HMT (U05QMQHCVNY) re-tagged @channel 05:41 UTC: "Please file in if you haven't yet. This is urgent." Vismit (retention), Nikhil (Growth Product) among those tagged. |
+| Approve ElevenLabs payment for dubbing API key | Vinay (UEHET2Q2G) | ASAP | #credit_card_invoices | Yash Verma (U039SEJGKNZ) tagged Vinay 09:42 UTC. No response confirmed yet. |
+| Accept Apple Developer Program License Agreement update | Shashank (UE0KTBS8P) | URGENT — blocking | #tech-mates | Sahil Sharma (U096E4RCGHF) flagged 04:23 UTC — team blocked until accepted. |
+| Share tech accomplishments Q1 (for investor presentation) | All tech leads | ASAP | #tech-mates | Vipul Sharma (U08HTBH8MFA) tagged @channel 04:33 UTC. Mofidul (U039VC42JAF) shared investor update URL. Multiple team leads tagged. |
+| List all internal tools created — streamline tools registry | All engineering teams | ASAP | #stage-ke-krantikaari | Shivansh (U0A3QQQ3J21) tagged @channel 05:05 UTC: "it is now required to streamline all these tools. Everyone is requested to list down all the tools." 15 replies. |
+| Android release — PRs merged by 5 PM for release cut | All relevant devs | Apr 8 5 PM | #tech-mates | Sahil Sharma (U096E4RCGHF) 08:48 UTC. Update 11:19: **release pushed to tomorrow.** |
+| Improve CSL performance — work alongside Sunil Yadav | perf marketing team | ASAP | #stage_maino | Kunal (UEK09GX7G) directed 13:44 UTC: "Please work alongside Sunil and improve overall CSL performance, not happy with the current situation." |
+| Diagnose Trial Rate for Google App campaigns + fix Gujarati CAC | Parveen/perf team | ASAP | #stage_maino | Kunal (UEK09GX7G) MoM 13:37 UTC: "Fix Gujarati market Trial CAC" + "Diagnose TR for Google App campaigns." |
+| Relax cost cap 10% on old web-series ad-sets (Meta) | Ankit Parashar (U06FGK8P2GZ) | Done same day ✅ | #stage_maino | U0A0QJZ6ZQ9 (perf team) confirmed 11:56 UTC: "cost cap has been relaxed by around 10%...Let's monitor." COMPLETED |
+| Amplitude data gap — 3h of trial events missing — backfill | Hemabh (U089APN985P) | ASAP | #full-funnel-solver | Hemabh self-committed 16:22 UTC: "Will try to backfill amplitude as well." 3hr gap (6:45–9:45 PM). ClickHouse data intact. |
+| Content lens analysis (M0 — Series gold format, erosion) | Kawaljeet (U0A4V6M3BT5) | Shared ✅ | #full-funnel-solver | Kawaljeet posted analysis 13:40 UTC. Parveen replied: "Thanks for sharing this." CC Pravesh. COMPLETED. |
+| User-led distribution strategy — share + align | Jagriti (U0A4BA697BL) | Shared ✅ | #full-funnel-solver | Jagriti shared Figma board 17:40 UTC. COMPLETED. |
+| Fill Rajasthani winner content + festival winner sheet | Priyanka Gupta (U082Q7F56F8) | ASAP | #rajasthani_stage | U081VG95FE3 requested 13:22 UTC. |
+| Trameline self-hosting decision + move (Trameline shutting down) | Mofidul (U039VC42JAF) + tech team | Planning | #tech-mates | Mofidul flagged 05:22 UTC: planning to self-host. Starts free from April but with sign-in requirement. |
+| UGC ads creation for M1 watcher users (9 series listed) | Yatika (U07Q1LJMR7B) requested from Kunal | TBD | #promo-team | Yatika requested 10:04 UTC — UGC for Videshi Bahu 2, Mahapunarjanam, Bhairavi, and others. |
+| Static creatives — bouquet value highlight (new requirement) | Kashish (U08DLCSK7QS) + promo team | ASAP | #promo-team | Kashish flagged 06:11 UTC: "two creative requirements — 1. Static creatives Bouquet Value, 2. [second item not visible]." |
+| ZoHo investment declaration — file before deadline | All employees | Ongoing | #stage-ke-krantikaari | Nisha (U068F2RS5PV) @channel announcement 11:32 UTC: "initiating investment declaration process on ZoHo." Tax deductions from this month based on declaration. |
+
+---
+
+## ✅ Completed — Apr 8, 2026 (This Scan)
+
+| Item | Completed | Outcome |
+|------|-----------|--------|
+| Stop Naate acquisition ads (all formats/markets) | Apr 8 06:10 UTC | Parveen's team confirmed paused across Meta + Google. ✅ |
+| Relax 10% cost cap on old web-series ad-sets (Meta) | Apr 8 11:56 UTC | Ankit Parashar confirmed done. Monitoring phase begun. ✅ |
+| Content lens M0 analysis (Series format trends) | Apr 8 13:40 UTC | Kawaljeet posted, Parveen acked. ✅ |
+| User-led distribution strategy Figma share | Apr 8 17:40 UTC | Jagriti shared board. ✅ |
+
+---
+
+## ⚠️ Overdue as of Apr 8 — Flagged
+
+| Item | Original Owner | Stated Deadline | Days Overdue | Notes |
+|------|---------------|-----------------|-------------|-------|
+| Quarterly Investor Update filing | All dept leads | Apr 8 12 PM UTC | Due today — past deadline | HMT personally tagged @channel. Vismit (retention), Nikhil (Growth Product) still listed as outstanding at time of scan. |
+| Apple Developer License acceptance | Shashank (UE0KTBS8P) | URGENT (flagged 04:23 UTC) | ~7h pending | Team blocked until Shashank accepts. |
+| D6–D7 TCR RCA — final findings | Nikhil + team | Today EOD | Still in progress 11:41 UTC | Nikhil said "almost done" at 11:41. Vinay following up actively. |
+| ElevenLabs payment approval | Vinay (UEHET2Q2G) | ASAP (flagged 09:42) | ~2h pending at scan time | No confirmation found. |
 
 ---
 

@@ -110,7 +110,18 @@
 | D92 | Approve Claude seats (2 premium + 5 standard) + $500 Grok API | Shashank (UE0KTBS8P) | 2026-04-06 | #credit_card_invoices | Rohit Deshmukh requested. Two separate requests 06:29 + 07:13 UTC. No response yet. | 0 |
 | D93 | Provision VM: 24GB RAM, 16-core CPU (on-prem migration) | Rohit Singh (U09AZ6SV9TL) | 2026-04-06 | #team-devops | Ankur Kanaujia requested 10:50 UTC. No response yet. | 0 |
 | D94 | Fix M1 Watcher dashboard (incorrect data) | Data team (U089APN985P + U08B8QWDWR5) | 2026-04-06 | #retention | Yatika flagged 07:19 UTC — urgent. No response confirmed. | 0 |
-| D95 | recurringtransactions MongoDB→Snowflake pipeline failed (incremental) | Data/Devops | 2026-04-06 | #data-alerts | Auto-alert 18:31 UTC. Stream failure on recurringtransactions. Pattern of pipeline failures (cf. D87). | 0 |
+| D95 | recurringtransactions MongoDB→Snowflake pipeline failed (incremental) | Data/Devops | 2026-04-06 | #data-alerts | Auto-alert 18:31 UTC. Stream failure on recurringtransactions. Pattern of pipeline failures (cf. D87). | 2 |
+| D96 | D6–7 TCR drop RCA — P0 investigation | Nikhil Nair (U08L99D58PK) + Yash Verma (U039SEJGKNZ) + Vismit Bansal (U07LFSB0PM5) + Ankur Kanaujia (U0A5BMGA7UL) | 2026-04-08 | #full-funnel-solver | Vinay RED ALERT 08:22 UTC. Nikhil leading. Root cause identified: GPay + PhonePe PSP bloating D6–D7 TCR. Vismit found the issue, Yash validating. Almost resolved 11:41 UTC. | 0 |
+| D97 | Speak to NPCI contact re: payment gateway TCR pattern | HMT (U05QMQHCVNY) | 2026-04-08 | #full-funnel-solver | Vinay delegated at 08:34 UTC: "can you speak to someone at NPCI?" HMT action needed. | 0 |
+| D98 | Quarterly Investor Update — file outstanding sections | Dept leads (Vismit, Nikhil, Hemabh + others) | 2026-04-08 | #quarterly_investor_updates | Rohit Deshmukh + HMT both escalated. Deadline 12 PM. Perf Marketing ✅, MIS ✅. Retention + Growth Product still outstanding at scan time. | 0 |
+| D99 | Accept Apple Developer Program License Agreement | Shashank Vaishnav (UE0KTBS8P) | 2026-04-08 | #tech-mates | Sahil flagged 04:23 UTC. Team blocked. Urgent. | 0 |
+| D100 | Shift Naate re-acq/re-act budget to web series | Shubham Singla (U09AK8X90Q0) | 2026-04-08 | #stage_maino | Nikhil + Vinay directed. Shubham confirmed 05:17 UTC. | 0 |
+| D101 | Improve CSL performance (Bhairavi + others) | Ankit Parashar (U06FGK8P2GZ) + Sunil Yadav (U09S4HRMG7K) | 2026-04-08 | #stage_maino | Kunal directed: "Please work alongside Sunil." Ongoing. | 0 |
+| D102 | Backfill 3h Amplitude gap (trial_payment_page_viewed, trial_mandate_revoked) | Hemabh Kamboj (U089APN985P) | 2026-04-08 | #full-funnel-solver | Self-committed. ClickHouse data intact. 6:45–9:45 PM gap. | 0 |
+| D103 | Share weekly performance plan (breakdown + 7-day actions) | Parveen's performance team | 2026-04-08 | #stage_maino | Vinay directed 14:38 UTC. Format: current vs goal, title/channel/format + action plan. | 0 |
+| D104 | List all internal tools built (streamline registry) | All engineering teams | 2026-04-08 | #stage-ke-krantikaari | Shivansh @channel 05:05 UTC. 15 replies thread open. | 0 |
+| D105 | ElevenLabs dubbing API key — payment approval | Vinay Singhal (UEHET2Q2G) | 2026-04-08 | #credit_card_invoices | Yash Verma requested 09:42 UTC. No confirmation yet. | 0 |
+| D106 | Trameline self-hosting migration plan | Mofidul Islam (U039VC42JAF) + tech team | 2026-04-08 | #tech-mates | Trameline shutting down commercial ops. Free tier available but with sign-in requirement (unacceptable). Self-hosting planned. | 0 |
 
 | D26 | Chatbot data updates in standard format | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Nikhil requested | 3 |
 | D27 | Infrastructure upgrade activity (4 components) | Rohit Singh | 2026-03-04 | #team-devops | Self-announced plan (non-prod ✅, prod+DB pending) | 2 |

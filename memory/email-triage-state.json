@@ -1,24 +1,13 @@
 {
-  "lastTriageUTC": "2026-04-06T03:01:00Z",
-  "urgent": 2,
-  "important": 4,
-  "fyi": 7,
-  "skip": 6,
-  "responseDebt": 2,
-  "debtDetails": [
-    {
-      "sender": "Karthik Reddy (Blume)",
-      "subject": "Stage | General Catalyst",
-      "date": "2026-04-03",
-      "daysOld": 3,
-      "priority": "CRITICAL"
-    },
-    {
-      "sender": "Pravesh Rajput",
-      "subject": "Re: Media request - STAGE - French television",
-      "date": "2026-04-04",
-      "daysOld": 2,
-      "priority": "HIGH"
-    }
-  ]
+  "lastTriageUTC": "2026-04-08T03:01:00Z",
+  "urgent": 1,
+  "important": 3,
+  "fyi": 4,
+  "skip": 5,
+  "responseDebt": 1,
+  "details": {
+    "urgentItems": ["Simran Pathak — Planet Marathi Library Discussion (today 2pm IST)"],
+    "importantItems": ["Nisha Ali — Competency Survey Product (3mo old, Nikhil just replied Apr 7)", "Nikhil Nair — Calendar invites x6 (Activation/Reactivation syncs)"],
+    "responseDebt": ["Nisha Ali — Competency Survey | Product — original sent Jan 12, 3mo unread"]
+  }
 }
