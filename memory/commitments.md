@@ -1,6 +1,50 @@
 # Commitments & Follow-ups
 
-> Last updated: 2026-04-08 12:00 UTC (commitment tracker cron)
+> Last updated: 2026-04-09 12:00 UTC (commitment tracker cron)
+
+---
+
+## 🆕 New Commitments — Apr 9, 2026 (Thursday Scan)
+
+| Item | Who | Deadline | Channel | Notes |
+|------|-----|----------|---------|-------|
+| MoM Apr 9 — check success rate 12–5 PM timing + identify deduction day | Shubham Singla (U09AK8X90Q0) | Today | #full-funnel-solver | Self-assigned in MoM post 06:26 UTC. |
+| MoM Apr 9 — PhonePe reconciliation setup + check timeline for fix | Yash Verma (U039SEJGKNZ) | Today | #full-funnel-solver | Shubham delegated in MoM 06:26 UTC. PhonePe response pending. |
+| Discuss early results of dormant/uninstalled user re-engagement flow | HMT (U05QMQHCVNY) + Divya's team | "Tomorrow" (Apr 10) | #full-funnel-solver | HMT replied to Divya (U04A980D1N3) 13:34 UTC Apr 8: "lets discuss early results tomorrow." Vinay also reacted positively. |
+| TCR deep-dive meeting — full team alignment | Vinay (UEHET2Q2G) | Apr 9 11 AM IST | #full-funnel-solver | Vinay posted 13:30 UTC Apr 8: "Scheduling a meeting for tomorrow 11am to discuss and be on the same page." Meeting confirmed via Gemini auto-notes. |
+| Chatbot + activation April plan execution — Aaliya + Divya collaboration | Aaliya's team (U08QCRJM1PA) + Divya (U04A980D1N3) | April ongoing | #full-funnel-solver | Aaliya posted April plan 11:58 UTC — joint chatbot optimization initiative. |
+| Approve 4 premium Claude seats | Shashank (UE0KTBS8P) | ASAP | #credit_card_invoices | U013U47GNM6 requested 05:10 UTC. No response logged yet. |
+| CAC:LTV alignment — optimize toward M6 at ₹170 trial CAC target (55% TCR basis) | Parveen (U05GB6EGFJM) + Kunal (UEK09GX7G) + Nikhil (U08L99D58PK) | Immediate | #stage_maino | Vinay directed 08:40 UTC: "Focus on optimising towards M6, with a trial CAC target of 170." All three tagged. |
+| Update Marathi region in blended performance links | Hemabh (U089APN985P) + data team | Done ✅ | #stage_maino | Shubham (U067QHCDQRE) requested 06:56 UTC. Hemabh confirmed "done" 09:10 UTC. COMPLETED. |
+| Long binge series pod — update planning doc with timelines + deadlines | Long binge series team | URGENT | #long-binge-series-pod | Vinay warning 16:52 UTC (Apr 8): "This is still not updated—what's the challenge here? Without clear timelines and deadlines, how are we expected to track progress?" No visible commitment response yet. |
+| GrowthBook SDK integration + Amazon Fire TV 5% rollout (Android TV) | Android TV team (U09TYHJFQLB + team) | Done ✅ | #tech-mates | Posted 12:50 UTC: GrowthBook tested + deployed on Amazon Fire TV at 5% rollout. COMPLETED. |
+| iOS 4.69.1 TestFlight build — QA testing | QA team / Sahil (U096E4RCGHF) | ASAP | #tech-mates | Sahil posted 12:17 UTC — build aligned with current Android, on TestFlight. QA sign-off pending. |
+| Shivendra meeting outcomes — follow-up action items | HMT (U05QMQHCVNY) | TBD | Gmail | Post-meeting notes sent by Shivendra Pratap Singh. Need to confirm what actions were decided. |
+| Finance — approve all payments (batch) | HMT (U05QMQHCVNY) | Apr 9 ✅ | #finance-department | Saloni (U05HAE85RL2) tagged founders 12:05 UTC. HuMT bot confirmed "All 8 payments approved by Harsh" at 12:44 UTC. COMPLETED. |
+
+---
+
+## ✅ Completed — Apr 9, 2026 (This Scan)
+
+| Item | Completed | Outcome |
+|------|-----------|--------|
+| Tramline self-hosted migration | Apr 9 06:31 UTC | Mofidul confirmed: "Self-Hosted Tramline is Live at tramline.stage.in" — D106 CLOSED. ✅ |
+| Update Marathi region in blended links | Apr 9 09:10 UTC | Hemabh confirmed "done". ✅ |
+| Finance batch payments | Apr 9 12:44 UTC | HMT approved all 8. ✅ |
+| Android TV — GrowthBook SDK + Amazon Fire TV rollout | Apr 9 12:50 UTC | 5% rollout live, tested. ✅ |
+
+---
+
+## ⚠️ Overdue as of Apr 9 — Flagged
+
+| Item | Original Owner | Stated Deadline | Days Overdue | Notes |
+|------|---------------|-----------------|-------------|-------|
+| Shift Naate re-acq/re-act to web series (D100) | Shubham Singla | Apr 8 ASAP | 1 day | No completion confirmation seen. |
+| Quarterly Investor Update — outstanding sections (D98) | Dept leads | Apr 8 12 PM UTC | 1 day past | Nikhil, Vismit status unclear. Need verification. |
+| ElevenLabs payment approval (D105) | Vinay | Apr 8 ASAP | 1 day | No confirmation seen. |
+| Apple Developer License acceptance (D99) | Shashank | Apr 8 URGENT | 1 day | Team still potentially blocked. |
+| Approve 4 premium Claude seats | Shashank | Apr 9 ASAP | Today | U013U47GNM6 requested this morning. Still open. |
+| Long binge series pod plan update | Long binge team | Immediate (Vinay flagged Apr 8) | 1 day | Vinay explicitly called out lack of timelines. No response. |
 
 ---
 

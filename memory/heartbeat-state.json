@@ -1,15 +1,15 @@
 {
   "lastChecks": {
-    "slack_scan": 1775653854,
-    "dm_check": 1775653854,
-    "netlify_health": 1775653854,
-    "channel_diff": 1775903404,
+    "slack_scan": 1775748661,
+    "dm_check": 1775748661,
+    "netlify_health": 1775741400,
+    "channel_diff": 1775748661,
     "commitment_tracker": 1774541040,
     "email": 1775649940,
-    "pranay_pip": 1775649940,
-    "slack_dm": 1775649940,
-    "netlify": 1775649940
+    "pranay_pip": 1775748661,
+    "slack_dm": 1775741400,
+    "netlify": 1775748661
   },
-  "lastHeartbeat": "2026-04-08T13:10:00Z",
-  "notes": "13:10 UTC (18:40 IST) \u2014 Evening debrief cron in-flight (Slack scan). All key channels quiet last 30 min. Netlify 200. No new @HuMT mentions. No DMs. Persona: no new observations."
+  "lastHeartbeat": "2026-04-09T15:29:00Z",
+  "notes": "15:29 UTC Apr 9 (21:00 IST) \u2014 Nikhil posted Growth Hypotheses doc in #full-funnel-solver, tagged HMT. Relayed to Telegram. Netlify 200. No channel changes. No new DMs."
 }

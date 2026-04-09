@@ -1,7 +1,7 @@
 {
-  "morningBrief": "2026-04-08T03:45:00Z",
-  "lastScan": "2026-03-29T13:00:05Z",
-  "eveningDebrief": "2026-03-30T13:00:00.000000+00:00",
+  "morningBrief": "2026-04-09T03:45:00Z",
+  "lastScan": "2026-04-09T13:00:00Z",
+  "eveningDebrief": "2026-04-09T13:00:00Z",
   "intensity": "light",
   "processedMentions": [
     "1775631560",
@@ -14,26 +14,44 @@
     "test_qa_123.456",
     "test123"
   ],
-  "lastEveningDebrief": {
-    "sentAt": "2026-03-30T13:00:00.000000+00:00",
-    "sentAtIST": "2026-03-30T18:30:00+05:30",
-    "messageId": 1263,
+  "lastMorningBrief": {
+    "sentAt": "2026-04-09T03:45:00Z",
+    "sentAtIST": "2026-04-09T09:15:00+05:30",
+    "messageId": 1443,
     "topic": "daily_ops",
-    "scanHours": 12,
-    "channelsActive": 0,
-    "messagesAnalyzed": 0,
-    "note": "Monday evening \u2014 0 Slack messages all day. 5 meetings all sync (All Hands, M0 Watcher, Dormants, Pranay 1:1, Nisha 1:1). Key open items: D77/D78/Rahul batch finance, Pranay PIP verdict unknown, D64 Airbyte still broken, D29 Randeep Hooda unconfirmed.",
+    "scanHours": 24,
+    "channelsActive": 33,
+    "messagesAnalyzed": 156,
+    "note": "PhonePe TCR P0 day. Root cause: webhook failures since Apr 2. TCR RCA meeting 11 AM. 8 meetings today. Team running hot — high absenteeism. Snowflake/Metabase unavailable. CMS: 771 active, 125 drafts, 1080 transcoding stuck.",
     "keyItems": [
-      "D77 \u20b95.30cr shortfall \u2014 10 days, Saloni blocked, Vinay/Shashank silent",
-      "D78 Google India \u20b967L \u2014 9 days pending approval",
-      "Rahul Chauhan Mar 30 payment batch \u2014 needs EOD approval",
-      "Pranay 1:1 at 2PM \u2014 Cricket Saathi Match 1 data read + PIP verdict. No Slack signal post-meeting.",
-      "D64 Airbyte\u2192ClickHouse \u2014 15 days broken, no owner",
-      "D29 Randeep Hooda \u2014 27 days, ~\u20b93.7cr spent, no shutdown confirmation",
-      "M0 Watcher Week 2 update: standup today but no async in channel",
-      "Watch Next carousel reverted (deeplink debugging)",
-      "VPS disk 80%, OpenClaw update 2026.3.28 available"
+      "PhonePe webhook failures causing phantom D6-D8 cancellations since Apr 2 — TCR RCA 11 AM today",
+      "HMT action: NPCI contact call (Vinay direct ask)",
+      "Apple Developer License blocking Shashank team — Android release today",
+      "Amplitude 3h data gap + Snowflake sync failures — data integrity at risk",
+      "Rohit Singh (DevOps) fainted in metro — heading home till Monday",
+      "Divya's dormant/uninstalled re-engagement flow shipped — appreciated by HMT + Vinay",
+      "Investor Update filing — check if Nikhil/Vismit submitted",
+      "ElevenLabs payment pending Vinay approval"
     ]
   },
-  "lastUpdated": "2026-04-08T03:48:33.506Z"
+  "lastUpdated": "2026-04-09T13:00:00Z",
+  "lastEveningDebrief": {
+    "sentAt": "2026-04-09T13:00:00Z",
+    "sentAtIST": "2026-04-09T18:30:00+05:30",
+    "messageId": 1453,
+    "topic": "daily_ops",
+    "scanHours": 12,
+    "channelsActive": 28,
+    "messagesAnalyzed": 101,
+    "note": "PhonePe TCR Day 2. D6–D7 RCA meeting tomorrow 11 AM IST. Finance batch ₹60.6L pending HMT approval. AI-dubbed Mokhan Vahini shipped. Live streaming deployed. Doojvar 2 pre-released. Activation April plan shared by Sakshi+Ashish.",
+    "keyItems": [
+      "PhonePe TCR — HDFC Bank exploration as backup PG. RCA meeting Apr 10 11 AM IST",
+      "Finance batch ~₹60.6L (19 vendors) — Rahul Chauhan tagged HMT for approval",
+      "Mokhan Vahini: first fully in-house AI-dubbed film (RJ→GJ) shipped",
+      "Live Streaming feature deployed (Kalakar cricket)",
+      "Vedant: Google LTV framing — optimize acquisition toward high-LTV user actions",
+      "Still outstanding: Investor Update, Apple Dev License, ElevenLabs payment, Claude seats",
+      "HMT action: NPCI contact call still open"
+    ]
+  }
 }

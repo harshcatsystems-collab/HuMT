@@ -1,55 +1,55 @@
 {
   "preppedToday": [
     {
-      "id": "3f0cckdcqf5oo499a61ib2n229_20260408T042000Z",
-      "title": "Tech - Product Standup (Growth POD)",
-      "start": "2026-04-08T09:50:00+05:30",
-      "preppedAt": "2026-04-08T03:00:00Z",
-      "topic": "growth"
-    },
-    {
-      "id": "57j054riais1pi966mi3uer4be_20260408T050000Z",
-      "title": "Mid-Sprint Review Meeting",
-      "start": "2026-04-08T10:30:00+05:30",
-      "preppedAt": "2026-04-08T04:30:00Z",
-      "topic": "product_design"
-    },
-    {
-      "id": "73rhfktpi5os655o54oocbaphs_20260408T060000Z",
+      "id": "73rhfktpi5os655o54oocbaphs_20260409T060000Z",
       "title": "Retention April Plan Catch-up",
-      "start": "2026-04-08T11:30:00+05:30",
-      "preppedAt": "2026-04-08T05:30:00Z",
+      "startTime": "2026-04-09T11:30:00+05:30",
+      "preppedAt": "2026-04-09T05:30:00Z",
       "topic": "retention"
     },
     {
-      "id": "1uvr5redecckfa8rmt9insl2ic",
-      "title": "Planet Marathi (Library)- Discussion with Vistas",
-      "start": "2026-04-08T14:00:00+05:30",
-      "preppedAt": "2026-04-08T08:01:52.530Z",
-      "topic": "strategy"
+      "id": "3f0cckdcqf5oo499a61ib2n229_20260409T042000Z",
+      "title": "Tech - Product Standup (Growth POD)",
+      "startTime": "2026-04-09T09:50:00+05:30",
+      "preppedAt": "2026-04-09T04:02:00Z",
+      "topic": "growth"
     },
     {
-      "id": "5g5hsgdi48hu3mistc9cdo5hsf",
-      "title": "Harsh / Rohit",
-      "start": "2026-04-08T15:00:00+05:30",
-      "preppedAt": "2026-04-08T09:30:00Z",
+      "id": "5gdq9sk2c6nrlb0lqhn1fvhe32",
+      "title": "TCR / root causes analysis",
+      "startTime": "2026-04-09T11:00:00+05:30",
+      "preppedAt": "2026-04-09T05:00:00Z",
       "topic": "daily_ops"
     },
     {
-      "id": "isjsiie2e6gdjejui500uqjsr4",
-      "title": "Stage x GC",
-      "start": "2026-04-08T15:30:00+05:30",
-      "preppedAt": "2026-04-08T09:30:00Z",
+      "id": "49ac84heldg0cb1ajjtjai3j39_20260409T070000Z",
+      "title": "Activation daily sync",
+      "startTime": "2026-04-09T12:30:00+05:30",
+      "preppedAt": "2026-04-09T06:30:00Z",
+      "topic": "growth"
+    },
+    {
+      "id": "0opb1fff230jfrond7rolodnv8_20260409T073000Z",
+      "title": "Reactivation daily sync",
+      "startTime": "2026-04-09T13:00:00+05:30",
+      "preppedAt": "2026-04-09T07:00:00Z",
+      "topic": "growth"
+    },
+    {
+      "id": "669o1b1hgvq9djop1dqoo3gvh8",
+      "title": "PLG strategy discussion",
+      "startTime": "2026-04-09T15:00:00+05:30",
+      "preppedAt": "2026-04-09T09:00:00Z",
       "topic": "strategy"
     },
     {
-      "id": "268k12od9dq7orr4a19jb76n2c_20260408T113000Z",
-      "title": "STAGE - Quarterly Investor Updates",
-      "start": "2026-04-08T17:00:00+05:30",
-      "preppedAt": "2026-04-08T11:00:00Z",
-      "topic": "strategy"
+      "id": "0prghe1ksdsl88osukv957rfv1_20260407T110000Z",
+      "title": "Fortnightly catchup w Nikhil",
+      "startTime": "2026-04-09T16:30:00+05:30",
+      "preppedAt": "2026-04-09T10:00:00Z",
+      "topic": "growth"
     }
   ],
-  "date": "2026-04-08",
-  "_lastUpdated": "2026-04-08T11:00:00Z"
+  "date": "2026-04-09",
+  "_lastUpdated": "2026-04-09T10:00:00Z"
 }

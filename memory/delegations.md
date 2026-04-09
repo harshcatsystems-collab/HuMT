@@ -121,8 +121,15 @@
 | D103 | Share weekly performance plan (breakdown + 7-day actions) | Parveen's performance team | 2026-04-08 | #stage_maino | Vinay directed 14:38 UTC. Format: current vs goal, title/channel/format + action plan. | 0 |
 | D104 | List all internal tools built (streamline registry) | All engineering teams | 2026-04-08 | #stage-ke-krantikaari | Shivansh @channel 05:05 UTC. 15 replies thread open. | 0 |
 | D105 | ElevenLabs dubbing API key — payment approval | Vinay Singhal (UEHET2Q2G) | 2026-04-08 | #credit_card_invoices | Yash Verma requested 09:42 UTC. No confirmation yet. | 0 |
-| D106 | Trameline self-hosting migration plan | Mofidul Islam (U039VC42JAF) + tech team | 2026-04-08 | #tech-mates | Trameline shutting down commercial ops. Free tier available but with sign-in requirement (unacceptable). Self-hosting planned. | 0 |
+| D106 | ~~Tramline self-hosting migration plan~~ | Mofidul Islam (U039VC42JAF) + tech team | 2026-04-08 | #tech-mates | **COMPLETED Apr 9 06:31 UTC** — Mofidul: "Self-Hosted Tramline is Live at tramline.stage.in" — Rohit Singh assisted. Credentials ready. ✅ | DONE |
 
+| D107 | Check success rate 12–5 PM timing + deduction day pattern | Shubham Singla (U09AK8X90Q0) | 2026-04-09 | #full-funnel-solver | MoM Apr 9 self-assigned. PhonePe TCR context. | 0 |
+| D108 | PhonePe reconciliation setup + timeline for fix | Yash Verma (U039SEJGKNZ) | 2026-04-09 | #full-funnel-solver | MoM Apr 9 — Shubham delegated. Still ongoing. | 0 |
+| D109 | Chatbot + activation April plan execution (joint collaboration) | Aaliya (U08QCRJM1PA) + Divya (U04A980D1N3) | 2026-04-09 | #full-funnel-solver | Shared April plan. Chatbot optimization for deep conversation as key goal. | 0 |
+| D110 | Approve 4 premium Claude seats | Shashank Vaishnav (UE0KTBS8P) | 2026-04-09 | #credit_card_invoices | U013U47GNM6 requested 05:10 UTC. Still pending. | 0 |
+| D111 | Update long binge series pod plan with timelines + deadlines | Long binge series team | 2026-04-09 | #long-binge-series-pod | Vinay flagged urgently Apr 8 16:52 UTC. No commitment response logged yet. | 0 |
+| D112 | CAC:LTV realignment — optimize to M6, ₹170 trial CAC target | Parveen + Kunal + Nikhil | 2026-04-09 | #stage_maino | Vinay directed 08:40 UTC. Strategic realignment on 55% TCR basis. | 0 |
+| D113 | iOS 4.69.1 TestFlight QA sign-off | QA team / Sahil (U096E4RCGHF) | 2026-04-09 | #tech-mates | Build on TestFlight. QA clearance needed before release. | 0 |
 | D26 | Chatbot data updates in standard format | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Nikhil requested | 3 |
 | D27 | Infrastructure upgrade activity (4 components) | Rohit Singh | 2026-03-04 | #team-devops | Self-announced plan (non-prod ✅, prod+DB pending) | 2 |
 | D28 | Send PDN for all plan types (24hr + 5min intervals) | Yash Verma | 2026-03-04 | #acquisition-pod | Shubham delegated, **CRITICAL OVERDUE** (was due March 5 13:15 UTC) | 2 ⚠️⚠️ |

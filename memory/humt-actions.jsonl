@@ -439,3 +439,26 @@
   "ts": 1775652270,
   "date": "2026-04-08T12:44:30Z"
 }
+{
+  "type": "mention_received",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1775739063.743489",
+  "action": "processing",
+  "requestor": "Rahul Chauhan",
+  "status": "open",
+  "notes": "Payment approval request, 9th April sheet",
+  "ts": 1775739219,
+  "date": "2026-04-09T12:53:39Z"
+}
+{
+  "type": "relay_sent",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1775739063.743489",
+  "action": "Relayed to HMT on Telegram Finance topic",
+  "requestor": "Rahul Chauhan",
+  "status": "awaiting_hmt_response",
+  "notes": "19 payments totaling Rs 60,62,317. Full sheet parsed and sent.",
+  "ts": 1775739238,
+  "date": "2026-04-09T12:53:58Z"
+}
+{"type":"alert_sent","channel":"C092XDNSDB9","thread_ts":"1775744354.691009","action":"Relayed to HMT on Telegram","user":"U08L99D58PK","name":"Nikhil Nair","summary":"Growth Hypotheses April 26 doc shared in #full-funnel-solver, HMT tagged","ts":"2026-04-09T15:31:01Z","status":"relayed"}

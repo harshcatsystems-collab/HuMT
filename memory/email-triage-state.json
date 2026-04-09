@@ -1,13 +1,13 @@
 {
-  "lastTriageUTC": "2026-04-08T03:01:00Z",
+  "lastTriageUTC": "2026-04-09T03:00:00Z",
   "urgent": 1,
-  "important": 3,
-  "fyi": 4,
-  "skip": 5,
-  "responseDebt": 1,
-  "details": {
-    "urgentItems": ["Simran Pathak — Planet Marathi Library Discussion (today 2pm IST)"],
-    "importantItems": ["Nisha Ali — Competency Survey Product (3mo old, Nikhil just replied Apr 7)", "Nikhil Nair — Calendar invites x6 (Activation/Reactivation syncs)"],
-    "responseDebt": ["Nisha Ali — Competency Survey | Product — original sent Jan 12, 3mo unread"]
+  "important": 1,
+  "fyi": 2,
+  "responseDebt": 0,
+  "threads": {
+    "19d6d4c09d446487": {"sender": "Parveen Singhal", "category": "URGENT", "subject": "TCR root causes analysis invite"},
+    "19d6e4070c41ac5f": {"sender": "Google Cloud Platform", "category": "IMPORTANT", "subject": "Account verification action required"},
+    "19d6dd24e59df116": {"sender": "Tailscale", "category": "FYI", "subject": "Pricing updates"},
+    "19d6fa5c4411f43b": {"sender": "Kotak Bank", "category": "FYI", "subject": "Daily balance alert"}
   }
 }

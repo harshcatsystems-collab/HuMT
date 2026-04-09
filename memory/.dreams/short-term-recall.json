@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-07T13:19:32.728Z",
+  "updatedAt": "2026-04-09T10:00:54.229Z",
   "entries": {
     "memory:memory/2026-03-21.md:276:313": {
       "key": "memory:memory/2026-03-21.md:276:313",
@@ -189,17 +189,19 @@
       "endLine": 67,
       "source": "memory",
       "snippet": "- Still waiting for Kayar meeting to wrap before starting STAGE research ## STAGE Media Research (14:17–15:55 IST) - HMT pivoted from personal context STAGE research to \"all media out there from my lens\" - Pass 1: Found 3 direct HMT quotes across all media, 6 HMT-specific articles, Vinay's exact co-founder tweet (Jan 10 2024, ID 1745044729790943249) - Pass 2 (deeper): MCA filing — HMT appointed Director of Stage Technologies Pvt Ltd on 23 Oct 2024. STAGE operates through Stage Technologies (Delhi, 2019), NOT Vatsana Technologies (Indore). Complete funding timeline mapped. Celebrity investors confirmed (Vijay Shekhar Sharma, Ranveer Allahbadia, Dhruv Rathee, Roman Saini, Neeraj Chopra). Reve",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
-      "totalScore": 0.6307695484795586,
+      "totalScore": 0.9812284416594521,
       "maxScore": 0.6307695484795586,
       "firstRecalledAt": "2026-04-07T13:19:32.728Z",
-      "lastRecalledAt": "2026-04-07T13:19:32.728Z",
+      "lastRecalledAt": "2026-04-09T03:00:42.835Z",
       "queryHashes": [
-        "f63747cdbccc"
+        "f63747cdbccc",
+        "450efb2e870a"
       ],
       "recallDays": [
-        "2026-04-07"
+        "2026-04-07",
+        "2026-04-09"
       ],
       "conceptTags": [
         "hmt-specific",
@@ -270,6 +272,36 @@
         "one",
         "what",
         "happened"
+      ]
+    },
+    "memory:memory/2026-04-07.md:66:73": {
+      "key": "memory:memory/2026-04-07.md:66:73",
+      "path": "memory/2026-04-07.md",
+      "startLine": 66,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "- Key stories: Vismit's M0 content analysis (Series vs Movie watch day gap), Nikhil's TCR maturation T1/T2/T3 analysis, Shubham's re-acquisition strategy, Shashank SCR direction (45→25% MoM) - Calendar updates: 4 meeting timing changes from Nikhil; Thu Apr 9 fortnightly catchup flagged - Open flags surfaced: Randeep Hooda campaign (D29), PhonePe PDN (D28), fund shortfall (D77), Artist Going Live dev - Metabase degraded flagged - Divya: Week 18+4, second trimester, no news today > 🧠 HMT tagged himself in #full-funnel-solver re: plan docs + Vismit's analysis CC — he's closely tracking the M0 content strategy direction personally, not just delegating.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.38831865489482875,
+      "maxScore": 0.38831865489482875,
+      "firstRecalledAt": "2026-04-09T10:00:54.229Z",
+      "lastRecalledAt": "2026-04-09T10:00:54.229Z",
+      "queryHashes": [
+        "de585d3013eb"
+      ],
+      "recallDays": [
+        "2026-04-09"
+      ],
+      "conceptTags": [
+        "t1/t2/t3",
+        "re-acquisition",
+        "full-funnel-solver",
+        "key",
+        "stories",
+        "vismit's",
+        "content",
+        "analysis"
       ]
     }
   }
