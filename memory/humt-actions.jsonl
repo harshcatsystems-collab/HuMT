@@ -462,3 +462,45 @@
   "date": "2026-04-09T12:53:58Z"
 }
 {"type":"alert_sent","channel":"C092XDNSDB9","thread_ts":"1775744354.691009","action":"Relayed to HMT on Telegram","user":"U08L99D58PK","name":"Nikhil Nair","summary":"Growth Hypotheses April 26 doc shared in #full-funnel-solver, HMT tagged","ts":"2026-04-09T15:31:01Z","status":"relayed"}
+{
+  "type": "mention_detected",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1775831359.495009",
+  "action": "processing",
+  "requestor": "Rahul Chauhan",
+  "status": "in_progress",
+  "note": "Payment approval request with 4 payments spreadsheet",
+  "ts": 1775831373,
+  "date": "2026-04-10T14:29:33Z"
+}
+{
+  "type": "approval_relayed",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1775831359.495009",
+  "action": "Relayed to HMT on Telegram",
+  "requestor": "Rahul Chauhan",
+  "status": "awaiting_hmt_response",
+  "note": "4 payments in 10th April Payment sheet.xlsx — awaiting HMT decision",
+  "ts": 1775831395,
+  "date": "2026-04-10T14:29:55Z"
+}
+{
+  "type": "slack_post",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1775831359.495009",
+  "message_ts": "1775831399.606929",
+  "message_preview": "Noted, Rahul — checking with Harsh now.",
+  "tagged_users": [],
+  "ts": 1775831399,
+  "date": "2026-04-10T14:29:59Z"
+}
+{
+  "type": "approval_posted",
+  "channel": "C08PGK8CM32",
+  "thread_ts": "1775831359.495009",
+  "action": "Approved all 4 payments",
+  "requestor": "Rahul Chauhan",
+  "status": "closed",
+  "date": "2026-04-10T15:56:33Z",
+  "ts": 1775836593
+}

@@ -55,3 +55,9 @@
 | 13:00 | Pyoopil research finalized | Raw files → `research/pyoopil-master.md` | Complete acquisition dossier available |
 
 ### Changelog entry from previous file (preserved):
+### slack-scan-all.sh rebuilt (2026-04-10 12:05 UTC)
+- Source of truth: HMT's actual Slack membership (users.conversations API)
+- Before: 88 channels (24 were channels HMT wasn't in)
+- After: 103 channels (all HMT's 110, minus 7 pure admin noise)
+- Dropped 24 irrelevant channels, added 39 previously missing ones
+- Token impact: scan list now precisely matches HMT's actual context

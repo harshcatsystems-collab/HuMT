@@ -1,7 +1,7 @@
 # USER.md — The Definitive HMT Document
 
 > **Harsh Mani Tripathi** — Co-Founder, STAGE OTT
-> *Last updated: 2026-03-22*
+> *Last updated: 2026-04-10*
 
 ---
 
@@ -117,6 +117,8 @@ These patterns are confirmed through direct observation across 80+ interactions 
 
 **Connects operational work to strategic output** — Sees through-line from data → strategy → fundraise. The Metabase dashboards weren't just operational — they're pitch ammunition. Everything connects in his mind. (Confirmed: Feb 19, 23, 24)
 
+**Personally owns the investor-facing layer — doesn't delegate the visible room** — When fundraise-adjacent processes are live, HMT shows up himself: posting @channel nudges in investor update channels, attending quarterly calls as a principal, self-inserting into data threads that feed the fundraise story. He connects strategy downward to ops, but connects the fundraise story *upward himself*. Not delegatable. (Confirmed: Feb 20 [#founders_sync investment deck], Mar 26 [townhall as primary source for investor narrative], Apr 7 [personal #full-funnel-solver tag on M0 strategy], Apr 8 [personal @channel nudge + investor call attendance] — 4 occurrences)
+
 **"Reflect" means think, don't list** — When he says "reflect" or "think about this," he wants synthesis, honest assessment, and learning articulation — not a status report. (Confirmed: Feb 16, 20, 28, Mar 2)
 
 **Output must match target format** — Gives feedback as one giant comment = lazy. Expects granular, slide-level actionable output matched to the structure of the medium. One comment on a 21-slide deck is unacceptable. (Confirmed: Feb 24)
@@ -159,7 +161,7 @@ These patterns are confirmed through direct observation across 80+ interactions 
 
 **Absorbs infrastructure failures himself — fixes before confronting** — When systems break, HMT's first move is to fix the problem himself (model swap, machine migration, gateway restart), then come back calm for a joint review. He doesn't demand explanations mid-crisis or escalate pressure. Disappointment gets stated once ("damn man, it's been a very disappointing day"), then pivots immediately to "how do we fix this going forward?" No blame loop, no punishment, no lingering. (Confirmed: Feb 28, Mar 8, Mar 9, Mar 13 — no new March instances, but no counter-evidence either; stable pattern)
 
-**Post-crisis withdrawal then calm return** — After major failures, HMT goes quiet for 2-4 days rather than escalating pressure. He processes privately, fixes what he can fix, and returns with a system review mindset, not a post-mortem accusation. (Confirmed: Feb 28→Mar 3, Mar 9→Mar 13, Mar 13 machine switch — 3 occurrences. No new crises in late March to test — treat as stable but unverified for ~3 weeks)
+**Post-intensity withdrawal then calm return** — After any high-intensity period (major failures, heavy-ops weeks, quarterly investor calls, sustained back-to-back meetings), HMT goes quiet for 2-4 days rather than escalating pressure. He processes privately, fixes what he can fix, and returns with a system review mindset, not a post-mortem accusation. Not crisis-specific — any week that drains intensity triggers the same pattern. (Confirmed: Feb 28→Mar 3 [WhatsApp crash], Mar 9→Mar 13 [SIGINT freeze], Mar 13 [machine switch], Apr 8→Apr 10 [quarterly investor call + 8-meeting day + P0 fire] — 4 occurrences)
 
 **"Crafts" collaboration environment deliberately** — "i use telegram ONLY for our collaboration. its a dedicated space i am crafting for you." The word "crafting" = intentional relationship infrastructure design. (Confirmed: Mar 3)
 

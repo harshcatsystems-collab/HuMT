@@ -885,7 +885,7 @@
       "is_private": false,
       "name": "making-frontend-better",
       "num_members": 0,
-      "purpose": "This channel is a log of Kushagra’s observations, discoveries about potential improvements to frontend (&amp; engineering) at Stage. Will also contain the actionables being taken regarding the same",
+      "purpose": "This channel is a log of Kushagra\u2019s observations, discoveries about potential improvements to frontend (&amp; engineering) at Stage. Will also contain the actionables being taken regarding the same",
       "topic": ""
     },
     "C079LSSQA0Y": {
@@ -2887,6 +2887,9 @@
       "num_members": 0,
       "purpose": "CXOs",
       "topic": ""
+    },
+    "tier3": {
+      "C0AD3A70VRU": "#1user_1agent"
     }
   },
   "metadata": {
@@ -3015,7 +3018,7 @@
         "is_private": false,
         "name": "making-frontend-better",
         "num_members": 0,
-        "purpose": "This channel is a log of Kushagra’s observations, discoveries about potential improvements to frontend (&amp; engineering) at Stage. Will also contain the actionables being taken regarding the same",
+        "purpose": "This channel is a log of Kushagra\u2019s observations, discoveries about potential improvements to frontend (&amp; engineering) at Stage. Will also contain the actionables being taken regarding the same",
         "topic": ""
       },
       "C079LSSQA0Y": {

@@ -1,55 +1,27 @@
 {
   "preppedToday": [
     {
-      "id": "73rhfktpi5os655o54oocbaphs_20260409T060000Z",
-      "title": "Retention April Plan Catch-up",
-      "startTime": "2026-04-09T11:30:00+05:30",
-      "preppedAt": "2026-04-09T05:30:00Z",
+      "id": "74bkr6slhdo7viufvef1sguc5d",
+      "summary": "Full Funnel - April Plan",
+      "start": "2026-04-10T11:00:00+05:30",
+      "preppedAt": "2026-04-10T05:00:00Z",
+      "topic": "growth"
+    },
+    {
+      "id": "73rhfktpi5os655o54oocbaphs_20260410T060000Z",
+      "summary": "Retention April Plan Catch-up",
+      "start": "2026-04-10T11:30:00+05:30",
+      "preppedAt": "2026-04-10T05:30:00Z",
       "topic": "retention"
     },
     {
-      "id": "3f0cckdcqf5oo499a61ib2n229_20260409T042000Z",
-      "title": "Tech - Product Standup (Growth POD)",
-      "startTime": "2026-04-09T09:50:00+05:30",
-      "preppedAt": "2026-04-09T04:02:00Z",
-      "topic": "growth"
-    },
-    {
-      "id": "5gdq9sk2c6nrlb0lqhn1fvhe32",
-      "title": "TCR / root causes analysis",
-      "startTime": "2026-04-09T11:00:00+05:30",
-      "preppedAt": "2026-04-09T05:00:00Z",
-      "topic": "daily_ops"
-    },
-    {
-      "id": "49ac84heldg0cb1ajjtjai3j39_20260409T070000Z",
-      "title": "Activation daily sync",
-      "startTime": "2026-04-09T12:30:00+05:30",
-      "preppedAt": "2026-04-09T06:30:00Z",
-      "topic": "growth"
-    },
-    {
-      "id": "0opb1fff230jfrond7rolodnv8_20260409T073000Z",
-      "title": "Reactivation daily sync",
-      "startTime": "2026-04-09T13:00:00+05:30",
-      "preppedAt": "2026-04-09T07:00:00Z",
-      "topic": "growth"
-    },
-    {
-      "id": "669o1b1hgvq9djop1dqoo3gvh8",
-      "title": "PLG strategy discussion",
-      "startTime": "2026-04-09T15:00:00+05:30",
-      "preppedAt": "2026-04-09T09:00:00Z",
+      "id": "i4lcdu802akilptqtklhqigvh0_20260410T113000Z",
+      "summary": "Vinay/Harsh",
+      "start": "2026-04-10T17:00:00+05:30",
+      "preppedAt": "2026-04-10T11:30:00Z",
       "topic": "strategy"
-    },
-    {
-      "id": "0prghe1ksdsl88osukv957rfv1_20260407T110000Z",
-      "title": "Fortnightly catchup w Nikhil",
-      "startTime": "2026-04-09T16:30:00+05:30",
-      "preppedAt": "2026-04-09T10:00:00Z",
-      "topic": "growth"
     }
   ],
-  "date": "2026-04-09",
-  "_lastUpdated": "2026-04-09T10:00:00Z"
+  "date": "2026-04-10",
+  "_lastUpdated": "2026-04-10T11:30:00Z"
 }

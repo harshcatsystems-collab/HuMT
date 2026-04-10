@@ -104,6 +104,8 @@
   - **Weekend pattern (confirmed):** Active 3-4 AM UTC on Sundays sharing AI tool links ("Insanity." was his reaction to one). Same founder weekend deep-research mode seen in previous weeks.
   - Recording-sensitive: immediately said "remove remove" when grey-area competitor revenue info was discussed on a recorded Blume call (Feb 18). Protective of what gets captured.
   - Asked about investment deck & projections in #founders_sync (Feb 20) — active on fundraising/investor materials.
+  - **Apr 10, 03:45 UTC (pre-dawn):** Sent CAC-first directional message ("maintain CAC, TCR is not good") to the team before the workday started. Pre-dawn intervention when economics concern him — monitors key metrics continuously, not just during work hours.
+  - **Apr 9:** Issued "RED ALERT" label on D6-7 TCR issue, called it P0, and immediately routed NPCI escalation path to HMT. Escalation-decisive when data confirms a systemic problem — doesn't wait for a meeting to label severity.
 
 **Parveen Singhal** — Co-Founder/CCO
 - **Slack:** UEJV57HQW | **Email:** parveen@stage.in
@@ -192,6 +194,7 @@
   - **Apr 2:** Proactively paused low-priority work (format requirements + pod needs assessment) to focus capacity on higher-value items. Self-prioritization signal — not waiting for HMT to triage for her.
   - **Apr 2:** Building cross-functional bridges — looped in Rohit to get Komal's time, identified synergy between Akshay + Komal efforts. Systems thinker, sees org-level opportunities.
   - **Pattern watch:** High autonomy + strategic framing. Not just executing research briefs — shaping the research agenda. Appraisal presentation pending = her chance to demonstrate yearly impact. (Watch for: how she handles appraisal synthesis)
+  - **Apr 9 (06:01 UTC):** Emailed HMT directly: "Working on Consumer Insights Search Engine" — proactive project update via email without being asked. 2nd instance of this behavior (first: Apr 2 Slack updates). Pattern: maintains her own upward communication cadence independent of HMT's asks. *Updated: 2026-04-10*
 
 **Vismit Bansal** (Head - Retention Marketing)
 - **Observations:**
@@ -252,7 +255,9 @@
   - Knows the data model deeply — corrected HuMT's M0 analysis immediately with the exact field name (`PLATFORM` on `fct_user_subscription_history`). Domain expertise > general SQL. (Feb 27)
   - Blocked time + shared Amplitude dashboards immediately after HMT shared presentations in MPDM. Action-first, no ceremony. (Feb 26)
   - Identified web trials as the ghost user problem — insight HuMT missed. Strategic analytical voice, not just execution. (Feb 27)
-- **Added:** 2026-02-16 | **Updated:** 2026-02-27
+  - **Apr 9 (21:00 IST):** Published "Growth Hypotheses - April '26" in #full-funnel-solver tagging HMT, Parveen, and Vinay simultaneously, with a "want to close this tomorrow" framing. Sets strategic narrative at co-founder visibility level with a tight 24h window — assertive pace-setting upward, not just executing downward. (1st observation)
+  - **Apr 9:** Rescheduled 3 back-to-back sessions with HMT (Activation daily sync, Reactivation daily sync, Fortnightly catchup — 3:30–5:15 PM IST). Heaviest single-day HMT access this week. Sprint-depth mode when issues are live.
+- **Added:** 2026-02-16 | **Updated:** 2026-04-10
 
 ### Gagan Gehani
 - **Role:** Was PM at UpGrad under HMT (2016-2018)

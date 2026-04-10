@@ -1,6 +1,40 @@
 # Commitments & Follow-ups
 
-> Last updated: 2026-04-09 12:00 UTC (commitment tracker cron)
+> Last updated: 2026-04-10 12:30 UTC (weekly commitment review cron)
+
+---
+
+## 🆕 New Commitments — Apr 10, 2026 (Weekly Review — Added)
+
+| Item | Who | Deadline | Channel | Notes |
+|------|-----|----------|---------|-------|
+| OpenClaw update to 2026.4.8 | HuMT | ASAP | VPS | Available since Apr 9 (cron detected). Run `openclaw update`. |
+| Metabase 404 — assign owner + fix | Hemabh Kamboj (U089APN985P) | ASAP | #data-infra | Metabase returning 404 since Apr 7–8. Also Snowflake 404s. Data stack fragile — no named owner for resolution. |
+| Netlify billing — add valid card | HMT (harsh-tohre4u account) | URGENT | Email | 2nd billing reminder received Apr 10 06:01 UTC. Site suspension risk if ignored. |
+| Shivendra meeting follow-up action items | HMT (U05QMQHCVNY) | TBD | Gmail (Shivendra Pratap Singh) | Shivendra sent post-meeting outcomes to HMT Apr 9 (10:31 UTC). Content: outcomes of meeting with Harsh bhai. Action items TBC. |
+| Senior Associate Post Production hiring approval | HMT (U05QMQHCVNY) | TBD | Internal (Shashank approved) | Shashank approved. HMT approval still pending. Role: ₹50–75K. |
+| Growth Hypotheses Apr '26 — review + close | HMT + Nikhil Nair (U08L99D58PK) + Parveen + Vinay | Apr 11 (today) | #full-funnel-solver | Nikhil posted doc Apr 9 (21:00 IST). Alerted HMT via Telegram. Close window: today. Doc: https://docs.google.com/document/d/1Aug2iOFnTb08mMtspUQU0sjQsRf7XCIeQ6iNZIywnW4/edit |
+| Prakash Jha visit outcomes — capture any content/partnership actions | HMT | TBD | Internal | Filmmaker visited STAGE office Apr 10, 6:15 PM IST. Company-wide session. Any commitments/follow-ups from this meeting need capture. |
+
+---
+
+## 🆕 New Commitments — Apr 10, 2026 (Friday Scan)
+
+| Item | Who | Deadline | Channel | Notes |
+|------|-----|----------|---------|-------|
+| Finance payments batch — approve all | HMT (U05QMQHCVNY) + Vinay (UEHET2Q2G) + Shashank (UE0KTBS8P) | Today ASAP | #finance-department | Saloni (U05HAE85RL2) tagged all founders 12:51 UTC. HuMT bot: "checking with Harsh" at 12:54 UTC. **HMT action required.** |
+| PhonePe TCR update to group | Yash Verma (U039SEJGKNZ) | Today | #full-funnel-solver | HMT directly asked 12:15 UTC: "What's the update for the group?" Yash responsible for PhonePe reconciliation (D108). |
+| Data hypotheses list — team input + close | Nikhil Nair (U08L99D58PK) | Apr 11 (tomorrow) | #full-funnel-solver | Nikhil posted hypotheses 14:19 UTC, wants additions/suggestions. Plans to close tomorrow to start data extraction. |
+| iOS app campaigns — start now | Parveen's perf team (U05GB6EGFJM) + Vedant (U086LB19E0P) | ASAP | #stage_maino | Vinay approved 05:27 UTC: "pls start these campaigns." Parveen confirmed iOS is working fine. |
+| Meta Catalogue Ads — execute revised plan | Parveen's perf team | ASAP (priority) | #stage_maino | Vinay tagged as "high value potential item for sure" (05:36 UTC). Parveen shared revised recommendation based on October learnings. |
+| Tambola/gamification event data — share with Parveen | Hemabh Kamboj (U089APN985P) | Today | #stage_maino | Hemabh: "This event already exists, let me get back to you with details" (05:57 UTC). Parveen asked for event name + logic. |
+| Re-acq pod goals alignment | Shubham Singla (U09AK8X90Q0) | Today/ASAP | #full-funnel-solver | Shubham posted goals: 0.18% → 0.36% re-acq rate target. Tagged HMT + Vinay for alignment. |
+| fal.ai $500 payment approval | Shashank Vaishnav (UE0KTBS8P) | ASAP | #credit_card_invoices | Lukesh Kolhe (U08UCNVRKR7) requested 08:45 UTC — for Seedance 2.0 + video/image generation models. |
+| Minimum in-app purchase fix (Play Store, ₹1) | Yash Verma (U039SEJGKNZ) → Sunil Yadav (U09S4HRMG7K) | ASAP | #stage-product-feedback | Gauri flagged wrong min value 09:33 UTC. Yash delegated to Sunil (10:20 UTC). |
+| Vendor invoices FY 2025-26 upload to Pazy | All employees | Apr 15, 2026 | #stage-ke-krantikaari | Finance team @channel 10:42 UTC — hard deadline for FY year-end invoices. |
+| Update with HMT — 1user_1agent project | Manasvi Dobhal (U08MRHK61BK) | Early next week | #1user_1agent | Manasvi cancelled 2 PM today, will schedule update with HMT early next week. |
+| M0 App Uninstallers campaign — baseline monitoring | Kashish Thakur (U08DLCSK7QS) + Vinay | Ongoing | #stage_maino | Kashish launched new META app install campaign for M0 uninstallers 16:21 UTC Apr 9. Vinay's reply indicates need to track baseline (cuts: channel/format/title/culture/audience/promo type). |
+| Doojvar 2 pre-release testing (HR censor board) | QA/content team + Naman Girdhaar (U07TQ7P64SK) | ASAP | #release-cycle | Doojvar 2 live for given cohort users. Vinay, Priyanka, and others tagged for review. |
 
 ---
 
@@ -32,6 +66,19 @@
 | Update Marathi region in blended links | Apr 9 09:10 UTC | Hemabh confirmed "done". ✅ |
 | Finance batch payments | Apr 9 12:44 UTC | HMT approved all 8. ✅ |
 | Android TV — GrowthBook SDK + Amazon Fire TV rollout | Apr 9 12:50 UTC | 5% rollout live, tested. ✅ |
+
+---
+
+## ⚠️ Overdue as of Apr 10 — Flagged
+
+| Item | Original Owner | Stated Deadline | Days Overdue | Notes |
+|------|---------------|-----------------|-------------|-------|
+| Speak to NPCI contact re: PhonePe/GPay TCR pattern (D97) | HMT (U05QMQHCVNY) | Apr 8 ASAP | **2 days** | Vinay tagged HMT Apr 8 08:34 UTC. PhonePe webhook RCA resolved at tech level, but systemic PSP escalation via NPCI still open. |
+| Long binge series pod plan update (D111) | Long binge team | Immediate (Vinay flagged Apr 8) | **2 days** | Vinay explicitly called out lack of timelines. No commitment response seen. Still open. |
+| Approve 4 premium Claude seats (D110) | Shashank (UE0KTBS8P) | ASAP (Apr 9) | **1 day** | Still pending — no confirmation seen. |
+| fal.ai $500 approval | Shashank (UE0KTBS8P) | ASAP (Apr 10) | Same day | Lukesh requested 08:45 UTC for Seedance 2.0 + video/image gen models. |
+| Finance batch payments | HMT + founders | Today | Same day | Saloni tagged Apr 9 18:21 IST. HuMT bot acknowledged. Status at end of Apr 10 scan: **still pending HMT approval.** |
+| PhonePe TCR update to group | Yash Verma (U039SEJGKNZ) | Apr 10 (HMT asked 12:15 UTC) | Same day | HMT directly asked Yash in #full-funnel-solver. Yash committed to reconciliation script by Apr 11 EOD. Update to group may have been verbal in TCR meeting. |
 
 ---
 
@@ -175,20 +222,23 @@
 
 Items older than 7 days with no resolution. **These need a decision — close, park, or reassign?**
 
+*Weekly review Apr 10: bulk-closed superseded items (D5, D6, D7, D68). D29 status unknown — flagged URGENT. D64 still no owner — critical.*
+
 | # | Item | Owner | Age | Flag | Recommendation |
 |---|------|-------|-----|------|----------------|
-| D5 | CLM setup for chatbot launch | Vismit Bansal | 35+ days | CLM launched, chatbot live. New infra deployed Mar 13. 35 days old. | **CLOSE** — superseded by live deployment |
-| D6 | Chatbot UAT video | Junaid Qureshi | 35+ days | Chatbot launched, went live, regression fixed. Flutter native conversion pushed Mar 25. | **CLOSE** — superseded by live deployment |
-| D7 | 1D plan tracking sheet | Deepak Kumar / Hemabh | 34+ days | No updates in 34 days. Full Funnel Sprint has own tracking. | **CLOSE** — replaced by sprint tracker |
-| D28 | PhonePe PDN all plan types | Yash Verma | 23 days | PhonePe trial rate firing red again this week (4.76–5.48% vs 8% threshold). Actually RELEVANT again. | **REACTIVATE** — needs status check |
-| D29 | Randeep Hooda campaign shutdown | Parveen | 24 days | ₹20L/week burn. 24 days with no status. Either shut down or still burning. | **VERIFY URGENTLY** — ₹20L/week |
-| D61 | Chatbot weekly report (Aaliya) | Aaliya Mirza | 15 days | Was deferred to Monday. Chatbot numbers posted in #full-funnel-solver but no formal weekly report format seen. | **VERIFY** — is formal report happening? |
-| D64 | Airbyte→ClickHouse pipeline failures | Data/Devops | 12 days | Auto-disable warning triggered this week. 3 more failures on Mar 26. Still no human owner named. SNOWFLAKE AVAILABLE now (Hemabh gave credentials Mar 26) but pipeline itself still broken. | **CRITICAL — assign owner** |
-| D65 | Add preprod secrets (Naman Rao) | Rohit Singh | 9 days | OOO last week — status never confirmed. | **CHECK** |
-| D66 | K9s + Jenkins access (Sakshi) | Rohit Singh | 9 days | No acknowledgment. Rohit Singh OOO last week. | **CHECK** |
-| D68 | Test 4.66.3 build | Junaid Qureshi | 9 days | Status unknown. Likely completed or superseded (4.67.4 OTA patch deployed Mar 26). | **CLOSE or VERIFY** |
-| D77 | Fund shortfall — ₹5.30cr due Mar 27 | Vinay + Shashank | 7 days | Due TODAY. No direction logged from Vinay/Shashank as of morning brief. 7 days of no response. | **⚠️ DUE TODAY — STATUS?** |
-| D78 | Google India ₹67L payment | HMT + founders | 6 days | Pending since Mar 21. Still in Saloni's queue? | **VERIFY / APPROVE** |
+| D28 | PhonePe PDN all plan types | Yash Verma | 30+ days | PhonePe TCR RCA resolved Apr 9 (webhook batching). Yash committed to live reconciliation script by Apr 11 EOD. | **VERIFY Apr 11** — is reconciliation script live? |
+| D29 | Randeep Hooda campaign shutdown | Parveen | 31+ days | ₹20L/week burn. No status update in 31 days. Naate ads fully paused Apr 8. Was RH campaign part of Naate? **Verify if this is the same budget or separate.** | **⚠️ VERIFY URGENTLY** — ₹20L/week if still running |
+| D61 | Chatbot weekly report (Aaliya) | Aaliya Mirza | 22+ days | Aaliya posting April plan in #full-funnel-solver. Formal weekly report format not confirmed. | **PARK — absorbed into monthly cadence** |
+| D64 | Airbyte→ClickHouse pipeline failures | Data/Devops | 19+ days | Snowflake now available (Hemabh credentials Mar 26). Metabase also returning 404 as of Apr 7. Pipeline owner still unnamed. | **CRITICAL — assign owner immediately** |
+| D65 | Add preprod secrets (Naman Rao) | Rohit Singh | 16+ days | Rohit Singh back from OOO. Status never confirmed. | **CHECK — follow up with Rohit Singh** |
+| D66 | K9s + Jenkins access (Sakshi) | Rohit Singh | 16+ days | Rohit Singh back. Status never confirmed. | **CHECK — follow up with Rohit Singh** |
+| D77 | Fund shortfall — ₹5.30cr | Vinay + Shashank | 14+ days | Was due Mar 27. No direction logged in 2 weeks. Finance batches being approved normally. | **VERIFY — resolved quietly or still open?** |
+| D78 | Google India ₹67L payment | HMT + founders | 13+ days | Pending since Mar 21. Finance batch was approved Apr 6 (₹1.55Cr). Was this included? | **VERIFY — check finance batch logs** |
+| D97 | NPCI contact re: PhonePe/GPay TCR pattern | HMT (U05QMQHCVNY) | 2 days | Vinay tagged HMT Apr 8. PhonePe RCA resolved at tech level (webhook batching) but systemic PSP pattern still needs NPCI-level escalation. | **⚠️ HMT ACTION REQUIRED** |
+| D5 | CLM setup for chatbot | Vismit Bansal | 35+ days | Chatbot live, Flutter native pushed Mar 25. | ✅ **CLOSED — superseded** |
+| D6 | Chatbot UAT video | Junaid Qureshi | 35+ days | Chatbot live end-to-end. | ✅ **CLOSED — superseded** |
+| D7 | 1D plan tracking sheet | Deepak / Hemabh | 34+ days | Full Funnel Sprint owns tracking now. | ✅ **CLOSED — replaced** |
+| D68 | Test 4.66.3 build | Junaid Qureshi | 16+ days | Superseded by 4.67.4 OTA patch + 4.69.1 TestFlight. | ✅ **CLOSED — superseded** |
 
 ---
 
@@ -198,8 +248,10 @@ Items older than 7 days with no resolution. **These need a decision — close, p
 |------|-------------|--------|----------|
 | Watchdog / dead man's switch cron | 2026-03-13 | SIGINT trigger gone (WhatsApp removed, fresh machine openclaw2). No freeze history on new machine. | Only if another freeze occurs. |
 | Slack groupPolicy security (open vs locked) | 2026-03-08 | Awaiting HMT decision on acceptable risk. Behavioral boundary implemented (check-file-access.sh) as interim fix. | Park indefinitely — behavioral fix sufficient. |
-| Series C fundraising context tracking | — | Goodwater dry run held Mar 27. Chi-Hua skeptical on commercial proof. Vinay has action items. | Reactivate when HMT needs deck/investor prep support or follow-up materials. |
+| Series C fundraising context tracking | 2026-03-27 | Goodwater dry run held Mar 27. Chi-Hua skeptical on commercial proof. Vinay has action items (shorten front section, send personalized videos, send Bhojpuri trailer). Quarterly investor update filed Apr 8. | Reactivate when HMT needs deck/investor prep support or follow-up materials. |
 | collab.stage.in Claude update | 2026-03-20 | Vinay: "mostly deprecated." No clear action. | Park unless Nikhil escalates. |
+| Goodwater follow-up — written feedback from investors | 2026-03-27 | Chi-Hua / Vivek action items. Quarterly investor update filed Apr 8 may have superseded. | Check with HMT if investor feedback was received. |
+| D61 — Chatbot weekly report (Aaliya) | 2026-04-10 | Aaliya posting April plans in #full-funnel-solver. Formal weekly format absorbed into monthly cadence. | Reactivate if HMT wants structured weekly format. |
 
 ---
 

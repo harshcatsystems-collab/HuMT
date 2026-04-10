@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-09T10:00:54.229Z",
+  "updatedAt": "2026-04-10T12:03:56.219Z",
   "entries": {
     "memory:memory/2026-03-21.md:276:313": {
       "key": "memory:memory/2026-03-21.md:276:313",
@@ -302,6 +302,758 @@
         "vismit's",
         "content",
         "analysis"
+      ]
+    },
+    "memory:memory/2026-04-09.md:290:314": {
+      "key": "memory:memory/2026-04-09.md:290:314",
+      "path": "memory/2026-04-09.md",
+      "startLine": 290,
+      "endLine": 314,
+      "source": "memory",
+      "snippet": "**Pranay PIP (light scan):** No new Pranay DM activity. Pranay mentioned in Activation plan context (collaboration with Ashish Pandey on chatbot optimization for April). No new signals on Cricket Saathi or multi-device. **No escalations needed.** D6-7 TCR meeting tomorrow 11 AM IST is a key watch item — Vinay called it, all stakeholders alerted yesterday. ## 12:33 UTC — Heartbeat Check (6:03 PM IST) **Channels:** All clean. **Gmail:** - **Yash Verma (stage.in)**: Re: Spike in D7 trial cancellations via PhonePe — IMPORTANT thread, active reply chain. D7 trial cancellation spike is a significant retention/revenue signal. > 🧠 D7 PhonePe cancellation spike being investigated — Yash replyin",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.652340516235447,
+      "maxScore": 0.652340516235447,
+      "firstRecalledAt": "2026-04-10T03:00:33.084Z",
+      "lastRecalledAt": "2026-04-10T03:00:33.084Z",
+      "queryHashes": [
+        "74b4650b4183"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "multi-device",
+        "d6-7",
+        "stage.in",
+        "retention/revenue",
+        "pranay",
+        "pip",
+        "light",
+        "scan"
+      ]
+    },
+    "memory:memory/2026-02-28.md:55:75": {
+      "key": "memory:memory/2026-02-28.md:55:75",
+      "path": "memory/2026-02-28.md",
+      "startLine": 55,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "> 🧠 **Missed observation — Saturday afternoon sacrificed** — HMT spent 17:00-17:30 UTC (evening IST, his personal time) fixing OpenClaw instead of resting. This is the second Saturday working session in 8 days (Feb 22: STAGE research; Feb 28: incident recovery). Pattern: Weekend deep work when systems break or when he needs deep concentration. But also: work-life boundary erosion when crisis hits. (first capture of this pattern — 1st occurrence) > 🧠 **Missed observation — Self-correction invited** — HMT asked \"would you like to reflect if you missed on persona reflections?\" — actively coaching me to improve my own PIS. He notices when I'm incomplete and pushes me to be better. This is *me",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.4401915460824966,
+      "maxScore": 0.4401915460824966,
+      "firstRecalledAt": "2026-04-10T12:00:17.960Z",
+      "lastRecalledAt": "2026-04-10T12:00:17.960Z",
+      "queryHashes": [
+        "df7566afe8af"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "00-17",
+        "work-life",
+        "self-correction",
+        "missed",
+        "observation",
+        "saturday",
+        "afternoon",
+        "sacrificed"
+      ]
+    },
+    "memory:memory/2026-03-27.md:486:507": {
+      "key": "memory:memory/2026-03-27.md:486:507",
+      "path": "memory/2026-03-27.md",
+      "startLine": 486,
+      "endLine": 507,
+      "source": "memory",
+      "snippet": "- Standouts: Pranay (IPL sprint), Vismit (51rs analysis), Ashish (Tambola +13pp lift data), Nishita (AI Framework rebound) - Flag: Samir — 4th low week, silent since Mon. Recommended 1:1 to HMT. - Flag: Radhika — late-nights → fever pattern. Gentle flag raised. - Baseline updated: memory/people-baseline.md → calibrated to Mar 21-27 > 🧠 HMT: \"lets park it for now. i am not able to think clearly. quite cognitively fatigued, been a heavy week.\" — Knows his limits, communicates them clearly. Doesn't push through when depleted. This is the ambiguity tolerance + self-regulation he described in the Ashoka podcast. (Pattern: self-aware about cognitive state) > 🧠 HMT said \"lets park it for now.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.4397948622703552,
+      "maxScore": 0.4397948622703552,
+      "firstRecalledAt": "2026-04-10T12:00:17.960Z",
+      "lastRecalledAt": "2026-04-10T12:00:17.960Z",
+      "queryHashes": [
+        "df7566afe8af"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "late-nights",
+        "memory/people-baseline.md",
+        "21-27",
+        "self-regulation",
+        "self-aware",
+        "standouts",
+        "pranay",
+        "ipl"
+      ]
+    },
+    "memory:memory/2026-03-26.md:403:437": {
+      "key": "memory:memory/2026-03-26.md:403:437",
+      "path": "memory/2026-03-26.md",
+      "startLine": 403,
+      "endLine": 437,
+      "source": "memory",
+      "snippet": "### No HMT mentions requiring action ### No new DMs ### Netlify: 200 OK ### Channel membership: NO_CHANGES --- ## 12:36 UTC Heartbeat (6:06 PM IST) > 🧠 No new persona observations this heartbeat — HMT was running the townhall (shared deck at 10:04 UTC, townhall likely 3:30-6:00 PM IST) ### Slack Scan Summary **#full-funnel-solver updates:** - Parveen (18:21 UTC): \"There are two types of companies. One asks: 'How many users can we buy?' The other asks: 'How many users can we keep?'\" — Aligns with townhall LTV-first messaging - Ashish Pandey (13:05 UTC): Tambola Game update — 6,764 unique players across 6 Sundays, 50% come back - Kawaljeet (12:07 UTC): M0 Watcher % Week 1 update — Targe",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.42999624013900756,
+      "maxScore": 0.42999624013900756,
+      "firstRecalledAt": "2026-04-10T12:00:17.960Z",
+      "lastRecalledAt": "2026-04-10T12:00:17.960Z",
+      "queryHashes": [
+        "df7566afe8af"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "no-changes",
+        "30-6",
+        "full-funnel-solver",
+        "ltv-first",
+        "hmt",
+        "mentions",
+        "requiring",
+        "action"
+      ]
+    },
+    "memory:memory/2026-03-20.md:520:544": {
+      "key": "memory:memory/2026-03-20.md:520:544",
+      "path": "memory/2026-03-20.md",
+      "startLine": 520,
+      "endLine": 544,
+      "source": "memory",
+      "snippet": "**Substantive new HMT observations:** 8 **Patterns promoted to USER.md:** 1 (privacy reflex — 2nd occurrence this week, not yet 3rd) **Missed observations caught in review:** 3 **People.md additions:** 8 (Pranay ×2, Shantanu ×1, Shubham Singla ×1, Parveen ×1, Vismit ×1, Radhika ×1, Samir ×1, Divya ×3) --- #### Week Character This was a **sprint launch + personal trust escalation week** — two very different registers happening simultaneously. At work: HMT went into full execution mode (2h/day retention sprint, 4 PODs, Review 1 milestone). Almost zero direct chat with HuMT — he trusted the system to run and deliver briefs. Silent approval pattern dominated. Personally: The biggest interac",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.4246737092733383,
+      "maxScore": 0.4246737092733383,
+      "firstRecalledAt": "2026-04-10T12:00:17.960Z",
+      "lastRecalledAt": "2026-04-10T12:00:17.960Z",
+      "queryHashes": [
+        "df7566afe8af"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "user.md",
+        "people.md",
+        "2h/day",
+        "substantive",
+        "new",
+        "hmt",
+        "observations",
+        "patterns"
+      ]
+    },
+    "memory:memory/2026-03-02.md:294:353": {
+      "key": "memory:memory/2026-03-02.md:294:353",
+      "path": "memory/2026-03-02.md",
+      "startLine": 294,
+      "endLine": 353,
+      "source": "memory",
+      "snippet": "**Also logged 3 first-occurrence observations:** - Escalates from fix → prevent when errors repeat - Catches logic gaps (diagnosis before solution) - Standards don't drop when sick **Total PIS output today:** 12 observations (6 captured live, 6 caught in reflection) **Assessment:** Strong PIS day. Captured as I went, caught patterns, promoted at threshold. ## Heartbeat 2:02 PM UTC > 🧠 No new persona observations this heartbeat ## Heartbeat 14:02 UTC > 🧠 No new persona observations this heartbeat ## Heartbeat 2:03 PM UTC > 🧠 No new persona observations this heartbeat ## Heartbeat 2:05 PM UTC > 🧠 No new persona observations this heartbeat ## Heartbeat 2:06 PM UTC > 🧠 No new p",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.4193689942359924,
+      "maxScore": 0.4193689942359924,
+      "firstRecalledAt": "2026-04-10T12:00:17.960Z",
+      "lastRecalledAt": "2026-04-10T12:00:17.960Z",
+      "queryHashes": [
+        "df7566afe8af"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "first-occurrence",
+        "logged",
+        "first",
+        "occurrence",
+        "observations",
+        "escalates",
+        "fix",
+        "prevent"
+      ]
+    },
+    "memory:memory/2026-03-19.md:370:415": {
+      "key": "memory:memory/2026-03-19.md:370:415",
+      "path": "memory/2026-03-19.md",
+      "startLine": 370,
+      "endLine": 415,
+      "source": "memory",
+      "snippet": "> 🧠 HMT said \"keep at it with all guns blazing 🫡💥\" — high engagement signal. This is his top priority tracking request. Pattern: when HMT uses emojis like 🫡💥, it signals genuine enthusiasm + mandate. --- ## 11:10 UTC — Telegram Auto-Split Confirmed Working Tested long message (STAGE company overview, ~4K chars) — successfully auto-split into multiple messages. Config confirmed: - `textChunkLimit: 3800` - `chunkMode: \"length\"` HMT confirmed it works in both DMs and Topics. No more truncation issues. --- ## 11:15 UTC — Payment Approval Queue Saloni Goyal posted 4 payments totaling **₹2.58 Cr** in #finance-department: 1. Google India — ₹50L (Bill #5460763146) 2. Google India — ₹1 C",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.377834415435791,
+      "maxScore": 0.377834415435791,
+      "firstRecalledAt": "2026-04-10T12:00:55.534Z",
+      "lastRecalledAt": "2026-04-10T12:00:55.534Z",
+      "queryHashes": [
+        "92bc0575f084"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "auto-split",
+        "2.58",
+        "finance-department",
+        "hmt",
+        "said",
+        "keep",
+        "all",
+        "guns"
+      ]
+    },
+    "memory:memory/2026-04-08.md:164:191": {
+      "key": "memory:memory/2026-04-08.md:164:191",
+      "path": "memory/2026-04-08.md",
+      "startLine": 164,
+      "endLine": 191,
+      "source": "memory",
+      "snippet": "**Channels:** - Slack channel diff: NO_CHANGES - HMT DM: No new messages - #full-funnel-solver: No new activity - #finance-department: No @HuMT mentions - Tracked threads: 24 scanned, no escalations **Gmail (last 2h):** - **Read AI**: Quarterly Investor Updates meeting report (Apr 8 @ 5 PM) — auto-generated, call underway - **HR + ZohoPayroll**: IT Investment Declaration due Apr 15, 2026 (for FY25-26 + FY26-27) - **ZohoPayroll**: March 2026 payslip ready - **Pragi Khandelwal (Founders 2.0 Conf Singapore)**: HMT wrote back, she's following up — conference invite > 🧠 IT declaration deadline Apr 15 — worth surfacing in tomorrow's brief. HMT likely on investor call, not reading email right no",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.36788362860679624,
+      "maxScore": 0.36788362860679624,
+      "firstRecalledAt": "2026-04-10T12:00:55.534Z",
+      "lastRecalledAt": "2026-04-10T12:00:55.534Z",
+      "queryHashes": [
+        "92bc0575f084"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "no-changes",
+        "full-funnel-solver",
+        "finance-department",
+        "auto-generated",
+        "fy25-26",
+        "fy26-27",
+        "2.0",
+        "channels"
+      ]
+    },
+    "memory:memory/2026-02-27.md:146:171": {
+      "key": "memory:memory/2026-02-27.md:146:171",
+      "path": "memory/2026-02-27.md",
+      "startLine": 146,
+      "endLine": 171,
+      "source": "memory",
+      "snippet": "- **HMT's challenge:** Current approach is too incremental, still operating with \"encanto baggage\" - **Vision:** \"One homepage per user\" — Netflix-level personalization where the feed looks fresh for different users AND the same user at different instances - **Lever:** \"Stage Brain\" project — training a model on all user data as an extension of personalization - **Directive to Manasvi + Shwetabh:** Think more aggressively and ambitiously. Move toward AI-native, not incremental improvements. #### Action Items - Manasvi + Shwetabh: Think about a more aggressive, ambitious approach to personalization - Weekly updates continue every Friday - Personalization to be treated as central pluggable mo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.3675670325756073,
+      "maxScore": 0.3675670325756073,
+      "firstRecalledAt": "2026-04-10T12:00:55.534Z",
+      "lastRecalledAt": "2026-04-10T12:00:55.534Z",
+      "queryHashes": [
+        "92bc0575f084"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "netflix-level",
+        "ai-native",
+        "hmt's",
+        "challenge",
+        "current",
+        "approach",
+        "too",
+        "incremental"
+      ]
+    },
+    "memory:memory/2026-02-27.md:1:24": {
+      "key": "memory:memory/2026-02-27.md:1:24",
+      "path": "memory/2026-02-27.md",
+      "startLine": 1,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "# 2026-02-27 (Friday) ### Metabase Anomaly Check (14:00 UTC) - 🚨 **Trial Count: 11,713 (-26.2% vs 7d avg 15,863)** — significant drop, alerted HMT - New Subs: 5,084 (-14.1%), Revenue: ₹38.07L (-14.0%) — both below average but not alert-level - ML Widget: 62.96% vs Non-ML 52.49% (+10.5pp lift) — holding strong - Sent alert to Telegram ## Morning Brief — 3:47 AM UTC - Sent unified morning brief to Telegram - Key highlights: New Paid +11% (6,986), Aha rate concerning at 4.4%, JAGAT launch energy, 1080 CMS titles stuck in transcoding - Finance dept needs HMT for Yes Bank transfer + payment approvals - #content_strategy woke up after 30+ days dormancy (Nidhi shared TAM research) - Thin week ah",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.3675445646047592,
+      "maxScore": 0.3675445646047592,
+      "firstRecalledAt": "2026-04-10T12:00:55.534Z",
+      "lastRecalledAt": "2026-04-10T12:00:55.534Z",
+      "queryHashes": [
+        "92bc0575f084"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "26.2",
+        "14.1",
+        "38.07l",
+        "14.0",
+        "alert-level",
+        "62.96",
+        "non-ml",
+        "52.49"
+      ]
+    },
+    "memory:memory/2026-02-27.md:20:39": {
+      "key": "memory:memory/2026-02-27.md:20:39",
+      "path": "memory/2026-02-27.md",
+      "startLine": 20,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "- Politely declined sharing internal info (briefs, priorities, metrics). Explained HuMT's role as HMT's personal assistant. Offered to relay messages to HMT. - He seemed curious/exploratory about what HuMT can do. ## Shashank DM — 6:52 AM UTC - Shashank Vaishnav DM'd HuMT asking to \"urgently send appreciation email to shashank Vaishnav\" claiming \"harsh is driving.\" - Declined — this is an external action (email) and the instruction didn't come from HMT directly. Classic social engineering pattern (urgency + authority claim + bypassing normal channel). - Told Shashank that HMT can instruct me directly if he wants it done. - Follow-up: pushed again (\"he's busy, do it\"). Held firm. He accepted",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.36704720258712764,
+      "maxScore": 0.36704720258712764,
+      "firstRecalledAt": "2026-04-10T12:00:55.534Z",
+      "lastRecalledAt": "2026-04-10T12:00:55.534Z",
+      "queryHashes": [
+        "92bc0575f084"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "curious/exploratory",
+        "follow-up",
+        "politely",
+        "declined",
+        "sharing",
+        "internal",
+        "info",
+        "briefs"
+      ]
+    },
+    "memory:memory/2026-03-26.md:642:679": {
+      "key": "memory:memory/2026-03-26.md:642:679",
+      "path": "memory/2026-03-26.md",
+      "startLine": 642,
+      "endLine": 679,
+      "source": "memory",
+      "snippet": "> 🧠 HMT sharing townhall deck for context enrichment before running it — trusts me with internal strategic material, wants me to understand the \"why\" behind everything. Pattern: shares primary sources (Ashoka podcast, townhall deck) to build deep context. ### Slack Scans **Channel diff:** NO_CHANGES **@HuMT Mentions Found:** 1. `1774447530` | #finance-department | rahul.chauhan: Payment approval request (Mar 25, \"Please approve all payments\" + Payment sheet 25th March.xlsx) - Tags: HuMT, founders (Shashank, HMT, Vinay) - Status: From yesterday, HMT was in townhall prep today — may be pending **#full-funnel-solver Updates (Tier 1):** 1. **M0 Watcher % Sprint Update (Vismit):**",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.36462619006633756,
+      "maxScore": 0.36462619006633756,
+      "firstRecalledAt": "2026-04-10T12:00:55.534Z",
+      "lastRecalledAt": "2026-04-10T12:00:55.534Z",
+      "queryHashes": [
+        "92bc0575f084"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "no-changes",
+        "finance-department",
+        "rahul.chauhan",
+        "march.xlsx",
+        "full-funnel-solver",
+        "hmt",
+        "sharing",
+        "townhall"
+      ]
+    },
+    "memory:memory/2026-02-26.md:112:142": {
+      "key": "memory:memory/2026-02-26.md:112:142",
+      "path": "memory/2026-02-26.md",
+      "startLine": 112,
+      "endLine": 142,
+      "source": "memory",
+      "snippet": "- 📁 **Gemini Notes** (9 shortcuts) — auto-generated notes (shortcuts since Gemini owns originals) Files owned by us: moved directly. Files owned by others (Gemini, shared docs): created shortcuts. Folder map saved to `memory/gdrive-folder-map.json` for future auto-filing. Rule: all future docs I create auto-file into the right folder. Structure evolves as needed. > 🧠 \"i find it challenging to find them\" — HMT notices friction in his own tooling and asks for help organizing. Delegates the system design to me but will use the result daily. This is infrastructure trust — not just task delegation but workflow delegation. ## Netlify Deployment (07:21 UTC) Permanent presentations site deplo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.451465231180191,
+      "maxScore": 0.451465231180191,
+      "firstRecalledAt": "2026-04-10T12:01:26.218Z",
+      "lastRecalledAt": "2026-04-10T12:01:26.218Z",
+      "queryHashes": [
+        "3574200f3bea"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "auto-generated",
+        "memory/gdrive-folder-map.json",
+        "auto-filing",
+        "auto-file",
+        "gemini",
+        "shortcuts",
+        "auto",
+        "generated"
+      ]
+    },
+    "memory:memory/2026-02-26.md:95:118": {
+      "key": "memory:memory/2026-02-26.md:95:118",
+      "path": "memory/2026-02-26.md",
+      "startLine": 95,
+      "endLine": 118,
+      "source": "memory",
+      "snippet": "2. **Performance Ads Automation** (2 PM) — Shift to agentic perf marketing, 3-layer framework, 65% M0 ghosts, CPA→LTV metric shift, Meta vs fly data ₹80 discrepancy Google Docs created: - AI Film Making: https://docs.google.com/document/d/1aNcC9woVZwA30uHA_ynMGoT9EdxBeaCF8Q6D0fQR79A/edit - Perf Ads: https://docs.google.com/document/d/1JA3HBvvN_QWEL3UzNfzX_Jd1cuWrhcX7SvrsZ1eAcP8/edit Both attached to respective calendar events. Local copy at memory/2026-02-25-meetings.md. > 🧠 \"please find the gemini notes on these two\" — HMT expects me to locate meeting artifacts independently. He knows they exist in his email/Drive, trusts me to find them. Delegation of retrieval = trust in my ability to",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.4436491310596466,
+      "maxScore": 0.4436491310596466,
+      "firstRecalledAt": "2026-04-10T12:01:26.218Z",
+      "lastRecalledAt": "2026-04-10T12:01:26.218Z",
+      "queryHashes": [
+        "3574200f3bea"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "3-layer",
+        "memory/2026-02-25-meetings.md",
+        "email/drive",
+        "performance",
+        "ads",
+        "automation",
+        "shift",
+        "agentic"
+      ]
+    },
+    "memory:memory/2026-02-26.md:85:100": {
+      "key": "memory:memory/2026-02-26.md:85:100",
+      "path": "memory/2026-02-26.md",
+      "startLine": 85,
+      "endLine": 100,
+      "source": "memory",
+      "snippet": "> 🧠 \"would you like to reflect and add?\" — invites self-correction rather than commanding it. Consistent with promoted USER.md pattern. But this time there's a new dimension: he's asking me to be introspective, not just accurate. He wants to see if I can generate observations without stimuli. Testing depth of self-awareness. > 🧠 2-day silence → warm return. No complaints about brief quality, no \"you missed X.\" The thumbs-up streak (14+ across Feb 25-26) followed by \"missed you\" suggests: when the system runs well autonomously, HMT's trust compounds silently. He doesn't need to supervise = highest form of trust. > 🧠 Pattern promotion candidate: **Returns with warmth after silence** — Feb",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.432729759812355,
+      "maxScore": 0.432729759812355,
+      "firstRecalledAt": "2026-04-10T12:01:26.218Z",
+      "lastRecalledAt": "2026-04-10T12:01:26.218Z",
+      "queryHashes": [
+        "3574200f3bea"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "self-correction",
+        "user.md",
+        "self-awareness",
+        "2-day",
+        "thumbs-up",
+        "25-26",
+        "would",
+        "you"
+      ]
+    },
+    "memory:memory/2026-04-10.md:170:192": {
+      "key": "memory:memory/2026-04-10.md:170:192",
+      "path": "memory/2026-04-10.md",
+      "startLine": 170,
+      "endLine": 192,
+      "source": "memory",
+      "snippet": "- Channel diff: NO_CHANGES (361 stable) - HMT DM: No new messages - Netlify: 200 OK - #finance-department: Latest ts 1775739063 (Apr 9, 18:21 IST) — same message from yesterday, already handled. No new action. - #full-funnel-solver: CSL vs non-CSL spend data posted (Apr 10, 3:16 PM IST). Vinay confirmed screening room for TCR meeting this morning. - #stage-ke-krantikaari: Vendor invoices for FY25-26 must be uploaded to Pazy by April 15 (Shashank's team announcement, 4:12 PM IST). - #release-cycle: Doojvar 2 (Haryanvi) pre-released to censor board cohorts. **Gmail (last 6h):** - Gemini meeting notes: \"Full Funnel - April Plan\" (3:01 PM IST) — M0 watcher performance, re-engagement via product",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.0027712128033268,
+      "maxScore": 0.591291188346349,
+      "firstRecalledAt": "2026-04-10T12:01:26.218Z",
+      "lastRecalledAt": "2026-04-10T12:01:35.437Z",
+      "queryHashes": [
+        "3574200f3bea",
+        "977c41ce6275"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "no-changes",
+        "finance-department",
+        "full-funnel-solver",
+        "non-csl",
+        "stage-ke-krantikaari",
+        "fy25-26",
+        "release-cycle",
+        "pre-released"
+      ]
+    },
+    "memory:memory/2026-04-08.md:88:121": {
+      "key": "memory:memory/2026-04-08.md:88:121",
+      "path": "memory/2026-04-08.md",
+      "startLine": 88,
+      "endLine": 121,
+      "source": "memory",
+      "snippet": "**Investor call watch:** 5 PM IST. ~90 min away at time of scan. > 🧠 HMT posted @channel in #quarterly_investor_updates himself at 11:11 IST — he's actively managing the investor prep, not delegating it. High ownership signal on things that matter to fundraise story. --- ## Heartbeat 16:31 IST (11:01 UTC) **Scans run:** - Channel diff: NO_CHANGES - HMT DM: No new messages - Full Slack scan: No new signals since last heartbeat (09:32 UTC) - All today's meetings prepped by JIT cron (7 meetings, incl. investor call at 5 PM) - #credit_card_invoices: ElevenLabs dubbing API approval request — routes to Parveen, not HMT **Status:** Investor call in 29 min. No new fires. Vinay's D6-7 RED ALERT",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.38716561198234556,
+      "maxScore": 0.38716561198234556,
+      "firstRecalledAt": "2026-04-10T12:01:27.984Z",
+      "lastRecalledAt": "2026-04-10T12:01:27.984Z",
+      "queryHashes": [
+        "0f6a7ad0bba9"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "quarterly-investor-updates",
+        "no-changes",
+        "credit-card-invoices",
+        "d6-7",
+        "investor",
+        "call",
+        "watch",
+        "ist"
+      ]
+    },
+    "memory:memory/2026-02-16.md:265:278": {
+      "key": "memory:memory/2026-02-16.md:265:278",
+      "path": "memory/2026-02-16.md",
+      "startLine": 265,
+      "endLine": 278,
+      "source": "memory",
+      "snippet": "- **HMT is a CEO-level operator**: Email mix shows partnerships, investor relations, HR oversight, BD, and infra — classic founder wearing all hats. - **Samsung deal is hot**: Most thread activity, multiple back-and-forth in single days. This is likely the highest-priority external deal right now. - **CBRE thread (89 msgs)** suggests active office space management — possibly new/expanded office at Club 125. - **Many UNREAD emails**: Significant backlog of unread messages, especially newsletters and promotions. - **Gemini meeting notes**: HMT uses Google Gemini to auto-generate meeting notes (All Hands, STAGE X Kayar). - **Financial services noise**: Kotak daily alerts + Axis Direct promos +",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.38097492456436155,
+      "maxScore": 0.38097492456436155,
+      "firstRecalledAt": "2026-04-10T12:01:27.984Z",
+      "lastRecalledAt": "2026-04-10T12:01:27.984Z",
+      "queryHashes": [
+        "0f6a7ad0bba9"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "ceo-level",
+        "back-and-forth",
+        "highest-priority",
+        "new/expanded",
+        "auto-generate",
+        "hmt",
+        "ceo",
+        "level"
+      ]
+    },
+    "memory:memory/2026-04-10.md:187:203": {
+      "key": "memory:memory/2026-04-10.md:187:203",
+      "path": "memory/2026-04-10.md",
+      "startLine": 187,
+      "endLine": 203,
+      "source": "memory",
+      "snippet": "> 🧠 No new persona observations this heartbeat ## 11:53 UTC Heartbeat > 🧠 HMT asked about token consumption pattern — specifically wanted channel scans abstracted out. Instinct: he's thinking about cost optimization. This is a systems-thinker move — before cutting anything, understand exactly where the spend is. Pattern: data before decisions. **Slack — #full-funnel-solver (11:48 UTC):** - Shubham Singla posted Re-Acq POD goals, tagging HMT + Parveen Singhal + Nikhil Nair - Re-acq target: 0.36% (from 0.18% baseline, ~250/day currently) - LTV per re-acquired user: ₹232 blended 12-month - Formula framing: Re-acq% × 4.2M churned base × LTV = total cohort value - HMT tagged but no @HuMT men",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.6362518031112534,
+      "maxScore": 0.6362518031112534,
+      "firstRecalledAt": "2026-04-10T12:01:35.437Z",
+      "lastRecalledAt": "2026-04-10T12:01:35.437Z",
+      "queryHashes": [
+        "977c41ce6275"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "systems-thinker",
+        "full-funnel-solver",
+        "re-acq",
+        "0.36",
+        "0.18",
+        "250/day",
+        "re-acquired",
+        "12-month"
+      ]
+    },
+    "memory:memory/2026-03-15.md:250:274": {
+      "key": "memory:memory/2026-03-15.md:250:274",
+      "path": "memory/2026-03-15.md",
+      "startLine": 250,
+      "endLine": 274,
+      "source": "memory",
+      "snippet": "**4. Silence after crisis is itself productive work (MISSED in real-time, captured now)** Mar 10–12: HMT was in #watch-retention-solver, #founders_sync, and other channels while silent with me. He was reading, thinking, working — just not with me. The 3-day gap wasn't downtime; it was him running the machine migration, model switch, and team operations independently. Lesson: When HMT goes quiet post-failure, the correct response is NOT to check in repeatedly or interpret silence as unresolved tension. It's to run clean, keep the system healthy, and be ready when he returns. > 🧠 MISSED real-time: Mar 10–12 silence = HMT working independently, not punishing. Already partially captured in M",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.0310532956011325,
+      "maxScore": 0.6716064422018557,
+      "firstRecalledAt": "2026-04-10T12:02:07.080Z",
+      "lastRecalledAt": "2026-04-10T12:03:56.219Z",
+      "queryHashes": [
+        "72e9d33c46d7",
+        "543937aa44f5"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "real-time",
+        "watch-retention-solver",
+        "founders-sync",
+        "3-day",
+        "post-failure",
+        "silence",
+        "crisis",
+        "itself"
+      ]
+    },
+    "memory:memory/2026-03-15.md:294:316": {
+      "key": "memory:memory/2026-03-15.md:294:316",
+      "path": "memory/2026-03-15.md",
+      "startLine": 294,
+      "endLine": 316,
+      "source": "memory",
+      "snippet": "2. **\"Team working on weekends\" signal** — Mar 13 log noted sickness wave (12/16 leave-intimation messages health-related) while simultaneously character bots went live, growth/product ran at full speed. This is a culture observation: STAGE's core builders don't stop even during an org-wide health wave. Not an HMT persona observation per se, but organizational culture context that HMT created. --- #### Quality Assessment **Capture rate:** Acceptable given the interaction volume. When there's nothing to observe (Mar 10–12), reporting \"no observations\" correctly is the right behavior — not manufacturing observations. **What worked:** - Mar 13 real-time captures fired correctly and were spe",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.3570236712694168,
+      "maxScore": 0.3570236712694168,
+      "firstRecalledAt": "2026-04-10T12:02:07.080Z",
+      "lastRecalledAt": "2026-04-10T12:02:07.080Z",
+      "queryHashes": [
+        "72e9d33c46d7"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "12/16",
+        "leave-intimation",
+        "health-related",
+        "growth/product",
+        "org-wide",
+        "real-time",
+        "team",
+        "working"
+      ]
+    },
+    "memory:memory/2026-03-15.md:214:233": {
+      "key": "memory:memory/2026-03-15.md:214:233",
+      "path": "memory/2026-03-15.md",
+      "startLine": 214,
+      "endLine": 233,
+      "source": "memory",
+      "snippet": "Pattern: After major infrastructure/ops failures, HMT goes quiet for 2–4 days instead of escalating pressure. He fixes what he can fix himself (model swap, machine migration), processes privately, then returns calm for a joint system review. | Occurrence | Date | Trigger | Withdrawal | Return | |-----------|------|---------|-----------|--------| | 1st | Feb 28 | WhatsApp crash + credit outage | Mar 1–2 silence | Mar 3: \"missed you :)\" + Telegram workspace build | | 2nd | Mar 9 | SIGINT freeze + backup deletion + 3x premature \"done\" | Mar 10–12 silence | Mar 13: calm system review, no blame | | 3rd | Mar 13 | OpenRouter 404 cascade, 6 cron failures | Mar 14–15 silence | (return pending — lik",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.4212969213724136,
+      "maxScore": 0.4212969213724136,
+      "firstRecalledAt": "2026-04-10T12:03:56.219Z",
+      "lastRecalledAt": "2026-04-10T12:03:56.219Z",
+      "queryHashes": [
+        "543937aa44f5"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "router",
+        "infrastructure/ops",
+        "pattern",
+        "major",
+        "infrastructure",
+        "ops",
+        "failures"
+      ]
+    },
+    "memory:memory/2026-03-15.md:195:218": {
+      "key": "memory:memory/2026-03-15.md:195:218",
+      "path": "memory/2026-03-15.md",
+      "startLine": 195,
+      "endLine": 218,
+      "source": "memory",
+      "snippet": "#### Real-Time 🧠 Markers Review Scanning all daily logs Mar 10–15 for 🧠 markers: - **Mar 10:** 14 heartbeat cycles → all `\"No new persona observations\"`. Correct — no HMT interaction. - **Mar 11:** 1 marker (channel diff observation — not HMT persona). No substantive observations. - **Mar 12:** Empty log. No markers. - **Mar 13:** 4 markers captured — quality observations (absorbs failures, strategic synthesis, \"hated every moment\", Pranay building relationship with HuMT). Plus 1 retrospective PIS sweep with 10+ retroactive captures. - **Mar 14:** 1 marker — capability audit note. No HMT interaction. - **Mar 15:** 1 marker — Parveen weekend engagement observation. No HMT interaction. **",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.37714014053344724,
+      "maxScore": 0.37714014053344724,
+      "firstRecalledAt": "2026-04-10T12:03:56.219Z",
+      "lastRecalledAt": "2026-04-10T12:03:56.219Z",
+      "queryHashes": [
+        "543937aa44f5"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "real-time",
+        "real",
+        "time",
+        "markers",
+        "review",
+        "scanning",
+        "all",
+        "logs"
+      ]
+    },
+    "memory:memory/2026-03-15.md:166:201": {
+      "key": "memory:memory/2026-03-15.md:166:201",
+      "path": "memory/2026-03-15.md",
+      "startLine": 166,
+      "endLine": 201,
+      "source": "memory",
+      "snippet": "- Morning: Trials 14,172 (+8%), New Paid 6,403 (+3%) - Afternoon anomaly: Trials -37.9%, New Subs -45.3%, Revenue -34.7% vs 7d avg (Sunday effect likely) --- ### Weekly Persona Review — March 10–15, 2026 *Compiled: 2026-03-15 15:10 UTC (automated weekly retrospective)* **Coverage:** Mon Mar 10 – Sun Mar 15 (6 days, noting Sun included) **🧠 Real-time markers captured:** ~25 (vast majority via heartbeat-only days) **Substantive new HMT observations:** 4 (3 from Mar 13, 1 from weekend team scan) **Patterns promoted to USER.md:** 1 (post-crisis withdrawal → calm return) **Missed observations caught in review:** 2 --- #### Week Character This was a **recovery and rebuild week** — defined",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.35678355395793915,
+      "maxScore": 0.35678355395793915,
+      "firstRecalledAt": "2026-04-10T12:03:56.219Z",
+      "lastRecalledAt": "2026-04-10T12:03:56.219Z",
+      "queryHashes": [
+        "543937aa44f5"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "37.9",
+        "45.3",
+        "34.7",
+        "real-time",
+        "heartbeat-only",
+        "user.md",
+        "post-crisis",
+        "morning"
+      ]
+    },
+    "memory:memory/2026-04-01.md:58:76": {
+      "key": "memory:memory/2026-04-01.md:58:76",
+      "path": "memory/2026-04-01.md",
+      "startLine": 58,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "5. **\"Weekend deep work\" observation broadened:** Was \"when systems break\" only — now includes strategic exploration too (townhall Mar 26, autoresearch Mar 22 are weekend deep work, not crises) 6. **\"Proud of what we built\" observation deepened:** Now connects Mar 7 observation to Mar 27 autoresearch PM rollout — pattern of wanting replication org-wide 7. **\"Post-crisis withdrawal\" note added:** Unverified for ~3 weeks (no new crises), marked as stable-but-untested 8. **\"Intellectual honesty over defeatism\" retained in Values** (not just Thinking section) 9. **\"Shares primary sources\" consolidated** under Communication/Values (was duplicated across two sections) 10. **Thinking & Learning sec",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.355498519539833,
+      "maxScore": 0.355498519539833,
+      "firstRecalledAt": "2026-04-10T12:03:56.219Z",
+      "lastRecalledAt": "2026-04-10T12:03:56.219Z",
+      "queryHashes": [
+        "543937aa44f5"
+      ],
+      "recallDays": [
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "org-wide",
+        "post-crisis",
+        "stable-but-untested",
+        "communication/values",
+        "weekend",
+        "deep",
+        "observation",
+        "broadened"
       ]
     }
   }

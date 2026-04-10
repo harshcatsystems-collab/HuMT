@@ -130,6 +130,13 @@
 | D111 | Update long binge series pod plan with timelines + deadlines | Long binge series team | 2026-04-09 | #long-binge-series-pod | Vinay flagged urgently Apr 8 16:52 UTC. No commitment response logged yet. | 0 |
 | D112 | CAC:LTV realignment — optimize to M6, ₹170 trial CAC target | Parveen + Kunal + Nikhil | 2026-04-09 | #stage_maino | Vinay directed 08:40 UTC. Strategic realignment on 55% TCR basis. | 0 |
 | D113 | iOS 4.69.1 TestFlight QA sign-off | QA team / Sahil (U096E4RCGHF) | 2026-04-09 | #tech-mates | Build on TestFlight. QA clearance needed before release. | 0 |
+| D114 | Finance payments batch — approval | HMT + Vinay + Shashank | 2026-04-10 | #finance-department | Saloni tagged all founders 12:51 UTC. HuMT acknowledged. HMT action needed. | 0 |
+| D115 | iOS app campaigns — start now | Parveen's perf team + Vedant | 2026-04-10 | #stage_maino | Vinay approved 05:27 UTC. Execution by perf team. | 0 |
+| D116 | Tambola/gamification event data — share details | Hemabh Kamboj | 2026-04-10 | #stage_maino | Hemabh committed to get back with event name + logic. Parveen waiting. | 0 |
+| D117 | fal.ai $500 payment approval | Shashank Vaishnav | 2026-04-10 | #credit_card_invoices | Lukesh Kolhe requested 08:45 UTC for Seedance 2.0 + image/video gen models. | 0 |
+| D118 | Minimum in-app purchase fix (Play Store, ₹1) | Sunil Yadav (via Yash Verma) | 2026-04-10 | #stage-product-feedback | Gauri flagged → Yash delegated to Sunil (10:20 UTC). | 0 |
+| D119 | Data hypotheses — team input + close | Nikhil Nair (U08L99D58PK) | 2026-04-10 | #full-funnel-solver | Nikhil wants team additions by today, close tomorrow (Apr 11). | 0 |
+| D120 | Doojvar 2 censor board pre-release testing | QA + content team (Naman Girdhaar leading) | 2026-04-10 | #release-cycle | HR censor board testing, given cohort live. Vinay, Priyanka + others tagged. | 0 |
 | D26 | Chatbot data updates in standard format | Aaliya Mirza | 2026-03-04 | #ai-character-bots | Nikhil requested | 3 |
 | D27 | Infrastructure upgrade activity (4 components) | Rohit Singh | 2026-03-04 | #team-devops | Self-announced plan (non-prod ✅, prod+DB pending) | 2 |
 | D28 | Send PDN for all plan types (24hr + 5min intervals) | Yash Verma | 2026-03-04 | #acquisition-pod | Shubham delegated, **CRITICAL OVERDUE** (was due March 5 13:15 UTC) | 2 ⚠️⚠️ |
