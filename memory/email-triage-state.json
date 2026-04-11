@@ -1,9 +1,22 @@
 {
-  "lastTriageUTC": "2026-04-10T03:00:00Z",
-  "urgent": 1,
-  "important": 1,
-  "fyi": 2,
-  "skip": 2,
-  "responseDebt": 0,
-  "notes": "PhonePe webhook issue (PAUSED/REVOKED events missing) — active external thread looped in Vinay + Shashank. Dell internship thread old/external, low priority. APM follow-up candidate from IIT KGP. No investors, board members, or finance deadlines in inbox."
+  "lastTriageUTC": "2026-04-11T03:00:00Z",
+  "urgent": 3,
+  "important": 5,
+  "fyi": 8,
+  "skip": 4,
+  "responseDebt": 2,
+  "debtItems": [
+    {
+      "sender": "Lalit Sangwan (Board)",
+      "subject": "Notice of 9th Board Meeting – 27 March 2026",
+      "ageDays": 19,
+      "threadId": "19d1a84076820827"
+    },
+    {
+      "sender": "Yash Verma",
+      "subject": "Spike in D7 trial cancellations via PhonePe",
+      "ageDays": 2,
+      "threadId": "19d72317837ec626"
+    }
+  ]
 }

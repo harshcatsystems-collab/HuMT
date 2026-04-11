@@ -1,5 +1,5 @@
 {
-  "morningBrief": "2026-04-10T03:45:00Z",
+  "morningBrief": "2026-04-11T03:49:37.289570Z",
   "lastScan": "2026-04-10T12:10:28Z",
   "eveningDebrief": "2026-04-09T13:00:00Z",
   "intensity": "light",
@@ -45,23 +45,25 @@
   },
   "lastUpdated": "2026-04-10T03:45:00Z",
   "lastEveningDebrief": {
-    "sentAt": "2026-04-09T13:00:00Z",
-    "sentAtIST": "2026-04-09T18:30:00+05:30",
-    "messageId": 1453,
+    "sentAt": "2026-04-11T13:00:00Z",
+    "sentAtIST": "2026-04-11T18:30:00+05:30",
+    "messageId": 1493,
     "topic": "daily_ops",
     "scanHours": 12,
-    "channelsActive": 28,
-    "messagesAnalyzed": 101,
-    "note": "PhonePe TCR Day 2. D6-D7 RCA meeting tomorrow 11 AM IST. Finance batch ~60.6L pending HMT approval. AI-dubbed Mokhan Vahini shipped. Live streaming deployed. Doojvar 2 pre-released.",
+    "channelsActive": 10,
+    "messagesAnalyzed": 15,
+    "note": "Saturday \u2014 near-silent day. Vinay in curation mode. D119 deadline today. D28 PhonePe recon EOD. Finance batch open. NPCI call 3 days overdue.",
     "keyItems": [
-      "PhonePe TCR \u2014 HDFC Bank exploration as backup PG. RCA meeting Apr 10 11 AM IST",
-      "Finance batch ~60.6L (19 vendors) \u2014 Rahul Chauhan tagged HMT for approval",
-      "Mokhan Vahini: first fully in-house AI-dubbed film (RJ\u2192GJ) shipped",
-      "Live Streaming feature deployed (Kalakar cricket)",
-      "Vedant: Google LTV framing \u2014 optimize acquisition toward high-LTV user actions",
-      "Still outstanding: Investor Update, Apple Dev License, ElevenLabs payment, Claude seats",
-      "HMT action: NPCI contact call still open"
+      "Vinay sharing X frameworks/tools \u2014 weekend curation mode",
+      "D119 data hypotheses \u2014 Nikhil deadline today, no update",
+      "D28 PhonePe reconciliation script \u2014 Yash EOD commitment, unconfirmed",
+      "D97 NPCI call \u2014 HMT action, 3 days open",
+      "D114 Finance batch ~60.6L \u2014 Saloni tagged founders, pending",
+      "Crash reports still firing (4.69.1)",
+      "dbt Cloud alert 10:31 UTC",
+      "Darwinbox HR live Monday Apr 13"
     ]
   },
-  "weeklyRoundup": "2026-04-10T12:10:28Z"
+  "weeklyRoundup": "2026-04-10T12:10:28Z",
+  "lastBriefDate": "2026-04-11"
 }

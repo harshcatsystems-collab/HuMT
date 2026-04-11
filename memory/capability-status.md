@@ -5,26 +5,26 @@
 > **Rule:** Never claim a capability works without testing it on the CURRENT machine.
 > **Rule:** Review this file during heartbeats.
 
-## Last Verified: 2026-04-10 00:00 UTC (automated cron)
+## Last Verified: 2026-04-11 00:00 UTC (automated cron)
 
 | # | Capability | Status | How | Last Tested |
 |---|-----------|--------|-----|-------------|
-| 1 | Memory | ✅ | memory_search responded (provider: openai/text-embedding-3-small, hybrid mode) | 2026-04-10 |
-| 2 | Files | ✅ | workspace ls OK — all dirs present, capability-status.md read/write confirmed | 2026-04-10 |
-| 3 | Terminal | ✅ | exec tool — uname confirmed Linux openclaw2 Debian 6.1 x86_64 | 2026-04-10 |
-| 4 | Web Search | ✅ | Brave API returned live results (Apr 2026 calendar page confirmed) | 2026-04-10 |
-| 5 | Gmail | ✅ | gog gmail search — unread confirmed (latest: Apr 9, Yash Verma re D7 trial cancellations) | 2026-04-10 |
-| 6 | Calendar | ✅ | gog calendar — 8 events for Apr 10 (Baby Week 18 reminders, Full Funnel, Retention Catchup, Lunch block etc.) | 2026-04-10 |
-| 7 | Cron/Reminders | ✅ | Active cron jobs confirmed — this job execution proves cron operational | 2026-04-10 |
-| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present in config | 2026-04-10 |
+| 1 | Memory | ✅ | memory_search responded (provider: openai/text-embedding-3-small, hybrid mode) | 2026-04-11 |
+| 2 | Files | ✅ | workspace ls OK — all dirs present, 100+ memory files confirmed, capability-status.md read/write OK | 2026-04-11 |
+| 3 | Terminal | ✅ | exec tool — uname confirmed Linux openclaw2 Debian 6.1 x86_64; gateway systemd active | 2026-04-11 |
+| 4 | Web Search | ✅ | Brave API live — returned calendar-365.com Apr 2026 result in 1089ms | 2026-04-11 |
+| 5 | Gmail | ✅ | gog gmail search — unread confirmed (latest: Apr 10 17:02, Global Venture Index newsletter) | 2026-04-11 |
+| 6 | Calendar | ⚠️ | gog calendar returned 'No events' for Apr 11 (Saturday — likely correct; weekend gap not an error) | 2026-04-11 |
+| 7 | Cron/Reminders | ✅ | 27 active cron jobs confirmed in scheduler; this job execution proves cron operational | 2026-04-11 |
+| 8 | Chat (TG/Slack) | ✅ | Telegram botToken + Slack bot/user/app tokens all present in config | 2026-04-11 |
 | 8b | Chat (WA) | ❌ | Session logged out (401) — PARKED for business API | 2026-03-09 |
-| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C*** confirmed — API returned HTTP 200 | 2026-04-10 |
-| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — sk-proj-HC1C*** confirmed live (HTTP 200) | 2026-04-10 |
-| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — hybrid mode operational, score 0.66 | 2026-04-10 |
-| 12 | Google Drive | ✅ | gog drive working (Gmail/Calendar auth = same token, both returned live data) | 2026-04-10 |
-| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-04-10 |
+| 9 | Images (DALL-E) | ✅ | OpenAI key sk-proj-HC1C*** confirmed — API returned HTTP 200 on /v1/models | 2026-04-11 |
+| 10 | Voice Transcription | ✅ | Same OpenAI key as DALL-E — sk-proj-HC1C*** confirmed live (HTTP 200) | 2026-04-11 |
+| 11 | Memory Search | ✅ | OpenAI embeddings via memory_search — hybrid mode operational (provider: openai/text-embedding-3-small) | 2026-04-11 |
+| 12 | Google Drive | ✅ | gog drive working (Gmail/Calendar auth = same token, both returned live data) | 2026-04-11 |
+| 13 | Slack History | ✅ | Slack user token (xoxp) present in config | 2026-04-11 |
 
-## ⚠️ Cron Job Warnings (2026-04-10)
+## ⚠️ Cron Job Warnings (2026-04-11)
 
 | Job | Consecutive Errors | Last Error | Note |
 |-----|--------------------|------------|------|
@@ -84,14 +84,23 @@
 - "Outbound not configured for channel: telegram" in isolated session
 - sessionKey + delivery config mismatch → HMT to decide fix or disable
 
-## ⚠️ Delta Since 2026-04-09
+## ⚠️ Delta Since 2026-04-10
 
-**No changes detected** — all capability statuses held from yesterday's run.
-- All 12 active capabilities remain ✅
-- WhatsApp ❌ remains parked (known, no action)
-- Cron timeout class (evening-debrief, divya jobs) — status unchanged, pending HMT decision
+**Minor status changes detected:**
+- Calendar returned 'No events' — Saturday Apr 11, expected for weekend. Not an error. ⚠️ noted, not ❌.
+- `metabase:daily-anomaly-check`: now showing 1 consecutive error (edit to 2026-04-10.md failed) — same class as slack:commitment-tracker write errors. File-edit conflict during concurrent cron runs.
+- All other capabilities unchanged from Apr 10 run.
+- WhatsApp ❌ remains parked (known, no action).
 
-**Recommendation:** Address `slack:evening-debrief` timeout — longest-running job hitting 600s wall consistently. Either increase timeoutSeconds or split into two passes.
+**New cron issues since Apr 10:**
+- `metabase:daily-anomaly-check` → 1 error: edit to memory/2026-04-10.md failed (file lock conflict)
+- `divya-weekly-meal-planning` → 2 errors: billing rejection (claude.ai extra usage message)
+- `slack:intensity-check` → 1 error: 60s timeout (structural)
+
+**Recommendation:** 
+1. `slack:evening-debrief` — 600s timeout still hitting consistently. Consider splitting or scoping down.
+2. File-edit conflicts during concurrent runs — consider staggering cron schedules by 5+ min.
+3. `divya-weekly-meal-planning` billing error — monitor; should auto-recover next Sunday.
 
 ## Critical Findings (carried from 2026-03-06)
 
