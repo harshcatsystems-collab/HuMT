@@ -1,93 +1,131 @@
 {
   "meta": {
     "created": "2026-03-24",
+    "last_backfilled": "2026-04-12",
+    "backfill_method": "reconstructed from assistant acknowledgements in session history",
     "description": "Daily activity tracker for Divya's pregnancy wellness",
     "activities": {
       "sleep": {
         "name": "Sleep",
         "target": "7-8 hours",
         "unit": "hours",
-        "emoji": "😴"
+        "emoji": "\ud83d\ude34"
       },
       "hydration": {
         "name": "Hydration",
         "target": "3 liters",
         "unit": "liters",
-        "emoji": "💧"
+        "emoji": "\ud83d\udca7"
       },
       "yoga": {
         "name": "Yoga",
         "target": "1 session",
         "unit": "sessions",
-        "emoji": "🧘‍♀️"
+        "emoji": "\ud83e\uddd8\u200d\u2640\ufe0f"
       },
       "steps": {
         "name": "Steps",
         "target": "5000-6000",
         "unit": "steps",
-        "emoji": "🚶‍♀️"
+        "emoji": "\ud83d\udeb6\u200d\u2640\ufe0f"
       }
     }
   },
-  "checkins": {
-    "2026-04-11": {
-      "sent_at": "2026-04-11T15:30:00+00:00",
-      "message_id": "3114",
-      "status": "awaiting_response"
+  "log": {
+    "2026-03-19": {
+      "yoga": {
+        "value": 1,
+        "target": 1,
+        "met": true,
+        "notes": "First yoga session, 45 mins at 4 PM IST"
+      },
+      "score": "1/4 (yoga only)",
+      "logged_at": "2026-03-19T18:01:00+05:30",
+      "logged_via": "text"
     },
-    "2026-04-10": {
-      "sent_at": "2026-04-10T15:30:00+00:00",
-      "message_id": "3096",
-      "status": "awaiting_response"
+    "2026-03-24": {
+      "sleep": {
+        "value": 8.5,
+        "target": 8,
+        "met": true
+      },
+      "hydration": {
+        "value": 2,
+        "target": 3,
+        "met": false,
+        "notes": "Estimated ~2L, not sure"
+      },
+      "yoga": {
+        "value": 1,
+        "target": 1,
+        "met": true
+      },
+      "steps": {
+        "value": 7200,
+        "target": 5500,
+        "met": true
+      },
+      "score": "3/4",
+      "logged_at": "2026-03-24T21:36:00+05:30",
+      "logged_via": "text"
     },
-    "2026-04-09": {
-      "sent_at": "2026-04-09T15:30:00+00:00",
-      "message_id": "3081",
-      "status": "awaiting_response"
-    },
-    "2026-04-08": {
-      "sent_at": "2026-04-08T15:30:00+00:00",
-      "message_id": "3058",
-      "status": "awaiting_response"
-    },
-    "2026-04-07": {
-      "sent_at": "2026-04-07T15:30:00+00:00",
-      "message_id": "3022",
-      "status": "awaiting_response"
-    },
-    "2026-04-04": {
-      "sent_at": "2026-04-04T18:38:00+00:00",
-      "message_id": "2908",
-      "status": "awaiting_response"
-    },
-    "2026-04-01": {
-      "sent_at": "2026-04-01T21:00:00+05:30",
-      "message_id": "2857",
-      "status": "awaiting_response"
-    },
-    "2026-03-29": {
-      "sent_at": "2026-03-29T21:00:00+05:30",
-      "message_id": "2809",
-      "status": "awaiting_response"
-    },
-    "2026-03-28": {
-      "sent_at": "2026-03-28T21:00:00+05:30",
-      "message_id": "2801",
-      "status": "awaiting_response"
+    "2026-03-25": {
+      "sleep": {
+        "value": 7,
+        "target": 8,
+        "met": true,
+        "notes": "Broken, disturbed \u2014 lower back pain"
+      },
+      "hydration": {
+        "value": 3,
+        "target": 3,
+        "met": true
+      },
+      "yoga": {
+        "value": 1,
+        "target": 1,
+        "met": true
+      },
+      "steps": {
+        "value": 3300,
+        "target": 5500,
+        "met": false,
+        "notes": "Didn't want to exert due to back pain"
+      },
+      "score": "3/4",
+      "logged_at": "2026-03-25T21:30:00+05:30",
+      "logged_via": "text"
     },
     "2026-03-26": {
-      "sent_at": "2026-03-26T21:00:00+05:30",
-      "message_id": "2719",
-      "status": "awaiting_response"
+      "sleep": {
+        "value": 6,
+        "target": 8,
+        "met": false,
+        "notes": "Less than 6 hrs, tired and groggy all day, barely napped"
+      },
+      "hydration": {
+        "value": 2.5,
+        "target": 3,
+        "met": false
+      },
+      "yoga": {
+        "value": 1,
+        "target": 1,
+        "met": true
+      },
+      "steps": {
+        "value": 4000,
+        "target": 5500,
+        "met": false
+      },
+      "symptoms": [
+        "fatigue",
+        "grogginess"
+      ],
+      "score": "1/4",
+      "logged_at": "2026-03-26T16:21:00+00:00",
+      "logged_via": "voice_note"
     },
-    "2026-03-27": {
-      "sent_at": "2026-03-27T21:00:00+05:30",
-      "message_id": "2784",
-      "status": "completed",
-      "response_via": "voice_note"
-    }
-  },
-  "log": {
     "2026-03-27": {
       "sleep": {
         "value": 7.25,
@@ -116,23 +154,27 @@
         "diastolic": 71,
         "pulse": 100,
         "time": "5:00 PM",
-        "notes": "Evening reading, not morning"
+        "notes": "Evening reading"
       },
-      "symptoms": ["backache", "fatigue"],
+      "symptoms": [
+        "backache",
+        "fatigue"
+      ],
       "score": "3/4",
       "logged_at": "2026-03-28T07:40:00+00:00",
       "logged_via": "voice_note"
     },
-    "2026-03-24": {
+    "2026-03-28": {
       "sleep": {
-        "value": 8.5,
+        "value": 7.67,
         "target": 8,
-        "met": true
+        "met": true,
+        "notes": "7h 40m \u2014 Saturday's entry"
       },
       "hydration": {
-        "value": 2,
+        "value": 3,
         "target": 3,
-        "met": false
+        "met": true
       },
       "yoga": {
         "value": 1,
@@ -140,13 +182,422 @@
         "met": true
       },
       "steps": {
-        "value": 7200,
+        "value": 5300,
+        "target": 5500,
+        "met": true
+      },
+      "score": "4/4",
+      "logged_at": "2026-03-29T08:00:00+05:30",
+      "logged_via": "text"
+    },
+    "2026-03-29": {
+      "sleep": {
+        "value": 8.5,
+        "target": 8,
+        "met": true
+      },
+      "hydration": {
+        "value": 3,
+        "target": 3,
+        "met": true
+      },
+      "yoga": {
+        "value": 0,
+        "target": 1,
+        "met": false,
+        "notes": "Sunday, no yoga class + rest day"
+      },
+      "steps": {
+        "value": 5000,
         "target": 5500,
         "met": true
       },
       "score": "3/4",
-      "logged_at": "2026-03-24T21:36:00+05:30",
+      "logged_at": "2026-03-29T21:00:00+05:30",
       "logged_via": "text"
+    },
+    "2026-03-30": {
+      "sleep": {
+        "value": 0,
+        "target": 8,
+        "met": false,
+        "notes": "Sick day \u2014 vomited twice, flu shot soreness"
+      },
+      "hydration": {
+        "value": 1.5,
+        "target": 3,
+        "met": false,
+        "notes": "Dehydrated from vomiting, coconut water + nimbu pani"
+      },
+      "yoga": {
+        "value": 0,
+        "target": 1,
+        "met": false
+      },
+      "steps": {
+        "value": 0,
+        "target": 5500,
+        "met": false
+      },
+      "symptoms": [
+        "vomiting",
+        "dehydration",
+        "flu_shot_soreness"
+      ],
+      "score": "0/4",
+      "logged_at": "2026-03-30T21:30:00+05:30",
+      "logged_via": "text",
+      "notes": "Sick day \u2014 excluded from sleep/steps averages"
+    },
+    "2026-03-31": {
+      "sleep": {
+        "value": 8.83,
+        "target": 8,
+        "met": true,
+        "notes": "8 hours 50 minutes"
+      },
+      "hydration": {
+        "value": 3,
+        "target": 3,
+        "met": true
+      },
+      "yoga": {
+        "value": 1,
+        "target": 1,
+        "met": true
+      },
+      "steps": {
+        "value": 6000,
+        "target": 5500,
+        "met": true
+      },
+      "score": "4/4",
+      "logged_at": "2026-03-31T21:30:00+05:30",
+      "logged_via": "text"
+    },
+    "2026-04-01": {
+      "sleep": {
+        "value": 7.5,
+        "target": 8,
+        "met": true
+      },
+      "hydration": {
+        "value": 4,
+        "target": 3,
+        "met": true,
+        "notes": "~4 litres"
+      },
+      "yoga": {
+        "value": 1,
+        "target": 1,
+        "met": true
+      },
+      "steps": {
+        "value": 7500,
+        "target": 5500,
+        "met": true
+      },
+      "score": "4/4",
+      "logged_at": "2026-04-01T15:32:00+00:00",
+      "logged_via": "text"
+    },
+    "2026-04-02": {
+      "sleep": {
+        "value": 9,
+        "target": 8,
+        "met": true
+      },
+      "hydration": {
+        "value": 3,
+        "target": 3,
+        "met": true
+      },
+      "yoga": {
+        "value": 1,
+        "target": 1,
+        "met": true
+      },
+      "steps": {
+        "value": 8000,
+        "target": 5500,
+        "met": true
+      },
+      "score": "4/4",
+      "logged_at": "2026-04-12T16:28:00+00:00",
+      "logged_via": "text_backfill"
+    },
+    "2026-04-03": {
+      "sleep": {
+        "value": 7.75,
+        "target": 8,
+        "met": true,
+        "notes": "7h 45m"
+      },
+      "hydration": {
+        "value": 3,
+        "target": 3,
+        "met": true
+      },
+      "yoga": {
+        "value": 0,
+        "target": 1,
+        "met": false
+      },
+      "steps": {
+        "value": 4500,
+        "target": 5500,
+        "met": false
+      },
+      "score": "2/4",
+      "logged_at": "2026-04-12T16:29:00+00:00",
+      "logged_via": "text_backfill"
+    },
+    "2026-04-04": {
+      "sleep": {
+        "value": 7.5,
+        "target": 8,
+        "met": true
+      },
+      "hydration": {
+        "value": 3,
+        "target": 3,
+        "met": true
+      },
+      "yoga": {
+        "value": 0,
+        "target": 1,
+        "met": false,
+        "notes": "Out all day, did 15-20 min face yoga instead"
+      },
+      "steps": {
+        "value": 3750,
+        "target": 5500,
+        "met": false,
+        "notes": "~3.5-4K"
+      },
+      "score": "2/4",
+      "logged_at": "2026-04-04T18:41:00+00:00",
+      "logged_via": "voice_note"
+    },
+    "2026-04-05": {
+      "sleep": {
+        "value": 6,
+        "target": 8,
+        "met": false,
+        "notes": "Poor sleep ~6h, took afternoon nap to compensate"
+      },
+      "hydration": {
+        "value": 3,
+        "target": 3,
+        "met": true
+      },
+      "yoga": {
+        "value": 0,
+        "target": 1,
+        "met": false
+      },
+      "steps": {
+        "value": 3000,
+        "target": 5500,
+        "met": false
+      },
+      "score": "1/4",
+      "logged_at": "2026-04-12T16:32:00+00:00",
+      "logged_via": "text_backfill"
+    },
+    "2026-04-06": {
+      "sleep": {
+        "value": 7.5,
+        "target": 8,
+        "met": true
+      },
+      "hydration": {
+        "value": 3,
+        "target": 3,
+        "met": true
+      },
+      "yoga": {
+        "value": 0,
+        "target": 1,
+        "met": false
+      },
+      "steps": {
+        "value": 5000,
+        "target": 5500,
+        "met": false,
+        "notes": "Just under target"
+      },
+      "score": "2/4",
+      "logged_at": "2026-04-12T16:44:00+00:00",
+      "logged_via": "text_backfill"
+    },
+    "2026-04-07": {
+      "sleep": {
+        "value": 8,
+        "target": 8,
+        "met": true,
+        "notes": "Assumed from 'all done today' \u2014 confirmed by HMT"
+      },
+      "hydration": {
+        "value": 3,
+        "target": 3,
+        "met": true
+      },
+      "yoga": {
+        "value": 1,
+        "target": 1,
+        "met": true
+      },
+      "steps": {
+        "value": 5500,
+        "target": 5500,
+        "met": true,
+        "notes": "Assumed target met \u2014 confirmed by HMT"
+      },
+      "score": "4/4",
+      "logged_at": "2026-04-12T16:35:00+00:00",
+      "logged_via": "text_backfill_assumed_confirmed"
+    },
+    "2026-04-08": {
+      "sleep": {
+        "value": 7.75,
+        "target": 8,
+        "met": true,
+        "notes": "7.5-8 hours"
+      },
+      "hydration": {
+        "value": 3,
+        "target": 3,
+        "met": true
+      },
+      "yoga": {
+        "value": 1,
+        "target": 1,
+        "met": true
+      },
+      "steps": {
+        "value": 6500,
+        "target": 5500,
+        "met": true
+      },
+      "score": "4/4",
+      "logged_at": "2026-04-12T16:35:00+00:00",
+      "logged_via": "text_backfill_hmt"
+    },
+    "2026-04-09": {
+      "sleep": {
+        "value": 8,
+        "target": 8,
+        "met": true
+      },
+      "hydration": {
+        "value": 3,
+        "target": 3,
+        "met": true
+      },
+      "yoga": {
+        "value": 1,
+        "target": 1,
+        "met": true
+      },
+      "steps": {
+        "value": 3500,
+        "target": 5500,
+        "met": false,
+        "notes": "3-3.5K, couldn't go for walk"
+      },
+      "symptoms": [
+        "lower_back_ache",
+        "round_ligament_pain_possible"
+      ],
+      "milestone": "\ud83c\udf89 FIRST BABY MOVEMENT FELT! A small flutter, ~2 seconds. Week 18+6.",
+      "score": "3/4",
+      "logged_at": "2026-04-09T19:01:00+00:00",
+      "logged_via": "voice_note"
+    },
+    "2026-04-10": {
+      "sleep": {
+        "value": 6,
+        "target": 8,
+        "met": false
+      },
+      "hydration": {
+        "value": 3,
+        "target": 3,
+        "met": true
+      },
+      "yoga": {
+        "value": 1,
+        "target": 1,
+        "met": true
+      },
+      "steps": {
+        "value": 6000,
+        "target": 5500,
+        "met": true
+      },
+      "score": "3/4",
+      "logged_at": "2026-04-12T16:40:00+00:00",
+      "logged_via": "text_backfill"
+    },
+    "2026-04-11": {
+      "sleep": {
+        "value": 7.75,
+        "target": 8,
+        "met": true,
+        "notes": "7h 45m \u2014 logged by HMT on behalf of Divya"
+      },
+      "hydration": {
+        "value": 3,
+        "target": 3,
+        "met": true
+      },
+      "yoga": {
+        "value": 0,
+        "target": 1,
+        "met": false
+      },
+      "steps": {
+        "value": 3500,
+        "target": 5500,
+        "met": false
+      },
+      "score": "2/4",
+      "logged_at": "2026-04-12T15:44:00+00:00",
+      "logged_via": "text_via_hmt"
+    },
+    "2026-04-12": {
+      "sleep": {
+        "value": 6,
+        "target": 8,
+        "met": false,
+        "notes": "Disturbed, in patches"
+      },
+      "hydration": {
+        "value": 2.5,
+        "target": 3,
+        "met": false
+      },
+      "yoga": {
+        "value": 0,
+        "target": 1,
+        "met": false,
+        "notes": "Sunday rest"
+      },
+      "steps": {
+        "value": 4000,
+        "target": 5500,
+        "met": false
+      },
+      "score": "0/4",
+      "logged_at": "2026-04-12T15:40:00+00:00",
+      "logged_via": "text"
+    }
+  },
+  "data_gaps": {
+    "apr_02_to_10": {
+      "reason": "Session compacted on Apr 2, 2026. Divya logged daily but responses were not persisted to this file before compaction.",
+      "action_taken": "System fix implemented Apr 12 \u2014 writes now happen immediately on receipt"
     }
   }
 }

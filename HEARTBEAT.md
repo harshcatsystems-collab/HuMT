@@ -1,5 +1,28 @@
 # HEARTBEAT.md
 
+## ⚠️ Divya Activity Log — Daily Verification (EVERY MORNING HEARTBEAT)
+
+Run at start of each morning heartbeat:
+
+```bash
+python3 -c "
+import json, datetime
+log = json.load(open('memory/divya-activity-log.json'))['log']
+yesterday = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
+if yesterday not in log:
+    print('MISSING: ' + yesterday)
+else:
+    print('OK: ' + yesterday)
+"
+```
+
+- If `MISSING` → check this group chat history for yesterday's check-in response, backfill manually, alert HMT
+- If `OK` → proceed silently
+
+**Rule:** Divya's check-in response MUST be written to `memory/divya-activity-log.json` immediately in the same turn it's received — before any other action. Confirmation line in reply: "✅ Saved to log."
+
+---
+
 ## Persona Capture (MANDATORY — every heartbeat, no exceptions)
 
 This runs FIRST, before any other check. Not optional. Not skippable.

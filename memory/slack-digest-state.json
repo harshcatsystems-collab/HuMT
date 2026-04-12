@@ -1,7 +1,7 @@
 {
-  "morningBrief": "2026-04-11T03:49:37.289570Z",
-  "lastScan": "2026-04-10T12:10:28Z",
-  "eveningDebrief": "2026-04-09T13:00:00Z",
+  "morningBrief": "2026-04-12T03:48:35.197887Z",
+  "lastScan": "2026-04-12T13:04:06.799576Z",
+  "eveningDebrief": "2026-04-12T13:04:06.799576Z",
   "intensity": "light",
   "processedMentions": [
     "1775128184.472549",
@@ -24,46 +24,51 @@
     "1774957001.812079"
   ],
   "lastMorningBrief": {
-    "sentAt": "2026-04-10T03:45:00Z",
-    "sentAtIST": "2026-04-10T09:15:00+05:30",
-    "messageId": 1465,
+    "sentAt": "2026-04-12T03:48:35.197887Z",
+    "sentAtIST": "2026-04-12T09:15:00+05:30",
+    "messageId": 1499,
     "topic": "daily_ops",
     "scanHours": 24,
-    "channelsActive": 20,
-    "messagesAnalyzed": 90,
-    "note": "Light week. Snowflake + Metabase 404s \u2014 data stack fragile. Mokhan Vahini (first in-house AI dub) shipped. High absenteeism. 20 crash-reports from 4.69.1 delta patch. NPCI call still open for HMT. Finance batch pending approval.",
+    "channelsActive": 16,
+    "messagesAnalyzed": 47,
+    "note": "Sunday. Very quiet (47 msgs, 16 channels). 18 Amplitude alerts fired unresponded. recurringtransactions pipeline failed again. Team member lost father. Vinay in weekend curation mode. NPCI call 4 days open. Finance batch pending. Metabase+Snowflake scripts blocked by exec policy.",
     "keyItems": [
-      "NPCI call \u2014 HMT action, still open 2 days",
-      "Finance batch approval \u2014 Saloni tagged HMT + founders",
-      "PhonePe TCR reconciliation script live by Apr 11 EOD (Yash)",
-      "Snowflake + Metabase 404s \u2014 data stack needs fix",
-      "20 crash-reports from 4.69.1 delta patch yesterday PM",
-      "Vinay directive (02:55 UTC): CAC-first, TCR secondary",
-      "Mokhan Vahini (AI dub, RJ\u2192GJ) shipped \u2014 first in-house",
-      "4 meetings today: Full Funnel 11AM, Retention 11:30, HP Personalisation 2PM, M0 Streak 3PM"
+      "D97 NPCI call \u2014 HMT action, 4 days open",
+      "D114 Finance batch ~Rs.60.6L \u2014 Saloni tagged founders",
+      "recurringtransactions pipeline failed again (19:32 UTC)",
+      "18 Amplitude alerts burst, unresponded (21:45-21:52 UTC)",
+      "Team member lost father \u2014 condolences Monday",
+      "Darwinbox HR live Monday Apr 13",
+      "D64 data pipeline still no owner \u2014 critical",
+      "Vinay wants heygurisingh AI teardown Monday"
     ]
   },
-  "lastUpdated": "2026-04-10T03:45:00Z",
+  "lastUpdated": "2026-04-12T13:04:06.799576Z",
   "lastEveningDebrief": {
-    "sentAt": "2026-04-11T13:00:00Z",
-    "sentAtIST": "2026-04-11T18:30:00+05:30",
-    "messageId": 1493,
+    "sentAt": "2026-04-12T13:04:06.799576Z",
+    "sentAtIST": "2026-04-12T18:30:00+05:30",
+    "messageIds": [
+      1501,
+      1502
+    ],
     "topic": "daily_ops",
     "scanHours": 12,
     "channelsActive": 10,
-    "messagesAnalyzed": 15,
-    "note": "Saturday \u2014 near-silent day. Vinay in curation mode. D119 deadline today. D28 PhonePe recon EOD. Finance batch open. NPCI call 3 days overdue.",
+    "messagesAnalyzed": 19,
+    "note": "Sunday quiet. Parveen scheduled fundraise meeting Monday 2pm. CAC at 210 vs 170 target. Kashish father hospitalized. Anthropic API expired (Kamal). 2 crash reports. D97 NPCI call 4 days open. D114 finance batch 2 days open. Shashank approval backlog 5 items.",
     "keyItems": [
-      "Vinay sharing X frameworks/tools \u2014 weekend curation mode",
-      "D119 data hypotheses \u2014 Nikhil deadline today, no update",
-      "D28 PhonePe reconciliation script \u2014 Yash EOD commitment, unconfirmed",
-      "D97 NPCI call \u2014 HMT action, 3 days open",
-      "D114 Finance batch ~60.6L \u2014 Saloni tagged founders, pending",
-      "Crash reports still firing (4.69.1)",
-      "dbt Cloud alert 10:31 UTC",
-      "Darwinbox HR live Monday Apr 13"
+      "Parveen fundraise meeting Mon Apr 13 2pm -- active fundraise signal",
+      "CAC 210 vs 170 target (30% above) -- perf team taking action",
+      "Kashish Thakur father hospitalized -- personal check-in Monday",
+      "Anthropic $200 API renewal -- Kamal tagged HMT + Shashank",
+      "D97 NPCI call -- HMT action, 4 days open",
+      "D114 Finance batch ~60.6L -- 2 days open",
+      "Shashank approval backlog -- 5 items stacked (D92, D99, D110, D117, new)",
+      "2 new crash reports (08:19 + 12:41 UTC)",
+      "CMS 197 content items missing assets",
+      "recurringtransactions pipeline failed again (D95)"
     ]
   },
   "weeklyRoundup": "2026-04-10T12:10:28Z",
-  "lastBriefDate": "2026-04-11"
+  "lastBriefDate": "2026-04-12"
 }

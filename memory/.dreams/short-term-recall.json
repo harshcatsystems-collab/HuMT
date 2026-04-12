@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-10T12:03:56.219Z",
+  "updatedAt": "2026-04-12T16:02:50.493Z",
   "entries": {
     "memory:memory/2026-03-21.md:276:313": {
       "key": "memory:memory/2026-03-21.md:276:313",
@@ -311,17 +311,18 @@
       "endLine": 314,
       "source": "memory",
       "snippet": "**Pranay PIP (light scan):** No new Pranay DM activity. Pranay mentioned in Activation plan context (collaboration with Ashish Pandey on chatbot optimization for April). No new signals on Cricket Saathi or multi-device. **No escalations needed.** D6-7 TCR meeting tomorrow 11 AM IST is a key watch item — Vinay called it, all stakeholders alerted yesterday. ## 12:33 UTC — Heartbeat Check (6:03 PM IST) **Channels:** All clean. **Gmail:** - **Yash Verma (stage.in)**: Re: Spike in D7 trial cancellations via PhonePe — IMPORTANT thread, active reply chain. D7 trial cancellation spike is a significant retention/revenue signal. > 🧠 D7 PhonePe cancellation spike being investigated — Yash replyin",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
-      "totalScore": 0.652340516235447,
+      "totalScore": 1.3041014852243924,
       "maxScore": 0.652340516235447,
       "firstRecalledAt": "2026-04-10T03:00:33.084Z",
-      "lastRecalledAt": "2026-04-10T03:00:33.084Z",
+      "lastRecalledAt": "2026-04-12T03:00:22.928Z",
       "queryHashes": [
         "74b4650b4183"
       ],
       "recallDays": [
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-12"
       ],
       "conceptTags": [
         "multi-device",
@@ -1054,6 +1055,36 @@
         "deep",
         "observation",
         "broadened"
+      ]
+    },
+    "memory:memory/2026-03-23.md:285:331": {
+      "key": "memory:memory/2026-03-23.md:285:331",
+      "path": "memory/2026-03-23.md",
+      "startLine": 285,
+      "endLine": 331,
+      "source": "memory",
+      "snippet": "- Plan: Daily tracking for 3-4 days to establish baseline, then reassess frequency - Divya's preference: No daily tracking long-term (causes stress → raises BP) **Weight Tracking Started:** - Dec 31, 2025: 74.0 kg (pregnancy confirmed) - End T1 (~Week 12): 73.0 kg (lost 1 kg, normal) - ~Mar 8-13: 73.5 kg - Mar 23: 74.8 kg (Week 16+3) - Total gain: +0.8 kg — healthy, on track **BP + Weight logs added to:** - `memory/motherhood-os.md` - `memory/fatherhood-checklist.md` --- #### MAJOR: Pregnancy Dating Correction **Issue:** I had wrong pregnancy week (said 25 instead of 16+3). This had cascading effects on all milestone dates. **Correct pregnancy dating (PERMANENT):** | Detail | Value | |",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.3725242346525192,
+      "maxScore": 0.3725242346525192,
+      "firstRecalledAt": "2026-04-12T16:02:50.493Z",
+      "lastRecalledAt": "2026-04-12T16:02:50.493Z",
+      "queryHashes": [
+        "dbe251c64e49"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "3-4",
+        "long-term",
+        "74.0",
+        "73.0",
+        "8-13",
+        "73.5",
+        "74.8",
+        "0.8"
       ]
     }
   }
